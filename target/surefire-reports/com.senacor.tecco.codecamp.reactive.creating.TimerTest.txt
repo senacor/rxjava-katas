@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.senacor.tecco.codecamp.reactive.creating.TimerTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.001 sec

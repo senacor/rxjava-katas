@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.senacor.tecco.codecamp.reactive.filtering.TakeTest
--------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.016 sec
