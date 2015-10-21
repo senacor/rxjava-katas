@@ -1,5 +1,6 @@
 package com.senacor.tecco.codecamp.reactive.katas;
 
+import com.senacor.tecco.codecamp.reactive.services.WikiService;
 import org.junit.Test;
 
 /**
@@ -14,6 +15,14 @@ public class Kata2TransformingObservable {
         // 3. gib den Wikipedia Artikel Text in der Console aus (ParsedPage.getText())
 
         // WikiService.WIKI_SERVICE.fetchArticle()
+
+        final String articleName = "Zurück in die Zukunft";
+
+        WikiService.WIKI_SERVICE.fetchArticle(articleName)
+//                                .flatMap(mediaWikiText -> WikiService.WIKI_SERVICE.parseMediaWikiText(mediaWikiText))
+                                .flatMap(WikiService.WIKI_SERVICE::parseMediaWikiText)
+                .subscribe(article -> System.out.println(article.getText()));
+
     }
 
 }
