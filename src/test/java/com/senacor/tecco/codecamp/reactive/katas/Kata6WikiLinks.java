@@ -9,6 +9,8 @@ import de.tudarmstadt.ukp.wikipedia.parser.Section;
 import org.junit.Test;
 import rx.Observable;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * @author Andreas Keefer
  */
@@ -27,8 +29,8 @@ public class Kata6WikiLinks {
         WaitMonitor waitMonitor = new WaitMonitor();
 
         final Observable<Link> links = WikiService.WIKI_SERVICE.fetchArticle("Observable")
-                .subscribeOn(ReactiveUtil.newScheduler(5, "fetchScheduler1"))
-                .observeOn(ReactiveUtil.newScheduler(3, "observeScheduler1"))
+                .subscribeOn(ReactiveUtil.newScheduler(200, "scheduler1"))
+                .observeOn(ReactiveUtil.newScheduler(200, "scheduler1"))
                 .flatMap(WikiService.WIKI_SERVICE::parseMediaWikiText)
                 .flatMapIterable(ParsedPage::getSections)
                 .<Section>asObservable()
@@ -38,15 +40,16 @@ public class Kata6WikiLinks {
 
         final Observable<ParsedPage> articles = links
                 .flatMap(link -> WikiService.WIKI_SERVICE.fetchArticle(link.getTarget()))
-                .subscribeOn(ReactiveUtil.newScheduler(5, "fetchScheduler2"))
-                .observeOn(ReactiveUtil.newScheduler(3, "observeScheduler2"))
+                .observeOn(ReactiveUtil.newScheduler(2, "scheduler2"))
                 .flatMap(WikiService.WIKI_SERVICE::parseMediaWikiText);
 
 
         articles.subscribe(System.out::println, Throwable::printStackTrace, () -> waitMonitor.complete());
 
+        waitMonitor.waitFor(1L, TimeUnit.HOURS);
+
         while (!waitMonitor.isComplete()) {
-            Thread.sleep(10L);
+            Thread.sleep(100L);
         }
 
         Thread.sleep(200L);
