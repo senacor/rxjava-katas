@@ -104,6 +104,11 @@ public class WikiService {
      * @return Sterne Bewertung von 0 bis 5
      */
     public Observable<Integer> rate(final ParsedPage parsedPage) {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return Observable.create(subscriber -> {
             long start = System.currentTimeMillis();
 
@@ -165,7 +170,7 @@ public class WikiService {
                 return;
             }
             String text = parsedPage.getText();
-            fixedDelay(30);
+            fixedDelay(1000);
             int wordCount = new StringTokenizer(text, " ").countTokens();
             System.out.println(String.format("%scountWords: count=%s runtime=%sms",
                     getThreadId(), wordCount, System.currentTimeMillis() - start));
