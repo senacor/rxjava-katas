@@ -12,7 +12,9 @@ import java.util.Random;
 import java.util.StringTokenizer;
 import java.util.concurrent.TimeUnit;
 
-import static com.senacor.tecco.codecamp.reactive.ReactiveUtil.*;
+import static com.senacor.tecco.codecamp.reactive.ReactiveUtil.fixedDelay;
+import static com.senacor.tecco.codecamp.reactive.ReactiveUtil.getThreadId;
+import static com.senacor.tecco.codecamp.reactive.ReactiveUtil.print;
 
 /**
  * @author Andreas Keefer
@@ -61,7 +63,7 @@ public class WikiService {
         return Observable.interval(interval, unit)
                 .map(time -> {
                     String article = WIKI_ARTICLES.get(randomGenerator.nextInt(WIKI_ARTICLES.size()));
-                    print("wikiArticleBeingReadObservable=%s", article);
+                    //print("wikiArticleBeingReadObservable=%s", article);
                     return article;
                 });
     }
