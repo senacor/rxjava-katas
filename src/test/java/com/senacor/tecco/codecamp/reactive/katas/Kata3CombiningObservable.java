@@ -20,8 +20,6 @@ public class Kata3CombiningObservable {
     // 2. Benutze jetzt den WikiService#rate() und #countWords() und kombiniere beides im JSON-Format
     //    und gib das JSON auf der Console aus. Beispiel {"articleName": "Superman", "rating": 3, "wordCount": 452}
 
-    ParsedPage todo = new ParsedPage();
-
     WaitMonitor waitMonitor = new WaitMonitor();
 
     WIKI_SERVICE.fetchArticle("Banane")
