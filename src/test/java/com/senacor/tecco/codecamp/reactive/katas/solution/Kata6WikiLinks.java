@@ -2,6 +2,7 @@ package com.senacor.tecco.codecamp.reactive.katas.solution;
 
 import com.senacor.tecco.codecamp.reactive.WaitMonitor;
 import de.tudarmstadt.ukp.wikipedia.parser.Link;
+import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;
 import rx.Observable;
 import rx.schedulers.Schedulers;
@@ -9,6 +10,7 @@ import rx.schedulers.Schedulers;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
+import static com.senacor.tecco.codecamp.reactive.ReactiveUtil.newScheduler;
 import static com.senacor.tecco.codecamp.reactive.ReactiveUtil.print;
 import static com.senacor.tecco.codecamp.reactive.services.WikiService.WIKI_SERVICE;
 import static org.apache.commons.lang3.Validate.notNull;
@@ -45,16 +47,12 @@ public class Kata6WikiLinks {
     private static Observable<WikiLink> getLinks(final String wikiArticle) {
         //print("getLinks fuer Artikel: %s", wikiArticle);
         return WIKI_SERVICE.fetchArticle((wikiArticle))
-                .observeOn(Schedulers.io())
+                .observeOn(newScheduler(20, "io"))
                 .flatMap(WIKI_SERVICE::parseMediaWikiText)
                 .observeOn(Schedulers.computation())
-                .flatMap(parsedPage -> {
-                    if (null == parsedPage) {
-                        return Observable.empty();
-                    }
-                    return Observable.from(parsedPage.getSections());
-                })
-                .flatMap(section -> Observable.from(section.getLinks(Link.type.INTERNAL)))
+                .filter(parsedPage -> parsedPage != null)
+                .flatMapIterable(ParsedPage::getSections)
+                .flatMapIterable(section -> section.getLinks(Link.type.INTERNAL))
                 .map(link -> new WikiLink(wikiArticle, link.getTarget()))
                 .distinct()
                 .doOnNext(wikiLink -> print(wikiLink));
