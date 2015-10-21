@@ -1,6 +1,9 @@
 package com.senacor.tecco.codecamp.reactive.katas;
 
+import com.senacor.tecco.codecamp.reactive.services.WikiService;
 import org.junit.Test;
+
+import static rx.Observable.zip;
 
 /**
  * @author Andreas Keefer
@@ -14,6 +17,15 @@ public class Kata3CombiningObservable {
         //    und gib das JSON auf der Console aus. Beispiel {"articleName": "Superman", "rating": 3, "wordCount": 452}
 
         // WikiService.WIKI_SERVICE.fetchArticle()
+
+        WikiService.WIKI_SERVICE.fetchArticle("Mathematik")
+                .flatMap(WikiService.WIKI_SERVICE::parseMediaWikiText)
+                .flatMap(parsedPage -> zip(WikiService.WIKI_SERVICE.rate(parsedPage),
+                        WikiService.WIKI_SERVICE.countWords(parsedPage),
+                        (rate, count) -> "{ name=\"" + parsedPage.getName() + ", rate=\"" + rate + "\", count=\"" + count + "\""))
+                .subscribe(System.out::println);
+
+
     }
 
 }
