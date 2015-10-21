@@ -61,7 +61,7 @@ public class WikiService {
         return Observable.interval(interval, unit)
                 .map(time -> {
                     String article = WIKI_ARTICLES.get(randomGenerator.nextInt(WIKI_ARTICLES.size()));
-                    print("wikiArticleBeingReadObservable=%s", article);
+                    //print("wikiArticleBeingReadObservable=%s", article);
                     return article;
                 });
     }

@@ -22,7 +22,7 @@ public class Kata2TransformingObservable {
 				.subscribe(text -> System.out.println(text.getText()));
 		//
 		
-		Thread.sleep(10000L);
+//		Thread.sleep(10000L);
 	}
 
 }
