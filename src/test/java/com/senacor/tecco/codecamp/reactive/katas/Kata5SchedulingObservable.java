@@ -42,7 +42,10 @@ public class Kata5SchedulingObservable {
 		.flatMap(articleName -> WikiService.WIKI_SERVICE.fetchArticle(articleName).subscribeOn(schedulerIO))
 		.observeOn(schedulerComputation)
 		.flatMap(article -> WIKI_SERVICE.parseMediaWikiText(article))
-		.flatMap(parsedPage -> Observable.zip(WIKI_SERVICE.rate(parsedPage), WIKI_SERVICE.countWords(parsedPage), (rating, count) -> String.format("%d,%d",  rating, count)))
+		.flatMap(parsedPage -> Observable.zip(
+				WIKI_SERVICE.rate(parsedPage),
+				WIKI_SERVICE.countWords(parsedPage), 
+				(rating, count) -> String.format("%d,%d",  rating, count)))
 		.subscribe(System.out::println, Throwable::printStackTrace, () -> monitor.complete());
 		
 		monitor.waitFor(20, TimeUnit.SECONDS);
