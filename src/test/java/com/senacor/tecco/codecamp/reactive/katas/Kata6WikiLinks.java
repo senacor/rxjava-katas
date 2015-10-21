@@ -5,7 +5,6 @@ import com.senacor.tecco.codecamp.reactive.WaitMonitor;
 import com.senacor.tecco.codecamp.reactive.services.WikiService;
 import de.tudarmstadt.ukp.wikipedia.parser.Link;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
-import de.tudarmstadt.ukp.wikipedia.parser.Section;
 import org.junit.Test;
 import rx.Observable;
 
@@ -28,23 +27,15 @@ public class Kata6WikiLinks {
 
         WaitMonitor waitMonitor = new WaitMonitor();
 
-        final Observable<Link> links = WikiService.WIKI_SERVICE.fetchArticle("Observable")
-                .subscribeOn(ReactiveUtil.newScheduler(200, "scheduler1"))
-                .observeOn(ReactiveUtil.newScheduler(200, "scheduler1"))
-                .flatMap(WikiService.WIKI_SERVICE::parseMediaWikiText)
-                .flatMapIterable(ParsedPage::getSections)
-                .<Section>asObservable()
-                .flatMapIterable(section -> section.getLinks(Link.type.INTERNAL))
+        final Observable<Link> links = getArticleLinks("Observable");
+
+        links
+                .subscribeOn(ReactiveUtil.newScheduler(1, "computeScheduler"))
+                .flatMap(link -> getArticleLinks(link.getTarget()))
                 .distinct()
-                .asObservable();
-
-        final Observable<ParsedPage> articles = links
-                .flatMap(link -> WikiService.WIKI_SERVICE.fetchArticle(link.getTarget()))
-                .observeOn(ReactiveUtil.newScheduler(2, "scheduler2"))
-                .flatMap(WikiService.WIKI_SERVICE::parseMediaWikiText);
-
-
-        articles.subscribe(System.out::println, Throwable::printStackTrace, () -> waitMonitor.complete());
+                .subscribe(link -> System.out.println(link.getText()),
+                        Throwable::printStackTrace,
+                        () -> waitMonitor.complete());
 
         waitMonitor.waitFor(1L, TimeUnit.HOURS);
 
@@ -54,6 +45,15 @@ public class Kata6WikiLinks {
 
         Thread.sleep(200L);
 
+    }
+
+    private Observable<Link> getArticleLinks(String wikiArticle) {
+        return WikiService.WIKI_SERVICE.fetchArticle(wikiArticle)
+                .subscribeOn(ReactiveUtil.newScheduler(1, "fetchScheduler"))
+                .<ParsedPage>flatMap(WikiService.WIKI_SERVICE::parseMediaWikiText)
+                .flatMapIterable(ParsedPage::getSections)
+                .flatMapIterable(section -> section.getLinks(Link.type.INTERNAL))
+                .distinct();
     }
 
 }
