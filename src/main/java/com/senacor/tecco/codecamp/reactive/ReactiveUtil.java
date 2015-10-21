@@ -1,9 +1,14 @@
 package com.senacor.tecco.codecamp.reactive;
 
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import org.apache.commons.lang.math.RandomUtils;
 import rx.Observable;
+import rx.Scheduler;
 import rx.Subscriber;
 import rx.schedulers.Schedulers;
+
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadFactory;
 
 /**
  * @author Andreas Keefer
@@ -48,5 +53,13 @@ public class ReactiveUtil {
     public static <T> T print(T toPrint, Object... args) {
         System.out.println(getThreadId() + String.format(toPrint.toString(), args));
         return toPrint;
+    }
+
+    public static Scheduler newScheduler(int size, String name) {
+        final ThreadFactory threadFactory = new ThreadFactoryBuilder()
+                .setNameFormat(name + "-%d")
+                .setDaemon(true)
+                .build();
+        return Schedulers.from(Executors.newFixedThreadPool(size, threadFactory));
     }
 }
