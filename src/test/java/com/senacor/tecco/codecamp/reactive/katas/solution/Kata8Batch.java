@@ -26,13 +26,12 @@ public class Kata8Batch {
 
         final WaitMonitor monitor = new WaitMonitor();
 
-        Observable<Long> observable = WIKI_SERVICE.wikiArticleBeingReadObservableBurst()
+        WIKI_SERVICE.wikiArticleBeingReadObservableBurst()
                 .take(2, TimeUnit.SECONDS)
                 .doOnNext(ReactiveUtil::print)
                 .map(WIKI_SERVICE::save)
-                .doOnNext(runtime -> print("runtime: %s ms", runtime));
-        Subscription subscription = MathObservable.sumLong(observable)
-                .subscribe(next -> print("save runtime (SUM): %s ms", next),
+                .reduce((l, r) -> l + r)
+                .forEach(next -> print("save runtime (SUM): %s ms", next),
                         Throwable::printStackTrace,
                         () -> {
                             print("complete!");
@@ -40,7 +39,6 @@ public class Kata8Batch {
                         });
 
         monitor.waitFor(10000, TimeUnit.MILLISECONDS);
-        subscription.unsubscribe();
     }
 
 
@@ -52,14 +50,13 @@ public class Kata8Batch {
 
         final WaitMonitor monitor = new WaitMonitor();
 
-        Observable<Long> observable = WIKI_SERVICE.wikiArticleBeingReadObservableBurst()
+        WIKI_SERVICE.wikiArticleBeingReadObservableBurst()
                 .take(2, TimeUnit.SECONDS)
                 .doOnNext(ReactiveUtil::print)
                 .buffer(500, TimeUnit.MILLISECONDS)
                 .map(WIKI_SERVICE::save)
-                .doOnNext(runtime -> ReactiveUtil.print("runtime: %sms", runtime));
-        Subscription subscription = MathObservable.sumLong(observable)
-                .subscribe(next -> print("save runtime: %s", next),
+                .reduce((l, r) -> l + r)
+                .forEach(next -> print("save runtime (SUM): %s ms", next),
                         Throwable::printStackTrace,
                         () -> {
                             print("complete!");
@@ -67,6 +64,5 @@ public class Kata8Batch {
                         });
 
         monitor.waitFor(10000, TimeUnit.MILLISECONDS);
-        subscription.unsubscribe();
     }
 }

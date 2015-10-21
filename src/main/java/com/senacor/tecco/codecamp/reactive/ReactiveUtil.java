@@ -62,4 +62,12 @@ public class ReactiveUtil {
                 .build();
         return Schedulers.from(Executors.newFixedThreadPool(size, threadFactory));
     }
+
+    public static Scheduler newCachedThreadPoolScheduler(String name) {
+        final ThreadFactory threadFactory = new ThreadFactoryBuilder()
+                .setNameFormat(name + "-%d")
+                .setDaemon(true)
+                .build();
+        return Schedulers.from(Executors.newCachedThreadPool(threadFactory));
+    }
 }

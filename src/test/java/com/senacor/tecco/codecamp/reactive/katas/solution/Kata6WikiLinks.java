@@ -5,11 +5,13 @@ import de.tudarmstadt.ukp.wikipedia.parser.Link;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;
 import rx.Observable;
+import rx.Scheduler;
 import rx.schedulers.Schedulers;
 
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
+import static com.senacor.tecco.codecamp.reactive.ReactiveUtil.newCachedThreadPoolScheduler;
 import static com.senacor.tecco.codecamp.reactive.ReactiveUtil.newScheduler;
 import static com.senacor.tecco.codecamp.reactive.ReactiveUtil.print;
 import static com.senacor.tecco.codecamp.reactive.services.WikiService.WIKI_SERVICE;
@@ -19,6 +21,9 @@ import static org.apache.commons.lang3.Validate.notNull;
  * @author Andreas Keefer
  */
 public class Kata6WikiLinks {
+
+    private static Scheduler scheduler = newScheduler(25, "io");
+    private static Scheduler cachedScheduler = newCachedThreadPoolScheduler("cached");
 
     @Test
     public void linksObservable() throws Exception {
@@ -47,7 +52,7 @@ public class Kata6WikiLinks {
     private static Observable<WikiLink> getLinks(final String wikiArticle) {
         //print("getLinks fuer Artikel: %s", wikiArticle);
         return WIKI_SERVICE.fetchArticle((wikiArticle))
-                .subscribeOn(newScheduler(20, "io"))
+                .subscribeOn(scheduler)
                 .flatMap(WIKI_SERVICE::parseMediaWikiText)
                 .subscribeOn(Schedulers.computation())
                 .filter(parsedPage -> parsedPage != null)
