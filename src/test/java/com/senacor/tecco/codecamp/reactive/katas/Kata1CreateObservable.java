@@ -1,4 +1,4 @@
-package com.senacor.tecco.codecamp.reactive.lecture;
+package com.senacor.tecco.codecamp.reactive.katas;
 
 import com.senacor.tecco.codecamp.reactive.services.WikipediaServiceMediaWikiBot;
 import net.sourceforge.jwbf.core.contentRep.Article;

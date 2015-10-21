@@ -1,4 +1,4 @@
-package com.senacor.tecco.codecamp.reactive.lecture;
+package com.senacor.tecco.codecamp.reactive.katas;
 
 import org.junit.Test;
 
