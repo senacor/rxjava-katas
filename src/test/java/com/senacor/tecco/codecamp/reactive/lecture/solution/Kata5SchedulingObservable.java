@@ -31,17 +31,18 @@ public class Kata5SchedulingObservable {
 
         final WaitMonitor monitor = new WaitMonitor();
 
+        Scheduler fiveThreads = ReactiveUtil.newScheduler(5, "my-scheduler");
+
         Subscription subscription = WIKI_SERVICE.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
                 .take(20)
                 .flatMap(name -> WIKI_SERVICE.fetchArticle(name)
                         .subscribeOn(Schedulers.io()))
                 .flatMap(WIKI_SERVICE::parseMediaWikiText)
-                .flatMap(parsedPage -> Observable.zip(WIKI_SERVICE.rate(parsedPage),
-                        WIKI_SERVICE.countWords(parsedPage),
+                .flatMap(parsedPage -> Observable.zip(WIKI_SERVICE.rate(parsedPage).subscribeOn(fiveThreads),
+                        WIKI_SERVICE.countWords(parsedPage).subscribeOn(fiveThreads),
                         (rating, wordCount) -> String.format(
                                 "{\"rating\": %s, \"wordCount\": %s}",
                                 rating, wordCount)))
-                .subscribeOn(ReactiveUtil.newScheduler(5, "my-scheduler"))
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         () -> {
