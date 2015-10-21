@@ -1,6 +1,5 @@
 package com.senacor.tecco.codecamp.reactive.services;
 
-import com.senacor.tecco.codecamp.reactive.ReactiveUtil;
 import de.tudarmstadt.ukp.wikipedia.parser.Link;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import de.tudarmstadt.ukp.wikipedia.parser.Section;
@@ -39,10 +38,10 @@ public class MediaWikiTextParser {
     public ParsedPage parse(String mediaWikiText) {
         final long start = System.currentTimeMillis();
         ParsedPage res = parser.parse(mediaWikiText);
-        System.out.println(ReactiveUtil.getThreadId() + "profiling parse("
+        /*System.out.println(ReactiveUtil.getThreadId() + "profiling parse("
                 //+ res.getName()
                 //+ mediaWikiText
-                + "): " + (System.currentTimeMillis() - start) + "ms");
+                + "): " + (System.currentTimeMillis() - start) + "ms");*/
         return res;
     }
 
