@@ -23,7 +23,7 @@ public class Kata8Batch {
     @Test
     public void batch() throws Exception {
         // 1. mache das gleiche wie oben, nur verwende diesmal die #save(Iterable) Methode um einene Batch von
-        //    Artikeln zu speichern. Beachte dabei, das du hier potentiel einen Stream hast, du kannst also nicht warten
+        //    Artikeln zu speichern. Beachte dabei, dass du hier potentiel einen Stream hast, du kannst also nicht warten
         //    bis der Stream alle artikel geliefert hat und dann alles in einem grossen batch abspeichern
 
         WIKI_SERVICE.wikiArticleBeingReadObservableBurst();
