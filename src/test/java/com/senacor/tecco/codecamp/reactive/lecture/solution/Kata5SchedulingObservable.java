@@ -26,7 +26,7 @@ public class Kata5SchedulingObservable {
         // 4. Benutze jetzt den WikiService#rate() und #countWords() und kombiniere beides im JSON-Format
         //    und gib das JSON auf der Console aus. Beispiel {"rating": 3, "wordCount": 452}
         // 5. messe die Laufzeit
-        // 6. Füge jetzt an passender Stelle in der Observable-Chain einen Schduler ein um die Ausführungszeit zu verkürzen
+        // 6. Füge jetzt an passender Stelle in der Observable-Chain einen Scheduler ein um die Ausführungszeit zu verkürzen
 
         final WaitMonitor monitor = new WaitMonitor();
 
