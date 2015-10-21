@@ -7,6 +7,7 @@ import de.tudarmstadt.ukp.wikipedia.parser.Link;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;
 import rx.Observable;
+import rx.Scheduler;
 
 import java.util.concurrent.TimeUnit;
 
@@ -27,13 +28,15 @@ public class Kata6WikiLinks {
 
         WaitMonitor waitMonitor = new WaitMonitor();
 
-        final Observable<Link> links = getArticleLinks("Observable");
+        final Scheduler scheduler = ReactiveUtil.newScheduler(10, "fetchScheduler");
+
+        final Observable<Link> links = getArticleLinks("Observable", scheduler);
 
         links
-                .subscribeOn(ReactiveUtil.newScheduler(10, "computeScheduler"))
-                .flatMap(link -> getArticleLinks(link.getTarget()))
+                .observeOn(ReactiveUtil.newScheduler(10, "computeScheduler"))
+                .flatMap(link -> getArticleLinks(link.getTarget(), scheduler))
                 .distinct()
-                .subscribe(link -> System.out.println(link.getText()),
+                .subscribe(link -> System.out.print(""),//link -> System.out.println(link.getText()),
                         Throwable::printStackTrace,
                         () -> waitMonitor.complete());
 
@@ -47,9 +50,9 @@ public class Kata6WikiLinks {
 
     }
 
-    private Observable<Link> getArticleLinks(String wikiArticle) {
+    private Observable<Link> getArticleLinks(String wikiArticle, Scheduler scheduler) {
         return WikiService.WIKI_SERVICE.fetchArticle(wikiArticle)
-                .subscribeOn(ReactiveUtil.newScheduler(10, "fetchScheduler"))
+                .subscribeOn(scheduler)
                 .<ParsedPage>flatMap(WikiService.WIKI_SERVICE::parseMediaWikiText)
                 .flatMapIterable(ParsedPage::getSections)
                 .flatMapIterable(section -> section.getLinks(Link.type.INTERNAL))
