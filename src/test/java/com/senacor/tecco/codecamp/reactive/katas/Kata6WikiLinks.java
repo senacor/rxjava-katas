@@ -1,5 +1,6 @@
 package com.senacor.tecco.codecamp.reactive.katas;
 
+import com.senacor.tecco.codecamp.reactive.ReactiveUtil;
 import com.senacor.tecco.codecamp.reactive.WaitMonitor;
 import com.senacor.tecco.codecamp.reactive.services.WikiService;
 import de.tudarmstadt.ukp.wikipedia.parser.Link;
@@ -25,7 +26,9 @@ public class Kata6WikiLinks {
 
         WaitMonitor waitMonitor = new WaitMonitor();
 
-        final Observable<Link> links = WikiService.WIKI_SERVICE.fetchArticle("Mathematik")
+        final Observable<Link> links = WikiService.WIKI_SERVICE.fetchArticle("Observable")
+                .subscribeOn(ReactiveUtil.newScheduler(5, "fetchScheduler1"))
+                .observeOn(ReactiveUtil.newScheduler(3, "observeScheduler1"))
                 .flatMap(WikiService.WIKI_SERVICE::parseMediaWikiText)
                 .flatMapIterable(ParsedPage::getSections)
                 .<Section>asObservable()
@@ -35,12 +38,19 @@ public class Kata6WikiLinks {
 
         final Observable<ParsedPage> articles = links
                 .flatMap(link -> WikiService.WIKI_SERVICE.fetchArticle(link.getTarget()))
+                .subscribeOn(ReactiveUtil.newScheduler(5, "fetchScheduler2"))
+                .observeOn(ReactiveUtil.newScheduler(3, "observeScheduler2"))
                 .flatMap(WikiService.WIKI_SERVICE::parseMediaWikiText);
 
 
         articles.subscribe(System.out::println, Throwable::printStackTrace, () -> waitMonitor.complete());
 
-        Thread.sleep(10000L);
+        while (!waitMonitor.isComplete()) {
+            Thread.sleep(10L);
+        }
+
+        Thread.sleep(200L);
+
     }
 
 }
