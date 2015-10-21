@@ -54,4 +54,5 @@ public class Kata1CreateObservable {
     public Article getArticle(String name) {
         return new WikipediaServiceMediaWikiBot().getArticle(name);
     }
+
 }
