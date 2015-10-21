@@ -30,7 +30,7 @@ public class Kata6WikiLinks {
         final Observable<Link> links = getArticleLinks("Observable");
 
         links
-                .subscribeOn(ReactiveUtil.newScheduler(1, "computeScheduler"))
+                .subscribeOn(ReactiveUtil.newScheduler(10, "computeScheduler"))
                 .flatMap(link -> getArticleLinks(link.getTarget()))
                 .distinct()
                 .subscribe(link -> System.out.println(link.getText()),
@@ -49,7 +49,7 @@ public class Kata6WikiLinks {
 
     private Observable<Link> getArticleLinks(String wikiArticle) {
         return WikiService.WIKI_SERVICE.fetchArticle(wikiArticle)
-                .subscribeOn(ReactiveUtil.newScheduler(1, "fetchScheduler"))
+                .subscribeOn(ReactiveUtil.newScheduler(10, "fetchScheduler"))
                 .<ParsedPage>flatMap(WikiService.WIKI_SERVICE::parseMediaWikiText)
                 .flatMapIterable(ParsedPage::getSections)
                 .flatMapIterable(section -> section.getLinks(Link.type.INTERNAL))
