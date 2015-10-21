@@ -1,5 +1,6 @@
 package com.senacor.tecco.codecamp.reactive.katas;
 
+import com.senacor.tecco.codecamp.reactive.ReactiveUtil;
 import com.senacor.tecco.codecamp.reactive.services.WikiService;
 import org.junit.Test;
 
@@ -20,11 +21,12 @@ public class Kata3CombiningObservable {
 
         WikiService.WIKI_SERVICE.fetchArticle("Mathematik")
                 .flatMap(WikiService.WIKI_SERVICE::parseMediaWikiText)
-                .flatMap(parsedPage -> zip(WikiService.WIKI_SERVICE.rate(parsedPage),
-                        WikiService.WIKI_SERVICE.countWords(parsedPage),
+                .flatMap(parsedPage -> zip(WikiService.WIKI_SERVICE.rate(parsedPage).subscribeOn(ReactiveUtil.newScheduler(3, "rateScheduler")),
+                        WikiService.WIKI_SERVICE.countWords(parsedPage).subscribeOn(ReactiveUtil.newScheduler(3, "countScheduler")),
                         (rate, count) -> "{ name=\"" + parsedPage.getName() + ", rate=\"" + rate + "\", count=\"" + count + "\""))
                 .subscribe(System.out::println);
 
+        Thread.sleep(20000L);
 
     }
 
