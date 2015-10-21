@@ -1,5 +1,6 @@
 package com.senacor.tecco.codecamp.reactive.lecture.solution;
 
+import com.senacor.tecco.codecamp.reactive.ReactiveUtil;
 import com.senacor.tecco.codecamp.reactive.WaitMonitor;
 import org.junit.Test;
 import rx.Observable;
@@ -30,18 +31,17 @@ public class Kata5SchedulingObservable {
 
         final WaitMonitor monitor = new WaitMonitor();
 
-        Scheduler fiveThreads = Schedulers.from(Executors.newFixedThreadPool(5));
-
         Subscription subscription = WIKI_SERVICE.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
                 .take(20)
                 .flatMap(name -> WIKI_SERVICE.fetchArticle(name)
                         .subscribeOn(Schedulers.io()))
                 .flatMap(WIKI_SERVICE::parseMediaWikiText)
-                .flatMap(parsedPage -> Observable.zip(WIKI_SERVICE.rate(parsedPage).subscribeOn(fiveThreads),
-                        WIKI_SERVICE.countWords(parsedPage).subscribeOn(fiveThreads),
+                .flatMap(parsedPage -> Observable.zip(WIKI_SERVICE.rate(parsedPage),
+                        WIKI_SERVICE.countWords(parsedPage),
                         (rating, wordCount) -> String.format(
                                 "{\"rating\": %s, \"wordCount\": %s}",
                                 rating, wordCount)))
+                .subscribeOn(ReactiveUtil.newScheduler(5, "my-scheduler"))
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         () -> {
