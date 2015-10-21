@@ -11,7 +11,7 @@ import static com.senacor.tecco.codecamp.reactive.ReactiveUtil.print;
  * @author Andreas Keefer
  */
 public class WaitMonitor {
-
+    // Test2
     private final LinkedBlockingQueue<Boolean> queue = new LinkedBlockingQueue<>();
     private final long creationTimeStamp = System.currentTimeMillis();
     private Long durationToCompleteInMs = null;
@@ -23,7 +23,7 @@ public class WaitMonitor {
     public void complete() {
         try {
             queue.put(true);
-            synchronized (this){
+            synchronized (this) {
                 complete = true;
                 durationToCompleteInMs = System.currentTimeMillis() - creationTimeStamp;
             }
