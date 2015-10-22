@@ -7,8 +7,8 @@ import rx.Subscription;
 
 import java.util.concurrent.TimeUnit;
 
-import static com.senacor.tecco.codecamp.reactive.ReactiveUtil.getThreadId;
 import static com.senacor.tecco.codecamp.reactive.ReactiveUtil.print;
+import static rx.Observable.zip;
 
 /**
  * @author Andreas Keefer
@@ -26,7 +26,7 @@ public class ZipTest {
                 .take(2, TimeUnit.SECONDS)
                 .map(value -> "second " + value);
 
-        Subscription subscription = Observable.zip(stream1, stream2, (s1, s2) -> "{" + s1 + " + " + s2 + "}")
+        Subscription subscription = zip(stream1, stream2, (s1, s2) -> "{" + s1 + " + " + s2 + "}")
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         monitor::complete);
