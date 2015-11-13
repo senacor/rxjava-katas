@@ -54,7 +54,7 @@ public class SchdulingTest {
                             monitor.complete();
                         });
 
-        monitor.waitFor(1000, TimeUnit.MILLISECONDS);
+        monitor.waitFor(500, TimeUnit.MILLISECONDS);
         subscription.unsubscribe();
     }
 
