@@ -30,7 +30,7 @@ public class Kata7ErrorHandling {
                             print("randomDelay retry by %s second(s)", i);
                             return Observable.timer(i, TimeUnit.SECONDS);
                         }))
-                        // TODO (ak) funktioniert noch nicht: 4. Falls die Retrys nicht helfen beende den Stream mit einem Default
+                // TODO (ak) funktioniert noch nicht: 4. Falls die Retrys nicht helfen beende den Stream mit einem Default
                 // TODO (ak) wenn die retries vorbei sind, dann ist der Aufruf erfolgreich und der default wird ignoriert
                 .onErrorReturn(throwable -> "default on error")
                 .subscribe(next -> print("next: %s", next),
