@@ -1,5 +1,6 @@
 package com.senacor.tecco.codecamp.reactive.katas;
 
+import static com.senacor.tecco.codecamp.reactive.ReactiveUtil.print;
 import static com.senacor.tecco.codecamp.reactive.services.WikiService.WIKI_SERVICE;
 
 import org.junit.Test;
@@ -25,7 +26,10 @@ public class Kata2TransformingObservable {
         //        Observable.just(articleName).flatMap(WIKI_SERVICE::fetchArticle).flatMap(WIKI_SERVICE::parseMediaWikiText).map(ParsedPage::getText)
         //            .subscribe(ReactiveUtil::print, exception -> ReactiveUtil.print("Fehler: %s", exception.getMessage()));
 
-        WIKI_SERVICE.fetchArticle(articleName).flatMap(WIKI_SERVICE::parseMediaWikiText).map(ParsedPage::getText)
+        WIKI_SERVICE.fetchArticle(articleName)
+            .doOnNext(debug -> print("fetchArticle res: %s", debug))
+            .flatMap(WIKI_SERVICE::parseMediaWikiText).map(ParsedPage::getText)
+            .doOnNext(debug -> print("parseMediaWikiText res: %s", debug))
             .subscribe(ReactiveUtil::print, exception -> ReactiveUtil.print("Fehler: %s", exception.getMessage()));
     }
 
