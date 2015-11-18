@@ -21,7 +21,8 @@ public class Kata4FilteringObservable {
 
         WaitMonitor waitMonitor = new WaitMonitor();
 
-        WIKI_SERVICE.wikiArticleBeingReadObservable(500, TimeUnit.MILLISECONDS).filter(name -> name.length() >= 15)
+        WIKI_SERVICE.wikiArticleBeingReadObservable(500, TimeUnit.MILLISECONDS)
+            .filter(name -> name.length() >= 15)
             .subscribe(name -> ReactiveUtil.print("wikiArticleWithAtLeast15Characters=%s", name), Throwable::printStackTrace, waitMonitor::complete);
 
         waitMonitor.waitFor(10, TimeUnit.SECONDS);

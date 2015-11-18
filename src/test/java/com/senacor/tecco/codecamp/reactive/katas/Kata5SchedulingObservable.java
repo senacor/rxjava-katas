@@ -1,10 +1,19 @@
 package com.senacor.tecco.codecamp.reactive.katas;
 
-import org.junit.Test;
+import static com.senacor.tecco.codecamp.reactive.services.WikiService.WIKI_SERVICE;
 
+import java.util.Collections;
 import java.util.concurrent.TimeUnit;
 
-import static com.senacor.tecco.codecamp.reactive.services.WikiService.WIKI_SERVICE;
+import org.apache.commons.lang3.tuple.Pair;
+import org.junit.Test;
+
+import com.senacor.tecco.codecamp.reactive.ReactiveUtil;
+import com.senacor.tecco.codecamp.reactive.WaitMonitor;
+
+import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
+import rx.Observable;
+import rx.schedulers.Schedulers;
 
 /**
  * @author Andreas Keefer
@@ -21,7 +30,54 @@ public class Kata5SchedulingObservable {
         // 5. messe die Laufzeit
         // 6. Füge jetzt an passender Stelle in der Observable-Chain einen Schduler ein um die Ausführungszeit zu verkürzen
 
-        WIKI_SERVICE.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS);
+        WaitMonitor waitMonitor = new WaitMonitor();
+
+        WIKI_SERVICE.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS) //
+            .take(20) //
+            .flatMap(articleName -> Observable.zip( //
+                Observable.just(articleName), //
+                WIKI_SERVICE.fetchArticle(articleName).subscribeOn(Schedulers.io()), //
+                ArticleWithName::new)) //
+            .doOnNext(debug -> ReactiveUtil.print("articleWithName: %s", debug)).flatMap(articleWithName -> {
+            final Observable<ParsedPage> parsedPage = WIKI_SERVICE.parseMediaWikiText(articleWithName.article);
+            return parsedPage.zipWith(Collections.singletonList(articleWithName.name), (page, name) -> Pair.of(name, page));
+        }) //
+            .map(pair -> {
+                ParsedPage parsedPage = pair.getRight();
+                parsedPage.setName(pair.getLeft());
+                return parsedPage;
+            }).flatMap(parsedPage -> { //
+            final Observable<Integer> rateObservable = WIKI_SERVICE.rate(parsedPage); //
+            final Observable<Integer> countWordsObservable = WIKI_SERVICE.countWords(parsedPage); //
+            return Observable
+                .zip(rateObservable, countWordsObservable, (rate, countWords) -> new ArticleInfos(parsedPage.getName(), rate, countWords)); //
+        }).subscribe(articleInfos -> { //
+            ReactiveUtil
+                .print("{\"articleName\": \"%s\", \"rating\": %d, \"wordCount\": %d}", articleInfos.name, articleInfos.rate, articleInfos.count);
+        }, ReactiveUtil::print, waitMonitor::complete);
+
+        waitMonitor.waitFor(30, TimeUnit.SECONDS);
     }
 
+    private class ArticleWithName {
+        private final String article;
+        private final String name;
+
+        public ArticleWithName(String name, String article) {
+            this.name = name;
+            this.article = article;
+        }
+    }
+
+    private class ArticleInfos {
+        private final String name;
+        private final Integer rate;
+        private final Integer count;
+
+        private ArticleInfos(String name, Integer rate, Integer count) {
+            this.name = name;
+            this.rate = rate;
+            this.count = count;
+        }
+    }
 }
