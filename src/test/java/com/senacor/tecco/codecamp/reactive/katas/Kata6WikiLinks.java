@@ -2,7 +2,6 @@ package com.senacor.tecco.codecamp.reactive.katas;
 
 import static com.senacor.tecco.codecamp.reactive.services.WikiService.WIKI_SERVICE;
 
-import java.util.List;
 import java.util.stream.Collectors;
 
 import org.junit.Test;
@@ -28,34 +27,34 @@ public class Kata6WikiLinks {
 
         final String articleName = "Liste der Listen deutschsprachiger Bezeichnungen nicht deutschsprachiger Orte";
 
-        getLinksForArticle(articleName).subscribe( //
-            links -> {
-                links.forEach(link -> getLinksForArticle(link.getText()) //
-                    .subscribe( //
-                        innerLinks -> ReactiveUtil.print("done with %s", link.getText()), //
-                        Throwable::printStackTrace));
-                ReactiveUtil.print("done with %s", articleName);
-            }, Throwable::printStackTrace);
+        getLinksForArticle(articleName) //
+            .doOnNext(link -> getLinksForArticle(link.getText()) //
+                .subscribe(innerLink -> ReactiveUtil.print( //
+                        "done with Sub-Article \"%s\"", innerLink.getText()), //
+                    Throwable::printStackTrace)) //
+            .subscribe(result -> {}, //
+                Throwable::printStackTrace, //
+                () -> ReactiveUtil.print( //
+                    "done with Article \"%s\"", articleName));
     }
 
-    private Observable<List<Link>> getLinksForArticle(String articleName) {
+    private Observable<Link> getLinksForArticle(String articleName) {
         return WIKI_SERVICE.fetchArticle(articleName) //
             .flatMap(WIKI_SERVICE::parseMediaWikiText) //
-            .map(this::getLinksFromPage) //
-            .distinct() //
+            .flatMap(this::getLinksFromPage) //
+            .distinct(Link::getTarget) //
             .doOnNext( //
-                links -> links.forEach( //
-                    link -> ReactiveUtil.print("%s -> %s", articleName, link.getText())));
+                link -> ReactiveUtil.print("%s -> %s", articleName, link.getText()));
     }
 
-    private List<Link> getLinksFromPage(ParsedPage parsedPage) {
-        return parsedPage //
+    private Observable<Link> getLinksFromPage(ParsedPage parsedPage) {
+        return Observable.from(parsedPage //
             .getSections() //
             .stream() //
             .flatMap(section -> section //
                 .getLinks(Link.type.INTERNAL) //
                 .stream()) //
-            .collect(Collectors.toList());
+            .collect(Collectors.toList()));
     }
 
 }
