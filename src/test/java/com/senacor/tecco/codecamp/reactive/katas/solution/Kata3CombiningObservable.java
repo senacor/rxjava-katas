@@ -26,10 +26,6 @@ public class Kata3CombiningObservable {
 
         WaitMonitor waitMonitor = new WaitMonitor();
 
-        Scheduler rateScheduler = newScheduler(3, "rate-scheduler");
-        Scheduler countScheduler = newScheduler(3, "count-scheduler");
-        Scheduler myScheduler = newScheduler(3, "my-scheduler");
-
         final String wikiArticle = "Bilbilis";
         WIKI_SERVICE.fetchArticle(wikiArticle)
                 .flatMap(WIKI_SERVICE::parseMediaWikiText)
@@ -40,7 +36,6 @@ public class Kata3CombiningObservable {
                             "{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
                             wikiArticle, r, wc));
                 })
-                .subscribeOn(myScheduler)
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         () -> waitMonitor.complete());
