@@ -50,9 +50,8 @@ public class ReactiveUtil {
         }).subscribeOn(Schedulers.newThread());
     }
 
-    public static <T> T print(T toPrint, Object... args) {
+    public static void print(Object toPrint, Object... args) {
         System.out.println(getThreadId() + String.format(toPrint.toString(), args));
-        return toPrint;
     }
 
     public static Scheduler newScheduler(int size, String name) {
