@@ -5,10 +5,6 @@ import static com.senacor.tecco.codecamp.reactive.services.WikiService.WIKI_SERV
 import java.util.Collections;
 import java.util.concurrent.TimeUnit;
 
-<<<<<<< Updated upstream
-import org.apache.commons.lang3.tuple.Pair;
-=======
->>>>>>> Stashed changes
 import org.junit.Test;
 
 import com.senacor.tecco.codecamp.reactive.ReactiveUtil;
@@ -40,23 +36,6 @@ public class Kata5SchedulingObservable {
             .flatMap(articleName -> Observable.zip( //
                 Observable.just(articleName), //
                 WIKI_SERVICE.fetchArticle(articleName).subscribeOn(Schedulers.io()), //
-<<<<<<< Updated upstream
-                ArticleWithName::new)) //
-            .doOnNext(debug -> ReactiveUtil.print("articleWithName: %s", debug)).flatMap(articleWithName -> {
-            final Observable<ParsedPage> parsedPage = WIKI_SERVICE.parseMediaWikiText(articleWithName.article);
-            return parsedPage.zipWith(Collections.singletonList(articleWithName.name), (page, name) -> Pair.of(name, page));
-        }) //
-            .map(pair -> {
-                ParsedPage parsedPage = pair.getRight();
-                parsedPage.setName(pair.getLeft());
-                return parsedPage;
-            }).flatMap(parsedPage -> { //
-            final Observable<Integer> rateObservable = WIKI_SERVICE.rate(parsedPage); //
-            final Observable<Integer> countWordsObservable = WIKI_SERVICE.countWords(parsedPage); //
-            return Observable
-                .zip(rateObservable, countWordsObservable, (rate, countWords) -> new ArticleInfos(parsedPage.getName(), rate, countWords)); //
-        }).subscribe(articleInfos -> { //
-=======
                 NamedArticle::new)) //
             .doOnNext(debug -> ReactiveUtil.print("articleWithName: %s", debug)).flatMap(articleWithName -> {
             final Observable<ParsedPage> parsedPage = WIKI_SERVICE.parseMediaWikiText(articleWithName.article);
@@ -75,7 +54,6 @@ public class Kata5SchedulingObservable {
                         countWordsObservable, //
                         (rate, countWords) -> new ArticleInfos(parsedPage.getName(), rate, countWords)); //
             }).subscribe(articleInfos -> { //
->>>>>>> Stashed changes
             ReactiveUtil
                 .print("{\"articleName\": \"%s\", \"rating\": %d, \"wordCount\": %d}", articleInfos.name, articleInfos.rate, articleInfos.count);
         }, ReactiveUtil::print, waitMonitor::complete);
@@ -83,19 +61,11 @@ public class Kata5SchedulingObservable {
         waitMonitor.waitFor(30, TimeUnit.SECONDS);
     }
 
-<<<<<<< Updated upstream
-    private class ArticleWithName {
-        private final String article;
-        private final String name;
-
-        public ArticleWithName(String name, String article) {
-=======
     private class NamedArticle {
         private final String name;
         private final String article;
 
         public NamedArticle(String name, String article) {
->>>>>>> Stashed changes
             this.name = name;
             this.article = article;
         }
