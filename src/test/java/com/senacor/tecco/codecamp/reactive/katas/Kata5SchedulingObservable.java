@@ -12,6 +12,7 @@ import com.senacor.tecco.codecamp.reactive.WaitMonitor;
 
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import rx.Observable;
+import rx.Scheduler;
 import rx.schedulers.Schedulers;
 
 /**
@@ -30,6 +31,7 @@ public class Kata5SchedulingObservable {
         // 6. Füge jetzt an passender Stelle in der Observable-Chain einen Schduler ein um die Ausführungszeit zu verkürzen
 
         WaitMonitor waitMonitor = new WaitMonitor();
+        final Scheduler fiveThreads = ReactiveUtil.newScheduler(5, "my-scheduler");
 
         WIKI_SERVICE.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS) //
             .take(20) //
@@ -37,22 +39,22 @@ public class Kata5SchedulingObservable {
                 Observable.just(articleName), //
                 WIKI_SERVICE.fetchArticle(articleName).subscribeOn(Schedulers.io()), //
                 NamedArticle::new)) //
-            .doOnNext(debug -> ReactiveUtil.print("articleWithName: %s", debug)).flatMap(articleWithName -> {
-            final Observable<ParsedPage> parsedPage = WIKI_SERVICE.parseMediaWikiText(articleWithName.article);
-            return parsedPage.zipWith( //
-                Collections.singletonList(articleWithName.name), //
-                (page, name) -> {
-                    page.setName(name);
-                    return page;
-                });
-        }) //
+            .doOnNext(debug -> ReactiveUtil.print("articleWithName: %s", debug)) //
+            .flatMap(articleWithName -> {
+                final Observable<ParsedPage> parsedPage = WIKI_SERVICE.parseMediaWikiText(articleWithName.article);
+                return parsedPage.zipWith( //
+                    Collections.singletonList(articleWithName.name), //
+                    (page, name) -> {
+                        page.setName(name);
+                        return page;
+                    });
+            }) //
             .flatMap(parsedPage -> { //
-                final Observable<Integer> rateObservable = WIKI_SERVICE.rate(parsedPage);
-                final Observable<Integer> countWordsObservable = WIKI_SERVICE.countWords(parsedPage);
-                return Observable
-                    .zip(rateObservable, //
-                        countWordsObservable, //
-                        (rate, countWords) -> new ArticleInfos(parsedPage.getName(), rate, countWords)); //
+                final Observable<Integer> rateObservable = WIKI_SERVICE.rate(parsedPage).subscribeOn(fiveThreads);
+                final Observable<Integer> countWordsObservable = WIKI_SERVICE.countWords(parsedPage).subscribeOn(fiveThreads);
+                return Observable.zip(rateObservable, //
+                    countWordsObservable, //
+                    (rate, countWords) -> new ArticleInfos(parsedPage.getName(), rate, countWords)); //
             }).subscribe(articleInfos -> { //
             ReactiveUtil
                 .print("{\"articleName\": \"%s\", \"rating\": %d, \"wordCount\": %d}", articleInfos.name, articleInfos.rate, articleInfos.count);
