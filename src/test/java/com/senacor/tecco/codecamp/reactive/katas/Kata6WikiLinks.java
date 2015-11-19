@@ -27,7 +27,7 @@ public class Kata6WikiLinks {
         Scheduler myScheduler = ReactiveUtil.newScheduler(50, "myScheduler");
         final WaitMonitor monitor = new WaitMonitor();
 
-        fetchPageAndLinks("Java", myScheduler);
+        fetchPageAndLinks("Bauzaun", myScheduler);
 
 
         monitor.waitFor(10L, TimeUnit.SECONDS);
