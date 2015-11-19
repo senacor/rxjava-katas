@@ -16,7 +16,11 @@ public class Kata4FilteringObservable {
         // 1. Benutze den WikiService#wikiArticleBeingReadObservable, der einen Stream von WikiArtikel Namen liefert, die gerade gelesen werden
         // 2. Filtere die Name so, dass nur Artikel mit mindestens 15 Buchstaben akzeptiert werden und gib alles auf der Console aus
 
-        WIKI_SERVICE.wikiArticleBeingReadObservable(500, TimeUnit.MILLISECONDS);
+        WIKI_SERVICE.wikiArticleBeingReadObservable(500, TimeUnit.MILLISECONDS)
+                .filter(a -> a.length() > 5)
+                .flatMap(WIKI_SERVICE::fetchArticle)
+                .subscribe(a -> System.out.println(a), e -> e.printStackTrace());
+        Thread.sleep(20000);
     }
 
     @Test
