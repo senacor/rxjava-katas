@@ -2,6 +2,7 @@ package com.senacor.tecco.reactive;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import org.apache.commons.lang.math.RandomUtils;
+import org.apache.commons.lang3.ArrayUtils;
 import rx.Observable;
 import rx.Scheduler;
 import rx.Subscriber;
@@ -51,7 +52,10 @@ public class ReactiveUtil {
     }
 
     public static <T> T print(T toPrint, Object... args) {
-        System.out.println(getThreadId() + String.format(toPrint.toString(), args));
+        System.out.println(getThreadId() + (ArrayUtils.isEmpty(args)
+                ? toPrint.toString()
+                : String.format(toPrint.toString(), args)
+        ));
         return toPrint;
     }
 
