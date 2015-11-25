@@ -16,7 +16,7 @@ public class Kata3TransformObservable {
         // 1) create an observable that emits the plane type
         // 2) use the fetchArticle method to transform the plane type to an Article
         // 3) use the parsePlaneInfo method to transform the article to an planeInfo object
-        // 4) subscribe to the observable and print the plane type
+        // 4) subscribe to the observable and print the plane information
 
     }
 
