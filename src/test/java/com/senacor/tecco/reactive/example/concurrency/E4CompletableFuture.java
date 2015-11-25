@@ -8,7 +8,9 @@ import java.util.concurrent.CompletableFuture;
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
- * @author Dr. Michael Menzel
+ * Retrieves and combines plane information  CompletableFutures
+ *
+ * @author Dr. Michael Menzel, Sencaor Technologies AG
  */
 public class E4CompletableFuture {
 

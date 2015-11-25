@@ -10,11 +10,13 @@ import java.util.function.Consumer;
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
- * @author Dr. Michael Menzel
+ * Retrieves and combines plane information with callbacks
+ *
+ * @author Dr. Michael Menzel, Sencaor Technologies AG
  */
 public class E2Callback {
 
-    // Funktion zur Fehlerbehandlung
+    // error handler function
     Consumer<Exception> exceptionConsumer = (e)->{e.printStackTrace();};
 
     @Test
@@ -22,14 +24,12 @@ public class E2Callback {
         LinkedBlockingQueue<String> planesBuilt = new LinkedBlockingQueue<>();
 
         fetchArticle("Boeing 777", (article777) -> {
-
             fetchArticle("Boeing 747", (article747) -> {
                 String numberBuilt777 = parseNumberBuilt (article777);
                 String numberBuilt747 = parseNumberBuilt (article747);
 
                 try {
                     planesBuilt.put("747: " + numberBuilt747 + " 777: " + numberBuilt777);
-                    //TODO: javaslang
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }

@@ -22,4 +22,20 @@ public class JustTest {
                         Throwable::printStackTrace,
                         () -> print("complete!"));
     }
+
+    @Test
+    public void testJustWithFunctionCall() throws Exception {
+        Observable<String> obs = Observable.just(getValue());
+
+        print("Observable created");
+
+        obs.subscribe(next -> print("next: %s", next),
+                Throwable::printStackTrace,
+                () -> print("complete!"));
+    }
+
+    public String getValue() {
+        print("getValue invoked");
+        return "first";
+    }
 }

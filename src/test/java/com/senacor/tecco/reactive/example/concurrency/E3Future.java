@@ -8,7 +8,9 @@ import java.util.concurrent.Future;
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
- * @author Dr. Michael Menzel
+ * Retrieves and combines plane information  with futures
+ *
+ * @author Dr. Michael Menzel, Sencaor Technologies AG
  */
 public class E3Future {
 

@@ -5,7 +5,7 @@ import net.sourceforge.jwbf.core.contentRep.Article;
 import org.junit.Test;
 
 /**
- * @author Michael Menzel
+ * @author Dr. Michael Menzel
  */
 public class Kata1CreateObservable {
 

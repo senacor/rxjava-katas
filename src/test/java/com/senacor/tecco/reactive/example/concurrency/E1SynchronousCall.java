@@ -5,7 +5,9 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 import org.junit.Test;
 
 /**
- * @author Dr. Michael Menzel
+ * Retrieves and combines plane information with synchronous method calls
+ *
+ * @author Dr. Michael Menzel, Sencaor Technologies AG
  */
 public class E1SynchronousCall {
 

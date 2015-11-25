@@ -5,7 +5,7 @@ import org.junit.Test;
 import rx.Observable;
 
 /**
- * @author Michael Menzel
+ * @author Dr. Michael Menzel
  */
 public class Kata3TransformObservable {
 
@@ -20,13 +20,21 @@ public class Kata3TransformObservable {
 
     }
 
-
+    /**
+     * fetches an article from the wikipedia
+     * @param articleName name of the wikipedia article
+     * @return an article
+     */
     Observable<Article> fetchArticle(String articleName) {
         return WikiService.WIKI_SERVICE_EN.fetchArticle(articleName).
                 map((article) -> new Article(articleName, article));
     }
 
-
+    /**
+     * Extracts plane-related information from an wikipedia article
+     * @param article wikipedia article
+     * @return plane information
+     */
     PlaneInfo parsePlaneInfo(Article article){
         return new PlaneInfo(article.name, WikiService.WIKI_SERVICE_EN.findValue(article.content, "number built"));
     }
