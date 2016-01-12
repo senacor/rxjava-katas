@@ -12,7 +12,6 @@ import rx.schedulers.Schedulers;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
-import static com.senacor.tecco.reactive.ReactiveUtil.newCachedThreadPoolScheduler;
 import static com.senacor.tecco.reactive.ReactiveUtil.newScheduler;
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 import static org.apache.commons.lang3.Validate.notNull;
@@ -23,7 +22,6 @@ import static org.apache.commons.lang3.Validate.notNull;
 public class Kata6WikiLinks {
 
     private static Scheduler scheduler = newScheduler(25, "io");
-    private static Scheduler cachedScheduler = newCachedThreadPoolScheduler("cached");
 
     @Test
     public void linksObservable() throws Exception {

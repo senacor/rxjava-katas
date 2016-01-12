@@ -1,8 +1,7 @@
 package com.senacor.tecco.reactive.katas.codecamp.solution;
 
-import com.senacor.tecco.reactive.WaitMonitor;
-import com.senacor.tecco.reactive.services.WikiService;
 import com.senacor.tecco.reactive.ReactiveUtil;
+import com.senacor.tecco.reactive.WaitMonitor;
 import org.junit.Test;
 import rx.Observable;
 import rx.Scheduler;
@@ -12,6 +11,7 @@ import rx.schedulers.Schedulers;
 import java.util.concurrent.TimeUnit;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
+import static com.senacor.tecco.reactive.services.WikiService.WIKI_SERVICE;
 
 /**
  * @author Andreas Keefer
@@ -30,14 +30,14 @@ public class Kata5SchedulingObservable {
 
         final WaitMonitor monitor = new WaitMonitor();
 
-        Scheduler fiveThreads = ReactiveUtil.newScheduler(50, "my-scheduler");
+        Scheduler fiveThreads = ReactiveUtil.newScheduler(5, "my-scheduler");
 
-        Subscription subscription = WikiService.WIKI_SERVICE.wikiArticleBeingReadObservable(1, TimeUnit.MILLISECONDS)
-                .take(20)//.observeOn(Schedulers.io())
-                .flatMap(name -> WikiService.WIKI_SERVICE.fetchArticle(name).subscribeOn(Schedulers.io()))
-                .flatMap(WikiService.WIKI_SERVICE::parseMediaWikiText)
-                .flatMap(parsedPage -> Observable.zip(WikiService.WIKI_SERVICE.rate(parsedPage).subscribeOn(fiveThreads),
-                        WikiService.WIKI_SERVICE.countWords(parsedPage).subscribeOn(fiveThreads),
+        Subscription subscription = WIKI_SERVICE.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
+                .take(20)
+                .flatMap(name -> WIKI_SERVICE.fetchArticle(name).subscribeOn(Schedulers.io()))
+                .flatMap(WIKI_SERVICE::parseMediaWikiText)
+                .flatMap(parsedPage -> Observable.zip(WIKI_SERVICE.rate(parsedPage).subscribeOn(fiveThreads),
+                        WIKI_SERVICE.countWords(parsedPage).subscribeOn(fiveThreads),
                         (rating, wordCount) -> String.format(
                                 "{\"rating\": %s, \"wordCount\": %s}",
                                 rating, wordCount)))

@@ -227,7 +227,7 @@ public class WikiService {
                 rating = 1;
             }
 
-            System.out.println(String.format("%srate: sarticleSize=%s linksCount=%s prozent=%s runtime=%sms",
+            System.out.println(String.format("%srate: articleSize=%s linksCount=%s prozent=%s runtime=%sms",
                     getThreadId(), articleSize, linksCount, prozent, System.currentTimeMillis() - start));
 
             subscriber.onNext(rating);

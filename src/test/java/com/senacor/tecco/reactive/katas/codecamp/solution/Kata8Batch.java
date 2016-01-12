@@ -3,6 +3,7 @@ package com.senacor.tecco.reactive.katas.codecamp.solution;
 import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.WaitMonitor;
 import org.junit.Test;
+import rx.Subscription;
 
 import java.util.concurrent.TimeUnit;
 
@@ -23,7 +24,7 @@ public class Kata8Batch {
 
         final WaitMonitor monitor = new WaitMonitor();
 
-        WIKI_SERVICE.wikiArticleBeingReadObservableBurst()
+        Subscription subscribe = WIKI_SERVICE.wikiArticleBeingReadObservableBurst()
                 .take(2, TimeUnit.SECONDS)
                 .doOnNext(ReactiveUtil::print)
                 .map(WIKI_SERVICE::save)
@@ -36,6 +37,7 @@ public class Kata8Batch {
                         });
 
         monitor.waitFor(10000, TimeUnit.MILLISECONDS);
+        subscribe.unsubscribe();
     }
 
 
@@ -47,7 +49,7 @@ public class Kata8Batch {
 
         final WaitMonitor monitor = new WaitMonitor();
 
-        WIKI_SERVICE.wikiArticleBeingReadObservableBurst()
+        Subscription subscribe = WIKI_SERVICE.wikiArticleBeingReadObservableBurst()
                 .take(2, TimeUnit.SECONDS)
                 .doOnNext(ReactiveUtil::print)
                 .buffer(500, TimeUnit.MILLISECONDS)
@@ -61,5 +63,6 @@ public class Kata8Batch {
                         });
 
         monitor.waitFor(10000, TimeUnit.MILLISECONDS);
+        subscribe.unsubscribe();
     }
 }
