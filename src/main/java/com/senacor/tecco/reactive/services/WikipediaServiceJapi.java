@@ -13,11 +13,7 @@ public class WikipediaServiceJapi {
     private final Mediawiki wiki;
 
     public WikipediaServiceJapi() {
-        try {
-            wiki = new Mediawiki("http://de.wikipedia.org");
-        } catch (Exception e) {
-            throw new IllegalStateException(e);
-        }
+        this("http://de.wikipedia.org");
     }
 
     public WikipediaServiceJapi(String url) {
