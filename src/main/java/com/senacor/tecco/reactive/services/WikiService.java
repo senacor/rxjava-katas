@@ -25,17 +25,17 @@ public class WikiService {
     public static final WikiService WIKI_SERVICE = new WikiService();
     public static final WikiService WIKI_SERVICE_EN = new WikiService("en");
 
-    private final WikipediaServiceJapi WIKIPEDIA_SERVICE_JAPI;
-    private static final MediaWikiTextParser MEDIA_WIKI_TEXT_PARSER = new MediaWikiTextParser();
+    private final MediaWikiTextParser parser = new MediaWikiTextParser();
+    private final WikipediaServiceJapi wikiServiceJapi;
 
-    private final ExecutorService POOL = Executors.newFixedThreadPool(10);
+    private final ExecutorService pool = Executors.newFixedThreadPool(10);
 
     public WikiService() {
-        WIKIPEDIA_SERVICE_JAPI = new WikipediaServiceJapi();
+        wikiServiceJapi = new WikipediaServiceJapi();
     }
 
     public WikiService(String language) {
-        WIKIPEDIA_SERVICE_JAPI = new WikipediaServiceJapi("http://"+language+".wikipedia.org");
+        wikiServiceJapi = new WikipediaServiceJapi("http://"+language+".wikipedia.org");
     }
 
     /**
@@ -43,15 +43,15 @@ public class WikiService {
      * @return fetches a wiki article as a media wiki formated string
      */
     public Observable<String> fetchArticle(final String wikiArticle) {
-        return WIKIPEDIA_SERVICE_JAPI.getArticleObservable(wikiArticle);
+        return wikiServiceJapi.getArticleObservable(wikiArticle);
     }
 
     /**
      * @param wikiArticle name of the article to be fetched
      * @return fetches a wiki article as a media wiki formated string
      */
-    public String fetchArticleString(final String wikiArticle) {
-        return WIKIPEDIA_SERVICE_JAPI.getArticle(wikiArticle);
+    public String fetchArticleBlocking(final String wikiArticle) {
+        return wikiServiceJapi.getArticle(wikiArticle);
     }
 
     /**
@@ -59,7 +59,12 @@ public class WikiService {
      * @return fetches a wiki article as a media wiki formated string
      */
     public void fetchArticleCallback(final String wikiArticle, Consumer<String> articleConsumer, Consumer<Exception> exceptionConsumer) {
-        articleConsumer.accept(WIKIPEDIA_SERVICE_JAPI.getArticle(wikiArticle));
+        try {
+            String article = wikiServiceJapi.getArticle(wikiArticle);
+            articleConsumer.accept(article);
+        } catch (Exception e) {
+            exceptionConsumer.accept(e);
+        }
     }
 
     /**
@@ -67,7 +72,7 @@ public class WikiService {
      * @return fetches a wiki article as a media wiki formated string
      */
     public Future<String> fetchArticleFuture(final String wikiArticle) {
-        return POOL.submit(() -> WIKIPEDIA_SERVICE_JAPI.getArticle(wikiArticle));
+        return pool.submit(() -> wikiServiceJapi.getArticle(wikiArticle));
     }
 
     /**
@@ -75,7 +80,7 @@ public class WikiService {
      * @return fetches a wiki article as a media wiki formated string
      */
     public CompletableFuture<String> fetchArticleCompletableFuture(final String wikiArticle) {
-        return java.util.concurrent.CompletableFuture.supplyAsync(() -> WIKIPEDIA_SERVICE_JAPI.getArticle(wikiArticle));
+        return java.util.concurrent.CompletableFuture.supplyAsync(() -> wikiServiceJapi.getArticle(wikiArticle));
     }
 
     //---------------------------------------------------------------------------------
@@ -101,7 +106,7 @@ public class WikiService {
      * @return parsed text in structured form
      */
     public Observable<ParsedPage> parseMediaWikiText(String mediaWikiText) {
-        return MEDIA_WIKI_TEXT_PARSER.parseObservable(mediaWikiText);
+        return parser.parseObservable(mediaWikiText);
     }
 
 
@@ -110,7 +115,7 @@ public class WikiService {
      * @return parsed text in structured form
      */
     public ParsedPage parseMediaWikiTextSynchronous(String mediaWikiText) {
-        return MEDIA_WIKI_TEXT_PARSER.parse(mediaWikiText);
+        return parser.parse(mediaWikiText);
     }
 
 
