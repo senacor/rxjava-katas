@@ -12,19 +12,11 @@ import java.util.concurrent.TimeUnit;
  */
 public class WikipediaServiceMediaWikiBot {
 
-    private HttpActionClient client = HttpActionClient.builder() //
+    private final HttpActionClient client = HttpActionClient.builder() //
             .withUrl("http://de.wikipedia.org/w/") //
             .withRequestsPerUnit(50, TimeUnit.SECONDS) //
             .build();
-    private MediaWikiBot wikiBot = new MediaWikiBot(client);
-
-    public static void main(String[] args) {
-        WikipediaServiceMediaWikiBot wikipediaService = new WikipediaServiceMediaWikiBot();
-        Article article = wikipediaService.getArticle("42");
-        System.out.println("title=" + article.getTitle());
-        System.out.println("editor=" + article.getEditor());
-        System.out.println("text=" + article.getText());
-    }
+    private final MediaWikiBot wikiBot = new MediaWikiBot(client);
 
     public Article getArticle(String name) {
         return wikiBot.getArticle(name);
