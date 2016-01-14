@@ -67,12 +67,7 @@ public class WikiService {
      * @return fetches a wiki article as a media wiki formated string
      */
     public Future<String> fetchArticleFuture(final String wikiArticle) {
-        return POOL.submit(new Callable<String>() {
-            @Override
-            public String call() throws Exception {
-                return WIKIPEDIA_SERVICE_JAPI.getArticle(wikiArticle);
-            }
-        });
+        return POOL.submit(() -> WIKIPEDIA_SERVICE_JAPI.getArticle(wikiArticle));
     }
 
     /**
@@ -80,9 +75,7 @@ public class WikiService {
      * @return fetches a wiki article as a media wiki formated string
      */
     public CompletableFuture<String> fetchArticleCompletableFuture(final String wikiArticle) {
-        return java.util.concurrent.CompletableFuture.supplyAsync(() -> {
-            return WIKIPEDIA_SERVICE_JAPI.getArticle(wikiArticle);
-        });
+        return java.util.concurrent.CompletableFuture.supplyAsync(() -> WIKIPEDIA_SERVICE_JAPI.getArticle(wikiArticle));
     }
 
     //---------------------------------------------------------------------------------
