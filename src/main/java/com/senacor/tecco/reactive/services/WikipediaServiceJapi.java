@@ -24,12 +24,6 @@ public class WikipediaServiceJapi {
         }
     }
 
-    public static void main(String[] args) {
-        WikipediaServiceJapi wikipediaService = new WikipediaServiceJapi();
-        String article = wikipediaService.getArticle("42");
-        System.out.println("article=" + article);
-    }
-
     public String getArticle(String name) {
         try {
             final long start = System.currentTimeMillis();
