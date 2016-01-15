@@ -19,18 +19,22 @@ import static org.junit.Assert.assertNotNull;
 /**
  * @author Andreas Keefer
  */
-public class WikiServiceTest {
+public class ServicesTest {
+
+    private final WikiService wikiService = new WikiService("en");
+    private final CountService countService = new CountService();
+    private final RatingService ratingService = new RatingService();
 
     @Test
     public void testFetchArticle() throws Exception {
-        String article = WikiService.WIKI_SERVICE.fetchArticle("42").toBlocking().first();
+        String article = wikiService.fetchArticle("42").toBlocking().first();
         System.out.println(article);
         assertNotNull(article);
     }
 
     @Test
     public void testParseMediaWikiText() throws Exception {
-        ParsedPage parsedPage = WikiService.WIKI_SERVICE.parseMediaWikiText("== Weblinks ==").toBlocking().first();
+        ParsedPage parsedPage = wikiService.parseMediaWikiText("== Weblinks ==").toBlocking().first();
         assertNotNull(parsedPage);
         assertEquals(1, parsedPage.getSections().size());
         assertEquals("Weblinks", parsedPage.getSections().iterator().next().getText());
@@ -47,14 +51,14 @@ public class WikiServiceTest {
     }
 
     private ParsedPage getParseMediaWikiTextWithLink() throws Exception {
-        ParsedPage parsedPage = WikiService.WIKI_SERVICE.parseMediaWikiText("== Weblinks ==\n [[42]]").toBlocking().first();
+        ParsedPage parsedPage = wikiService.parseMediaWikiText("== Weblinks ==\n [[42]]").toBlocking().first();
         return parsedPage;
     }
 
     @Test
     public void testWikiArticleBeingReadObservable() throws Exception {
         final WaitMonitor monitor = new WaitMonitor();
-        Subscription subscription = WikiService.WIKI_SERVICE.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS)
+        Subscription subscription = wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS)
                 .subscribe(article -> {
                             print(article);
                             assertNotNull(article);
@@ -71,20 +75,20 @@ public class WikiServiceTest {
 
         final WaitMonitor monitor = new WaitMonitor();
         final Scheduler scheduler = Schedulers.from(Executors.newFixedThreadPool(5));
-        Subscription subscription = WikiService.WIKI_SERVICE.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
+        Subscription subscription = wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
                 .sample(200, TimeUnit.MILLISECONDS)
                 .doOnNext(name -> print("=> working with " + name))
-                .flatMap((wikiArticle) -> WikiService.WIKI_SERVICE.fetchArticle(wikiArticle)
+                .flatMap((wikiArticle) -> wikiService.fetchArticle(wikiArticle)
                         .subscribeOn(scheduler)
                         .zipWith(Observable.just(wikiArticle), (text, name) -> new String[]{name, text}))
-                .flatMap(array -> WikiService.WIKI_SERVICE.parseMediaWikiText(array[1]).subscribeOn(Schedulers.computation())
+                .flatMap(array -> wikiService.parseMediaWikiText(array[1]).subscribeOn(Schedulers.computation())
                         .zipWith(Observable.just(array[0]), (parsedPage, name) -> new Object[]{name, parsedPage}))
                 .flatMap(array -> {
                     final String articleName = (String) array[0];
                     final ParsedPage parsedPage = (ParsedPage) array[1];
-                    Observable<String> zipjSON = Observable.zip(WikiService.WIKI_SERVICE.rate(parsedPage)
+                    Observable<String> zipjSON = Observable.zip(ratingService.rate(parsedPage)
                             .subscribeOn(scheduler)
-                            , WikiService.WIKI_SERVICE.countWords(parsedPage)
+                            , countService.countWords(parsedPage)
                             .subscribeOn(scheduler)
                             , (rating, wordCount) -> String.format("{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
                             articleName, rating, wordCount));
@@ -104,28 +108,28 @@ public class WikiServiceTest {
     @Test
     public void testRate() throws Exception {
         ParsedPage parsedPage = getParseMediaWikiTextWithLink();
-        Integer rating = WikiService.WIKI_SERVICE.rate(parsedPage).toBlocking().first();
+        Integer rating = ratingService.rate(parsedPage).toBlocking().first();
         assertEquals(5, rating.intValue());
 
-        parsedPage = WikiService.WIKI_SERVICE.parseMediaWikiText("== Weblinks ==\n[[42]] [[42]]").toBlocking().first();
-        rating = WikiService.WIKI_SERVICE.rate(parsedPage).toBlocking().first();
+        parsedPage = wikiService.parseMediaWikiText("== Weblinks ==\n[[42]] [[42]]").toBlocking().first();
+        rating = ratingService.rate(parsedPage).toBlocking().first();
         assertEquals(5, rating.intValue());
 
-        parsedPage = WikiService.WIKI_SERVICE.parseMediaWikiText("== Weblinks ==").toBlocking().first();
-        rating = WikiService.WIKI_SERVICE.rate(parsedPage).toBlocking().first();
+        parsedPage = wikiService.parseMediaWikiText("== Weblinks ==").toBlocking().first();
+        rating = ratingService.rate(parsedPage).toBlocking().first();
         assertEquals(0, rating.intValue());
     }
 
     @Test
     public void testCountWords() throws Exception {
         ParsedPage parsedPage = getParseMediaWikiTextWithLink();
-        Assert.assertEquals(Integer.valueOf(2), WikiService.WIKI_SERVICE.countWords(parsedPage).toBlocking().first());
+        Assert.assertEquals(Integer.valueOf(2), countService.countWords(parsedPage).toBlocking().first());
     }
 
     @Test
     public void testWikiArticleBeingReadObservableWithRandomErrors() throws Exception {
         final WaitMonitor monitor = new WaitMonitor();
-        Subscription subscription = WikiService.WIKI_SERVICE.wikiArticleBeingReadObservableWithRandomErrors()
+        Subscription subscription = wikiService.wikiArticleBeingReadObservableWithRandomErrors()
                 .subscribe(articleName -> {
                             print(articleName);
                             assertNotNull(articleName);
@@ -144,7 +148,7 @@ public class WikiServiceTest {
     @Test
     public void testWikiArticleBeingReadObservableBurst() throws Exception {
         final WaitMonitor monitor = new WaitMonitor();
-        Subscription subscription = WikiService.WIKI_SERVICE.wikiArticleBeingReadObservableBurst()
+        Subscription subscription = wikiService.wikiArticleBeingReadObservableBurst()
                 .take(2, TimeUnit.SECONDS)
                 .subscribe(articleName -> {
                             print(articleName);

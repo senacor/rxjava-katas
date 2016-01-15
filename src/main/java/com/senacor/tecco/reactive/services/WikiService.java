@@ -4,38 +4,34 @@ import com.senacor.tecco.reactive.ReactiveUtil;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import rx.Observable;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
-import java.util.StringTokenizer;
-import java.util.concurrent.*;
-import java.util.function.Consumer;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
 
-import static com.senacor.tecco.reactive.ReactiveUtil.*;
+import static com.senacor.tecco.reactive.ReactiveUtil.getThreadId;
+import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
  * @author Andreas Keefer
  */
 public class WikiService {
 
-    public static final WikiService WIKI_SERVICE = new WikiService();
-    public static final WikiService WIKI_SERVICE_EN = new WikiService("en");
-
     private final MediaWikiTextParser parser = new MediaWikiTextParser();
     private final WikipediaServiceJapi wikiServiceJapi;
 
-    private final ExecutorService pool = Executors.newFixedThreadPool(10);
+    private final ExecutorService pool = Executors.newFixedThreadPool(4);
 
     public WikiService() {
         wikiServiceJapi = new WikipediaServiceJapi();
     }
 
     public WikiService(String language) {
-        wikiServiceJapi = new WikipediaServiceJapi("http://"+language+".wikipedia.org");
+        wikiServiceJapi = new WikipediaServiceJapi("http://" + language + ".wikipedia.org");
     }
 
     /**
@@ -58,19 +54,6 @@ public class WikiService {
      * @param wikiArticle name of the article to be fetched
      * @return fetches a wiki article as a media wiki formated string
      */
-    public void fetchArticleCallback(final String wikiArticle, Consumer<String> articleConsumer, Consumer<Exception> exceptionConsumer) {
-        try {
-            String article = wikiServiceJapi.getArticle(wikiArticle);
-            articleConsumer.accept(article);
-        } catch (Exception e) {
-            exceptionConsumer.accept(e);
-        }
-    }
-
-    /**
-     * @param wikiArticle name of the article to be fetched
-     * @return fetches a wiki article as a media wiki formated string
-     */
     public Future<String> fetchArticleFuture(final String wikiArticle) {
         return pool.submit(() -> wikiServiceJapi.getArticle(wikiArticle));
     }
@@ -80,23 +63,7 @@ public class WikiService {
      * @return fetches a wiki article as a media wiki formated string
      */
     public CompletableFuture<String> fetchArticleCompletableFuture(final String wikiArticle) {
-        return java.util.concurrent.CompletableFuture.supplyAsync(() -> wikiServiceJapi.getArticle(wikiArticle));
-    }
-
-    //---------------------------------------------------------------------------------
-
-    /**
-     * @param text
-     * @return
-     */
-    public String findValue(String text, String key) {
-        Pattern pattern = Pattern.compile(key+" ?= ?([\\d,]*)");
-        Matcher matcher = pattern.matcher(text);
-        if (matcher.find()) {
-            return matcher.group(1);
-        } else {
-            return null;
-        }
+        return java.util.concurrent.CompletableFuture.supplyAsync(() -> wikiServiceJapi.getArticle(wikiArticle), pool);
     }
 
     //---------------------------------------------------------------------------------
@@ -119,6 +86,14 @@ public class WikiService {
     }
 
 
+    public Future<ParsedPage> parseMediaWikiTextFuture(String mediaWikiText) {
+        return pool.submit(() -> parseMediaWikiTextSynchronous(mediaWikiText));
+    }
+
+
+    public CompletableFuture<ParsedPage> parseMediaWikiTextCompletableFuture(String mediaWikiText) {
+        return CompletableFuture.supplyAsync(() -> parseMediaWikiTextSynchronous(mediaWikiText), pool);
+    }
 
     private static final List<String> WIKI_ARTICLES = Arrays.asList(
             "42", "Foo", "Korea", "Gaya", "Ostasien", "China", "Russland", "Gelbes_Meer",
@@ -177,102 +152,5 @@ public class WikiService {
             }
             return article;
         });
-    }
-
-    /**
-     * @param parsedPage parsed page
-     * @return Sterne Bewertung von 0 bis 5
-     */
-    public Observable<Integer> rate(final ParsedPage parsedPage) {
-        return Observable.create(subscriber -> {
-            long start = System.currentTimeMillis();
-
-            if (null == parsedPage) {
-                subscriber.onError(new IllegalStateException("parsedPage must not be null"));
-                return;
-            }
-            int articleSize = parsedPage.getText().length();
-            int linksCount = parsedPage.getLinks().size();
-
-            fixedDelay(30);
-
-            if (0 == linksCount) {
-                // 0 sterne
-                subscriber.onNext(0);
-                subscriber.onCompleted();
-                return;
-            }
-
-            final BigDecimal prozent = BigDecimal.valueOf(linksCount)
-                    .divide(BigDecimal.valueOf(articleSize), 3, RoundingMode.HALF_UP)
-                    .multiply(BigDecimal.valueOf(100));
-
-            final int rating;
-            if (prozent.compareTo(BigDecimal.valueOf(0.8)) > 0) {
-                // 5 sterne
-                rating = 5;
-            } else if (prozent.compareTo(BigDecimal.valueOf(0.5)) > 0) {
-                // 4 sterne
-                rating = 4;
-            } else if (prozent.compareTo(BigDecimal.valueOf(0.3)) > 0) {
-                // 3 sterne
-                rating = 3;
-            } else if (prozent.compareTo(BigDecimal.valueOf(0.1)) > 0) {
-                // 2 sterne
-                rating = 2;
-            } else {
-                // 1 stern
-                rating = 1;
-            }
-
-            System.out.println(String.format("%srate: articleSize=%s linksCount=%s prozent=%s runtime=%sms",
-                    getThreadId(), articleSize, linksCount, prozent, System.currentTimeMillis() - start));
-
-            subscriber.onNext(rating);
-            subscriber.onCompleted();
-        });
-    }
-
-    /**
-     * @param parsedPage parsed page
-     * @return Anzahl Woerter im Text
-     */
-    public Observable<Integer> countWords(final ParsedPage parsedPage) {
-        return Observable.create(subscriber -> {
-            long start = System.currentTimeMillis();
-            if (null == parsedPage) {
-                subscriber.onError(new IllegalStateException("parsedPage must not be null"));
-                return;
-            }
-            String text = parsedPage.getText();
-            fixedDelay(30);
-            int wordCount = new StringTokenizer(text, " ").countTokens();
-            System.out.println(String.format("%scountWords: count=%s runtime=%sms",
-                    getThreadId(), wordCount, System.currentTimeMillis() - start));
-            subscriber.onNext(wordCount);
-            subscriber.onCompleted();
-        });
-    }
-
-    /**
-     * @param wikiArticle article
-     * @return runtime
-     */
-    public long save(String wikiArticle) {
-        print("save(%s)", wikiArticle);
-        int delay = 10;
-        fixedDelay(delay);
-        return delay;
-    }
-
-    /**
-     * @param wikiArticle article
-     * @return runtime
-     */
-    public long save(Iterable<String> wikiArticle) {
-        print("save(%s)", wikiArticle);
-        int delay = 15;
-        fixedDelay(delay);
-        return delay;
     }
 }

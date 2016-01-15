@@ -10,6 +10,7 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
  * @author Dr. Michael Menzel
  */
 public class Kata2TransformObservable {
+    private final WikiService wikiService = new WikiService("en");
 
     @Test
     public void createAnObservable() throws Exception {
@@ -28,7 +29,7 @@ public class Kata2TransformObservable {
      * @return an article
      */
     Observable<Article> fetchArticle(String articleName) {
-        return WikiService.WIKI_SERVICE_EN.fetchArticle(articleName).
+        return wikiService.fetchArticle(articleName).
                 map((article) -> new Article(articleName, article));
     }
 

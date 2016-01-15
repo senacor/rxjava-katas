@@ -10,6 +10,8 @@ import rx.schedulers.Schedulers;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * @author Andreas Keefer
@@ -57,6 +59,15 @@ public class ReactiveUtil {
                 : String.format(toPrint.toString(), args)
         ));
         return toPrint;
+    }
+
+    public static String findValue(String text, String key) {
+        Pattern pattern = Pattern.compile(key+" ?= ?([\\d,]*)");
+        Matcher matcher = pattern.matcher(text);
+        if (matcher.find()) {
+            return matcher.group(1);
+        }
+        throw new IllegalArgumentException();
     }
 
     public static Scheduler newScheduler(int size, String name) {

@@ -8,6 +8,8 @@ import org.junit.Test;
  */
 public class Kata8Batch {
 
+    private final WikiService wikiService = new WikiService();
+
     @Test
     public void withoutBatch() throws Exception {
         // 1. Benutze den WikiService#wikiArticleBeingReadObservableBurst, der einen Stream von WikiArtikel
@@ -16,7 +18,7 @@ public class Kata8Batch {
         // 3. speichere die Artikel ab (WikiService.save(String)). Der service gibt die laufzeit zurück
         // 4. summiere die laufzeit der save calls und gib dies aus
 
-        WikiService.WIKI_SERVICE.wikiArticleBeingReadObservableBurst();
+        wikiService.wikiArticleBeingReadObservableBurst();
     }
 
 
@@ -27,6 +29,6 @@ public class Kata8Batch {
         //    nicht warten
         //    bis der Stream alle artikel geliefert hat und dann alles in einem grossen batch abspeichern
 
-        WikiService.WIKI_SERVICE.wikiArticleBeingReadObservableBurst();
+        wikiService.wikiArticleBeingReadObservableBurst();
     }
 }

@@ -8,6 +8,8 @@ import org.junit.Test;
  */
 public class Kata7ErrorHandling {
 
+    private final WikiService wikiService = new WikiService();
+
     @Test
     public void errors() throws Exception {
         // 1. Benutze den WikiService#wikiArticleBeingReadObservableWithRandomErrors, der einen Stream von WikiArtikel Namen liefert, die gerade gelesen werden.
@@ -15,7 +17,7 @@ public class Kata7ErrorHandling {
         // 3. Behandle auftretende Fehler: Versuche zuerst einen paar Retrys mit steigender pause dazwischen
         // 4. Falls die Retrys nicht helfen beende den Stream mit einem Default
 
-        WikiService.WIKI_SERVICE.wikiArticleBeingReadObservableWithRandomErrors();
+        wikiService.wikiArticleBeingReadObservableWithRandomErrors();
     }
 
 }

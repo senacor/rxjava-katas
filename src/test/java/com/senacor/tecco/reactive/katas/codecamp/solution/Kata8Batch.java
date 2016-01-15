@@ -2,18 +2,22 @@ package com.senacor.tecco.reactive.katas.codecamp.solution;
 
 import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.WaitMonitor;
+import com.senacor.tecco.reactive.services.PersistService;
+import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
 import rx.Subscription;
 
 import java.util.concurrent.TimeUnit;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
-import static com.senacor.tecco.reactive.services.WikiService.WIKI_SERVICE;
 
 /**
  * @author Andreas Keefer
  */
 public class Kata8Batch {
+
+    private final WikiService wikiService = new WikiService();
+    private final PersistService persistService = new PersistService();
 
     @Test
     public void withoutBatch() throws Exception {
@@ -24,10 +28,10 @@ public class Kata8Batch {
 
         final WaitMonitor monitor = new WaitMonitor();
 
-        Subscription subscribe = WIKI_SERVICE.wikiArticleBeingReadObservableBurst()
+        Subscription subscribe = wikiService.wikiArticleBeingReadObservableBurst()
                 .take(2, TimeUnit.SECONDS)
                 .doOnNext(ReactiveUtil::print)
-                .map(WIKI_SERVICE::save)
+                .map(persistService::save)
                 .reduce((l, r) -> l + r)
                 .subscribe(next -> print("save runtime (SUM): %s ms", next),
                         Throwable::printStackTrace,
@@ -49,11 +53,11 @@ public class Kata8Batch {
 
         final WaitMonitor monitor = new WaitMonitor();
 
-        Subscription subscribe = WIKI_SERVICE.wikiArticleBeingReadObservableBurst()
+        Subscription subscribe = wikiService.wikiArticleBeingReadObservableBurst()
                 .take(2, TimeUnit.SECONDS)
                 .doOnNext(ReactiveUtil::print)
                 .buffer(500, TimeUnit.MILLISECONDS)
-                .map(WIKI_SERVICE::save)
+                .map(persistService::save)
                 .reduce((l, r) -> l + r)
                 .subscribe(next -> print("save runtime (SUM): %s ms", next),
                         Throwable::printStackTrace,

@@ -22,6 +22,7 @@ import static org.apache.commons.lang3.Validate.notNull;
 public class Kata6WikiLinks {
 
     private static Scheduler scheduler = newScheduler(25, "io");
+    private final WikiService wikiService = new WikiService();
 
     @Test
     public void linksObservable() throws Exception {
@@ -47,11 +48,11 @@ public class Kata6WikiLinks {
         monitor.waitFor(30, TimeUnit.SECONDS);
     }
 
-    private static Observable<WikiLink> getLinks(final String wikiArticle) {
+    private Observable<WikiLink> getLinks(final String wikiArticle) {
         //print("getLinks fuer Artikel: %s", wikiArticle);
-        return WikiService.WIKI_SERVICE.fetchArticle((wikiArticle))
+        return wikiService.fetchArticle((wikiArticle))
                 .subscribeOn(scheduler)
-                .flatMap(WikiService.WIKI_SERVICE::parseMediaWikiText)
+                .flatMap(wikiService::parseMediaWikiText)
                 .subscribeOn(Schedulers.computation())
                 .filter(parsedPage -> parsedPage != null)
                 .flatMapIterable(ParsedPage::getSections)

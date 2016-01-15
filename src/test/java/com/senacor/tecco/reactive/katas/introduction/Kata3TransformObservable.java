@@ -1,5 +1,6 @@
 package com.senacor.tecco.reactive.katas.introduction;
 
+import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
 import rx.Observable;
@@ -8,6 +9,7 @@ import rx.Observable;
  * @author Dr. Michael Menzel
  */
 public class Kata3TransformObservable {
+    private final WikiService wikiService = new WikiService("en");
 
     @Test
     public void createAnObservable() throws Exception {
@@ -26,7 +28,7 @@ public class Kata3TransformObservable {
      * @return an article
      */
     Observable<Article> fetchArticle(String articleName) {
-        return WikiService.WIKI_SERVICE_EN.fetchArticle(articleName).
+        return wikiService.fetchArticle(articleName).
                 map((article) -> new Article(articleName, article));
     }
 
@@ -36,7 +38,7 @@ public class Kata3TransformObservable {
      * @return plane information
      */
     PlaneInfo parsePlaneInfo(Article article){
-        return new PlaneInfo(article.name, WikiService.WIKI_SERVICE_EN.findValue(article.content, "number built"));
+        return new PlaneInfo(article.name, ReactiveUtil.findValue(article.content, "number built"));
     }
 
     class Article{

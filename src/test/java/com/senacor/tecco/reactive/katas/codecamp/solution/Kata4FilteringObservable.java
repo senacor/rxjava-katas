@@ -1,18 +1,20 @@
 package com.senacor.tecco.reactive.katas.codecamp.solution;
 
 import com.senacor.tecco.reactive.WaitMonitor;
+import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
 import rx.Subscription;
 
 import java.util.concurrent.TimeUnit;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
-import static com.senacor.tecco.reactive.services.WikiService.WIKI_SERVICE;
 
 /**
  * @author Andreas Keefer
  */
 public class Kata4FilteringObservable {
+
+    private final WikiService wikiService = new WikiService();
 
     @Test
     public void filterObservable() throws Exception {
@@ -21,7 +23,7 @@ public class Kata4FilteringObservable {
 
         final WaitMonitor monitor = new WaitMonitor();
 
-        Subscription subscription = WIKI_SERVICE.wikiArticleBeingReadObservable(500, TimeUnit.MILLISECONDS)
+        Subscription subscription = wikiService.wikiArticleBeingReadObservable(500, TimeUnit.MILLISECONDS)
                 .filter(name -> name.length() >= 15)
                 .subscribe(next -> print("PASS THROUGH: %s", next),
                         Throwable::printStackTrace,
@@ -42,7 +44,7 @@ public class Kata4FilteringObservable {
 
         final WaitMonitor monitor = new WaitMonitor();
 
-        Subscription subscription = WIKI_SERVICE.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS)
+        Subscription subscription = wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS)
                 .sample(500, TimeUnit.MILLISECONDS)
                 .subscribe(next -> print("PASS THROUGH: %s", next),
                         Throwable::printStackTrace,

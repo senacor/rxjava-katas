@@ -15,6 +15,8 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
  */
 public class Kata7ErrorHandling {
 
+    private final WikiService wikiService = new WikiService();
+
     @Test
     public void errors() throws Exception {
         // 1. Benutze den WikiService#wikiArticleBeingReadObservableWithRandomErrors, der einen Stream von WikiArtikel Namen liefert, die gerade gelesen werden.
@@ -23,7 +25,7 @@ public class Kata7ErrorHandling {
         // 4. Falls die Retrys nicht helfen beende den Stream mit einem Default
 
         final WaitMonitor monitor = new WaitMonitor();
-        Subscription subscription = WikiService.WIKI_SERVICE.wikiArticleBeingReadObservableWithRandomErrors()
+        Subscription subscription = wikiService.wikiArticleBeingReadObservableWithRandomErrors()
                 .debounce(50, TimeUnit.MILLISECONDS)
                 .retryWhen(attempts -> attempts.zipWith(Observable.range(1, 2), (n, i) -> i)
                         .flatMap(i -> {
