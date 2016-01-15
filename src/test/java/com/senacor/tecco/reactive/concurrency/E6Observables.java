@@ -55,7 +55,7 @@ public class E6Observables {
     }
 
     private Observable<ParsedPage> parsePage(String article777) {
-        return wikiService.parseMediaWikiText(article777);
+        return wikiService.parseMediaWikiTextObservable(article777);
     }
 
     private Observable<Integer> countWords(ParsedPage parsedPage) {

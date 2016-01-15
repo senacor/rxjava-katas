@@ -43,7 +43,7 @@ public class E1Synchronous {
     }
 
     private ParsedPage parsePage(String article777) {
-        return wikiService.parseMediaWikiTextSynchronous(article777);
+        return wikiService.parseMediaWikiText(article777);
     }
 
     private int countWords(ParsedPage parsedPage) {

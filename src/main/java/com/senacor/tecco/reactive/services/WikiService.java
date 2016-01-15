@@ -74,7 +74,7 @@ public class WikiService {
      * @param mediaWikiText Media Wiki formated text
      * @return parsed text in structured form
      */
-    public Observable<ParsedPage> parseMediaWikiText(String mediaWikiText) {
+    public Observable<ParsedPage> parseMediaWikiTextObservable(String mediaWikiText) {
         return parser.parseObservable(mediaWikiText);
     }
 
@@ -83,18 +83,18 @@ public class WikiService {
      * @param mediaWikiText Media Wiki formated text
      * @return parsed text in structured form
      */
-    public ParsedPage parseMediaWikiTextSynchronous(String mediaWikiText) {
+    public ParsedPage parseMediaWikiText(String mediaWikiText) {
         return parser.parse(mediaWikiText);
     }
 
 
     public Future<ParsedPage> parseMediaWikiTextFuture(String mediaWikiText) {
-        return pool.submit(() -> parseMediaWikiTextSynchronous(mediaWikiText));
+        return pool.submit(() -> parseMediaWikiText(mediaWikiText));
     }
 
 
     public CompletableFuture<ParsedPage> parseMediaWikiTextCompletableFuture(String mediaWikiText) {
-        return CompletableFuture.supplyAsync(() -> parseMediaWikiTextSynchronous(mediaWikiText), pool);
+        return CompletableFuture.supplyAsync(() -> parseMediaWikiText(mediaWikiText), pool);
     }
 
     private static final List<String> WIKI_ARTICLES = Arrays.asList(

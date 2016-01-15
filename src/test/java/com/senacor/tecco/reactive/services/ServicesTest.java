@@ -34,7 +34,7 @@ public class ServicesTest {
 
     @Test
     public void testParseMediaWikiText() throws Exception {
-        ParsedPage parsedPage = wikiService.parseMediaWikiText("== Weblinks ==").toBlocking().first();
+        ParsedPage parsedPage = wikiService.parseMediaWikiTextObservable("== Weblinks ==").toBlocking().first();
         assertNotNull(parsedPage);
         assertEquals(1, parsedPage.getSections().size());
         assertEquals("Weblinks", parsedPage.getSections().iterator().next().getText());
@@ -51,7 +51,7 @@ public class ServicesTest {
     }
 
     private ParsedPage getParseMediaWikiTextWithLink() throws Exception {
-        ParsedPage parsedPage = wikiService.parseMediaWikiText("== Weblinks ==\n [[42]]").toBlocking().first();
+        ParsedPage parsedPage = wikiService.parseMediaWikiTextObservable("== Weblinks ==\n [[42]]").toBlocking().first();
         return parsedPage;
     }
 
@@ -81,7 +81,7 @@ public class ServicesTest {
                 .flatMap((wikiArticle) -> wikiService.fetchArticleObservable(wikiArticle)
                         .subscribeOn(scheduler)
                         .zipWith(Observable.just(wikiArticle), (text, name) -> new String[]{name, text}))
-                .flatMap(array -> wikiService.parseMediaWikiText(array[1]).subscribeOn(Schedulers.computation())
+                .flatMap(array -> wikiService.parseMediaWikiTextObservable(array[1]).subscribeOn(Schedulers.computation())
                         .zipWith(Observable.just(array[0]), (parsedPage, name) -> new Object[]{name, parsedPage}))
                 .flatMap(array -> {
                     final String articleName = (String) array[0];
@@ -111,11 +111,11 @@ public class ServicesTest {
         Integer rating = ratingService.rateObservable(parsedPage).toBlocking().first();
         assertEquals(5, rating.intValue());
 
-        parsedPage = wikiService.parseMediaWikiText("== Weblinks ==\n[[42]] [[42]]").toBlocking().first();
+        parsedPage = wikiService.parseMediaWikiTextObservable("== Weblinks ==\n[[42]] [[42]]").toBlocking().first();
         rating = ratingService.rateObservable(parsedPage).toBlocking().first();
         assertEquals(5, rating.intValue());
 
-        parsedPage = wikiService.parseMediaWikiText("== Weblinks ==").toBlocking().first();
+        parsedPage = wikiService.parseMediaWikiTextObservable("== Weblinks ==").toBlocking().first();
         rating = ratingService.rateObservable(parsedPage).toBlocking().first();
         assertEquals(0, rating.intValue());
     }

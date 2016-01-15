@@ -31,7 +31,7 @@ public class Kata3CombiningObservable {
 
         final String wikiArticle = "Bilbilis";
         wikiService.fetchArticleObservable(wikiArticle)
-                .flatMap(wikiService::parseMediaWikiText)
+                .flatMap(wikiService::parseMediaWikiTextObservable)
                 .flatMap(parsedPage -> {
                     Observable<Integer> rating = ratingService.rateObservable(parsedPage);
                     Observable<Integer> wordCount = countService.countWordsObervable(parsedPage);
