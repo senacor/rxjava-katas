@@ -1,5 +1,6 @@
 package com.senacor.tecco.reactive.services;
 
+import com.senacor.tecco.reactive.services.integration.WikipediaServiceMediaWikiBot;
 import net.sourceforge.jwbf.core.contentRep.Article;
 import org.junit.Test;
 

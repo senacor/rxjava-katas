@@ -1,4 +1,4 @@
-package com.senacor.tecco.reactive.services;
+package com.senacor.tecco.reactive.services.integration;
 
 import net.sourceforge.jwbf.core.actions.HttpActionClient;
 import net.sourceforge.jwbf.core.contentRep.Article;

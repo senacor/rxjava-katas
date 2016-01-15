@@ -1,5 +1,6 @@
 package com.senacor.tecco.reactive.services;
 
+import com.senacor.tecco.reactive.services.integration.MediaWikiTextParser;
 import de.tudarmstadt.ukp.wikipedia.parser.Link;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import de.tudarmstadt.ukp.wikipedia.parser.Section;

@@ -1,4 +1,4 @@
-package com.senacor.tecco.reactive.services;
+package com.senacor.tecco.reactive.services.integration;
 
 import com.bitplan.mediawiki.japi.Mediawiki;
 import rx.Observable;

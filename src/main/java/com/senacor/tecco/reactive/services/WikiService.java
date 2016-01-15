@@ -1,6 +1,8 @@
 package com.senacor.tecco.reactive.services;
 
 import com.senacor.tecco.reactive.ReactiveUtil;
+import com.senacor.tecco.reactive.services.integration.MediaWikiTextParser;
+import com.senacor.tecco.reactive.services.integration.WikipediaServiceJapi;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import rx.Observable;
 

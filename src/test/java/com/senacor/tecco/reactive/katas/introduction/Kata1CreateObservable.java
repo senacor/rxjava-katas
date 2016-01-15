@@ -1,11 +1,6 @@
 package com.senacor.tecco.reactive.katas.introduction;
 
-import com.senacor.tecco.reactive.services.WikipediaServiceMediaWikiBot;
-import net.sourceforge.jwbf.core.contentRep.Article;
 import org.junit.Test;
-import rx.Observable;
-
-import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
  * @author Dr. Michael Menzel

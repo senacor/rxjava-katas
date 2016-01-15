@@ -1,6 +1,6 @@
 package com.senacor.tecco.reactive.katas.codecamp.solution;
 
-import com.senacor.tecco.reactive.services.WikipediaServiceMediaWikiBot;
+import com.senacor.tecco.reactive.services.integration.WikipediaServiceMediaWikiBot;
 import com.senacor.tecco.reactive.ReactiveUtil;
 import net.sourceforge.jwbf.core.contentRep.Article;
 import org.junit.Test;

@@ -1,5 +1,6 @@
 package com.senacor.tecco.reactive.services;
 
+import com.senacor.tecco.reactive.services.integration.WikipediaServiceJapi;
 import org.junit.Test;
 
 public class WikipediaServiceJapiTest {
