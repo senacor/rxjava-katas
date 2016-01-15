@@ -9,6 +9,7 @@ import io.vertx.core.eventbus.MessageCodec;
 import io.vertx.core.logging.Logger;
 import io.vertx.core.logging.LoggerFactory;
 import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.nustaq.serialization.FSTConfiguration;
 
 import java.io.IOException;
 import java.io.Serializable;
@@ -22,7 +23,8 @@ public class CodecVerticle extends AbstractVerticle {
 
     @Override
     public void start() throws Exception {
-        vertx.eventBus().registerDefaultCodec(Person.class, new PersonMessageCodec());
+        vertx.eventBus().registerDefaultCodec(Person.class, new PersonJacksonMessageCodec());
+        //vertx.eventBus().registerDefaultCodec(Person.class, new PersonFSTMessageCodec());
 
         vertx.setPeriodic(1000, msg -> {
             vertx.eventBus().publish("codec-verticle", new Person("Hnas", 44));
@@ -62,14 +64,50 @@ public class CodecVerticle extends AbstractVerticle {
         }
     }
 
-    public static final class PersonMessageCodec implements MessageCodec<Person, Person> {
+    public static final class PersonFSTMessageCodec implements MessageCodec<Person, Person> {
+
+        static FSTConfiguration conf = FSTConfiguration.createDefaultConfiguration();
+
+        @Override
+        public void encodeToWire(Buffer buffer, Person person) {
+            byte[] bytes = conf.asByteArray(person);
+            buffer.appendInt(bytes.length);
+            buffer.appendBytes(bytes);
+        }
+
+        @Override
+        public Person decodeFromWire(int pos, Buffer buffer) {
+            int length = buffer.getInt(pos);
+            byte[] bytes = buffer.getBytes(pos + 4, pos + 4 + length);
+            return (Person) conf.asObject(bytes);
+        }
+
+        @Override
+        public Person transform(Person person) {
+            Buffer buffer = new BufferFactoryImpl().buffer();
+            encodeToWire(buffer, person);
+            Person decodeFromWire = decodeFromWire(0, buffer);
+            return decodeFromWire;
+        }
+
+        @Override
+        public String name() {
+            return "PersonFSTMessageCodec";
+        }
+
+        @Override
+        public byte systemCodecID() {
+            return -1;
+        }
+    }
+
+    public static final class PersonJacksonMessageCodec implements MessageCodec<Person, Person> {
 
         @Override
         public void encodeToWire(Buffer buffer, Person o) {
             try {
                 ObjectMapper mapper = new ObjectMapper();
                 byte[] bytes = mapper.writeValueAsBytes(o);
-                log.info("encodeToWire:" + mapper.writeValueAsString(o));
                 buffer.appendInt(bytes.length);
                 buffer.appendBytes(bytes);
             } catch (JsonProcessingException e) {
@@ -103,7 +141,7 @@ public class CodecVerticle extends AbstractVerticle {
 
         @Override
         public String name() {
-            return "Person";
+            return "PersonJacksonMessageCodec";
         }
 
         @Override

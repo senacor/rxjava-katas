@@ -23,6 +23,12 @@ public class PingVerticle extends AbstractVerticle {
                     log.info("Received no respone");
                 }
             });
+            try {
+                // Simulate a delay
+                Thread.sleep(450L);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         });
         vertx.setPeriodic(2000, msg -> {
             vertx.eventBus().publish("pingToLog", "ping");

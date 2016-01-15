@@ -3,8 +3,6 @@ package com.senacor.tecco.reactive.vertx;
 import io.vertx.test.core.VertxTestBase;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 /**
  * @author Andreas Keefer
  */
