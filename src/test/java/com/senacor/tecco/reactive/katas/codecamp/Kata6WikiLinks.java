@@ -17,7 +17,7 @@ public class Kata6WikiLinks {
         // 4. miss die Performance und optimiere die Performance mit Schedulern
         // 5. gib keine Kombination <Start_Artikel> -> <Link/Artikel_Name> mehrfach aus
 
-        //wikiService.fetchArticle(...);
+        //wikiService.fetchArticleObservable(...);
     }
 
 }

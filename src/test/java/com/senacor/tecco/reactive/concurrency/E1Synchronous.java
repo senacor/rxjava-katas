@@ -9,8 +9,6 @@ import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Rule;
 import org.junit.Test;
 
-import static com.senacor.tecco.reactive.ReactiveUtil.print;
-
 public class E1Synchronous {
 
     private final WikiService wikiService = new WikiService("en");
@@ -41,7 +39,7 @@ public class E1Synchronous {
     }
 
     private String fetchArticle(String articleName) {
-        return wikiService.fetchArticleBlocking(articleName);
+        return wikiService.fetchArticle(articleName);
     }
 
     private ParsedPage parsePage(String article777) {
@@ -49,11 +47,11 @@ public class E1Synchronous {
     }
 
     private int countWords(ParsedPage parsedPage) {
-        return countService.countWordsSynchronous(parsedPage);
+        return countService.countWords(parsedPage);
     }
 
     private int rateArticles(ParsedPage parsedPage) {
-        return ratingService.rateSynchronous(parsedPage);
+        return ratingService.rate(parsedPage);
     }
 
     private String parseNumberBuilt(String article) {

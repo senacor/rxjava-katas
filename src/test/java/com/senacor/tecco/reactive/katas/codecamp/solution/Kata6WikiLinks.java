@@ -50,7 +50,7 @@ public class Kata6WikiLinks {
 
     private Observable<WikiLink> getLinks(final String wikiArticle) {
         //print("getLinks fuer Artikel: %s", wikiArticle);
-        return wikiService.fetchArticle((wikiArticle))
+        return wikiService.fetchArticleObservable((wikiArticle))
                 .subscribeOn(scheduler)
                 .flatMap(wikiService::parseMediaWikiText)
                 .subscribeOn(Schedulers.computation())

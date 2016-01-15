@@ -6,11 +6,9 @@ import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
 import rx.Observable;
-import rx.Scheduler;
 
 import java.util.concurrent.TimeUnit;
 
-import static com.senacor.tecco.reactive.ReactiveUtil.newScheduler;
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 import static rx.Observable.zip;
 
@@ -26,17 +24,17 @@ public class Kata3CombiningObservable {
     @Test
     public void combiningObservable() throws Exception {
         // 1. Wikiartikel holen und parsen
-        // 2. Benutze jetzt den RatingService.rate() und #CountService.countWords() und kombiniere beides im JSON-Format.
+        // 2. Benutze jetzt den RatingService.rateObservable() und #CountService.countWordsObervable() und kombiniere beides im JSON-Format.
         //    Gib das JSON auf der Console aus. Beispiel {"articleName": "Superman", "rating": 3, "wordCount": 452}
 
         WaitMonitor waitMonitor = new WaitMonitor();
 
         final String wikiArticle = "Bilbilis";
-        wikiService.fetchArticle(wikiArticle)
+        wikiService.fetchArticleObservable(wikiArticle)
                 .flatMap(wikiService::parseMediaWikiText)
                 .flatMap(parsedPage -> {
-                    Observable<Integer> rating = ratingService.rate(parsedPage);
-                    Observable<Integer> wordCount = countService.countWords(parsedPage);
+                    Observable<Integer> rating = ratingService.rateObservable(parsedPage);
+                    Observable<Integer> wordCount = countService.countWordsObervable(parsedPage);
                     return zip(rating, wordCount, (r, wc) -> String.format(
                             "{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
                             wikiArticle, r, wc));

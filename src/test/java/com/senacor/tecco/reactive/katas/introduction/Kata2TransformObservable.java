@@ -4,8 +4,6 @@ import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
 import rx.Observable;
 
-import static com.senacor.tecco.reactive.ReactiveUtil.print;
-
 /**
  * @author Dr. Michael Menzel
  */
@@ -29,7 +27,7 @@ public class Kata2TransformObservable {
      * @return an article
      */
     Observable<Article> fetchArticle(String articleName) {
-        return wikiService.fetchArticle(articleName).
+        return wikiService.fetchArticleObservable(articleName).
                 map((article) -> new Article(articleName, article));
     }
 

@@ -38,7 +38,7 @@ public class WikiService {
      * @param wikiArticle name of the article to be fetched
      * @return fetches a wiki article as a media wiki formated string
      */
-    public Observable<String> fetchArticle(final String wikiArticle) {
+    public Observable<String> fetchArticleObservable(final String wikiArticle) {
         return wikiServiceJapi.getArticleObservable(wikiArticle);
     }
 
@@ -46,7 +46,7 @@ public class WikiService {
      * @param wikiArticle name of the article to be fetched
      * @return fetches a wiki article as a media wiki formated string
      */
-    public String fetchArticleBlocking(final String wikiArticle) {
+    public String fetchArticle(final String wikiArticle) {
         return wikiServiceJapi.getArticle(wikiArticle);
     }
 

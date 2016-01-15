@@ -27,7 +27,7 @@ public class ServicesTest {
 
     @Test
     public void testFetchArticle() throws Exception {
-        String article = wikiService.fetchArticle("42").toBlocking().first();
+        String article = wikiService.fetchArticleObservable("42").toBlocking().first();
         System.out.println(article);
         assertNotNull(article);
     }
@@ -78,7 +78,7 @@ public class ServicesTest {
         Subscription subscription = wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
                 .sample(200, TimeUnit.MILLISECONDS)
                 .doOnNext(name -> print("=> working with " + name))
-                .flatMap((wikiArticle) -> wikiService.fetchArticle(wikiArticle)
+                .flatMap((wikiArticle) -> wikiService.fetchArticleObservable(wikiArticle)
                         .subscribeOn(scheduler)
                         .zipWith(Observable.just(wikiArticle), (text, name) -> new String[]{name, text}))
                 .flatMap(array -> wikiService.parseMediaWikiText(array[1]).subscribeOn(Schedulers.computation())
@@ -86,9 +86,9 @@ public class ServicesTest {
                 .flatMap(array -> {
                     final String articleName = (String) array[0];
                     final ParsedPage parsedPage = (ParsedPage) array[1];
-                    Observable<String> zipjSON = Observable.zip(ratingService.rate(parsedPage)
+                    Observable<String> zipjSON = Observable.zip(ratingService.rateObservable(parsedPage)
                             .subscribeOn(scheduler)
-                            , countService.countWords(parsedPage)
+                            , countService.countWordsObervable(parsedPage)
                             .subscribeOn(scheduler)
                             , (rating, wordCount) -> String.format("{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
                             articleName, rating, wordCount));
@@ -108,22 +108,22 @@ public class ServicesTest {
     @Test
     public void testRate() throws Exception {
         ParsedPage parsedPage = getParseMediaWikiTextWithLink();
-        Integer rating = ratingService.rate(parsedPage).toBlocking().first();
+        Integer rating = ratingService.rateObservable(parsedPage).toBlocking().first();
         assertEquals(5, rating.intValue());
 
         parsedPage = wikiService.parseMediaWikiText("== Weblinks ==\n[[42]] [[42]]").toBlocking().first();
-        rating = ratingService.rate(parsedPage).toBlocking().first();
+        rating = ratingService.rateObservable(parsedPage).toBlocking().first();
         assertEquals(5, rating.intValue());
 
         parsedPage = wikiService.parseMediaWikiText("== Weblinks ==").toBlocking().first();
-        rating = ratingService.rate(parsedPage).toBlocking().first();
+        rating = ratingService.rateObservable(parsedPage).toBlocking().first();
         assertEquals(0, rating.intValue());
     }
 
     @Test
     public void testCountWords() throws Exception {
         ParsedPage parsedPage = getParseMediaWikiTextWithLink();
-        Assert.assertEquals(Integer.valueOf(2), countService.countWords(parsedPage).toBlocking().first());
+        Assert.assertEquals(Integer.valueOf(2), countService.countWordsObervable(parsedPage).toBlocking().first());
     }
 
     @Test

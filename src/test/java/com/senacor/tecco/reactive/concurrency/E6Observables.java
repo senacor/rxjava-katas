@@ -51,7 +51,7 @@ public class E6Observables {
 
 
     private Observable<String> fetchArticle(String articleName) {
-        return wikiService.fetchArticle(articleName);
+        return wikiService.fetchArticleObservable(articleName);
     }
 
     private Observable<ParsedPage> parsePage(String article777) {
@@ -59,11 +59,11 @@ public class E6Observables {
     }
 
     private Observable<Integer> countWords(ParsedPage parsedPage) {
-        return countService.countWords(parsedPage);
+        return countService.countWordsObervable(parsedPage);
     }
 
     private Observable<Integer> rateArticles(ParsedPage parsedPage) {
-        return ratingService.rate(parsedPage);
+        return ratingService.rateObservable(parsedPage);
     }
 
     private String parseNumberBuilt(String article) {

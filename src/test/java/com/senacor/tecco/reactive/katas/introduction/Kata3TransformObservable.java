@@ -16,7 +16,7 @@ public class Kata3TransformObservable {
         String[] planeTypes = {"Boeing 777", "Boeing 747", "Boeing 737", "Airbus A330", "Airbus A320 family"};
 
         // 1) create an observable that emits the plane type
-        // 2) use the fetchArticle method to transform the plane type to an Article
+        // 2) use the fetchArticleObservable method to transform the plane type to an Article
         // 3) use the parsePlaneInfo method to transform the article to an planeInfo object
         // 4) subscribe to the observable and print the plane information
 
@@ -28,7 +28,7 @@ public class Kata3TransformObservable {
      * @return an article
      */
     Observable<Article> fetchArticle(String articleName) {
-        return wikiService.fetchArticle(articleName).
+        return wikiService.fetchArticleObservable(articleName).
                 map((article) -> new Article(articleName, article));
     }
 

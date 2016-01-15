@@ -16,27 +16,27 @@ public class CountService {
 
     private final ExecutorService pool = Executors.newFixedThreadPool(4);
 
-    public Observable<Integer> countWords(final ParsedPage parsedPage) {
+    public Observable<Integer> countWordsObervable(final ParsedPage parsedPage) {
         return Observable.create(subscriber -> {
             if (null == parsedPage) {
                 subscriber.onError(new IllegalStateException("parsedPage must not be null"));
                 return;
             }
-            subscriber.onNext(countWordsSynchronous(parsedPage));
+            subscriber.onNext(countWords(parsedPage));
             subscriber.onCompleted();
         });
     }
 
     public Future<Integer> countWordsFuture(final ParsedPage parsedPage) {
-        return pool.submit(() -> countWordsSynchronous(parsedPage));
+        return pool.submit(() -> countWords(parsedPage));
     }
 
 
     public CompletableFuture<Integer> countWordsCompletableFuture(ParsedPage parsedPage) {
-        return CompletableFuture.supplyAsync(() -> countWordsSynchronous(parsedPage), pool);
+        return CompletableFuture.supplyAsync(() -> countWords(parsedPage), pool);
     }
 
-    public int countWordsSynchronous(final ParsedPage parsedPage) {
+    public int countWords(final ParsedPage parsedPage) {
         long start = System.currentTimeMillis();
         if (null == parsedPage) {
             throw new IllegalStateException("parsedPage must not be null");

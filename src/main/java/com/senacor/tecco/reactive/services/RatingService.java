@@ -17,7 +17,7 @@ public class RatingService {
 
     private final ExecutorService pool = Executors.newFixedThreadPool(4);
 
-    public Observable<Integer> rate(final ParsedPage parsedPage) {
+    public Observable<Integer> rateObservable(final ParsedPage parsedPage) {
         return Observable.create(subscriber -> {
             if (null == parsedPage) {
                 subscriber.onError(new IllegalStateException("parsedPage must not be null"));
@@ -48,14 +48,14 @@ public class RatingService {
     }
 
     public Future<Integer> rateFuture(ParsedPage parsedPage) {
-        return pool.submit(() -> rateSynchronous(parsedPage));
+        return pool.submit(() -> rate(parsedPage));
     }
 
     public CompletableFuture<Integer> rateCompletableFuture(ParsedPage parsedPage) {
-        return CompletableFuture.supplyAsync(()-> rateSynchronous(parsedPage), pool);
+        return CompletableFuture.supplyAsync(()-> rate(parsedPage), pool);
     }
 
-    public int rateSynchronous(final ParsedPage parsedPage) {
+    public int rate(final ParsedPage parsedPage) {
         if (null == parsedPage) {
             throw new IllegalStateException("parsedPage must not be null");
         }

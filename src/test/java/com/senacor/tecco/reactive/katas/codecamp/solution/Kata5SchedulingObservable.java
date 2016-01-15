@@ -31,7 +31,7 @@ public class Kata5SchedulingObservable {
         // 1. Benutze den WikiService#wikiArticleBeingReadObservable, der einen Stream von WikiArtikel Namen liefert, die gerade gelesen werden
         // 2. nim nur die ersten 20 Artikel
         // 3. lade und parse die Artikel
-        // 4. Benutze jetzt den ratingService.rate() und #countWords() und kombiniere beides im JSON-Format
+        // 4. Benutze jetzt den ratingService.rateObservable() und #countWordsObervable() und kombiniere beides im JSON-Format
         //    und gib das JSON auf der Console aus. Beispiel {"rating": 3, "wordCount": 452}
         // 5. messe die Laufzeit
         // 6. Füge jetzt an passender Stelle in der Observable-Chain einen Scheduler ein um die Ausführungszeit zu verkürzen
@@ -42,10 +42,10 @@ public class Kata5SchedulingObservable {
 
         Subscription subscription = wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
                 .take(20)
-                .flatMap(name -> wikiService.fetchArticle(name).subscribeOn(Schedulers.io()))
+                .flatMap(name -> wikiService.fetchArticleObservable(name).subscribeOn(Schedulers.io()))
                 .flatMap(wikiService::parseMediaWikiText)
-                .flatMap(parsedPage -> Observable.zip(ratingService.rate(parsedPage).subscribeOn(fiveThreads),
-                        countService.countWords(parsedPage).subscribeOn(fiveThreads),
+                .flatMap(parsedPage -> Observable.zip(ratingService.rateObservable(parsedPage).subscribeOn(fiveThreads),
+                        countService.countWordsObervable(parsedPage).subscribeOn(fiveThreads),
                         (rating, wordCount) -> String.format(
                                 "{\"rating\": %s, \"wordCount\": %s}",
                                 rating, wordCount)))
