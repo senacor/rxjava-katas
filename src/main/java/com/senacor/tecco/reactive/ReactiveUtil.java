@@ -67,7 +67,7 @@ public class ReactiveUtil {
         if (matcher.find()) {
             return matcher.group(1);
         }
-        throw new IllegalArgumentException();
+        return null;
     }
 
     public static Scheduler newScheduler(int size, String name) {
