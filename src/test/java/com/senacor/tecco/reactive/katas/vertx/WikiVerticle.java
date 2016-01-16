@@ -12,10 +12,12 @@ public class WikiVerticle extends AbstractVerticle {
 
     private static final Logger log = LoggerFactory.getLogger(WikiVerticle.class);
 
+    private final WikiService wikiService = new WikiService();
+
     @Override
     public void start() throws Exception {
         vertx.eventBus().consumer("fetchArticle").handler(msg -> {
-            new WikiService().fetchArticleObservable(msg.body().toString())
+            wikiService.fetchArticleObservable(msg.body().toString())
                     .subscribe(msg::reply);
         });
     }

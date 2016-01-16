@@ -1,4 +1,5 @@
-## Erweitere das WikiVerticle, dass den Wikiservice benutzt, um folgende Methoden 'parseMediaWikiText', 'rate' und 'countWords'.
+## Erweitere das WikiVerticle um folgende Methoden 'parseMediaWikiText', 'rate' und 'countWords'. 
+Verwende dazu wie bisher den WikiService, RatingService und CountService.
 Orientiere dich an den Beispielen aus dem Package 'com.senacor.tecco.reactive.vertx'
 
 ## Versuche Das Beispiel aus Kata3CombiningObservable abzubilden, aber nicht mit der rxjava Unterstützung von vertx, also mit Callbacks:
