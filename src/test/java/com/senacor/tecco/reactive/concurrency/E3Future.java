@@ -23,7 +23,7 @@ public class E3Future {
     public final Watch watch = new Watch();
 
     @Test
-    public void thatPlaneInfosAreCombinedWithFutures() throws Exception {
+    public void thatPlaneInfoIsCombinedWithFutures() throws Exception {
 
         Future<String> article777Future = fetchArticle("Boeing 777");
         Future<String> article747Future = fetchArticle("Boeing 747");
