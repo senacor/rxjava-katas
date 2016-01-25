@@ -3,6 +3,8 @@ package com.senacor.tecco.reactive.services;
 import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.services.integration.MediaWikiTextParser;
 import com.senacor.tecco.reactive.services.integration.WikipediaServiceJapi;
+import com.senacor.tecco.reactive.services.integration.WikipediaServiceJapiImpl;
+import com.senacor.tecco.reactive.services.integration.WikipediaServiceJapiMock;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import rx.Observable;
 
@@ -14,6 +16,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
+import java.util.function.Consumer;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.getThreadId;
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
@@ -24,16 +27,25 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 public class WikiService {
 
     private final MediaWikiTextParser parser = new MediaWikiTextParser();
+    private final boolean MOCKMODE = true;
     private final WikipediaServiceJapi wikiServiceJapi;
 
     private final ExecutorService pool = Executors.newFixedThreadPool(4);
 
     public WikiService() {
-        wikiServiceJapi = new WikipediaServiceJapi();
+        if(MOCKMODE){
+            wikiServiceJapi = new WikipediaServiceJapiMock();
+        } else {
+            wikiServiceJapi = new WikipediaServiceJapiImpl();
+        }
     }
 
     public WikiService(String language) {
-        wikiServiceJapi = new WikipediaServiceJapi("http://" + language + ".wikipedia.org");
+        if(MOCKMODE){
+            wikiServiceJapi = new WikipediaServiceJapiMock();
+        } else {
+            wikiServiceJapi = new WikipediaServiceJapiImpl("http://" + language + ".wikipedia.org");
+        }
     }
 
     /**
@@ -50,6 +62,19 @@ public class WikiService {
      */
     public String fetchArticle(final String wikiArticle) {
         return wikiServiceJapi.getArticle(wikiArticle);
+    }
+
+    /**
+     * @param wikiArticle name of the article to be fetched
+     * @return fetches a wiki article as a media wiki formated string
+     */
+    public void fetchArticleCallback(final String wikiArticle, Consumer<String> articleConsumer, Consumer<Exception> exceptionConsumer) {
+        try {
+            String article = wikiServiceJapi.getArticle(wikiArticle);
+            articleConsumer.accept(article);
+        } catch (Exception e) {
+            exceptionConsumer.accept(e);
+        }
     }
 
     /**

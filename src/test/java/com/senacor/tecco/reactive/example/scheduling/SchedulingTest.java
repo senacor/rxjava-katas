@@ -18,7 +18,7 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
  * @author Andreas Keefer
  * @see http://reactivex.io/documentation/scheduler.html
  */
-public class SchdulingTest {
+public class SchedulingTest {
 
     @Test
     public void testVisualizeSubscribeOnAndObserveOn() throws Exception {
@@ -64,7 +64,7 @@ public class SchdulingTest {
 
         Subscription subscription = Observable.range(1, 10)
                 .doOnNext(integer -> print("before getData: %s", integer))
-                .flatMap(integet -> SchdulingTest.getDataSync(integet)
+                .flatMap(integet -> SchedulingTest.getDataSync(integet)
                         .subscribeOn(Schedulers.io()))
                 .doOnNext(integer -> print("after getData: %s", integer))
                 .subscribe(next -> print("next: %s", next),
@@ -85,7 +85,7 @@ public class SchdulingTest {
         Subscription subscription = Observable.range(1, 5)
                 .doOnNext(integer -> print("before getData: %s", integer))
                 .observeOn(Schedulers.io())
-                .flatMap(SchdulingTest::getDataSync)
+                .flatMap(SchedulingTest::getDataSync)
                 .doOnNext(integer -> print("after getData: %s", integer))
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,

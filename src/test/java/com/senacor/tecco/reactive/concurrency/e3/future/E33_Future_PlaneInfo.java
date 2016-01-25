@@ -1,7 +1,8 @@
-package com.senacor.tecco.reactive.concurrency;
+package com.senacor.tecco.reactive.concurrency.e3.future;
 
 import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.Watch;
+import com.senacor.tecco.reactive.concurrency.Summary;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
@@ -11,9 +12,7 @@ import org.junit.Test;
 
 import java.util.concurrent.Future;
 
-import static com.senacor.tecco.reactive.ReactiveUtil.print;
-
-public class E3Future {
+public class E33_Future_PlaneInfo {
 
     private final WikiService wikiService = new WikiService("en");
     private final CountService countService = new CountService();
@@ -43,8 +42,8 @@ public class E3Future {
         Future<Integer> rating777Future = rateArticles(parsedPage777);
         Future<Integer> rating747Future = rateArticles(parsedPage747);
 
-        String numberBuilt777 = parseNumberBuilt(article777);
-        String numberBuilt747 = parseNumberBuilt(article747);
+        String numberBuilt777 = parseBuildCount(article777);
+        String numberBuilt747 = parseBuildCount(article747);
 
         Summary.print("777", words777Future.get(), rating777Future.get(), numberBuilt777);
         Summary.print("747", words747Future.get(), rating747Future.get(), numberBuilt747);
@@ -66,7 +65,7 @@ public class E3Future {
         return ratingService.rateFuture(parsedPage);
     }
 
-    private String parseNumberBuilt(String article) {
+    private String parseBuildCount(String article) {
         return ReactiveUtil.findValue(article, "number built");
     }
 

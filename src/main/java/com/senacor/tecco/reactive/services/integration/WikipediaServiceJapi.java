@@ -1,49 +1,12 @@
 package com.senacor.tecco.reactive.services.integration;
 
-import com.bitplan.mediawiki.japi.Mediawiki;
 import rx.Observable;
 
-import static com.senacor.tecco.reactive.ReactiveUtil.getThreadId;
-
 /**
- * @author Andreas Keefer
+ * Created by mmenzel on 25.01.2016.
  */
-public class WikipediaServiceJapi {
+public interface WikipediaServiceJapi {
+    String getArticle(String name);
 
-    private final Mediawiki wiki;
-
-    public WikipediaServiceJapi() {
-        this("http://de.wikipedia.org");
-    }
-
-    public WikipediaServiceJapi(String url) {
-        try {
-            wiki = new Mediawiki(url);
-        } catch (Exception e) {
-            throw new IllegalStateException(e);
-        }
-    }
-
-    public String getArticle(String name) {
-        try {
-            final long start = System.currentTimeMillis();
-            String res = wiki.getPageContent(name);
-            System.out.println(getThreadId() +
-                    "profiling getArticle(" + name + "): " + (System.currentTimeMillis() - start) + "ms");
-            return res;
-        } catch (Exception e) {
-            throw new IllegalStateException(e);
-        }
-    }
-
-    public Observable<String> getArticleObservable(String wikiArticle) {
-        return Observable.create(subscriber -> {
-            try {
-                subscriber.onNext(getArticle(wikiArticle));
-                subscriber.onCompleted();
-            } catch (RuntimeException e) {
-                subscriber.onError(e);
-            }
-        });
-    }
+    Observable<String> getArticleObservable(String wikiArticle);
 }

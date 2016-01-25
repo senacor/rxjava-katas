@@ -1,7 +1,8 @@
-package com.senacor.tecco.reactive.concurrency;
+package com.senacor.tecco.reactive.concurrency.e6.observables;
 
 import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.Watch;
+import com.senacor.tecco.reactive.concurrency.Summary;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
@@ -11,7 +12,7 @@ import org.junit.Test;
 
 import rx.Observable;
 
-public class E6Observables {
+public class E63_Observables_PlaneInfo {
 
     private final WikiService wikiService = new WikiService("en");
     private final CountService countService = new CountService();
@@ -30,7 +31,7 @@ public class E6Observables {
                     return parsedPageObservable.flatMap(page -> {
                         Observable<Integer> countObservable = countWords(page);
                         Observable<Integer> rateObservable = rateArticles(page);
-                        String numberBuild = parseNumberBuilt(article);
+                        String numberBuild = parseBuildCount(article);
                         return Observable.zip(countObservable, rateObservable, (words, rating) -> new PageMetrix(words, rating, numberBuild));
                     });
                 })
@@ -42,7 +43,7 @@ public class E6Observables {
                     return parsedPageObservable.flatMap(page -> {
                         Observable<Integer> countObservable = countWords(page);
                         Observable<Integer> rateObservable = rateArticles(page);
-                        String numberBuild = parseNumberBuilt(article);
+                        String numberBuild = parseBuildCount(article);
                         return Observable.zip(countObservable, rateObservable, (words, rating) -> new PageMetrix(words, rating, numberBuild));
                     });
                 })
@@ -66,7 +67,7 @@ public class E6Observables {
         return ratingService.rateObservable(parsedPage);
     }
 
-    private String parseNumberBuilt(String article) {
+    private String parseBuildCount(String article) {
         return ReactiveUtil.findValue(article, "number built");
     }
 

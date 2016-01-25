@@ -1,7 +1,8 @@
-package com.senacor.tecco.reactive.concurrency;
+package com.senacor.tecco.reactive.concurrency.e4.completablefuture;
 
 import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.Watch;
+import com.senacor.tecco.reactive.concurrency.Summary;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
@@ -12,7 +13,7 @@ import org.junit.Test;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Future;
 
-public class E4CompletableFuture {
+public class E45_CompletableFuture_PlaneInfo {
 
     private final WikiService wikiService = new WikiService("en");
     private final CountService countService = new CountService();
@@ -34,7 +35,7 @@ public class E4CompletableFuture {
                         return countFuture.thenCombine(rateFuture, (words, rating) -> new PageMetrix(words, rating));
                     });
 
-                    String numberBuild777 = parseNumberBuilt(article);
+                    String numberBuild777 = parseBuildCount(article);
                     return pageMetrixFuture.thenAccept(pageMetrix -> Summary.print("777", pageMetrix.words, pageMetrix.rating, numberBuild777));
                 });
 
@@ -48,7 +49,7 @@ public class E4CompletableFuture {
                         return countFuture.thenCombine(rateFuture, (words, rating) -> new PageMetrix(words, rating));
                     });
 
-                    String numberBuild777 = parseNumberBuilt(article);
+                    String numberBuild777 = parseBuildCount(article);
                     return pageMetrixFuture.thenAccept(pageMetrix -> Summary.print("777", pageMetrix.words, pageMetrix.rating, numberBuild777));
                 });
 
@@ -73,7 +74,7 @@ public class E4CompletableFuture {
         return ratingService.rateCompletableFuture(parsedPage);
     }
 
-    private String parseNumberBuilt(String article) {
+    private String parseBuildCount(String article) {
         return ReactiveUtil.findValue(article, "number built");
     }
 
