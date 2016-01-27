@@ -18,7 +18,7 @@ public class E42_CompletableFuture_SumPlanes {
 
 
     @Test
-    public void thatPlaneInfoIsCombinedWithCompletableFuture() throws Exception {
+    public void thatPlaneBuildCountIsSummedUpWithCompletableFuture() throws Exception {
 
         CompletableFuture<String> buildCount777Future = fetchArticle("Boeing 777")
                 .thenApply(this::parseBuildCount);

@@ -27,7 +27,7 @@ public class E21_Callback_CountPlanes {
     public final Watch watch = new Watch();
 
     @Test
-    public void thatPlaneInfosAreCombineWithCallback() throws Exception {
+    public void thatPlaneBuildCountIsFetchedWithCallback() throws Exception {
         LinkedBlockingQueue<String[]> planeBuildCounts = new LinkedBlockingQueue<>();
 
         fetchArticle("Boeing 777", (article777) -> {

@@ -21,7 +21,7 @@ public class E31_Future_CountPlanes {
     public final Watch watch = new Watch();
 
     @Test
-    public void thatPlaneInfoIsCombinedWithFutures() throws Exception {
+    public void thatPlaneBuildCountIsFetchedWithFutures() throws Exception {
 
         //get Futures for articles
         Future<String> article777Future = fetchArticle("Boeing 777");

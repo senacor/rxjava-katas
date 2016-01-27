@@ -20,7 +20,7 @@ public class E11_Synchronous_CountPlanes {
     public final Watch watch = new Watch();
 
     @Test
-    public void thatPlaneInfoIsCombinedSynchronously() throws Exception {
+    public void thatPlaneBuildCountIsFetchedSynchronously() throws Exception {
 
         //get article on 777
         String article777 = fetchArticle("Boeing 777");

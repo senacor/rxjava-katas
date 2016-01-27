@@ -32,6 +32,7 @@ public class WikipediaServiceJapiMock extends WikipediaServiceJapiImpl {
 
     @Override
     protected String getPageContent(String name) throws Exception {
+        Thread.sleep(1000);
         return articles.get(name);
     }
 

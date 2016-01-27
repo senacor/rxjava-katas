@@ -7,12 +7,13 @@ import rx.Subscription;
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
- * Dr. Michael Menzel
+ * @author Dr. Michael Menzel
  */
 public class CreateTest {
 
     @Test
     public void testCreate() throws Exception {
+
         Observable.create(subscriber -> {
             try {
                 subscriber.onNext("first");

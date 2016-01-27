@@ -22,20 +22,26 @@ public class E44_CompletableFuture_SumMultiplePlanesWithStreams {
 
 
     @Test
-    public void thatPlaneInfoIsCombinedWithCompletableFuture() throws Exception {
+    public void thatPlaneBuildCountIsSummedUpWithCompletableFutureAndStreams() throws Exception {
 
         String[] planes = {"Boeing 777","Boeing 747"};
 
+        //create List of CompletableFutures for build count
         List<CompletableFuture<Integer>> futures = Arrays.stream(planes)
+                //fetch article future for plane and chain future with build count parser
                 .map(plane -> fetchArticle(plane)
-                .thenApply(this::parseBuildCount))
+                    .thenApply(this::parseBuildCount))
+                //collect all build counts
                 .collect(Collectors.<CompletableFuture<Integer>>toList());
 
+        //wait for fulfillment of all futures
         int sumBuildCount = CompletableFuture.allOf(futures.toArray(new CompletableFuture[futures.size()]))
             .thenApply((v) -> {
                 return futures.stream().
-                        map(future -> future.join()).
-                        reduce(0, Integer::sum);
+                    //map future to result
+                    map(future -> future.join()).
+                    //sum up
+                    reduce(0, Integer::sum);
             })
             .get();
 

@@ -22,7 +22,7 @@ public class E32_Future_SumPlanes {
     public final Watch watch = new Watch();
 
     @Test
-    public void thatPlaneInfoIsCombinedWithFutures() throws Exception {
+    public void thatPlaneBuildCountIsSummedUpWithFutures() throws Exception {
 
         //get Futures for articles
         Future<String> article777Future = fetchArticle("Boeing 777");

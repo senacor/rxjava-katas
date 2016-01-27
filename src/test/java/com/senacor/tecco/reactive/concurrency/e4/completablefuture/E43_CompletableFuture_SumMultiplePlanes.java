@@ -18,7 +18,7 @@ public class E43_CompletableFuture_SumMultiplePlanes {
 
 
     @Test
-    public void thatPlaneInfoIsCombinedWithCompletableFuture() throws Exception {
+    public void thatPlaneBuildCountIsSummedUpWithCompletableFuture() throws Exception {
 
         String[] planes = {"Boeing 777","Boeing 747"};
 

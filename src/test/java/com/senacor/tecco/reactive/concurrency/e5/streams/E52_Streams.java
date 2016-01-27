@@ -1,7 +1,10 @@
 package com.senacor.tecco.reactive.concurrency.e5.streams;
 
 import com.senacor.tecco.reactive.ReactiveUtil;
+import com.senacor.tecco.reactive.Watch;
+import com.senacor.tecco.reactive.concurrency.Summary;
 import com.senacor.tecco.reactive.services.WikiService;
+import org.junit.Rule;
 import org.junit.Test;
 import rx.Observable;
 
@@ -14,19 +17,23 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
  *
  * @author Dr. Michael Menzel, Sencaor Technologies AG
  */
-public class E5Streams {
+public class E52_Streams {
     private final WikiService wikiService = new WikiService("en");
 
+    @Rule
+    public final Watch watch = new Watch();
+
     @Test
-    public void thatPlaneInfosAreCombinedWithStreams() throws Exception {
+    public void thatPlaneBuildCountIsFetchedWithStreams() throws Exception {
 
         String[] planeTypes = {"Boeing 777", "Boeing 747"};
 
         Arrays.stream(planeTypes)
-                .map(this::fetchArticle)
-                .map(this::parsePlaneInfo)
+                //.parallel()
+                .map(planeType -> fetchArticle(planeType))
+                .map(article -> parsePlaneInfo(article))
                 .forEach((planeInfo)-> {
-                    print(planeInfo);
+                    Summary.printCounter(planeInfo.typeName, planeInfo.numberBuild);
                 });
     }
 
