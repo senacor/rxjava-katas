@@ -6,24 +6,33 @@ import org.junit.Test;
 
 import java.util.concurrent.CompletableFuture;
 
+/**
+ * Retrieves and combine plane information with CompletableFutures
+ *
+ * @author Dr. Michael Menzel, Sencaor Technologies AG
+ */
 public class E42_CompletableFuture_SumPlanes extends PlaneArticleBaseTest {
 
     @Test
     public void thatPlaneBuildCountIsSummedUpWithCompletableFuture() throws Exception {
 
-        CompletableFuture<String> buildCount777Future = fetchArticle("Boeing 777")
-                .thenApply(this::parseBuildCount);
+        //fetch article on 777 and parse build count
+        CompletableFuture<Integer> buildCount777Future = fetchArticle("Boeing 777")
+                .thenApply(this::parseBuildCountInt);
 
-        CompletableFuture<String> buildCount747Future = fetchArticle("Boeing 747")
-                .thenApply(this::parseBuildCount);
+        //fetch article on 747 and parse build count
+        CompletableFuture<Integer> buildCount747Future = fetchArticle("Boeing 747")
+                .thenApply(this::parseBuildCountInt);
 
-        String[] planesBuilt = buildCount777Future
+        //combine both futures
+        buildCount777Future
                 .thenCombine(buildCount747Future, (buildCount777, buildCount747) -> {
-                    return new String[]{"777 and 747", buildCount777 + buildCount747};
+                    //extract number of built planes and calculate sum
+                    int buildCountSum = buildCount777 + buildCount747;
+                    Summary.printCounter("777 and 747", buildCountSum);
+                    return buildCountSum;
                 })
                 .get();
-
-        Summary.printCounter(planesBuilt);
     }
 
     // fetches an article from Wikipedia

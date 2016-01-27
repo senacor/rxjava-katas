@@ -6,6 +6,11 @@ import org.junit.Test;
 
 import java.util.concurrent.CompletableFuture;
 
+/**
+ * Retrieves plane information with CompletableFutures
+ *
+ * @author Dr. Michael Menzel, Sencaor Technologies AG
+ */
 public class E41_CompletableFuture_CountPlanes extends PlaneArticleBaseTest {
 
     @Test

@@ -6,6 +6,11 @@ import org.junit.Test;
 
 import java.util.concurrent.Future;
 
+/**
+ * Retrieves plane information with futures
+ *
+ * @author Dr. Michael Menzel, Sencaor Technologies AG
+ */
 public class E31_Future_CountPlanes extends PlaneArticleBaseTest {
 
     @Test
@@ -31,5 +36,4 @@ public class E31_Future_CountPlanes extends PlaneArticleBaseTest {
     private Future<String> fetchArticle(String articleName) {
         return wikiService.fetchArticleFuture(articleName);
     }
-
 }

@@ -11,14 +11,12 @@ import org.junit.Test;
 
 import java.util.concurrent.Future;
 
+/**
+ * Retrieves plane information with futures
+ *
+ * @author Dr. Michael Menzel, Sencaor Technologies AG
+ */
 public class E32_Future_SumPlanes extends PlaneArticleBaseTest {
-
-    private final WikiService wikiService = new WikiService("en");
-    private final CountService countService = new CountService();
-    private final RatingService ratingService = new RatingService();
-
-    @Rule
-    public final Watch watch = new Watch();
 
     @Test
     public void thatPlaneBuildCountIsSummedUpWithFutures() throws Exception {

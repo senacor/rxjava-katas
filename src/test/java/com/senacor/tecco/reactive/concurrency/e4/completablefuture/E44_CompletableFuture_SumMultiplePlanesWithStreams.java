@@ -9,6 +9,11 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
+/**
+ * Retrieves and combine plane information with CompletableFutures and Streams
+ *
+ * @author Dr. Michael Menzel, Sencaor Technologies AG
+ */
 public class E44_CompletableFuture_SumMultiplePlanesWithStreams extends PlaneArticleBaseTest{
 
     @Test
