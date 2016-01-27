@@ -1,27 +1,19 @@
 package com.senacor.tecco.reactive.concurrency.e4.completablefuture;
 
-import com.senacor.tecco.reactive.ReactiveUtil;
-import com.senacor.tecco.reactive.Watch;
+import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
-import com.senacor.tecco.reactive.services.WikiService;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
-import org.junit.Rule;
 import org.junit.Test;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Future;
 
-public class E45_CompletableFuture_PlaneInfo {
+public class E45_CompletableFuture_PlaneInfo  extends PlaneArticleBaseTest {
 
-    private final WikiService wikiService = new WikiService("en");
     private final CountService countService = new CountService();
     private final RatingService ratingService = new RatingService();
-
-    @Rule
-    public final Watch watch = new Watch();
-
 
     @Test
     public void thatPlaneInfoIsCombinedWithCompletableFuture() throws Exception {
@@ -58,6 +50,7 @@ public class E45_CompletableFuture_PlaneInfo {
 
     }
 
+    // fetches an article from Wikipedia
     private CompletableFuture<String> fetchArticle(String articleName) {
         return wikiService.fetchArticleCompletableFuture(articleName);
     }
@@ -72,10 +65,6 @@ public class E45_CompletableFuture_PlaneInfo {
 
     private CompletableFuture<Integer> rateArticles(ParsedPage parsedPage) {
         return ratingService.rateCompletableFuture(parsedPage);
-    }
-
-    private String parseBuildCount(String article) {
-        return ReactiveUtil.findValue(article, "number built");
     }
 
     private final static class PageMetrix {

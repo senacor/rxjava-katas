@@ -1,37 +1,28 @@
 package com.senacor.tecco.reactive.concurrency.e2.callback;
 
-import com.senacor.tecco.reactive.ReactiveUtil;
-import com.senacor.tecco.reactive.Watch;
+import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
-import com.senacor.tecco.reactive.services.WikiService;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
-import org.junit.Rule;
 import org.junit.Test;
 
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 
-import static com.senacor.tecco.reactive.ReactiveUtil.print;
-
 /**
  * Retrieves and combines plane information with callbacks
  *
  * @author Dr. Michael Menzel, Sencaor Technologies AG
  */
-public class E24_Callback_PlaneInfo {
+public class E24_Callback_PlaneInfo extends PlaneArticleBaseTest {
 
-    private final WikiService wikiService = new WikiService("en");
     private final CountService countService = new CountService();
     private final RatingService ratingService = new RatingService();
 
     // error handler function
     Consumer<Exception> exceptionConsumer = (e)->{e.printStackTrace();};
-
-    @Rule
-    public final Watch watch = new Watch();
 
     @Test
     public void thatPlaneInfosAreCombineWithCallback() throws Exception {
@@ -69,6 +60,7 @@ public class E24_Callback_PlaneInfo {
 
     }
 
+    // fetches an article from Wikipedia
     void fetchArticle(String articleName, Consumer<String> articleConsumer, Consumer<Exception> exceptionConsumer) {
         wikiService.fetchArticleCallback(articleName, articleConsumer, exceptionConsumer);
     }
@@ -83,10 +75,6 @@ public class E24_Callback_PlaneInfo {
 
     private int rateArticles(ParsedPage parsedPage) {
         return ratingService.rate(parsedPage);
-    }
-
-    String parseBuildCount(String article){
-        return ReactiveUtil.findValue(article, "number built");
     }
 
     class PlaneArticleInfo{

@@ -1,10 +1,7 @@
 package com.senacor.tecco.reactive.concurrency.e2.callback;
 
-import com.senacor.tecco.reactive.ReactiveUtil;
-import com.senacor.tecco.reactive.Watch;
+import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
-import com.senacor.tecco.reactive.services.WikiService;
-import org.junit.Rule;
 import org.junit.Test;
 
 import java.util.concurrent.LinkedBlockingQueue;
@@ -16,15 +13,10 @@ import java.util.function.Consumer;
  *
  * @author Dr. Michael Menzel, Sencaor Technologies AG
  */
-public class E21_Callback_CountPlanes {
-
-    private final WikiService wikiService = new WikiService("en");
+public class E21_Callback_CountPlanes extends PlaneArticleBaseTest {
 
     // error handler function
     Consumer<Exception> exceptionConsumer = (e)->{e.printStackTrace();};
-
-    @Rule
-    public final Watch watch = new Watch();
 
     @Test
     public void thatPlaneBuildCountIsFetchedWithCallback() throws Exception {
@@ -54,12 +46,9 @@ public class E21_Callback_CountPlanes {
         Summary.printCounter(planeBuildCounts.poll(5, TimeUnit.SECONDS));
     }
 
+    // fetches an article from Wikipedia
     void fetchArticle(String articleName, Consumer<String> articleConsumer, Consumer<Exception> exceptionConsumer) {
         wikiService.fetchArticleCallback(articleName, articleConsumer, exceptionConsumer);
-    }
-
-    String parseBuildCount(String article){
-        return ReactiveUtil.findValue(article, "number built");
     }
 
 }

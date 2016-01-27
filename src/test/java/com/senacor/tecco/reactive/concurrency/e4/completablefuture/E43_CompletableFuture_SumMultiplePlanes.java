@@ -1,21 +1,12 @@
 package com.senacor.tecco.reactive.concurrency.e4.completablefuture;
 
-import com.senacor.tecco.reactive.ReactiveUtil;
-import com.senacor.tecco.reactive.Watch;
+import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
-import com.senacor.tecco.reactive.services.WikiService;
-import org.junit.Rule;
 import org.junit.Test;
 
 import java.util.concurrent.CompletableFuture;
 
-public class E43_CompletableFuture_SumMultiplePlanes {
-
-    private final WikiService wikiService = new WikiService("en");
-
-    @Rule
-    public final Watch watch = new Watch();
-
+public class E43_CompletableFuture_SumMultiplePlanes extends PlaneArticleBaseTest {
 
     @Test
     public void thatPlaneBuildCountIsSummedUpWithCompletableFuture() throws Exception {
@@ -26,7 +17,7 @@ public class E43_CompletableFuture_SumMultiplePlanes {
 
         for(int i= 0; i < planes.length; i++) {
             futures[i] = fetchArticle(planes[i])
-                    .thenApply(this::parseBuildCount);
+                    .thenApply(this::parseBuildCountInt);
         }
 
         int sumBuildCount = CompletableFuture.allOf(futures)
@@ -42,24 +33,9 @@ public class E43_CompletableFuture_SumMultiplePlanes {
         Summary.printCounter(formatPlanes(planes), sumBuildCount);
     }
 
-    private String formatPlanes(String[] planes) {
-        String result = planes[0];
-
-        for(int i= 1; i < planes.length; i++) {
-            result += " and " + planes[i];
-        }
-
-        return result;
-    }
-
+    // fetches an article from Wikipedia
     private CompletableFuture<String> fetchArticle(String articleName) {
         return wikiService.fetchArticleCompletableFuture(articleName);
     }
-
-    private int parseBuildCount(String article) {
-        String buildCount = ReactiveUtil.findValue(article, "number built");
-        return Integer.parseInt(buildCount.replaceAll(",",""));
-    }
-
 }
 

@@ -1,25 +1,18 @@
 package com.senacor.tecco.reactive.concurrency.e3.future;
 
-import com.senacor.tecco.reactive.ReactiveUtil;
-import com.senacor.tecco.reactive.Watch;
+import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
-import com.senacor.tecco.reactive.services.WikiService;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
-import org.junit.Rule;
 import org.junit.Test;
 
 import java.util.concurrent.Future;
 
-public class E33_Future_PlaneInfo {
+public class E33_Future_PlaneInfo extends PlaneArticleBaseTest {
 
-    private final WikiService wikiService = new WikiService("en");
     private final CountService countService = new CountService();
     private final RatingService ratingService = new RatingService();
-
-    @Rule
-    public final Watch watch = new Watch();
 
     @Test
     public void thatPlaneInfoIsCombinedWithFutures() throws Exception {
@@ -49,6 +42,7 @@ public class E33_Future_PlaneInfo {
         Summary.print("747", words747Future.get(), rating747Future.get(), numberBuilt747);
     }
 
+    // fetches an article from Wikipedia
     private Future<String> fetchArticle(String articleName) {
         return wikiService.fetchArticleFuture(articleName);
     }
@@ -64,10 +58,4 @@ public class E33_Future_PlaneInfo {
     private Future<Integer> rateArticles(ParsedPage parsedPage) {
         return ratingService.rateFuture(parsedPage);
     }
-
-    private String parseBuildCount(String article) {
-        return ReactiveUtil.findValue(article, "number built");
-    }
-
-
 }

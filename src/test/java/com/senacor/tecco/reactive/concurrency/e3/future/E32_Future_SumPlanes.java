@@ -1,18 +1,17 @@
 package com.senacor.tecco.reactive.concurrency.e3.future;
 
-import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.Watch;
+import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
-import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Rule;
 import org.junit.Test;
 
 import java.util.concurrent.Future;
 
-public class E32_Future_SumPlanes {
+public class E32_Future_SumPlanes extends PlaneArticleBaseTest {
 
     private final WikiService wikiService = new WikiService("en");
     private final CountService countService = new CountService();
@@ -33,19 +32,14 @@ public class E32_Future_SumPlanes {
         String article747 = article747Future.get();
 
         //calculate build count
-        int buildCountSum = parseBuildCount(article777) + parseBuildCount(article747);
+        int buildCountSum = parseBuildCountInt(article777) + parseBuildCountInt(article747);
 
         Summary.printCounter("777 and 747", buildCountSum);
     }
 
+    // fetches an article from Wikipedia
     private Future<String> fetchArticle(String articleName) {
         return wikiService.fetchArticleFuture(articleName);
     }
-
-    private int parseBuildCount(String article) {
-        String buildCount = ReactiveUtil.findValue(article, "number built");
-        return Integer.parseInt(buildCount.replaceAll(",",""));
-    }
-
 
 }

@@ -1,25 +1,13 @@
 package com.senacor.tecco.reactive.concurrency.e6.observables;
 
-import com.senacor.tecco.reactive.ReactiveUtil;
-import com.senacor.tecco.reactive.Watch;
+import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
-import com.senacor.tecco.reactive.services.CountService;
-import com.senacor.tecco.reactive.services.RatingService;
-import com.senacor.tecco.reactive.services.WikiService;
-import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
-import net.sourceforge.jwbf.core.contentRep.Article;
-import org.junit.Rule;
+import com.senacor.tecco.reactive.concurrency.model.Article;
+import com.senacor.tecco.reactive.concurrency.model.PlaneInfo;
 import org.junit.Test;
 import rx.Observable;
 
-public class E61_Observables_CountPlanes {
-
-    private final WikiService wikiService = new WikiService("en");
-    private final CountService countService = new CountService();
-    private final RatingService ratingService = new RatingService();
-
-    @Rule
-    public final Watch watch = new Watch();
+public class E61_Observables_CountPlanes extends PlaneArticleBaseTest {
 
     @Test
     public void thatPlaneInfoIsCombinedWithObservables_notPerfectYet() throws Exception {
@@ -33,42 +21,18 @@ public class E61_Observables_CountPlanes {
                     Summary.printCounter(planeInfo.typeName, planeInfo.numberBuild);
                 });
     }
-        /**
-         * fetches an article from the wikipedia
-         * @param articleName name of the wikipedia article
-         * @return an article
-         */
+        // fetches an article from the wikipedia
         Observable<Article> fetchArticle(String articleName) {
             return wikiService.fetchArticleObservable(articleName).
                     map((article) -> new Article(articleName, article));
         }
 
-        /**
-         * Extracts plane-related information from an wikipedia article
-         * @param article wikipedia article
-         * @return plane information
-         */
+        // Extracts plane-related information from an wikipedia article
         PlaneInfo parsePlaneInfo(Article article){
-            return new PlaneInfo(article.name, ReactiveUtil.findValue(article.content, "number built"));
+            return new PlaneInfo(article.name, parseBuildCountInt(article.content));
         }
 
-        class Article{
-            public String name;
-            public String content;
 
-            public Article(String name, String content) {
-                this.name = name;
-                this.content = content;
-            }
-        }
 
-        class PlaneInfo{
-            public String typeName;
-            public String numberBuild;
 
-            public PlaneInfo(String typeName, String numberBuild) {
-                this.typeName = typeName;
-                this.numberBuild = numberBuild;
-            }
-        }
 }

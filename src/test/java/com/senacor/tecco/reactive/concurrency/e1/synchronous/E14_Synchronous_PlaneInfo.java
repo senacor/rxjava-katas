@@ -1,7 +1,7 @@
 package com.senacor.tecco.reactive.concurrency.e1.synchronous;
 
-import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.Watch;
+import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
@@ -10,7 +10,7 @@ import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Rule;
 import org.junit.Test;
 
-public class E13_Synchronous_PlaneInfo {
+public class E14_Synchronous_PlaneInfo extends PlaneArticleBaseTest {
 
     private final WikiService wikiService = new WikiService("en");
     private final CountService countService = new CountService();
@@ -48,6 +48,7 @@ public class E13_Synchronous_PlaneInfo {
         Summary.print("747", words747, rating747, buildCount747);
     }
 
+    // fetches an article from Wikipedia
     private String fetchArticle(String articleName) {
         return wikiService.fetchArticle(articleName);
     }
@@ -63,10 +64,5 @@ public class E13_Synchronous_PlaneInfo {
     private int rateArticles(ParsedPage parsedPage) {
         return ratingService.rate(parsedPage);
     }
-
-    private String parseBuildCount(String article) {
-        return ReactiveUtil.findValue(article, "number built");
-    }
-
 
 }

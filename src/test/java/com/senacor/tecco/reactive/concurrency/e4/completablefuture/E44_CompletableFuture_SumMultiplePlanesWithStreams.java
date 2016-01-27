@@ -1,25 +1,15 @@
 package com.senacor.tecco.reactive.concurrency.e4.completablefuture;
 
-import com.senacor.tecco.reactive.ReactiveUtil;
-import com.senacor.tecco.reactive.Watch;
+import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
-import com.senacor.tecco.reactive.services.WikiService;
-import org.junit.Rule;
 import org.junit.Test;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
-public class E44_CompletableFuture_SumMultiplePlanesWithStreams {
-
-    private final WikiService wikiService = new WikiService("en");
-
-    @Rule
-    public final Watch watch = new Watch();
-
+public class E44_CompletableFuture_SumMultiplePlanesWithStreams extends PlaneArticleBaseTest{
 
     @Test
     public void thatPlaneBuildCountIsSummedUpWithCompletableFutureAndStreams() throws Exception {
@@ -30,7 +20,7 @@ public class E44_CompletableFuture_SumMultiplePlanesWithStreams {
         List<CompletableFuture<Integer>> futures = Arrays.stream(planes)
                 //fetch article future for plane and chain future with build count parser
                 .map(plane -> fetchArticle(plane)
-                    .thenApply(this::parseBuildCount))
+                    .thenApply(this::parseBuildCountInt))
                 //collect all build counts
                 .collect(Collectors.<CompletableFuture<Integer>>toList());
 
@@ -48,23 +38,9 @@ public class E44_CompletableFuture_SumMultiplePlanesWithStreams {
         Summary.printCounter(formatPlanes(planes), sumBuildCount);
     }
 
-    private String formatPlanes(String[] planes) {
-        String result = planes[0];
-
-        for(int i= 1; i < planes.length; i++) {
-            result += " and " + planes[i];
-        }
-
-        return result;
-    }
-
+    // fetches an article from Wikipedia
     private CompletableFuture<String> fetchArticle(String articleName) {
         return wikiService.fetchArticleCompletableFuture(articleName);
-    }
-
-    private int parseBuildCount(String article) {
-        String buildCount = ReactiveUtil.findValue(article, "number built");
-        return Integer.parseInt(buildCount.replaceAll(",",""));
     }
 
 }

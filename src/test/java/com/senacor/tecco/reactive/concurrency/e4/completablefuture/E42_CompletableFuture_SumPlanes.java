@@ -1,21 +1,12 @@
 package com.senacor.tecco.reactive.concurrency.e4.completablefuture;
 
-import com.senacor.tecco.reactive.ReactiveUtil;
-import com.senacor.tecco.reactive.Watch;
+import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
-import com.senacor.tecco.reactive.services.WikiService;
-import org.junit.Rule;
 import org.junit.Test;
 
 import java.util.concurrent.CompletableFuture;
 
-public class E42_CompletableFuture_SumPlanes {
-
-    private final WikiService wikiService = new WikiService("en");
-
-    @Rule
-    public final Watch watch = new Watch();
-
+public class E42_CompletableFuture_SumPlanes extends PlaneArticleBaseTest {
 
     @Test
     public void thatPlaneBuildCountIsSummedUpWithCompletableFuture() throws Exception {
@@ -35,13 +26,9 @@ public class E42_CompletableFuture_SumPlanes {
         Summary.printCounter(planesBuilt);
     }
 
+    // fetches an article from Wikipedia
     private CompletableFuture<String> fetchArticle(String articleName) {
         return wikiService.fetchArticleCompletableFuture(articleName);
-    }
-
-
-    private String parseBuildCount(String article) {
-        return ReactiveUtil.findValue(article, "number built");
     }
 
 }

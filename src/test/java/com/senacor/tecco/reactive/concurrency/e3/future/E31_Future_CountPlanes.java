@@ -1,24 +1,12 @@
 package com.senacor.tecco.reactive.concurrency.e3.future;
 
-import com.senacor.tecco.reactive.ReactiveUtil;
-import com.senacor.tecco.reactive.Watch;
+import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
-import com.senacor.tecco.reactive.services.CountService;
-import com.senacor.tecco.reactive.services.RatingService;
-import com.senacor.tecco.reactive.services.WikiService;
-import org.junit.Rule;
 import org.junit.Test;
 
 import java.util.concurrent.Future;
 
-public class E31_Future_CountPlanes {
-
-    private final WikiService wikiService = new WikiService("en");
-    private final CountService countService = new CountService();
-    private final RatingService ratingService = new RatingService();
-
-    @Rule
-    public final Watch watch = new Watch();
+public class E31_Future_CountPlanes extends PlaneArticleBaseTest {
 
     @Test
     public void thatPlaneBuildCountIsFetchedWithFutures() throws Exception {
@@ -39,13 +27,9 @@ public class E31_Future_CountPlanes {
         Summary.printCounter("747", buildCount747);
     }
 
+    // fetches an article from Wikipedia
     private Future<String> fetchArticle(String articleName) {
         return wikiService.fetchArticleFuture(articleName);
     }
-
-    private String parseBuildCount(String article) {
-        return ReactiveUtil.findValue(article, "number built");
-    }
-
 
 }

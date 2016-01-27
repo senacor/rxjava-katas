@@ -1,15 +1,10 @@
 package com.senacor.tecco.reactive.concurrency.e5.streams;
 
-import com.senacor.tecco.reactive.ReactiveUtil;
-import com.senacor.tecco.reactive.Watch;
-import com.senacor.tecco.reactive.concurrency.Summary;
-import com.senacor.tecco.reactive.services.WikiService;
-import org.junit.Rule;
+import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
 /**
@@ -17,11 +12,7 @@ import java.util.stream.Collectors;
  *
  * @author Dr. Michael Menzel, Sencaor Technologies AG
  */
-public class E51_Streams_Introduction {
-    private final WikiService wikiService = new WikiService("en");
-
-    @Rule
-    public final Watch watch = new Watch();
+public class E51_Streams_Introduction extends PlaneArticleBaseTest {
 
     @Test
     public void thatNumbersAreMultiplied() throws Exception {
