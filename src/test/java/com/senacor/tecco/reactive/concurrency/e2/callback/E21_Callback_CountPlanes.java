@@ -1,5 +1,6 @@
 package com.senacor.tecco.reactive.concurrency.e2.callback;
 
+import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
 import org.junit.Test;
@@ -9,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 
 /**
- * Retrieves and combines plane information with callbacks
+ * Retrieves plane information with callbacks
  *
  * @author Dr. Michael Menzel, Sencaor Technologies AG
  */
@@ -20,30 +21,29 @@ public class E21_Callback_CountPlanes extends PlaneArticleBaseTest {
 
     @Test
     public void thatPlaneBuildCountIsFetchedWithCallback() throws Exception {
-        LinkedBlockingQueue<String[]> planeBuildCounts = new LinkedBlockingQueue<>();
+        WaitMonitor monitor = new WaitMonitor(2);
 
+        //get article on 777
         fetchArticle("Boeing 777", (article777) -> {
-            //parse build numbers and add results to planeBuildCounts
-            try {
-                planeBuildCounts.put(new String[]{"777", parseBuildCount(article777)});
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-                //TODO: Das noch besser machen. Was passiert hier bei einer Exception...
-                //TODO: Vielleicht hier exceptionConsumer aufrufen
-            }
+
+            //extract and print number of built planes
+            String buildCount777 = parseBuildCount(article777);
+            Summary.printCounter("777", buildCount777);
+
+            monitor.complete();
         }, exceptionConsumer);
 
+        //get article on 747
         fetchArticle("Boeing 747", (article747) -> {
-            //parse build numbers and add results to planeBuildCounts
-            try {
-                planeBuildCounts.put(new String[]{"747", parseBuildCount(article747)});
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
+
+            //extract and print number of built planes
+            String buildCount747 = parseBuildCount(article747);
+            Summary.printCounter("747", buildCount747);
+
+            monitor.complete();
         }, exceptionConsumer);
 
-        Summary.printCounter(planeBuildCounts.poll(5, TimeUnit.SECONDS));
-        Summary.printCounter(planeBuildCounts.poll(5, TimeUnit.SECONDS));
+        monitor.waitFor(3000,TimeUnit.MILLISECONDS);
     }
 
     // fetches an article from Wikipedia

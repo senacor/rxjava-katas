@@ -1,5 +1,6 @@
 package com.senacor.tecco.reactive.concurrency.e2.callback;
 
+import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
 import org.junit.Test;
@@ -20,28 +21,36 @@ public class E23_Callback_SumPlanes extends PlaneArticleBaseTest {
 
     @Test
     public void thatPlaneBuildCountIsSummedUpWithCallback() throws Exception {
+        WaitMonitor monitor = new WaitMonitor();
+
         LinkedBlockingQueue<String> article777Queue = new LinkedBlockingQueue<>();
-        LinkedBlockingQueue<String[]> planeBuildCountSum = new LinkedBlockingQueue<>();
 
         fetchArticle("Boeing 777", (article777) -> {
             try {
                 article777Queue.put(article777);
             } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+                exceptionConsumer.accept(e);
             }
         }, exceptionConsumer);
 
         fetchArticle("Boeing 747", (article747) -> {
-            //parse build numbers and add results to planeBuildCounts
+
+            //retrieve 777 Article
+            String article777 = null;
             try {
-                String article777 = article777Queue.poll(5, TimeUnit.SECONDS);
-                planeBuildCountSum.put(new String[]{"777 and 747", Integer.toString(parseBuildCountInt(article777) + parseBuildCountInt(article747))});
+                article777 = article777Queue.poll(5, TimeUnit.SECONDS);
             } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+                exceptionConsumer.accept(e);
             }
+
+            //extract number of built planes and calculate sum
+            int buildCountSum = parseBuildCountInt(article777) + parseBuildCountInt(article747);
+            Summary.printCounter("777 and 747", buildCountSum);
+
+            monitor.complete();
         }, exceptionConsumer);
 
-        Summary.printCounter(planeBuildCountSum.poll(5, TimeUnit.SECONDS));
+        monitor.waitFor(3000,TimeUnit.MILLISECONDS);
     }
 
     // fetches an article from Wikipedia

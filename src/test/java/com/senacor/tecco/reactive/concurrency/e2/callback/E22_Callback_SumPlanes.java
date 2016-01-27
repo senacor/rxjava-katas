@@ -1,5 +1,6 @@
 package com.senacor.tecco.reactive.concurrency.e2.callback;
 
+import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
 import org.junit.Test;
@@ -20,21 +21,21 @@ public class E22_Callback_SumPlanes extends PlaneArticleBaseTest{
 
     @Test
     public void thatPlaneBuildCountIsSummedUpWithCallback() throws Exception {
-        LinkedBlockingQueue<String[]> planeBuildCountSum = new LinkedBlockingQueue<>();
+        WaitMonitor monitor = new WaitMonitor();
 
+        //fetch articles from wikipedia
         fetchArticle("Boeing 777", (article777) -> {
             fetchArticle("Boeing 747", (article747) -> {
 
-                //parse build numbers and add results to planeBuildCounts
-                try {
-                    planeBuildCountSum.put(new String[]{"777 and 747", Integer.toString(parseBuildCountInt(article777) + parseBuildCountInt(article747))});
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
+                //extract number of built planes and calculate sum
+                int buildCountSum = parseBuildCountInt(article777) + parseBuildCountInt(article747);
+                Summary.printCounter("777 and 747", buildCountSum);
+
+                monitor.complete();
             }, exceptionConsumer);
         }, exceptionConsumer);
 
-        Summary.printCounter(planeBuildCountSum.poll(5, TimeUnit.SECONDS));
+        monitor.waitFor(3000,TimeUnit.MILLISECONDS);
     }
 
     // fetches an article from Wikipedia

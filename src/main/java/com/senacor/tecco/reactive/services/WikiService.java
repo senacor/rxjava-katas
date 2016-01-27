@@ -70,8 +70,8 @@ public class WikiService {
      */
     public void fetchArticleCallback(final String wikiArticle, Consumer<String> articleConsumer, Consumer<Exception> exceptionConsumer) {
         try {
-            String article = wikiServiceJapi.getArticle(wikiArticle);
-            articleConsumer.accept(article);
+            fetchArticleCompletableFuture(wikiArticle)
+                    .thenAccept(articleConsumer);
         } catch (Exception e) {
             exceptionConsumer.accept(e);
         }

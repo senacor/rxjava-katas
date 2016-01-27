@@ -4,24 +4,28 @@ import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
 import org.junit.Test;
 
+/**
+ * Retrieves and combines plane information synchronously
+ *
+ * @author Dr. Michael Menzel, Sencaor Technologies AG
+ */
+
+
 public class E12_Synchronous_SumPlanes extends PlaneArticleBaseTest {
 
     @Test
     public void thatPlaneBuildCountIsSummedUpSynchronously() throws Exception {
 
-        String[] planes = {"Boeing 777","Boeing 747"};
-        int buildCountSum = 0;
+        //get article on 777
+        String article777 = fetchArticle("Boeing 777");
 
-        for(String plane : planes){
+        //get article on 747
+        String article747 = fetchArticle("Boeing 747");
 
-            //get article
-            String article  = fetchArticle(plane);
+        //extract number of built planes and calculate sum
+        int buildCountSum = parseBuildCountInt(article777) + parseBuildCountInt(article747);
 
-            //extract number of built planes and calculate sum
-            buildCountSum += parseBuildCountInt(article);
-
-        }
-        Summary.printCounter(formatPlanes(planes), buildCountSum);
+        Summary.printCounter("777 and 747", buildCountSum);
     }
 
     // fetches an article from Wikipedia

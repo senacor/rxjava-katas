@@ -16,6 +16,14 @@ public class WaitMonitor {
     private final long creationTimeStamp = System.currentTimeMillis();
     private Long durationToCompleteInMs = null;
     private boolean complete = false;
+    private int expectedCompletes = 1;
+
+    public WaitMonitor(int expectedCompletes) {
+        this.expectedCompletes = expectedCompletes;
+    }
+
+    public WaitMonitor() {
+    }
 
     /**
      * Call this Method in your async code when the async execution has finished
@@ -40,7 +48,9 @@ public class WaitMonitor {
      */
     public void waitFor(long timeout, TimeUnit unit) {
         try {
-            queue.poll(timeout, unit);
+            for (int i=0; i<expectedCompletes; i++) {
+                queue.poll(timeout, unit);
+            }
             synchronized (this) {
                 print("runtime to complete: %s ms", durationToCompleteInMs == null ? "-" : durationToCompleteInMs);
             }
