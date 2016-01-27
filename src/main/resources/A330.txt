@@ -1,0 +1,655 @@
+{{Redirect|A330}}
+{{Redirect|A333|the road in Great Britain|A333 road}}
+{{EngvarB|date=April 2014}}
+<!-- This article is a part of [[Wikipedia:WikiProject Aircraft]]. Please see [[Wikipedia:WikiProject Aircraft/page content]] for recommended layout, and guidelines. -->
+{|{{Infobox aircraft begin
+|name= A330
+|image= File:MEA Airbus A330-200 (OD-MED) departs London Heathrow 11Apr2015 arp.jpg <!-- Flight images are preferred for aircraft.  Discuss changes to this image on talk page first, thanks. -->
+|caption= [[Middle East Airlines]] Airbus A330-200 departs [[London Heathrow Airport]], 2015
+|alt= A white, red, blue, and green Middle East Airlines A330 leaving London airport, with the undercarriages still retracting.
+}}{{Infobox aircraft type
+|type= [[Wide-body aircraft|Wide-body]] [[jet airliner]]
+|national origin= Multi-national<ref>Final assembly in France</ref>
+|manufacturer= [[Airbus]]
+|first flight= 2 November 1992
+|introduced= 17 January 1994 with [[Air Inter]]
+|status= In service
+|primary user= [[Turkish Airlines]] <!--Limit one (1) primary user. Top 3 users listed in 'primary user' and 'more users' fields based on number of their fleets. -->
+|more users= [[China Eastern Airlines]] <br />[[Air China]]<br />[[Cathay Pacific]]<!--Limit is three TOTAL in "more users" field. Please separate with <br />.-->
+|produced= 1992–present
+|number built= 1,257 as of December 2015
+|unit cost= A330-200: US$231.5&nbsp;million, €213.0 million (2016)<ref name=Airbus_prices>{{cite news |title=New Airbus aircraft list prices for 2016 |url=http://www.airbus.com/newsevents/news-events-single/detail/new-airbus-aircraft-list-prices-for-2016/ |date=12 January 2016 |accessdate=12 January 2016}}</ref> <br />A330-300: US$256.4M, €235.9M (2016)<ref name=Airbus_prices/> <br />A330-200F: US$234.7M, €216.0M (2016)<ref name=Airbus_prices/>
+|developed from= [[Airbus A300]]
+|variants with their own articles= [[Airbus A330 MRTT]] <br />[[EADS/Northrop Grumman KC-45]]
+|developed into= [[Airbus A330neo]]
+}}
+|}
+
+The '''Airbus A330''' is a medium to long range [[Wide-body aircraft|wide-body]] [[Twinjet|twin-engine]] [[jet airliner]] made by [[Airbus]], a division of [[Airbus Group]]. Versions of the A330 have a [[Range (aircraft)|range]] of {{Convert|5600|to|13430|km|nmi mi|sigfig=3|lk=on}} and can accommodate up to 335 passengers in a [[Travel class|two-class layout]] or carry {{Convert|70|t|lb|sigfig=3}} of cargo.
+
+The A330's origin dates to the mid-1970s as one of several conceived derivatives of Airbus's first airliner, the [[Airbus A300|A300]].  The A330 was developed in parallel with the four-engine [[Airbus A340|A340]], which shared many common [[airframe]] components but differed in number of engines.  Both airliners incorporated [[fly-by-wire]] flight control technology, first introduced on an Airbus aircraft with the [[Airbus A320 family|A320]], as well as the A320's six-display [[glass cockpit]]. In June 1987, after receiving orders from various customers, Airbus launched the A330 and A340. The A330 was Airbus's first airliner that offered a choice of three engines: General Electric CF6, Pratt & Whitney PW4000, and Rolls-Royce Trent 700.
+
+The A330-300, the first variant, took its maiden flight in November 1992 and entered passenger service with [[Air Inter]] in January 1994. Responding to dwindling sales, Airbus followed up with the slightly shorter A330-200 variant in 1998. Subsequently developed A330 variants include a dedicated [[Cargo aircraft|freighter]], the A330-200F, and a military [[Aerial refueling|tanker]], the [[Airbus A330 MRTT|A330 MRTT]]. The A330 MRTT formed the basis of the proposed [[EADS/Northrop Grumman KC-45|KC-45]], entered into the US Air Force's [[KC-X]] competition in conjunction with [[Northrop Grumman]], where after an initial win, on appeal lost to Boeing's tanker.
+
+Since its launch, the A330 has allowed Airbus to expand market share in wide-body airliners.  Competing twinjets include the [[Boeing 767]] and [[Boeing 777|777]], along with the [[Boeing 787 Dreamliner|787]], which entered service in late 2011. The long-range  [[Airbus A350 XWB]] was to succeed both the A330 and A340. The current A330 (referred to as the '''A330ceo''' (current engine option) since 2014) is to be replaced by the [[A330neo]], which includes new engines and other improvements.<ref name=Airbus1>{{cite web|author= |url=http://www.airbus.com/newsevents/news-events-single/detail/airbus-launches-the-a330neo/ |title=Airbus launches the A330neo |publisher=Airbus.com |date= |accessdate=}}</ref><ref name=Airbus3>{{cite web|author= |url=http://www.airbus.com/newsevents/news-events-single/detail/living-up-to-its-billing-airbus-officially-launches-the-a330neo-programme/ |title=Living up to its billing: Airbus officially launches the A330neo programme |publisher=Airbus.com |date= |accessdate=}}</ref><ref name=Airbus2>{{cite web|author= |url=http://www.airbus.com/newsevents/news-events-single/detail/farnborough-airshow-2014/ |title=A330neo: Powering into the next decade |publisher=Airbus.com |date= |accessdate=}}</ref>  {{As of|2015|10}}, A330ceo orders stand at 1,439, of which 1,230 have been delivered. The largest operator is [[Turkish Airlines]] with 53 A330s in its fleet.<ref name="Airbus_Orders" />
+
+== Development ==<!--linked from [[Airbus A340]]-->
+
+=== Background ===
+{| class="wikitable" style="float:right; margin-left:1em; text-align: center; font-size:95%"
+|+Airbus jetliners, 1972–1994
+|-
+!style="text-align: left" |Model
+!A300
+!A310
+!A320
+!A330
+!A340
+|-
+! scope="row"  style="text-align: left" |'''Prior<br />code(s)'''
+| –
+|B10
+|SA2
+|B9 <br />(TA9)
+|B11<br />(TA11)
+|-
+! scope="row"  style="text-align: left" |'''Debut'''
+|1972
+|1983
+|1988
+|1994
+|1993
+|-
+! scope="row"  style="text-align: left" |'''Body'''
+|style="font-size: 90%"|Wide
+|style="font-size: 90%"|Wide
+|style="font-size: 90%"|Narrow
+|style="font-size: 90%"|Wide
+|style="font-size: 90%"|Wide
+|-
+! scope="row"  style="text-align: left" |'''Engines'''
+|2
+|2
+|2
+|2
+|4
+|-
+! scope="row"  style="text-align: left" |'''Range'''
+|style="font-size: 90%"|Short/ <br />medium
+|style="font-size: 90%"|Medium/ <br />long
+|style="font-size: 90%"|Short/ <br />medium
+|style="font-size: 90%"|Medium/ <br />long
+|style="font-size: 90%"|Long
+|}
+Airbus's first airliner, the A300, was envisioned as part of a diverse family of commercial aircraft. In pursuit of this goal, studies began in the early 1970s into derivatives of the A300.<ref name=Nor_Wagn_p9-18>{{harvnb|Norris|Wagner|2001|pp=9–18}}</ref><ref>{{harvnb|Wensveen|2007|p=63}}</ref> Before introducing the A300, Airbus identified nine possible variations named A300B1 through B9.<ref>{{harvnb|Gunston|2009|p=183}}</ref> A tenth variant, the A300B10, was conceived in 1973 and developed into the longer range [[Airbus A310]].<ref name=Nor_Wagn_p18-9/> Airbus then focused its efforts on single-aisle (SA) studies, conceiving of a family of airliners later known as the [[Airbus A320 family]], the first commercial aircraft with digital [[fly-by-wire]] controls. During the SA studies Airbus turned its focus back to the wide-body aircraft market, simultaneously working on both projects.<ref name=Nor_Wagn_p18-9>{{harvnb|Norris|Wagner|2001|pp=18–19}}</ref>
+
+In the mid-1970s Airbus began development of the A300B9, a larger derivative of the A300, which would eventually become the A330. The B9 was essentially a lengthened A300 with the same wing, coupled with the most powerful [[turbofan engine]]s available. It was targeted at the growing demand for high-capacity, medium-range, transcontinental trunk routes.<ref name=Nor_Wagn_p22-3>{{harvnb|Norris|Wagner|2001|pp=22–23}}</ref> Offering the same range and payload as the [[McDonnell Douglas DC-10]] but with 25 per cent more fuel efficiency,<ref name=Nor_Wagn_p22-3/> the B9 was seen as a viable replacement for the DC-10 and the [[Lockheed L-1011 TriStar]] trijets.<ref>''Flight International'' 1981, p. 1155.</ref> It was also considered as a medium-ranged successor to the A300.<ref name="N&W p.23"/>
+
+At the same time, a 200-seat four-engine version, the B11 (which would eventually become the A340) was also under development.<ref name="Eden p.30">{{harnvb|Eden|2008|p=30}}</ref> The B11 was originally planned to take the place of narrow-body [[Boeing 707]]s and [[Douglas DC-8]]s then in commercial use, but would later evolve to target the long-range, wide-body trijet replacement market.<ref name="N&W p.23">{{harvnb|Norris|Wagner|2001|p=23}}</ref> To differentiate from the SA series, the B9 and B11 were re-designated as the TA9 and TA11, with TA standing for "twin aisle".<ref name="Eden p.30"/> Development costs were reduced by the two aircraft using the same [[fuselage]] and wing, with projected savings of US$500&nbsp;million.  Another factor was the split preference of those within Airbus and, more importantly, those of prospective customers; twinjets were favoured in North America, quad-jets desired in Asia, and operators had mixed views in Europe.<ref name=Nor_Wagn_p22-3/> Airbus ultimately found that most potential customers favoured four engines due to their exemption from existing twinjet range restrictions and their ability to be ferried with one inactive engine.<ref name=kingsley>Kingsley-Jones 1997, p. 29.</ref> As a result, development plans prioritised the four-engined TA11 ahead of the TA9.<ref name=kingsley/>
+
+=== Design effort ===
+The first specifications for the TA9 and TA11, aircraft that could accommodate 410 passengers in a one-class layout, emerged in 1982.<ref name="N&W p.24">{{harvnb|Norris|Wagner|2001|p=24.}}</ref> They showed a large underfloor cargo area that could hold five cargo pallets or sixteen [[Unit Load Device|LD3]] cargo containers in the forward, and four pallets or fourteen LD3s in the aft hold—double the capacity of the Lockheed L-1011 TriStar or DC-10, and {{Convert|8.46|m|ft|sigfig=3}} longer than the Airbus A300.<ref name=Nor_Wagn_p24-5>{{harnvb|Norris|Wagner|2001|pp=24–25.}}</ref> By June 1985, the TA9 and TA11 had received more improvements, including the adoption of the A320 [[flight deck]], digital fly-by-wire (FBW) control system, and [[side-stick]] control.<ref name="N&W p.27">{{harvnb|Norris|Wagner|2001|p=27.}}</ref> Airbus had developed a common cockpit for their aircraft models to allow quick transition by pilots.  The flight crews could transition from one type to another after only one week's training, which reduces operator costs.<ref name="Lawrence p.73">{{harvnb|Lawrence|Thornton|2005|p=73.}}</ref> The two TAs would use the [[vertical stabiliser]], [[rudder]], and circular fuselage sections of the A300-600, extended by two barrel sections.<ref name="Lawrence p.73"/>
+
+Airbus briefly considered the [[variable camber wing]], a concept that requires changing the wing profile for a given phase of flight. Studies were carried out by [[British Aerospace]] (BAe), now part of [[BAE Systems]], at [[Hatfield Aerodrome|Hatfield]] and [[Filton Aerodrome|Bristol]]. Airbus estimated this would yield a two per cent improvement in aerodynamic efficiency,<ref>{{harvnb|Norris|Wagner|2001|pp=26, 31.}}</ref> but the feature was rejected because of cost and difficulty of development.<ref name="Eden p.30"/> A true [[laminar flow]] wing (a low-drag shape that improves fuel efficiency) was also considered but rejected.<ref>{{harvnb|Gunston|2009|p=196.}}</ref>
+
+[[File:Egyptengine.jpg|thumb|The A330 was the first Airbus aircraft on which Rolls-Royce supplied engines, with its [[Trent 700]] turbofans.<ref name="N&W p.44">{{harvnb|Norris|Wagner|2001|p=44.}}</ref> This engine is from an [[EgyptAir]] A330 in late 1990s-mid-2000s-era livery.|alt=A mostly blue jet engine suspended on a wing; it is characterised by its smooth nacelle, or outer casing.]]
+
+From the beginning of the TA9's development, a choice of [[aircraft engines|engines]] from the three major engine manufacturers, [[Rolls-Royce plc|Rolls-Royce]], [[Pratt & Whitney]], and [[GE Aviation]], was planned.<ref>{{harvnb|Norris|Wagner|2001|=44}}</ref> GE Aviation first offered the [[General Electric CF6#CF6-80C2|General Electric CF6-80C2]]. However, later studies indicated that more thrust was needed to increase the initial power capability from {{Convert|267|to|289|kN|lbf|abbr=on|lk=on|sigfig=3}}.<ref name="N&W pp.44-45">{{harvnb|Norris|Wagner|2001|pp=44–45.}}</ref> GE enlarged the CF6-80C2 fan from {{Convert|236|to|244|cm|in|sigfig=3}} to create the [[General Electric CF6#CF6-80E1|CF6-80E1]], giving a new thrust output of {{Convert|300|-|320|kN|lbf|sigfig=2|abbr=on}}.<ref>{{cite web|title=Model CF6-80E1|publisher=GE Aviation|url=http://www.geae.com/engines/commercial/cf6/cf6-80e1.html|accessdate=25 January 2011}}</ref> Rolls-Royce initially wanted to use the {{Convert|267|kN|lbf|adj=on|abbr=on|sigfig=3}} [[Rolls-Royce Trent#Trent 600 – First proposal|Trent 600]] to power Airbus's newest twinjet and the upcoming [[McDonnell Douglas MD-11]]. However, the company later agreed to develop an engine solely for the A330, the [[Rolls-Royce Trent 700|Trent 700]], with a larger diameter and {{Convert|311|kN|lbf|sigfig=3|abbr=on}} of thrust.<ref name="N&W p.47">{{harnvb|Norris|Wagner|2001|p=47.}}</ref> Similarly, Pratt & Whitney signed an agreement that covered the development of the A330-only [[Pratt & Whitney PW4000|PW4168]]. The company increased the fan size to augment power,<ref name=Nor_Wagn_p44-46>{{harvnb|Norris|Wagner|2001|pp=45–46.}}</ref> enabling the engine to deliver {{Convert|311|kN|lbf|sigfig=3|abbr=on}} of thrust.<ref name=PW4000>{{cite web|title=PW4000-100|publisher=Pratt & Whitney|url=http://www.pw.utc.com/PW4000100_Engine|accessdate=2015-07-04}}</ref>
+
+On 27 January 1986, the Airbus Industrie Supervisory Board held a meeting in [[Munich]], West Germany. Afterwards, the board chairman, [[Franz Josef Strauß]], released a statement that said, "Airbus Industrie is now in a position to finalise the detailed technical definition of the TA9, which is now officially designated the A330, and the TA11, now called the A340, with potential launch customer airlines, and to discuss with them the terms and conditions for launch commitments". The designations were originally reversed; they were switched so the quad-jet airliner would have a "4" in its name. Airbus hoped for five airlines to sign for both the A330 and A340, and on 12 May sent sale proposals to the most likely candidates, including [[Lufthansa]] and [[Swissair]].<ref name="N&W p.27"/>
+
+=== Production and testing ===
+In preparation to produce the A330 and A340, Airbus's partners invested heavily in new facilities. In England, BAe made a [[Pound sterling|£]]7&nbsp;million investment in a three-storey technical centre with {{Convert|15000|m2|sqft|abbr=on|sigfig=3}} of floor area at [[Filton]].<ref name="N&W p.51">{{harnvb|Norris|Wagner|2001|p=51.}}</ref> BAe also spent £5&nbsp;million on a new production line at its [[Chester]] wing production plant.<ref name="N&W p.51"/> In Germany, [[Messerschmitt-Bölkow-Blohm]] (MBB) invested [[Deutsche Mark|DM]]400&nbsp;million ($225&nbsp;million) on manufacturing facilities in the [[Weser]] estuary, including at [[Bremen]], Einswarden, [[Varel]], and [[Hamburg]].<ref>{{harvnb|Norris|Wagner|2001|pp=53–54.}}</ref> France saw the biggest investments, with [[Aérospatiale]] constructing a new [[French franc|Fr.]]2.5&nbsp;billion ($411&nbsp;million) final-assembly plant adjacent to [[Toulouse-Blagnac Airport]] in [[Colomiers]]; by November 1988, the pillars for the new ''[[Clément Ader]]'' assembly hall had been erected.<ref name="N&W p.52">{{harnvb|Norris|Wagner|2001|p=52.}}</ref> The assembly process featured increased automation, such as robots drilling holes and installing fasteners during the wing-to-fuselage mating process.<ref name="N&W p.53">{{harvnb|Norris|Wagner|2001|p=53.}}</ref>
+
+[[File:TLS factory 7413v.jpg|thumb|left|Final assembly area for the A330, next to [[Toulouse-Blagnac Airport]]|alt=View from the air.  Runway to the left and bottom.  To the right long buildings and lots of aircraft.]]
+
+On 12 March 1987, Airbus received the first orders for the twinjet. The domestic French airline [[Air Inter]] placed five firm orders and fifteen [[Option (aircraft purchasing)|options]], while [[Thai Airways International]] requested eight aircraft, split evenly between firm orders and options.<ref name=kingsley/><ref name="N&W p.31">{{harnvb|Norris|Wagner|2001|p=31.}}</ref> Airbus announced the next day that it would formally launch the A330 and A340 programmes by April 1987, with deliveries of the A340 to begin in May 1992 and A330 deliveries to start in 1993. [[Northwest Airlines]] signed a letter of intent for twenty A340s and ten A330s on 31 March.<ref name="N&W p.31"/>
+
+BAe eventually received £450&nbsp;million of funding from the UK government, well short of the £750&nbsp;million it had originally requested for the design and construction of the wings.<ref name="N&W p.32">{{harvnb|Norris|Wagner|2001|p=32.}}</ref> The German and French governments also provided funding. Airbus issued subcontracts to companies in Australia, Austria, Canada, China, Greece, Italy, India, Japan, South Korea, Portugal, the United States, and the former Yugoslavia.<ref>{{harvnb|Norris|Wagner|2001|pp=32, 55.}}</ref> With funding in place, Airbus launched the A330 and A340 programmes on 5 June 1987, just prior to the [[Paris Air Show]].<ref name="N&W p.32"/><ref>{{cite web |title= Timeline 40 Years of Innovation |publisher= Airbus S.A.S |url= http://www.airbus.com/fileadmin/media_gallery/files/press_centre/presskits_backgrounders/Airbus_40_years_of_innovation_-_timeline_illustrated.pdf |format= PDF |accessdate=2 March 2011 |page=2}}</ref> At that time, the order book stood at 130 aircraft from ten customers, including lessor [[International Lease Finance Corporation]] (ILFC). Of the order total, forty-one were for A330s.<ref name="N&W p.32"/> In 1989, Asian carrier [[Cathay Pacific]] joined the list of purchasers, ordering nine A330s and later increasing this number to eleven.<ref>{{Harvnb|Eden|2008|p=32.}}</ref>
+
+The wing-to-fuselage mating of the first A330, the tenth airframe of the A330 and A340 line, began in mid-February 1992. This aircraft, coated with anti-corrosion paint, was rolled out on 31 March without its General Electric CF6-80E1 engines, which were installed by August. During a static test, the wing failed just below requirement, BAe engineers later solved the problem.<ref name="N&W p.78-79"/> At the 1992 [[Farnborough Airshow]], Northwest deferred delivery of sixteen A330s to 1994, following the cancellation of its A340 orders.<ref name="N&W p.78">{{harvnb|Norris|Wagner|2001|pp=71, 78.}}</ref>
+
+[[File:Dragonair.Airbus A330-300.Economy class.2010.JPG|thumb|A330-300 interior, economy class]]
+The first completed A330 was rolled out on 14 October 1992, with the [[maiden flight]] following on 2 November. Weighing {{Convert|181840|kg|lb|sigfig=3|abbr=on}}, including {{Convert|20980|kg|lb|sigfig=3|abbr=on}} of test equipment,<ref name="N&W p.78-79"/> the A330 became the biggest twinjet to have flown, until the later first flight of the [[Boeing 777]]. The flight lasted five hours and fifteen minutes during which speed, height, and other flight configurations were tested. Airbus intended the test flight programme to comprise six aircraft flying a total of 1,800 hours.<ref name="N&W p.78-79">{{harvnb|Norris|Wagner|2001|pp=78–79.}}</ref> On 21 October 1993, the Airbus A330 received the European [[Joint Aviation Authorities]] (JAA) and US [[Federal Aviation Administration]] (FAA) certifications simultaneously after 1,114 cumulative airborne test hours and 426 test flights. At the same time, weight tests came in favourable, showing the plane was {{Convert|500|kg|lb|abbr=on|sigfig=3}} under weight.<!--This coincided with the revelation of weight test results showing the aircraft was {{Convert|500|kg|lb|abbr=on|sigfig=3}} under its expected weight--><ref name="N&W p.85">{{harvnb|Norris|Wagner|2001|p=85.}}</ref>
+
+On 30 June 1994, [[1994 A330 test flight crash|trouble struck]] during certification of the Pratt & Whitney engine when an A330 crashed near Toulouse.<ref>{{cite web |title= Accident description |publisher= Aviation-Safety.net |date= 24 January 2011 |url= http://aviation-safety.net/database/record.php?id=19940630-0 |accessdate=25 January 2011}}</ref> Both pilots and the five passengers died.<ref name="N&W pp.86-87">{{harvnb|Norris|Wagner|2001|pp=86–87.}}</ref> The flight was designed to test [[autopilot]] response during a one-engine-off worst-case scenario with the [[Center of gravity of an aircraft|centre of gravity]] near its [[Center of gravity of an aircraft#CG aft of aft limit|aft limit]].  Shortly after takeoff, the pilots had difficulty setting the autopilot, and the aircraft lost speed and crashed.<ref>Learmount 1994, p. 6.</ref> An investigation by an internal branch of ''Direction Generale d'Aviation'' concluded that the accident resulted from slow response and incorrect actions by the crew during the recovery.<ref name="N&W p.89">{{harvnb|Norris|Wagner|2001|p=89.}}</ref> This led to a revision of A330 operating procedures.<ref>{{harnvb|Eden|2008|p=31.}}</ref>
+
+=== Entry into service ===
+[[File:Aeroflot Airbus A330-300 (VQ-BCU) departs London Heathrow 11April2015 arp.jpg|thumb|[[Aeroflot]] A330-300 departs [[London Heathrow Airport]] (2015)]]
+
+[[Air Inter]] became the first operator of the A330, putting the aircraft into service on 17 January 1994 between [[Orly Airport]], Paris, and [[Marseille]].<ref>{{harvnb|Norris|Wagner|2001|pp=84–85.}}</ref> Deliveries to [[Malaysia Airlines]] (MAS) and Thai Airways International were postponed to address [[delamination]] of the [[composite material]]s in the PW4168 engine's [[Thrust reversal|thrust reverser]] assembly. Thai Airways received its first A330 during the second half of the year, operating it on routes from [[Bangkok]] to [[Taipei]] and [[Seoul]].<ref>{{harvnb|Norris|Wagner|2001|pp=86, 89.}}</ref><ref name="Eden p.32">{{harvnb|Eden|2008|p=32.}}</ref> Cathay Pacific received its Trent 700 A330s following the certification of that engine on 22 December 1994.<ref name="N&W p.89"/> MAS received its A330 on 1 February 1995 and then rescheduled its other ten orders.<ref name="Eden p.32"/>
+
+Airbus intended the A330 to compete in the [[ETOPS|Extended-range Twin-engine Operation Performance Standards]] (ETOPS) market, specifically with the Boeing 767.<ref>{{harvnb|Wensveen|2007|page= 65}}</ref> (ETOPS is a standard that allows longer range flights away from a diversion airport for aircraft that have met special design and testing standards.) Instead of the "ETOPS out of the box" or "Early ETOPS" approach taken by Boeing with its 777,<ref group=Nb>This meant that the Boeing 777 was certified for 180-minutes ETOPS from the first day of service. As a result, the aircraft could be 180&nbsp;minutes (3&nbsp;hours) of flying time from a diversionary airport during transoceanic services.</ref> Airbus gradually increased ETOPS approval on the A330 using in-service experience.  Airbus suggested that the A340 and A330 were essentially identical except for their engine number, and that the A340's experience could be applied to the A330's ETOPS approval.<ref>{{Cite book |last=Pandey |first=Mohan |title=How Boeing Defied the Airbus Challenge |publisher= CreateSpace, 2010 |location= North Charleston, South Carolina| isbn=978-1-4505-0113-2 |pages=71–72 |url=http://www.amazon.com/How-Boeing-Defied-Airbus-Challenge/dp/1450501133/ref=sr_1_1?ie=UTF8&s=books&qid=1298947973&sr=1-1}}</ref>  The plans were for all three engine types to enter service with 90-minute approval, before increasing to 120 minutes after the total A330 fleet accumulated 25,000 flight hours, and then to 180 minutes after 50,000 flight hours, in 1995.<ref>{{harvnb|Norris|Wagner|2001|p=81.}}</ref><ref group=Nb>After a total of 25,000 airborne hours, the A330 would be allowed a maximum of 120&nbsp;minutes (2&nbsp;hours) of flight time from a diversionary airport. After 50,000 hours, the limit would be raised to 180&nbsp;minutes (3&nbsp;hours).</ref> [[Aer Lingus]] and Cathay Pacific were two important airlines assisting Airbus in this endeavour by building up in-service flight hours on over-ocean flights.<ref>{{harvnb|Cole|2000|pages=37, 41}}</ref> In November 2009, the A330 became the first aircraft to receive ETOPS–240 approval, which has since been offered by Airbus as an option.<ref>{{Cite press release|url= http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/a330-is-first-airliner-to-be-certified-for-etops-beyond-180-minutes/ |title=A330 is first airliner to be certified for ETOPS 'beyond 180 minutes'|publisher=Airbus S.A.S |date=12 November 2009 |accessdate=2 July 2011}}</ref>
+
+=== Further developments ===
+In response to a decline in A330-300 sales, increased market penetration by the [[Boeing 767-300ER]], and airline requests for increased range and smaller aircraft, Airbus developed the Airbus A330-200.<ref>{{harvnb|Norris|Wagner|2001|p=91.}}</ref> Known as the A329 and A330M10 during development, the A330-200 would offer nine per cent lower operating costs than the Boeing 767-300ER.<ref name="N&W pp.92-93"/> The plane was aimed at the {{Convert|11900|km|nmi mi|adj=on|abbr=on|sigfig=3|lk=out}} sector, where Airbus predicted demand for 800 aircraft between 1995 and 2015.<ref name="N&W pp.92-93">{{harvnb|Norris|Wagner|2001|pp=92–93.}}</ref> The project, with US$450&nbsp;million in expected development costs, was approved by the Airbus Industrie Supervisory Board on 24 November 1995.<ref name="N&W pp.92-93"/>
+
+[[File:Aeroflot Airbus A330 Kustov edit.jpg|thumb|left|[[Aeroflot]] A330-200 after taking off from [[Sheremetyevo International Airport]] in 2011|alt=A silver, white, blue and red Aeroflot A330 after takeoff, flying across a blue sky background.]]
+
+The A330-200 first flew on 13 August 1997.<ref name="Norris 2001 95">{{harvnb|Norris|Wagner|2001|p=95.}}</ref> The sixteen-month certification process involved logging 630 hours of test flights.<ref name="Norris 2001 95"/> The A330-200's first customer was ILFC; these aircraft were leased by [[Canada 3000]], who became the type's first operator.<ref name="Norris 2001 99">{{harvnb|Norris|Wagner|2001|p=99.}}</ref>
+
+As Airbus worked on its A330-200, [[hydraulic pump]] problems were reported by both A330 and A340 operators. This issue was the suspected cause of a fire that destroyed an [[Air France]] A340-200 in January 1994.<ref name="N&W p.96"/> On 4 January that year, a Malaysia Airlines A330-300, while undergoing regular maintenance at [[Singapore Changi Airport]], was consumed by a fire that started in the right-hand main undercarriage well.  The incident caused US$30&nbsp;million in damage, and the aircraft took six months to repair.<ref name="N&W p.96">{{harvnb|Norris|Wagner|2001|p=96.}}</ref><ref>''Flight International'' 1997, p. 5.</ref> Consequently, operators were advised to disable electrical pumps in January 1997.<ref name="N&W p.96"/>
+
+Several in-flight shutdowns of Trent 700–powered A330-300s occurred. On 11 November 1996, engine failure on a Cathay Pacific flight forced it back to [[Ho Chi Minh City]].<ref>Lewis 1996, p. 9.</ref> On 17 April 1997, Cathay Pacific's subsidiary [[Dragonair]] experienced an engine shutdown on an A330, caused by carbon clogging the [[oil filter]]. As a result, Cathay Pacific self-suspended its 120-minute ETOPS clearance.  Another engine failure occurred on 6 May during [[climb (aeronautics)|climbout]] with a Cathay Pacific A330, due to a bearing failure in a [[Hispano-Suiza]]-built [[Transmission (mechanics)|gearbox]]. Three days later, a Cathay Pacific A330 on climbout during a Bangkok–Hong Kong flight experienced an oil pressure drop and a resultant [[Flameout|engine spool down]], forcing a return to Bangkok. The cause was traced to metal contamination in the engine's [[Integrated circuit|master chip]].<ref name="N&W pp96-97">{{harvnb|Norris|Wagner|2001|pp=96–97.}}</ref> Following a fifth engine failure on 23 May, Cathay Pacific and Dragonair voluntarily grounded their A330 fleets for two weeks, causing major disruption as Cathay's eleven A330s made up fifteen per cent of its passenger capacity.<ref>{{Cite news| last=Creedy| first=Steve| title=Cathay Pacific pilots hailed as heroes| work=The Australian|date=16 April 2010 |url=http://www.theaustralian.com.au/business/aviation/cathay-pacific-pilots-hailed-as-heroes/story-e6frg95x-1225854262928|accessdate=5 February 2011}}</ref> Rolls-Royce and Hispano-Suiza developed a redesigned lubrication system to resolve the problem.<ref name="N&W pp96-97"/>
+
+[[File:New A330-200F Freighter on static display.jpg|thumb|The freighter variant, the A330-200F, debuts at the Singapore Airshow 2010.<ref>{{Cite video|title=Airbus A330-200F Freight Makes Public Debut|date=10 February 2010|publisher=Airbus S.A.S|url=http://videos.airbus.com/video/iLyROoafvZFl.html|accessdate=21 May 2011}}</ref>|alt=A A330-200F in Airbus's white and blue livery on display under a partly cloudy but otherwise clear sky. The engine inlets are covered.]]
+
+Responding to lagging [[Airbus A300|A300-600F]] and [[Airbus A310|A310F]] sales, Airbus began marketing the Airbus A330-200F, a freighter derivative of the A330-200, around 2001.<ref>{{Cite news|url=http://www.flightglobal.com/news/articles/airbus-aims-to-fill-freighter-void-with-a330-derivative-205407/|title=Airbus aims to fill freighter void with A330 derivative|work=Flightglobal|date=14 March 2006|accessdate=7 October 2013}}</ref> The freighter has a range of {{Convert|7400|km|nmi mi|abbr=on|adj=on|sigfig=2}} with a {{Convert|65|t|lb|sigfig=2}} payload, or {{Convert|5900|km|nmi mi|abbr=on|sigfig=2}} with {{Convert|70|t|lb|sigfig=2}}.<ref name=":A330-200F range">{{cite web|title= A330-200F / Range|publisher=Airbus S.A.S|url=http://www.airbus.com/aircraftfamilies/freighter/a330-200f/performance/|accessdate=28 January 2011}}</ref> The plane utilises the same nosegear as the passenger version, however it is attached lower in the fuselage and housed in a distinctive bulbous "blister fairing". This raises the aircraft's nose so that the cargo deck is level during loading, as the standard A330's landing gear results the plane having a nose-down attitude while on the ground.<ref name="Blister fair">{{cite web|first=Max|last=Kingsley-Jones|title=PICTURES: First Airbus A330-200F shows off nose-gear blister fairing |work=Flightglobal|date=4 August 2009|url=http://www.flightglobal.com/news/articles/pictures-first-airbus-a330-200f-shows-off-nose-gear-blister-fairing-330563/|accessdate=7 October 2013}}</ref>
+
+The A330-200F made its maiden flight on 5 November 2009.<ref name="A330-200F 1st flight">{{Cite news |last=Kingsley-Jones |first=Max |title=A330-200F touches down after successful maiden flight |work=Flightglobal |date=5 November 2009 |url=http://www.flightglobal.com/news/articles/a330-200f-touches-down-after-successful-maiden-flight-334435/ |accessdate=7 October 2013}}</ref><ref>{{Cite news |title=Airbus flies new freighter it hopes to build in U.S. |agency=Reuters India |date=6 November 2009 |url=http://in.reuters.com/article/2009/11/06/idINIndia-43690620091106 |accessdate=28 January 2011}}</ref> This marked the start of a four-month, 180-hour certification programme. JAA and FAA certifications were expected by March the following year although approval by the JAA was delayed until April.<ref name="A330-200F 1st flight"/><ref>{{Cite news |last=Buyck |first=Cathy |title=A330-200F receives EASA Type Certification |work=ATW Online |date=12 April 2010 |url=http://atwonline.com/aircraft-engines-components/news/a330-200f-receives-easa-type-certification-0427 |accessdate=30 January 2011}}</ref> The first delivery was subsequently made to the [[Etihad Airways]] cargo division, Etihad Cargo, in July 2010.<ref>{{Cite news |title=Farnborough: Etihad takes delivery of first A330-200F |work=Flightglobal |date=20 July 2010 |url=http://www.flightglobal.com/news/articles/farnborough-etihad-takes-delivery-of-first-a330-200f-344864/ |accessdate=7 October 2013 |last=Reals |first=Kerry}}</ref><ref>{{Cite news |url=http://www.airlinesanddestinations.com/airlines/airbus-etihad-display-first-customer-a330-200f-freighter-at-farnborough/ |date=20 July 2010 |title=Airbus Hands Over Etihad's First A330-200F Freighter at Farnborough |publisher=Airlinesanddestinations.com |accessdate=25 May 2011}}</ref>
+
+Airbus announced in February 2011 that it intended to raise production rates from seven-and-a-half to eight per month to nine per month in 2012, and ten per month in 2013.<ref>{{cite web |url=http://atwonline.com/aircraft-engines-components/news/airbus-boost-a330-production-10-monthly-2013-0203 |title=Airbus to boost A330 production to 10 monthly in 2013 |accessdate=5 March 2011 |author=Karp, Aaron |date=4 February 2011 |work=ATW Online}}</ref>  Production increased to 10 aircraft per month in April 2013, the highest for an Airbus widebody aircraft.<ref>{{Cite news |author= |title=A330 production at 10 per month |url=http://www.airbus.com/newsevents/news-events-single/detail/a330-production-rate-reaches-10-per-month-to-meet-strong-global-market-demand/ |work= Airbus |date=4 April 2013 |accessdate=17 May 2013}}</ref> In 2012, Airbus expected the A330 to continue selling until at least 2020,<ref>{{Cite news |last=Polek |first=Gregory |title=Airbus eyes year end horizon to solve ets row with China |publisher=AIONLINE |date=16 July 2012 |url=http://www.ainonline.com/aviation-news/ain-air-transport-perspective/2012-07-16/airbus-eyes-year-end-horizon-solve-ets-row-china |accessdate=7 November 2012}}</ref> with the [[Airbus A350 XWB|A350-900]] expected to replace the A330-300.<ref>{{Cite news |last=Kingsley-Jones |first=Max |url=http://www.flightglobal.com/news/articles/analysis-what-does-boeing39s-777x-mean-for-airlines-and-396751/ |title=ANALYSIS: What does Boeing's 777X mean for airlines and Airbus? |publisher=Airline Business  |date=27 March 2014 |work=Flightglobal.com |accessdate=1 September 2014}}</ref>
+
+[[File:Air China Airbus A330-243 B-6075 MUC 2015 01.jpg|thumb|Air China A330-243 taking off from [[Munich Airport]].]]
+On 19 July 2013, Airbus delivered the 1000th A330 to Cathay Pacific.<ref>{{cite web |last=Hofmann |first=Kurt |title=Airbus delivers 1,000th A330 to Cathay Pacific |url=http://atwonline.com/airframes/airbus-delivers-1000th-a330-cathay-pacific |date=19 July 2013 |work=Air Transport World |publisher=Penton |accessdate=23 July 2013}}</ref> It is the first Airbus wide-body airliner to reach 1,000 deliveries, and the fourth wide-body to achieve the milestone after the [[Boeing 747]], [[Boeing 767|767]] and [[Boeing 777|777]].<ref>{{cite web |last=Dunlop |first=Michelle |title=Airbus jabs at Boeing's 787, celebrates 1,000th A330 delivery |url=http://www.heraldnet.com/article/20130719/BLOG01/130719821 |date= 19 July 2013 |work=HeraldNet |accessdate=23 July 2013}}</ref>  As of July 2014, a total of 1,342 A330s had been ordered, with 1,106 delivered.<ref name="Airbus_Orders"/>
+
+On 25 September 2013 at the Aviation Expo China (Beijing Airshow), Airbus announced a new lower weight A330-300 variant, optimised for use on domestic and regional routes in high growth markets with large populations and concentrated traffic flows; China and India were recognised as prime targets.<ref name=Airbus_A330-300regional>{{cite web|title=Airbus announces lower weight A330 for regional & domestic operations|publisher=Airbus|url=http://www.airbus.com/newsevents/news-events-single/detail/airbus-announces-lower-weight-a330-for-regional-domestic-operations/|accessdate=25 September 2013}}</ref> This variant could carry up to 400 passengers.<ref>{{cite web|title=Airbus beats Boeing with record sales in 2013|url=http://news.yahoo.com/airbus-beats-boeing-record-sales-2013-130818663.html|publisher=AFP|date=13 January 2014 |archiveurl=http://web.archive.org/web/20140114213910/http://news.yahoo.com/airbus-beats-boeing-record-sales-2013-130818663.html |archivedate=2014-01-14 |accessdate=2015-07-04 |deadurl=yes}}</ref> The increased efficiency, however, comes more from the installation of more seats than any weight reduction.  On relatively short, yet congested routes, the A330 competes against single-aisle jetliners. While the A330's operating costs in those conditions is not far above those of the Boeing 737 or Airbus A321, the A320neo and 737 MAX promise more efficiency. Where the frequency of flights cannot be increased, using larger aircraft, such as the A330, is the only available option to increase capacity.<ref>Perrett, Bradley. "Not Tailor Made". ''Aviation Week and Space Technology'', 14/21 October 2013, p. 26.</ref> The first customer for the A330 regional was announced as [[Saudia]] at the 2015 Paris Air Show.<ref>{{cite news|last1=LeBeau|first1=Phil|last2=Ranasinghe|first2=Dhara|title=Airbus names first customer of A330 regional jet|url=http://www.cnbc.com/id/102758673|accessdate=28 June 2015|work=CNBC|date=15 Jun 2015}}</ref>
+
+In December 2014, Airbus announced that it would reduce A330 production to nine aircraft per month from ten, because of falling orders. Airbus did not rule out further production cuts.  The announcement led to an immediate drop in Airbus Group's stock price because the company derives a significant percentage of its cash flow and net profit from the A330 program; the A330's financial impact is magnified amid problems in the [[Airbus A350|A350]] and [[Airbus A380|A380]] programs.<ref>Wall, Robert, "Airbus plans to cut A330 output", Wall Street Journal, 11 December 2014, p. B3.</ref>  In February 2015, Airbus announced another production rate cut to six aircraft per month beginning in the first quarter of 2016.<ref name=Feb_prodcut>{{cite news |title=Airbus to cut A330 production rate as ramps up A320 |url=http://www.reuters.com/article/2015/02/27/airbus-group-results-production-idUSFWN0W009O20150227|accessdate=4 August 2015|agency=Reuters}}</ref>  This extends A330ceo production to July 2017, allowing for a smooth transition to A330neo production, which is set to start in Spring 2017.<ref name=Feb_prodcut /><ref>[http://m.aviationweek.com/paris-air-show-2015/airbus-says-adjusted-a330-rate-sustainable-even-without-china-order Airbus Says Adjusted A330 Rate Is Sustainable Even Without China Order | Paris Air Show 2015 content from Aviation Week<!-- Bot generated title -->]</ref>
+
+===A330neo===
+{{Main|Airbus A330neo}}
+
+Airbus' management has been studying whether to equip the A330 with newer, more efficient engines: "new engine option" or neo. Airbus sales chief [[John Leahy (executive)|John Leahy]]'s argument is that the lower purchase price of an A330 even without new engines make the economics of buying an A330 competitive at midrange routes with that of the Boeing 787.<ref name=AW_Delta_issue/>  Leahy stated that "we just reduced the capital costs by 25%" in July 2014.<ref>Wall, Robert, and Jon Ostrower. "From big jet makers, smaller changes". Wall Street Journal, 15 July 2014, p. B3.</ref>  Candidate engines include variants of Rolls-Royce's [[Rolls-Royce Trent 1000|Trent 1000]] and General Electric's [[General Electric GEnx|GEnx-1B]].  Both engine makers are reportedly interested in winning an exclusive deal should a re-engined A330 be offered. The Trent 1000 TEN (Thrust, Efficiency, New Technology) engine is under development for the 787-10, but Rolls-Royce intends to offer it for a number of aircraft.<ref>{{cite web |author= Jens Flottau and Guy Norris |url= http://aviationweek.com/commercial-aviation/reengining-airbus-a330-could-take-2-3-years |title= Reengining Airbus A330 Could Take 2–3 Years |publisher= Aviation Week and Space Technology  |date= 31 Jan 2014}}</ref> Both engines are heavier than the A330's existing engines, so Airbus will have to strengthen the wings to accept them.<ref name=AW_CIT_pushes/>
+
+Airbus believes the A330neo derives much of its market advantage from being a less expensive widebody positioned to serve high density routes shorter than 4,000 nautical miles that otherwise would be served by aircraft primarily designed for routes of 8,000 miles.  Ed Greenslet, editor of Airline Monitor, told Aviation Week that the A330neo could create a monopoly in that segment, because the 767 is "essentially out of production" and the only other aircraft suited for it is the [[Boeing 757]]; the largest 737 does not have the passenger capacity to compete effectively.<ref name="auto">Flottau, Jens, "Defining priorities", Aviation Week and Space Technology, 14 July 2014, p. 70.</ref>
+
+Airbus' recent customer, [[AirAsiaX]], which ordered 25 A330 aircraft in December 2013, has pushed Airbus to develop a re-engined A330 that would boast a substantially lower fuel burn,<ref>{{cite web |author=Weber, Tim |title=Airbus studies engine revamp of A330 jet: sources |url=http://news.yahoo.com/airbus-studies-engine-revamp-a330-sources-182216887--sector.html|publisher=Reuters|date=10 January 2014}}</ref> as has [[Delta Air Lines]] with its request for proposals to replace its 747-400s and 767-300ER fleets.<ref name=AW_Delta_issue>{{cite web |url= http://www.aviationweek.com/Article.aspx?id=/article-xml/awx_03_11_2014_p0-671113.xml |title= Delta To Issue Major Widebody RFP For 747/767 Replacements |author= Jens Flottau |publisher= Aviation week |date= 11 March 2014 |archiveurl=http://wayback.archive.org/web/20140314211346/http://www.aviationweek.com/Article.aspx?id=/article-xml/awx_03_11_2014_p0-671113.xml |archivedate=2014-03-14 |accessdate=2015-07-04 |deadurl=yes}}</ref>  AirAsiaX believes that the A330neo will give the airline a second chance to establish a profitable flight schedule connecting [[Kuala Lumpur]] to [[London]] and [[Paris]]; in 2012, AirAsiaX's first attempt failed to make money because the Airbus A340 employed proved to be far too fuel inefficient.<ref>{{cite web |author= Jones, Rory and Robert Wall |url= http://online.wsj.com/articles/low-cost-carriers-threaten-long-haul-business-of-big-rivals-1401382169 |title= Déjà Vu? Budget Jets Take On Long Hauls |publisher= Wall Street Journal |date= 29 May 2014}}</ref>  CIT believes an A330neo service on short to medium haul routes, carrying 250–300 passengers, can produce higher profit margins that either the [[Airbus A350 XWB|A350]] or the 787, due to the latter two's higher purchase cost as a result of their optimisation for longer routes. It specifically cites the A350-800 as "not as efficient as they'd like." On the other hand, [[Steven Udvar-Hazy]], chairman of Air Lease Corp. does not accept that reasoning, telling Aviation Week "We don't believe it is rational for us to take the A350-800 and the A330neo...I don't see the A350-800 surviving if (Airbus) does the A330neo."<ref name=AW_CIT_pushes>{{cite web |title= CIT Pushes Case For A330neo |url= http://aviationweek.com/awin/cit-pushes-case-a330neo |author= Norris, Guy |publisher= Aviation Week and Space Technology |date= 24 March 2014}}</ref><ref>{{cite web|url=http://aviationweek.com/commercial-aviation/airbus-more-1000-orders-coming-a330neo|title=Airbus: More Than 1,000 Orders Coming For A330neo|work=aviationweek.com|accessdate=1 April 2015}}</ref>
+
+Prolonging the production run of the A330 with the neo may help Airbus maintain profitability as it transitions to the A350, the first model transition Airbus has had to manage.<ref name=reuters-20140610>{{cite news |url=http://www.reuters.com/article/2014/06/10/us-airbus-boeing-prices-analysis-idUSKBN0EL1QI20140610 |title=Battle over Airbus A330 revamp may pressure jet prices |author=Tim Hepher |publisher=Reuters |date=10 June 2014 |accessdate=2015-07-04}}</ref> A major upgrade program for the A330 could also cause problems for Airbus.  The re-engined A330 would be launched into a twin-aisle market already crowded by the Boeing 787, [[Boeing 777X|777X]], and Airbus A350, and could take sales from other Airbus aircraft.<ref name="auto"/>  Starting the A330neo program would likely result in a short-term drop in A330 sales, Airbus' most profitable program, as customers wait for the new version. Airbus is also considering re-engining the [[Airbus A380|A380]], but running two costly upgrade programs at the same time could overwhelm the company's resources.  Emirates' recent cancellation of a 70-plane order for the A350 may place more urgency on the decision.<ref>{{cite web |title=Emirates cancels 70-plane A350 order in blow to Airbus, Rolls |url=http://www.reuters.com/article/2014/06/11/us-airbus-group-emirates-idUSKBN0EM0M120140611 |publisher=Reuters |date=11 June 2014}}</ref><ref>Flottau, Jens, and Guy Norris. "Sea change". Aviation Week and Space Technology, 17 February 2014, pp. 24–25.</ref>
+
+Airbus announced the A330-800neo and A330-900neo variants at the [[Farnborough Airshow]] on 14 July 2014.<ref>{{cite web |title=Airbus launches the A330neo |url=http://www.airbus.com/newsevents/news-events-single/detail/airbus-launches-the-a330neo/ |publisher=Airbus |date= 14 July 2014}}</ref><ref>{{cite web|url=http://www.businessinsider.com/r-airbus-revamps-a330-jet-in-long-haul-battle-with-boeing-2014-14|title=Airbus Unveils New Jet To Battle Boeing's 787 Dreamliner|date=14 July 2014|work=Business Insider|accessdate=1 April 2015}}</ref> Both variants are to have a maximum take-off weight of 242 t. The design is planned to be frozen for the type in 2015. Rolls Royce will be the exclusive engine supplier; when Airbus announced the A330neo project, both Rolls Royce and General Electric insisted on exclusivity as a condition of offering favorable terms.  Rolls Royce offered better terms.<ref name="auto1">Wall, Robert, Jon Ostrower and Rory Jones, Aircraft makers curb engine choices, Wall Street Journal, 16 July 2014, p.B3</ref>  The A330-900neo is to be introduced in the fourth quarter of 2017, while the 252-seat A330-800neo is to be introduced in early 2018. Aerodynamic modifications are to include a re-twisted wing and optimised slats. A350-style wing-tips will increase the wingspan by 3.7 m to 64 m.<ref name=fg330neolaunch>{{cite web |author1=David Kaminski-Morrow |title=Farnborough: Airbus lays out A330neo specifications |url=http://www.flightglobal.com/news/articles/farnborough-airbus-lays-out-a330neo-specifications-401421/|website=www.flightglobal.com/ |publisher=Flightglobal}}</ref>  Airbus predicted a 14% [[Fuel economy in aircraft|fuel consumption]] reduction per seat. This is for the new −900neo compared to the previous 235-tonne −300 version, it is 8.5% more efficient per seat against the newer 242-tonne −300, and is also due to 10 additional seats from a new [[Galley (kitchen)|galley]] design: the block fuel burn is 5.1% lower. Compared to the 235-tonne version, the larger 112-inch [[Rolls-Royce Trent 7000|Trent 7000]] is 11% more efficient than the 97-inch previous engine, and the aerodynamic optimizations offers a 4% gain, countering a 2% loss due to increased weight and 1% due to additional [[Aerodynamic drag|drag]] from the larger engine.<ref>{{cite web |url= http://www.aspireaviation.com/2014/07/15/dissecting-the-a330neo-from-a-weight-perspective/ |title= Dissecting the A330neo from a weight perspective |author= Daniel Tsang |publisher= Aspire Aviation |date= 15 July 2014}}</ref> Fuel consumption per seat is additionally improved by 2% due to the rearranged cabin (Space-Flex and Smart-Lav) with increased seating.<ref>[http://www.ausbt.com.au/files/A330neo%20Launch%20Presentation.pdf A330neo Launch Presentation] Airbus</ref>
+
+The decision to offer the aircraft with only one engine is somewhat controversial but not unique to Airbus; the [[Boeing 777X]] will come equipped exclusively with General Electric engines.  On the one hand, airlines bemoan the loss of competition among engine makers; Steven Udvar-Hazy, CEO of Air Lease Corp., said that he wants a choice of engines.  On the other hand, Airbus has pointed out that equipping a commercial aircraft to handle more than one type of engine adds millions of dollars to the purchase price.  A [[Pratt and Whitney]] executive told the Wall Street Journal, "Engines are no longer commodities...the optimization of the engine and the aircraft becomes more relevant."<ref name="auto1"/>
+
+== Design ==
+[[File:cyprus airways a330-200 5b-dbs arp.jpg|thumb|A [[Cyprus Airways]] A330-200, showing the long slender wing|alt=The undercarriage of an A330 have been retracted, showing an underside view of an A330 during flight. Under each wing is a turbofan engine.]]
+
+The A330 is a medium-size, wide-body airliner, with two engines suspended on pylons under the wings. On the ground, the two-wheel nose undercarriage and two four-wheel [[bogie]] main legs built by [[Messier-Dowty]] support a [[Maximum Ramp Weight]] (MRW) of {{Convert|230.9|t|lb|sigfig=3}}, while the designed [[maximum takeoff weight]] (MTOW) is {{Convert|230|t|lb|sigfig=3}} on the A330-200 variant. An option allows a maximum ramp weight of {{Convert|233.9|t|lb|sigfig=3}} with a maximum takeoff weight of {{Convert|233.0|t|lb|sigfig=3}}.<ref name=Airbus_A330-200_specs/>
+
+The airframe of the A330 features a low-wing [[Cantilever wing|cantilever monoplane]] with a wing virtually identical to that of the A340.  The wings were designed and manufactured by BAe, which developed a long slender wing with a very high aspect ratio to provide high aerodynamic efficiency.<ref name=Norris_Wagner_p50-1>{{harvnb|Norris|Wagner|2001|pages=50–51}}</ref>{{refn|The higher the aspect ratio, the greater the aerodynamic efficiency.<ref>{{cite web|url=http://www.grc.nasa.gov/WWW/K-12/airplane/geom.html|publisher=NASA|accessdate=17 March 2011|title=Wing Geometry Definitions|quote=A higher aspect ratio wing has a lower drag and a slightly higher lift than a lower aspect ratio wing.}}</ref>|group="Nb"}} The wing is swept back at 30 degrees and, along with other design features, allows a maximum operating [[Mach number]] of 0.86.<ref name="N&W p.50">{{harvnb|Norris|Wagner|2001|p=50.}}</ref><ref name=Airbus_A330-300_specs/> The wing has a very high thickness-to-[[Chord (aircraft)|chord]] ratio of 12.8 per cent, which means that a long span and high [[Aspect ratio (wing)|aspect ratio]] can be attained without a severe weight penalty.<ref name="Gunston p.195"/><!--{{refn|This is the thickness to chord ratio of the early Airbus A340 variants, which share the same wing with the A330.<ref>{{Cite web|url=http://www.aviamarket.org/reviews/civil-aircraft/521-airbus-a340.html?start=1|publisher=Aviamarket.org|accessdate=15 May 2011|title=Airbus A340 – Design Features, Flying Controls, Landing Gear, Power Plant, Accommodation, Avionics, Dimensions|quote=...thickness/ chord ratios 15.25 per cent at root, 11.27 per cent at inner kink, 9.86 per cent at outer kink and 10.60 per cent at tip.}}</ref>|group="Nb"}}--> For comparison, the rival MD-11 has a thickness-to-chord ratio of 8–9 per cent.<ref name="Gunston p.195">{{harvnb|Gunston|2009|p=195.}}</ref><!--<ref>{{Cite web|title=Re-Engineering the Design Process Through Computation|date=January–February 1999|url=http://aero-comlab.stanford.edu/Papers/AIAA-2412-887.pdf|format=PDF|quote=This wing is quite thick, actually thicker than the McDonnell Douglas baseline design across the span, with a thickness to chord ratio of more than 14 per cent at the root and 9 per cent at the tip.|work=[[Princeton University]]|page=11|last=Jameson|first=Anothony}}</ref></ref>--> Each wing also has a {{Convert|2.74|m|ft|adj=on|abbr=on|sigfig=3}} tall [[Wingtip device|winglet]] instead of the wingtip fences found on earlier Airbus aircraft.<ref>{{harvnb|Norris|Wagner|2001|p=31.}}</ref>
+
+The shared wing design with the A340 allowed the A330 to incorporate aerodynamic features developed for the former aircraft.<ref>{{harvnb|Gunston|2009|p=188.}}</ref> The failure of [[International Aero Engines]]' radical [[High-bypass turbofan|ultra-high-bypass]] V2500 "SuperFan", which had promised around 15 per cent [[Fuel efficiency|fuel burn reduction]] for the A340, led to multiple enhancements including wing upgrades to compensate.<ref name="N&W p.31"/><ref>{{harvnb|Gunston|2009|p=197.}}</ref> Originally designed with a {{convert|56|m|ft|abbr=on|sigfig=2}} [[Wingspan|span]], the wing was later extended to {{convert|58.6|m|ft|abbr=on|sigfig=2}} and finally to {{convert|60.3|m|ft|abbr=on|sigfig=2}}.<ref name="N&W p.31"/> At {{Convert|60.3|m|ft|abbr=on|sigfig=2}}, the wingspan is similar to that of the larger [[Boeing 747|Boeing 747–200]], but with 35 percent less wing area.<ref name="N&W p.50"/><ref name=Airbus_A330-300_specs/>
+
+[[File:Airbus A330-200 flight deck forward displays.jpg|left|thumb|The A330/A340 cockpit used the A320's six-screen design.|alt=Cockpit of the A330. All instruments and displays are switched on. Two seats occupy both sides of the cockpit, separated by a centre console.]]
+
+The A330 and A340 fuselage is based on that of the [[Airbus A300|Airbus A300-600]], with many common parts, and has the same external and cabin width: {{Convert|5.64|m|ft|abbr=on|sigfig=2}} and {{Convert|5.28|m|ft|abbr=on|sigfig=2}}.<ref name=Airbus_A330-200_specs/><ref name=Airbus_A330-300_specs/> Allowed seating arrangements are 2–2–2 six-abreast in [[First class (aviation)|first class]], 2–3–2 seven-abreast in [[business class]], 2–4–2 eight-abreast in [[economy class]], or 3-3-3 nine-abreast in high-density economy class.<ref name=A330_airport_report/> The vertical stabiliser and rudder are made mostly of [[composite material]]s.<ref>{{harvnb|Norris|Wagner|2001|p=58.}}</ref><ref>{{harvnb|Miravete|1999|p=149.}}</ref> When necessary, the A330 uses the Honeywell 331–350C [[auxiliary power unit]] (APU) to provide pneumatics and electrical power.<ref name="Product Catalog">{{cite web |url=https://commerce.honeywell.com/webapp/wcs/stores/servlet/ECategoryDisplay?catalogId=10101&storeId=10651&categoryId=32443&langId=-1 |title=Product Catalog |publisher=Honeywell |accessdate=18 November 2010}}</ref>
+
+The A330 shares the same glass cockpit flight deck layout as the A320 and A340, featuring electronic instrument displays rather than mechanical gauges.<ref>{{cite web|title= A330 Family / cockpit |publisher=Airbus S.A.S |url=http://www.airbus.com/aircraftfamilies/passengeraircraft/a330family/commonality/|accessdate=2 March 2011}}</ref> Instead of a conventional [[Yoke (aircraft)|control yoke]], the flight deck features side-stick controls, six main displays, and the [[Electronic Flight Instrument System]] (EFIS), which covers navigation and flight displays, as well as the [[Electronic Centralised Aircraft Monitor]] (ECAM).<ref name=A330_aero-tech.com>{{cite web |url=http://www.aerospace-technology.com/projects/a330/ |title=Airbus A330 Wide-Bodied Medium/Long-Range Twin-Engine Airliner, Europe |publisher=Aerospace-technology.com |accessdate=31 January 2011}}</ref><ref>{{cite web|url=http://www.smartcockpit.com/data/pdfs/plane/airbus/A330/misc/A330_Flight_Deck_and_Systems_Briefing_For_Pilots.pdf |accessdate=2015-07-04 |archiveurl=http://wayback.archive.org/web/20091228233548/http://www.smartcockpit.com/data/pdfs/plane/airbus/A330/misc/A330_Flight_Deck_and_Systems_Briefing_For_Pilots.pdf |archivedate=2009-12-28 |title=A330 Flight deck and systems briefing for pilots |publisher=Airbus S.A.S |format=PDF |page=173 |date=March 1999 |deadurl=yes}}</ref> Apart from the flight deck, the A330 also has the fly-by-wire system common to the A320 family, the A340, the [[Airbus A350|A350]], and the [[Airbus A380|A380]]. It also features three primary and two secondary [[Aircraft flight control system|flight control systems]], as well as a [[flight envelope]] limit protection system which prevents manoeuvres from exceeding the aircraft's aerodynamic and structural limits.<ref name=A330_aero-tech.com/>
+{{Clear}}
+
+== Variants ==
+With launch of Airbus A330neo, the existing members of the Airbus A330 family (A330-200, 200F, 300, and MRTT) received the Airbus A330ceo ("current engine option") name.{{citation needed|date=July 2014}}
+
+=== A330-200 ===
+[[File:Egyptair.a330-200.su-gci.arp.jpg|thumb|An [[EgyptAir]] A330-200 during a landing approach. The absence of a centre-line wheel bogey, and the presence of two engines instead of four, are the main differences between the A330 and the A340.|alt=Twin-engine passenger jet with undercarriage extended during approach for landing]]
+
+The A330-200 is a shortened, longer-range variant, which entered service in 1998 with Korean Air.  Typical range with 253 passengers in a three-class configuration is {{Convert|13400|km|nmi mi|abbr=on|sigfig=3}}.<ref name=Airbus_A330-200_specs/> The A330-200 is ten fuselage frames shorter than the original −300, with a length of {{Convert|58.82|m|ftin|abbr=on|sigfig=3}}.<ref name=Airbus_A330-200_specs/><ref name="FI OOTF">Henley 1998, p. 36.</ref> To compensate for the smaller [[Torque|moment arm]] of the shorter fuselage, the vertical stabiliser height of the −200 was increased by {{Convert|104|cm|in|abbr=on|sigfig=3}}.<ref name="N&W p.94">{{harvnb|Norris|Wagner|2001|p=94.}}</ref> The −200's wing was also modified; structural strengthening of the wing allowed the maximum takeoff weight of the −200 to be increased to {{Convert|229.8|t|lb|sigfig=3}}.<ref name="N&W p.94"/> The −200 is offered with three engine types similar to those found on the −300, namely the General Electric CF6-80E, Pratt & Whitney PW4000, or Rolls-Royce Trent 700.<ref name=Airbus_A330-200_specs/> Airbus also boosted fuel capacity to {{Convert|139100|L|USgal|lk=out|abbr=on|sigfig=3}} by adding the centre section fuel tank, standard in the A340.<ref name="Norris 2001 95"/>
+
+A new vertical stabilizer was introduced in 2004 beginning with MSN 555. This newer fin is shorter in height by {{Convert|50|cm|in|abbr=on|sigfig=2}}<ref name=A330_airport_report>{{cite web |url=http://www.airbus.com/fileadmin/media_gallery/files/tech_data/AC/Airbus-AC-A330-20140101.pdf |format=PDF |title=A330: Airplane characteristics for airport planning |publisher=Airbus S.A.S |date= 1 January 2014 |accessdate= 20 September 2015}}</ref> and was derived from the design of the vertical stabilizer of the A340-500 and -600, later becoming standard on all new A330-200.<ref>{{cite web|url=http://www.airliners.net/aviation-forums/tech_ops/read.main/293053|title=A330 Various Tail Heights|work=Airliners.net|accessdate=20 September 2015}}</ref>
+
+In 2008, Airbus released plans for a higher [[gross weight]] version of the A330-200 to more effectively compete against the Boeing 787 Dreamliner.<ref name="A330-200HGW">{{Cite journal |title=Airbus to offer heavier A330 against delayed 787 |url=http://wayback.archive.org/web/20080915082438/http://www.flightglobal.com/articles/2008/09/10/315762/airbus-to-offer-heavier-a330-against-delayed-787.html|accessdate=10 February 2011 |date=10 September 2008|work=Flightglobal}}</ref> The new-build A330-200HGW had a 5 tonne increase in [[Maximum Takeoff Weight]], allowing a {{Convert|560|km|nmi mi|sigfig=3}} range increase and a {{Convert|3.4|t|lb|sigfig=3}} payload increase.<ref name="A330-200HGW"/><ref>{{cite web|title= A330 Family: Technology|publisher=Airbus S.A.S|url=http://www.airbus.com/aircraftfamilies/passengeraircraft/a330family/technology-and-innovation/|accessdate=6 July 2011}}</ref> [[Korean Air]] became the first customer on 27 February 2009 with an order for six −200HGWs. Deliveries of the first aircraft started in 2010.<ref>{{Cite press release|title=Korean Air orders six more A330-200s |publisher=Airbus S.A.S|date=27 February 2009|url=http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/korean-air-orders-six-more-a330-200s/|accessdate=21 May 2011}}</ref>
+
+In mid-2012, Airbus proposed another version of the −200 with the maximum gross weight increased by 2 t to 240 t. This version will have its range extended by 270 nmi and will carry 2.5 t more payload. It will see engine and aerodynamic improvements reducing its fuel burn by about 2%.  It is planned to enter the service by mid-2015.<ref name=aspireaviation2012/> In November 2012, it was announced that the gross weight is to be further increased to 242 t with the range extended by 350&nbsp;nmi (over 238 t version).<ref name=flightglobal2012/>
+
+As of October 2015, 631 of the −200 had been ordered, 577 of which had been delivered, with 569 aircraft in operation.<ref name="Airbus_Orders"/><ref>{{cite web|url=http://www.airbus.com/aircraftfamilies/passengeraircraft/a330family/a330-200/|title=A330-200|work=airbus.com|accessdate=6 November 2015}}</ref> The 2015 list price is $229&nbsp;million.<ref name=Airbus_prices/> The −200 competes with the Boeing 767-300ER and to a lesser extent the [[767-400ER]]<ref>{{Cite book|last=Norris|first=Guy and Mark Wagner|title=Modern Boeing Jetliners|publisher=MBI Publishing|year=1999|location=St. Paul, Minnesota|isbn=0-7603-0717-2|page=117|quote=The results of the Airbus studies produced...ultimately the A330-200. Airbus outlined an aircraft capable of carrying 256 passengers over a range of 6,400&nbsp;nautical miles with, it claimed, up to 9% lower operating costs than the 767-300ER...The new A330-200 caused Boeing to take another look at its 767 plans...|chapter=767: Stretching and Growing}}</ref> as well as with new [[Boeing 787 Dreamliner|787 Dreamliner]].<ref>{{Cite news|last= Regan|first=James and Tim Hepher|title=Airbus ups A330 output, revokes freighter order|work=Reuters India |date=3 February 2011|url=http://in.reuters.com/article/2011/02/03/idINIndia-54636020110203|accessdate=16 March 2011|quote=European planemaker Airbus confirmed plans on Thursday for a 25 percent increase in production of its A330 long-range aircraft as it cashes in on delays to the Boeing 787 Dreamliner.}}</ref> The A330-200 is also available as an ultra-long-range [[Business jet|corporate jet]] as the [[Airbus Corporate Jet Centre|A330-200 Prestige]].<ref>{{cite web|title=A330-200 Prestige specifications|publisher=Airbus S.A.S|url=http://www.airbus.com/fileadmin/media_gallery/files/tech_data/jetFamily/media_object_file_A330_200_specifications.pdf|format=PDF|accessdate=21 May 2011}}</ref>
+
+=== A330-300 ===<!-- This section is linked from [[Lufthansa]] -->
+[[File:Usairways a330-300 n278ay arp.jpg|thumb|An A330-300, the original variant, of [[US Airways]] taking off|alt=A white A330 with a blue underside and red markings is seen taking off against a dark and cloudy overcast; the undercarriage are retracting.]]
+
+The A330-300 is based on a stretched A300 fuselage {{Convert|63.69|m|ftin|abbr=on|sigfig=3}} long but with new wings, stabilisers and fly-by-wire systems. The −300 carries 295 passengers in a three-class cabin layout, 335 in two-class, or up to 440 in an all-economy layout. It has a range of {{Convert|10500|km|nmi mi|abbr=on|sigfig=3}}. It has a large cargo capacity, comparable to that of early [[Boeing 747]]s. It is powered by the choice of two General Electric CF6-80E, Pratt & Whitney PW4000, or Rolls-Royce Trent 700 engines, all of which are [[ETOPS/LROPS|ETOPS-180]] rated.<ref name=Airbus_A330-300_specs/> The −300 entered service in January 1994.<ref name="N&W p.85"/>
+
+In 2010 Airbus offered a new version of the −300 with the maximum gross weight increased by two tonnes to 235 t. This enabled 120&nbsp;nmi extension of the range as well as 1.2 t increase in payload.<ref>{{cite web |url=http://www.flightglobal.com/news/articles/airbus-poised-to-launch-higher-weight-a330-300-350165/ |accessdate=7 October 2013 |title=Airbus poised to launch higher-weight A330-300 |date=25 November 2010 |first=Olivier |last=Bonnassies |work=Flightglobal}}</ref> In mid-2012, Airbus proposed another increase of the maximum gross weight to 240 t. It is planned to be implemented by mid-2015. This −300 version will have the range extended by 400&nbsp;nmi and will carry 5 t more payload. It will include engine and aerodynamic improvements reducing its fuel burn by about 2%.<ref name=aspireaviation2012>{{cite news |url=http://www.aspireaviation.com/2012/07/10/airbus-is-right-on-a330-improvement-strategy/ |title=Airbus is right on A330 improvement strategy |date=10 July 2012 |accessdate=5 November 2012 |work=aspireaviatio |author=Daniel Tsang}}</ref> In November 2012, it was further announced that the gross weight will increase from 235 t to 242 t, and the range will increase by {{convert|500|nmi|km mi|abbr=on|disp=or|sigfig=3}} to {{convert|6100|nmi|km mi|abbr=on|sigfig=3}}. Airbus is also planning to activate the central fuel tank for the first time for the −300 model.<ref name=flightglobal2012>{{cite news |url=http://www.flightglobal.com/news/articles/airbus-to-raise-a330-take-off-weight-and-fuel-capacity-379583/ |title=Airbus to raise A330 take-off weight and fuel capacity |date=29 November 2012 |work=Flightglobal |author=David Kaminski-Morrow |accessdate=4 January 2012}}</ref>
+
+In September 2013, Airbus announced a version of the A330-300, named ''A330 Regional''. This version is to have seating for 400 passengers, with a reduced range of {{convert|3000|nmi|km mi|sigfig=3}} and a gross weight of approximately {{convert|200|t|lb|abbr=on|sigfig=3}}.<ref name=Airbus_A330-300regional/><ref>{{cite web |url=http://aviationweek.com/paris-air-show-2015/airbus-secures-saudi-arabian-a330-300-regional-launch-customer |title=Airbus Secures Saudi Arabian as A330-300 Regional Launch Customer |work=Aviation Week |date= 16 June 2015 |accessdate= 16 July 2015}}</ref><ref name=Airbus_A330_family>{{cite web |title=Airbus A330 Family |publisher=Airbus |url=http://www.airbus.com/aircraftfamilies/passengeraircraft/a330family/ |accessdate=16 July 2015}}</ref>
+
+As of October 2015, 766 -300s had been ordered, 621 of which had been delivered, with 605 in operation.<ref name="Airbus_Orders"/><ref>[http://www.airbus.com/aircraftfamilies/passengeraircraft/a330family/a330-300/ A330-300 aircraft: A330-300 range, specifications (dimensions, seating capacity, performance), cabin]. Airbus</ref> The 2015 list price is $253.7&nbsp;million.<ref name=Airbus_prices/> The closest competitors have been the [[Boeing 767|Boeing 767-400ER]],{{citation needed|date=May 2014}} [[Boeing 777|Boeing 777-200/200ER]], and the now-out-of-production [[McDonnell Douglas MD-11]].<ref>Learmount 1990, p. 115.</ref>
+
+=== A330-200F ===
+{{multiple image|caption_align=center|header_align=center
+ | align = right
+
+ | image1 = Airbus A330-200 front landing gear - QATAR.jpg
+ | width1 = 200
+ | alt1 = Airbus A330-200
+ | link1 = Airbus A330-200
+ | caption1 = <center>Airbus A330-200 front landing gear</center>
+
+ | image2 = A330-200F front landing gear - QATAR CARGO.JPG
+ | width2 = 200
+ | alt2 = Airbus A330-200F
+ | link2 = Airbus A330-200F
+ | caption2  = <center>Airbus A330-200F front landing gear</center>
+
+ | footer = <center>The bulge under the A330-200F nose houses the lowered nose undercarriage leg correcting the inherent nose-down attitude of passenger versions.<ref name="Blister fair"/></center>
+}}
+The A330-200F is an all-cargo derivative of the A330-200 capable of carrying {{Convert|65|t|lb|abbr=on|sigfig=2}} over {{Convert|7400|km|nmi mi|abbr=on|sigfig=2}} or {{Convert|70|t|lb|sigfig=2}} up to {{Convert|5900|km|nmi mi|abbr=on|sigfig=2}}.<ref name=":A330-200F range"/> To overcome the standard A330's nose-down body angle on the ground, the A330F uses a revised nose undercarriage layout to provide a level deck during cargo loading. The normal A330-200 undercarriage is used, but its attachment points are lower in the fuselage, thus requiring a distinctive blister fairing on the nose to accommodate the retracted nose gear.<ref name="Blister fair"/> Power is provided by two Pratt & Whitney PW4000 or Rolls-Royce Trent 700 engines. General Electric does not plan to offer an engine for the A330-200F.<ref>{{Cite news |title=GE drops A330-200F plan and opens door to P&W |work=Flightglobal |date=15 June 2007 |url=http://www.flightglobal.com/articles/2007/06/15/214692/ge-drops-a330-200f-plan-and-opens-door-to-pw.html |archiveurl=http://wayback.archive.org/web/20071023215207/http://www.flightglobal.com/articles/2007/06/15/214692/ge-drops-a330-200f-plan-and-opens-door-to-pw.html |archivedate=2007-10-23 |accessdate=10 November 2010}}</ref>
+
+As of October 2015, Airbus had delivered 32 aircraft with 10 unfilled orders.<ref name="Airbus_Orders"/><ref>{{cite web|url=http://www.airbus.com/aircraftfamilies/freighter/a330-200f/|title=A330-200F|work=airbus.com|accessdate=5 October 2015}}</ref> The list price is $203.6&nbsp;million.<ref name=Airbus_prices/> As well as new-build freighters, Airbus has proposed passenger-to-freighter conversions of existing −200 airliners.<ref>{{cite web|url=http://www.flightglobal.com/articles/2010/07/21/344898/farnborough-qatar-fires-warning-shot-at-airbus-over-a330.html|archiveurl=http://wayback.archive.org/web/20100724055533/http://www.flightglobal.com/articles/2010/07/21/344898/farnborough-qatar-fires-warning-shot-at-airbus-over-a330.html|archivedate=2010-07-24|date=21 July 2010|accessdate=21 July 2010|title=Farnborough: Qatar fires warning shot at Airbus over A330 conversions|first=Max|last=Kingsley-Jones|work=Flight Daily News}}</ref> The A330-200F is sized between the [[Boeing 767|767-300F]] and [[Boeing 777|777F]],<ref name=FI_A330-200F_specs>{{cite web |url=http://www.flightglobal.com/news/articles/airbuss-general-freight-hauler-a330-200f-technical-342231/ |first=Max|last=Kingsley-Jones |title=Airbus's general freight hauler: A330-200F technical description |work=Flightglobal |date=20 May 2010 |accessdate=7 October 2013}}</ref><ref>{{cite web |url=http://www.topspeed.com/aviation/aviation-reviews/boeing/1995-2010-boeing-767-300f-ar87421.html |first=Julia |last=Baciu |title=1995–2010 Boeing 767-300F |work=topspeed.com |date=4 June 2010 |accessdate=11 December 2011}}</ref> but trails both Boeing models in orders and deliveries.<ref name=777_O_D_summ>{{cite web |url=http://active.boeing.com/commercial/orders/displaystandardreport.cfm?cboCurrentModel=777&optReportType=AllModels&cboAllModel=777&ViewReportF=View+Report |title= 777 Model Orders and Deliveries summary |work=Boeing |date= September 2014 |accessdate= 6 October 2014}}</ref><ref name=767_O_D_summ>{{cite web |url=http://active.boeing.com/commercial/orders/displaystandardreport.cfm?cboCurrentModel=767&optReportType=AllModels&cboAllModel=767&ViewReportF=View+Report |title= 767 Model Orders and Deliveries summary |publisher= Boeing |date= September 2014 |accessdate= 4 October 2013}}</ref>
+
+===A330 Converted Freighter===
+In 2012, Airbus announced plans for a passenger-to-freighter program with [[ST Aerospace]]. The A330-300 and −200 are to be part of the P2F program with the −300 to come first and the −200 to follow a year later. Conversion work will be done mainly in Dresden, Germany.<ref>{{Cite news |url=http://online.wsj.com/article/BT-CO-20120214-721309.html |title=EADS, ST Aerospace To Develop A330 Cargo Conversion Program |publisher=The Wall Street Journal |date=14 February 2012 |accessdate=2015-07-04 |archiveurl=http://web.archive.org/web/20120216051802/http://online.wsj.com/article/BT-CO-20120214-721309.html |archivedate=2012-02-16 |deadurl=yes}}</ref> Qatar Airways has already showed interest in the program.<ref>{{Cite news|url=http://www.aviationweek.com/aw/generic/story.jsp?id=news/awx/2012/02/14/awx_02_14_2012_p0-425628.xml&headline=Airbus%20Launches%20A330P2F%20With%20ST%20Aerospace&channel=comm |title=Airbus Launches A330P2F With ST Aerospace |publisher=Aviation week |date= |accessdate=14 February 2012 |deadurl=yes |archiveurl=https://web.archive.org/20150329205932/http://www.aviationweek.com/aw/generic/story.jsp?id=news/awx/2012/02/14/awx_02_14_2012_p0-425628.xml&headline=Airbus%20Launches%20A330P2F%20With%20ST%20Aerospace&channel=comm |archivedate=29 March 2015 }}</ref> The aircraft is expected to enter service in 2016.
+
+The A330-300P2F variant has a payload of 60 tonnes with the range of 2,200 nautical miles (4,000&nbsp;km) or 61 tonnes with the range of 3,600 nautical miles (6,600&nbsp;km) for the higher MTOW variants.  The A330-200P2F will carry the payload of up to 59 tons on ranges up to 4,000 nautical miles (7,400&nbsp;km).<ref name="airbus1">{{cite web|url=http://www.airbus.com/aircraftfamilies/freighter/a330p2f-passenger-to-freighter/ |title=A330P2F passenger-to-freighter conversion &#124; Airbus, a leading aircraft manufacturer |publisher=Airbus.com |date=2 August 2012 |accessdate=15 August 2012}}</ref> Airbus estimates the market demand for the conversions at 900 units during the next 20 years.<ref name="airbus1"/>
+
+===A330neo===
+{{Main|Airbus A330neo}}
+The Airbus A330neo is an update to the A330 family, with new [[Rolls-Royce Trent 7000]] engines and other enhancements.
+
+====A330-800neo====
+The Airbus A330-800neo will directly replace the Airbus A330-200. It will feature next-generation Rolls Royce [[Rolls-Royce Trent 7000|Trent 7000]] engines and A350-style winglets. The aircraft is scheduled to enter service in early 2018 or late 2017 with Hawaiian Airlines.<ref name=fg330neolaunch/><ref>{{Cite news |url=http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/airbus-launches-the-a330neo |title=Airbus launches the A330neo |publisher=Airbus |website= airbus.com |date= 2014 |accessdate=14 July 2014}}</ref>
+
+====A330-900neo====
+The Airbus A330-900neo is to burn 14% less fuel than A330-300 on per seat basis (on a 4,000 nmi flight) and will have 10 more seats (310 seats overall) achieved with an interior reconfiguration to save space.  Like the 800neo, it will be equipped with Trent 7000 engines with a 10:1 bypass delivering {{convert|72,000|lbf|kN|abbr=on|order=flip|sigfig=2}}.  The −900neo is expected to enter service at the end of 2017.<ref name=fg330neolaunch/> On 19 November 2014, [[Delta Air Lines]] became the first airline to announce a firm order for the Airbus A330neo by ordering 25 A330-900neo aircraft.<ref>{{cite web |author1=Delphine Touitou |title=Airbus signs mega-deal with Delta for 50 planes |url=http://news.yahoo.com/airbus-sign-deal-delta-50-planes-104215488.html |website=news.yahoo.com |publisher=Yahoo |date=21 November 2014}}</ref><ref>{{cite news |author1=Dominic Gates |title=Boeing loses $6B Delta order; gives a big boost to Airbus |url=http://seattletimes.com/html/businesstechnology/2025059475_deltaairbusxml.html |work=The Seattle Times |date=19 November 2014}}</ref><ref>{{cite web |title=Airbus wins Delta wide-body order |url=http://leehamnews.com/2014/11/19/airbus-wins-delta-wide-body-order |publisher=Leeham |date=19 November 2014}}</ref><ref name=delta>{{cite web |title=Delta orders 50 Airbus widebody aircraft |url=http://www.airbus.com/newsevents/news-events-single/detail/delta-orders-50-airbus-widebody-aircraft |publisher=Airbus |date=20 November 2014}}</ref> This order made the airline the official launch customer for the Airbus A330-900neo.<ref>{{cite web |url=http://www.airbus.com/newsevents/news-events-single/detail/first-242-tonne-take-off-weight-a330-successfully-completes-first-flight/ |title=First 242 tonne take-off weight A330 successfully completes first flight |publisher=Airbus.com |date=12 January 2015}}</ref>
+
+===Beluga replacement===
+Airbus has started design of a replacement aircraft for the [[Airbus Beluga|Beluga]] in November 2014 : the [[Beluga XL]] based on the Airbus A330.<ref>{{cite web |url= http://www.flightglobal.com/news/articles/airbus-wing-station-plan-hints-at-a330-beluga-392492/ |title= Airbus wing station plan hints at A330 Beluga |author= David Kaminski-Morrow |date= 4 Nov 2013 |publisher= [[flightglobal]]}}</ref><ref>{{cite web |url= http://www.flightglobal.com/news/articles/airbus-starts-a330-beluga-development-406160/ |title= Airbus Airbus starts A330 Beluga development |first= Michael |last= Gubisch|date= 17 November 2014 |publisher=Reed Business Information |work=[[Flightglobal]]}}</ref>
+
+=== Military variants ===
+
+==== Airbus A330 MRTT ====
+[[File:A330-200 conversion to A330 MRTT.jpg|thumb|A team of engineering personnel assembled in front of an A330 MRTT converted from an A330-200 by Iberia Spanish Airlines Maintenance|alt=Crowd of people assembled in front of unpainted aircraft. A tall building serves as the backdrop for the photograph]]
+
+The [[Airbus A330 MRTT]] is the Multi-Role Transport and Tanker (MRTT) version of the A330-200, designed for [[aerial refuelling]] and strategic transport.<ref>{{Cite news |url=http://www.airbus.com/aircraftfamilies/military-aircraft/a330-mrtt/ |title=A330 MRTT |publisher=Airbus S.A.S |date= |accessdate=17 February 2011}}</ref> {{As of|2014|11}}, 46 total orders have been placed for the A330 MRTT by the air forces of Australia, France, Saudi Arabia, Singapore, the United Arab Emirates, and the United Kingdom.<ref>{{Cite news |url=http://www.flightglobal.com/news/articles/a330-tanker-gains-military-certification-348171/ |title=A330 tanker gains military certification |work=Flightglobal |last=Hoyle |first=Craig |date= 6 October 2010 |accessdate=7 October 2013}}</ref><ref>{{cite web |title=A330 MRTT: Multi Role Tanker Transport |publisher=Airbusmilitary.com |url=http://www.airbusmilitary.com/A330MRTT.aspx |accessdate=29 June 2011 |archiveurl=http://web.archive.org/web/20110526034050/http://www.airbusmilitary.com/A330MRTT.aspx <!--Added by H3llBot--> |archivedate=26 May 2011}}</ref><ref>{{Cite news |url=http://airbusdefenceandspace.com/france-announces-order-for-airbus-a330-mrtt-air-to-air-refuelling-aircraft |archiveurl=http://wayback.archive.org/web/20141123173821/http://airbusdefenceandspace.com/france-announces-order-for-airbus-a330-mrtt-air-to-air-refuelling-aircraft |archivedate=2014-11-23 |title=France announces order for Airbus A330 MRTT air-to-air refuelling aircraft |publisher=Airbus Defence and Space |date= |accessdate=20 November 2014}}</ref>
+
+==== EADS/Northrop Grumman KC-45 ====
+The [[EADS/Northrop Grumman KC-45]] was a proposed version of the A330 MRTT for the United States Air Force (USAF)'s [[KC-X]] aerial refuelling programme. In February 2008, the USAF selected the aircraft to replace the [[Boeing KC-135 Stratotanker]].<ref>{{Cite news|last=Gilmore|first=Gerry J. |title=Air Force Awards Tanker Contract to Northrop Grumman|work=defense.gov|date=29 January 2008|url=http://www.defense.gov//News/NewsArticle.aspx?ID=49134|archiveurl=http://wayback.archive.org/web/20100301093355/http://www.defense.gov//News/NewsArticle.aspx?ID=49134|archivedate=2010-03-01|accessdate=10 November 2010}}</ref> The replacement process was mired in controversy, instances of corruption, and allegations of favouritism.<ref>{{Cite news| url=http://ca.reuters.com/article/businessNews/idCAN2861183920080302 |work=Reuters |title=Northrop, EADS tanker win sparks controversy in U.S |date=2 March 2008|last= Shalal-Esa|first=Andrea|accessdate=12 February 2011}}</ref><ref>{{Cite press release|title=Boeing Protests U.S. Air Force Tanker Contract Award|publisher=Boeing|date=11 March 2008|url=http://wayback.archive.org/web/20080314234054/http://www.boeing.com/news/releases/2008/q1/080311b_nr.html |accessdate=12 March 2011}}</ref> In July 2010, EADS submitted a tanker bid to the USAF without [[Northrop Grumman]] as a partner.<ref>{{Cite press release |url=http://www.a330mrtt.com/Press/PressRelease/tabid/190/ArticleId/42/EADS-North-America-intends-to-submit-proposal-for-U-S-Air-Force-tanker-42.aspx |title=EADS North America intends to submit proposal for U.S. Air Force tanker |publisher=Airbus S.A.S |date=20 April 2010 |accessdate=8 March 2011}}</ref><ref name=KC-X_bids_in_July2010>{{Cite news| last=Trimble| first=Stephen| url=http://www.flightglobal.com/news/articles/usaf-receives-three-proposals-for-kc-x-but-antonov-team-admits-344276/| title=USAF receives three proposals for KC-X, but Antonov team admits concerns| work=Flightglobal|date=9 July 2010| accessdate=7 October 2013}}</ref> However, on 24 February 2011, the USAF picked the [[Boeing KC-767]] proposal, later named [[Boeing KC-46|KC-46]], as the winner because of its lower cost.<ref>{{Cite news|last=Trimble|first=Stephen|title=EADS concedes KC-X contract award to Boeing|work=Flightglobal|url=http://www.flightglobal.com/news/articles/eads-concedes-kc-x-contract-award-to-boeing-353951/|date=4 March 2011|accessdate=7 October 2013}}</ref><ref>{{Cite news|title=UPDATED: USAF selects Boeing for KC-X contract|last=Trimble|first=Stephen|work=Flightglobal|date=24 February 2011|url=http://www.flightglobal.com/articles/2011/02/24/353642/updated-usaf-selects-boeing-for-kc-x-contract.html|archiveurl=http://wayback.archive.org/web/20110226050412/http://www.flightglobal.com/articles/2011/02/24/353642/updated-usaf-selects-boeing-for-kc-x-contract.html|archivedate=2011-02-26|accessdate=29 June 2011}}</ref>
+
+=== Undeveloped variants ===
+
+==== A330-200Lite ====
+{{See also|Airbus A350 XWB}}
+
+To compete with Boeing's [[Boeing 787 Dreamliner#Background|7E7]], Airbus offered a minimum-change derivative called the A330-200''Lite'' in 2004. As the name indicated, this proposed variant would have had a lower maximum takeoff weight of {{Convert|202|t|lb|sigfig=3}}, coupled with de-rated engines, giving a range of {{Convert|7400|km|nmi mi|abbr=on|sigfig=2}}.<ref>Ionides & Kingsley-Jones 2004, p. 10.</ref><ref name="A330-200Lite"/> It was aimed at [[Singapore Airlines]], who had looked to replace its Airbus A310-300s.<ref>{{cite web |title= Emergence of 'A330-200 Lite' Unlikely to Impact Existing Values |publisher=Aviationtoday.com |date= 28 June 2004 |url= http://www.aviationtoday.com/manufacturers/boeing/Emergence-of-A330-200-Lite-Unlikely-to-Impact-Existing-Values_3681.html |accessdate=21 February 2011}}</ref><ref>{{Cite news |title= Singapore not ready to buy 7E7 |work=[[Seattle Post-Intelligencer]] |date= 26 August 2004 |url= http://www.seattlepi.com/business/article/Singapore-not-ready-to-buy-7E7-1152549.php|accessdate=23 February 2011 |first1=James |last1=Wallace}}</ref> The variant was also to be a replacement for Airbus A300-600Rs and early Boeing 767s.<ref name="A330-200Lite">{{Cite news |work=Bloomberg News |publisher= Seattle Times |title= Airbus Looks at Offering Lite A330 To Rival B7E7 |date= 29 May 2004 |last= Rothman |first= Andrea|url=http://community.seattletimes.nwsource.com/archive/?date=20040529&slug=airbuslite29 |accessdate=29 June 2011}}</ref> Airlines, however, were not satisfied with the compromised aircraft; the company instead proceeded with an entirely new aircraft, the A350 XWB.<ref>{{harvnb|Gunston|2009|p=253.}}</ref>
+
+==== A330-300HGW ====
+In 2000, it was reported that Airbus was studying an A330-300 version with a higher gross weight.  It was named A330-300HGW and had a takeoff weight of {{Convert|240|t|lb|sigfig=2}}, {{Convert|7|t|lb|sigfig=2}} greater than the −300's weight.  The version would have a strengthened wing and additional fuel capacity from a {{Convert|41600|L|USgal|adj=on|sigfig=3}} centre section fuel tank.  The A330-300HGW's range was increased to over {{Convert|11000|km|nmi mi|abbr=on|sigfig=3}}. Among those that showed interest was leasing company ILFC, which sought airliners that could fly from the US West Coast to Europe.<ref name="Longer range A330-300">''Flight International'' 2000, p. 11.</ref>
+
+Power was to be supplied by all three engines offered to the two other A330 passenger models.  Airbus also considered using the new [[Engine Alliance GP7000]] engine for the A330-300HGW, which would have been the engine's first twinjet application. The −300HGW was to enter airline service in 2004.<ref name="Longer range A330-300"/> However, the programme was not launched and quietly disappeared.  The 240-tonne A330 would reappear years later when Airbus announced at the 2012 [[Farnborough Airshow]] that it would be an available option for both the A330-300 and the A330-200.<ref name=aspireaviation2012/><ref>{{cite web|url=http://in.reuters.com/article/2012/07/09/airshow-airbus-a-idINL6E8I920R20120709 |title=Airbus to tweak A330 design – sources |date=9 July 2012 |work=Reuters |accessdate=9 July 2012}}</ref> In November 2012, the maximum take off weight was further increased to 242 tonnes; the first of these aircraft was to enter service with Delta Air Lines in Q2 2015.<ref>{{cite web|url=http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/airbus-offers-new-242-tonne-a330-takeoff-weight-capability-to-extend-market-coverage/ |title=Airbus offers new 242 tonne A330 takeoff-weight capability to extend market coverage |date=29 November 2012 |work=Airbus |accessdate=29 November 2012}}</ref><ref>{{cite web|url=http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/first-242-tonne-take-off-weight-a330-starts-final-assembly/ |title=First 242 tonne take-off weight A330 starts final assembly |date=6 November 2014 |work=Airbus |accessdate=6 November 2014}}</ref> The A330neo also uses this MTOW.<ref>{{cite news|last1=Flottau|first1=Jens|title=Airbus Formally Launches A330neo With ALC As First Customer|url=http://aviationweek.com/farnborough-2014/airbus-formally-launches-a330neo-alc-first-customer|accessdate=27 June 2015|work=Aviation Week|date=14 July 2014}}</ref>
+
+==== A330-500 ====
+Also known as the A330-100, the A330-500 was a proposed "shrink" of the A330-200 version launched in July 2000 at the Farnborough Airshow,<ref name="Norris & Wagner p.103">{{harvnb|Norris|Wagner|2001|p=103.}}</ref><ref name="-500 rejections">Kingsley-Jones & Lewis 2001, p. 6.</ref> with eight fuselage frames removed&nbsp;– four ahead and four behind the wing. This would allow for the seating of 222 passengers. The −500's maximum takeoff weight was to be {{Convert|228|t|lb|sigfig=3}}, a {{Convert|5|t|lb|adj=on|sigfig=2}} decrease from the A330-200, allowing a range of {{Convert|12970|km|nmi mi|abbr=on|sigfig=3}}. A lighter version, at {{Convert|195|t|lb|sigfig=3}}, would have flown up to {{Convert|8060|km|nmi mi|abbr=on|sigfig=3}}.<ref name=Frawley_A330>{{Cite book|last=Frawley |first=Gerald |title=The International Directory of Civil Aircraft, 2003/2004 |chapter= Airbus A330-200", "Airbus A330-300 |work=Aerospace Publications|location=Fyshwick, Australia |year=2003 |isbn=1-875671-58-7}}</ref> The aircraft would have had 5 per cent better [[Thrust specific fuel consumption|specific fuel consumption]] than the A300-600, powered by either the CF6-80G2, PW4000, or the Trent 500.<ref name="Norris & Wagner p.103"/>
+
+Prospective customers included ILFC, [[CIT Group|CIT Aerospace]], Lufthansa, and [[Hapag-Lloyd]]. The latter two, however, were unimpressed with the long-range variant, preferring a shorter-range aircraft, which was better suited to their route structure.<ref name="-500 rejections"/> Singapore Airlines was also an expected customer because it was looking for a replacement for the A310.<ref name="Norris & Wagner p.103"/><ref name="-500 rejections"/> Airbus intended to freeze the design in late 2001, with the first flight scheduled for the third quarter of 2003 and entry into service within a year.<ref name=Frawley_A330/> The programme was later abandoned, as interest from customers was lacking.<ref>Kingsley-Jones 2001, p. 51.</ref>
+
+== Operators ==
+{{Main|List of Airbus A330 operators}}
+[[File:Tam Airbus A330-223 PT-MVP.jpg|thumb|[[TAM Linhas Aereas]] Airbus A330-200 powered by PW4168|alt=Angled underside view of white twinjet with red "TAM' letters and tail.]]
+
+As of December 2015, there are 1,232 examples of all A330 variants in airline service, including 574 A330-200s, 33 -200Fs, and 625 -300s.<ref name="Airbus_Orders"/> The largest airline operators are [[Turkish Airlines]] (53), [[China Eastern Airlines]] (51), [[Air China]] (50) and [[Cathay Pacific]] (43).<ref name="Airbus_Orders"/>
+
+=== Orders and deliveries ===
+{| class="wikitable" style="text-align:right; font-size:96%;"
+|-
+! !!colspan="2"|Orders!!colspan="24"|Deliveries
+|-
+!Type!!Total!!Backlog!!Total!!2015!!2014!!2013!!2012!!2011!!2010!!2009!!2008!!2007!!2006!!2005!!2004!!2003!!2002!!2001!!2000!!1999!!1998!!1997!!1996!!1995!!1994!!1993
+|-
+!A330-200
+|634||52||582||30||28||43||37||40||32||38||49||42||39||29||25||19||36||16||27||40||12|| || || || ||
+|-
+!A330-200F
+|42||9||33||3||5||8||8||4||5|||| || || || || || || || || || || || || || || ||
+|-
+!A330-300
+|761||119||642||70||75||57||56||43||50||38||23||26||23||27||22||12||6||19||16||4||11||14||10||30||9||1
+|-
+!Total
+|1,437||180||1,257||103||108||108||101||87||87||76||72||68||62||56||47||31||42||35||43||44||23||14||10||30||9||1
+|}
+<small>Data through end of December 2015</small><ref name="Airbus_Orders">{{cite web |url=http://www.airbus.com/company/market/orders-deliveries |title= Airbus orders and deliveries |work=[[Airbus|Airbus S.A.S.]] |date=31 December 2015 |format=XLS |accessdate=12 January 2016}}</ref><ref name="Airbus_Hist_OD">{{cite web |url=http://www.airbus.com/fileadmin/media_gallery/files/reports_results_reviews/Summary_Historial_Orders_Deliveries_1974-2009.xls |archiveurl=http://web.archive.org/web/20101223223239/http://www.airbus.com/fileadmin/media_gallery/files/reports_results_reviews/Summary_Historial_Orders_Deliveries_1974-2009.xls |archivedate=23 December 2010 |title= Historical Orders and Deliveries 1974–2009 |work=[[Airbus|Airbus S.A.S.]] |date=January 2010 |format=XLS |accessdate=10 December 2012}}</ref>
+
+== Incidents and accidents ==
+As of October 2015, the Airbus A330 had been involved in 22<!--Two were involved in a 24 July 2001 attack--> major [[Aviation accidents and incidents|aviation occurrences]],<ref name=a330database>{{cite web |url= http://www.aviation-safety.net/database/dblist.php?Type=023 |title= Airbus A330 incidents |publisher=Aviation-Safety.net |date= 2 August 2014 |accessdate=6 August 2014}}</ref> including eight confirmed [[Hull loss|hull-loss accidents]]<ref>{{cite web |url= http://www.aviation-safety.net/database/dblist.php?field=typecode&var=023%&cat=%1&sorteer=datekey&page=1 |title= Airbus A330 hull-losses |publisher=Aviation-Safety.net |date= 2 August 2014 |accessdate=6 August 2014}}</ref> and two [[Aircraft hijacking|hijackings]], for a total of 339 fatalities.<ref>{{cite web |url= http://www.aviation-safety.net/database/type/type-stat.php?type=023 |title= Airbus A330 Accident Statistics |publisher=Aviation-Safety.net |date= 2 August 2014 |accessdate=6 August 2014}}</ref>
+
+The type's first fatal accident occurred on 30 June 1994 near Toulouse [[Airbus Industrie Flight 129|on a test flight]] when an Airbus-owned A330-300 crashed while simulating an engine failure on climbout, killing all seven on board.<ref name="N&W pp.86-87"/> Airbus subsequently advised A330 operators to disconnect the autopilot and limit pitch attitude in the event of an engine failure at low speed.<ref name="Airbus defends A330 but warns on autopilot">Learmount 1994, p. 4.</ref>
+
+On 15 March 2000, a Malaysia Airlines A330-300 suffered fuselage damage from a leaked corrosive chemical that had been falsely labelled.  The aircraft was written off.<ref>{{cite web |url=http://aviation-safety.net/database/record.php?id=20000315-0 |title=Aircraft accident Airbus A330-322 9M-MKB Kuala Lumpur International Airport (KUL) |publisher=Aviation-Safety.net |date= |accessdate=19 February 2012}}</ref>
+
+[[File:Air Caraibes A330 F-OFDF.jpg|thumb|left|In 2008, [[Air Caraïbes]] reported two incidents of [[pitot tube]] icing malfunctions on its A330s.<ref>{{cite web |url= http://www.flightglobal.com/news/articles/air-caraibes-atlantique-memo-details-pitot-icing-incidents-327738/ |title=Air Caraibes Atlantique memo details pitot icing incidents |first=Kieran |last=Daly |work=Flightglobal |date=11 June 2009 |accessdate=19 February 2012}}</ref> In 2009, after the crash of [[Air France Flight 447]], A330/A340 operators replaced [[Thales Group|Thales]]-built pitots.<ref name=pitot/>|alt=Side view of white twin-jet aircraft on airport runway.]]
+
+The type's second fatal accident, and first while in commercial service, occurred on 1 June 2009 when [[Air France Flight 447]], an A330-200 en route from [[Rio de Janeiro]] to Paris with 228 people on board, crashed in the Atlantic Ocean {{convert|640|-|800|km|nmi mi|sigfig=3}} northeast of the islands of [[Fernando de Noronha]],<ref>{{cite web|url=http://www.flightglobal.com/articles/2009/06/01/327211/air-france-no-success-in-contacting-missing-a330.html |title=Air France: No success in contacting missing A330 |date=1 June 2009 |work=Air Transport Intelligence news |last=Kaminski-Morrow |first=David |accessdate=1 June 2009 |deadurl=yes |archiveurl=https://web.archive.org/20090605112508/http://www.flightglobal.com:80/articles/2009/06/01/327211/air-france-no-success-in-contacting-missing-a330.html |archivedate=5 June 2009 }}</ref> with no survivors. Malfunctioning [[pitot tube]]s provided an early focus for the investigation,<ref>{{Cite news |url=http://news.bbc.co.uk/2/hi/americas/8087303.stm |title=Bodies found from missing plane |date=6 June 2009 |publisher=BBC News |accessdate=6 June 2009}}</ref> as the aircraft involved had [[Thales Group|Thales]]-built "–AA" models known to record faulty airspeed data during icing conditions.<ref name=pitot>{{cite web |url= http://www.aviationweek.com/aw/generic/story_channel.jsp?channel=comm&id=news/aw081009p1.xml |title=Response to Airbus Pitot Tube Incidents Under Scrutiny |work=Aviation Week & Space Technology |date=9 August 2009 |last=Flottau|first=Jens |accessdate=19 February 2012}}{{dead link|date=December 2015}}</ref> In July 2009, Airbus advised A330 and A340 operators to replace Thales pitots with equivalents manufactured by [[Goodrich Corporation|Goodrich]].<ref name=pitot/> Investigators later determined that the inadequate response of the pilots to both a loss of airspeed data from malfunctioning pitot tubes and subsequent autopilot disengagement resulted in Flight 447 entering into an [[aerodynamic stall]].<ref>{{cite journal |last1=Wise |first1=Jeff |year=2011 |title=What Really Happened Aboard Air France 447|journal=Popular Mechanics |volume= |issue= |pages= |publisher= |doi= |url=http://www.popularmechanics.com/technology/aviation/crashes/what-really-happened-aboard-air-france-447-6611877 |accessdate=4 January 2011 }}</ref><!-- This entry is a summary. Further details go in related ''Air France Flight 447'' article, not here. -->
+
+On 12 May 2010, [[Afriqiyah Airways Flight 771]], an A330-200, crashed on approach to [[Tripoli International Airport]], Libya, on a flight from [[OR Tambo International Airport]], Johannesburg, South Africa. Of the 104 people on board, all but one nine-year-old Dutch boy died.<ref name=BBC8676758>{{Cite news |url= http://news.bbc.co.uk/2/hi/africa/8676758.stm |title= Plane crash in Libya 'kills more than 100 on board' |publisher= BBC News |date= 12 May 2010 |accessdate=12 March 2011}}</ref> The cause of the crash was determined to be pilot error.<ref name=Afqiyah_fg>{{cite web|title=Illusion and ambiguous control led to Afriqiyah A330 crash|url=http://www.flightglobal.com/news/articles/illusion-and-ambiguous-control-led-to-afriqiyah-a330-382873/|website=flightglobal.com|publisher=Flight Globai|accessdate=30 August 2014}}</ref>
+
+The two hijackings involving the A330 have resulted in one fatality,<ref name=a330database/> namely the hijacker of [[Philippine Airlines Flight 812]] on 25 May 2000, who jumped out of the aircraft to his death.<ref>{{cite news|title= Philippines hijacker bails out |publisher= BBC News |date=25 May 2000 |url= http://news.bbc.co.uk/2/hi/asia-pacific/763341.stm |accessdate=25 November 2010}}</ref> The hijacking of [[Sabena DC-7C (OO-SFA)|Sabena Flight 689]] on 13 October 2000 ended with no casualties when Spanish police took control of the aircraft.<ref>{{cite web|url=http://aviation-safety.net/database/record.php?id=20001013-0|title=2000 hijacking at the Aviation Safety Network|publisher=Aviation-Safety.net|accessdate=19 February 2012}}</ref> On 24 July 2001, two unoccupied [[SriLankan Airlines]] A330s were destroyed amid an [[Bandaranaike Airport attack|attack on Bandaranaike International Airport]], in Colombo, Sri Lanka, by the [[Liberation Tigers of Tamil Eelam]].<ref name=flight_srilankan>Fullbrook 2001, p. 10.</ref><ref name="srilanka">{{cite web|url=http://aviation-safety.net/database/record.php?id=20010724-1 |work= ASN Aviation Safety Database |publisher= [[Flight Safety Foundation]] |title=ASN Aircraft accident description Airbus A.330–243 4R-ALF – Colombo-Bandaranayake International Airport |accessdate=3 August 2006}}</ref> On 25 December 2009, passengers and crew subdued a man who attempted to detonate explosives in his underwear on an A330-300 operating [[Northwest Airlines Flight 253]].<ref name="NYT-20091226-2">{{Cite news|url=http://www.nytimes.com/2009/12/27/us/27plane.html|title=Passengers Took Plane's Survival into Own Hands|date=26 December 2009|last1=Shane |first1=Scott and Eric Lipton|last2=|first2= |work=The New York Times |accessdate=26 December 2009}}</ref><ref name="WSJ-20091226">{{Cite news |url=http://online.wsj.com/article/SB126184081273605825.html?mod=googlenews_wsj |title=Bomb Attempt Made on U.S.-Bound Flight |date=26 December 2009 |author=Boudette, E. Neal, Andy Pasztor, and Peter Spiegel |work=Dow Jones & Company, Inc |accessdate=26 December 2009}}</ref>
+
+Two A330 incidents due to in-flight malfunctions were survived by all on board. On 24 August 2001, [[Air Transat Flight 236]], an A330-200, developed a fuel leak over the Atlantic Ocean due to an incorrectly installed hydraulic part and was forced to glide for over 15 minutes to an emergency landing in the [[Azores]].<ref>{{cite web|url=http://aviation-safety.net/database/record.php?id=20010824-1|title=Air Transat Flight 236 emergency landing|publisher=Aviation-Safety.net|accessdate=19 February 2012}}</ref> On 7 October 2008, [[Qantas Flight 72]], an A330-300, suffered a rapid loss of altitude in two sudden uncommanded pitch-down manoeuvres while {{Convert|150|km|nmi mi|abbr=on|sigfig=2}} from the [[RAAF Learmonth|Learmonth]] air base in northwestern Australia.  After declaring an emergency, the crew landed the aircraft safely at Learmonth.<ref name="ATSB_MR_20081008">{{Cite press release |title= 2008/40 – Qantas Airbus Incident Media Conference |publisher=[[Australian Transport Safety Bureau]] |date= 8 October 2008 |url= http://www.atsb.gov.au/newsroom/2008/release/2008_40.aspx |accessdate=8 October 2008}}</ref> It was later determined that the incident, which caused 106 injuries, 14 of them serious, was the result of a design flaw of the plane's [[Air Data Inertial Reference Unit]] and a limitation of the aircraft's flight computer software.<ref>{{cite web|url=http://www.atsb.gov.au/publications/investigation_reports/2008/aair/ao-2008-070.aspx|title=Australian Transport Safety Bureau – final report and materials|publisher=[[Australian Transport Safety Bureau]] |date= 19 December 2011|accessdate=19 February 2012}}</ref><!-- Entries need to meet criteria at [[WP:AIRCRASH#Aircraft and airlines (A)]] to be added here. Thanks. -->
+
+On 13 April 2010, [[Cathay Pacific Flight 780]] from [[Surabaya]] [[Juanda International Airport]] to Hong Kong landed safely after both engines failed due to contaminated fuel. 57 passengers were injured. Its two pilots received the [[Polaris Award]] from the International Federation of Air Line Pilots' Associations, for their heroism and airmanship.<ref>{{cite news |title=Pilots reveal death-defying ordeal as engines failed on approach to Chek Lap Kok |url=http://www.scmp.com/magazines/post-magazine/article/1491534/pilots-reveal-death-defying-ordeal-engines-failed-approach |accessdate=21 April 2014 |newspaper=South China Morning Post |date=20 April 2014}}</ref>
+
+On 15 July 2014, a Libyan Airlines A330 was severely damaged in the fighting in Libya and sustained bullet holes in the fuselage. On 20 July 2014, two Afriqiyah Airways Airbus A330 were hit by an RPG at Tripoli International Airport. One was completely destroyed in the ensuing fire.<ref>{{cite web|title=Database|url=http://aviation-safety.net/database/record.php?id=20140715-0|website=aviation-safety.net|publisher=Aviation Safety Network}}</ref><ref>{{cite web|title=Database|url=http://aviation-safety.net/database/record.php?id=20140720-1|website=aviation-safety.net|publisher=Aviation Safety Network}}</ref>
+
+== Specifications ==
+[[File:A330FAMILYv1.1.png|thumb|200px|A330 family schematic]]
+{| class="wikitable" style="text-align:center; font-size:97%;"
+|-
+!
+! A330-200
+! A330-200F
+! A330-300
+|-
+! Minimum cockpit crew
+| colspan=3 | Two
+|-
+! Seating capacity, <br />typical
+| 247 (3-class)<br />293 (2-class)<br /> 406 (maximum) {{efn|Maximum seating is 375 with three "Type A" and one "Type 1" door installed; an option is to have four "Type A" doors fitted which increases the maximum to 406.}}
+| 12 (courier area)
+| 277 (3-class)<br /> 335 (2-class) <br /> 440 (maximum) {{efn|Maximum seating is 375 with three "Type A" and one "Type 1" door installed; an option is to have four "Type A" doors fitted which increases the maximum to 440.}}
+|-
+! Length
+| colspan=2| {{convert|58.82|m|ftin|abbr=on|sigfig=3}}
+| {{convert|63.69|m|ftin|abbr=on|sigfig=3}}
+|-
+! Wingspan
+| colspan="3" | {{convert|60.3|m|ftin|abbr=on|sigfig=3}}
+|-
+! Wing area
+| colspan="3" | {{convert|361.6|m2|abbr=on|sigfig=3}}
+|-
+! Aspect Ratio
+| colspan="4" | 10.06
+|-
+! Wing sweepback
+| colspan="3" | 30°
+|-
+! Tail height
+| {{convert|17.39|m|ftin|abbr=on|sigfig=3}} || {{convert|16.88|m|ftin|abbr=on|sigfig=3}} || {{convert|16.83|m|ftin|abbr=on|sigfig=3}}
+|-
+! Cabin width
+| colspan="3" | {{convert|5.28|m|ftin|abbr=on|sigfig=3}}
+|-
+! Seat width
+| colspan="3" | {{convert|18|in|cm|abbr=on|order=flip|sigfig=3}} in 8 abreast standard economy
+''or'' {{convert|41.9|cm|in|abbr=on|sigfig=3}} in 9 abreast high density economy
+|-
+! Fuselage width
+| colspan="3" | {{convert|5.64|m|ftin|abbr=on|sigfig=3}}
+|-
+! Fuselage height
+| colspan="3" | {{convert|5.64|m|ftin|abbr=on|sigfig=3}}
+|-
+! Main Gear Wheel Span
+| colspan="3" | {{convert|12.61|m|ftin|abbr=on|sigfig=3}}
+|-
+! Cargo volume
+| {{convert|136|m3|cuft|abbr=on|sigfig=3}}
+| {{convert|475|m3|cuft|abbr=on|sigfig=3}} <br /> 70 [[Tonne|t]] / up to 12 couriers<ref name=FI_A330-200F_specs/>
+| {{convert|162.8|m3|cuft|abbr=on|sigfig=3}}
+|-
+! [[Maximum Takeoff Weight]] <br />(MTOW)
+| {{convert|242000|kg|abbr=on|sigfig=3}}
+| {{convert|233000|kg|abbr=on|sigfig=3}}
+| {{convert|242000|kg|abbr=on|sigfig=3}}
+|-
+! [[Maximum Landing Weight]]
+| {{convert|182000|kg|abbr=on|sigfig=3}}
+| colspan="2" | {{convert|187000|kg|abbr=on|sigfig=3}}
+|-
+! [[Operating empty weight]] <br />(typical)
+| {{convert|119600|kg|lb|abbr=on|sigfig=3}}
+| {{convert|109000|kg|lb|abbr=on|sigfig=3}}
+| {{convert|124500|kg|lb|abbr=on|sigfig=3}}
+|-
+! Cruise speed
+| colspan="3" |[[Mach number|Mach]] 0.82 ({{Convert|871|km/h|kn mph|abbr=on|disp=or|sigfig=3}} at {{Convert|11000|m|ft|abbr=on|disp=or|sigfig=3}} cruise altitude)
+|-
+! Maximum cruise speed
+| colspan="3" |Mach 0.86 ({{Convert|913|km/h|kn mph|abbr=on|disp=or|sigfig=3}} at {{Convert|11000|m|ft|abbr=on|disp=or|sigfig=3}} cruise altitude)
+|-
+! Maximum range, fully loaded
+| {{convert|13450|km|mi nmi|abbr=on|sigfig=3}}<ref name="range1">With 247 passengers and baggage</ref>
+| {{convert|7400|km|mi nmi|abbr=on|sigfig=3}}<ref name="range2">at 65 t</ref><br />{{convert|5950|km|nmi mi|abbr=on|round=50}}<ref name="range3">70t</ref>
+| {{convert|11750|km|mi nmi|abbr=on|round=50}}<ref name="range4">With 277 passengers and baggage</ref>
+|-
+! Takeoff distance at MTOW <br>(sea level, [[International standard atmosphere|ISA]], 50&nbsp;ft obstacle clearance,<br>Rolls Royce Trent 772B engines<ref>[http://www.airbus.com/aircraftfamilies/corporate/acj-family/acj330/ ACJ330]. Airbus.com (2 December 2013). Retrieved on 9 December 2013.</ref>)
+| {{convert|2770|m|ft|abbr=on|sigfig=3}}
+| {{convert|2580|m|ft|abbr=on|sigfig=3}}
+| {{convert|2770|m|ft|abbr=on|sigfig=3}}
+|-
+! Maximum fuel capacity
+| {{convert|139090|L|USgal|abbr=on|sigfig=3}}
+| {{convert|97530|L|USgal|abbr=on|sigfig=3}}
+| {{convert|97530|L|USgal|abbr=on|sigfig=3}}
+|-
+! Service ceiling
+| colspan="4" | 12,527&nbsp;m (41,100&nbsp;ft)
+|-
+! Maximum service ceiling
+| colspan="4" | 13,000&nbsp;m (42,651&nbsp;ft)
+|-
+! Engines (×2)<br /><small>(see below)</small>
+| [[General Electric CF6|General Electric CF6-80E1]] <br />[[Pratt & Whitney PW4000]] <br />[[Rolls-Royce Trent 700]]
+| Pratt & Whitney PW4000 <br />Rolls-Royce Trent 700
+| General Electric CF6-80E1 <br />Pratt & Whitney PW4000 <br />Rolls-Royce Trent 700
+|-
+! Thrust (×2)
+| PW: 70,000&nbsp;[[pound-force|lbf]] (311&nbsp;kN) <br /> RR: 71,100&nbsp;lbf (316&nbsp;kN)<ref>http://www.easa.eu.int/certification/type-certificates/docs/engines/EASA-TCDS-E.042_Rolls--Royce_plc._RB211_Trent_700_series_engines-02-29112013.pdf</ref><br />GE: 72,000&nbsp;lbf (320&nbsp;kN)
+| PW: 70,000&nbsp;[[pound-force|lbf]] (311&nbsp;kN) <br /> RR: 71,100&nbsp;lbf (316&nbsp;kN)
+| PW: 70,000&nbsp;[[pound-force|lbf]] (311&nbsp;kN) <br /> RR: 71,100&nbsp;lbf (316&nbsp;kN) <br />GE: 72,000&nbsp;lbf (320&nbsp;kN)
+|}
+Sources: Airbus,<ref name=Airbus_A330-200_specs>{{cite web |url= http://www.airbus.com/aircraftfamilies/passengeraircraft/a330family/a330-200/specifications/ |title= A330-200 Dimensions & key data |publisher=Airbus S.A.S |accessdate=20 November 2012}}</ref><ref name=Airbus_A330-300_specs>{{cite web |url=http://www.airbus.com/aircraftfamilies/passengeraircraft/a330family/a330-300/specifications/ |title= A330-300 Dimensions & key data |publisher=Airbus S.A.S |accessdate=20 November 2012}}</ref><ref name=A330_airport_report /><ref name=Airbus_A330-200F_specs>{{cite web |url=http://www.airbus.com/aircraftfamilies/freighter/a330-200f/specifications/ |title= A330-200F Dimensions & key data |publisher=Airbus S.A.S |accessdate=20 November 2012}}</ref> Pratt & Whitney,<ref name=PW4000/> EASA,<ref name="EASA-TCDS-A.004">{{cite web |url=http://easa.europa.eu/system/files/dfu/EASA-TCDS-A.004_Airbus_330-36-22112013.pdf |title=EASA Type Certificate Data Sheet for AIRBUS A330 |publisher=[[European Aviation Safety Agency]] |date= 22 November 2013 |accessdate=16 May 2014}}</ref> FAA,<ref>{{cite web |url=http://rgl.faa.gov/regulatory_and_guidance_Library/rgMakeModel.nsf/0/dc4f6989b50e8cfe862572a4006ddc5c/$FILE/A46NM.pdf |title=FAA type certificate data sheet No. A46NM |format=PDF |publisher=Federal Aviation Agency |pages=1–3 |accessdate=5 March 2011}}</ref> ''The International Directory of Civil Aircraft''<ref name=Frawley_A330/>
+<!--
+{{aircraft specifications
+|plane or copter?=plane
+|jet or prop?=jet
+|ref=
+|crew=2 (not including flight attendants)
+|capacity=253 (3-class) or 293 (2-class) or 380 (maximum)
+|payload main=
+|payload alt=
+|payload more=
+|length main=58.82 m
+|length alt=193 ft
+|span main=60.3 m
+|span alt=197 ft 10 in
+|height main=17.39 m
+|height alt=57 ft 1 in
+|area main=361.6 m2
+|area alt=3,892 sq ft
+|airfoil=
+|aspect ratio=
+|empty weight main= 119,600 kg
+|empty weight alt=  264,000 lb
+|loaded weight main=
+|loaded weight alt=
+|useful load main=
+|useful load alt=
+|max takeoff weight main= 238,000 kg
+|max takeoff weight alt= 520,000 lb
+|more general='''Cabin width''': 5.28 m (17 ft 4 in)
+* '''Cargo capacity''': 136 m3 (4,800 cu ft)
+* '''[[Maximum zero fuel weight]]''': 168,000 kg (370,000 lb)
+* '''[[Operating empty weight]] (typical)''': 119,600 kg (264,000 lb)
+* '''[[Maximum landing weight]]''': 180,000 kg (396,900 lb)
+|engine (jet)=General Electric CF6-80E1 or Pratt & Whitney PW4000 or Rolls-Royce Trent 700
+|type of jet=non-afterburning turbofan
+|number of jets=2
+|thrust main= 287–320 kN
+|thrust alt= 65,000–72,000 lbf
+|thrust original=
+|afterburning thrust main=
+|afterburning thrust alt=
+|engine (prop)=
+|type of prop=
+|number of props=
+|power main=
+|power alt=
+|power original=
+|propeller or rotor?=
+|propellers=
+|number of propellers per engine=
+|propeller diameter main=
+|propeller diameter alt=
+|max speed main=
+|max speed alt=
+|max speed more=
+|cruise speed main= Mach 0.82 (871 km/h/537 mph at 11,000 m/36,000 ft)
+|cruise speed alt=
+|cruise speed more=
+|stall speed main=
+|stall speed alt=
+|stall speed more=
+|never exceed speed main= Mach 0.86 (913 km/h/563 mph at 11,000 m/36,000 ft)
+|never exceed speed alt=
+|range main= 13,430 km
+|range alt= 7,250 nmi
+|range more=
+|combat radius main=
+|combat radius alt=
+|combat radius more=
+|ferry range main=
+|ferry range alt=
+|ferry range more=
+|endurance=
+|ceiling main= 12,527 m
+|ceiling alt= 41,100 ft
+|ceiling more=
+|climb rate main=
+|climb rate alt=
+|climb rate more=
+|sink rate main=
+|sink rate alt=
+|sink rate more=
+|loading main=
+|loading alt=
+|thrust/weight=
+|power/mass main=
+|power/mass alt=
+|more performance=
+* '''Takeoff distance at MTOW''': 2,220 m (7,280 ft)
+|avionics=
+}}
+-->
+
+===Aircraft model designations===
+''Source: EASA Type Certificate Data Sheet EASA.A.004''<ref name="EASA-TCDS-A.004"/>
+
+{| class="wikitable sortable" style="text-align: left;"
+|-
+! Model !! Certification Date !! Engines
+|-
+| A330-201 || 31 October 2002 || General Electric CF6-80E1A2
+|-
+| A330-202|| 31 March 1998 || General Electric CF6-80E1A4
+|-
+| A330-203 || 20 November 2001 || General Electric CF6-80E1A3
+|-
+| A330-223 || 13 July 1998 || Pratt & Whitney PW4168A/4170
+|-
+| A330-223F || 9 April 2010 || Pratt & Whitney PW4170 (Freighter)
+|-
+| A330-243 || 11 January 1999 || Rolls-Royce Trent 772B/C-60
+|-
+| A330-243F || 9 April 2010 || Rolls-Royce Trent 772B-60 (Freighter)
+|-
+| A330-301 || 21 October 1993 || General Electric CF6-80E1A2
+|-
+| A330-302 || 17 May 2004 || General Electric CF6-80E1A4
+|-
+| A330-303 || 17 May 2004 || General Electric CF6-80E1A3
+|-
+| A330-321 || 2 June 1994 || Pratt & Whitney PW4164
+|-
+| A330-322 || 2 June 1994 || Pratt & Whitney PW4168
+|-
+| A330-323 || 22 April 1999 || Pratt & Whitney PW4168A/4170
+|-
+| A330-341 || 22 December 1994 || Rolls-Royce Trent 768-60
+|-
+| A330-342 || 22 December 1994 || Rolls-Royce Trent 772-60
+|-
+| A330-343 || 13 September 1999 || Rolls-Royce Trent 772B/C-60
+|}
+
+===ICAO Aircraft Type Designators===
+{| class="wikitable sortable" style="text-align: left;"
+|-
+! Designation<ref>{{cite web|url=http://www.icao.int/publications/DOC8643/Pages/default.aspx|title=DOC 8643 – Aircraft Type Designators|work=icao.int}}</ref>
+! Type
+|-
+|A332
+|Airbus A330-200, Airbus A330-200F
+|-
+|A333
+|Airbus A330-300
+|}
+
+== See also ==
+{{Portal|Aviation|European Union}}<!-- See [[WP:Air/PC]] for more explanation of these fields. -->
+{{aircontent
+|see also= <!-- other related articles that have not already linked: -->
+* [[Competition between Airbus and Boeing]]
+|related= <!-- designs developed into or from this aircraft: -->
+* [[Airbus A300]]
+* [[Airbus A330 MRTT]]
+* [[Airbus A330neo]]
+* [[Airbus A340]]
+|similar aircraft= <!-- aircraft that are of similar Role, Era, and Capability this design: -->
+* [[Airbus A350]]
+* [[Boeing 767]]
+* [[Boeing 777-200]]
+* [[Boeing 787 Dreamliner]]
+* [[Ilyushin Il-96]]
+|lists= <!-- Relevant lists that this aircraft appears in. -->
+* [[List of jet airliners]]
+* [[List of civil aircraft]]
+<!-- See [[WP:Air/PC]] for more explanation of these fields. -->
+}}
+
+== References ==
+;Notes
+{{notelist}}
+{{reflist|group=Nb}}
+
+;Citations
+{{reflist|32em}}
+
+;Bibliography
+{{refbegin|2}}
+* {{cite journal |date=11–17 October 1981|url=http://www.flightglobal.com/pdfarchive/view/1981/1981%20-%203243.html |title=Commercial Aircraft of the World part 2|magazine=Flight International |location=London |publisher=Reed Business Information |issue=3780 |volume=120|accessdate=23 January 2011|pages=1,152–1199|issn=0161-7370}}
+* {{Cite journal|title=Airbus issues hydraulic pump warning after A330/340 fires|magazine=Flight International| location=London |publisher=Reed Business Information |issue=4557|volume=151|page=5|date=15 January 1997|url=http://www.flightglobal.com/pdfarchive/view/1997/1997%20-%200111.html?search=Airbus%20issues%20hydraulic%20pump%20warning%20after%20A330/340%20fires|accessdate=6 October 2013|issn=0161-7370}}
+* {{Cite journal |title=Longer-range A330-300 studied |url=http://www.flightglobal.com/pdfarchive/view/2000/2000-1%20-%200487.html |magazine=Flight International| location=London |publisher=Reed Business Information |issue=4740 |volume=159 |page=11 |date=1–7 August 2000 |accessdate=31 January 2011|issn=0161-7370}}
+* {{cite book|last=Cole|first=Lance|url=http://books.google.com/?id=FHSOyQq4o2YC&pg=PA37&dq=Airbus+A330+design#v=onepage&q=Airbus%20A330%20design&f=false|title=Giant Airliners|publisher=Zenith Imprint, 2000|location=London |isbn=978-0-7603-0945-2 |ref={{harvid|Cole|2000}}|year=2000}}
+* {{cite book|editor-last=Eden|editor-first=Paul E.|title=Civil Aircraft Today|publisher=Amber Books, 2008|location=London|isbn=978-1-905704-86-6|ref={{harvid|Eden|2008}}}}
+* {{cite journal|author=Fullbrook, David|url=http://www.flightglobal.com/pdfarchive/view/2001/2001%20-%202726.html|magazine=Flight International| location=London |publisher=Reed Business Information |issue=4791 |volume=160 |page=10 |title=SriLankan turns to Emirates for help after raid |date=31 July – 6 August 2001 |accessdate=7 October 2013|issn=0161-7370}}
+* {{cite book|last=Gunston|first=Bill|authorlink=Bill Gunston|title=Airbus: The Complete Story|location=Sparkford, Yeovil, Somerset, UK | publisher=Haynes Publishing, 2009|isbn=978-1-84425-585-6|ref={{harvid|Gunston|2009}}}}
+* {{Cite journal|last=Henley|first=Peter|title=One of the family|magazine=Flight International| location=London |publisher=Reed Business Information |issue=4614|volume=153|pages=36–40|date=25 February – 3 March 1998|url=http://www.flightglobal.com/pdfarchive/view/1998/1998%20-%200442.html|accessdate=25 January 2011|issn=0161-7370}}
+* {{cite journal |last= Ionides |first= Nicholas |author2= Kingsley-Jones, Max |url= http://www.flightglobal.com/pdfarchive/view/2004/2004-09%20-%200981.html |title= SIA widebody decision expected soon |magazine=Flight International| location=London |publisher=Reed Business Information |issue=4938 |volume=165 |page=10 |date= 15–21 June 2004 |accessdate=7 October 2013|issn=0161-7370}}
+* {{Cite journal|title=Airbus A330/A340|work=Flight International |url=http://www.flightglobal.com/pdfarchive/view/1997/1997%20-%202917.html |last=Kingsley-Jones|first=Max|date=4 November 1997 |accessdate=26 January 2011|pages=28–30|issn=0161-7370}}
+* {{Cite journal|url=http://www.flightglobal.com/pdfarchive/view/2000/2000-1%20-%202110.html|title=Airline rejections threaten A330-500 launch|magazine=Flight International| location=London |publisher=Reed Business Information |issue=4759|volume=158|page=6|date=17–23 April 2001|accessdate=31 January 2011|author=Kingsley-Jones, Max; Lewis, Peter|issn=0161-7370}}
+* {{cite journal|author=Kingsley-Jones, Max|magazine=Flight International| location=London |publisher=Reed Business Information |issue=4796|volume=160|page=51|url=http://www.flightglobal.com/pdfarchive/view/2001/2001%20-%203055.html|accessdate=7 October 2013|title=Size or speed|date=4–10 September 2001|issn=0161-7370}}
+* {{cite book|last=Lawrence|first=Phillip K. and David Weldon Thornton|title=Deep Stall: The Turbulent Story of Boeing Commercial Airplanes|url=http://books.google.com/?id=B8Eclsp6xtUC&pg=PA73&dq=Airbus+A330#v=onepage&q=A330&f=false|publisher=Ashgate Publishing, 2005|location=London|isbn=978-0-7546-4626-6|ref={{harvid|Lawrence|Thornton|2005}}|year=2005}}
+* {{cite web|author= Learmount, David|url=http://www.flightglobal.com/pdfarchive/view/1990/1990%20-%202625.html |work= Flight International |issue=4232 |volume=138 |date=5–11 September 1990 |accessdate=1 September 2015|pages=111–116|title=Mass Market|issn=0161-7370}}
+* {{cite journal |title= Airbus defends A330 but warns on autopilot |author= Learmount, David |work= Flight International |issue=4429 |volume=146 | page=4 |date= 13–19 July 1994 |url= http://www.flightglobal.com/pdfarchive/view/1994/1994%20-%201630.html |accessdate=19 February 2012|issn=0161-7370}}
+* {{cite journal|title= A330 crash caused by series of small errors|author= Learmount, David |work= Flight International|issue=4433|volume=146|page=6|date= 10–16 August 1994|accessdate=19 February 2012|url= http://www.flightglobal.com/pdfarchive/view/1994/1994%20-%201864.html|issn=0161-7370}}
+* {{Cite journal|title=In-flight Trent 700 failure forces Cathay A330 back to Saigon|magazine=Flight International| location=London |publisher=Reed Business Information |issue=4550|volume=150|page=9|last=Lewis|first=Paul|date=20–26 November 1996|url=http://www.flightglobal.com/pdfarchive/view/1996/1996%20-%203021.html|accessdate=7 October 2013|issn=0161-7370}}
+* {{cite book|last=Miravete|first=Antonio|title=3-D Textile Reinforcements in Composite Materials|publisher=Woodland Publishing, 1999|location=Sawston, Cambridge, UK|url=http://books.google.com/?id=mVHK_KsQbPoC&pg=PA152&dq=Airbus+A330+composite#v=onepage&q=Airbus%20A330%20composite&f=false|isbn=978-0-8493-1795-8|ref={{harvid|Miravete|1999}}|date=1999-01-01}}
+* {{cite book|last1=Norris|first1=Guy and Mark Wagner|first2=|last2=|title=Airbus A340 and A330|location=St. Paul, Minnesota|publisher=MBI Publishing, 2001|isbn=0-7603-0889-6|ref={{harvid|Norris|Wagner|2001}}}}
+* {{cite book|last=Wensveen|first=J.G.|title=Air Transportation: A Management Perspective|url=http://books.google.com/?id=Ej8Qslt1nfsC&pg=PA65&dq=Airbus+A330#v=onepage&q=Airbus%20A330&f=false|location= Burlington, Vermont|publisher=Ashgate Publishing, 2007|isbn=978-0-7546-7171-8 | ref={{harvid|Wensveen|2007}}|date=2007-01-01}}
+{{refend}}
+
+== Further reading ==
+{{Refbegin}}
+* {{Cite book |editor-last=Jackson|editor-first=Paul|title= Jane's All the World's Aircraft 2008–2009 |publisher=Jane's Information Group, 2008|location= Coulsdon, Surrey, UK|isbn=978-0-7106-2837-4}}
+* {{Cite book|author=|title=Recent developments with Airbus: ninth report of session 2006–07, Vol. 2: Oral and written evidence|url=http://books.google.com/?id=pXaqd85lrtwC&pg=PA33&dq=A330+Airbus#v=onepage&q=A330%20Airbus&f=false|publisher=The Stationery Office (Parliament: House of Commons: Trade and Industry Committee), 2007|location=London, UK|isbn=978-0-215-03551-6|date=2007-07-25}}
+* {{Cite book|last=Reed|first=Arthur|title=Airbus: Europe's High Flyer|location= Zürich, Switzerland| publisher=Norden Publishing House, 1992|isbn=3-907150-10-4}}
+{{Refend}}
+
+== External links ==
+{{Commons and category|Airbus A330}}
+* [http://www.airbus.com/aircraftfamilies/passengeraircraft/a330family/ Details on the Airbus A330 family of aircraft]
+{{clear}}
+
+{{Airbus A3xx timeline}}
+{{Airbus aircraft}}
+{{Use dmy dates|date=April 2014}}
+{{good article}}
+
+{{Authority control}}
+
+[[Category:Airbus aircraft|A330]]
+[[Category:International airliners 1990–1999]]
+[[Category:1994 introductions]]
+[[Category:Twinjets]]
+[[Category:Airbus A330| ]]

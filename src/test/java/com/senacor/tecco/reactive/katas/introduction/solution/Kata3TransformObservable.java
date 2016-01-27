@@ -1,9 +1,15 @@
 package com.senacor.tecco.reactive.katas.introduction.solution;
 
 import com.senacor.tecco.reactive.ReactiveUtil;
+import com.senacor.tecco.reactive.WaitMonitor;
+import com.senacor.tecco.reactive.Watch;
 import com.senacor.tecco.reactive.services.WikiService;
+import org.junit.Rule;
 import org.junit.Test;
 import rx.Observable;
+import rx.schedulers.Schedulers;
+
+import java.util.concurrent.TimeUnit;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
@@ -13,9 +19,15 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 public class Kata3TransformObservable {
     private final WikiService wikiService = new WikiService("en");
 
+    @Rule
+    public final Watch watch = new Watch();
+
     @Test
     public void createAnObservable() throws Exception {
-        String[] planeTypes = {"Boeing 777", "Boeing 747", "Boeing 737", "Airbus A330", "Airbus A320 family"};
+        final WaitMonitor monitor = new WaitMonitor();
+
+        //String[] planeTypes = {"Boeing 777", "Boeing 747", "Boeing 737", "Airbus A330", "Airbus A320 family"};
+        String[] planeTypes = {"Boeing 777", "Boeing 747"};
 
         // 1) create an observable that emits the plane type
         // 2) use the fetchArticle method to transform the plane type to an Article
@@ -24,11 +36,13 @@ public class Kata3TransformObservable {
 
 
         Observable.from(planeTypes)
-                .flatMap(planeType -> fetchArticle(planeType))
-                .map(article -> parsePlaneInfo(article))
-                .subscribe(planeInfo -> print("next: %s", planeInfo),
-                        Throwable::printStackTrace,
-                        () -> print("complete!"));
+            .flatMap(planeType -> fetchArticle(planeType))
+            .map(article -> parsePlaneInfo(article))
+            .subscribe(planeInfo -> print("next: %s", planeInfo),
+                Throwable::printStackTrace,
+                monitor::complete);
+
+        monitor.waitFor(10, TimeUnit.SECONDS);
     }
 
     /**

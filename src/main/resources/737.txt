@@ -1,0 +1,665 @@
+<!-- This article is a part of [[Wikipedia:WikiProject Aircraft]]. Please see [[Wikipedia:WikiProject Aircraft/page content]] for recommended layout, and guidelines.   -->
+{|{{Infobox aircraft begin
+ |name= Boeing 737
+ |image= File:Southwest Airlines Boeing 737-700; N738CB@LAX;21.04.2007 466kc (4289282802).jpg<!-- In-flight images are preferred for aircraft. -->
+ |caption= [[Boeing 737-700]] with [[blended winglet]]s of [[Southwest Airlines]], the type's largest operator
+ |alt=
+}}{{Infobox aircraft type
+ |type= [[Narrow-body aircraft|Narrow-body]] [[jet airliner]] and [[Business jet]]
+ |national origin= [[United States]]
+ |manufacturer= [[Boeing Commercial Airplanes]]
+ |first flight= April 9, 1967
+ |introduced= February 10, 1968, with [[Lufthansa]]
+ |retired=
+ |status= In service
+ |primary user= [[Southwest Airlines]] <!--Limit one (1) primary user. Top 4 users listed in 'primary user' and 'more users' fields based on number of 737s in their fleets. -->
+ |more users= [[Ryanair]] <br>[[United Airlines]] <br>[[American Airlines]]<!--Limit is three (3) in 'more users' field (4 total users). Please separate with <br />.-->
+ |produced= 1966–present
+ |number built= 8,845 as of December 2015<ref name=737_O_D_summ/>
+ |unit cost= 737-100: [[United States dollar|US$]]32 million{{sfn|Bowers|1989|p=495|ps=}} <br />737-600: US$59.4&nbsp;million <br />737-700: US$80.6&nbsp;million<ref name=prices>{{cite web|title=Commercial Airplanes – Jet Prices|url=http://www.boeing.com/boeing/commercial/prices/|website=www.boeing.com|publisher=Boeing|accessdate=January 10, 2015}}</ref> <br />737-800: US$96.0&nbsp;million<ref name=prices/> <br />737-900ER: US$101.9&nbsp;million<ref name=prices/>
+ |variants with their own articles= [[Boeing T-43]]
+ |developed into= [[Boeing 737 Classic]] <br />[[Boeing 737 Next Generation]] <br>[[Boeing 737 MAX]]
+}}
+|}
+
+The '''Boeing 737''' is a [[Flight length#Categories|short- to medium-range]] [[twinjet]] [[Narrow-body aircraft|narrow-body]] [[airliner]]. Originally developed as a shorter, lower-cost twin-engined airliner derived from Boeing's [[Boeing 707|707]] and [[Boeing 727|727]], the 737 has developed into a family of ten passenger models with a capacity of 85 to 215 passengers. The 737 is Boeing's only narrow-body airliner in production, with the -700, -800, and -900ER variants currently being built. A re-engined and redesigned version, the [[Boeing 737 MAX|737 MAX]], is set to debut in 2017.
+
+Originally envisioned in 1964, the initial 737-100 made its first flight in April 1967 and entered airline service in February 1968 at [[Lufthansa]].<ref name=fg6000>Kingsley-Jones, Max. [http://wayback.archive.org/web/20090425153957/http://www.flightglobal.com/articles/2009/04/22/325472/pictures-6000-and-counting-for-boeings-popular-little-twinjet.html "6,000 and counting for Boeing’s popular little twinjet."] ''Flight International'', Reed Business Information, April 22, 2009. Retrieved: April 22, 2009.</ref><ref name=airliners.net737>[http://www.airliners.net/aircraft-data/stats.main?id=91 "The Boeing 737-100/200."] ''Airliners.net'', Demand Media, Inc. Retrieved: April 22, 2009.</ref> Next, the lengthened 737-200 entered service in April 1968. In the 1980s Boeing launched the -300, -400, and -500 models, subsequently referred to as the [[Boeing 737 Classic]] series. The 737 Classics added capacity and incorporated [[CFM International CFM56#CFM56-3B-1|CFM56]] [[turbofan]] engines along with wing improvements.
+
+In the 1990s Boeing introduced the [[Boeing 737 Next Generation|737 Next Generation]] with multiple changes including a redesigned, increased span laminar flow wing, upgraded "glass" cockpit, and new interior. The 737 Next Generation comprises the four -600, -700, -800, and -900 models, ranging from {{convert|102|ft|m|2|abbr=on}} to {{convert|138|ft|m|2|abbr=on}} in length. [[Boeing Business Jet]] versions of the 737 Next Generation are also produced.
+
+The 737 series is the best-selling jet commercial airliner.<ref name=fg6000 /> The 737 has been continuously manufactured by [[Boeing]] since 1967 with 8,845 aircraft delivered and 4,392 orders yet to be fulfilled {{as of|2015|12|lc=on}}.<ref name=737_O_D_summ/> 737 assembly is centered at the [[Boeing Renton Factory]] in [[Renton, Washington]]. Many 737s serve markets previously filled by [[Boeing 707|707]], [[Boeing 727|727]], [[Boeing 757|757]], [[DC-9]], and [[MD-80]]/[[MD-90]] airliners, and the aircraft currently competes primarily with the [[Airbus A320 family]].<ref name=facts/> As of 2006 there were 1,250 Boeing 737s airborne at any given time on average, with two departing or landing somewhere every five seconds.<ref name="flightglobal"/>
+{{TOC limit|3}}
+
+==Development==
+
+===Background===
+Boeing had been studying short-haul jet aircraft designs and wanted to produce another aircraft to supplement the [[Boeing 727|727]] on short and thin routes.<ref name="nyt transport news">"[http://www.nytimes.com/1964/07/17/transport-news-boeing-plans-jet.html?gwh=DC51C313D9636DB7CDF928D96B139F02&gwt=pay Transport News: Boeing Plans Jet.]" ''[[The New York Times]]'', July 17, 1964. Retrieved: February 26, 2008.</ref> Preliminary design work began on May 11, 1964,{{sfn|Endres|2001|p=122|ps=}} and Boeing's intense market research yielded plans for a 50- to 60-passenger airliner for routes {{convert|50|to|1000|mi|km|abbr=on}} long.<ref name="nyt transport news"/>{{sfn|Sharpe|Shaw|2001|p=12|ps=}} [[Lufthansa]] became the launch customer on February 19, 1965,{{sfn|Sharpe|Shaw|2001|p=13|ps=}} with an order for 21 aircraft, worth $67&nbsp;million<ref name="german order">"German Airline Buys 21 Boeing Short-Range Jets." ''[[The Washington Post]]'', February 20, 1965. Retrieved: February 26, 2008.</ref> in 1965, after the airline received assurances from Boeing that the 737 project would not be canceled.<ref name="Wallace"/> Consultation with Lufthansa over the previous winter resulted in an increase in capacity to 100 seats.{{sfn|Sharpe|Shaw|2001|p=13|ps=}}
+
+[[File:NASA TEST 737-100 prototype.jpg|thumb|left|The prototype 737, a -100 operated by [[NASA]] for testing.]]
+On April 5, 1965, Boeing announced an order by [[United Airlines]] for 40 737s. United wanted a slightly larger airplane than the original 737.  So Boeing stretched the fuselage {{convert|91|cm|in|sp=us}} ahead of, and {{convert|102|cm|in|abbr=on}} behind the wing.{{sfn|Sharpe|Shaw|2001|p=17|ps=}} The longer version was designated 737-200, with the original short-body aircraft becoming the 737-100.{{sfn|Redding|Yenne|1997|p=182|ps=}}
+
+Detailed design work continued on both variants at the same time. Boeing was far behind its competitors when the 737 was launched, as rival aircraft [[BAC One-Eleven|BAC-111]], [[McDonnell Douglas DC-9|Douglas DC-9]], and [[Fokker F28]] were already into flight certification.<ref name="german order"/> To expedite development, Boeing used 60% of the structure and systems of the existing 727, the most notable being the fuselage cross-section. This fuselage permitted six-abreast seating compared to the rival BAC-111 and DC-9's five-abreast layout.{{sfn|Sharpe|Shaw|2001|p=13|ps=}} Design engineers decided to mount the [[nacelle]]s directly to the underside of the wings to reduce the landing gear length and kept the engines low to the ground for easy ramp inspection and servicing.<ref name="JoeSutter">Sutter 2006, pp. 76–78.</ref> Many thickness variations for the engine attachment strut were tested in the wind tunnel and the most desirable shape for high speed was found to be one which was relatively thick, filling the narrow channels formed between the wing and the top of the nacelle, particularly on the outboard side. Originally, the span arrangement of the airfoil sections of the 737 wing was planned to be very similar to that of the 707 and 727, although somewhat thicker. However, a substantial improvement in drag at high Mach numbers was achieved by altering these sections near the nacelle.<ref>Olason, M.L. and Norton, D.A. "Aerodynamic Philosophy of the Boeing 737", AIAA paper 65-739, presented at the AIAA/RAeS/JSASS Aircraft Design and Technology Meeting, Los Angeles California, November 1965. Reprinted in the AIAA Journal of Aircraft, Vol.3 No.6, November/December 1966, pp.524-528.</ref> The engine chosen was the [[Pratt & Whitney JT8D|Pratt & Whitney JT8D-1]] low-bypass ratio turbofan engine, delivering {{convert|14500|lbf|kN|abbr=on|lk=on}} thrust.{{sfn|Shaw|1999|p=6|ps=}} With the wing-mounted engines, Boeing decided to mount the [[horizontal stabilizer]] on the fuselage rather than the [[T-tail]] style of the Boeing 727.{{sfn|Sharpe|Shaw|2001|p=17|ps=}}
+
+===Production and testing===
+[[File:Lufthansa 737-130 D-ABED.jpg|thumb|An early-production Boeing 737-100 of [[Lufthansa]], the type's launch customer, at [[Hannover Airport]] (1968).]]
+
+The initial assembly of the 737 was adjacent to [[Boeing Field]] (now officially named King County International Airport) because the factory in [[Renton Municipal Airport|Renton]] was filled to capacity with the building of the 707 and 727. After 271 aircraft were built, production moved to Renton in late 1970.<ref name="Wallace">Wallace, J. [http://www.seattlepi.com/default/article/Boeing-delivers-its-5-000th-737-1195654.php "Boeing delivers its 5,000th 737."] ''Seattle Post-Intelligencer'', February 13, 2006. Retrieved June 7, 2011.</ref><ref>Gates, Dominic. [http://www.forecastinternational.com/notable/seattletimes.pdf "Successor to Boeing 737 likely to be built in state."] ''Seattle Times'', 30 December 2005. Retrieved: February 10, 2008.</ref> A significant portion of fuselage assembly occurs in Wichita, Kansas, which was previously done by Boeing but now by [[Spirit AeroSystems]], which purchased some of Boeing's assets in Wichita.<ref>{{cite web|author1=John W. McCurry|title=Spirit of  Expansion|url=http://www.siteselection.com/features/2008/nov/aerospace/|website= siteselection.com|publisher=Site Selection Online|accessdate={{date|2014-11-22}}}}</ref><ref>{{cite web|author1=Jon Ostrower|title=Spirit AeroSystems CEO Says Boeing Exploring Increasing 737 Production|url=http://online.wsj.com/articles/SB10001424127887323585604579009500454751922|website=online.wsj.com|publisher=The Wall Street Journal|accessdate={{date|2014-11-22}}|date=August 12, 2013|subscription=yes}}</ref>
+
+The fuselage is joined with the wings and landing gear, then moves down the assembly line for the engines, avionics, and interiors. After rolling out the aircraft, Boeing tests the systems and engines before its [[maiden flight]] to Boeing Field, where it is painted and fine-tuned before delivery to the customer.{{sfn|Shaw|1999|p=16|ps=}}
+
+The first of six -100 prototypes rolled out in December 1966, and made its maiden flight on April 9, 1967, piloted by Brien Wygle and Lew Wallick.<ref name=737_30th>{{cite web|title=Original 737 Comes Home to Celebrate 30th Anniversary|url=http://boeing.mediaroom.com/1997-05-02-Original-737-Comes-Home-to-Celebrate-30th-Anniversary|website=www.boeing.com|publisher=Boeing|accessdate={{date|2014-11-18}}|date={{date|1997-05-02}}}}</ref> On December 15, 1967, the [[Federal Aviation Administration]] certified the -100 for commercial flight,{{sfn|Sharpe|Shaw|2001|p=20|ps=}} issuing Type Certificate A16WE.<ref name="Type_Cert_A16WE">[http://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/e038ae3ed2dbc2ae86257479004d1e57/$FILE/A16WE.pdf "Type Certificate Data Sheet A16WE."] ''faa.gov.'' Retrieved: September 3, 2010.</ref> The 737 was the first aircraft to have, as part of its initial certification, approval for [[Instrument approach|Category II approaches]].{{sfn|Redding|Yenne|1997|p=183|ps=}} Lufthansa received its first aircraft on December 28, 1967, and on February 10, 1968, became the first non-American airline to launch a new Boeing aircraft.{{sfn|Sharpe|Shaw|2001|p=20|ps=}} [[Lufthansa]] was the only significant customer to purchase the 737-100. Only 30 aircraft were produced.{{sfn|Sharpe|Shaw|2001|p=120|ps=}}
+
+The 737-200 had its maiden flight on August 8, 1967. It was certified by the FAA on December 21, 1967,<ref name="Type_Cert_A16WE"/>{{sfn|Endres|2001|p=124|ps=}} and the inaugural flight for United was on April 28, 1968, from [[Chicago]] to [[Grand Rapids, Michigan]].{{sfn|Sharpe|Shaw|2001|p=20|ps=}} The lengthened -200 was widely preferred over the -100 by airlines.<ref>{{cite web|url=http://modernairliners.com/boeing-737/boeing-737-history|title=Boeing 737 History|publisher=''ModernAirlines.com''|accessdate=August 10, 2015}}</ref>
+
+===Initial derivatives===
+[[File:United Airlines Boeing 737-222 Marmet.jpg|thumb|left|An early-production, retrofitted [[United Airlines]] 737-200 with deployed thrust reversers]]
+
+The original engine nacelles incorporated thrust reversers taken from the 727 outboard nacelles. However, they proved to be relatively ineffective and apparently tended to lift the aircraft up off the runway when deployed. This reduced the downforce on the main wheels thereby reducing the effectiveness of the wheel brakes. In 1968, an improvement to the [[thrust reversal]] system was introduced.<ref>{{cite book|last1=Sharpe, Shaw|first1=Mike, Robbie|title=Boeing 737-100 and 200|date=2001|publisher=MBI Publishing Company|url=https://books.google.com/books?id=PSqPyNcxsO0C&pg=PT21&lpg=PT21&dq=boeing+1968+thrust+reverser&source=bl&ots=rbHcCSNcYb&sig=UsD_RC6BgAxTxLVJVL4Ndo9v5ZM&hl=en&sa=X&ved=0CEAQ6AEwB2oVChMI-sGog7SexwIVDDM-Ch0zlQpL#v=onepage&q=boeing%201968%20thrust%20reverser&f=false|accessdate=August 10, 2015}}</ref> A 48-inch tailpipe extension was added and new, target-style, thrust reversers were incorporated. The thrust reverser doors were set 35 degrees away from the vertical to allow the exhaust to be deflected inboard and over the wings and outboard and under the wings.<ref>[http://www.b737.org.uk/powerplant.htm "Powerplant - Reverse Thrust."] ''b737.org.uk.'' Retrieved: November 1, 2011.</ref> The improvement became standard on all aircraft after March 1969, and a retrofit was provided for active aircraft. Boeing fixed the drag issue by introducing new longer nacelle/wing fairings, and improved the airflow over the flaps and slats. The production line also introduced an improvement to the flap system, allowing increased use during takeoff and landing. All these changes gave the aircraft a boost to payload and range, and improved short-field performance.{{sfn|Sharpe|Shaw|2001|p=20|ps=}} In May 1971, after aircraft #135, all improvements, including more powerful engines and a greater fuel capacity, were incorporated into the 737-200, giving it a 15% increase in payload and range over the original -200s.{{sfn|Redding|Yenne|1997|p=183|ps=}} This became known as the 737-200 Advanced, which became the production standard in June 1971.<ref>{{cite web |url= http://www.boeing.com/assets/pdf/commercial/airports/acaps/737.pdf |title= 737 Airplane Characteristics for Airport Planning |date= May 2011 |publisher= Boeing |accessdate= 7 February 2015}}</ref>
+
+[[File:Boeing 737-200 planform view.jpg|thumb|USAF [[Boeing T-43|T-43]] shortly after takeoff.]]
+In 1970, Boeing received only 37 orders. Facing financial difficulties, Boeing considered closing the 737 production-line and selling the design to Japanese aviation companies.<ref name="Wallace"/> After the cancellation of the [[Boeing 2707|Boeing Supersonic Transport]], and scaling back of 747 production, enough funds were freed up to continue the project.{{sfn|Sharpe|Shaw|2001|p=21|ps=}}  In a bid to increase sales by offering a variety of options, Boeing offered a 737C (Convertible) model in both -100 and -200 lengths. This model featured a {{convert|340|x|221|cm|in|abbr=on}} freight door just behind the cockpit, and a strengthened floor with rollers, which allowed for [[Unit Load Device|palletized cargo]]. A 737QC (Quick Change) version with palletized seating allowed for faster configuration changes between cargo and passenger flights.{{sfn|Sharpe|Shaw|2001|p=19|ps=}} With the improved short-field capabilities of the 737, Boeing offered the option on the -200 of the [[gravelkit|gravel kit]], which enables this aircraft to operate on remote, unpaved runways.<ref>[http://www.b737.org.uk/unpavedstripkit.htm "Unpaved Strip Kit."] ''b737.org.uk.'' Retrieved: February 10, 2008.</ref><ref>[http://www.airliners.net/open.file?id=0686303&size=L&width=1024&height=695&sok=&photo_nr=&prev_id=&next_id= Boeing 737-2T2C/Adv "Boeing 737."] ''airliners.net''. Retrieved: February 10, 2008.</ref> Until retiring its -200 fleet in 2007, [[Alaska Airlines]] used this option for some of its rural operations in [[Alaska]].<ref>{{Cite news |url = http://www.wsj.com/articles/SB117642845035668637 |title= Arctic Eagles Bid Mud Hens Farewell At Alaska Airlines |last=Carey |first=Susan  |date=April 13, 2007 |work= Wall Street Journal |access-date= 7 February 2015}}</ref> Northern Canadian operators Air Inuit, Air North, Canadian North, First Air and [[Nolinor Aviation]] still operate the gravel kit aircraft in Northern Canada, where gravel runways are common.
+
+In 1988, the initial production run of the -200 model ended after producing 1,114 aircraft. The last one was delivered to [[Xiamen Airlines]] on August 8, 1988.{{sfn|Sharpe|Shaw|2001|p=23|ps=}}<ref name="first flight">[http://www.boeing.com/commercial/737family/background.html "737 Family."] ''Boeing.com'', January 5, 2008. Retrieved: April 12, 2008.</ref>
+
+===Improved variants===
+{{Main|Boeing 737 Classic}}
+
+Development began in 1979 for the 737's first major revision. Boeing wanted to increase capacity and range, incorporating improvements to upgrade the aircraft to modern specifications, while also retaining commonality with previous 737 variants. In 1980, preliminary aircraft specifications of the variant, dubbed 737-300, were released at the [[Farnborough Airshow]].{{sfn|Endres|2001|p=126|ps=}}
+
+[[File:Lufthansa-1.jpg|thumb|left|The 737-300 was the first Classic variant]]
+Boeing engineer Mark Gregoire led a design team, which cooperated with [[CFM International]] to select, modify and deploy a new engine and nacelle that would make the 737-300 into a viable aircraft.  They chose the [[CFM International CFM56|CFM56-3B-1]] [[Bypass ratio|high-bypass]] [[turbofan]] engine to power the aircraft, which yielded significant gains in fuel economy and a reduction in noise, but also posed an engineering challenge, given the low ground clearance of the 737 and the larger diameter of the engine over the original Pratt & Whitney engines. Gregoire's team and CFM solved the problem by reducing the size of the fan (which made the engine slightly less efficient than it had been forecast to be), placing the engine ahead of the wing, and by moving engine accessories to the sides of the engine pod, giving the engine a distinctive non-circular "[[hamster|hamster pouch]]"<ref name="hamster">Brady, Chris. [http://www.b737.org.uk/737classic.htm "History & Development of the Boeing 737 - Classics."] ''The Boeing 737 Information Site, 1999. Retrieved: September 5, 2010.</ref> air intake.{{sfn|Endres|2001|p=128|ps=}}<ref>Sweetman, Bill, All mouth, Air & Space, September 2014, p.14</ref> Earlier customers for the CFM56 included the U.S. Air Force with its program to re-engine KC-135 tankers.<ref>Garvin, Robert V. "Starting Something Big - The Commercial Emergence of GE Aircraft Engines", American Institute of Aeronautics and Astronautics, Inc. Reston, 1998, ISBN 1-56347-289-9, p. 137.</ref>
+
+The passenger capacity of the aircraft was increased to 149 by extending the fuselage around the wing by {{convert|2.87|m|ftin|sp=us}}. The wing incorporated a number of changes for improved aerodynamics. The wingtip was extended {{convert|9|in|cm|abbr=on}}, and the wingspan by {{convert|1|ft|9|in|cm|abbr=on}}. The leading-edge slats and trailing-edge flaps were adjusted.{{sfn|Endres|2001|p=128|ps=}} The tailfin was redesigned, the flight deck was improved with the optional EFIS (Electronic Flight Instrumentation System), and the passenger cabin incorporated improvements similar to those developed on the [[Boeing 757]].{{sfn|Shaw|1999|p=10|ps=}} The prototype -300, the 1,001st 737 built, first flew on 24 February 1984 with pilot Jim McRoberts.{{sfn|Shaw|1999|p=10|ps=}} It and two production aircraft flew a nine-month-long certification program.{{sfn|Shaw|1999|pp=12–13|ps=}}
+
+In June 1986, Boeing announced the development of the 737-400,{{sfn|Redding|Yenne|1997|p=185|ps=}} which stretched the fuselage a further {{convert|10|ft|m|abbr=on}}, increasing the passenger load to 188.<ref>FAA Type Certificate Data Sheet http://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/9c59427a20b3253686257d03004d8faa/$FILE/A16WE_Rev_53.pdf</ref> The -400s first flight was on February 19, 1988, and, after a seven-month/500-hour flight-testing run, entered service with [[Piedmont Airlines (1948-1989)|Piedmont Airlines]] that October.{{sfn|Shaw|1999|p=14|ps=}}
+
+[[File:transaero b737-400 planform ei-cxk arp.jpg|thumb|[[Transaero]] 737-400 at takeoff. The stubbier [[CFM International CFM56|CFM56]] engines are mounted ahead of the wings.]]
+The -500 series was offered, due to customer demand, as a modern and direct replacement of the 737-200. It incorporated the improvements of the 737 Classic series, allowing longer routes with fewer passengers to be more economical than with the 737-300. The fuselage length of the -500 is {{convert|1|ft|7|in|cm|abbr=on}} longer than the 737-200, accommodating up to 140<ref>FAA Type Certificate Data Sheet  http://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/9c59427a20b3253686257d03004d8faa/$FILE/A16WE_Rev_53.pdf</ref> passengers. Both glass and older-style mechanical cockpits arrangements were available.{{sfn|Shaw|1999|p=14|ps=}} Using the CFM56-3 engine also gave a 25% increase in fuel efficiency over the older -200s P&W engines.{{sfn|Shaw|1999|p=14|ps=}}
+
+The 737-500 was launched in 1987 by [[Southwest Airlines]], with an order for 20 aircraft,{{sfn|Shaw|1999|p=40|ps=}} and flew for the first time on June 30, 1989.{{sfn|Shaw|1999|p=14|ps=}} A single prototype flew 375 hours for the certification process,{{sfn|Shaw|1999|p=14|ps=}} and on February 28, 1990, [[Southwest Airlines]] received the first delivery.{{sfn|Endres|2001|p=129|ps=}}
+
+After the introduction of the -600/700/800/900 series, the -300/400/500 series was called the 737 Classic series.<ref>{{cite web |url= http://www.boeing.com/boeing/commercial/737family/facts.page |title= Boeing: Boeing 737 Facts |date= September 6, 2013 |accessdate= February 7, 2015 |publisher= Boeing}}</ref>
+
+The price of jet fuel reached a peak in 2008, when airlines devoted 40% of the retail price of an air ticket to pay for fuel, versus 15% in 2000.<ref>"To Save Fuel, Airlines Find No Speck Too Small." ''[[New York Times]]'', June 11, 2008.</ref><ref>{{cite web|title=Jet Fuel Price Development|url=http://www.iata.org/publications/economics/fuel-monitor/Pages/price-development.aspx|publisher=IATA|accessdate=10 April 2015}}</ref> Consequently, in that year carriers retired Classic 737 series aircraft to reduce fuel consumption; replacements consisted of more efficient Next Generation 737s or [[Airbus A320 family|Airbus A320]]/A319/A318 series aircraft. On June 4, 2008, [[United Airlines]] announced it would retire all 94 of its Classic 737 aircraft (64 737-300 and 30 737-500 aircraft), replacing them with [[Airbus A320]] jets taken from its [[Ted (airline)|Ted]] subsidiary, which has been shut down.<ref>"UAL Cuts Could Be Omen." ''[[The Wall Street Journal]]'', June 5, 2008, p. B3.</ref><ref>{{cite web|author1=David Grossman|title=Why Ted's demise is a boost for business travelers|url=http://usatoday30.usatoday.com/travel/columnist/grossman/2008-06-27-demise-of-ted_N.htm|website=usatoday30.usatoday.com|publisher=USA Today|accessdate={{date|2014-11-19}}|date=June 29, 2000}}</ref><ref>"Airline Shares Gain Despite Losses." ''[[The Wall Street Journal]]'', July 23, 2008, p. B3.</ref>
+
+===Next-Generation models===
+{{Main|Boeing 737 Next Generation}}
+
+Prompted by the modern [[Airbus A320 family|Airbus A320]], Boeing initiated development of an updated series of aircraft in 1991.{{sfn|Endres|2001|p=132|ps=}} After working with potential customers, the 737 Next Generation (NG) program was announced on November&nbsp;17, 1993.{{sfn|Shaw|1999|p=8|ps=}} The 737NG encompasses the -600, -700, -800, and -900, and is to date the most significant upgrade of the airframe. The performance of the 737NG is, in essence, that of a new aircraft, but important commonality is retained from previous 737 models.<ref name="About the 737 Family" />
+
+[[File:Boeing 737 fuselage train hull 3473.jpg|thumb|left|Boeing 737NG fuselage being transported by rail.]]
+The wing was redesigned with a new [[airfoil]] section, greater [[Chord (aircraft)|chord]], increased wing span by {{convert|16|ft|m|abbr=on}} and area by 25%, which increased total fuel capacity by 30%. New, quieter, more fuel-efficient [[CFM International CFM56#CFM56-7 series|CFM56-7B]] engines were used.{{sfn|Endres|2001|p=133|ps=}} The wing, engine, and fuel capacity improvements combined increase the 737's range by 900&nbsp;nautical miles to over {{convert|3000|nmi|km}},<ref name=737family>{{cite web|title=About the 737 Family|url=http://www.boeing.com/boeing/commercial/737family/background.page|website=www.boeing.com|publisher=Boeing|accessdate={{date|2014-11-18}}}}</ref> now permitting transcontinental service.{{sfn|Shaw|1999|p=8|ps=}} With the increased fuel capacity, higher [[maximum takeoff weight]] (MTOW) specifications are offered. The 737NG included redesigned vertical stabilizers, and [[Wingtip device|winglets]] were available on most models.<ref>{{cite web |url= http://www.boeing.com/commercial/aeromagazine/aero_17/winglet_story.html|title= Aero 17 - Blended Winglets |date=2009  |website = |publisher = Boeing |last = |first = |accessdate= 7 February 2015}}</ref> The flight deck was upgraded with modern avionics, and passenger cabin improvements similar to those on the [[Boeing 777]], including more curved surfaces and larger overhead bins than previous-generation 737s. The Next Generation 737 interior was also adopted on the [[Boeing 757-300]].<ref>{{harvnb|Birtles|2001|pp=28–29.}}</ref><ref>{{harvnb|Norris|Wagner|1999|pp=101–02.}}</ref>
+
+The first NG to roll out was a -700, on December 8, 1996. This aircraft, the 2,843rd 737 built, first flew on February 9, 1997. The prototype -800 rolled out on June 30, 1997, and first flew on July 31, 1997. The smallest of the new variants, the -600s, is the same size as the -500. It was the last in this series to launch, in December 1997. First flying January 22, 1998, it was given certification on August 18, 1998.{{sfn|Shaw|1999|p=8|ps=}}{{sfn|Shaw|1999|pp=14–15|ps=}} A flight test program was operated by 10 aircraft; 3 -600s, 4 -700s, and 3 -800s.{{sfn|Shaw|1999|p=8|ps=}}
+
+[[File:Air Berlin B737-700 Dreamliner D-ABBN.jpg|thumb|Boeing 737-700 in [[Air Berlin]]-Boeing livery, showing blended winglets available on the 737 Next Generation models]]
+In 2004, Boeing offered a Short Field Performance package in response to the needs of [[Gol Transportes Aéreos]], which frequently operates from restricted airports. The enhancements improve takeoff and landing performance. The optional package is available for the 737NG models and standard equipment for the 737-900ER. The CFM56-7B Evolution nacelle began testing in August 2009 to be used on the new 737 PIP (Performance Improvement Package) due to enter service mid-2011. This new improvement is said to shave at least 1% off overall drag and have some weight benefits. Overall, it is claimed to have a 2% improvement on fuel burn on longer stages.<ref name=margins>Kingsley-Jones, Max. [http://wayback.archive.org/web/20091031114910/http://www.flightglobal.com/articles/2009/10/27/333973/narrow-margins-airbus-and-boeing-face-pressure-with-the-a320-and-737.html "Narrow margins: Airbus and Boeing face pressue with the A-320 and 737."] ''flightglobal.com'', October 27, 2009. Retrieved: June 23, 2010.</ref> In 2010, new interior options for the 737NG included the [[Boeing 787 Dreamliner|787]]-style Boeing Sky Interior.<ref name=margins/>
+
+Boeing delivered the 5,000th 737 to [[Southwest Airlines]] on February 13, 2006. Boeing delivered the 6,000th 737 to [[Norwegian Air Shuttle]] in April 2009. Boeing delivered the 8,000th 737 to [[United Airlines]] on April 16, 2014.<ref>{{cite web|title=Boeing’s 737 Turns 8,000: The Best-Selling Plane Ever Isn’t Slowing|url=http://www.businessweek.com/articles/2014-04-16/boeing-s-737-turns-8-000-the-best-selling-plane-ever-isn-t-slowing?campaign_id=yhoo|publisher=Bloomberg Business Week|date=April 16, 2014}}</ref> The Airbus A320 family has outsold the 737NG over the past decade,<ref>{{cite web|title=Airbus A320 Family passes the 5,000th order mark|url=http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/airbus-a320-family-passes-the-5000th-order-mark/|publisher=Airbus|accessdate={{date|2014-11-22}}|date=January 25, 2007}}</ref><ref>[http://www.aviationexplorer.com/a320_facts.htm "Airbus 320 Aircraft History, Information, Pictures and Facts."] ''aviationexplorer.com.''. Retrieved: September 3, 2010.</ref><ref>[http://www.airbus.com/en/corporate/orders_and_deliveries/ "Airbus orders and deliveries."] ''Airbus.'' Retrieved: September 3, 2010.</ref> although its order totals include the A321 and A318, which have also rivaled Boeing's [[Boeing 757|757]] and [[Boeing 717|717]], respectively.<ref name=facts>[http://www.flightlevel350.com/Airbus-A320_aircraft_facts.html "Airbus A320 Aircraft Facts, Dates and History."] ''Flightlevel350.com.'' Retrieved: May 12, 2010.</ref> The 737NG has also outsold the A320 on an annual basis in past years,<ref>Gorman, Brian. [http://www.fool.com/investing/general/2007/02/01/boeings-continuing-climb.aspx "Boeing's Continuing Climb."] ''Motley Fool.'', February 1, 2007. Retrieved: May 12, 2010.</ref><ref>Kingsley-Jones, Max. [http://wayback.archive.org/web/20080124040812/http://www.flightglobal.com/articles/2008/01/22/220884/boeing-airbus-2007-orders-race-closes-with-diplomatic.html "Boeing-Airbus 2007 orders race closes with 'diplomatic' finish."] ''Flight Global,'' January 2008. Retrieved: May 12, 2010.</ref><ref>"Global aircraft orders, deliveries and backlog in units for Boeing vs Airbus". ''Interavia Business & Technology'', 2002-01.</ref><ref>Cochennec, Yonn. [http://findarticles.com/p/articles/mi_hb3126/is_669_58/ai_n28992671/pg_2/?tag=content;col1 "What goes up."] ''Interavia Business & Technology'', February 2003. Retrieved: May 12, 2010.</ref><ref>Sutton, Oliver. [http://findarticles.com/p/articles/mi_hb3126/is_650_56/ai_n28827184/pg_4/?tag=content;col1 "Any advance on ten percent?"] ''Interavia Business & Technology,'' February 2001. Retrieved: May 12, 2010.</ref> with the next generation series extending the jetliner's run as the most widely sold<ref>[http://archiv.rhein-zeitung.de/on/04/01/03/topnews/higru1.html?a "Boeing 737: Das meistverkaufte Flugzeug der Welt" (in German).] ''Rhein-Zeitung,'' January 3, 2004. via ''Agence France-Presse.'' Retrieved: May 12, 2010.</ref><ref name="times">Robertson, David. [http://business.timesonline.co.uk/tol/business/industry_sectors/engineering/article1499824.ece "Boeing gets ready for all-new 737."] ''The Times,'' March 12, 2007. Retrieved: April 22, 2010. <!-- The 737 is the world’s best-selling airliner. --></ref>{{sfn|Anderson|Eberhardt|2009|p=61|ps=}} and commonly flown airliner family since its introduction.<ref name=smhw>O’Sullivan, Matt. [http://wayback.archive.org/web/20121106054059/http://www.smh.com.au/business/boeing-shelves-plans-for-737-replacement-20090101-78f5.html "Boeing shelves plans for 737 replacement."] ''The Sydney Morning Herald'', January 2, 2009. Retrieved: April 22, 2010. Quote: Boeing will stick with the 737, the world's most widely flown aircraft.</ref><ref>[http://articles.chicagotribune.com/2008-01-04/business/0801030652_1_airbus-sas-boeing-planemaker "Boeing airliner deliveries rise 11%."] ''Chicago Tribune,'' January 4, 2008. Retrieved: April 22, 2010.</ref><ref>Layne, Rachel. [http://wayback.archive.org/web/20100301154738/http://www.businessweek.com/news/2010-02-26/bombardier-s-win-may-prod-airbus-boeing-to-upgrade-engines.html "Bombardier’s Win May Prod Airbus, Boeing to Upgrade Engines."] ''BusinessWeek,'' February 26, 2010. Retrieved: April 22, 2010.</ref><ref name=kt>Rahn, Kim. [https://www.koreatimes.co.kr/www/news/nation/2010/02/119_4732.html "B737: Best-Selling Aircraft in the World."] ''Korea Times.'' Retrieved: April 22, 2010.</ref><ref name=fg>[http://wayback.archive.org/web/20080112090924/http://www.flightglobal.com/articles/2008/01/01/218496/boeing-737-aircraft-profile.html "Boeing 737 Aircraft Profile."] ''Flight Global.'' Retrieved: April 22, 2010. Quote: the best selling commercial airliner in history.</ref><ref name=bj>Jiang, Steven. [http://www.thebeijinger.com/files/Explore-Nov_2008.pdf "Jetset: 'Tianjin Takes Off'."] ''The Beijinger.'' Retrieved: April 22, 2010. Quote: A320, the workhorse of many airlines and the second best-selling jetliner family of all time (after Boeing’s venerable B737).</ref>  The 10,000th aircraft was ordered in July 2012.<ref>[http://wayback.archive.org/web/20120726002847/http://www.boeing.com/Features/2012/07/bca_737_10000th_07_11_12.html "737 tops 10,000 orders"] ''Boeing.com'', July 12, 2012. Retrieved: July 20, 2012.</ref>
+
+Boeing produces 42 of the type per month in 2015, and expects to increase to 52 per month in 2018.<ref name=osb1>{{cite news |url=http://aviationweek.com/commercial-aviation/analysts-flag-potential-airliner-glut |title=Analysts Flag Potential Airliner Glut |work=[[Aviation Week & Space Technology]] |first=Joe |last=Anselmo |date=2 March 2015 |accessdate=4 March 2015 |archiveurl=https://web.archive.org/web/20150304202822/http://aviationweek.com/commercial-aviation/analysts-flag-potential-airliner-glut |archivedate=4 March 2015 |deadurl=no}}</ref> The slow selling 737-600 is no longer being marketed and was removed from the Boeing website as of 2016; its position as the smallest model being taken by the more popular 737-700.<ref>http://www.boeing.com/commercial/737ng/</ref>
+
+===Replacement or re-engining===
+{{main|Boeing Yellowstone Project|Boeing 737 MAX}}
+
+Since 2006, Boeing has discussed replacing the 737 with a "clean sheet" design (internally named "Boeing Y1") that could follow the [[Boeing 787 Dreamliner]].<ref>[http://wayback.archive.org/web/20071022194831/http://www.flightglobal.com/articles/2006/03/03/205223/boeing-firms-up-737-replacement-studies-by-appointing.html "Boeing firms up 737 replacement studies by appointing team."] ''[[Flight International]]'', March 3, 2006. Retrieved: April 13, 2008.</ref> A decision on this replacement was postponed, and delayed into 2011.<ref>Hamilton, Scott. [http://wayback.archive.org/web/20100627003506/http://www.flightglobal.com/articles/2010/06/24/343568/737-decision-may-slip-to-2011-credit-suisse.html "737 decision may slip to 2011: Credit Suisse."] ''flightglobal,'' 2010. Retrieved: June 26, 2010.</ref>  In November 2014, it was reported that Boeing plans to develop a new aircraft to replace the 737 in the 2030 time frame. The airplane is to have a similar fuselage, but probably made from composite materials similar to the [[Boeing 787 Dreamliner]].<ref>[http://www.chicagotribune.com/business/breaking/chi-boeing-new-airplane-20141105-story.html "Boeing plans to develop new airplane to replace 737 Max by 2030"]. Chicago Tribune, November 5, 2014.</ref> Boeing also considers a parallel development along with the 757 replacement, similar to when the 757/767 were developed in the 1970s.<ref name=awnNeo>{{cite news |url=http://aviationweek.com/commercial-aviation/boeing-revisits-past-hunt-737757-successors |title=Boeing Revisits Past In Hunt For 737/757 Successors |work=[[Aviation Week & Space Technology]] |last=Guy Norris and Jens Flottau |date=12 December 2014 |accessdate=14 December 2014 |archiveurl=https://web.archive.org/web/20141214161620/http://aviationweek.com/commercial-aviation/boeing-revisits-past-hunt-737757-successors |archivedate=14 December 2014 |deadurl=no}}</ref>
+
+On July 20, 2011, Boeing announced plans for a new 737 version to be powered by the [[CFM International LEAP-X]] engine, with [[American Airlines]] intending to order 100 of these aircraft.<ref>[http://boeing.mediaroom.com/index.php?s=43&item=1845 "Boeing and American Airlines Agree on Order for up to 300 Airplanes"]. ''Boeing'', July 20, 2011. Retrieved: November 1, 2011.</ref>  On August 30, 2011, Boeing confirmed the launch of the 737 new engine variant, called the [[Boeing 737 MAX|737 MAX]],<ref>[http://www.newairplane.com/737/737Max/ Boeing 737 MAX]. NewAirplane.com</ref> with new CFM International LEAP-1B engines.<ref>[http://boeing.mediaroom.com/index.php?item=1907 "Boeing Launches 737 New Engine Family with Commitments for 496 Airplanes from Five Airlines."] ''boeing.mediaroom.com,'' August 30, 2011.</ref><ref>[http://wayback.archive.org/web/20121105204821/http://www.flightglobal.com/news/articles/boeing-officially-launches-re-engined-737-361406/ "Boeing officially launches re-engined 737."] ''flightglobal.com,'' August 30, 2011.</ref><ref>{{cite web|author1=Guy Norris|title=Boeing Board Gives Go-Ahead To Re-Engined 737|url=http://aviationweek.com/awin/boeing-board-gives-go-ahead-re-engined-737|website=aviationweek.com|publisher=Aviation Week|date=August 30, 2011}}</ref>
+
+On September 23, 2015, Boeing announced a collaboration with [[Commercial Aircraft Corporation of China Ltd.]] to build a completion and delivery facility for the 737 in China, the first outside the U.S.<ref>{{cite web |title= Boeing To Build Its First Offshore Plane Factory In China As Ex-Im Bank Withers |url= http://www.forbes.com/sites/lorenthompson/2015/09/23/boeing-to-build-its-first-offshore-plane-factory-in-china-as-ex-im-bank-withers/ |first= Loren |last= Thompson |accessdate = 2015-09-23}}</ref><ref>{{cite web|url=http://boeing.mediaroom.com/2015-09-23-Boeing-Hosts-China-President-Xi-Jinping-Announces-Airplane-Sales-Expanded-Collaboration-with-Chinas-Aviation-Industry|title=Boeing|publisher=}}</ref>
+
+==Design==
+[[File:737under.jpg|thumb|Boeing 737-700 showing the retracted [[landing gear]] and engine [[nacelle]]s with flattened underside and triangular shape]]
+
+The 737's main landing gear under the wings at mid-cabin rotates into wells in the aircraft's belly. The legs are covered by partial doors, and "brush-like" seals aerodynamically smooth (or "fair") the wheels in the wells. The sides of the tires are exposed to the air in flight. "Hub caps" complete the aerodynamic profile of the wheels. It is forbidden to operate without the caps, because they are linked to the ground speed sensor that interfaces with the anti-skid brake system.  The dark circles of the tires are clearly visible when a 737 takes off, or is at low altitude.<ref>Dekkers, Daniel, et al. (Project 2A2H). [home.deds.nl/~hink07/Report.pdf "Analysis Landing Gear 737-500."]{{Dead link|date=November 2014}} ''Hogeschool van Amsterdam. Aviation Sudies.'' October 2008. Retrieved: August 20, 2011.</ref>
+
+737s are not equipped with [[fuel dump systems]]. The original aircraft were too small to require them, and adding a fuel dump system to the later, larger variants would have incurred a large weight penalty. Boeing instead demonstrated an "equivalent level of safety". Depending upon the nature of the emergency, 737s either circle to burn off fuel or land overweight. If the latter is the case, the aircraft is inspected by maintenance personnel for damage and then returned to service if none is found.<ref>{{cite web|title=Boeing Commercial Aircraft - In-Flight Fuel Jettison Capability|url=http://www.boeing.com/assets/pdf/commercial/airports/faqs/fueldump.pdf|publisher=Boeing|accessdate={{date|2014-11-23}}|format=PDF}}</ref><ref>Cheung, Humphrey. [http://www.tgdaily.com/trendwatch-features/39149-troubled-american-airlines-jet-lands-safely-at-lax "Troubled American Airlines jet lands safely at LAX."] ''tgdaily.com,'' 2 September 2008. Retrieved: August 20, 2011.</ref>
+
+===Engines===
+[[File:CFM 56 Lauda 737.jpg|thumb|left|737-800 engine with non-circular "hamster pouch"<ref name="hamster"/> inlet]]
+
+Engines on the 737 Classic series (300, 400, 500) and Next-Generation series (600, 700, 800, 900) do not have circular inlets like most aircraft. The 737 Classic series featured [[CFM International CFM56|CFM56]] [[turbofan]] engines, which yielded significant gains in fuel economy and a reduction in noise over the [[JT8D]] engines used on the -100 and -200, but also posed an engineering challenge given the low ground clearance of the 737. Boeing and engine supplier [[CFM International|CFMI]] solved the problem by placing the engine ahead of (rather than below) the wing, and by moving engine accessories to the sides (rather than the bottom) of the engine pod, giving the 737 a distinctive non-circular air intake.{{sfn|Endres|2001|p=128|ps=}}
+
+The wing also incorporated a number of changes for improved aerodynamics. The engines' accessory [[gearbox]] was moved from the 6 o'clock position under the engine to the 4 o'clock position (from a front/forward looking aft perspective). This side-mounted gearbox gives the engine a somewhat triangular rounded shape. Because the engine is close to the ground, 737-300s and later models are more prone to engine [[foreign object damage]] (FOD). The improved [[CFM International CFM56|CFM56-7]] turbofan engine on the 737 Next Generation is 7% more fuel-efficient than the previous CFM56-3 in the 737 classics.  The newest 737 variants, the 737 MAX family, are to feature [[CFM International LEAP-X|CFM International LEAP-1B]] engines with a 1.73 m fan diameter.  These engines are expected to be 10-12% more efficient than the CFM56-7B engines on the 737 Next Generation family.<ref>{{cite news |last= Ostrower |first= Jon |url= http://www.flightglobal.com/articles/2011/08/30/361428/boeing-designates-737-max-family.html |archiveurl= http://wayback.archive.org/web/20110925210731/http://www.flightglobal.com/articles/2011/08/30/361428/boeing-designates-737-max-family.html |archivedate= 2011-09-25 |title= Boeing designates 737 MAX family |date= August 30, 2011 |work=Air Transport Intelligence |accessdate =September 5, 2011}}</ref>
+
+===Flight systems===
+{{multiple image
+ | align = right
+ | width =
+ | image1 = Boeing 737-2V6 Advanced Cockpit Dubai Air Show Ryabtsev.jpg
+ | width1 = 180
+ | caption1 = Early 737-200 cockpit
+ | image2 = S7 Airlines Boeing 737-8ZS flight deck Beltyukov.jpg
+ | width2 = 180
+ | caption2 = Modern 737-800 cockpit
+}}
+
+The [[Aircraft flight control systems|primary flight controls]] are intrinsically safe. In the event of total hydraulic system failure or double engine failure, they will automatically and seamlessly revert to control via [[servo tab]]. In this mode, the servo tabs aerodynamically control the elevators and ailerons; these servo tabs are in turn controlled by cables running to the control yoke. The pilot's muscle forces alone control the tabs. For the 737 Next Generation, a six-screen LCD [[glass cockpit]] with modern avionics was implemented while retaining crew commonality with previous generation 737.<ref name="sixscreen">{{cite web | url=http://theflyingengineer.com/flightdeck/boeings-max-southwests-737/ | title=Boeing’s MAX, Southwest’s 737 | publisher=theflyingengineer | accessdate=27 August 2015}}</ref>
+
+Most 737 cockpits are equipped with "eyebrow windows" positioned above the main glareshield. Eyebrow windows were a feature of the original 707 and 727.<ref name="eyebrow">{{cite web | url=http://www.ppgaerospace.com/getmedia/ba64914b-c114-46bb-8cc4-c2ab09d440ee/B737_TD_FINAL.pdf.aspx?ext=.pdf | title=COCKPIT WINDOWS Next-Generation 737, Classic 737, 727, 707 Airplanes | publisher=PPG Aerospace Transparencies | accessdate=27 August 2015}}</ref> They allowed for greater visibility in turns, and offered better sky views if [[Celestial navigation|navigating by stars]]. With modern avionics, they became redundant, and many pilots actually placed newspapers or other objects in them to block out sun glare. They were eliminated from the 737 cockpit design in 2004, although they are still installed at customer request.<ref name="rmveyebrow">{{cite book | url=https://books.google.ca/books?id=rqskCQAAQBAJ&pg=PA144&lpg=PA144&dq=Removing+eyebrow+windows+on+737&source=bl&ots=FQjsbbXyiG&sig=KCG8ooG-IcPUiuVWb27IJ_9La58&hl=en&sa=X&ved=0CEQQ6AEwB2oVChMI0KHcheHJxwIVwY_bCh2yqgMq#v=onepage&q=Removing%20eyebrow%20windows%20on%20737&f=false | title=The Boeing 737 Technical Guide | author=Chris Brady | pages=144–145}}</ref> These windows are sometimes removed and plugged, usually during maintenance overhauls, and can be distinguished by the metal plug which differs from the smooth metal in later aircraft that were not originally fitted with the windows.<ref name="rmveyebrow"/>
+
+===Upgrade packages===
+
+==== Winglets ====
+[[File:WestJet 737NG winglet Alberta flight.jpg|thumb|right|Next Generation 737 blended winglet on a [[Westjet]] 737]]
+
+The 737 has four different winglet types: 737-200 Mini-winglet, 737 Classic/NG Blended Winglet, 737 Split Scimitar Winglet, and 737 Max Advanced Technology Winglet.<ref name="rmveyebrow"/>  The 737-200 Mini-winglets are part of the Quiet Wing Corp modification kit that received certification in 2005.<ref name="rmveyebrow"/>
+
+Blended [[wingtip device|winglets]] are in production on 737 NG aircraft and are available for retrofit on 737 Classic models. These winglets stand approximately {{convert|8|ft|m}} tall and are installed at the wing tips. They help to reduce fuel burn (by reducing [[vortex]] drag), engine wear, and takeoff noise. Overall fuel efficiency improvement is up to five percent through the reduction of lift-induced drag.<ref>{{cite web |url= http://www.boeing.com/commercial/aeromagazine/articles/qtr_03_09/pdfs/AERO_Q309_article03.pdf |title=Blended winglets improve performance |work=Aero Magazine |year=2009 |accessdate=July 27, 2011 |last=Freitag |first=William |author2=Schulze, Terry|pages=9, 12}}</ref><ref name="blended_winglets">{{cite web |url=http://www.boeing.com/commercial/aeromagazine/aero_17/winglet_story.html|title=Blended Winglets|last1=Faye|first1=Robert|year=2002 |last2=Laprete |first2=Robert |last3=Winter |first3=Michael |work=Aero Magazine |accessdate=July 27, 2011}}</ref>
+
+[[File:TUIfly Boeing 737-8K5 D-ATUM MUC 2015 01.jpg|thumb|Split Scimitar winglets on a TUIfly 737-800]]
+Split Scimitar winglets became available in 2014 for the 737-800, 737-900ER, BBJ2 and BBJ3, and in 2015 for the 737-700, 737-900 and BBJ1.<ref>{{cite web|title = Split Scimitar Schedules |url = http://www.aviationpartnersboeing.com/products_splitscimitar_schedules.php|website =  aviationpartnersboeing.com |accessdate = 2015-05-29}}</ref> Split Scimitar winglets were developed by [[Aviation Partners Inc.]] (API), the same Seattle based corporation that developed the blended winglets; the Split Scimitar winglets produce up to a 5.5% fuel savings per aircraft compared to 3.3% savings for the blended winglets. Southwest Airlines flew their first flight of a 737-800 with Split Scimitar winglets on April 14, 2014.<ref>{{cite web |title = Southwest flies first 737 with new 'split scimitar' winglets |url = http://www.usatoday.com/story/todayinthesky/2014/04/10/southwest-flies-first-737-with-new-split-scimitar-winglets/7552849/ |accessdate = 2015-05-29}}</ref>  The next generation 737, 737 Max, will feature an Advanced Technology (AT) Winglet that is produced by Boeing. The Boeing AT Winglet resembles a cross between the Blended Winglet and the Split Scimitar Winglet.<ref name="modwinglet">{{cite web | url=https://mme.fiu.edu/wp-content/uploads/2013/12/F13-OR-T-10.pdf | title=Design, Analysis and Multi-Objective Constrained Optimization of Multi-Winglets | publisher=Florida International University | accessdate=27 August 2015}}</ref>
+
+====Carbon brakes====
+{{As of|2008|07}} the 737 features carbon [[brake]]s manufactured by [[Messier-Bugatti]]. These new brakes, now certified by the [[Federal Aviation Administration]], weigh {{convert|550|-|700|lb|kg|abbr=on}} less than the steel brakes normally fitted to the Next-Gen 737s (weight savings depend on whether standard or high-capacity brakes are fitted).<ref name=cfb>Volkmann, Kelsey. [http://www.bizjournals.com/stlouis/stories/2008/08/04/daily27.html "Boeing gets OK for new carbon brakes."] ''St. Louis Business Journal'' via ''bizjournals.com.'' Retrieved: April 22, 2010.</ref> A weight reduction of 700 pounds on a Boeing 737-800 results in 0.5% reduction in fuel burn.<ref>Wilhelm, Steve. [http://www.bizjournals.com/seattle/stories/2008/08/11/story13.html "Mindful of rivals, Boeing keeps tinkering with its 737."] ''Puget Sound Business Journal'', August 8, 2008. Retrieved: January 21, 2011.</ref>
+
+====Short-field design package====
+A short-field design package is available for the 737-600, -700, and -800, allowing operators to fly increased payload to and from airports with runways under {{convert|5000|ft|m}}. The package consists of sealed [[leading edge slats]] (improved lift), a two-position tail skid (enabling greater protection against tail strikes that may be caused by the lower landing speeds), and increased flight spoiler deflection on the ground. These improvements are standard on the 737-900ER.<ref>{{cite web|title=Boeing Delivers First 737 with Enhanced Short Runway Package to GOL|url=http://boeing.mediaroom.com/2006-07-31-Boeing-Delivers-First-737-with-Enhanced-Short-Runway-Package-to-GOL|publisher=Boeing|accessdate={{date|2014-11-21}}|date=July 31, 2006}}</ref>
+
+===Interior===
+The 737 interior arrangement has changed in successive generations. The original 737 interior was restyled for the 737 Classic models using 757 designs, while 777 architecture was used for the debut of the Next Generation 737. Designed using Boeing's new cabin concepts, the latest Sky Interior features sculpted sidewalls and redesigned window housings, along with increased headroom and LED [[mood lighting]].<ref name=margins/><ref name=skyinterior>[http://www.businessinsider.com/check-out-boeings-swanky-new-high-tech-interior-2011-1 "Check Out Boeing's Swanky New High-Tech Interior."] ''businessinsider.com.'' Retrieved: November 1, 2011.</ref> Larger pivot-bins similar to those on the 777 and 787 have more luggage space than prior designs.<ref name=skyinterior/> The Sky Interior is also designed to improve cabin noise levels by 2–4 [[Decibel|dB]].<ref name=margins/> The first 737 equipped with the Boeing Sky Interior was delivered to [[Flydubai]] in late 2010.<ref name=margins/> Continental Airlines,<ref>{{cite web|title=Continental first North American carrier to offer Boeing’s new Sky Interior|url=http://www.flightglobal.com/news/articles/continental-first-north-american-carrier-to-offer-boeings-new-sky-351392/|publisher=Flightglobal|accessdate={{date|2014-11-22}}|date=December 29, 2010}}</ref><ref>{{cite web|title=Continental Airlines Is First North American Carrier to Fly With Boeing's New Sky Interior|url=http://ir.unitedcontinentalholdings.com/phoenix.zhtml?c=83680&p=irol-newsArticle&ID=1511190|website=ir.unitedcontinentalholdings.com|publisher=United Airlines|accessdate={{date|2014-11-22}}|date=December 29, 2010}}</ref>  [[Malaysia Airlines]],<ref>{{cite web|url=http://www.flightglobal.com/news/articles/pictures-mas-takes-delivery-of-first-737-800-with-sky-interior-349155/ |title=MAS takes delivery of first 737-800 with Sky Interior |publisher=Flightglobal.com |date=2010-11-01 |accessdate=2013-04-29}}</ref> and [[TUIFly]] have also received Sky Interior-equipped 737s.<ref>[http://www.podcastexperten.de/news/07032011-wolkenlos-seattle-produktion-den-usa-f%C3%BCr-tuifly.html "Wolkenlos in Seattle – an Bord des neuen Jets von TUIfly."] ''podcastexperten,'' March 7, 2011. Retrieved: May 12, 2011.</ref>
+
+{{multiple image
+ | align = center
+ | width =
+ | image1 = Lufthansa 737 interior.jpg
+ | width1 = 167
+ | caption1 = 737 Classic interior in 3-3 economy class layout
+ | image2 = Delta Air Lines Boeing 737-800 cabin.jpg
+ | width2 = 180
+ | caption2 = Boeing 737NG standard interior with curved panels
+ | image3 = Malaysia Airlines 738 Economy.jpg
+ | width3 = 180
+ | caption3 = Boeing 737NG Sky Interior with pivot bins and LED lighting
+}}
+
+==Variants==
+The 737 models can be divided into three generations, including nine major variants. The "Original" models consist of the 737-100, 737-200/-200 Advanced. The "Classic" models consist of the 737-300, 737-400, and 737-500. The "Next Generation" variants consist of the 737-600, 737-700/-700ER, 737-800, and 737-900/-900ER. Of these nine variants, many feature additional versions such as the T-43, which was a modified Boeing 737-200 used by the United States Air Force (USAF).
+
+The fourth generation derivative - the 737 MAX - is currently under development and will encompass the 737-MAX-7, 737-MAX-8, and 737-MAX-9 which will replace the -700, -800 and -900/900ER versions of the NG family, respectively.
+
+===737 Original series===
+[[File:Lufthansa Boeing 737-100 in Zurich 1981.jpg|thumb|left|[[Lufthansa]] 737-100]]
+
+====737-100====
+The initial model was the 737-100. It was launched in February 1965. The -100 was rolled out on January 17, 1967, had its first flight on April 9, 1967 and entered service with [[Lufthansa]] in February 1968. The aircraft is the smallest variant of the 737. A total of 30 737-100s were ordered and delivered; the final commercial delivery took place on October 31, 1969 to [[Malaysia–Singapore Airlines]]. No 737-100s remain in commercial service. The original Boeing prototype, last operated by [[NASA]] and retired more than 30 years after its maiden flight, is on exhibit in the [[Museum of Flight]] in Seattle.{{sfn|Shaw|1999|p=8|ps=}}
+
+====737-200====
+[[File:Canadian North B737-200.jpg|thumb|[[Canadian North]] Boeing 737-200C]]
+
+The 737-200 is a 737-100 with an extended fuselage, launched by an order from [[United Airlines]] in 1965. The -200 was rolled out on June 29, 1967, and entered service at United in April 1968. The 737-200 Advanced is an improved version of the -200, introduced into service by [[All Nippon Airways]] on May 20, 1971.{{sfn|Bowers|1989|p=496|ps=}} The -200 Advanced has improved aerodynamics, automatic wheel brakes, more powerful engines, more fuel capacity, and longer range than the -100.{{sfn|Sharpe|Shaw|2001|p=41|ps=}} Boeing also provided the 737-200C (Convertible), which allowed for conversion between passenger and cargo use and the 737-200QC (Quick Change), which facilitated a rapid conversion between roles. The 1,095th and last delivery of a -200 series aircraft was in August 1988 to [[Xiamen Airlines]].<ref name=737_O_D_summ>{{cite web|title=Boeing Commercial Airplanes – Orders and Deliveries – 737 Model Summary |url=http://active.boeing.com/commercial/orders/displaystandardreport.cfm?cboCurrentModel=737&optReportType=AllModels&cboAllModel=737&ViewReportF=View+Report |website=boeing.com| publisher=Boeing |date=November 30, 2015 |accessdate=December 6, 2015}}</ref><ref name="About the 737 Family">[http://www.boeing.com/commercial/737family/background.html "About the 737 Family."] ''The Boeing Company''. Retrieved: December 20, 2007.</ref>  Many 737-200s have been phased out or replaced by newer 737 versions. In July 2015, there were a combined 99 Boeing 737-200s in service, mostly with "second and third tier" airlines, and those of developing nations.<ref name=census2015>{{cite journal|title=World Airliner Census 2015|journal=Flightglobal Insight|date=2015|page=11}}</ref>
+
+[[File:Britannia Airways Boeing 737-200 at Zurich Airport in May 1985.jpg|thumb|left|[[Britannia Airways]] 737-200 Advanced]]
+With a [[gravelkit]] modification the 737-200 can use unimproved or unpaved landing strips, such as gravel runways, that other similarly-sized jet aircraft cannot. Gravel-kitted 737-200 Combis are currently used by [[Canadian North]], [[First Air]], [[Air Inuit]] and [[Air North]] in northern Canada. For many years, [[Alaska Airlines]] made use of gravel-kitted 737-200s to serve Alaska's many unimproved runways across the state.<ref>{{cite web|title=The Airplane That Never Sleeps|url=http://boeing.mediaroom.com/2002-07-15-The-Airplane-That-Never-Sleeps|publisher=Boeing|accessdate={{date|2014-11-19}}|date=July 15, 2002}}</ref>
+
+Nineteen 737-200s were used to train aircraft navigators for the [[United States Air Force|U.S. Air Force]], designated [[Boeing T-43|T-43]]. Some were modified into CT-43s, which are used to transport passengers, and one was modified as the NT-43A Radar Test Bed. The first was delivered on July 31, 1973 and the last on July 19, 1974. The [[Indonesian Air Force]] ordered three modified 737-200s, designated ''Boeing 737-2x9 Surveiller''. They were used as Maritime reconnaissance (MPA)/transport aircraft, fitted with SLAMMAR (Side-looking Multi-mission Airborne Radar). The aircraft were delivered between May 1982 and October 1983.{{sfn|Bowers|1989|pp=498–499|ps=}}
+
+After 40 years the final 737-200 aircraft in the U.S. flying scheduled passenger service were phased out in March 2008, with the last flights of [[Aloha Airlines]].<ref name="swretire">{{cite web |url=http://swamedia.com/releases/Southwest-Airlines-Retires-Last-of-Founding-Aircraft-Employees-Help-Celebrate-the-Boeing-737-200-s-Final-Flight?mode=print |title=Southwest Airlines Retires Last of Founding Aircraft; Employees Help Celebrate the Boeing 737-200's Final Flight |publisher=swamedia.com |accessdate=27 August 2015}}</ref> The variant still sees regular service through North American charter operators such as [[Sierra Pacific Airlines|Sierra Pacific]].<ref name=census2014>{{cite journal|title=World Airliner Census 2014|journal=Flightglobal Insight|date=2014|page=12}}</ref>
+
+===737 Classic series===
+{{Main|Boeing 737 Classic}}
+
+The ''Boeing 737 Classic'' is the name given to the -300/-400/-500 series of the Boeing 737 after the introduction of the -600/700/800/900 series. The Classic series was originally introduced as the 'new generation' of the 737.{{sfn|Shaw|1999|p=7|ps=}} Produced from 1984 to 2000, 1,988 aircraft were delivered.{{sfn|Endres|2001|p=129|ps=}}
+
+===737 Next Generation===
+{{Main|Boeing 737 Next Generation}}
+
+By the early 1990s, it became clear that the new [[Airbus A320 family|Airbus A320]] was a serious threat to Boeing's market share, as Airbus won previously loyal 737 customers such as Lufthansa and United Airlines. In November 1993, Boeing's board of directors authorized the Next Generation program to replace the 737 Classic series. The -600, -700, and -800 series were planned.<ref>[http://www.boeing.com/commercial/737family/pf/pf_ng_milestones.html "Next Generation 737 Program Milestones."] ''The Boeing Company.'' Retrieved: January 22, 2008.</ref> After engineering trade studies and discussions with major 737 customers, Boeing proceeded to launch the 737 Next Generation series.
+
+===737 MAX===
+{{main|Boeing 737 MAX}}
+
+In 2011, Boeing announced the [[Boeing 737 MAX|737 MAX]] program. Boeing will be offering three variants-the 737-7, 737-8 and the 737-9. These aircraft will replace the 737-700, 737-800 and 737-900ER, respectively. The main changes are the use of [[CFM International LEAP-X|CFM International LEAP-1B engines]], the addition of fly-by-wire control to the spoilers, and the lengthening of the nose landing gear. Deliveries are scheduled to begin in 2017.<ref>{{cite web |url= http://boeing.mediaroom.com/index.php?s=43&item=1908 |title= Boeing Introduces 737 MAX With Launch of New Aircraft Family |date= August 30, 2011 |accessdate= November 9, 2011}}</ref><ref>{{cite news |url= http://www.reuters.com/article/2011/11/12/us-dubai-airshow-boeing-idUSTRE7AB0JF20111112 |title = AIRSHOW-Boeing 737 draft orders reach 700 |date= November 12, 2011 |accessdate= November 18, 2011 |work=Reuters |first=Tim |last=Hepher}}</ref> Southwest Airlines announced on December 13, 2011 that it would order the 737 MAX and became the launch customer.<ref name="cnn">{{cite news|title=Boeing sets record with $22 billion order |url=http://money.cnn.com/2011/11/17/news/companies/boeing_order/index.htm |publisher=CNN Money |date= November 17, 2011 |accessdate= February 15, 2012 |first=Logan |last=Burruss}}</ref> [[Ryanair]], [[Norwegian Air Shuttle]], and others have also placed firm orders for 737 MAX aircraft.<ref>{{cite news|url=http://www.usatoday.com/story/todayinthesky/2014/12/02/ryanair-finalizes-737-max-200-boeing-order/19784581/|title=Ryanair finalizes Boeing 737 MAX 200 order|publisher=''Associated Press''|date=December 2, 2014|accessdate=August 12, 2015}}</ref>
+
+===Boeing Business Jet (BBJ)===
+[[File:royaljet b737-bbj a6-rjz arp.jpg|thumb|left|Boeing 737-700/BBJ of the [[United Arab Emirates|UAE]] airline [[Royal Jet]] ]]
+{{Main|Boeing Business Jet}}
+
+The Boeing Business Jet is a customized version of the 737. Plans for a business jet version of the 737 are not new. In the late 1980s, Boeing marketed the 77-33 jet, a business jet version of the 737-300.<ref>Endres 2001.</ref> The name was short-lived. After the introduction of the next generation series, Boeing introduced the Boeing Business Jet (BBJ) series. The BBJ1 was similar in dimensions to the 737-700 but had additional features, including stronger wings and landing gear from the 737-800, and had increased range (through the use of extra fuel tanks) over the other 737 models. The first BBJ rolled out on August 11, 1998 and flew for the first time on September 4.<ref name="BBJ">[http://cdn-www.airliners.net/info/stats.main?id=108 "The Boeing 737-700/800 BBJ/BBJ2."] ''airliners.net''. Retrieved: February 3, 2008.</ref>
+
+On October 11, 1999 Boeing launched the BBJ2. Based on the 737-800, it is {{convert|5.84|m|ftin|sp=us}} longer than the BBJ, with 25% more cabin space and twice the baggage space, but has slightly reduced range. It is also fitted with auxiliary belly fuel tanks and winglets. The first BBJ2 was delivered on 28 February 2001.<ref name="BBJ"/>
+
+Boeing's BBJ3 is based on the 737-900ER. The BBJ3 has {{convert|1120|sqft|m2}} of floor space, 35% more interior space, and 89% more luggage space than the BBJ2. It has an auxiliary fuel system, giving it a range of up to {{convert|4725|nmi|km}}, and a [[Head-up display]]. Boeing completed the first example in August 2008. This aircraft's cabin is pressurized to a simulated {{convert|6500|ft|m|sing=on}} altitude.<ref>{{cite web|title=Boeing Business Jets Launches New Family Member|url=http://boeing.mediaroom.com/2006-10-16-Boeing-Business-Jets-Launches-New-Family-Member|publisher=Boeing|accessdate={{date|2014-11-22}}|date=October 16, 2006}}</ref><ref>{{cite web|title=Boeing Completes First BBJ 3|url=https://www.wingsmagazine.com/news/boeing-completes-first-bbj-3-1833|website=www.wingsmagazine.com|publisher=Wings|accessdate={{date|2014-11-22}}|date=August 14, 2008}}</ref>
+
+===Freighter===
+
+Boeing is studying plans to offer passenger to freighter conversion for the 737-800. Boeing has signed a  agreement with Chinese YTO Airlines to provide the airline with 737-800 Boeing Converted Freighters (BCFs) pending a planned program launch.<ref>Boeing to launch 737 freighter conversion program| http://www.aviationanalysis.net/2015/10/boeing-to-launch-737-freighter-conversion.html</ref>
+
+==Operators==
+[[File:Qantas Boeing 737-400 MEL Nazarinia.jpg|thumb|right|[[Qantas]] Boeing 737-400 landing in [[Melbourne Airport]]]]
+
+The 737 is operated by more than 500 airlines, flying to 1,200 destinations in 190 countries. With over 10,000 aircraft ordered, over 7,000 delivered, and over 4,500 still in service, at any given time there are on average 1,250 airborne worldwide. On average, somewhere in the world, a 737 took off or landed every five seconds in 2006.<ref name="flightglobal"/> Since entering service in 1968, the 737 has carried over 12 billion passengers over 120 billion km (65 billion nm), and has accumulated more than 296 million hours in the air. The 737 represents more than 25% of the worldwide fleet of large commercial jet airliners.<ref name="flightglobal">[http://wayback.archive.org/web/20080110114456/http://www.flightglobal.com/articles/2006/02/07/204505/the-737-story-little-wonder.html  "The 737 Story: Little Wonder."] ''flightglobal.com.'' February 7, 2006. Retrieved: January 7, 2008.</ref><ref name=737facts>{{cite web|title=Boeing 737 Facts|url=http://www.boeing.com/boeing/commercial/737family/facts.page|website=www.boeing.com|publisher=Boeing|accessdate={{date|2014-11-18}}}}</ref>
+
+===Civilian===
+{{Main|List of Boeing 737 operators}}
+
+As of August 2013, 140 Boeing 737-200 aircraft were in civilian service.<ref>[http://www.flightglobal.com/airspace/media/reports_pdf/emptys/106686/world-airliner-census-2013.pdf World Airliner Census 2013]{{Dead link|date=December 2015}}</ref>
+
+===Military===
+[[File:US Navy 100126-N-0705K-003 Naval Air Crewmen 2nd Class Nicole Garza and David Murray and Naval Air Crewman 1st Class David McDermott load cargo bound for Haiti at Naval Air Station Jacksonville.jpg|thumb|A United States Navy C-40A, a variant of the 737-700C.]]
+
+Many countries operate the 737 passenger, BBJ, and cargo variants in government or military applications.<ref name="militaryuse">{{cite web | url=http://www.seattlepi.com/business/article/Boeing-looks-to-sell-more-737-based-military-jets-1417659.php | title=Boeing looks to sell more 737-based military jets | publisher=SeattlePi | date=9 June 2011 | accessdate=27 August 2015}}</ref> Users with 737s include:
+{{columns-list|2|
+* {{ARG}} (737-500 from 2014)
+* {{AUS}}
+* {{BRA}} (retired in 2011)
+* {{CHI}}
+* {{COL}}
+* {{IND}}
+* {{IDN}}
+* {{IRN}}
+* {{KAZ}}
+* {{MAS}}
+* {{MEX}}
+* {{MNG}}
+* {{NGR}}
+* {{PAK}} (went to [[Pakistan International Airlines]] in 1999)
+* {{PER}}
+* {{RSA}}
+* {{KSA}}
+* {{ROK}}
+* {{TWN-ROC}}
+* {{THA}}
+* {{TUR}}
+* {{UKR}}
+* {{USA}}
+}}
+
+=== Competition ===
+The Boeing 737 Classics and the Boeing 737 Next Generation have faced main challenges from the [[Airbus A320 family]] introduced in 1988, which was developed to compete also with the McDonnell Douglas MD-80/90 series and the [[Boeing 717]].
+
+Boeing has shipped 8,845 aircraft of the 737 family since late 1967,<ref name=737_O_D_summ/> with 6,716 of those deliveries since March 1988,<ref name=Boeing_O-D>{{cite web |url=http://www.boeing.com/commercial/#/orders-deliveries|title= Orders and Deliveries search page |publisher=[[Boeing]] |date=15 April 2015 |accessdate=15 April 2015}}</ref> and has a further 4,392 on firm order as of December 2015.<ref name=737_O_D_summ/> In comparison, [[Airbus]] has delivered 6,494 A320 series aircraft since their certification/first delivery in early 1988, with another 5,087 on firm order (as of April 2015).<ref name="Airbus_Orders_2">{{cite web |url=http://www.airbus.com/company/market/orders-deliveries/?eID=maglisting_push&tx_maglisting_pi1%5BdocID%5D=60539|title=Orders & deliveries viewer|publisher=[[Airbus]]|accessdate=15 April 2015|format=Microsoft Excel}}</ref>
+{{Line chart
+| color_background = white
+| width = 800
+| height = 200
+| padding_left = 40
+| padding_right = 15
+| padding_top = 10
+| padding_bottom = 20
+| number_of_series = 2
+| number_of_x-values = 25
+| label_x1 = 1988 | label_x2 = 1989 | label_x3 = 1990 | label_x4 = 1991 | label_x5 = 1992
+| label_x6 = 1993 | label_x7 = 1994 | label_x8 = 1995 | label_x9 = 1996 | label_x10 = 1997
+| label_x11 = 1998 | label_x12 = 1999 | label_x13 = 2000 | label_x14 = 2001 | label_x15 = 2002
+| label_x16 = 2003 | label_x17 = 2004 | label_x18 = 2005 | label_x19 = 2006 | label_x20 = 2007
+| label_x21 = 2008 | label_x22 = 2009 | label_x23 = 2010 | label_x24 = 2011 | label_x25 = 2012
+| label_x25 = 2013 | label_x26 = 2014
+
+| y_max = 500
+| scale = yes
+| interval_primary_scale = 100
+| interval_secondary_scale = 50
+| color_series_1 = green
+| color_series_2 = blue
+| S01V01 =  16 | S01V02 =  58 | S01V03 =  58 | S01V04 = 119 | S01V05 = 111
+| S01V06 =  71 | S01V07 =  64 | S01V08 =  56 | S01V09 =  72 | S01V10 = 127
+| S01V11 = 168 | S01V12 = 222 | S01V13 = 241 | S01V14 = 257 | S01V15 = 236
+| S01V16 = 233 | S01V17 = 233 | S01V18 = 289 | S01V19 = 339 | S01V20 = 367
+| S01V21 = 386 | S01V22 = 402 | S01V23 = 401 | S01V24 = 421 | S01V25 = 455
+| S01V26 = 493
+| S02V01 = 168 | S02V02 = 146 | S02V03 = 174 | S02V04 = 215 | S02V05 = 218
+| S02V06 = 152 | S02V07 = 121 | S02V08 =  89 | S02V09 =  76 | S02V10 = 135
+| S02V11 = 281 | S02V12 = 320 | S02V13 = 281 | S02V14 = 299 | S02V15 = 223
+| S02V16 = 173 | S02V17 = 202 | S02V18 = 212 | S02V19 = 302 | S02V20 = 330
+| S02V21 = 290 | S02V22 = 372 | S02V23 = 376 | S02V24 = 372 | S02V25 = 415
+| S02V26 = 440 |
+| points = yes
+}}
+* {{legend|green|[[Airbus A320 family#Orders and deliveries|Airbus A320 family deliveries]]<ref name="Airbus_Orders">{{cite web |url=http://www.airbus.com/fileadmin/backstage/orders_deliveries_table/Orders_deliveries_Airbus_March_2013.xls |archiveurl=http://wayback.archive.org/web/20130418061004/http://www.airbus.com/fileadmin/backstage/orders_deliveries_table/Orders_deliveries_Airbus_March_2013.xls |archivedate=2013-04-18 |title = Airbus orders and deliveries |work=[[Airbus|Airbus S.A.S.]] |date=31 March 2013 |format=Microsoft Excel |accessdate=5 April 2013}}</ref><ref name="Airbus_Hist_OD">{{cite web |url=http://www.airbus.com/fileadmin/media_gallery/files/reports_results_reviews/Summary_Historial_Orders_Deliveries_1974-2009.xls |archiveurl=https://web.archive.org/web/20101223223239/http://www.airbus.com/fileadmin/media_gallery/files/reports_results_reviews/Summary_Historial_Orders_Deliveries_1974-2009.xls |archivedate=23 December 2010 |title =  Historical Orders and Deliveries 1974–2009 |work=[[Airbus|Airbus S.A.S.]] |date=January 2010 |format=Microsoft Excel |accessdate=10 December 2012}}</ref>}}
+* {{legend|blue|[[Boeing 737#Total production|Boeing 737 series deliveries]]<ref name="Boeing_Hist_Deliveries">{{cite web |url=http://active.boeing.com/commercial/orders/displaystandardreport.cfm?&optReportType=HistAnnDel |title= Historical Deliveries |publisher=[[Boeing]] |date= November 2012 |accessdate=10 December 2012}}</ref>}}
+
+==Orders and deliveries==
+
+===Total production===
+In total, 8,845 units of the Boeing 737 have been built and delivered as of December 31, 2015.<ref name=737_O_D_summ/>
+
+{| class="wikitable" style="text-align: right; font-size: 96%;"
+|-
+!Total Orders!!Total Deliveries!!Unfilled!! 2015 !! 2014 !! 2013 !! 2012 !! 2011 !! 2010 !! 2009 !! 2008 !! 2007 !! 2006 !! 2005 !! 2004 !! 2003 !! 2002 !! 2001 !! 2000 !! 1999 !! 1998 !! 1997 !! 1996 !! 1995
+|-
+||'''13,237'''||'''8,845'''||'''4,392'''||495||485||440||415||372||376||372||290||330||302||212||202||173||223||299||281||320||281||135||76||89
+|}
+
+{| class="wikitable" style="text-align: right; font-size: 96%;"
+|-
+! 1994 !! 1993 !! 1992 !! 1991 !! 1990 !! 1989 !! 1988 !! 1987 !! 1986 !! 1985 !! 1984 !! 1983 !! 1982 !! 1981 !! 1980 !! 1979 !! 1978 !! 1977 !! 1976 !! 1975 !! 1974 !! 1973 !! 1972 !! 1971 !! 1970 !! 1969 !! 1968 !! 1967
+|-
+||121||152||218||215||174||146||165||161||141||115||67||83||95||108||92||77||40||25||41||51||55||23||22||29||37||114||105||4
+|}
+
+====Units by generation====
+{{as of|2015|12|31}}, 13,237 units of the Boeing 737 have been ordered, with 4,392 units still to be delivered.<ref name=737_O_D_summ/> Units built by model type for 737 Original, Classic, Next Generation, and Boeing Business Jet families are as follows:
+
+{|
+| style="vertical-align: top;" |
+{| class="wikitable" style="text-align: center;"
+|+ '''737 Original'''
+|-
+!Variant
+!Delivered
+!First flight
+|-
+| 737-100 || 30 || April 9, 1967
+|- style="background: rgb(245, 250, 255);"
+| 737-200 || 991 || August 8, 1967
+|- style="background: rgb(245, 250, 255);"
+| 737-200C || 104 || September 18, 1968
+|- style="background: rgb(245, 250, 255);"
+| 737-T43A || 19 || March 10, 1973
+|- style="background: rgb(245, 250, 255);"
+| colspan="3" | '''737 Classic'''
+|-
+| 737-300 || 1,113 || February 24, 1984
+|- style="background: rgb(245, 250, 255);"
+| 737-400 || 486 || February 19, 1988
+|-
+| 737-500 || 389 || June 30, 1989
+|}
+| style="vertical-align: top;" |
+{| class="wikitable" style="text-align: center;"
+|+ '''737 Next Generation'''
+|-
+!Variant
+!Delivered (unfilled orders)
+!First flight
+|-
+| 737-600 || 69 || January 22, 1998
+|- style="background: rgb(245, 250, 255);"
+| 737-700 || 1116 (35) || February 9, 1997
+|-
+| 737-700C || 17 (3) ||
+|-
+| 737-700W || 14 ||
+|-
+| 737-800 || 3,882 (1,096) || July 31, 1997
+|-
+| 737-800A || 56 (26) ||
+|-
+| 737-900 || 52 || August 3, 2000
+|- style="background: rgb(245, 250, 255);"
+| 737-900ER || 360 (158) || September 1, 2006
+|-
+| colspan="3" |'''737 Boeing Business Jet'''
+|-
+| 737-BBJ1 (700) || 119 (2) || September 4, 1998
+|- style="background: rgb(245, 250, 255);"
+| 737-BBJ2 (800) || 21 || N/A
+|-
+| 737-BBJ3 (900) || 7 || N/A
+|}
+| style="vertical-align: top;" |
+{| class="wikitable" style="text-align: center;"
+|+ '''737 MAX'''
+|-
+!Variant
+!Delivered (unfilled orders)
+!First flight
+|-
+| 737 MAX || 0 (3,072)<ref name=737_O_D_summ/>|| 2017<ref>{{cite web |url=http://boeing.mediaroom.com/index.php?s=43&item=2548 |title=Boeing 737 MAX Gets Milestone Order from Aviation Capital Group - Jan 2, 2013 |publisher=Boeing.mediaroom.com |date=2013-01-02 |accessdate=2013-02-21}}</ref>
+|}
+|}
+Data from Boeing.com through end of December 2015<ref name=737_O_D_summ/>
+{{clear}}
+
+==Accidents and incidents==
+''For incidents involving other 737 variants see [[Accidents and incidents involving the Boeing 737 family|Boeing 737 Classic incidents]] and [[Boeing 737 Next Generation#Accidents and incidents|Boeing 737 Next Generation incidents]].''
+
+As of October 2015, a total of 368 [[aviation accidents and incidents]] involving all 737 aircraft have occurred,<ref>[http://aviation-safety.net/database/dblist.php?Type=103 "Boeing 737 incident occurrences."] ''Aviation-Safety.net,'' November 20, 2013. Retrieved: November 17, 2014.</ref> including 184 hull-loss accidents resulting in a total of 4,862 fatalities.<ref>[http://aviation-safety.net/database/type/type.php?type=103 "Boeing 737 Accident summary."] ''Aviation-Safety.net''. November 20, 2013. Retrieved: November 17, 2014.</ref> The 737 has also been in 111 [[Aircraft hijacking|hijackings]] involving 325 fatalities.<ref>[http://aviation-safety.net/database/type/type-stat.php?type=103 "Boeing 737 Accident Statistics."] ''Aviation-Safety.net'', November 20, 2013. Retrieved: November 21, 2013.</ref>
+
+An analysis by Boeing on commercial jet airplane accidents in the period 1959–2013 showed that the original series had a hull loss rate of 1.75 per million departures versus 0.54 for the classic series and 0.27 for the Next Generation series.<ref>{{cite web|title=Statistical Summary of Commercial Jet Airplane Accidents – Accident Rates by Airplane Type|url=http://www.boeing.com/news/techissues/pdf/statsum.pdf|website=www.boeing.com|publisher=Boeing|page=19|format=PDF|date=August 2014}}</ref>
+
+;Notable accidents and incidents involving 737-100, and -200 aircraft
+* July 19, 1970 – [[United Airlines]] Flight 611, a new Boeing 737-200 (registration N9005U "City of Bristol") was damaged beyond economical repair after an aborted take off at the [[Philadelphia International Airport]] near [[Philadelphia]] in the US state of [[Pennsylvania]]. During take off, a loud "bang" was heard, and the aircraft veered right.  The captain aborted the take off, and the aircraft ran off the end of the runway, stopping 1634 feet past its end, in a field. There were no fatalities. This was the first non-fatal incident involving a 737.<ref>[http://aviation-safety.net/database/record.php?id=19820826-0 "ASN Aircraft incident Boeing 737-222 N9005U Rochester-Monroe County, NY."] ''[[Aviation Safety Network]]''. Retrieved:.</ref>
+* July 5, 1972 – [[Pacific Southwest Airlines Flight 710]] was hijacked by two men demanding $800,000 and to be taken to the Soviet Union. In San Francisco, the plane was stormed and the two hijackers were killed along with one passenger.<ref>{{ASN accident|id=19980223-0|type=Hijacking}}</ref>
+* December 8, 1972 – [[United Airlines Flight 553]], a 737-200 (registration N9031U) crashed while attempting to land at [[Chicago Midway International Airport]]. Two people on the ground and 43 of the 61 passengers and crew on board were killed. This was the first fatal incident involving a 737.<ref>[http://aviation-safety.net/database/record.php?id=19721208-1 "ASN Aircraft accident Boeing 737-222 N9031U Chicago-Midway, IL."] ''[[Aviation Safety Network]]''. Retrieved: July 19, 2010.</ref>
+* May 31, 1973 – [[Indian Airlines Flight 440]], a 737-200, crashed while on approach to [[Palam International Airport]] in [[New Delhi]], [[India]]. Of the 65 passengers and crew on board, 48 were killed.<ref>{{cite web|url=http://aviation-safety.net/database/record.php?id=19730531-0 |title=Aircraft accident Boeing 737-2A8 VT-EAM Delhi-Indira Gandhi International Airport |publisher=Aviation-safety.net |accessdate=2013-04-29}}</ref>
+* December 17, 1973 – In the wake of the events surrounding [[Pan Am Flight 110]], a parked Lufthansa Boeing 737–100 (registered D-ABEY) was hijacked at [[Leonardo da Vinci-Fiumicino Airport]] in Rome. Two pilots and two flight attendants were on board preparing the aircraft for departure to [[Munich]] when five [[Palestinian territories|Palestinian]] terrorists entered the aircraft with ten Italian hostages taken from the airport. The crew were then forced to fly the aircraft to [[Athens]] and then on to several other airports, until the ordeal ended at [[Kuwait International Airport]] the next day, where the hijackers surrendered.<ref>[http://aviation-safety.net/database/record.php?id=19731217-0 1973 hijacking at the Aviation Safety Network]. Aviation-safety.net. Retrieved on July 8, 2011.</ref><ref>Arab Hijackers Land in Kuwait; Hostages Freed," The New York Times, December 19, 1973. Page 1.</ref>
+* March 31, 1975 – [[Western Airlines Flight 470]], a 737-200 (registration N4527W) operated in a flight, overshot runway and made an emergency landing at [[Casper/Natrona County International Airport]] in [[Natrona County]] near [[Casper]] in the U.S state of [[Wyoming]]. All but four of the 96 passengers and crew suffered minor injuries.
+* October 13, 1977 – [[Lufthansa Flight 181]] was hijacked by four Palestinians, demanded the release of seven [[Red Army Faction]] members in German prisons and $15,000,000. The captain was fatally shot. On October 17, [[GSG-9]] stormed the plane and killed 3 of the hijackers and captured the other.<ref>{{ASN accident|id=19771013-0|type=Hijacking}}</ref>
+* December 4, 1977 – [[Malaysian Airline System Flight 653]], a 737-200 (registration 9M-MBD) crashed following a [[phugoid]] oscillation that saw the aircraft diving into a swamp after both its pilots were shot following a hijacking. The crash happened in the Southern Malaysian state of Johor. A total of 93 passengers and seven crew were killed, including Malaysian Agricultural Minister, Dato' Ali Haji Ahmad; Public Works Department Head, Dato' Mahfuz Khalid; and Cuban Ambassador to Japan, Mario García Incháustegui.
+* February 11, 1978 – [[Pacific Western Airlines Flight 314]], a 737-200, crashed while attempting to land at [[Cranbrook Airport]], [[British Columbia]], [[Canada]]. The aircraft crashed after thrust reversers did not fully stow following a go-around that was executed in order to avoid a snowplow. The crash killed four of the crew members and 38 of the 44 passengers.<ref>[http://www.planecrashinfo.com/cvr780211.htm February 11, 1978, Cranbrook, BC, Canada, Pacific Western Airlines, Flight 314, Boeing B-737-275 (sic), C-FPWC] ''Plane Crash Info''</ref>
+* April 26, 1979 – An [[Indian Airlines]] was damaged by a bomb in the forward lavatory. The plane made a flapless landing in [[Chennai]], [[India]].<ref>{{ASN accident|id=19790426-0|type=Bombing}}</ref>
+* November 4, 1980 – [[TAAG Angola Airlines]] 737-200 registration D2-TAA, that landed short of the runway at Benguela Airport, slid some 900 m following the collapse of the gear; a fire broke out on the right wing but there were no reported fatalities. The aircraft caught fire during recovery operations on next day and was written off.<ref>{{ASN accident|id= 19801104-1|type= Incident|title= D2-TAA|accessdate= {{date|2011-6-25}}}}</ref><ref>{{Cite journal|title=Safety update...|journal=Flight International|publisher=IPC Transport Press|issn=0015-3710|issue=3735|volume=118|date= December 6, 1980|page= 2082|format= PDF|url= http://www.flightglobal.com/pdfarchive/view/1980/1980%20-%203681.html|quote= A TAAG-Angolan Airlines Boeing 737 landed short of the runway at Benguela on November 5. The aircraft, D2-TAA, destroyed its landing gear and skidded 1,000m, breaking off one engine. The starboard wing was burned out and the fuselage side received fire damage. During the recovery operation on November 10 the aircraft caught fire and was totally destroyed. There were no injuries.}}</ref>
+* August 22, 1981 – [[Far Eastern Air Transport Flight 103]], a 737-200 (registration B-2603) broke apart in mid-air and crashed 14 minutes after taking off from [[Taipei Songshan Airport]] in [[Taiwan]]. All 6 crew and 104 passengers were killed, including Japanese TV screenwriter [[Kuniko Mukōda|Kuniko Mukoda]].<ref>"[http://select.nytimes.com/gst/abstract.html?res=F50714FD395F0C708EDDA10894D9484D81 Airliner that crashed in Taiwan, killing 110, had pressure snags]." ''[[Associated Press]]'' at ''[[The New York Times]]''. Sunday August 23, 1981. Late City Final Edition, Section 1, Page 3, Column 1. Retrieved on January 6, 2012.</ref>
+* January 13, 1982 – [[Air Florida Flight 90]], a 737-200 crashed in a severe snowstorm, immediately after takeoff from [[Washington National Airport]], hitting the [[14th Street Bridge (Washington, D.C.)|14th Street Bridge]] and fell into the ice-covered [[Potomac River]] in [[Washington, D.C.]]. All but five of the 74 passengers and five crew members died; four motorists on the bridge were also killed.<ref name=NTSB-AAR-82-8>[http://libraryonline.erau.edu/online-full-text/ntsb/aircraft-accident-reports/AAR82-08.pdf "Full NTSB Accident Report of Air Florida Flight 90." (PDF, 140 pages)] ''amelia.db.erau.edu.'' Retrieved: September 3, 2010.</ref>
+* May 25, 1982 – [[VASP]] 737-2A1 registration PP-SMY, on landing procedures at [[Brasília International Airport|Brasília]] during rain, made a hard landing with nose gear first. The gear collapsed and the aircraft skidded off the runway breaking in two. Two passengers out of 118 occupants died.<ref>{[http://aviation-safety.net/database/record.php?id=19820525-0 "Accident description PP-SMY."] ''Aviation Safety Network,'' May 30, 2011.</ref>
+* August 26, 1982 – [[Japan Transocean Air#Accidents and incidents|Southwest Air Lines Flight 611]], a 737-200 (registration JA8444) overran the runway at [[Ishigaki Airport]] in [[Japan]] and was destroyed. There were no fatalities but some were injured during the emergency evacuation.<ref>{{cite web|url=http://aviation-safety.net/database/record.php?id=19820826-0|title=ASN Aircraft accident Boeing 737-2Q3 JA8444 Ishigaki Airport (ISG)|author=Harro Ranter|date=26 August 1982|work=aviation-safety.net|accessdate=1 April 2015}}</ref>
+* March 27, 1983 – [[LAM Mozambique Airlines]] 737-200 registration C9-BAB Undercarriage failure after landing some 400 metres (1,300&nbsp;ft) short of the runway at [[Quelimane Airport]]. There were no fatalities.<ref>{{ASN accident|title= C9-BAB|id= 19830327-0|accessdate= {{date|2012-1-24}}}}</ref>
+* July 11, 1983 – [[TAME]] 737-2V2 Advanced, registration HC-BIG, crashed while attempting to land at [[Mariscal Lamar Airport]], killing all 111 passengers and eight crew on board. The cause of the crash was a [[CFIT]] (Controlled Flight Into Terrain) as a cause of the pilot's inexperience with the aircraft. It remains the deadliest aviation accident in Ecuadorean history.<ref name=FI>{{cite journal|title=none|journal=[[Flight International]]|date=28 January 1984|page=286}}</ref><ref>{{cite news|date=13 July 1983|title='Saboteurs' may have downed jet|url=https://news.google.com/newspapers?id=YlwxAAAAIBAJ&sjid=QKUFAAAAIBAJ&pg=2442%2C477595|newspaper=Montreal Journal}}</ref><ref>{{cite news|url=https://news.google.com/newspapers?id=8fQoAAAAIBAJ&sjid=-YIDAAAAIBAJ&pg=2752%2C4262578|newspaper=The Deseret News|title=Five Americans among victims of Ecuadorean airline crash|date=12 July 1983}}</ref> after a radio station reported witnesses to a mid-air explosion.<ref>{{cite news|url=https://news.google.com/newspapers?id=8fQoAAAAIBAJ&sjid=-YIDAAAAIBAJ&pg=2752%2C4262578|newspaper=Pittsburgh Post-Gazette|title=119 die in crash of Ecuadorean jet|date=12 July 1983|agency=Associated Press}}</ref>
+* September 23, 1983 – [[Gulf Air Flight 771]], a 737-200 (registration A40-BK) experienced an attempted terrorist bomb exploded in the baggage compartment, stalled and crashed in the desert near [[Mina Jebel Ali]] between [[Abu Dhabi]] and [[Dubai]] in the [[United Arab Emirates]]. All 5 crew and 107 passengers were killed, many of whom were Pakistani citizens.<ref>{{cite news|title=112 aboard airliner are killed in crash in Persian Gulf sheikdom|url=http://www.nytimes.com/1983/09/24/world/112-aboard-airliner-are-killed-in-crash-in-persian-gulf-sheikdom.html|accessdate={{date|2014-11-20}}|work=The New York Times|agency=AP|date=September 24, 1983}}</ref><ref>{{cite web|title=Accident information : Boeing 737 Gulf Air A4O-BK|url=http://www.airfleets.net/crash/crash_report_Gulf%20Air_A4O-BK.htm|publisher=Airfleets.net|accessdate={{date|2014-11-20}}}}</ref>
+* November 8, 1983 – [[TAAG Angola Airlines]] 737-200 registration D2-TBN [[1983 TAAG Angola Airlines Boeing 737 crash|stalled and crashed]] shortly after taking off from [[Lubango Airport|Lubango Mukanka Airport]] in Angola resulting of the deaths of all its 130 occupants (126 passengers and 4 crew) on board.<ref>{{ASN accident|id= 19831108-0|type= Accident|title= D2-TBN|accessdate= {{date|2011-6-25}}}}</ref><ref>{{Cite journal|title= Unita shots down TAAG 737|journal= Flight International|volume=124|issue=3889|publisher=Transport Press|issn=0015-3710|date=November 19, 1983|page= 1336|format=PDF|url= http://www.flightglobal.com/pdfarchive/view/1983/1983%20-%202088.html|quote= Unita guerrillas claim that they shot down the TAAG Angolan Airlines Boeing 737 which crashed immediately after take-off from Lubango, Southern Angola, with the loss of all 126 people on board. Unita opposes Angola's Government, and claims that the flight, bound for Luanda, was carrying only military personnel. The incident took place on November 8.}}</ref>
+* February 9, 1984 – [[TAAG Angola Airlines]] 737-200 registration D2-TBV, that departed from [[Albano Machado Airport]] operating a scheduled passenger service, suffered hydraulic problems following an explosion in the rear of the aircraft and returned to the airport of departure for an emergency landing. The plane touched down fast and overran the runway.<ref>{{ASN accident|title= D2-TBV|type= Incident|id= 19840209-0|accessdate= {{date|2011-7-7}}}}</ref>
+* March 22, 1984 – [[Pacific Western Airlines Flight 501]], a 737-200 regularly scheduled flight that caught fire in [[Calgary, Alberta]], Canada. Five people were seriously injured and 22 suffered minor injuries, but no-one was killed.
+* August 30, 1984 – [[Cameroon Airlines Flight 786]], a 737-200 (registration TJ-CBD)  caught fire as the aircraft was taxiing out for takeoff for [[Douala International Airport]] in [[Douala]], [[Littoral Region (Cameroon)|Littoral Province]], [[Cameroon]]. All but two of 109 passengers and two crew were reported to have survived.<ref name=asn>{{cite web|url=http://aviation-safety.net/database/record.php?id=19840830-0|title=ASN accident record|publisher=ASN|accessdate=2009-06-15}}</ref>
+* June 21, 1985 – [[Braathens SAFE Flight 139]], a 737-200 that was hijacked by a 24-year-old man, Stein Arvid Huseby at the [[Trondheim Airport]] in [[Værnes]], [[Norway]]. His demands were to make a political statement and talk to Prime Minister [[Kåre Willoch]] and Minister of Justice [[Mona Røkke]].  The plane landed at [[Oslo Airport]] in [[Fornebu]] and was surrounded by the police. After one hour, Huseby released 70 hostages in exchange for having the aircraft being moved closer to the terminal building. Thirty minutes later, Huseby released the remaining passengers. He drank throughout the incident, and after he consumed the plane's beer supply, he surrendered his weapon in exchange for more beer. The plane was immediately stormed and Huseby arrested.
+* August 22, 1985 – [[British Airtours Flight 28M]], a 737-200, caught fire after an aborted takeoff at [[Manchester Airport]], UK, after a crack in one of the combustors of the left Pratt & Whitney JT8D-15 engine. Of the 136 passengers and crew on board, 56 died, most due to toxic smoke inhalation. Research following the accident investigation led to many innovations in air safety, including a redesign of the 737's galley area.<ref>{{cite book |url=http://www.aaib.gov.uk/publications/formal_reports/8_1988_g_bgjl.cfm |title=AAIB report No:8/88 – Boeing 737–236, G-BGJL, at Manchester Airport |ISBN=0-11-550892-9 |year=1989}}</ref>
+* January 28, 1986 – [[VASP]] 737-2A1 registration PP-SME,  tried to take-off from a taxiway at [[São Paulo-Guarulhos International Airport|São Paulo-Guarulhos Airport]]. The take-off was aborted, but the aircraft overran, collided with a dyke and broke in two. The weather was foggy. There was one fatality.<ref name=autogenerated3>{{cite web|url=http://aviation-safety.net/database/record.php?id=19840830-0|title=ASN incident record|publisher=ASN|accessdate=}}</ref>
+* October 15, 1986 – [[Iran Air]] 737-200 registration EP-IRG was attacked by [[Iraq]]i aircraft. Passengers were disembarking at the time of the attack. According to Iranian authorities a number of [[Lockheed C-130 Hercules|C-130 Hercules]] aircraft were also destroyed. Three occupants were killed.<ref>{{cite web|url=http://aviation-safety.net/database/record.php?id=19861015-2|title=ASN Aircraft accident Boeing 737-286 EP-IRG Shiraz Airport (SYZ)|author=Harro Ranter|date=15 October 1986|work=aviation-safety.net|accessdate=1 April 2015}}</ref>
+* December 25, 1986, [[Iraqi Airways Flight 163]], a 737-200 that was [[aircraft hijacking|hijacked]] and crashed, catching fire in [[Arar, Saudi Arabia|Arar]] near [[Saudi Arabia]]. There were 106 people on board, and 60 passengers and 3 crew members died.
+* August 4, 1987 – [[LAN Airlines|LAN Chile]] 737-200 registration CC-CHJ, operated in a flight, while on the approach at [[El Loa Airport]], [[Chile]], landed short of the displaced threshold of runway 27. The nosegear collapsed and the aircraft broke in two. A fire broke out 30 minutes later and destroyed the aircraft. The threshold was displaced by 880m due to construction work. There was one fatality.<ref>{{cite web|url=http://aviation-safety.net/database/record.php?id=19870804-2 |title=ASN Aircraft accident Boeing 737-2A1 CC-CHJ Calama-El Loa Airport (CJC) |publisher=Aviation-safety.net |accessdate=2014-01-04}}</ref>
+* August 31, 1987 – [[Thai Airways Flight 365]], a 737-200 (registration HS-TBC) crashed into the sea off [[Phuket Province|Ko Phuket]], [[Thailand]]. A total of 74 passengers and 9 crew on board lost their lives.<ref>{{cite web|url=http://www.nytimes.com/1987/09/01/world/83-feared-killed-in-thai-air-crash.html|title=83 Feared Killed in Thai Air Crash|date=1 September 1987|work=The New York Times}}</ref>
+* January 2, 1988 – [[Condor Flugdienst Flight 3782|Condor Flight 3782]], a charter operated 737-200, crashed in Serefsihar near [[Izmir]], [[Turkey]], due to ILS problems. All 11 Passengers and 5 crew were killed in the accident.
+* April 28, 1988 – [[Aloha Airlines Flight 243]], a 737-200, suffered extensive damage after an [[explosive decompression]] at {{convert|24000|ft|m}}, but was able to land safely at [[Kahului Airport]] on [[Maui]] with one fatality. A flight attendant, who was not in restraints at the moment of decompression, was blown out of the aircraft over the ocean and was never found.
+* September 15, 1988 – [[Ethiopian Airlines Flight 604]], a 737-200, suffered a multiple [[bird strike]] while taking off from [[Bahir Dar Airport]]. Both engines failed and the airliner crashed and caught fire while trying to return to the airport. Thirty-five of 98 passengers died while all six crew members survived.<ref>"[http://aviation-safety.net/database/record.php?id=19880915-0 "ASN Aircraft accident Boeing 737-260 ET-AJA Bahar Dar Airport (BJR)."] ''[[Aviation Safety Network]]''. Retrieved: February 12, 2010.</ref>
+* September 26, 1988 – [[Aerolineas Argentinas]] 737-200 registration LV-LIU operating Flight 648 departed in [[Jorge Newbery Airport]] in [[Buenos Aires]], [[Argentina]] and made an emergency landing at [[Ushuaia Airport]] in [[Ushuaia]], Argentina. There were no fatalities.<ref name=autogenerated1>{{cite web|url=http://aviation-safety.net/database/record.php?id=19880926-0|title=ASN accident record|publisher=ASN|accessdate=}}</ref>
+* February 9, 1989 – [[LAM Mozambique Airlines]] 737-200 registration C9-BAD overran the runway while making an emergency landing at Lichinga Airport. There were no fatalities.<ref>{{ASN accident|title= C9-BAD|id= 19890209-1|accessdate= {{date|2012-1-13}}}}</ref><ref>{{cite journal|title= 1989 airline safety so far{{spaced ndash}}Non-fatal accidents/incidents: scheduled passenger flights|author=David Learmount|journal= [[Flight International]]|issn=0015-3710|issue=4174|volume=136|page=34|date= {{date|1989-7-22}}|format= PDF|url= http://www.flightglobal.com/pdfarchive/view/1989/1989%20-%202260.html|accessdate= {{date|2014-11-18}}}}</ref>
+* September 3, 1989 – [[Varig]] 737-241 registration PP-VMK operating [[Varig Flight 254|Flight 254]] flying from [[São Paulo-Guarulhos International Airport|São Paulo-Guarulhos]] to [[Val de Cans International Airport|Belém-Val de Cans]] with intermediate stops, crashed near [[São José do Xingu]] while on the last leg of the flight between [[Marabá Airport|Marabá]] and Belém due to a [[Aviator|pilot]] [[navigation]]al error, which led to [[fuel exhaustion]] and a subsequent [[belly landing]] into the jungle, {{convert|450|mi|sigfig=3}} southwest of Marabá. Out of 54 occupants, there were 13 fatalities, all of them passengers. The survivors were discovered two days later.<ref>[http://aviation-safety.net/database/record.php?id=19890903-0 "Accident description PP-VMK."] ''Aviation Safety Network.'' Retrieved: June 25, 2011.}</ref><ref>{{cite book | first=Carlos Ari César | last=Germano da Silva | title=O rastro da bruxa, história da aviação comercial brasileira no século XX através dos seus acidentes 1928-1996 | chapter=Rumo errado |publisher=EDIPUCRS | edition=2 | place=Porto Alegre | year=2008 | pages=352–360 | isbn=978-85-7430-760-2 | language=Portuguese}}</ref>
+* October 2, 1990 – The [[1990 Guangzhou Baiyun airport collisions]] were the result of the hijacking of [[Xiamen Airlines]] Flight 8301, a 737-200 (registration B-2510).  Whilst attempting to land at Guangzhou Baiyun it struck two other airplanes. The hijacked aircraft struck a parked China Southwest Airlines Boeing 707 first, inflicting only minor damage, but then collided with China Southern Airlines Flight 2812, a Boeing 757-200 waiting for takeoff, and flipped on its back. A total of 128 people were killed, including 7 of 9 crew members and 75 of 93 passengers on Flight 8301 and 46 of 110 passengers on Flight 2812.
+* March 3, 1991 – [[United Airlines Flight 585]], a 737-291 carrying 20 passengers and five crew members, lost control after a rudder malfunction and crashed outside of [[Colorado Springs Municipal Airport]], killing everyone on board.
+* June 6, 1992 – [[Copa Airlines Flight 201]], a 737-204 Advanced registration HP-1205CMP en route from [[Tocumen International Airport]] in [[Panama City]], [[Panama]] to [[Alfonso Bonilla Aragón International Airport]] in [[Cali]], [[Colombia]] crashed into the Darien Gap 29 minutes after taking-off from Tocumen International Airport. All 47 on board (40 passengers and 7 crew) were killed in the crash.<ref>{{cite news |title= Explosion en avion: fallecen 47 personas |author= El Tiempo |url= http://www.eltiempo.com/archivo/documento/MAM-133013 |date= June 11, 2012<!-- 5:12 AM-->|accessdate=June 11, 2012 <!-- 5:12 AM --> }}</ref>
+* June 22, 1992 – [[VASP]] cargo 737-2A1C registration PP-SND en route from [[Presidente Médici International Airport|Rio Branco]] to [[Cruzeiro do Sul International Airport|Cruzeiro do Sul]] crashed in the jungle while on arrival procedures to Cruzeiro do Sul. The crew of two and one passenger died.<ref>[http://aviation-safety.net/database/record.php?id=19920622-2 "Accident description PP-SND."] ''Aviation Safety Network.'' Retrieved: June 16, 2011,</ref>
+* December 21, 1994 – [[Air Algérie Flight 702P]], a 737-200C on behalf of [[Phoenix Aviation]] crashed in [[Coventry, England]], UK. All 5 crew members were killed.
+* August 9, 1995 – [[Aviateca]] Flight 901, a 737-200 (registration N125GU) crashed on approach to the [[El Salvador International Airport]] in [[San Salvador]], [[El Salvador]]. 58 of 65 occupants were killed.<ref name=autogenerated2>{{cite web|url=http://aviation-safety.net/database/record.php?id=19950809-1|title=ASN accident record|publisher=ASN|accessdate=}}</ref>
+* November 13, 1995 – [[Nigeria Airways Flight 357]], a 737-2F9 (5N-AUA), suffered a runway overrun at [[Kaduna Airport]] in Nigeria. All 14 crew members survived, but 11 of the 124 passengers were killed.<ref>"[http://aviation-safety.net/database/record.php?id=19951113-0 ASN Aircraft accident Boeing 737-2F9 5N-AUA Kaduna Airport (KAD)]." [[Aviation Safety Network]]. Retrieved on 6 June 2012.</ref>
+* December 3, 1995 – [[Cameroon Airlines Flight 3701]], a 737-200 (registration TJ-CBE) crashed after it lost control and on approach to the Douala International Airport in [[Douala]], [[Littoral Region (Cameroon)|Littoral Province]], Cameroon. 71 passengers and crew lost their lives, but there were 5 survivors.<ref name=as>{{cite web|url=http://aviation-safety.net/database/record.php?id=19951203-0 |title=ASN Aircraft accident Boeing 737-2K9 TJ-CBE Douala |publisher=Aviation-safety.net |accessdate=2010-04-04}}</ref><ref>{{cite web|url=http://www.planecrashinfo.com/1995/1995-72.htm |title=1995-72 ACCIDENT DETAILS |publisher=www.planecrashinfo.com |accessdate=2010-04-04}}</ref>
+* April 3, 1996 – [[United States Air Force]] [[Boeing T-43|CT-43A]] (a modified 737-200 and serial number 73-1149) ([[86th Airlift Wing]], based at [[Ramstein Air Base]], Germany) operating in a VIP transport flight [[1996 Croatia USAF CT-43 crash|crashed]] on approach to [[Dubrovnik Airport]] in [[Dubrovnik]], [[Croatia]] while on an official trade mission. All 5 crew and 30 passengers were killed, including [[U.S. Secretary of Commerce]] [[Ron Brown (U.S. politician)|Ron Brown]] and [[The New York Times]] [[Frankfurt]] Bureau chief Nathaniel C. Nash. Air Force Technical Sergeant Shelly Kelly survived the crash, but died three hours after the crash from an injury sustained in an ambulance.<ref>{{cite journal|author1=FSF Editorial Staff|title=Dubrovnik-bound Flight Crew's Improperly Flown Nonprecision Instrument Approach Results in Controlled-flight-into-terrain Accident|journal=Flight Safety Digest|date=August 1996|volume=15|issue=7/8|pages=1–25|url=http://flightsafety.org/fsd/fsd_jul-aug96.pdf|publisher=[[Flight Safety Foundation]]|format=PDF}}</ref><ref>{{cite web|author1=Linda D. Kozaryn|title=Air Force Releases Brown Crash Investigation Report|url=http://www.defense.gov/news/newsarticle.aspx?id=40796|website=www.defense.gov|publisher=U.S. Department of Defense|accessdate={{date|2014-11-23}}|date=June 13, 1996}}</ref>
+* June 9, 1996 – [[Eastwind Airlines Flight 517]], a 737-2H5 on a scheduled domestic passenger flight between [[Trenton-Mercer Airport]] in [[Trenton, New Jersey]] and [[Richmond International Airport]] in [[Richmond, Virginia]], the flight lost rudder control but was able to land successfully. There were no fatalities but one flight attendant suffered minor injuries, among 48 passengers and 4 crew members surviving.<ref>{{cite web|url=http://www.fss.aero/accident-reports/look.php?report_key=1078|title=Event Details|work=fss.aero|accessdate=1 April 2015}}</ref>
+* February 14, 1997 – [[Varig]] 737-241, registration PP-CJO operating flight 265, flying from [[Marabá Airport|Marabá]] to [[Carajás Airport|Carajás]], while on touchdown procedures at Carajás during a thunderstorm, veered off the right side of the runway after its right main landing gear collapsed rearwards. The aircraft crashed into a forest. One crew member were killed.<ref>{{cite web|url=http://aviation-safety.net/database/record.php?id=19970214-0 |title="Accident description PP-CJO." '&#39;Aviation Safety Network.'&#39; Retrieved: June 17, 2011 |publisher=Aviation-safety.net |accessdate=2013-04-29}}</ref>
+* April 12, 1998 – [[Orient Eagle Airways]] Flight 717, a 737-200 (registration number P4-NEN) Overran the runway at a speed of 80 knots after a heavy landing on a wet runway at [[Almaty International Airport]] in [[Kazakhstan]]. The right main gear collapsed. There were no fatalities.
+* May 10, 1999 – [[Mexican Air Force]] 737-247 registration B-12001 was on a training flight when it overran the runway while making an emergency landing at [[Loma Bonita Air Base]], [[Mexico]]. The nosegear collapsed. Grass near the aircraft caught fire causing the airplane to burn out. There were no fatalities.
+* August 31, 1999 – [[LAPA Flight 3142]], a 737-200, crashed while attempting to take off from the [[Aeroparque Jorge Newbery|Jorge Newbery Airport]] in Buenos Aires en route to [[Córdoba, Argentina]]. The crash resulted in 65 fatalities.
+* April 19, 2000 – [[Air Philippines Flight 541]], a 737-200 crashed on approach to the [[Francisco Bangoy International Airport]] in  [[Davao City]], [[Philippines]]. All 124 passengers and 7 crew members on board were killed.<ref>[http://www.bbc.co.uk/news/world-10785301 "Air disasters timeline."] ''BBC,'' November 30, 2007. Retrieved: September 9, 2011.</ref><ref>[http://aviation-safety.net/database/record.php?id=20000419-0 "Accident description, Air Philippines Flight 541."] ''Aviation Safety Network,'' April 19, 2000. Retrieved: September 3, 2010.</ref>
+* December 26, 2002 – [[TAAG Angola Airlines]] 737-200 registration D2-TDB and operating flight 572 that had departed from Windhoek Hosea Kutako International Airport bound for Luanda, was involved in a mid-air collision over Namibian airspace with a propeller-driven light aircraft [[Cessna 404]] registration V5-WAA, that took off from [[Windhoek Eros Airport]] in [[Namibia]].<ref>{{ASN accident|id= 20021226-1|type= Incident|title= D2-TDB|accessdate= {{date|2011-6-23}}}}</ref><ref name="737 and Cessna 404 in collision over Namibia">{{cite news|title= 737 and Cessna 404 in collision over Namibia|first= David|last= Learmount|location= [[London]]|publisher= Flightglobal.com|agency= Flight International|date= {{date|2003-1-7}}|url= http://www.flightglobal.com/articles/2003/01/07/159906/737-and-cessna-404-in-collision-over-namibia.html|archiveurl= http://www.webcitation.org/6Ab2SqxZk|archivedate= {{date|2012-9-11}}|accessdate= {{date|2012-9-11}}}}</ref>
+* March 6, 2003 – [[Air Algérie Flight 6289]], a 737-200 crashed shortly after taking off from [[Tamanrasset]], [[Algeria]]. All 97 passengers and 6 crew on board perished with the exception of a 28-year-old soldier, Youcef Djillali.<ref name="Nouvel Obs">[http://tempsreel.nouvelobs.com/actualites/20030306.OBS7827/?xtmc=algA_rienne_aps&xtcr=25 Tamanrasset : 102 mortsdont 6 Français]." ([http://www.webcitation.org/6MH4A2uSW Archive]) ''[[Le Nouvel Observateur]]''. 11 March 2003. Retrieved on 31 December 2013.</ref>
+* July 8, 2003 – [[Sudan Airways Flight 139]], a 737-200C (registration ST-AFK) stalled and crashed in [[Port Sudan]], [[Sudan]] resulting of the deaths of all its 117 occupants (106 passengers and 11 crew members) on board.
+* February 3, 2005 – [[Kam Air Flight 904]], a 737-200 registration EX-037 crashed into the [[Pamir Mountain|Pamir mountain]] in [[Afghanistan]]. All 96 passengers and 8 crew members on board lost their lives.
+* August 23, 2005 – [[TANS Perú Flight 204]], a 737-200 crashed on approach to [[Pucallpa Airport]] in [[Peru]]. 40 of 98 occupants lost their lives, while 58 others survived.<ref name="ASN">{{ASN accident|id= 20050823-0|accessdate= {{date|2011-12-16}}}}</ref><ref name="USA Today">{{cite news|title= 58 walk away from Peruvian plane crash|work= [[USA Today]]|url= http://www.usatoday.com/news/world/2005-08-23-peru-crash_x.htm|date= {{date|2005-8-25}}|archiveurl= http://www.webcitation.org/67aNHBSYW|archivedate= {{date|2012-5-11}}|accessdate= {{date|2012-5-11}}}}</ref>
+* September 5, 2005 – [[Mandala Airlines Flight 091]], a 737-200, crashed in a densely populated neighborhood of [[Medan]], [[North Sumatra]], [[Indonesia]], because trying to take off with incorrect flap settings. It was carrying 117 on board (of whom 100 passengers and 5 crew) as well as 49 people on the ground were killed.<ref>{{cite news| author= [[Richard Lloyd Parry]]  |url=http://www.timesonline.co.uk/article/0,,3-1766252,00.html |title=At least 149 die when jet crashes into city moments after take-off |newspaper=The Times |location= London |date= 6 September 2005 |archiveurl=https://web.archive.org/web/20110604013829/http://www.timesonline.co.uk/tol/news/world/article563052.ece |archivedate=4 June 2011 }}</ref>
+* October 22, 2005 – [[Bellview Airlines Flight 210]], a 737-200 (registration 5N-BFN) stalled and crashed shortly after taking off from [[Murtala Mohammed Airport]] in [[Lagos]], [[Nigeria]] en route to the [[Nnamdi Azikiwe International Airport]] for the Nigerian capital [[Abuja]], resulting of the deaths of all its 117 occupants (111 passengers and 6 crew members) on board.
+* October 29, 2006 – [[ADC Airlines Flight 53]], a 737-200 crashed during a storm shortly after takeoff from [[Nnamdi Azikiwe International Airport]] in [[Abuja]], Nigeria. All but seven of the 104 passengers and crew were reported to have been killed.<ref>{{cite news|title=Nigerian plane crashes with 104 people aboard|url=http://www.nytimes.com/2006/10/29/world/africa/29iht-crash.3322751.html?|accessdate={{date|2014-11-18}}|work=The New York Times|date=October 29, 2006}}</ref>
+* January 24, 2007 – [[Air West Flight 612]], a 737-200 was hijacked by a 26-year-old man, Mohamed Abdu Altif, who entered the cockpit of the aircraft approximately half an hour after takeoff from [[Khartoum International Airport]] in Sudan. The aircraft landed safely at the [[N'Djamena International Airport]] in [[Chad]] where the hijacker surrendered. All 95 passengers and 8 crew on board survived.
+* June 28, 2007 – [[TAAG Angola Airlines]] 737-200 crashed in northern [[Angola]].
+* August 24, 2008, [[Iran Aseman Airlines Flight 6895]], a 737-200 from [[Itek Air]] wet leased to [[Iran Aseman Airlines]] crashed while attempting an emergency landing on return, ten minutes after departure from [[Bishkek]], [[Kyrgyzstan]]. The airliner was flying to [[Tehran]], [[Iran]]. Out of 83 passengers and seven crew, there were 22 survivors.
+* August 30, 2008 – [[ConViasa]] 737-200 Advanced registration YV-102T operating a ferry flight from [[Simón Bolívar International Airport (Venezuela)|Simón Bolívar International Airport]] in [[Maiquetía]], [[Venezuela]] stalled and crashed into the [[Illiniza|Illiniza Volcano]], [[Ecuador]]. One passenger and both pilots died.<ref name="b737.org.uk">{{cite web |url=http://www.b737.org.uk/accident_reports.htm|title= Boeing 737 Accident Reports|accessdate={{date|2014-11-18}} |publisher= b737.org.uk | website=www.b737.org.uk}}</ref>
+* March 1, 2010 – [[Air Tanzania]] Flight 100, a 737-200 (5H-MVZ) sustained substantial damage when it departed the runway on landing at [[Mwanza Airport]] and the nose gear collapsed. Damage was also caused to an engine.<ref name=AH42800a18>Hradecky, Simon. [http://avherald.com/h?article=42800a18&opt=0 "Accident, Air Tanzania B732 at Mwanza on Mar 1st 2010, veered off runway, nose gear collapsed."] ''Aviation Herald,'' March 1, 2010.</ref>
+* August 20, 2010 – [[Chanchangi Airlines]] Flight 334, a 737-200 (5N-BIF), struck the localizer antenna and landed short of the runway at [[Kaduna Airport]]. Several passengers were slightly injured and the aircraft was substantially damaged. Chanchangi Airlines again suspended operations following the accident.<ref name=AH42ff590a>Hradecky, Simon. [http://avherald.com/h?article=42ff590a&opt=0 "Accident, Chanchangi B732 at Kaduna on Aug 20th 2010, landed short of runway."] ''Aviation Herald,'' August 22, 2010.</ref>
+* August 20, 2011 – [[First Air Flight 6560]], a 737-200, crashed near [[Resolute Bay]] in the Canadian territory of [[Nunavut]].  Of the 15 people on board, there were three survivors.<ref>[http://www.cbc.ca/news/canada/north/story/2011/08/20/north-air-crash.html "Plane Crash Near Resolute Bay."] ''CBC News'', August 20, 2011.</ref>
+* April 20, 2012 – [[Bhoja Air Flight 213]], a 737-200, crashed in Rawalpindi, Pakistan. All 127 passengers and crew on board were killed.<ref>[http://wayback.archive.org/web/20120424111659/http://dawn.com/2012/04/20/reports-of-a-passenger-plane-crash-near-chaklala-dawnnews/ "Plane crash near Chaklala kills 127"]. dawn.com, April 20, 2012.</ref>
+<!-- Section only for 737-100 and -200 incidents/accidents. 737-300/-400/-500 accidents are covered at [[Boeing 737 Classic]]. 737-600/-700/-800/-900 accidents are covered in the [[Boeing 737 Next Generation]] article. Thanks.
+PLEASE do not add the Southwest Flight 812 incident here. That belongs in the 737 Classic article, ''not'' here.
+
+Before adding an incident entry read the notability requirements in the Incidents section at [[Wikipedia:WikiProject Aircraft/page content]]. -->
+
+==Aircraft on display==
+[[File:Frontiers of Flight Museum December 2015 134 (Southwest Airlines Boeing 737-3H4).jpg|thumb|A Southwest Airlines Boeing 737-3H4 at the [[Frontiers of Flight Museum]]]]
+*737-130 N515NA is on display in NASA markings at the [[Museum of Flight]] in Seattle, Washington. It was the first 737 built.<ref>{{cite web|title=Boeing 737-130|url=http://www.museumofflight.org/aircraft/boeing-737-130|website=www.museumofflight.org|publisher=The Museum of Flight}}</ref>
+*737-222 N9065U is partially preserved at the Hiller Aviation Museum in San Carlos, California.<ref>{{cite web|title=Exhibits|url=http://www.hiller.org/exhibits.shtml|website=www.hiller.org|publisher=Hiller Aviation Museum}}</ref>
+*737-201 N213US is partially preserved at the [[Museum of Flight]] in Seattle in [[US Air]] markings.<ref>{{cite web|title=B737 Airliner Theater|url=http://www.museumofflight.org/737-airliner-theater|website=www.museumofflight.org|publisher=The Museum of Flight}}</ref>
+*737-2H4 N29SW, formerly operated by [[Ryan International Airlines]], is on display at the [[Kansas Aviation Museum]] in Wichita, Kansas.<ref>{{cite web|title=Boeing 737-200|url=http://kansasaviationmuseum.org/visit/aircraft/boeing-737-200/|website=kansasaviationmuseum.org|publisher=Kansas Aviation Museum}}</ref>
+*737-2H4 N86SW is partially preserved as a restaurant in [[Walnut Ridge, Arkansas]].<ref>{{cite web|url=http://www.roadsideamerica.com/tip/15946|title=Walnut Ridge, AR - Parachute Inn - Boeing 737|work=RoadsideAmerica.com}}</ref>
+*737-2Z6 L-11-1/26 of the [[Royal Thai Air Force]] is displayed at Don Muang Airport, Bangkok.<ref>{{cite web|url=http://www.airliners.net/photo/Thailand---Air/Boeing-737-2Z6-Adv/2415239/&sid=e8e999a92497f7ece184ee3d9b9d35f8|title=Photos: Boeing 737-2Z6/Adv Aircraft Pictures - Airliners.net|work=airliners.net|accessdate=1 April 2015}}</ref>
+*737-290C N740AS, formerly of [[Alaska Airlines]], is preserved at the Alaska Aviation Museum in Anchorage, Alaska.<ref>{{cite web|url=http://alaskaairmuseum.org/planes-museum/|title=Alaska Aviation Museum|work=Alaska Aviation Museum|accessdate=1 April 2015}}</ref>
+*737-281 LV-WTX is displayed at the [[Museo Nacional de Aeronáutica de Argentina|National Museum of Aeronautics]] in Morón, Argentina.<ref>{{cite web|title=Picture of the Boeing 737-281/Adv aircraft|url=http://www.airliners.net/photo/Aerolineas-Argentinas/Boeing-737-281-Adv/2080776/&sid=4797ba2105e9662e37f21b14c149bf3b|publisher=Airliners.net}}</ref>
+
+==Specifications==
+<div style="-ms-overflow-x: auto;">
+{| class="wikitable" style="text-align: center; font-size: 96%;"
+|-
+!
+!737-100
+!737-200
+!737-200 Advanced
+![[Boeing 737 Classic#Specifications|737 Classic]] (-300/-400/-500)
+![[Boeing 737 Next Generation#Specifications|737 Next Generation]] (-600/-700/-800/-900ER)
+|-
+! Cockpit crew
+| colspan=5 | Two
+|-
+! Seating capacity
+| 124 (maximum) <br>85 (2-class, typical) || 136 (maximum) <br>97 (2-class, typical) || 136 (maximum) <br>102 (2-class, typical) || 149 - 188 (maximum) <br>108 - 146 (2-class, typical) || 130 - 220<ref>{{cite web|url=http://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/9C59427A20B3253686257D03004D8FAA?OpenDocument|title=TCDS A16WE Rev 53 Boeing Company, The|publisher=}}</ref> (maximum) <br> 108 - 177 (2-class, typical)
+|-
+! Length
+| {{convert|94|ft|m|2|abbr=on}} || colspan=2| {{convert|100|ft|2|in|m|2|abbr=on}} || {{convert|102|-|120|ft|m|abbr=on}} || {{convert|102|-|138|ft|m|abbr=on}}
+|-
+! Wingspan
+| colspan=3| {{convert|93|ft|m|2|abbr=on}} || {{convert|94|ft|9|in|m|2|abbr=on}} || {{convert|112|ft|7|in|m|2|abbr=on}} <br> {{convert|117|ft|5|in|m|2|abbr=on}} with winglets
+|-
+! Wing area
+| colspan="3"| {{convert|102.0|m2|sqft|abbr=on}} || {{convert|105.4|m2|sqft|abbr=on}} || {{convert|124.58|m2|sqft|abbr=on}}
+|-
+! Wing sweepback
+| colspan=4 | 25 degrees || 25.02 degrees
+|-
+! Overall height
+| colspan=3| {{convert|36|ft|10|in|m|2|abbr=on}} ||{{convert|36|ft|4|in|m|2|abbr=on}} || {{convert|41|ft|3|in|m|2|abbr=on}}
+|-
+! Maximum cabin width
+| colspan=5 | {{convert|11|ft|7|in|m|2|abbr=on}}
+|-
+! Fuselage width
+| colspan=5 | {{convert|12|ft|4|in|m|2|abbr=on}}
+|-
+! Cargo capacity
+| {{convert|650|cuft|m3|1|abbr=on}} || colspan=2| {{convert|875|cuft|m3|1|abbr=on}} || {{convert|822|-|1373|cuft|m3|1|abbr=on}} || {{convert|756|-|1835|cuft|m3|1|abbr=on}}
+|-
+! [[Operating empty weight]], typical
+| {{convert|62000|lb|kg|-2|abbr=on}} || {{convert|69700|lb|kg|-2|abbr=on}} || {{convert|69800|lb|kg|-2|abbr=on}} || {{convert|69000|-|74170|lb|kg|-2|abbr=on}} || {{convert|80200|-|98500|lb|kg|-2|abbr=on}}
+|-
+! [[Maximum takeoff weight]] (MTOW)
+| {{convert|111000|lb|kg|-2|abbr=on}} || {{convert|115500|lb|kg|-2|abbr=on}} || {{convert|128100|lb|kg|-2|abbr=on}} || {{convert|138500|-|150000|lb|kg|-2|abbr=on}} || {{convert|144500|-|187700|lb|kg|-2|abbr=on}}
+|-
+! Cruising speed
+| colspan=4 | Mach 0.74 (485&nbsp;mph, 780&nbsp;km/h) || Mach 0.78 (511&nbsp;mph, 823&nbsp;km/h)
+|-
+! Maximum speed
+| colspan=5 | Mach 0.82 (544&nbsp;mph, 876&nbsp;km/h)
+|-
+! Takeoff field length (MTOW, {{tooltip|SL|Sea Level}}, {{tooltip|ISA|International Standard Atmosphere}})
+| {{convert|6646|ft|m|abbr=on}} || - || - || {{convert|7550|-|8500|ft|m|abbr=on}} || {{convert|5249|-|9843|ft|m|abbr=on}}
+|-
+! Maximum range, fully loaded
+| {{convert|1540|nmi|abbr=on|lk=in}} || colspan=2| {{convert|1900|-|2300|nmi|abbr=on}} || {{convert|2270|-|2400|nmi|abbr=on}} || {{convert|3050|-|5510|nmi|abbr=on}}
+|-
+! Maximum fuel capacity
+| {{convert|4720|USgal|abbr=on}} || {{convert|4780|USgal|abbr=on}} || {{convert|5160|USgal|abbr=on}} || {{convert|5311|USgal|abbr=on}} || {{convert|6875|USgal|abbr=on}}
+|-
+! Service ceiling
+| colspan=2| {{convert|35000|ft|m|-2|abbr=on}} || colspan=2| {{convert|37000|ft|m|-2|abbr=on}} ||{{convert|41000|ft|m|-2|abbr=on}}
+|-
+! Engines (×2)
+| colspan=3| [[Pratt & Whitney JT8D]] || [[CFM International CFM56#CFM56-3 series|CFM International CFM56-3 series]] || [[CFM International CFM56#CFM56-7 series|CFM International CFM56-7 series]]
+|-
+! Thrust (×2)
+|{{convert|14500|lbf|kN|abbr=on|lk=on}} || colspan=2| {{convert|14500|-|17400|lbf|kN|abbr=on}} || {{convert|20000|-|23500|lbf|kN|abbr=on}} || {{convert|19500|-|27300|lbf|kN|abbr=on}}
+|}
+Sources: Boeing 737 specifications,<ref>[http://www.boeing.com/commercial/737family/specs.html "Boeing 737 Technical Information."] ''Boeing Commercial Airplanes.'' Retrieved: September 3, 2010.</ref> 737 Airport Planning Report,<ref>[http://wayback.archive.org/web/20120314120759/http://www.boeing.com/commercial/airports/737.htm "Boeing 737 Airplane Characteristics for Airport Planning."] ''Boeing Commercial Airplanes''.</ref> b737.org.uk site.<ref>[http://www.b737.org.uk/techspecsdetailed.htm "Boeing 737 Technical Specifications."] ''boeing.com.'' Retrieved: September 3, 2010.</ref>
+
+[[File:B737Familyv1.0.png|thumb|upright=1.8|A comparison of the different 737 variants]]
+{| class="wikitable"
+|+Boeing 737 variants
+|-
+![[International Civil Aviation Organization|ICAO]] code<ref name=ICAOcode>{{cite web|authorlink1=ICAO|title=DOC 8643 - Aircraft Type Designators|url=http://www.icao.int/publications/DOC8643/Pages/default.aspx|website=ICAO Publications|publisher=[[International Civil Aviation Organization]]|accessdate={{date|2014-11-22}}|date=22 November 2014}}</ref>
+!Model(s)
+|-
+|B731
+|737-100
+|-
+|B732
+|737-200/CT-43/VC-96
+|-
+|B733
+|737-300
+|-
+|B734
+|737-400
+|-
+|B735
+|737-500
+|-
+|B736
+|737-600
+|-
+|B737
+|737-700/BBJ/C-40
+|-
+|B738
+|737-800/BBJ2
+|-
+|B739
+|737-900/BBJ3
+|}
+</div>
+
+==See also==
+{{aircontent
+|see also=
+* [[Boeing 737 rudder issues]]
+|related=
+* [[Boeing 737 Classic]]
+* [[Boeing 737 Next Generation]]
+* [[Boeing 737 MAX]]
+* [[Boeing T-43]]
+* [[Boeing Business Jet]]
+* [[Boeing 737 AEW&C]]
+* [[Boeing C-40 Clipper]]
+* [[Boeing P-8 Poseidon]]
+|similar aircraft=
+* [[Airbus A320 family]]
+* [[Boeing 717]]
+* [[Bombardier CSeries]]
+* [[COMAC C919]]
+* [[Dassault Mercure]]
+* [[Sukhoi Superjet 100]]
+* [[Embraer 195]]
+* [[McDonnell Douglas DC-9]]
+* [[McDonnell Douglas MD-80]]
+* [[McDonnell Douglas MD-90]]
+* [[Irkut MS-21]]
+* [[Tupolev Tu-154]]M
+* [[Tupolev Tu-204]]
+* [[Yakovlev Yak-42]]D
+|lists=
+}}
+
+==References==
+{{Reflist|25em}}
+
+;Bibliography
+{{refbegin}}
+* {{cite book|last1=Anderson|first1=David F.|last2=Eberhardt|first2=and Scott|url=https://books.google.com/books?id=wmuPXQuZnGoC|title=Understanding Flight|location=Chicago|publisher=McGraw Hill Professional|year=2009|ISBN=978-0-07-162696-5|ref=harv}}
+* {{cite book|last=Bowers|first=Peter M.|title=Boeing Aircraft since 1916|location=Annapolis, Maryland|publisher=Naval Institute Press|year=1989|ISBN=0-87021-037-8|ref=harv}}
+* {{cite book|last=Endres|first=Günter|title=The Illustrated Directory of Modern Commercial Aircraft|location=St. Paul, Minnesota|publisher=MBI Publishing Company|year=2001|ISBN=0-7603-1125-0|ref=harv}}
+* {{cite book|last1=Redding|first1=Robert|last2=Yenne|first2=Bill|title=Boeing: Planemaker to the World|location=Berkeley, California|publisher=Thunder Bay Press|year=1997|ISBN=1-57145-045-9|ref=harv}}
+* {{cite book|last1=Sharpe|first1=Michael|last2=Shaw|first2=Robbie|title=Boeing 737-100 and 200|location=St. Paul, Minnesota|publisher=MBI Publishing Company|year=2001|ISBN=0-7603-0991-4|ref=harv}}
+* {{cite book|last=Shaw|first=Robbie|title=Boeing Jetliners|location=London, England|publisher=Osprey|year=1995|ISBN=1-85532-528-4|ref=harv}}
+* {{cite book|last=Shaw|first=Robbie|title=Boeing 737-300 to 800|location=St. Paul, Minnesota|publisher=MBI Publishing Company|year=1999|ISBN=0-7603-0699-0|ref=harv}}
+* {{cite book|last=Sutter|first=Joe|title=747: Creating the World's First Jumbo Jet and Other Adventures from a Life in Aviation|location=Washington, D.C.|publisher=Smithsonian Books|year=2006|ISBN=0-06-088242-5|ref=harv}}
+{{refend}}
+
+==External links==
+{{commons|Boeing 737}}
+* [http://www.boeing.com/commercial/737family/background.html 737 page on Boeing.com]
+* [http://www.aerospace-technology.com/projects/boeing737_NG/ Aerospace Technology – Boeing 737-600/700/800/900]
+* [http://www.flightglobal.com/news/articles/the-boeing-737-story-204410/ The 737 Story on FlightInternational.com]
+
+<!-- spacing, please do not remove -->
+{{Boeing airliners}}
+{{Boeing 7x7 timeline}}
+{{Boeing model numbers}}
+
+[[Category:Boeing aircraft|737]]
+[[Category:United States airliners 1960–1969]]
+[[Category:Twinjets]]
+[[Category:Boeing 737| ]]

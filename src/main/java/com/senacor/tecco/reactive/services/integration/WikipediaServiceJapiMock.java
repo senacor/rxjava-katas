@@ -33,12 +33,19 @@ public class WikipediaServiceJapiMock extends WikipediaServiceJapiImpl {
     @Override
     protected String getPageContent(String name) throws Exception {
         Thread.sleep(1000);
-        return articles.get(name);
+        String result = articles.get(name);
+        if(result != null) {
+            return result;
+        } else {
+            return articles.get("Boeing 777");
+        }
     }
 
     public void setUpArticelMap() {
         articles.put("Boeing 747", readArticle("747"));
         articles.put("Boeing 777", readArticle("777"));
+        articles.put("Boeing 737", readArticle("737"));
+        articles.put("Airbus A330", readArticle("A330"));
     }
 
     public String readArticle(String name){

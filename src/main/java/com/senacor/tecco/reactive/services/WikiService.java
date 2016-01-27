@@ -53,7 +53,15 @@ public class WikiService {
      * @return fetches a wiki article as a media wiki formated string
      */
     public Observable<String> fetchArticleObservable(final String wikiArticle) {
-        return wikiServiceJapi.getArticleObservable(wikiArticle);
+        return Observable.create(subscriber ->
+            fetchArticleCompletableFuture(wikiArticle).whenComplete((result, error) -> {
+                if (error != null) {
+                    subscriber.onError(error);
+                } else {
+                    subscriber.onNext(result);
+                    subscriber.onCompleted();
+                }
+            }));
     }
 
     /**

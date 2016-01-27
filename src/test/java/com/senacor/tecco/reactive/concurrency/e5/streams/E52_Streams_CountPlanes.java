@@ -3,6 +3,8 @@ package com.senacor.tecco.reactive.concurrency.e5.streams;
 import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
+import com.senacor.tecco.reactive.concurrency.model.Article;
+import com.senacor.tecco.reactive.concurrency.model.PlaneInfo;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -34,35 +36,7 @@ public class E52_Streams_CountPlanes extends PlaneArticleBaseTest {
 
     // Extracts plane-related information from an wikipedia article
     PlaneInfo parsePlaneInfo(Article article){
-        return new PlaneInfo(article.name, ReactiveUtil.findValue(article.content, "number built"));
-    }
-
-    class Article{
-        public String name;
-        public String content;
-
-        public Article(String name, String content) {
-            this.name = name;
-            this.content = content;
-        }
-    }
-
-    class PlaneInfo{
-        public String typeName;
-        public String numberBuild;
-
-        public PlaneInfo(String typeName, String numberBuild) {
-            this.typeName = typeName;
-            this.numberBuild = numberBuild;
-        }
-
-        @Override
-        public String toString() {
-            return "PlaneInfo{" +
-                    "typeName='" + typeName + '\'' +
-                    ", numberBuild='" + numberBuild + '\'' +
-                    '}';
-        }
+        return new PlaneInfo(article.name, parseBuildCountInt(article.content));
     }
 
 }
