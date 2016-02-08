@@ -14,7 +14,7 @@ public class Kata1CreateObservable {
     @Test
     public void erzeugeEinObservable() throws Exception {
         final String articleName = "Observable";
-        // Erzeuge aus getArticle ein Observable
+        // Create an observable from getArticle
 
         Observable.<Article>create(subscriber -> {
             try {

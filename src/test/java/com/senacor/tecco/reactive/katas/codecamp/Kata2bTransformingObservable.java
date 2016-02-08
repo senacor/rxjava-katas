@@ -9,9 +9,9 @@ public class Kata2bTransformingObservable {
 
     @Test
     public void transformingObservable() throws Exception {
-        // 1. Benutze den WikiService (fetchArticleObservable) und hole dir einen beliebigen Wikipedia Artikel
-        // 2. Transformiere das Ergebnis mit Hilfe von WikiService#parseMediaWikiTextObservable in eine Objektstruktur
-        // 3. gib die Anzahl der Wörter in der Console aus (ParsedPage.getText())
+        // 1. Use the WikiService (fetchArticleObservable) and fetch an arbitrary wikipedia article
+        // 2. transform the result with the WikiService#parseMediaWikiText to an object structure
+        // 3. print the word count of the article to the console (ParsedPage.getText())
 
         // wikiService.fetchArticleObservable()
     }

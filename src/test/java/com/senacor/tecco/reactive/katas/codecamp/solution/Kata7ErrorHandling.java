@@ -19,10 +19,10 @@ public class Kata7ErrorHandling {
 
     @Test
     public void errors() throws Exception {
-        // 1. Benutze den WikiService#wikiArticleBeingReadObservableWithRandomErrors, der einen Stream von WikiArtikel Namen liefert, die gerade gelesen werden.
-        // 2. Filtere zuerst die Bursts heraus.
-        // 3. Behandle auftretende Fehler: Versuche zuerst einen paar Retrys mit steigender pause dazwischen
-        // 4. Falls die Retrys nicht helfen beende den Stream mit einem Default
+        // 1. use WikiService#wikiArticleBeingReadObservableWithRandomErrors that creates a stream of wiki article names being read.
+        // 2. filter burst.
+        // 3. handle error: use retries with increasing delays
+        // 4. if retries fail, terminate stream with a default
 
         final WaitMonitor monitor = new WaitMonitor();
         Subscription subscription = wikiService.wikiArticleBeingReadObservableWithRandomErrors()

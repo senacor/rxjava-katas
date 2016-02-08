@@ -14,15 +14,13 @@ public class Kata5SchedulingObservable {
 
     @Test
     public void schedulingObservable() throws Exception {
-        // 1. Benutze den WikiService#wikiArticleBeingReadObservable, der einen Stream von WikiArtikel Namen liefert,
-        //    die gerade gelesen werden
-        // 2. nim nur die ersten 20 Artikel
-        // 3. lade und parse die Artikel
-        // 4. Benutze jetzt den ratingService.rateObservable() und #countWordsObervable() und kombiniere beides im JSON-Format
-        //    und gib das JSON auf der Console aus. Beispiel {"rating": 3, "wordCount": 452}
-        // 5. messe die Laufzeit
-        // 6. Fuege jetzt an passender Stelle in der Observable-Chain einen Schduler ein um die Ausführungszeit zu
-        // verkürzen
+        // 1. use the WikiService#wikiArticleBeingReadObservable to create a stream of WikiArticle names being read
+        // 2. take only the first 20 articles
+        // 3. load and parse the article
+        // 4. use the ratingService.rateObservable() and #countWordsObervable() to combine both as JSON
+        //    and print the JSON to the console. Beispiel {"rating": 3, "wordCount": 452}
+        // 5. measure the runtime
+        // 6. add a scheduler to a specific position in the observable chain to reduce the execution time
 
         wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS);
     }

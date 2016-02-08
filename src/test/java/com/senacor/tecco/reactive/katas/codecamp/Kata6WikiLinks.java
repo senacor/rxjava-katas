@@ -9,14 +9,12 @@ public class Kata6WikiLinks {
 
     @Test
     public void linksObservable() throws Exception {
-        // 1. lade und parse einen beliebigen Wiki Artikel
-        // 2. mappe alle internen Links (parsedPage.getSections().getLinks(Link.type.INTERNAL)) des Artikel
-        //    auf ein Observable und gib dies auf der Console aus (<Start_Artikel> -> <Link/Artikel_Name>)doOnEach
-        // 3. Wenn das Funktioniert füge eine Rekursion hinzu und lade alle Artikel zu den Links und gib wiederum
-        //    alle Links auf der Console aus
-        // 4. miss die Performance und optimiere die Performance mit Schedulern
-        // 5. gib keine Kombination <Start_Artikel> -> <Link/Artikel_Name> mehrfach aus
-
+        // 1. load and parse an arbitrary wiki article
+        // 2. map all internal links of an article (parsedPage.getSections().getLinks(Link.type.INTERNAL))
+        //    to an observable and print it to console <Start_Article> -> <Link/Article_Name>)doOnEach
+        // 3. if that works: add a recursion that loads the articles for the links and print all links contained in the article
+        // 4. measure the performance and optimize the performance with scheduler
+        // 5. do not print a combination <Start_Artikel> -> <Link/Artikel_Name> twice
         //wikiService.fetchArticleObservable(...);
     }
 

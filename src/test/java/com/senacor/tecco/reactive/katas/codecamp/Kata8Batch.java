@@ -12,11 +12,10 @@ public class Kata8Batch {
 
     @Test
     public void withoutBatch() throws Exception {
-        // 1. Benutze den WikiService#wikiArticleBeingReadObservableBurst, der einen Stream von WikiArtikel
-        //    Namen liefert, die gerade gelesen werden.
-        // 2. beobachte den Stream 2 sekunden lang
-        // 3. speichere die Artikel ab (WikiService.save(String)). Der service gibt die laufzeit zurück
-        // 4. summiere die laufzeit der save calls und gib dies aus
+        // 1. use WikiService#wikiArticleBeingReadObservableBurst that returns a stream of wiki article being read
+        // 2. watch the stream 2 sec
+        // 3. save the article (WikiService.save(String)). The service returns the execution time
+        // 4. sum the execution time of the service calls and print the result
 
         wikiService.wikiArticleBeingReadObservableBurst();
     }
@@ -24,10 +23,8 @@ public class Kata8Batch {
 
     @Test
     public void batch() throws Exception {
-        // 1. mache das gleiche wie oben, nur verwende diesmal die #save(Iterable) Methode um einene Batch von
-        //    Artikeln zu speichern. Beachte dabei, dass du hier potentiel einen Stream hast, du kannst also
-        //    nicht warten
-        //    bis der Stream alle artikel geliefert hat und dann alles in einem grossen batch abspeichern
+        // 1. do the same as above, but this time use the method #save(Iterable) to save a batch of articles.
+        //    Please note that this is a stream - you can not wait until all articles are delivered to save everything in a batch
 
         wikiService.wikiArticleBeingReadObservableBurst();
     }
