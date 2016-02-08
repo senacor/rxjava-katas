@@ -27,7 +27,7 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 public class WikiService {
 
     private final MediaWikiTextParser parser = new MediaWikiTextParser();
-    private final boolean MOCKMODE = true;
+    private final boolean MOCKMODE = false;
     private final WikipediaServiceJapi wikiServiceJapi;
 
     private final ExecutorService pool = Executors.newFixedThreadPool(4);

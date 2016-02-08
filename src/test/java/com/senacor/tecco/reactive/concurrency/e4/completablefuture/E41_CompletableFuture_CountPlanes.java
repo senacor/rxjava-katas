@@ -17,7 +17,7 @@ public class E41_CompletableFuture_CountPlanes extends PlaneArticleBaseTest {
     public void thatPlaneInfoIsCombinedWithCompletableFuture() throws Exception {
 
         CompletableFuture<Void> buildCount777Future = fetchArticle("Boeing 777")
-                .thenApply(this::parseBuildCount)
+                .thenApply( article -> parseBuildCount(article))
                 .thenAccept(buildCount -> Summary.printCounter("777", buildCount));
 
         CompletableFuture<Void> buildCount747Future = fetchArticle("Boeing 747")
