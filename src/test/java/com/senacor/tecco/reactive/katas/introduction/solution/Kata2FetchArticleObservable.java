@@ -1,48 +1,49 @@
-package com.senacor.tecco.reactive.katas.introduction;
+package com.senacor.tecco.reactive.katas.introduction.solution;
 
-import com.senacor.tecco.reactive.Watch;
+import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.services.WikiService;
-import org.junit.Rule;
 import org.junit.Test;
 import rx.Observable;
+
+import java.util.concurrent.TimeUnit;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
  * @author Dr. Michael Menzel
  */
-public class Kata2TransformObservable {
-    private final WikiService wikiService = new WikiService("en");
+public class Kata2FetchArticleObservable {
 
-    @Rule
-    public final Watch watch = new Watch();
+    private final WikiService wikiService = new WikiService("en");
 
     @Test
     public void createAnObservable() throws Exception {
+        final WaitMonitor monitor = new WaitMonitor();
+
         String[] planeTypes = {"Boeing 777", "Boeing 747", "Boeing 737", "Airbus A330", "Airbus A320 family"};
 
         // 1) create an observable that emits the plane type
         // 2) use the fetch article method to transform the plane type to an Article
         // 3) subscribe to the observable and print the article content
 
-        // 1) create an observable that emits the plane type
-        Observable<Article> obs = Observable.from(planeTypes)
-                .map(planeType -> fetchArticle(planeType));
+        Observable.from(planeTypes)
+                .flatMap(planeType -> fetchArticle(planeType))
+                .subscribe(article -> print("next: %s", article.content),
+                        Throwable::printStackTrace,
+                        monitor::complete);
 
-        // 2) subscribe to the observable and print the plane type
-        obs.subscribe(next -> print("next: %s", next.name),
-                Throwable::printStackTrace,
-                () -> print("complete!"));
-
+        monitor.waitFor(10, TimeUnit.SECONDS);
     }
+
 
     /**
      * fetches an article from the wikipedia
      * @param articleName name of the wikipedia article
      * @return an article
      */
-    Article fetchArticle(String articleName) {
-        return new Article(articleName, wikiService.fetchArticle(articleName));
+    Observable<Article> fetchArticle(String articleName) {
+        return wikiService.fetchArticleObservable(articleName).
+                map((article) -> new Article(articleName, article));
     }
 
     class Article{
