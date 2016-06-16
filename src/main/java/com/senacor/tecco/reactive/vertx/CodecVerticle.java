@@ -29,9 +29,8 @@ public class CodecVerticle extends AbstractVerticle {
         vertx.setPeriodic(1000, msg -> {
             vertx.eventBus().publish("codec-verticle", new Person("Hnas", 44));
         });
-        vertx.eventBus().consumer("codec-verticle", msg -> {
-            log.info("received Message on 'codec-verticle': " + msg.body());
-        });
+        vertx.eventBus().<Person>consumer("codec-verticle", msg ->
+                log.info("received Message on 'codec-verticle': " + msg.body()));
     }
 
     public static final class Person implements Serializable {
