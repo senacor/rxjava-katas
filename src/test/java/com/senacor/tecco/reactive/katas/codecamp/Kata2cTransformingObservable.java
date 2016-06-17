@@ -10,7 +10,6 @@ import org.junit.Test;
 public class Kata2cTransformingObservable {
 
     private WikiService wikiService = new WikiService();
-    private CountService countService = new CountService();
 
     @Test
     public void transformingObservable() throws Exception {
