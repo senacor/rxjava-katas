@@ -5,6 +5,7 @@ import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
 import rx.Observable;
 import rx.Subscription;
+import rx.functions.Func1;
 
 import java.util.concurrent.TimeUnit;
 
@@ -26,14 +27,11 @@ public class Kata7ErrorHandling {
 
         final WaitMonitor monitor = new WaitMonitor();
         Subscription subscription = wikiService.wikiArticleBeingReadObservableWithRandomErrors()
+                .take(20)
                 .debounce(50, TimeUnit.MILLISECONDS)
-                .retryWhen(attempts -> attempts.zipWith(Observable.range(1, 2), (n, i) -> i)
-                        .flatMap(i -> {
-                            print("randomDelay retry by %s second(s)", i);
-                            return Observable.timer(i, TimeUnit.SECONDS);
-                        }))
-                // TODO (ak) funktioniert noch nicht: 4. Falls die Retrys nicht helfen beende den Stream mit einem Default
-                // TODO (ak) wenn die retries vorbei sind, dann ist der Aufruf erfolgreich und der default wird ignoriert
+                // delayed retry
+                .retryWhen(retryWithDelay(3))
+                // default on error
                 .onErrorReturn(throwable -> "default on error")
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
@@ -46,4 +44,52 @@ public class Kata7ErrorHandling {
         subscription.unsubscribe();
     }
 
+    @Test
+    public void errorsWithDefaultTest() throws Exception {
+        final WaitMonitor monitor = new WaitMonitor();
+        Subscription subscription = Observable.error(new IllegalStateException("something's wrong"))
+                // delayed retry
+                .retryWhen(retryWithDelay(3))
+                // default on error
+                .onErrorReturn(throwable -> "default on error")
+                .subscribe(next -> print("next: %s", next),
+                        Throwable::printStackTrace,
+                        () -> {
+                            print("complete!");
+                            monitor.complete();
+                        });
+
+        monitor.waitFor(20, TimeUnit.SECONDS);
+        subscription.unsubscribe();
+    }
+
+    private Func1<Observable<? extends Throwable>, Observable<?>> retryWithDelay(final int maxRetries) {
+        return attempts -> attempts.zipWith(Observable.range(1, maxRetries + 1), ErrorWithRetryCount::new)
+                .flatMap(
+                        countAndError -> {
+                            if (countAndError.getRetryCount() > maxRetries) {
+                                return Observable.error(countAndError.getThrowable());
+                            }
+                            print("randomDelay retry by %s second(s)", countAndError.getRetryCount());
+                            return Observable.timer((long) countAndError.getRetryCount(), TimeUnit.SECONDS);
+                        });
+    }
+
+    private static class ErrorWithRetryCount {
+        private final Throwable throwable;
+        private final int retryCount;
+
+        private ErrorWithRetryCount(Throwable throwable, int retryCount) {
+            this.throwable = throwable;
+            this.retryCount = retryCount;
+        }
+
+        public Throwable getThrowable() {
+            return throwable;
+        }
+
+        public int getRetryCount() {
+            return retryCount;
+        }
+    }
 }
