@@ -1,11 +1,15 @@
 package com.senacor.tecco.reactive.katas.codecamp;
 
+import com.senacor.tecco.reactive.services.CountService;
+import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
 
 /**
  * @author Andreas Keefer
  */
 public class Kata2cTransformingObservable {
+
+    private WikiService wikiService = new WikiService();
 
     @Test
     public void transformingObservable() throws Exception {

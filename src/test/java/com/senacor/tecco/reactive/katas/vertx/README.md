@@ -7,4 +7,4 @@ Orientiere dich an den Beispielen aus dem Package 'com.senacor.tecco.reactive.ve
 2. Benutze jetzt #rate() und #countWords() aus dem WikiVerticle und kombiniere beides im JSON-Format
      und gib das JSON auf der Console aus. Beispiel {"articleName": "Superman", "rating": 3, "wordCount": 452}
    
-## verwende jetzt anstatt der Callbacks die rx Vertex Klassen (WikiVerticleRxTest)
+## verwende jetzt anstatt der Callbacks die rx Vertx Klassen (WikiVerticleRxTest)
