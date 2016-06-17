@@ -1,11 +1,18 @@
 package com.senacor.tecco.reactive.katas.codecamp;
 
+import com.senacor.tecco.reactive.services.CountService;
+import com.senacor.tecco.reactive.services.RatingService;
+import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
 
 /**
  * @author Andreas Keefer
  */
 public class Kata3CombiningObservable {
+
+    private WikiService wikiService = new WikiService();
+    private CountService countService = new CountService();
+    private RatingService ratingService = new RatingService();
 
     @Test
     public void combiningObservable() throws Exception {
