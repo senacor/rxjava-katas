@@ -11,11 +11,7 @@ import rx.Observable;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 import java.util.function.Consumer;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.getThreadId;
@@ -33,7 +29,7 @@ public class WikiService {
     private final ExecutorService pool = Executors.newFixedThreadPool(4);
 
     public WikiService() {
-        if(MOCKMODE){
+        if (MOCKMODE) {
             wikiServiceJapi = new WikipediaServiceJapiMock();
         } else {
             wikiServiceJapi = new WikipediaServiceJapiImpl();
@@ -41,7 +37,7 @@ public class WikiService {
     }
 
     public WikiService(String language) {
-        if(MOCKMODE){
+        if (MOCKMODE) {
             wikiServiceJapi = new WikipediaServiceJapiMock();
         } else {
             wikiServiceJapi = new WikipediaServiceJapiImpl("http://" + language + ".wikipedia.org");
@@ -53,15 +49,23 @@ public class WikiService {
      * @return fetches a wiki article as a media wiki formated string
      */
     public Observable<String> fetchArticleObservable(final String wikiArticle) {
+        return wikiServiceJapi.getArticleObservable(wikiArticle);
+    }
+
+    /**
+     * @param wikiArticle name of the article to be fetched
+     * @return fetches a wiki article as a media wiki formated string
+     */
+    public Observable<String> fetchArticleObservableScheduled(final String wikiArticle) {
         return Observable.create(subscriber ->
-            fetchArticleCompletableFuture(wikiArticle).whenComplete((result, error) -> {
-                if (error != null) {
-                    subscriber.onError(error);
-                } else {
-                    subscriber.onNext(result);
-                    subscriber.onCompleted();
-                }
-            }));
+                fetchArticleCompletableFuture(wikiArticle).whenComplete((result, error) -> {
+                    if (error != null) {
+                        subscriber.onError(error);
+                    } else {
+                        subscriber.onNext(result);
+                        subscriber.onCompleted();
+                    }
+                }));
     }
 
     /**

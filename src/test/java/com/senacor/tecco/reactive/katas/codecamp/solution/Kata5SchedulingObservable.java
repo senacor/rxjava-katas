@@ -42,7 +42,7 @@ public class Kata5SchedulingObservable {
 
         Subscription subscription = wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
                 .take(20)
-                .flatMap(name -> wikiService.fetchArticleObservable(name)).subscribeOn(Schedulers.io())
+                .flatMap(name -> wikiService.fetchArticleObservable(name).subscribeOn(Schedulers.io()))
                 .flatMap(wikiService::parseMediaWikiTextObservable)
                 .flatMap(parsedPage -> Observable.zip(ratingService.rateObservable(parsedPage).subscribeOn(fiveThreads),
                         countService.countWordsObervable(parsedPage).subscribeOn(fiveThreads),
@@ -56,7 +56,7 @@ public class Kata5SchedulingObservable {
                             monitor.complete();
                         });
 
-        monitor.waitFor(10, TimeUnit.SECONDS);
+        monitor.waitFor(22, TimeUnit.SECONDS);
         subscription.unsubscribe();
     }
 

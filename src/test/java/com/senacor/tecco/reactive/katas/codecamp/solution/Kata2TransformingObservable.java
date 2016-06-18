@@ -1,7 +1,13 @@
 package com.senacor.tecco.reactive.katas.codecamp.solution;
 
+import com.senacor.tecco.reactive.WaitMonitor;
+import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.WikiService;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
+import rx.Observable;
+
+import java.util.concurrent.TimeUnit;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
@@ -11,6 +17,7 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 public class Kata2TransformingObservable {
 
     private final WikiService wikiService = new WikiService();
+    private final CountService countService = new CountService();
 
     @Test
     public void transformingObservable() throws Exception {
@@ -22,10 +29,13 @@ public class Kata2TransformingObservable {
                 .doOnNext(debug -> print("fetchArticleObservable res: %s", debug))
                 .flatMap(wikiService::parseMediaWikiTextObservable)
                 .doOnNext(debug -> print("parseMediaWikiTextObservable res: %s", debug))
-                .subscribe(next -> print("next: %s", next.getText()),
+                //.map(parsedPage -> countService.countWords(parsedPage))
+                .flatMap(parsedPage -> Observable.from(StringUtils.split(parsedPage.getText(), " ")))
+                .filter(word -> word.startsWith("a"))
+                .count()
+                .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         () -> print("complete!"));
-
     }
 
 
