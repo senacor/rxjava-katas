@@ -15,12 +15,12 @@ public class PongVerticle extends AbstractVerticle {
 
     @Override
     public void start() throws Exception {
-        vertx.eventBus().consumer("ping").handler(msg -> {
+        vertx.eventBus().consumer(PingVerticle.PING_ADRESS).handler(msg -> {
             counter++;
             msg.reply(msg.body() + " pong");
         });
 
-        vertx.eventBus().consumer("pingToLog").handler(msg -> {
+        vertx.eventBus().consumer(PingVerticle.PING_TO_LOG_ADRESS).handler(msg -> {
             log.info("Received a pingToLog. The counter value is " + counter);
         });
 

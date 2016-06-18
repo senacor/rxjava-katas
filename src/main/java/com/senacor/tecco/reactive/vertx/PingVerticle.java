@@ -11,11 +11,13 @@ import io.vertx.core.logging.LoggerFactory;
 public class PingVerticle extends AbstractVerticle {
 
     private static final Logger log = LoggerFactory.getLogger(PingVerticle.class);
+    public static final String PING_ADRESS = "ping";
+    public static final String PING_TO_LOG_ADRESS = "pingToLog";
 
     @Override
     public void start() throws Exception {
         vertx.setPeriodic(500, msg -> {
-            vertx.eventBus().send("ping", "ping", new DeliveryOptions().
+            vertx.eventBus().send(PING_ADRESS, "ping", new DeliveryOptions().
                     setSendTimeout(500), reply -> {
                 if (reply.succeeded()) {
                     log.info("Received respone: " + reply.result().body());
@@ -31,7 +33,7 @@ public class PingVerticle extends AbstractVerticle {
             }
         });
         vertx.setPeriodic(2000, msg -> {
-            vertx.eventBus().publish("pingToLog", "ping");
+            vertx.eventBus().publish(PING_TO_LOG_ADRESS, "ping");
         });
     }
 }
