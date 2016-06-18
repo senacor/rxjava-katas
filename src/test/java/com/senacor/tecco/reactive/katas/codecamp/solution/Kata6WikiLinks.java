@@ -53,8 +53,8 @@ public class Kata6WikiLinks {
         //print("getLinks fuer Artikel: %s", wikiArticle);
         return wikiService.fetchArticleObservable((wikiArticle))
                 .subscribeOn(scheduler)
-                .flatMap(wikiService::parseMediaWikiTextObservable)
-                .subscribeOn(Schedulers.computation())
+                .flatMap((mediaWikiText) -> wikiService.parseMediaWikiTextObservable(mediaWikiText)
+                        .subscribeOn(Schedulers.computation()))
                 .filter(parsedPage -> parsedPage != null)
                 .flatMapIterable(ParsedPage::getSections)
                 .flatMapIterable(section -> section.getLinks(Link.type.INTERNAL))
