@@ -16,8 +16,8 @@ public class WikiVerticle extends AbstractVerticle {
 
     @Override
     public void start() throws Exception {
-        vertx.eventBus().consumer("fetchArticle").handler(msg -> {
-            wikiService.fetchArticleObservable(msg.body().toString())
+        vertx.eventBus().<String>consumer("fetchArticle").handler(msg -> {
+            wikiService.fetchArticleObservable(msg.body())
                     .subscribe(msg::reply);
         });
     }
