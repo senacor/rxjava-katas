@@ -1,0 +1,37 @@
+Eine '''Observable''' ({{laS|''observabilis''}} ‚beobachtbar‘) ist in der [[Physik]], insbesondere der [[Quantenphysik]], der formale Name für eine [[Messgröße]] und den ihr zugeordneten [[Operator (Mathematik)|Operator]], die im [[Zustand (Quantenmechanik)|Zustandsraum]], einem [[Hilbertraum]], wirken. Beispiele sind die [[Energie]], die Ortskoordinaten, die Koordinaten des [[Impuls (Physik)|Impulses]] und die Komponenten des [[Spin]]s eines [[Teilchen]]s sowie die [[Pauli-Matrizen]].
+
+== Von-Neumann'sche Theorie ==
+Im traditionellen [[John von Neumann|von-Neumann'schen]] mathematischen Formalismus der [[Quantenmechanik]] werden Observablen durch [[selbstadjungiert]]e, [[dicht definiert]]e [[linearer Operator|lineare Operatoren]] <math>A</math> auf einem [[Hilbertraum]] <math>\mathcal{H}</math> dargestellt. Diese Theorie verallgemeinert die [[Born’sche Wahrscheinlichkeitsinterpretation]].
+
+Das Ergebnis einer [[Quantenmechanische Messung|Messung]] der Observablen <math>A</math> eines quantenmechanischen Systems, dessen [[Zustand (Quantenmechanik)|Zustand]] durch einen [[normierter Vektor|normierten Vektor]] <math>|\Psi\rangle\in\mathcal{H}</math> beschrieben wird ([[Wellenfunktion]] in [[Bra-Ket-Notation]]), ist [[Zufall|zufällig]]. Die Wahrscheinlichkeit, mit der ein bestimmter Messwert <math>B</math> auftreten kann, ist gegeben durch die [[Wahrscheinlichkeitsverteilung]]
+
+:<math>P[B] = \langle \Psi|\lambda_A(B)|\Psi \rangle</math>
+
+wobei <math>\lambda_A</math> das [[Spektralmaß]] von <math>A</math> nach dem [[Spektralsatz]] bezeichnet.
+
+Wird der quantenmechanische Zustand des Systems allgemeiner durch einen [[Dichteoperator]] <math>\rho</math> beschrieben, so ist die Wahrscheinlichkeitsverteilung des Messergebnisses gegeben durch
+
+:<math>P[B] = \operatorname{Spur}(\lambda_A(B) \, \rho)</math>
+
+mit dem [[Spurklasseoperator]] <math>\operatorname{Spur}</math>.
+
+Der [[Erwartungswert]] des Messergebnisses, also der Erwartungswert der Wahrscheinlichkeitsverteilung <math>P</math>, ist gegeben durch <math>\langle\Psi|A|\Psi\rangle</math> bzw. durch <math>\operatorname{Spur}(A \, \rho)</math>.
+
+Im Spezialfall, dass das Spektrum von <math>A</math> diskret und einfach ist, sind die möglichen Messergebnisse die [[Eigenwert]]e von <math>A</math>. Die Wahrscheinlichkeit, den Eigenwert <math>a</math> als Messergebnis zu finden, lautet dann <math>|\langle\phi_a|\Psi\rangle|^2</math> bzw. <math>\langle\phi_a|\rho\phi_a\rangle</math>, wobei <math>\phi_a</math> einen normierten [[Eigenvektor]] zum Eigenwert <math>a</math> bezeichnet.
+
+'''Beispiele:'''
+* Der Observablen „Ort“ eines Teilchens in einer Dimension entspricht (in Ortsdarstellung) der Multiplikationsoperator mit <math>x</math> über dem [[Lp-Raum|Lebesgue-Raum]] <math>L^2(\mathbb{R})</math>, der [[Ortsoperator]].
+* Der Observablen „Impuls“ eines Teilchens in einer Dimension entspricht (in Ortsdarstellung) der [[Differentialoperator]] <math>\tfrac{\hbar}{\mathrm i}\tfrac{\mathrm d}{\mathrm dx}</math> über <math>L^2(\mathbb{R})</math>; genauer gesagt dessen selbstadjungierte [[Fortsetzung (Mathematik)|Fortsetzung]], der [[Impulsoperator]]. Hierbei bezeichnet <math>\hbar</math> das [[Plancksches Wirkungsquantum #Werte|reduzierte Plancksche Wirkungsquantum]].
+* Der Observablen „Energie“ entspricht der [[Hamiltonoperator]].
+
+== Beschreibung durch POVM ==
+{{Hauptartikel|Positive Operator Valued Probability Measure|titel1=Positive Operator Valued Probability Measure (POVM)}}
+Nicht in den traditionellen von-Neumann'schen Formalismus passt die Beschreibung von Zeitmessungen, z.&nbsp;B. der Ankunftszeit eines Teilchens in einem [[Detektor]]. Eine genauere realistische formale Modellierung realer Experimente zeigt, dass auch die meisten realen Messungen an Quantensystemen nicht genau durch von-Neumann’sche Observable beschrieben werden. Diese Defekte behebt die allgemeinere Beschreibung quantenmechanischer Observablen durch POVM.
+
+== Siehe auch ==
+* [[Komplementäre Observablen]]
+* [[Vollständiger Satz kommutierender Observablen]]
+
+[[Kategorie:Quantenmechanik]]
+[[Kategorie:Quantenfeldtheorie]]
+[[Kategorie:Theoretische Chemie]]

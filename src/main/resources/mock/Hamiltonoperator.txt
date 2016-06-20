@@ -1,0 +1,99 @@
+Der '''Hamiltonoperator''' <math>\hat H</math> (auch '''Hamiltonian''') bestimmt in der [[Quantenmechanik]] die [[Zeitentwicklung]] und die möglichen [[Energie]]<nowiki/>messwerte, er ist daher der '''Energieoperator'''. Er liefert beispielsweise die [[Energieniveau]]s des [[Elektron]]s im [[Wasserstoffatom]]. Er ist nach [[William Rowan Hamilton]] benannt. Auf ihn geht die [[Hamiltonsche Mechanik|hamiltonsche Formulierung der klassischen Mechanik]] zurück, in der die [[Hamilton-Funktion]] die Zeitentwicklung und die Energie bestimmt.
+
+== Zeitentwicklung und Energie ==
+In der Quantenmechanik wird jeder [[Zustand (Quantenmechanik)|Zustand]] des betrachteten physikalischen Systems durch einen zugehörigen [[Vektor]] <math>\psi </math> im [[Hilbertraum]] angegeben. Seine Zeitentwicklung wird nach der [[Schrödingergleichung]] durch den Hamiltonoperator <math>\hat H</math> bestimmt:
+
+:<math>\mathrm i \, \hbar {\partial \over \partial t} \, \psi (t) = \hat H \, \psi (t)</math>
+
+mit
+* der [[imaginäre Einheit|imaginären Einheit]] <math>\mathrm i</math>
+* der [[Plancksches Wirkungsquantum|reduzierten Planckschen Konstanten]] <math>\hbar = \frac{h}{2\pi}.</math>
+
+Man erhält den Hamiltonoperator in vielen Fällen durch sogenannte ''kanonische Quantisierung'' aus der [[Hamiltonfunktion]] <math>\mathcal H(t,x,p) </math> des entsprechenden klassischen Systems (mit der [[generalisierte Koordinate|generalisierten Koordinate]]&nbsp;x und dem [[Kanonischer Impuls|kanonischen Impuls]]&nbsp;p). Dazu wird der algebraische Ausdruck für die Hamilton-Funktion als Funktion von [[Operator (Mathematik)|Operatoren]] gelesen ([[Ortsoperator]] <math>\hat x</math> und [[Impulsoperator]] <math>\hat p</math>), die den [[Kanonische Vertauschungsrelationen|kanonischen Vertauschungsrelationen]] genügen. Dies ist allerdings nicht eindeutig, da die Funktion <math>x\,p -p\,x</math> den Wert <math>0</math> hat, die Operatorfunktion <math>\hat x\, \hat p - \hat p\, \hat x</math> aber den Wert <math>\mathrm i \hbar.</math> Zudem ist <math> x \, p </math> reell, aber <math>\hat x\, \hat p </math> ist [[Hermitescher Operator|hermitesch]]. Außerdem gibt es quantenmechanische Größen wie den [[Spin]], die in der [[klassische Physik|klassischen Physik]] nicht auftreten. Wie sie sich auf die Zeitentwicklung auswirken, folgt nicht aus Analogien mit der klassischen Physik, sondern muss aus den physikalischen Befunden erschlossen werden.
+
+Die Eigenwertgleichung
+
+:<math>\hat H \varphi_E = E \varphi_E</math>
+
+bestimmt die [[Eigenvektor]]en <math>\varphi_E</math> des Hamiltonoperators. Sie sind bei zeitunabhängigem Hamiltonoperator [[Stationärer Zustand|stationär]], d.&nbsp;h. in jeder beobachtbaren Eigenschaft zeitunabhängig. Die Eigenwerte <math>E</math> sind die zugehörigen Energien.
+
+Da der Hamiltonoperator hermitesch (genauer [[Wesentlich selbstadjungierter Operator|wesentlich selbstadjungiert]]) ist, besagt der [[Spektralsatz]], dass die Energien [[reell]] sind und dass die Eigenvektoren eine [[Orthonormalbasis]] des Hilbertraums bilden. Je nach System kann das Energiespektrum [[diskret]] oder kontinuierlich sein. Manche Systeme, zum Beispiel das Wasserstoffatom oder ein [[Teilchen]] im [[Potentialtopf]], haben ein nach unten [[beschränkt]]es, diskretes Spektrum und darüber ein [[Kontinuum (Physik)|Kontinuum]] möglicher Energien. 
+
+Der Hamiltonoperator erzeugt die unitäre [[Zeitentwicklungsoperator|Zeitentwicklung]]. Falls für alle Zeiten <math>\tau</math> und <math>\tau'</math> zwischen <math>t_0</math> und <math>t</math> der Hamiltonoperator <math>H(\tau)</math> mit <math>H(\tau')</math> [[Kommutativgesetz|kommutiert]], so bewirkt
+
+:<math>\hat U(t,t_0) = \exp\left(-\frac{\mathrm i}{\hbar}\int_{t_0}^t\hat H(\tau)\,\mathrm d\tau\right)</math>
+
+die [[Unitärer Operator|unitäre Abbildung]] jedes anfänglichen Zustandes <math>\psi(t_0)</math> auf den zugehörigen Zustand <math>\psi(t)=U(t,t_0)\psi(t_0) </math> zur Zeit <math>t.</math>
+
+Falls der Hamiltonoperator nicht von der Zeit abhängt, vereinfacht sich dies zu
+
+:<math>\hat U(t,t_0) = \exp\left(-\frac{\mathrm i}{\hbar}(t - t_0)\hat H\right).</math>
+
+Operatoren, die mit <math>\hat H</math> vertauschen, sind bei zeitunabhängigem Hamiltonoperator [[Erhaltungsgröße]]n des Systems. Insbesondere ist dann die Energie eine Erhaltungsgröße.
+
+Für die Energie gilt auch eine [[Energie-Zeit-Unschärferelation]], nur muss man in der Quantenmechanik bei deren Ableitung anders vorgehen als zum Beispiel bei der Ort-Impuls-[[Unschärferelation]].
+
+== Beispiele ==
+=== Quantenmechanisches Teilchen im Potential ===
+Aus der Hamiltonfunktion
+
+:<math>\mathcal{H} \left( {\mathbf{x}},{\mathbf{p}} \right) = \frac{{\mathbf{p}}^2}{2 \, m}+V({\mathbf{x}})</math>
+
+für ein nicht[[relativistisch]]es, klassisches Teilchen der Masse <math>m</math>, das sich im [[Potential (Physik)|Potential]] <math>V(\mathbf x)</math> bewegt, kann ein Hamiltonoperator abgelesen werden. Dazu werden die Ausdrücke für den Impuls und das Potential durch die entsprechenden Operatoren ersetzt:
+
+:<math>\hat{H}(\hat{\mathbf{x}}, \hat{\mathbf{p}}) = \frac{\hat{\mathbf{p}}^2}{2\,m}+V(\hat{\mathbf{x}}).</math>
+
+In der [[Ortsdarstellung]] wirkt der Impulsoperator <math>\hat{\mathbf{p}}</math> als Ableitung <math>-\mathrm i\hbar\tfrac{\partial}{\partial \mathbf{x}}</math> und der Operator <math>V(\hat{\mathbf{x}})</math> als Multiplikation mit der Funktion <math>V(\mathbf{x}).</math> Die Anwendung dieses Hamiltonoperators eines Punktteilchens der Masse <math>m</math> im Potential <math>V(\mathbf{x})</math> auf die Orts[[wellenfunktion]] <math>\Psi</math> des Teilchens wirkt sich demnach aus durch
+
+:<math>\Rightarrow \hat{H}\Psi(\mathbf x) = \Bigl(-\frac{\hbar^2}{2 \, m}\Delta+V(\mathbf{x})\Bigr)\Psi(\mathbf x).</math>
+
+Hierbei ist <math>\Delta = \tfrac{\partial^2}{\partial x^2} + \tfrac{\partial^2}{\partial y^2} + \tfrac{\partial^2}{\partial z^2}</math> der [[Laplace-Operator]].
+
+Die Schrödingergleichung lautet somit
+
+:<math>\mathrm i \, \hbar \, \frac{\partial}{\partial t}\Psi(t,\mathbf x)
+= -\frac{\hbar^2}{2 \, m}\Delta\Psi(t,\mathbf x) + V(\mathbf x) \cdot \Psi(t,\mathbf x).</math>
+
+Diese Schrödingergleichung einer Punktmasse im Potential ist die Grundlage zur Erklärung des [[Tunneleffekt]]s. Sie liefert bei Einsetzen des [[Coulombpotential]]s (als Potential für die Wechselwirkung zwischen einem Elektron und einem [[Proton]]) die [[Spektrallinie]]n des [[Wasserstoff]]-[[Atom]]s. Durch Einsetzen entsprechender Potentiale können auch die Spektrallinien anderer leichter Atome berechnet werden.
+
+=== Eindimensionaler harmonischer Oszillator ===
+{{Hauptartikel|Harmonischer Oszillator (Quantenmechanik)}}
+Analog erhält man für den quantenmechanischen harmonischen Oszillator, der sich nur längs einer Linie bewegen kann, den Hamiltonoperator
+
+:<math>\hat H = -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2} + \frac{1}{2}m \, \omega^2 \, x^2.</math>
+
+Die Energien lassen sich algebraisch bestimmen. Man erhält
+
+:<math>E_n = E_0 + n \, \hbar \omega, \quad n \in \{0,1,2,\dots\}.</math>
+
+Es handelt sich dabei um dieselben Energien wie die eines [[Grundzustand]]es mit Energie <math>E_0</math>, dem <math>n</math>-fach ein [[Quant]] der Energie <math>\hbar \, \omega</math> hinzugefügt wurde.
+
+=== Spin im Magnetfeld ===
+Zum Spin <math>\mathbf S</math> eines Elektrons, das an ein Atom gebunden ist und sich in einem [[Multiplizität#Mehrelektronen-Systeme|ungepaarten]] Zustand (allein in der [[Elektronenwolke]]) im [[Magnetfeld]] <math>\mathbf B</math> befindet, gehört der Hamiltonoperator 
+:<math>\hat H = -\gamma \mathbf S \cdot \mathbf B.</math>
+
+Dabei ist
+* <math>\gamma</math> das [[Gyromagnetisches Verhältnis|gyromagnetische Verhältnis]] des Elektrons
+* <math>\mathbf S</math> der [[Spin]]operator.
+Da der Spin in Richtung des Magnetfeldes nur die Eigenwerte <math>\hbar/2</math> oder <math>- \hbar/2</math> annehmen kann ([[Spinpolarisation]]), sind die möglichen Energien <math>\pm \frac{\gamma}{2}\,|\mathbf B|</math>. Im inhomogenen Magnetfeld des [[Stern-Gerlach-Versuch]]s spaltet daher ein [[Teilchenstrahl]] aus Silberatomen in zwei Teilstrahlen auf.
+
+=== Geladenes, spinloses Teilchen im elektromagnetischen Feld ===
+Den Hamiltonoperator eines Teilchen mit [[elektrische Ladung|Ladung]] <math>q</math> in einem äußeren [[Elektromagnetische Wechselwirkung|elektromagnetischen Feld]] erhält man durch [[Minimale Kopplung|minimale Substitution]]
+
+:<math>\hat{H} = \frac{1}{2m}\bigl(\hat{\mathbf{p}} - q \mathbf{A}(t,\hat{\mathbf{x}})\bigr)^2 + q \, \varphi(t,\hat{\mathbf{x}}).</math>
+
+Hier bezeichnet
+* <math>\mathbf{A}(t,\hat{\mathbf{x}})</math> das [[Vektorpotential]]
+* <math>\varphi(t,\hat{\mathbf{x}})</math> das [[Skalarpotential]].
+
+Beim Ausmultiplizieren der Klammer ist zu beachten, dass die Operatoren <math>\hat{\mathbf{p}}</math> und <math>\mathbf{A}(t,\hat{\mathbf{x}})</math> nur bei [[Coulomb-Eichung]] vertauschen.
+
+== Siehe auch ==
+* [[Darwin-Term]]
+
+== Literatur ==
+* Peter Rennert, Angelika Chassé und Wolfram Hergert: ''Einführung in die Quantenphysik.'' ''Experimentelle und theoretische Grundlagen mit Aufgaben, Lösungen und Mathematica-Notebooks.'' Springer Spektrum, Wiesbaden 2013, ISBN 978-3-658-00769-0.
+
+[[Kategorie:Quantenmechanik]]
+[[Kategorie:Quantenchemie]]
+[[Kategorie:William Rowan Hamilton als Namensgeber]]

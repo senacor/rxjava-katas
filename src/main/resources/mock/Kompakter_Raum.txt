@@ -1,0 +1,155 @@
+'''Kompaktheit''' ist ein zentraler Begriff der mathematischen [[Topologie (Mathematik)|Topologie]], und zwar eine Eigenschaft, die einem [[Topologischer Raum|topologischen Raum]] zukommt oder nicht. Sie wird in vielen mathematischen Aussagen vorausgesetzt – oft auch in abgeschwächter Form als [[Lindelöf-Raum|Lindelöf-Eigenschaft]] oder [[Parakompakter Raum|Parakompaktheit]]. [[Lokalkompakter Raum|Lokalkompaktheit]] ist im Falle von [[Hausdorff-Raum|Hausdorff-Räumen]] ebenfalls eine abgeschwächte Bedingung. Eine kompakte Menge nennt man je nach Kontext auch ''Kompaktum'' oder ''kompakter Raum''; dabei ist nicht erheblich, ob sie Teilmenge eines Oberraums ist oder nicht.
+
+Einfache Beispiele für kompakte Mengen sind [[Abgeschlossene Menge|abgeschlossene]] und [[Beschränktheit|beschränkte]] Teilmengen des [[Euklidischer Raum|Euklidischen Raums]] <math>\R^n</math> wie das [[Intervall (Mathematik)|Intervall]] <math>[0,1]</math> (bei <math>n=1</math>). Einfache Gegenbeispiele bilden die nicht kompakten Mengen <math>\N\subset\R</math> oder <math>\left[0,1\right[\subset\R</math>.
+
+== Definition ==
+
+=== Kompaktheit im Euklidischen Raum ===
+{{Hauptartikel|Kompaktheit (Reelle Zahlen)}}
+
+Eine Teilmenge des [[Euklidischer Raum|euklidischen Raums]] <math>\R^n</math> heißt ''kompakt'', wenn sie [[Abgeschlossene Menge|abgeschlossen]] und [[Beschränktheit|beschränkt]] ist. Für diese spezielle Definition gilt der [[Satz von Heine-Borel]]:
+:Eine Teilmenge des <math>\R^n</math> ist genau dann kompakt, wenn jede [[offene Überdeckung]] der Teilmenge eine endliche Teilüberdeckung enthält.
+Der Satz von Heine-Borel motiviert die folgende Verallgemeinerung der Definition der Kompaktheit auf topologische Räume.
+
+=== Kompaktheit in topologischen Räumen ===
+Ein [[topologischer Raum]] <math>(X,\mathcal{T})</math> heißt ''kompakt'', wenn jede [[offene Überdeckung]] 
+: <math>X=\bigcup_{i\in I}U_i\quad\textrm{mit}\quad U_i\in\mathcal{T}</math>
+eine [[endliche Teilüberdeckung]]
+: <math>X=U_{i_1}\cup U_{i_2}\cup\dotsb\cup U_{i_n} \text{ mit } i_1,\dotsc,i_n\in I</math>
+besitzt.<ref name="Querenburg">[[Boto von Querenburg]]: ''Mengentheoretische Topologie.'' 3., neu bearbeitete und erweiterte Auflage. Springer, Berlin u. a. 2001, ISBN 3-540-67790-9</ref>{{rp|105}}
+
+Eine Teilmenge <math>M</math> eines topologischen Raums <math>(X,\mathcal{T})</math> heißt ''kompakt'', wenn jede offene Überdeckung
+: <math>M\subseteq\bigcup_{i\in I}U_i\quad\textrm{mit}\quad U_i\in\mathcal{T}</math>
+eine endliche Teilüberdeckung
+: <math>M\subseteq U_{i_1}\cup U_{i_2}\cup\dotsb\cup U_{i_n} \text{ mit } i_1,\dotsc,i_n\in I</math>
+besitzt. Die beiden Begriffe sind kompatibel. Eine Teilmenge eines topologischen Raumes ist genau dann kompakt, wenn sie als topologischer Raum mit der [[Teilraumtopologie]] kompakt ist.<ref name="Querenburg" />{{rp|105}}
+
+Einige Autoren wie beispielsweise [[Nicolas Bourbaki]]<ref name="Querenburg"/>{{rp|105}} verwenden für die hier definierte Eigenschaft den Begriff ''quasikompakt'' und reservieren den Begriff „kompakt“ für kompakte [[Hausdorff-Raum|Hausdorff-Räume]]; dies ist durch die französische Prägung insbesondere in der [[Algebraische Geometrie|algebraischen Geometrie]] üblich.
+
+== Geschichte ==
+
+Um das Jahr 1900 waren die folgenden Charakterisierungen kompakter Teilmengen <math>A</math> des <math>\R^n</math> bekannt:
+# Die Teilmenge <math>A</math> ist beschränkt und abgeschlossen.
+# Jede Teilmenge von <math>A</math> mit unendlich vielen Elementen hat wenigstens einen [[Häufungspunkt]]. ([[Satz von Bolzano-Weierstraß]])
+# Jede Folge in <math>A</math> besitzt eine in <math>A</math> konvergente Teilfolge. ([[Satz von Bolzano-Weierstraß]])
+# Jede offene Überdeckung von <math>A</math> hat eine endliche Teilüberdeckung. ([[Satz von Heine-Borel]])
+
+Die erste Charakterisierung ist abhängig von der gewählten [[Metrischer Raum|Metrik]]. Die anderen drei Charakterisierung hingegen lassen sich auf beliebige topologische Räume übertragen und bieten somit eine Möglichkeit einen Kompaktheitsbegriff für topologische Räume zu definieren. [[Maurice René Fréchet]] nannte 1906 Teilmengen metrischer Räume kompakt, die die zweite Eigenschaft erfüllten. Diese Definition wurde später auf topologische Räume übertragen. Man nannte also die im heutigen Sinne abzählbar kompakten Räume damals kompakt. [[Pawel Sergejewitsch Alexandrow]] und [[Pawel Samuilowitsch Urysohn]] führten 1924 den heutigen Kompaktheitsbegriff im Sinne der vierten Eigenschaft ein. Räume, die diese Eigenschaft erfüllten, nannten sie bikompakt. Diese Kompaktheitsdefinition setzte sich allerdings erst um 1930 durch, als [[Andrei Nikolajewitsch Tichonow]] bewies, dass beliebige [[Produkttopologie|Produkte]] bikompakter Räume wieder bikompakte Räume ergeben. Dieses Resultat ist heute als [[Satz von Tychonoff]] bekannt. Für abzählbar kompakte und [[Folgenkompaktheit|folgenkompakte]] Räume (Eigenschaft drei) gilt dies nicht.<ref name="Querenburg" />{{rp|330}}
+
+== Von Endlichkeit zu Kompaktheit ==
+[[Datei:VonEndlichkeitZuKompaktheit.png|thumb|Der Punkt <math>x</math> wird von <math>A=\{a,b,c\}</math> getrennt.]]
+Ein wichtiger Grund für die Betrachtung kompakter Räume ist, dass sie in mancher Hinsicht als Verallgemeinerung von endlichen topologischen Räumen gesehen werden können, insbesondere sind auch alle endlichen Räume kompakt. Es gibt viele Ergebnisse, die sich leicht für endliche Mengen beweisen lassen, deren Beweise dann mit kleinen Änderungen auf kompakte Räume zu übertragen sind. Hier ein Beispiel:
+
+Wir setzen voraus, dass <math>X</math> ein [[Hausdorff-Raum]] ist, <math>x</math> ein Punkt aus <math>X</math> und <math>A</math> eine endliche Teilmenge von <math>X</math>, die <math>x</math> nicht enthält. Dann können wir <math>x</math> und <math>A</math> durch [[Umgebung (Mathematik)|Umgebungen]] trennen: für jedes <math>a</math> aus <math>A</math> seien <math>U_a(x)</math> und <math>V(a)</math> disjunkte Umgebungen, die jeweils <math>x</math> bzw. <math>a</math> enthalten. Dann sind die Schnittmenge aller <math>U_a(x)</math> und die Vereinigung aller <math>V(a)</math> die benötigten Umgebungen von <math>x</math> und <math>A</math>.
+
+Ist <math>A</math> nicht endlich, gilt der Beweis nicht mehr, da der Durchschnitt von unendlich vielen Umgebungen keine Umgebung mehr sein muss. Für den Fall, dass <math>A</math> kompakt ist, lässt sich die Beweisidee aber wie folgt übertragen:
+
+Wir setzen wieder voraus, dass <math>X</math> ein [[Hausdorff-Raum]] ist, <math>x</math> ein Punkt aus <math>X</math> und <math>A</math> eine kompakte Teilmenge von <math>X</math>, die <math>x</math> nicht enthält. Dann können wir <math>x</math> und <math>A</math> durch [[Umgebung (Mathematik)|Umgebungen]] trennen: für jedes <math>a</math> aus <math>A</math> seien <math>U_a(x)</math> und <math>V(a)</math> disjunkte offene Umgebungen, die jeweils <math>x</math> bzw. <math>a</math> enthalten. Da <math>A</math> kompakt ist und von den offenen Mengen <math>V(a)</math> überdeckt wird, gibt es endlich viele Punkte <math>a_1,\ldots,a_n \in A</math> mit <math>A\subset V(a_1)\cup\ldots\cup V(a_n)</math>. Dann sind die Schnittmenge aller <math>U_{a_i}(x)</math> und die Vereinigung aller <math>V(a_i)</math>, <math>i=1,\ldots, n</math>, die benötigten Umgebungen von <math>x</math> und <math>A</math>.
+
+Man sieht an diesem Beispiel, wie die Kompaktheit verwendet wird, um von möglicherweise unendlich vielen Umgebungen auf endlich viele zu kommen, mit denen dann der bekannte Beweis für endliche Mengen fortgeführt werden kann. Viele Beweise und Sätze über kompakte Mengen folgen diesem Muster.
+
+== Beispiele ==
+
+=== Kompakte Räume ===
+* Betrachtet man das geschlossene Einheits-[[Intervall (Mathematik)|Intervall]] [0, 1] als Teilmenge von <math>\R</math> versehen mit der [[Standardtopologie]], so ist das Intervall ein kompakter, topologischer Raum. Ebenfalls kompakt sind die <math>n</math>-[[Kugel]]n und <math>n-1</math>-[[Sphäre (Mathematik)|Sphäre]]n betrachtet als Teilmengen der <math>\R^n</math> versehen mit der Standardtopologie für beliebige natürliche Zahlen <math>n</math>.
+* Alle [[Topologischer Raum|topologischen Räume]] mit endlicher Topologie, z.&nbsp;B. endliche Räume, sind kompakt.
+* Für eine natürliche Zahl <math>p>1</math> betrachte die Menge <math>p^\N</math> aller [[Folge (Mathematik)|Folgen]] mit Werten aus <math>\{0,\dotsc,p-1\}</math>. Auf dieser Menge kann man eine Metrik <math>d</math> definieren, indem man <math>d((x_k),(y_k)):=p^{-m}</math> setzt, wobei <math>m:=\inf\{k\in\N:x_k\neq y_k\}</math>. Ist <math>(x_k)=(y_k)</math>, so sei <math>d((x_k),(y_x)):=0</math>. Aus dem Satz von Tychonoff (siehe unten) folgt, dass der durch diese Metrik induzierte topologische Raum kompakt ist. Diese Konstruktion kann für jede endliche Menge durchgeführt werden, nicht nur für <math>\{0,\dotsc,p-1\}</math>. Der entstehende metrische Raum ist dabei sogar [[Ultrametrik|ultrametrisch]]. Es gilt folgendes:
+**Ist <math>p=2</math>, dann ist die Abbildung <math>(x_1, x_2,\dotsc) \mapsto 2 (x_1 3^{-1} + x_2 3^{-2} + x_3 3^{-3} +\dotsb)</math> ein Homöomorphismus von <math>2^\N</math> in die [[Cantor-Menge]].
+**Ist <math>p</math> eine Primzahl, dann ist die Abbildung <math>(x_1, x_2,\dotsc) \mapsto (x_1 p^{0} + x_2 p^{1} + x_3 p^{2} + \dotsb)</math> ein Homöomorphismus von <math>p^\N</math> in die <math>p</math>-adischen ganzen Zahlen.
+* Das Spektrum eines beliebigen [[Stetigkeit|stetigen]] [[Linearer Operator|linearen Operators]] auf einem [[Hilbertraum]] ist eine kompakte Teilmenge der [[Komplexe Zahlen|Komplexen Zahlen]].
+* Das Spektrum eines beliebigen [[Kommutativer Ring|kommutativen Ringes]] oder einer [[Boolesche Algebra|booleschen Algebra]] ist ein kompakter Raum mit der [[Zariski-Topologie]].
+* Weitere Beispiele kompakter Mengen aus der [[Funktionalanalysis]] erhält man durch den [[Satz von Banach-Alaoglu]], den [[Satz von Kolmogorow-Riesz]], den [[Satz von Arzelà-Ascoli]] oder das [[Kompaktheitskriterium von James]].
+
+=== Nicht kompakte Räume ===
+* Die [[Reelle Zahl|reellen Zahlen]] <math>\R</math> versehen mit der Standardtopologie sind nicht kompakt. Ebenfalls nicht kompakt sind das halboffene Intervall <math>[0,1[</math>, die ganzen Zahlen <math>\Z</math> oder die natürlichen Zahlen <math>\N</math> betrachtet als Teilmengen von <math>\R</math>. Versieht man jedoch beispielsweise <math>\N</math> mit der trivialen Topologie <math>\mathcal{T}:=\{\emptyset,\N\}</math>, so ist <math>(\N,\mathcal{T})</math> kompakt. Ob eine Menge kompakt ist, hängt daher im Allgemeinen von der gewählten Topologie ab.
+* Die abgeschlossene Einheitskugel des Raumes <math>\ell^\infty = L^\infty(\mathbb{N};\mathbb{R})</math> der beschränkten reellen Zahlenfolgen (siehe [[Lp-Raum|''L<sup>p</sup>''-Raum]]) ist nicht kompakt, obwohl sie abgeschlossen und beschränkt ist. Es gilt allgemein, dass die Einheitskugel in einem [[Normierter Raum|normierten Raum]] genau dann kompakt ist, wenn die Dimension des Raums endlich ist.
+
+== Eigenschaften ==
+
+*Das [[Bildmenge|Bild]] einer kompakten Menge unter einer [[Stetigkeit|stetigen]] Funktion ist kompakt. Folglich nimmt eine reellwertige stetige Funktion auf einem nichtleeren Kompaktum ein globales [[Extremwert|Minimum]] und ein globales [[Extremwert|Maximum]] an.
+
+*Eine [[Stetigkeit|stetige]] Funktion auf einem kompakten [[Metrischer Raum|metrischen Raum]] ist [[gleichmäßig stetig]]. Diese Aussage ist auch als [[Satz von Heine]] bekannt.
+
+*Jede [[Umgebung (Mathematik)|Umgebung]] eines Kompaktums in einem [[uniformer Raum|uniformen Raum]] ist [[gleichmäßige Umgebung]]. Das heißt, es liegt mit einer ''Nachbarschaft'' in der Umgebung. Im metrischen Falle heißt dies, dass alle Punkte mit gleich großen Kugeln einer gewählten Größe innerhalb der Umgebung liegen. Die Nachbarschaft kann sogar so gewählt werden, dass das Komplement der Umgebung mit der Nachbarschaft außerhalb des Kompaktums mit der Nachbarschaft liegt.<ref>[[Nicolas Bourbaki]]: ''Elements of Mathematics. General Topology.'' Band 1. Springer, Berlin u. a. 1966, Kapitel ⅠⅠ, § 4.3, Proposition 4.</ref>
+
+*Jede unendliche [[Folge (Mathematik)|Folge]] <math>(a_n)_{n \in \mathbb N}</math> von Elementen einer kompakten Menge <math>K \subset E</math> besitzt einen [[Häufungspunkt]] in <math>K</math>. Erfüllt <math>K</math> das erste [[Abzählbarkeitsaxiom]], so existiert sogar eine in <math>K</math> konvergente Teilfolge <math>(a_{n_i})_{i \in \mathbb N}</math>. <br /> Die Umkehrung gilt jedoch nicht in jedem topologischen Raum, das heißt eine Teilmenge, in der jede Folge eine (in der Teilmenge) konvergente Teilfolge hat (eine solche Teilmenge heißt folgenkompakt, siehe unten), muss nicht kompakt sein. (Ein Beispiel bildet die Menge der abzählbaren [[Ordinalzahlen]] <math>[0,\omega_1[</math> mit der Ordnungstopologie.)
+
+*Eine abgeschlossene Teilmenge eines kompakten Raumes ist kompakt.
+
+*Eine kompakte Teilmenge eines [[Hausdorff-Raum]]es ist abgeschlossen.
+
+*Eine nicht-leere kompakte Teilmenge der [[Reelle Zahlen|reellen Zahlen]] hat ein größtes und ein kleinstes Element (siehe auch [[Supremum]], [[Infimum]]).
+
+*Für jede [[Teilmenge]] <math>M</math> des euklidischen Raumes <math>\R^n</math> sind die folgenden drei Aussagen äquivalent (vergleiche [[Satz von Heine-Borel]]):
+** <math>M</math> ist kompakt, das heißt jede offene Überdeckung von <math>M</math> hat eine endliche Teilüberdeckung.
+** Jede [[Folge (Mathematik)|Folge]] in der Menge <math>M</math> hat eine in <math>M</math> [[Konvergenz (Mathematik)|konvergente]] Teilfolge (also mindestens einen Häufungspunkt).
+** Die Menge <math>M</math> ist [[Abgeschlossene Menge|abgeschlossen]] und [[Beschränktheit|beschränkt]].
+
+*Ein [[metrischer Raum]] ist genau dann kompakt, wenn er [[Vollständiger Raum|vollständig]] und [[Totalbeschränkt|total beschränkt]] ist.
+
+*Das [[Produkttopologie|Produkt]] einer beliebigen Klasse von kompakten Räumen ist kompakt in der [[Produkttopologie]]. ([[Satz von Tychonoff]] – dies ist äquivalent zum [[Auswahlaxiom]])
+
+*Ein kompakter Hausdorff-Raum ist [[Normaler Raum|normal]].
+
+*Jede stetige [[bijektiv]]e Abbildung von einem kompakten Raum auf einen Hausdorff-Raum ist ein [[Homöomorphismus]].
+
+*Ein metrischer Raum ist genau dann kompakt, wenn jede [[Folge (Mathematik)|Folge]] in dem Raum eine konvergente Teilfolge mit ihrem [[Grenzwert (Folge)|Grenzwert]] in dem Raum hat.
+
+*Ein topologischer Raum ist genau dann kompakt, wenn jedes [[Netz (Topologie)|Netz]] auf dem Raum ein Teilnetz hat, das einen Grenzwert in dem Raum hat.
+
+*Ein topologischer Raum ist genau dann kompakt, wenn jeder [[Filter (Mathematik)|Filter]] auf dem Raum eine konvergente Verfeinerung besitzt.
+
+*Ein topologischer Raum ist genau dann kompakt, wenn jeder [[Ultrafilter]] auf dem Raum konvergiert.
+
+*Ein topologischer Raum kann genau dann in einen kompakten Hausdorff-Raum eingebettet werden, wenn er ein [[Tychonoff-Raum]] ist.
+
+*Jeder topologische Raum <math>X</math> ist ein [[Dichte Teilmenge|dichter]] [[Teilraumtopologie|Unterraum]] eines kompakten Raumes, der höchstens einen Punkt mehr besitzt als <math>X</math>. (Siehe auch [[Alexandroff-Kompaktifizierung]].)
+
+*Ein metrisierbarer Raum <math>X</math> ist genau dann kompakt, wenn jeder zu <math>X</math> [[Homöomorphismus|homöomorphe]] metrische Raum vollständig ist.
+
+*Falls der metrische Raum <math>X</math> kompakt ist und eine offene Überdeckung von <math>X</math> gegeben ist, dann existiert eine Zahl <math>\delta > 0</math>, so dass jede Teilmenge von <math>X</math> mit Durchmesser <math>{}< \delta</math> in einem Element der Überdeckung enthalten ist. ([[Lemma von Lebesgue]])
+
+*Jeder kompakte Hausdorffraum lässt genau eine [[uniforme Struktur]] zu, die die Topologie induziert. Die Umkehrung gilt nicht.<ref>{{Literatur|Online=[http://msp.org/pjm/1959/9-4/pjm-v9-n4-p06-s.pdf online] (PDF; 1,2&nbsp;MB)|Titel=Uniformizable Spaces with a Unique Structure|Autor=[[Steven Gaal|István Sándor Gál]]|Sammelwerk=Pacific Journal of Mathematics|Band=Bd.&nbsp;9|Nummer=4|Jahr=1959|Monat=August|ISSN=0030-8730|Seiten=1053–1060}}</ref>
+
+*Falls ein topologischer Raum eine Subbasis hat, so dass jede Überdeckung des Raumes durch Elemente der Subbasis eine endliche Teilüberdeckung hat, so ist der Raum kompakt. (Alexanders Subbasis-Satz)
+
+*Zwei kompakte Hausdorff-Räume <math>X_1</math> und <math>X_2</math> sind genau dann [[Homöomorphismus|homöomorph]], wenn ihre [[Ring (Algebra)|Ringe]] von stetigen reell-wertigen Funktionen <math>C(X_1)</math> und <math>C(X_2)</math> [[Isomorphismus|isomorph]] sind.
+
+== Andere Formen von Kompaktheit ==
+
+Es gibt einige topologische Eigenschaften, die äquivalent zur Kompaktheit in [[Metrischer Raum|metrischen Räumen]] sind, aber nicht äquivalent in allgemeinen topologischen Räumen:
+
+*Folgenkompakt: Jede [[Folge (Mathematik)|Folge]] hat eine konvergente Teilfolge.
+
+*Abzählbar kompakt: Jede abzählbare offene Überdeckung hat eine endliche Teilüberdeckung. (Oder, äquivalent, jede unendliche Teilmenge hat einen <math>\omega</math>-Häufungspunkt.)
+
+*Pseudokompakt: Jede reell-wertige stetige Funktion auf dem Raum ist beschränkt.
+
+*Schwach abzählbar kompakt: Jede unendliche Teilmenge hat einen [[Häufungspunkt]].
+
+*[[Eberlein-kompakter Raum|Eberlein-kompakt]]: Der Raum ist homöomorph zu einer [[Schwache Topologie|schwach]]-kompakten Teilmenge eines [[Banachraum]]s.
+
+Während diese Konzepte für metrische Räume äquivalent sind, gibt es im Allgemeinen folgende Beziehungen:
+
+*Kompakte Räume sind abzählbar kompakt.
+*Folgenkompakte Räume sind abzählbar kompakt.
+*Abzählbar kompakte Räume sind pseudokompakt und schwach abzählbar kompakt.
+*Eberlein-kompakte Räume sind folgenkompakt.
+
+== Siehe auch == 
+* [[Relativ kompakte Teilmenge]] (Kompaktheit des Abschlusses)
+* [[Kompaktifizierung]] (Einbettung topologischer Räume in kompakte Räume)
+* [[Schwach folgenkompakte Menge]]
+* [[Vollständige algebraische Varietät]] (analoge Begriffsbildung für algebraische Varietäten)
+
+== Einzelnachweise ==
+<references/>
+
+== Literatur ==
+* [[Boto von Querenburg]]: ''Mengentheoretische Topologie'' (= ''Springer-Lehrbuch''). 3., neu bearbeitete und erweiterte Auflage. Springer, Berlin u. a. 2001, ISBN 3-540-67790-9.
+
+== Weblinks ==
+* [http://www.math.uni-rostock.de/~evers/Topologie/top.pdf Skript zur Mengentheoretische Topologie] (PDF; 1,72 MB).
+
+[[Kategorie:Mengentheoretische Topologie]]
+[[Kategorie:Topologischer Raum]]

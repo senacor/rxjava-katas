@@ -1,0 +1,69 @@
+[[Datei:Hasse diagram of powerset of 3.svg|mini|330px|Die Potenzmenge von {''x'', ''y'', ''z''}, dargestellt als [[Hasse-Diagramm]].]]
+Als '''Potenzmenge''' bezeichnet man in der [[Mengenlehre]] die Menge aller [[Teilmenge]]n einer gegebenen [[Grundmenge]]. Man notiert die Potenzmenge einer Menge <math>X</math> meist als <math>\mathcal P(X)</math>. Das Wesen der Potenzmenge wurde schon von [[Ernst Zermelo]] untersucht. Der kompakte Begriff „Potenzmenge“ hingegen –&nbsp;der sich in dem Zusammenhang mit der arithmetischen [[Potenz (Mathematik)|Potenz]] anbietet&nbsp;– wurde auch von [[Gerhard Hessenberg]] in seinem Lehrbuch von 1906 noch nicht benutzt; er verwendet dafür die Wortverbindung „Menge der Teilmengen“.
+
+== Definition ==
+Die Potenzmenge <math>\mathcal P(X)</math> einer [[Menge (Mathematik)|Menge]] <math>X</math> ist eine neue Menge, die aus allen [[Teilmenge]]n <math>U</math> von <math>X</math> besteht. Die Potenzmenge ist also ein [[Mengensystem]], das heißt, eine Menge, deren Elemente selbst Mengen sind. In Formelschreibweise lautet die Definition einer Potenzmenge
+: <math>\mathcal P(X) := \{ U \mid U \subseteq X \}</math>.
+
+Dabei ist zu beachten, dass sowohl die [[leere Menge]] <math>\emptyset</math> als auch die Menge <math>X</math> selbst Teilmengen von <math>X</math> sind. Andere gebräuchliche Notationen für die Potenzmenge sind <math>\mathfrak p(X),\ 2^X,\ \mathrm{Pot}(X),\ \Pi(X),\ \wp(X)</math> und <math>\mathfrak P(X)</math>.
+
+== Beispiele ==
+* <math>\mathcal P(\emptyset) = \{ \emptyset \}</math>
+* <math>\mathcal P(\{ a \}) = \bigl\{ \emptyset, \{ a \} \bigr\}</math>
+* <math>\mathcal P(\{ a, b \}) = \bigl\{ \emptyset, \{ a \}, \{ b \}, \{ a, b \} \bigr\}</math>
+* <math>\mathcal P(\{ a, b, c \}) = \bigl\{ \emptyset, \{ a \}, \{ b \}, \{ c \}, \{ a, b \}, \{ a, c \}, \{ b, c \}, \{ a, b, c \} \bigr\}</math>
+* <math>\mathcal P(\mathcal P(\emptyset)) = \bigl\{ \emptyset, \{\emptyset\}\bigr\}</math>
+* <math>\mathcal P(\mathcal P(\{a\})) = \bigl\{ \emptyset, \{\emptyset\} , \{\{a\}\} , \{\emptyset , \{a\}\} \bigr\}</math>
+
+== Strukturen auf der Potenzmenge ==
+=== Partielle Ordnung ===
+Die Inklusionsrelation <math>\subseteq</math> ist eine [[Halbordnung]] auf <math>\mathcal P(X)</math> (und keine [[Totalordnung]], wenn <math>X</math> mindestens zwei Elemente hat). Das [[Kleinstes Element|kleinste Element]] der Ordnung ist <math>\emptyset</math>, das [[Größtes Element|größte Element]] ist <math>X</math>.
+=== Vollständiger Verband ===
+Die Halbordnung <math>(\mathcal P(X), \subseteq)</math> ist ein [[Vollständiger Verband|vollständiger]] [[Verband (Mathematik)|Verband]]. Dies bedeutet, dass es zu ''jeder'' Teilmenge von <math>\mathcal P(X)</math> ein [[Infimum]] und ein [[Supremum]] (in <math>\mathcal P(X)</math>) gibt. Konkret ist für eine Menge <math>T \subseteq \mathcal P(X)</math> das Infimum von <math>T</math> gleich dem [[Schnittmenge|Durchschnitt]] der Elemente von <math>T</math>, und das Supremum von <math>T</math> ist gleich der [[Vereinigungsmenge|Vereinigung]] der Elemente von <math>T</math>, also
+:<math>\inf(T) = \bigcap_{M \in T} M\quad\text{ und }\quad\mathrm{sup}(T) = \bigcup_{M \in T} M.</math>
+Das größte und das kleinste Element erhält man als Infimum bzw. Supremum der leeren Menge, also
+:<math>\inf(\emptyset) = X\quad\text{ und }\quad\sup(\emptyset) = \emptyset.</math>
+
+=== Boolescher Verband ===
+Zieht man noch die [[Komplement (Mengenlehre)|Komplementabbildung]] <math> {}^\mathrm{c} : \mathcal P(X) \rightarrow \mathcal P(X)</math> heran, ist <math>(\mathcal P(X), \cap, \cup, ^\mathrm{c}, \emptyset, X)</math> ein [[boolescher Verband]], also ein [[Distributiver Verband|distributiver]] und [[Komplement (Verbandstheorie)|komplementärer]] Verband.
+
+=== Kommutativer Ring ===
+Jeder boolesche Verband induziert eindeutig eine kommutative Ringstruktur, den sogenannten [[Boolescher Ring|booleschen Ring]]. Hier auf <math>\mathcal P(X)</math> ist die Ringaddition gegeben durch die [[symmetrische Differenz]] von Mengen, die Ringmultiplikation ist der Durchschnitt. Die leere Menge ist neutral für die Addition und <math>X</math> ist neutral für die Multiplikation.
+
+== Charakteristische Funktionen ==
+Jeder Teilmenge <math>T \subseteq X</math> kann man die [[Charakteristische Funktion (Mathematik)|charakteristische Funktion]] <math>\chi_T \colon X \to \{0,1\}</math> zuordnen, wobei gilt
+: <math>
+ \chi_T(x) := \begin{cases}
+  1,& x \in T\\
+  0,& x \not\in T
+ \end{cases}
+</math>
+Diese Zuordnung ist eine Bijektion zwischen <math>\mathcal P(X)</math> und <math>\{0, 1\}^X</math> (wobei die Notation <math>B^A</math> für die Menge aller Funktionen von <math>A</math> nach <math>B</math> benutzt wird). Dies motiviert für <math>\mathcal P(X)</math> auch die Schreibweise <math>2^X</math>, denn in [[Natürliche Zahl#Von Neumanns Modell der natürlichen Zahlen|von Neumanns Modell der natürlichen Zahlen]] ist <math>2 = \{0, 1\}</math> (allgemein: <math>n = \{0, ..., n-1\}</math>).
+
+Die Korrespondenz <math>\mathcal P(X) \cong \{0, 1\}^X</math> ist zunächst eine reine Bijektion, lässt sich aber leicht als [[Isomorphismus]] bezüglich jeder der oben betrachteten Strukturen auf der Potenzmenge nachweisen.
+
+== Die Größe der Potenzmenge (Kardinalität) ==
+<math>|M|</math> bezeichnet die [[Mächtigkeit (Mathematik)|Mächtigkeit]] einer Menge <math>M</math>.
+
+* Für [[endliche Menge]]n <math>X</math> gilt: <math>|\mathcal P(X)| = 2^{|X|}</math>.
+* Stets gilt der [[Satz von Cantor]]: <math>|X| < |\mathcal P(X)|</math>.
+
+Der Übergang zur Potenzmenge liefert also immer eine größere Mächtigkeit. Analog zu endlichen Mengen schreibt man auch <math>2^{|X|}</math> für die Mächtigkeit <math>|\mathcal P(X)| = \left|2^X\right|</math> der Potenzmenge einer unendlichen Menge <math>X</math>. Die [[verallgemeinerte Kontinuumshypothese]] (GCH) besagt für unendliche Mengen <math>X</math>, dass <math>|\mathcal P(X)|</math> die nach <math>|X|</math> nächstgrößere Mächtigkeit ist: <math>\mathrm{GCH} \implies (|X| < |Y| \implies |\mathcal P(X)| \leq |Y|).</math>
+
+== Beschränkung auf kleinere Teilmengen ==
+
+Mit <math>\mathcal P_\kappa(X) = \{ U \subseteq X : |U| < \kappa \}</math> wird die Menge derjenigen Teilmengen von <math>X</math> bezeichnet, die weniger als <math>\kappa</math> Elemente enthalten. Beispielsweise ist <math>\mathcal P_3(\{a,b,c\}) = \{ \emptyset, \{a\},\{b\},\{c\},\{a,b\},\{a,c\},\{b,c\}\}</math>: Die Menge <math>\{a,b,c\}</math> selbst fehlt, da sie nicht weniger als <math>3</math> Elemente hat.
+
+== Sonstiges ==
+* Die Existenz der Potenzmenge zu jeder Menge wird in der [[Zermelo-Fraenkel-Mengenlehre]] als eigenes Axiom gefordert, nämlich durch das [[Potenzmengenaxiom]].
+* Ein [[Mengensystem]] wie beispielsweise eine [[Topologischer Raum|Topologie]] oder eine [[σ-Algebra]] über einer Grundmenge <math>X</math> ist eine Teilmenge der Potenzmenge <math>\mathcal{P}(X)</math>, also ein Element von <math>\mathcal{P}(\mathcal{P}(X))</math>.
+
+== Literatur ==
+* Oliver Deiser: ''Einführung in die Mengenlehre. Die Mengenlehre Georg Cantors und ihre Axiomatisierung durch Ernst Zermelo.'' 2., verbesserte und erweiterte Auflage. Springer, Berlin u.&nbsp;a. 2004, ISBN 3-540-20401-6.
+
+== Weblinks ==
+{{Wikibooks|Mathe für Nicht-Freaks: Potenzmenge}}
+{{Wikibooks|Beweisarchiv: Mengenlehre}}
+
+[[Kategorie:Mengensystem]]
+[[Kategorie:Mengenlehre]]

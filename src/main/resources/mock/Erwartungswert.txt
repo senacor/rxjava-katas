@@ -1,0 +1,355 @@
+Der '''Erwartungswert''' (selten und doppeldeutig ''[[Mittelwert]]'') ist ein Grundbegriff der [[Stochastik]]. Der Erwartungswert einer [[Zufallsvariable]]n beschreibt die Zahl, die die Zufallsvariable im Mittel annimmt. Er ergibt sich zum Beispiel bei unbegrenzter Wiederholung des zugrunde liegenden [[Wahrscheinlichkeitsexperiment|Experiments]] als Durchschnitt der Ergebnisse. Das [[Gesetz der großen Zahlen]] beschreibt, in welcher Form genau die Durchschnitte der Ergebnisse bei wachsender Anzahl der Experimente gegen den Erwartungswert streben, oder anders gesagt, wie die [[Stichprobenmittel]]werte bei wachsender Stichprobengröße gegen den Erwartungswert [[Konvergenz (Mathematik)|konvergieren]].
+
+Er bestimmt die Lokalisation (Lage) der [[Wahrscheinlichkeitsverteilung|Verteilung]] der Zufallsvariablen und ist vergleichbar mit dem empirischen [[Arithmetisches Mittel|arithmetischen Mittel]] einer [[Häufigkeitsverteilung]] in der deskriptiven Statistik. Er berechnet sich als nach Wahrscheinlichkeit gewichtetes Mittel der Werte, die die Zufallsvariable annimmt. Er muss selbst jedoch nicht einer dieser Werte sein. Insbesondere kann der Erwartungswert die Werte <math>\pm \infty</math> annehmen.
+
+Weil der Erwartungswert nur von der [[Wahrscheinlichkeitsverteilung]] abhängt, wird vom Erwartungswert einer Verteilung gesprochen, ohne Bezug auf eine Zufallsvariable. Der Erwartungswert einer Zufallsvariablen kann als Schwerpunkt der Wahrscheinlichkeitsmasse betrachtet werden und wird daher als ihr [[Moment (Stochastik)|erstes Moment]] bezeichnet.
+
+== Motivation ==
+Die Augenzahlen beim Würfelwurf können als unterschiedliche Ausprägungen einer Zufallsvariablen <math>X</math> betrachtet werden. Weil die (tatsächlich beobachteten) relativen Häufigkeiten sich gemäß dem [[Gesetz der großen Zahlen]] mit wachsendem Stichprobenumfang ''n'' den theoretischen Wahrscheinlichkeiten der einzelnen Augenzahlen annähern, muss der Mittelwert gegen den Erwartungswert von <math>X</math> streben. Zu dessen Berechnung werden die möglichen Ausprägungen mit ihrer theoretischen Wahrscheinlichkeit gewichtet.
+
+:{|
+|<math>\operatorname{E}(X)</math>
+|<math>=1\cdot P(X=1)+2\cdot P(X=2)+3\cdot P(X=3)+4\cdot P(X=4)+5\cdot P(X=5)+6\cdot P(X=6)\,</math>
+|-
+|
+|<math>=(1 + 2 + 3 + 4 + 5 + 6)\cdot \tfrac16 = 3{,}5.</math>
+|}
+
+Wie die Ergebnisse der Würfelwürfe ist der Mittelwert vom Zufall abhängig. Im Unterschied dazu ist der Erwartungswert eine feste Kennzahl der Verteilung der Zufallsvariablen <math>X</math>.
+
+Die Definition des Erwartungswerts steht in Analogie zum gewichteten Mittelwert von empirisch beobachteten Zahlen. Hat zum Beispiel eine Serie von zehn Würfelversuchen die Ergebnisse 4,  2, 1,  3,  6,  3,  3, 1,  4,  5 geliefert, kann der zugehörige Mittelwert 
+:<math>\bar x=(4 + 2 + 1 + 3 + 6 + 3 + 3 + 1 + 4 + 5)\cdot\tfrac1{10} = 3{,}2</math>
+
+alternativ berechnet werden, indem zunächst gleiche Werte zusammengefasst und nach ihrer [[relative Häufigkeit|relativen Häufigkeit]] gewichtet werden:
+:<math>\bar x = \tfrac 2{10}\cdot 1 +  \tfrac 1{10}\cdot  2 + \tfrac 3{10}\cdot  3 +  \tfrac 2{10}\cdot  4 +  \tfrac 1{10}\cdot  5 +  \tfrac 1{10}\cdot  6 = 3{,}2</math>.
+
+Allgemein lässt der Mittelwert der Augenzahlen in ''n'' Würfen sich wie
+:<math>1\cdot h_n(1)+2\cdot h_n(2)+3\cdot h_n(3)+4\cdot h_n(4)+5\cdot h_n(5)+6\cdot h_n(6),</math>
+
+schreiben, worin <math>h_n(k)</math> die relative Häufigkeit der Augenzahl <math>k</math> bezeichnet.
+
+== Definitionen ==
+Ist eine Zufallsvariable [[Wahrscheinlichkeitsverteilung|diskret]] oder besitzt sie eine [[Wahrscheinlichkeitsdichte|Dichte]], so existieren die folgenden Formeln für den Erwartungswert.
+
+=== Erwartungswert einer diskreten reellen Zufallsvariablen ===
+Im reellen diskreten Fall errechnet sich der Erwartungswert als die [[Summe]] der [[Produkt (Mathematik)|Produkte]] aus den [[Wahrscheinlichkeit]]en jedes möglichen Ergebnisses des Experiments und den „Werten“ dieser Ergebnisse.
+
+Ist <math>X</math> eine reelle [[diskrete Zufallsvariable]], die die Werte <math>(x_i)_{i \in I}</math> mit den jeweiligen Wahrscheinlichkeiten <math>(p_i)_{i \in I}</math> annimmt (mit <math>I</math> als abzählbarer [[Index (Mathematik)#Indexmenge|Indexmenge]]), so errechnet sich der Erwartungswert <math>\operatorname{E}(X)</math> im Falle der Existenz mit:
+
+:<math>\operatorname{E}(X)=\sum_{i\in I} x_i p_i=\sum_{i \in I} x_i P(X=x_i)</math> 
+
+Es ist zu beachten, dass dabei nichts über die Reihenfolge der Summation ausgesagt wird (siehe [[summierbare Familie]]).
+
+Ist <math>I = \mathbb{N}</math>, so besitzt <math>X</math> genau dann einen endlichen Erwartungswert <math>\operatorname{E}(X)</math>, wenn die Konvergenzbedingung
+
+:<math>\lim_{a\rightarrow \infty}\sum_{i=1}^a |x_i|p_i = \sum_{i=1}^\infty |x_i|p_i <\infty</math> erfüllt ist, d. h. die Reihe für den Erwartungswert [[Absolute Konvergenz|absolut konvergent]] ist.
+
+Zur Berechnung ist für nichtnegative Zufallsvariable oft die folgende Eigenschaft hilfreich<ref name=Ross>Ross, S. M.:''Introduction to probability models'', Academic Press, 2007, 9. Auflage, S. 143, ISBN 0-12-598062-0 </ref>
+:<math> \operatorname{E}(X)=\sum\limits_{i=1}^\infty P(X\geq i).</math>
+
+=== Erwartungswert einer reellen Zufallsvariablen mit Dichtefunktion ===
+[[Datei:Beta first moment.svg|mini|Der Erwartungswert balanciert die Wahrscheinlichkeitsmasse – hier die Masse unter der Dichte einer Beta(α,β)-Verteilung mit Erwartungswert α/(α+β).]]
+Hat eine reelle Zufallsvariable <math>X</math> eine [[Wahrscheinlichkeitsdichtefunktion]] <math>f</math>, das heißt hat das [[Bildmaß]] <math>P^X</math> diese [[Radon-Nikodym-Dichte|Dichte]] bezüglich dem [[Lebesgue-Maß]] <math>\lambda</math>, so berechnet sich der Erwartungswert im Falle der Existenz als
+:(1) <math>\displaystyle\quad \operatorname E(X)= \int_{\mathbb{R}} x f(x)\,\mathrm{d}\lambda(x).</math>
+
+In vielen Anwendungsfällen liegt (im Allgemeinen [[Uneigentliches Integral|uneigentliche]]) [[Riemann-Integral|Riemann-Integrierbarkeit]] vor und es gilt:
+:(2) <math>\displaystyle\quad \operatorname E(X)=\int_{-\infty}^\infty x f(x)\,\mathrm{d}x.</math>
+
+Gleichwertig zu dieser Gleichung ist, wenn <math>F</math> [[Verteilungsfunktion]] von  <math>X</math> ist:
+:(3) <math>\displaystyle\quad\operatorname E(X)=\int_0^\infty (1-F(x))\,\mathrm{d}x - \int_{-\infty}^0 F(x)\,\mathrm{d}x.</math>
+
+(2) und (3) sind unter der gemeinsamen Voraussetzung (<math>f</math> ist Dichtefunktion und <math>F</math> ist Verteilungsfunktion von <math>X</math>) äquivalent, was mit schulgemäßen Mitteln bewiesen werden kann.<ref> H. Wirths : Der Erwartungswert - Skizzen zur Begriffsentwicklung von Klasse 8 bis 13. In : Mathematik in der Schule 1995/Heft 6, S. 330–-343 </ref>
+
+Für nichtnegative Zufallsvariablen folgt daraus die wichtige Beziehung zur [[Ereigniszeitanalyse#Überlebensfunktion|Zuverlässigkeitsfunktion]] <math>R(t)=1-F(t)</math>
+:<math> \operatorname{E}(X) = \int_0^\infty ( 1-F(t) ) \, \mathrm{d}t = \int_0^\infty R(t)  \, \mathrm{d}t.</math>
+
+=== Allgemeine Definition ===
+Der Erwartungswert wird entsprechend als das [[Lebesgue-Integral|Integral]] bezüglich des [[Wahrscheinlichkeitsmaß]]es definiert: Ist <math>X</math> eine [[Lebesgue-Integral|''P''-integrierbare]] oder P-[[quasiintegrierbare Zufallsvariable]] von einem [[Wahrscheinlichkeitsraum]] <math>(\Omega,\Sigma,P)</math> nach <math>(\overline{\R},\mathcal{B})</math>, wobei <math>\mathcal{B}</math> die [[Borelsche σ-Algebra]] über <math>\overline{\R}:=\R\cup\{-\infty,\infty\}</math> ist, so wird definiert
+
+:<math>\operatorname{E}(X) = \int_\Omega X \,\mathrm{d}P = \int_\Omega X(\omega)\mathrm{d}P(\omega)\,</math>.
+
+Die Zufallsvariable <math>X</math> besitzt genau dann einen Erwartungswert, wenn sie [[Quasiintegrierbarkeit|quasiintegrierbar]] ist, also die Integrale
+
+:<math>\int_\Omega X^+(\omega)\,\mathrm{d}P(\omega)</math> und <math>\int_\Omega X^-(\omega)\,\mathrm{d}P(\omega)</math>
+
+nicht beide unendlich sind, wobei <math>X^+</math> und <math>X^-</math> den Positiv- sowie den Negativteil von <math>X</math> bezeichnen. In diesem Fall kann <math>\operatorname{E}(X) = \infty</math> oder <math>\operatorname{E}(X) = -\infty</math> gelten.
+
+Der Erwartungswert ist genau dann endlich, wenn <math>X</math> integrierbar ist, also die obigen Integrale über <math>X^+</math> und <math>X^-</math> ''beide'' endlich sind. Dies ist äquivalent mit
+:<math>\int_\Omega |X(\omega)|\,\mathrm{d}P(\omega) < \infty .</math>
+
+In diesem Fall schreiben viele Autoren, der Erwartungswert ''existiere'' oder <math>X</math> sei eine Zufallsvariable ''mit existierendem Erwartungswert'', und schließen damit den Fall <math>\infty</math> bzw. <math>-\infty</math> aus.
+
+=== Erwartungswert von zwei Zufallsvariablen mit gemeinsamer Dichtefunktion ===
+Haben die integrierbaren Zufallsvariablen <math>X</math> und <math>Y</math> eine gemeinsame [[Wahrscheinlichkeitsdichtefunktion]] <math>f(x,y)</math>, so berechnet sich der Erwartungswert einer Funktion <math>g(X,Y)</math> von <math>X</math> und <math>Y</math> nach dem [[Satz von Fubini]] zu
+
+:<math>\operatorname{E}(g(X,Y))=\int_{-\infty}^\infty \int_{-\infty}^\infty g(x,y) f(x,y)\,\mathrm{d}x \,\mathrm{d}y.</math>
+
+Der Erwartungswert von <math>g(X,Y)</math> ist nur dann endlich, wenn das Integral
+
+:<math>\int_{-\infty}^\infty \int_{-\infty}^\infty \left| g(x,y) \right| f(x,y)\,\mathrm{d}x\,\mathrm{d}y</math>
+
+endlich ist.
+
+Insbesondere ist:
+
+:<math>\operatorname{E}(X)=\int_{-\infty}^\infty \int_{-\infty}^\infty x f(x,y)\,\mathrm{d}x\,\mathrm{d}y </math>
+
+Aus der Randdichte errechnet sich der Erwartungswert wie bei univariaten Verteilungen:
+
+:<math>\operatorname{E}(X)=\int_{-\infty}^\infty x f_X(x)\,\mathrm{d}x .</math>
+
+Dabei ist die Randdichte <math>f_X(x)</math> gegeben durch
+:<math>f_X(x)=\int_{-\infty}^\infty f(x,y)\,\mathrm{d}y .</math>
+
+== Elementare Eigenschaften ==
+=== Linearität ===
+Der Erwartungswert ist [[Linearer Operator|linear]], es gilt also für beliebige, nicht notwendigerweise unabhängige Zufallsvariablen <math> X_1, X_2 </math>, dass
+:<math> \operatorname{E}(aX_1+bX_2 )=a\operatorname{E}(X_1)+b\operatorname{E}(X_2) </math>
+
+ist. Als Spezialfälle ergeben sich
+:<math>\operatorname{E}(cX+d)=c\operatorname{E}(X)+d</math>,
+:<math>\operatorname{E}(cX)=c\operatorname{E}(X)</math>
+
+und
+:<math>\operatorname{E}(d) = d</math>.
+
+Die Linearität lässt sich auch auf endliche Summen erweitern:
+:<math>\operatorname{E}\left(\sum_{i=1}^nX_i\right)=\sum_{i=1}^n\operatorname{E}(X_i)</math>
+
+Die Linearität des Erwartungswertes folgt aus der Linearität des Integrals.
+
+=== Monotonie ===
+Ist <math> X \leq Y</math> [[fast sicher]], und existieren <math> \operatorname{E}(X), \operatorname{E}(Y) </math>, so gilt
+:<math> \operatorname{E}(X) \leq \operatorname{E}(Y) </math>.
+
+=== Wahrscheinlichkeiten als Erwartungswerte ===
+Wahrscheinlichkeiten von [[Ereignis (Wahrscheinlichkeitstheorie)|Ereignissen]] lassen sich auch über den Erwartungswert ausdrücken. Für jedes Ereignis <math>A</math> gilt
+
+:<math>\operatorname{P}(A) = \operatorname{E}(\chi_A)\,</math>,
+
+wobei <math>\chi_A</math> die [[Indikatorfunktion]] von <math>A</math> ist.
+
+Dieser Zusammenhang ist oft nützlich, etwa zum Beweis der [[Tschebyschow-Ungleichung]].
+
+=== Dreiecksungleichung ===
+Es gilt 
+:<math> \left|\operatorname E (X)\right| \leq \operatorname E (|X|) </math>
+
+und 
+:<math> \operatorname E (|X+Y|) \leq \operatorname E (|X|)+\operatorname E (|Y|) </math>
+
+== Beispiele ==
+=== Würfeln ===
+Das Experiment sei ein [[Spielwürfel|Würfelwurf]]. Als Zufallsvariable <math>X</math> betrachten wir die gewürfelte Augenzahl, wobei jede der Zahlen 1 bis 6 mit einer Wahrscheinlichkeit von jeweils 1/6 gewürfelt wird.
+
+:<math>\operatorname{E}(X)=\sum_{i=1}^6 i\cdot \frac{1}{6} = 3{,}5</math>
+
+Wenn beispielsweise 1000 Mal gewürfelt wird, man also das Zufallsexperiment 1000 mal wiederholt und die geworfenen Augenzahlen zusammenzählt und durch 1000 dividiert, ergibt sich mit hoher Wahrscheinlichkeit ein Wert in der Nähe von 3,5. Es ist jedoch unmöglich, diesen Wert mit einem einzigen Würfelwurf zu erzielen.
+
+=== St. Petersburger Spiel ===
+Das [[Sankt-Petersburg-Paradoxon|St. Petersburger Spiel]] ist ein Spiel, dessen zufälliger Gewinn <math>X</math> einen unendlichen Erwartungswert hat. Es wird eine Münze geworfen. Zeigt sie Kopf, werden 2 Euro gegeben und das Spiel ist beendet, zeigt sie Zahl, darf nochmals geworfen werden. Fällt nun Kopf, gibt es 4 Euro und das Spiel ist beendet, folgt wieder Zahl, so darf ein drittes Mal geworfen werden. Der Erwartungswert des Gewinnes <math>X</math> ist unendlich:
+
+:<math>\operatorname{E}(X)= 2\cdot\frac{1}{2} + 4\cdot\frac{1}{4} + 8\cdot\frac{1}{8} + \cdots = 1 + 1 + \cdots = \infty.</math>
+
+=== Zufallsvariable mit Dichte ===
+Gegeben ist die reelle Zufallsvariable <math>X</math> mit der Dichtefunktion
+
+:<math>f(x) = \begin{cases} \frac 1x, & 3 \le x \le 3\mathrm{e}, \\
+& \\
+0, & \text {sonst}, \end{cases} </math>
+wobei <math>\mathrm{e}</math> die Eulersche Konstante bezeichnet.
+
+Der Erwartungswert von <math>X</math> berechnet sich als
+
+:<math>\begin{align}
+  \operatorname E(X)&= \int_{-\infty}^\infty x f(x)\,\mathrm{d}x = \int_{-\infty}^3 x \cdot 0\,\mathrm{d}x + \int_3^{3\mathrm{e}} x \cdot \frac 1x\,\mathrm{d}x + \int_{3\mathrm{e}}^\infty x \cdot 0 \,\mathrm{d}x\\
+                    &= 0 + \int_3^{3\mathrm{e}} 1\,\mathrm{d}x + 0 = [x]^{3\mathrm{e}}_3 = 3\mathrm{e}-3 = 3(\mathrm{e}-1).
+\end{align}</math>
+
+=== Allgemeine Definition ===
+Gegeben sei der Wahrscheinlichkeitsraum <math>(\Omega, \Sigma, P)</math> mit <math>\Omega = \{\omega_1, \omega_2 , \omega_3\}</math>, <math>\Sigma</math> die [[Potenzmenge]] von <math>\Omega</math> und <math>P(\{\omega_i\})=\tfrac{1}{3}</math> für <math>i=1,2,3</math>. Der Erwartungswert der Zufallsvariablen <math>X \colon \Omega \to \R</math> mit <math>X(\omega_1) = X(\omega_2) = 1</math> und <math>X(\omega_3) = 2</math> ist
+:<math>\operatorname{E}(X) = \int_\Omega X \, \mathrm{d}P = X(\omega_1)P(\{\omega_1\}) + X(\omega_2)P(\{\omega_2\}) + X(\omega_3)P(\{\omega_3\}) = 1 \cdot \frac{1}{3} + 1 \cdot \frac{1}{3} + 2 \cdot \frac{1}{3} = \frac{4}{3}.</math>
+
+Da <math>X</math> eine diskrete Zufallsvariable ist mit <math>P(X=1) = P(\{\omega_1, \omega_2\}) = \tfrac{2}{3}</math> und <math>P(X=2) = P(\{\omega_3\}) = \tfrac{1}{3}</math>, kann der Erwartungswert alternativ auch berechnet werden als
+:<math>\operatorname{E}(X) = 1 \cdot P(X=1) + 2 \cdot P(X=2) = 1 \cdot \frac{2}{3} + 2 \cdot \frac{1}{3} = \frac{4}{3}.</math>
+
+== Weitere Eigenschaften ==
+
+=== Sigma-Additivität ===
+Sind alle Zufallsvariablen <math> (X_i)_{i\in \mathbb{N}} </math> fast sicher nichtnegativ, so lässt sich die endliche Additivität sogar zur <math> \sigma </math>-Additivität erweitern:
+:<math> \operatorname{E} \left( \sum_{i=1}^\infty X_i\right)=\sum_{i=1}^\infty\operatorname{E}(X_i) </math>
+
+=== Erwartungswert des Produkts von ''n'' stochastisch unabhängigen Zufallsvariablen ===
+Wenn die Zufallsvariablen <math>X_i</math> stochastisch voneinander [[Stochastisch unabhängige Zufallsvariablen|unabhängig]] und integrierbar sind, gilt:
+
+:<math>\operatorname{E}\!\left(\prod_{i=1}^n X_{i}\right) = \prod_{i=1}^n \operatorname{E}(X_{i})</math>
+
+insbesondere auch
+
+:<math> \operatorname{E}\!\left(X_iX_j\right) = \operatorname{E}\!\left(X_i\right) \cdot \operatorname{E}\!\left(X_j\right)</math> für <math>i \neq j</math>
+
+=== Erwartungswert einer zusammengesetzten Zufallsvariable ===
+Ist <math> Y </math> eine zusammengesetzte Zufallsvariable, sprich sind <math> N, X_1, X_2, \dots </math> unabhängige Zufallsvariablen und sind die <math> X_i </math> identisch verteilt und ist <math> N </math> auf <math> \mathbb{N}_0 </math> definiert, so lässt sich <math> Y </math> darstellen als
+:<math> Y:=\sum_{i=1}^NX_i </math>.
+
+Existieren die ersten Momente von <math> N, X_1, X_2, \dots </math>, so gilt
+:<math> \operatorname{E}(Y)=\operatorname{E}(N)\operatorname{E}(X_1) </math>.
+
+Diese Aussage ist auch als [[Formel von Wald]] bekannt.
+
+=== Monotone Konvergenz ===
+Sind die nichtnegativen Zufallsvariablen <math> (X_i)_{i \in \mathbb{N}} </math> fast sicher punktweise monoton wachsend und [[Fast sichere Konvergenz|konvergieren fast sicher]] gegen eine weitere Zufallsvariable <math> X </math>, so gilt
+:<math> \lim_{i \to \infty} \operatorname{E}(X_i)=\operatorname{E}(X) </math>.
+
+Dies ist der [[Satz von der monotonen Konvergenz]] in der wahrscheinlichkeitstheoretischen Formulierung.
+
+=== Berechnung mittels der kumulantenerzeugenden Funktion ===
+Die [[kumulantenerzeugende Funktion]] einer Zufallsvariable ist definiert als
+:<math> g_X(t)=\ln \operatorname{E} (e^{tX}) </math>.
+
+Wird sie abgeleitet und an der Stelle 0 ausgewertet, so ist der Erwartungswert:
+:<math>\operatorname{E}(X) = g'_X(0) </math>.
+
+Die erste [[Kumulante]] ist also der Erwartungswert.
+
+=== Berechnung mittels der charakteristischen Funktion ===
+Die [[Charakteristische Funktion (Stochastik)|charakteristische Funktion]] einer Zufallsvariable <math> X </math> ist definiert als <math> \varphi_X(t):=\operatorname{E}(e^{itX}) </math>.
+Mit ihrer Hilfe lässt sich durch Ableiten der Erwartungswert der Zufallsvariable bestimmen:
+:<math> \operatorname{E}(X)=\frac{\varphi_X'(0)}{\mathrm i} </math>.
+
+=== Berechnung mittels der momenterzeugenden Funktion ===
+Ähnlich wie die charakteristische Funktion ist die [[momenterzeugende Funktion]] definiert als 
+:<math>M_X(t):=E\left(e^{tX}\right)</math>.
+Auch hier lässt sich der Erwartungswert einfach bestimmen als
+:<math> \operatorname{E}(X)=M_X'(0) </math>.
+
+Dies folgt daraus, dass der Erwartungswert das erste Moment ist und die k-ten Ableitungen der momenterzeugenden Funktion an der 0 genau die k-ten Momente sind.
+
+=== Berechnung mittels der wahrscheinlichkeitserzeugenden Funktion ===
+Wenn <math>X</math> nur natürliche Zahlen als Werte annimmt, lässt sich der Erwartungswert für auch mithilfe der [[Wahrscheinlichkeitserzeugende Funktion|wahrscheinlichkeitserzeugenden Funktion]] 
+:<math>m_X(t):=E\left(t^X\right)</math>.
+berechnen. Es gilt dann
+:<math>\operatorname{E}\left[X \right] =  \lim_{t \uparrow 1} m_X'(t)</math>,
+
+falls der [[Grenzwert (Funktion)#Einseitige Grenzwerte|linksseitige Grenzwert]] existiert.
+
+=== Beste Approximation ===
+Ist <math> X </math> eine Zufallsgröße auf einem [[Wahrscheinlichkeitsraum]] <math>(\Omega,\Sigma,P)</math>, so beschreibt <math> \operatorname{E} \left( X \right)</math> die beste Approximation an <math> X </math> im Sinne der Minimierung von <math> \operatorname{E} \left(  \left( X-a \right)^2  \right) </math>, wobei ''a'' eine reelle Konstante ist. Dies folgt aus dem Satz über die beste Approximation, da 
+:<math> \langle X-E(X), b \rangle =0 </math> 
+für alle konstanten <math> b </math> ist, wobei <math> \langle .,. \rangle </math> das [[Lp-Raum#Der_Hilbertraum_L2|<math> L^2 </math>-Standardnormalskalarprodukt]] bezeichne. Diese Auffassung des Erwartungswertes macht die Definition der [[Varianz (Stochastik)|Varianz]] als minimaler mittlerer quadratischer Abstand sinnvoll.
+
+== Erwartungswerte von Funktionen von Zufallsvariablen ==
+Wenn <math>Y=g(X)</math> wieder eine Zufallsvariable ist, so kann der Erwartungswert von <math>Y</math>, statt mittels der Definition, auch mittels der Formel bestimmt werden:
+:<math>\operatorname{E}(Y)=\operatorname{E}(g(X))=\int_{-\infty}^\infty g(x) f_X(x)\,\mathrm{d}x</math>
+Auch in diesem Fall existiert der Erwartungswert nur, wenn
+:<math>\int_{-\infty}^\infty \left| g(x) \right| f_X(x)\,\mathrm{d}x</math>
+konvergiert. 
+
+Bei einer diskreten Zufallsvariablen wird eine Summe verwendet:
+:<math>\operatorname{E}(Y)=\operatorname{E}(g(X))=\sum_i g(x_i)  p_X(x_i).</math>
+Ist die Summe nicht endlich, dann muss die Reihe [[Absolute Konvergenz|absolut konvergieren]], damit der Erwartungswert existiert.
+
+== Verwandte Konzepte und Verallgemeinerungen ==
+=== Lageparameter ===
+Wird der Erwartungswert als Schwerpunkt der Verteilung einer Zufallsvariable aufgeasst, so handelt es sich um einen Lageparameter. Dieser gibt an, wo sich der Hauptteil der Verteilung befindet. Weitere Lageparameter sind
+# [[Modus (Statistik)|Der Modus]]: Der Modus gibt an, an welcher Stelle die Verteilung ein Maximum hat, sprich bei diskreten Zufallsvariablen die Ausprägung mit der größten Wahrscheinlichkeit und bei stetigen Zufallsvariable die Maximastellen der Dichtefunktion. Der Modus existiert zwar im Gegensatz zum Erwartungswert immer, muss aber nicht eindeutig sein. Beispiele für nichteindeutige Modi sind [[bimodale Verteilung]]en.
+# Der [[Median]] ist ein weiterer gebräuchlicher Lageparameter. Er gibt an, welcher Wert auf der x-Achse die Wahrscheinlichkeitsdichte so trennt, dass links und rechts des Medians jeweils die Hälfte der Wahrscheinlichkeit anzutreffen ist. Auch der Median existiert immer, muss aber (je nach Definition) nicht eindeutig sein.
+
+=== Momente ===
+Wird der Erwartungswert als [[Moment (Stochastik)|erstes Moment]] aufgefasst, so ist er eng verwandt mit den Momenten höherer Ordnung. Da diese wiederum durch den Erwartungswert in Verknüpfung mit einer Funktion <math> g(\cdot ) </math> definiert werden, sind sie gleichsam ein Spezialfall. Einige der bekannten Momente sind:
+* Die [[Varianz (Stochastik)|Varianz]]: Zentriertes zweites Moment, <math>g(X)=(X-\mu_x)^2</math>. Hierbei ist <math>\mu_X </math> der Erwartungswert.
+* Die [[Schiefe (Statistik)|Schiefe]]: Zentriertes drittes Moment, normiert auf die dritte Potenz der [[Standardabweichung]] <math> \sigma_X </math>. Es ist <math> g(X)=\frac{(X-\mu_X)^3}{\sigma_X^3} </math>.
+* Die [[Wölbung (Statistik)|Wölbung]]: Zentriertes viertes Moment, normiert auf <math> \sigma_X^4 </math>. Es ist <math> g(X)=\frac{(X-\mu_X)^4}{\sigma_X^4} </math>.
+
+=== Bedingter Erwartungswert ===
+Der [[Bedingter Erwartungswert|bedingte Erwartungswert]] ist eine Verallgemeinerung des Erwartungswertes auf den Fall, dass Gewisse Ausgänge des Zufallsexperiments bereits bekannt sind. Damit lassen sich [[bedingte Wahrscheinlichkeit]]en verallgemeinern und auch die [[bedingte Varianz]] definieren. Der bedingte Erwartungswert spielt eine wichtige Rolle in der Theorie der [[Stochastischer Prozess|stochastischen Prozesse]].
+
+== Begriff und Notation ==
+Das Konzept des Erwartungswertes geht auf [[Christiaan Huygens]] zurück. In einer Abhandlung über Glücksspiele von 1656, „Van rekeningh in spelen van geluck“ bezeichnet Huygens den erwarteten Gewinn eines Spiels als „het is my soo veel weerdt“. [[Frans van Schooten]] verwendete in seiner Übersetzung von Huygens' Text ins Lateinische den Begriff ''expectatio''. Bernoulli übernahm in seiner ''Ars conjectandi'' den von van Schooten eingeführten Begriff in der Form ''valor expectationis''.<ref>Norbert Henze: ''Stochastik für Einsteiger''. Vieweg+Teubner, 2008. ISBN 978-3-8348-9465-6. S. 79.</ref>
+
+Im westlichen Bereich wird für den Operator <math> \operatorname{E}\left(X\right)</math> verwendet, speziell in anglophoner Literatur <math>\operatorname{E}\left[X\right]</math>. 
+
+In der russischsprachigen Literatur findet sich die Bezeichnung <math>M(X)</math>.<ref>Siehe etwa A. N. Širjaev: ''Wahrscheinlichkeit'' 1988, S. 52 ff !</ref>
+
+Die Bezeichnung <math>\mu_X</math> betont die Eigenschaft als nicht vom Zufall abhängiges erstes Moment. In der Physik findet die [[Bra-Ket|Bra-Ket-Notation]] Verwendung.<ref>John Aldrich: ''Earliest Uses of Symbols in Probability and Statistics''. [http://jeff560.tripod.com/stat.html online]</ref>
+Insbesondere wird <math>\langle X \rangle</math> statt <math>\operatorname{E}(X)</math> für den Erwartungswert einer Größe <math>X</math> geschrieben.
+
+== Quantenmechanischer Erwartungswert ==
+Ist <math>\psi(r,t)=\langle r|\psi(t)\rangle</math> die [[Wellenfunktion]] eines Teilchens in einem bestimmten [[Quantenmechanischer Zustand|Zustand]] <math>|\psi(t)\rangle</math> und ist <math>\hat O</math> ein Operator, so ist
+
+:<math>\langle \hat O \rangle_{|\psi(t)\rangle}:=
+\langle\psi(t)|\hat O |\psi(t)\rangle=
+\int_{M^2} \mathrm{d}^n r\, \mathrm{d}^n r^\prime\, \psi^\star (r,t)\langle r|\hat O|r^\prime\rangle\psi(r^\prime,t)</math>
+
+der quantenmechanische ''Erwartungswert'' von <math>\hat O</math> im Zustand <math>|\psi(t)\rangle</math>.
+<math>M</math> ist hierbei der Ortsraum, in dem sich das Teilchen bewegt, <math>n</math> ist die Dimension von <math>M</math>, und ein hochgestellter Stern steht für [[Komplexe Zahl|komplexe]] [[Konjugation (Mathematik)|Konjugation]].
+
+Lässt sich <math>\hat O</math> als formale [[Potenzreihe]] <math>O(\hat r,\hat p)</math> schreiben (und das ist oft so), so wird die Formel verwendet 
+
+:<math>\langle \hat O\rangle_\psi = \int_M \mathrm{d}^n r\, \psi^\star(r,t) O(r,\frac{\hbar}{i}\nabla_r)\psi(r,t).</math>
+
+Der Index an der Erwartungswertsklammer wird nicht nur wie hier abgekürzt, sondern manchmal auch ganz weggelassen.
+
+;Beispiel
+Der Erwartungswert des Aufenthaltsorts in Ortsdarstellung ist
+
+:<math>\langle\hat r\rangle =
+\int_M \mathrm{d}^n r\, \psi^\star(r,t)r\psi(r,t)=
+\int_M \mathrm{d}^n r\, r|\psi(r,t)|^2 =\int_M \mathrm{d}^n r\, rf(r,t).</math>
+
+Der Erwartungswert des Aufenthaltsorts in Impulsdarstellung ist
+
+:<math>\langle\hat r\rangle =
+\int_M \mathrm{d}^n p\,\Psi^\star(p,t)i\hbar\vec\nabla_p\Psi(p,t),</math>
+
+wobei wir die Wahrscheinlichkeitsdichtefunktion der Quantenmechanik im Ortsraum identifiziert haben. In der Physik wird <math>\rho</math> ''(rho)'' statt <math>f</math> geschrieben.
+
+== Erwartungswert von Matrizen ==
+Ist <math>X</math> eine <math>m \times n</math> Matrix, dann ist der Erwartungswert der Matrix definiert als:
+
+:<math>
+\operatorname{E}\left(X\right)
+=
+\operatorname{E}\left(
+\begin{bmatrix}
+ x_{1,1} & x_{1,2} & \cdots & x_{1,n} \\
+ x_{2,1} & x_{2,2} & \cdots & x_{2,n} \\
+ \vdots \\
+ x_{m,1} & x_{m,2} & \cdots & x_{m,n}
+\end{bmatrix}\right)
+=
+\begin{bmatrix}
+ \operatorname{E}(x_{1,1}) & \operatorname{E}(x_{1,2}) & \cdots & \operatorname{E}(x_{1,n}) \\
+ \operatorname{E}(x_{2,1}) & \operatorname{E}(x_{2,2}) & \cdots & \operatorname{E}(x_{2,n}) \\
+ \vdots \\
+ \operatorname{E}(x_{m,1}) & \operatorname{E}(x_{m,2}) & \cdots & \operatorname{E}(x_{m,n})
+\end{bmatrix}
+</math>
+
+== Siehe auch ==
+* [[Moment (Integration)]]
+* [[Mittelwert]]
+* [[Nutzenfunktion#Von-Neumann-Morgenstern-Erwartungsnutzenfunktion|Erwartungsnutzenfunktion]]
+* [[Parameter (Statistik)]]
+* [[Wahrscheinlichkeitsverteilung]]
+
+== Literatur ==
+*{{Literatur|Autor=[[Krishna B. Athreya]], [[Soumendra N. Lahiri]]|TitelErg=|Titel=Measure Theory and Probability Theory|Reihe=Springer Texts in Statistics|Band=|Auflage=|Verlag=[[Springer Science+Business Media|Springer Verlag]]|Ort=New York|Jahr=2006|ISBN=978-0387-32903-1|DOI=}} [http://ams.math.uni-bielefeld.de/mathscinet/search/publdoc.html?arg3=&co4=AND&co5=AND&co6=AND&co7=AND&dr=all&pg4=AUCN&pg5=TI&pg6=TI&pg7=ALLF&pg8=ET&r=1&review_format=html&s4=Athreya&s5=probability%20theory&s6=&s7=&s8=All&vfpref=html&yearRangeFirst=&yearRangeSecond=&yrop=eq MR2247694]
+*{{Literatur|Autor=[[Heinz Bauer (Mathematiker)|Heinz Bauer]]|Titel=Wahrscheinlichkeitstheorie|TitelErg=|Reihe=De Gruyter Lehrbuch|Band=|Auflage=5., durchgesehene und verbesserte|Verlag=[[de Gruyter]]|Ort=Berlin, New York|Jahr=2002|ISBN=3-11-017236-4
+|DOI=}} [http://ams.math.uni-bielefeld.de/mathscinet/search/publdoc.html?arg3=&co4=AND&co5=AND&co6=AND&co7=AND&dr=all&pg4=AUCN&pg5=TI&pg6=PC&pg7=ALLF&pg8=ET&review_format=html&s4=Bauer%2C%20Heinz&s5=%09Wahrscheinlichkeitstheorie&s6=&s7=&s8=All&vfpref=html&yearRangeFirst=&yearRangeSecond=&yrop=eq&r=1&mx-pid=1902050 MR1902050]
+* {{Literatur|Autor=[[Kai Lai Chung]] |Titel=A Course in Probability Theory|TitelErg=|Reihe=|Band=|Auflage=|Verlag=[[Elsevier|Academic Press, Inc.]]|Ort=San Diego (u.&nbsp;a.)|Jahr=2001|ISBN=0-12-174151-6|DOI=}} [http://ams.math.uni-bielefeld.de/mathscinet/search/publdoc.html?arg3=&co4=AND&co5=AND&co6=AND&co7=AND&dr=all&pg4=AUCN&pg5=TI&pg6=PC&pg7=ALLF&pg8=ET&review_format=html&s4=Chung&s5=Course&s6=&s7=&s8=All&vfpref=html&yearRangeFirst=&yearRangeSecond=&yrop=eq&r=2&mx-pid=1796326 R1796326]
+*{{Literatur|Autor=[[Walter Greiner]]|Titel=Quantenmechanik|TitelErg=|Auflage=6. überarb. und erw.|Verlag=[[Verlag Harri Deutsch]]|Ort=Zürich [u.&nbsp;a.]|Jahr=2005|ISBN=978-3-8171-1765-9|DOI=}}
+*{{Literatur|Autor=[[Erich Härtter]]|Titel=Wahrscheinlichkeitsrechnung für Wirtschafts- und Naturwissenschaftler|TitelErg=|Reihe=
+|Band=|Auflage=10.|Verlag=[[Vandenhoeck & Ruprecht]]|Ort=Göttingen |Jahr=1974|ISBN=3-525-03114-9|DOI=}}
+*{{Literatur|Autor=[[Norbert Henze]]|Titel=Stochastik für Einsteiger|TitelErg=|Reihe=|Band=|Auflage=10.|Verlag=[[Springer Spektrum]]|Ort=Wiesbaden|Jahr=2013|ISBN=978-3-658-03076-6|DOI=10.1007/978-3-658-03077-3}}
+*{{Literatur|Autor=[[Achim Klenke]] |Titel=Wahrscheinlichkeitstheorie|TitelErg=|Reihe=|Band=|Auflage=3., überarbeitete und ergänzte |Verlag=[[Springer Spektrum]]|Ort=Berlin, Heidelberg|Jahr=2013|ISBN=978-3-642-36017-6|DOI=10.1007/978-3-642-36018-6}} 
+*{{Literatur|Autor=[[Norbert Kusolitsch]]|Titel=Maß- und Wahrscheinlichkeitstheorie|TitelErg=Eine Einführung|Reihe=Springer-Lehrbuch|Auflage=2., überarbeitete und erweiterte|Verlag=Springer-Verlag|Ort=Berlin, Heidelberg|Jahr=2014|ISBN=978-3-642-45386-1
+|DOI=}}
+*{{Literatur|Autor=[[Michel Loève|M. Loève]] |Titel=Probability Theory I|TitelErg=|Reihe=Graduate Texts in Mathematics|Band=45 |Auflage=4.|Verlag=Springer Verlag|Ort=Berlin, Heidelberg |Jahr=1977|ISBN=3-540-90210-4|DOI=}} [http://ams.math.uni-bielefeld.de/mathscinet/search/publdoc.html?arg3=&co4=AND&co5=AND&co6=AND&co7=AND&dr=all&pg4=AUCN&pg5=TI&pg6=PC&pg7=ALLF&pg8=ET&review_format=html&s4=Loeve&s5=Probability%20Theory&s6=&s7=&s8=All&vfpref=html&yearRangeFirst=&yearRangeSecond=&yrop=eq&r=2&mx-pid=651017 MR0651017]
+*{{Literatur|Autor=[[Vladimir Spokoiny]], [[Thorsten Dickhaus]]|Titel=Basics of Modern Mathematical Statistics|TitelErg= |Reihe=Springer Texts in Statistics|Auflage=|Verlag=Springer-Verlag|Ort=Heidelberg, New York, Dordrecht, London|Jahr=2015 |ISBN=978-3-642-39908-4|DOI=}} [http://ams.math.uni-bielefeld.de/mathscinet/search/publdoc.html?arg3=&co4=AND&co5=AND&co6=AND&co7=AND&dr=all&pg4=AUCN&pg5=TI&pg6=PC&pg7=ALLF&pg8=ET&review_format=html&s4=Spokoiny&s5=Basics&s6=&s7=&s8=All&vfpref=html&yearRangeFirst=&yearRangeSecond=&yrop=eq&r=1&mx-pid=3289985 MR3289985]
+
+== Einzelnachweise ==
+<references />
+
+[[Kategorie:Zufallsvariable]]
+[[Kategorie:Stochastik]]

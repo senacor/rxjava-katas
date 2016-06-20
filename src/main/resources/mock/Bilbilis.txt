@@ -1,0 +1,27 @@
+[[Datei:Ciudad romana de Bilbilis, Calatayud, España 2012-05-16, DD 08.JPG|mini|Forum in Bilbilis]]
+[[Datei:Bilbilis - Teatro.jpg|mini|Theater]]
+[[Datei:Ciudad romana de Bilbilis, Calatayud, España 2012-05-16, DD 04.JPG|mini|Thermen]]
+'''Bilbilis''' war der Name einer Stadt der [[Keltiberer]] in der römischen Provinz [[Hispania Tarraconensis]] im heutigen Spanien. Sie ist bekannt vor allem als Heimatstadt des römischen Dichters [[Martial]].
+
+== Geschichte ==
+Die Siedlung lag auf einer steilen Anhöhe<ref> ''Bilbilis acutis pendentem scopulis'', „hängend auf steilen Felsen“ beschreibt es der antike Besucher [[Paulinus von Nola]] (carm. 10,223f.). </ref> am Fluss Salo (heute [[Jalón (Fluss)|Jalón]]). Die Überreste finden sich heute auf dem Cerro de Bámbola nahe [[Calatayud]] (Provinz Zaragoza).
+Der Ortsname leitet sich möglicherweise von ''Birbilis'' her, der Bezeichnung für einen Fluss, der entweder mit dem Nebenfluss Ribota oder mit einem Abschnitt des Salo selbst identifiziert wird. <ref> Iust. 44,3,8; die Namensform mit -r- auch in den Inschriften CIL 6, 2728 und 12, 735. </ref> Er ist bezeugt durch Münzen mit der iberischen Aufschrift ''plpls'' und mit der lateinischen ''Bilbilis Italica municipium Augusta'', was überdies auf eine eigene Münzstätte hinweist. Ob Bilbilis den Status eines [[Municipium|Municipiums]] oder einer [[Colonia (Rom)|Colonia]] hatte, ist umstritten.<ref> Vgl. Barceló (s. Literatur).</ref> Jedenfalls erhielt es durch die Ansiedlung römischer [[Kolonat (Recht)|Kolonen]] städtische Strukturen. Die Fernstraße von [[Augusta Emerita]] nach [[Saragossa|Caesaraugusta]] führte durch Bilbilis.<ref> Nach dem [[Itinerarium Antonini]] 437,3 und 439,1. </ref> In der Spätantike verfiel die Stadt <ref> Paulinus von Nola, epist. 2,223-228. </ref> und wurde schließlich aufgegeben. Aus einer im 8. Jahrhundert knapp 5 km entfernt errichteten Festung der Mauren ging die heutige Stadt Calatayud hervor.
+
+Wichtige Quelle für Bilbilis ist neben den archäologischen Funden der Dichter Martial, der im Jahre 40 n. Chr. hier geboren wurde und, heimgekehrt um das Jahr 102, hier auch starb. Er erwähnt seine Vaterstadt vielfach lobend in seinen Gedichten. Hiernach war Bilbilis berühmt für seine Metallverarbeitung. <ref> Mart. 1,49,4; 4,55,11; 12,18,9. </ref> Die etwa 24 km westlich an der römischen Fernstraße gelegenen Schwefelquellen ''Aquae Bilbilitanorum'', auch diese von Martial gepriesen,<ref> Mart. 1,49,9</ref> werden noch heute als Thermen genutzt ([[Alhama de Aragon]]). Weitere von Martial zahlreich erwähnte Lokalitäten in Bilbilis und Umland sind heute nicht mehr zu identifizieren.
+
+== Literatur ==
+* {{RE|III,1|470|471|Bilbilis|[[Emil Hübner]]|RE:Bilbilis}}
+* {{DNP|2|655||Bilbilis|[[Pedro Barceló]]}}
+* Faltblatt zur Archäologischen Stätte auf der offiziellen Website von Calatayud: http://www.calatayud.es/turismo/images/folleto2.pdf
+
+== Weblinks ==
+* [http://www.calatayud.es/turismo/bilbilis.asp Bilbilis] auf der offiziellen Website der Stadtverwaltung Calatayud
+
+== Einzelnachweise ==
+<references />
+
+{{Coordinate|NS=41/22/56/N|EW=1/36/13/W|type=landmark|dim=400|region=ES-Z}}
+
+[[Kategorie:Keltische Stadt]]
+[[Kategorie:Archäologischer Fundplatz in Aragonien]]
+[[Kategorie:Iberische Kultur]]

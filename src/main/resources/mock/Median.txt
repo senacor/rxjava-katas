@@ -1,0 +1,196 @@
+{{Dieser Artikel|behandelt den ''Median'' in der [[Statistik]]. Weitere Bedeutungen sind unter [[Median (Begriffsklärung)]] aufgeführt.}}
+
+Der '''Median''' oder '''Zentralwert''' ist ein [[Mittelwert]] für [[Wahrscheinlichkeitsverteilung|Verteilungen]] in der [[Statistik]]. Der Median einer Auflistung von Zahlenwerten ist der Wert, der an der mittleren (zentralen) Stelle steht, wenn man die Werte der Größe nach sortiert. Beispielsweise ist für die Werte 4,&nbsp;1,&nbsp;37,&nbsp;2,&nbsp;1 die Zahl&nbsp;2 der Median, nämlich die mittlere Zahl in 1,&nbsp;1,&nbsp;<u>2</u>,&nbsp;4,&nbsp;37.
+
+Allgemein teilt ein Median einen Datensatz, eine Stichprobe oder eine Verteilung so in zwei (gleich große) Hälften, dass die Werte in der einen Hälfte nicht größer als der Medianwert sind, und in der anderen nicht kleiner.
+
+== Definition ==
+Der Median teilt eine Liste von Werten in zwei Hälften.<!-- nicht ganz richtig für ungerade Anzahl von Messwerten --> Er kann auf folgende Weise bestimmt werden:
+
+* Alle Werte werden (aufsteigend) geordnet.
+* Wenn die Anzahl der Werte ungerade ist, ist die mittlere Zahl der Median.
+* Wenn die Anzahl der Werte gerade ist, wird der Median meist als [[arithmetisches Mittel]] der beiden mittleren Zahlen definiert, die dann ''Unter''- und ''Obermedian'' heißen.
+
+Eine wichtige Eigenschaft des Medians ist [[Robustheit]] gegenüber [[Ausreißer]]n.
+
+* Beispiel: Messwerte 1, 2, 4, <u>4</u>, 4, 5, 15; Der Median (auch der Ober- und der Untermedian) ist der Wert an der mittleren Stelle, also 4. Wenn im Beispiel durch einen Fehler eine 4 durch 46 ersetzt wurde, ändert sich der Median wenig oder überhaupt nicht, 1, 2, 4, <u>4</u>, 5, 15, 46. Das arithmetische Mittel hingegen springt von 5 auf 11.
+
+Ob Median oder arithmetisches Mittel aussagekräftiger ist, hängt von der Fragestellung ab. Bei einer [[Einkommensverteilung]] interessiert [[Steuerzahler]] zumeist, wie viel ein typischer Bürger verdient, was sich deutlicher im Median widerspiegelt.
+
+== Vergleich mit anderen Maßen der zentralen Tendenz ==
+Der Median gehört zur Gruppe der [[Quantil]]e und kann auch als ½-Quantil betrachtet werden. Andere wichtige [[Lagemaß]]e sind das [[Arithmetisches Mittel|arithmetische Mittel]] und der [[Modus (Statistik)|Modus]].
+
+Im Vergleich zum arithmetischen Mittel, oft Durchschnitt genannt, ist der Median [[Robuste Statistik|robuster]] gegenüber [[Ausreißer]]n (extrem abweichenden Werten) und lässt sich auch auf [[Ordinalskala|ordinal skalierte]] Variablen anwenden. Der Begriff Median (von {{laS|''medianus''}} ‚in der Mitte befindlich‘, ‚der Mittlere‘) entstammt der [[Geometrie]], wo er ebenfalls eine Grenze zwischen zwei Hälften gleicher Größe bezeichnet.
+
+== Anwendungsbereiche ==
+[[Datei:Median notenspiegel.svg|miniatur|hochkant=1.5|Der Median dieses [[Notenspiegel]]s ist 3−. Etwas weniger als die Hälfte der Ergebnisse ist schlechter; durch Hinzunahme der Notenstufe 3− selbst wird die Hälfte gerade überschritten.]]
+
+Im Gegensatz zum arithmetischen Mittel kann der Median auch für [[Ordinalskala|ordinal skalierte]] Variablen wie beispielsweise Notenstufen, bei denen es keinen quantitativen Abstand gibt, verwendet werden. Aber auch bei [[Intervallskala|intervall-]] und [[Verhältnisskala|verhältnisskalierten]] Daten kann der Median angewendet werden und hat dann Nachteile und Vorteile gegenüber dem  arithmetischen Mittel als Lagemaß.
+<!-- noch richtigzustellen: Durch diese Eigenschaft eignet sich der Median besonders gut als [[Lageparameter]] für nicht normalverteilte Grundgesamtheiten, wie sie beispielsweise auf nach oben offenen Skalen positiver Zahlen vorkommen. Dieser Vorteil verkehrt sich jedoch in einen Nachteil, wenn die Verteilung der Daten z.&nbsp;B. [[Bimodale Verteilung|bimodal]] ist. -->
+Für lediglich [[Nominalskala|nominal skalierte]] Variablen, deren Ausprägungen keine natürliche Rangfolge aufweisen, wie zum Beispiel eine Variable ''Geburtsland'', kann der Median nicht angewendet werden. Hier ist der [[Modus (Statistik)|Modalwert]] das einzige Lagemaß, das festgestellt werden kann.
+
+Der Median wird in der Statistik und der [[Wahrscheinlichkeitstheorie]] in drei unterschiedlichen Bedeutungen angewendet:
+# als [[Lagemaß]] der [[Deskriptive Statistik|deskriptiven Statistik]] zur Beschreibung einer konkreten Liste von [[Stichprobe]]nwerten,
+# in der Wahrscheinlichkeitstheorie als Median einer [[Wahrscheinlichkeitsverteilung]] oder einer [[Zufallsvariable]]. Hier stellt der Median eine Alternative zum [[Erwartungswert]] für die Angabe eines „mittleren Werts“ dar.
+# in der [[Mathematische Statistik|mathematischen Statistik]] als Median einer [[Zufallsstichprobe]] zur [[Robuste Schätzverfahren|robusten Schätzung]] unbekannter Verteilungen.
+
+{{Siehe auch|Medianalter|Medianvermögen|Medianeinkommen}}
+
+=== Median einer Stichprobe ===
+Ein Wert <math>m</math> ist Median einer [[Stichprobe]], wenn mindestens die Hälfte der Beobachtungen in der Stichprobe einen Wert <math> \leq m </math> und mindestens die Hälfte einen Wert <math> \geq m </math> hat.
+
+Sortiert man die Beobachtungswerte der Größe nach, das heißt geht man zur nach dem [[Rang (Statistik)|Rang]] geordneten Stichprobe über, so ist der Median bei einer ungeraden Anzahl von Beobachtungen der Wert der in der Mitte dieser [[Folge (Mathematik)|Folge]] liegenden Beobachtung. Bei einer geraden Anzahl von Beobachtungen gibt es kein einzelnes mittleres Element, sondern zwei. Hier sind die Werte der beiden mittleren Beobachtungen sowie alle Werte dazwischen (obwohl diese möglicherweise bei keiner Beobachtung aufgetreten sind) ein Median der Stichprobe, da für alle diese Werte obige Bedingung zutrifft.
+
+Bei [[Intervallskala|kardinal skalierten]] Messgrößen (wenn es also sinnvoll möglich ist, die Differenz von Messwerten zu berechnen) verwendet man im Falle einer geraden Anzahl Beobachtungen meist das arithmetische Mittel der beiden mittleren Beobachtungswerte. Der Median <math>\tilde x</math> einer geordneten Stichprobe <math>(x_1, x_2, \dots, x_n)</math> von <math>n</math> Messwerten ist dann also
+
+: <math>\tilde x
+=\begin{cases}
+  x_\frac{n+1}{2}                                    & n\text{ ungerade}\\
+  \frac {1}{2}\left(x_{\frac{n}{2}} + x_{\frac{n}{2} + 1}\right) & n \text{ gerade.}
+\end{cases}
+</math>
+
+Diese Definition hat den Vorteil, dass bei symmetrischen Verteilungen das [[arithmetisches Mittel|arithmetische Mittel]] und der Median identisch sind.
+
+==== Ober- und Untermedian ====
+Oft möchte man dagegen sicherstellen, dass der Median in jedem Fall eines der Elemente der Stichprobe sein soll. In diesem Fall wird alternativ zu dieser Definition bei einer geraden Anzahl von Elementen entweder der ''Untermedian'' <math>\tilde x_u = x_\frac{n}{2}</math> oder der ''Obermedian'' <math>\tilde x_o = x_{\frac{n}{2}+1}</math> genutzt und als ''Median'' bezeichnet. Im Falle einer ungeraden Anzahl der Beobachtungen wird <math>\tilde x=\tilde x_u=\tilde x_o</math> festgelegt.
+
+Mithilfe von [[Abrundungsfunktion und Aufrundungsfunktion|Gauß-Klammern]] lässt sich diese Definition kürzer schreiben als
+
+: <math>\tilde x_u = x_{\left\lfloor\frac{n+1}{2}\right\rfloor}</math>,
+: <math>\tilde x_o = x_{\left\lceil\frac{n+1}{2}\right\rceil}</math>
+
+und es gilt allgemein:
+
+: <math>\tilde x = \tfrac 12\left(\tilde x_u + \tilde x_o\right)</math>.
+
+Diese Medianbestimmung spielt beispielsweise bei [[Datenbanksystem]]en eine große Rolle, wie z.&nbsp;B. bei [[Selektion (Informatik)|SELECT-Abfragen]] mittels des Medians der Mediane.
+
+==== Eigenschaften ====
+Der Median <math>\tilde x</math>, und im Fall einer geraden Anzahl von Messwerten alle Werte <math>\tilde x</math> mit <math>\tilde{x}_u \le \tilde x \le \tilde{x}_o</math>, minimieren die Summe der absoluten Abweichungen, das heißt für ein beliebiges <math>x</math> gilt
+: <math>\sum_{i=1}^n |\tilde x - x_i| \le \sum_{i=1}^n |x - x_i|.</math>
+Der Median ist Grundlage der [[Methode der kleinsten absoluten Abweichungen]] und Verfahren der [[Robuste Regression|robusten Regression]]. Das arithmetische Mittel dagegen minimiert die Summe der quadratischen Abweichungen und ist Grundlage der [[Methode der kleinsten Quadrate]] und der [[Regressionsanalyse]] und ist mathematisch leichter zu handhaben, jedoch nicht robust gegen Ausreißer.
+
+Der Median kann, wie oben beschrieben, algorithmisch bestimmt werden, indem die Messwerte sortiert werden. Da dies mit Aufwand <math>\mathcal{O}\left( n \log\,n\right) </math> verbunden ist, wird im Allgemeinen zu speziellen Algorithmen zur Quantilsbestimmung mit linearem Aufwand <math>\mathcal{O}\left( n \right) </math> gegriffen oder zu Abschätzungen wie der [[Cornish-Fisher-Methode]]. Das arithmetische Mittel lässt sich ebenfalls in linearer Zeit bestimmten.
+
+==== Median von gruppierten Daten ====
+Vor allem in den [[Sozialwissenschaft]]en wird bei Statistiken häufig der Median geschätzt, da nicht alle Daten explizit und exakt gegeben sind, sondern nur in [[Intervall (Mathematik)|Intervallen]] gruppiert vorliegen. So wird beispielsweise bei [[Umfrage]]n selten nach dem exakten Gehalt gefragt, sondern nur nach der Einkommensklasse, also dem Bereich, in welchem das Gehalt liegt. Wenn nur die Häufigkeiten jeder Klasse bekannt sind, dann lässt sich der Median einer solchen Stichprobe im Allgemeinen nur näherungsweise bestimmen. Es seien <math>n</math> die Anzahl ''aller'' Daten, <math>n_i</math> die jeweilige Anzahl der Daten der <math>i</math>-ten Gruppe und <math>u_i</math> bzw. <math>o_i</math> die entsprechenden oberen bzw. unteren Intervallgrenzen.
+Zunächst wird nun die ''mediane Klasse'' (oder ''mediane Gruppe'') bestimmt, d.&nbsp;h. diejenige Gruppe, in welche der Median (nach obiger, konventioneller Definition) hineinfällt, z.&nbsp;B. die <math>m</math>-te Gruppe. Die Zahl <math>m</math> ist dadurch bestimmt, dass <math>\textstyle\sum_{k=1}^{m-1} n_k < \frac{n}{2}</math>, aber <math>\textstyle\sum_{k=1}^{m} n_k \geq \frac{n}{2}</math> gilt. Wenn keine weiteren Angaben über die [[Wahrscheinlichkeitsverteilung|Verteilung]] der Daten gegeben sind, wird z.&nbsp;B. [[Gleichverteilung]] postuliert, sodass man sich der [[Lineare Interpolation|linearen Interpolation]] als Hilfsmittel bedienen kann, um eine Schätzung des Medians der gruppierten Daten zu erhalten:
+
+: <math>x_\mathrm{med} = u_m+\frac{\frac n2 - \sum\limits_{k=1}^{m-1}n_k}{n_m} \cdot (o_m-u_m).</math>
+
+Wenn keine weiteren Angaben über die Verteilung der Daten gegeben sind, kann auch jede andere Verteilung außer der Gleichverteilung möglich sein und somit kann auch jeder andere Wert im m-ten Intervall der Median sein.
+
+Im Gegensatz zur konventionellen Definition des Medians muss dieser ''nicht'' zwangsläufig ein Element aus der tatsächlichen Datenmenge sein, welche in aller Regel nicht bekannt ist.
+
+==== Beispiel ====
+''Einkommen'':
+{|  class="wikitable"
+|-
+! Klasse (<math>i</math>)
+! Bereich (<math>u_i</math> bis <math>o_i</math>)
+! Gruppengröße (<math>n_i</math>)
+|-
+| 1
+| mind. 0, weniger als 1500
+| 160
+|-
+| 2
+| mind. 1500, weniger als 2500
+| 320
+|-
+| 3
+| mind. 2500, weniger als 3500
+| 212
+|}
+
+Man berechne
+
+: <math>\tfrac n2 = \tfrac{212+320+160}2 = \tfrac{692}2=346.</math>
+
+Also liegt der Median in der 2. Klasse (d.&nbsp;h. <math>m=2</math>), da die erste Klasse nur 160 Elemente umfasst. Somit ergibt sich als Schätzung für den Median
+
+: <math>x_\mathrm{med} = 1500 + \tfrac{346-160}{320}\cdot (2500-1500) = 2081{,}25.</math>
+
+Da die konkrete Verteilung der Daten in den Intervallen unbekannt ist, kann auch jeder andere Wert im 2. Intervall der Median sein. Der beispielhaft errechnete Wert 2081,25 kann also bis zu 581,25 zu groß und bis zu 418,75 zu klein sein, der Fehler der Schätzung also bis zu 28 % betragen.
+
+Eine Veranschaulichung dieses Verfahrens zur Festlegung des Medians bei gruppierten Daten ist die grafische Ermittlung mit Hilfe der [[Summenkurve]]. Hier wird der [[Abszisse]]nwert <math>x_\mathrm{med}\,</math> gesucht, der zum [[Ordinate]]nwert <math>\tfrac{n}{2}</math> gehört. Bei kleinerem und geradem <math>n</math> kann auch stattdessen der Ordinatenwert <math>\tfrac{n}{2}+1</math> gewählt werden.
+
+=== Median einer Verteilung ===
+Eine Verallgemeinerung des Begriffes liefert die Betrachtung einer reellwertigen [[Zufallsvariable]] <math>X</math> und ihrer [[Wahrscheinlichkeitsverteilung|Verteilung]], beziehungsweise ihrer [[Verteilungsfunktion]] <math>F(x) = P(X \leq x)</math>.
+
+==== Definition ====
+Sei <math>X</math> eine Zufallsvariable und <math>F_X</math> deren Verteilung. Dann ist jedes Element der folgenden Menge ein Median von <math>X</math> bzw. ein Median von  <math>F_X</math>:
+
+: <math>\left\{m \in \R \mid P(X \leq m) \geq \frac{1}{2} \text{ und } P(X \geq m) \geq \frac{1}{2}\right\}</math>
+
+Offensichtlich ist jedes <math>m \in \R</math> mit <math>F(m) = \tfrac{1}{2}</math> in dieser Menge, also ein Median von <math>X</math>.
+
+Falls kein solches <math>m</math> existiert, dann liefert die [[verallgemeinerte inverse Verteilungsfunktion]]
+
+: <math>F^{-1}(p) = \inf \{x \in \R \mid F(x) \geq p\}</math>
+
+für <math>p = \tfrac{1}{2}</math> ''einen'' Median von <math>X</math> und zwar den kleinstmöglichen. Wenn Eindeutigkeit eine Rolle spielt, definiert man ''den'' Median als <math> F^{-1}(\tfrac{1}{2})</math>. Dies entspricht der Vorgehensweise bei der Definition von Quantilen, der Median ist dann das 50 %-Quantil.
+
+==== Eigenschaften ====
+Ein Median ist, neben beispielsweise [[Erwartungswert]] und [[Modus (Statistik)|Modus]], ein [[Lageparameter]] einer Wahrscheinlichkeitsverteilung.
+
+Im Gegensatz zum Erwartungswert existiert der Median stets. So ist beispielsweise der Median der [[Cauchy-Verteilung|Standard-Cauchy-Verteilung]] gleich 0, während ihr Erwartungswert gar nicht existiert.
+
+Für symmetrisch verteilte Zufallsvariable, also für Zufallsvariable, bei denen <math>X-\mu</math> und <math>\mu-X</math> die gleiche Verteilung besitzen, sind Median und Erwartungswert beide gleich <math>\mu</math>.
+
+Für stetige Verteilungen mit monoton fallender Dichte (das heißt für <math>x_{0}< x < y </math> gilt <math>f(x) \ge f(y)</math>) ist <math>m \le \mu</math>, wobei das Gleichheitszeichen nur für die [[Stetige Gleichverteilung|stetigen Gleichverteilungen]] gilt. Typische Beispiele für diese Situation sind die [[Schiefe (Statistik)#Lage_von_Mittelwert_und_Median|rechtsschiefen]] Verteilungen [[Exponentialverteilung]] und [[Pareto-Verteilung]] mit <math>k > 1</math>.
+
+Zwischen Erwartungswert <math>\mu</math>, Median <math>m</math> und Standardabweichung <math>\sigma</math> besteht aufgrund der [[Francesco Cantelli|Cantelli]]-Ungleichung 
+<math> P(X - \mu \ge a) \le \frac{\sigma^2}{ \sigma^2 + a^2 } </math> mit ''a'' ≥ 0
+die Beziehung 
+
+: <math>   \left|\mu-m\right| \leq \sigma</math>.
+
+Das Gleichheitszeichen gilt für die diskrete Zufallsvariable <math>X</math> mit <math>\operatorname{P}\left[X=\mu-\sigma\right]=\operatorname{P}\left[X=\mu+\sigma\right]=1/2</math>.
+
+==== Beispiele ====
+[[Datei:BaeckereiMedian.svg|miniatur|Dichtefunktion einer Dreiecksverteilung mit Median]]
+
+* Bei der [[Dreiecksverteilung]]
+
+:: <math>f(x) = \frac x{18},\quad 0 \le x \le 6,</math>
+
+: ist der Median der <math>x</math>-Wert, welcher die Fläche
+
+:: <math>F(x)=\frac 12\cdot x\cdot\frac{x}{18}</math>
+
+: unter der [[Dichtefunktion]] in zwei gleich große Flächen teilt. Dieser Wert wird somit durch die Gleichung
+
+:: <math>F(m)=\frac 12\cdot m\cdot\frac{m}{18}=\frac 12</math>
+
+: bestimmt. Für deren Lösung <math>m=\sqrt{18}\approx 4{,}24</math> gilt damit <math>P(X \le 4{,}24) \approx 0{,}5</math>.
+
+: Das heißt, in diesem Beispiel liegt eine [[Schiefe_(Statistik)|linksschiefe Verteilung]] vor, der Median <math>m</math> ist größer als der Erwartungswert <math>\mu = 4</math>.
+
+[[Datei:Median exp.svg|miniatur|Median der Exponentialverteilung]]
+
+* Für die [[Exponentialverteilung]] mit Parameter <math>\lambda > 0</math> lautet die Verteilungsfunktion
+:: <math>F(x) = 1 - e^{-\lambda x}</math> für <math>x \geq 0.</math>
+: Diese Verteilung modelliert zum Beispiel atomaren Zerfall, genauer die [[Lebensdauer (Physik)|Lebensdauer eines radioaktiven Teilchens]] bis zum Verfall.
+: Ihr Median <math>m</math> ergibt sich als eindeutig bestimmte Lösung der Gleichung <math>F(m) = \tfrac{1}{2}</math> zu
+:: <math>1 - e^{-\lambda m} = \frac{1}{2} \iff e^{-\lambda m} = \frac{1}{2} \iff m = \frac{\ln\,2}{\lambda}.</math>
+: Wegen <math>\ln\,2 < 1</math> ist der Median hier kleiner als der Erwartungswert <math>\mu = \tfrac{1}{\lambda}</math>, diese Verteilung ist rechtsschief.
+: Der Median ist im Beispiel des Zerfalls die [[Halbwertzeit]].
+
+== Alternativen ==
+* Die [[Wohlfahrtsfunktion]] ist eine Alternative zum Median bei der Ermittlung des Masseneinkommens aus einer gegebenen Einkommensverteilung.
+* Eine andere Möglichkeit als der Median, mit Extremwerten umzugehen, ist die Benutzung eines ''getrimmten Mittelwerts'', den man ermittelt, indem man die kleinsten und größten Werte vor der Berechnung entfernt (typischerweise werden 5 % der Werte weggelassen).<ref>[http://www.statistics4u.com/fundstat_germ/cc_meanval.html] ''Grundlagen der Statistik/ Mittelwert'' von Hans Lohninger.</ref>
+* Nach Butler<ref>{{Literatur |Autor=Christopher Butler |Jahr=1985 |Titel=Statistics in Linguistics}}</ref> gibt es auch eine strengere Definition von Median (die weniger gebräuchlich ist), die sagt, der Median ist der Wert, für den gilt, ''die Zahl der kleineren Werte in der Reihe ist gleich der Zahl der größeren Werte in der Reihe''. Für Spezialfälle wie 3, 3, 3, 3, 4 oder 1, 2, 3, 3, 3 gibt es ein Verfahren, mit dem man einen eindeutigen Median unter Beibehaltung der strengeren Definition berechnen kann.<ref>{{Internetquelle |url=http://homepage.ruhr-uni-bochum.de/stephen.berman/Statistik/Zentrale-Tendenz.html |titel=Zentrale Tendenz |archiv-url=https://web.archive.org/web/20130116010101/http://homepage.ruhr-uni-bochum.de/stephen.berman/Statistik/Zentrale-Tendenz.html |archiv-datum=2013-01-16 |zugriff=2016-05-09}}</ref>
+
+== Weblinks ==
+{{Wiktionary}}
+* Ausführliche Erläuterungen zur Berechnung des Medians auf dem „Fußweg“: [[b:Statistik: Lageparameter eines Merkmals mit wenigen verschiedenen Beobachtungen| Wikibooks]]
+* Ausnutzung der robusten Eigenschaften des Medians am Beispiel der [http://diegeodaeten.de/least-median-square.html Kreisausgleichung]
+* {{MathWorld|title=Statistical Median|id=StatisticalMedian}}
+* {{EoM|Autor=A.V. Prokhorov|Titel=Median (in statistics)|Url=http://www.encyclopediaofmath.org/index.php?title=Median_(in_statistics)&oldid=11382}}
+
+== Einzelnachweise ==
+<references />
+
+[[Kategorie:Mittelwert]]

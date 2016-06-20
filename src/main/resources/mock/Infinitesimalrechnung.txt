@@ -1,0 +1,58 @@
+Die '''Infinitesimalrechnung''' ist eine von [[Leibniz]] und [[Isaac Newton|Newton]] unabhängig voneinander entwickelte Technik, um [[Differentialrechnung|Differential-]] und [[Integralrechnung]] zu betreiben. Sie liefert eine [[Methode (Erkenntnistheorie)|Methode]], eine [[Funktion (Mathematik)|Funktion]] auf beliebig kleinen (d.&nbsp;h. '''infinitesimalen''') Abschnitten [[widerspruchsfrei]] zu beschreiben. Frühe Versuche, [[Unendlichkeit|unendlich]] kleine Intervalle quantitativ zu fassen, waren an Widersprüchen und [[Teilungsparadoxon|Teilungsparadoxien]] gescheitert.
+
+Für die heutige [[Analysis]], die mit [[Grenzwert (Folge)|Grenzwerten]] und nicht mit [[Infinitesimalzahl]]en arbeitet, wird der Begriff üblicherweise nicht verwendet, allerdings existiert seit den 1960er Jahren mit der so genannten [[Nichtstandardanalysis]] eine widerspruchsfreie Infinitesimalrechnung.
+
+== Geschichte der Infinitesimalrechnung ==
+<gallery perrow="1" class="float-right">
+Datei:Frans Hals - Portret van René Descartes.jpg|[[René Descartes]]
+Datei:Bonaventura Cavalieri.jpeg|[[Bonaventura Cavalieri]]
+Datei:Gottfried Wilhelm von Leibniz.jpg|[[Gottfried Wilhelm Leibniz]]
+Datei:Sir Isaac Newton by Sir Godfrey Kneller, Bt.jpg|[[Isaac Newton]]
+Datei:Robinson abraham 1970.jpg|[[Abraham Robinson]]
+</gallery>
+
+Wichtige Wegbereiter des Infinitesimalkalküls waren [[René Descartes]] und [[Bonaventura Cavalieri]]. Descartes entwickelte erstmals Methoden, bei der Lösung von geometrischen Problemen die Algebra bzw. arithmetische Operationen zu verwenden. Cavalieri erkannte, dass geometrische Figuren letztlich aus infinitesimalen Elementen zusammengesetzt sind.
+
+[[Gottfried Wilhelm Leibniz]] entwickelte in den siebziger Jahren des 17. Jahrhunderts die Methode der Differenzen. Er verstand eine Kurve als ein Unendlicheck, so dass eine Tangente letztlich die Kurve in einer unendlich kleinen Strecke schneiden musste. Unter diesem unendlich kleinen Tangentenabschnitt ergibt sich ein infinitesimales Steigungsdreieck, bei dem die Differenzen der Funktionenwerte die Steigung der Tangente bestimmen.
+
+Leibniz erkannte auch, dass die Flächenberechnung unter einer Kurve die inverse Operation zur Differenzenbildung ist – mit anderen Worten: die Integralrechnung ist die Umkehrung (wie Minus und Plus) der Differentialrechnung bzw. das Problem der Flächenberechnung ist das inverse Tangentenproblem. Hier bestimmte Leibniz die Fläche unter einer Kurve als Summe unendlich schmaler Rechtecke.
+
+{{Anker|Fluxionsrechnung}}
+Etwa gleichzeitig mit Leibniz entwickelte auch der englische Naturwissenschaftler Sir [[Isaac Newton]] ein Prinzip der Infinitesimalrechnung. Er betrachtete jedoch Kurven und Linien nicht im Sinne Cavalieris als Aneinanderreihung unendlich vieler Punkte, sondern als Resultat stetiger Bewegung. Er benannte eine vergrößerte oder fließende Größe als ''Fluente'', die Geschwindigkeit der Vergrößerung bzw. Bewegung als ''Fluxion'' und so als ein unendlich kleines Zeitintervall. Damit konnte er aus der Länge einer durchlaufenen Strecke die Geschwindigkeit der Bewegung bestimmen (also die Ableitung berechnen) und umgekehrt aus einer gegebenen Geschwindigkeit die Länge der Strecke berechnen (also die Stammfunktion erstellen).
+
+Bei Newton wurden also Flächen nicht als Summe infinitesimaler Teilflächen bestimmt, sondern der Begriff des Ableitens ins Zentrum gestellt. So konnte er recht anschauliche Regeln für den Alltagsgebrauch herleiten. Sein Konzept hatte im Vergleich zu Leibniz jedoch einige begriffliche Ungenauigkeiten.
+
+Leibniz betrachtete eine Kurve, indem er das Steigungsdreieck anlegt und so auf die Tangente kommt. Newton dagegen betrachtete die Bewegung eines Punktes in der Zeit, lässt das Zeitintervall unendlich klein werden, so dass auch der Bewegungszuwachs verschwindet und hatte so die Möglichkeit, die Ableitung, also die Steigung in einem Punkt zu errechnen.
+
+Leibniz veröffentlichte seinen Kalkül 1684, woraufhin Newton 1687 folgte, doch setzte sich das Leibnizsche [[Mathematische Symbole|Zeichensystem]] wegen seiner eleganten Schreibweise und der einfacheren Rechnungen durch. Leibniz wurde später von Anhängern Newtons angegriffen, er habe die Ideen von Newton aus einem Briefwechsel der beiden von 1676 gestohlen. Dies führte zu einer Plagiatsklage, die 1712 von einer Kommission der [[Royal Society|Royal Society of London]] untersucht wurde. Die Kommission, von Newton beeinflusst, sprach Leibniz fälschlicherweise schuldig. Dieser Streit belastete dann jahrzehntelang das Verhältnis zwischen englischen und kontinentalen Mathematikern. Heute gelten sowohl Newtons als auch Leibniz’ Methode als unabhängig voneinander entwickelt.
+
+[[Nikolaus von Kues]] gilt mit seinem philosophisch-mathematischen Untersuchungen zur [[Unendlichkeit#Wissenschaftliche Zugänge zum Begriff „Unendlichkeit“|mathematischen Unendlichkeit]] als Wegbereiter für die Infinitesimalrechnung.
+
+== Infinitesimalrechnung heute ==
+
+Inspiriert durch [[Kurt Gödel|Gödels]] [[Vollständigkeitssatz]] und ein daraus folgendes „Nichtstandard-Modell der natürlichen Zahlen“, das unendlich große „natürliche“ Zahlen kennt, entwickelte [[Abraham Robinson]] in den frühen 1960ern eine widerspruchsfreie Infinitesimalrechnung, die heute meist als [[Nichtstandardanalysis]] bezeichnet wird und die grundsätzlich auf Leibniz’ Ideen aufbaut.
+
+Heute wird die Infinitesimale Analysis in Teilen der angewandten Mathematik, Stochastik, Physik und Ökonomie verwendet, etwa um [[Mathematisches Modell|mathematische Modelle]] zu konstruieren, die mit extremen Größenunterschieden arbeiten können. Ein Beispiel für eine (oft intuitive) Verwendung ist in der Atomphysik die Vereinbarung, dass Teilchen „unendlich weit“ voneinander entfernt seien und sich daher „fast nicht“ beeinflussen. Ein anderes intuitiv richtiges Beispiel aus der Stochastik ist die von Schülern und Studenten immer wieder gemachte Feststellung, dass manchen Ereignissen eine „unendlich kleine“, aber echt positive Wahrscheinlichkeit zugeordnet werden sollte. Entsprechende Ereignisräume können mit Hilfe von Infinitesimalen modelliert werden.
+
+== Siehe auch == 
+* [[Fraktionale Infinitesimalrechnung]]
+
+== Literatur ==
+* S. Albeverio, J.E. Fenstad, R. Hoegh-Krohn, T. Lindstrom: ''Non standard methods in stochastic analysis and mathematical physics''. Academic Press, 1986.
+* C. B. Boyer: '' The history of the calculus and its conceptual development''. Dover, New York 1949.
+* O. Deiser: ''Reelle Zahlen. Das klassische Kontinuum und die natürlichen Folgen''. Springer, Berlin 2007.
+* W. Dunham: '' The calculus gallery. Masterpieces from Newton to Lebesgue''. Princeton University Press, Princeton, New Jersey 2005.
+* C. H. Edwards Jr.: '' The historical development of the calculus''. Springer, New York 1979.
+* Heinz-Jürgen Heß: ''Erfindung der Infinitesimalrechnung''. In: [[Erwin Stein (Ingenieur)|Erwin Stein]], Albert Heinekamp (Hrsg.): ''Gottfried Wilhelm Leibniz - Das Wirken des großen Philosophen und Universalgelehrten als Mathematiker, Physiker, Techniker''. Gottfried-Wilhelm-Leibniz-Gesellschaft, Hannover 1990, S. 24–31. ISBN 3-9800978-4-6.
+* H.-N. Jahnke (Hg.): ''Geschichte der Analysis''. Spektrum, Heidelberg 1999.
+* H. Kaiser/W. Nöbauer: ''Geschichte der Mathematik''. Oldenbourg, 2003, S. 202–263.
+* H.-H. Körle: ''Die phantastische Geschichte der Analysis. Ihre Probleme und Methoden seit Demokrit und Archimedes. Dazu die Grundbegriffe von heute''. Oldenbourg, München 2009.
+* M. Kordos: ''Streifzüge durch die Mathematikgeschichte''. 1999.
+* D. Laugwitz: ''Zahlen und Kontinuum''. BI, Mannheim 1986.
+* A. Robinson: ''Non-Standard Analysis''. 1966.
+* K. Volkert: ''Geschichte der Analysis''. BI, Mannheim 1988.
+* W. Walter: ''Analysis 1''. Springer, Berlin 1997.
+
+[[Kategorie:Analysis]]
+[[Kategorie:Isaac Newton]]
+[[Kategorie:Gottfried Wilhelm Leibniz]]

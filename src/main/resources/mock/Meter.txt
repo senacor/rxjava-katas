@@ -1,0 +1,137 @@
+{{Begriffsklärungshinweis}}
+{{Infobox Physikalische Einheit
+| Name             = Meter
+| Einheitenzeichen = <math>\mathrm{m}</math>
+| PhysGröße        = [[Länge (Physik)|Länge]]
+| Formelzeichen    = <math>l,s,b,h,d,r</math> etc.
+| Dimension        = <math>\mathsf{L}</math>
+| System           = SIB+CGS
+| SI               = [[Internationales Einheitensystem#SI-Basiseinheiten|Basiseinheit]]
+| CGS              = <math>\mathrm{1 \, m = 10^2 \; cm}</math> (Zentimeter ist Basiseinheit)
+| BenanntNach      = {{grS|μέτρον}}, ''métron'' = „Maß, Länge“
+| SieheAuch        = 
+}}
+
+Der oder das<ref>Siehe [[#Sprachgebrauch|Abschnitt zum Sprachgebrauch]]</ref> '''Meter''' ({{FrS|''mètre''}} über {{LaS|''metrum''}} aus {{ELSalt|μέτρον}} ''métron'' ‚Maß, Werkzeug zum Messen, Länge‘)<ref name="GEMOLL">{{Literatur | Autor=[[Wilhelm Gemoll]] | Titel=Griechisch-Deutsches Schul- und Handwörterbuch | Ort=München/Wien | Jahr=1965 }}</ref> ist die [[Basiseinheit]] der [[Länge (Physik)|Länge]] im [[Internationales Einheitensystem|Internationalen Einheitensystem (SI)]] und in anderen [[Metrisches Einheitensystem|metrischen Einheitensystemen]]. Ein Meter ist definiert als die Länge der Strecke, die das [[Licht]] im [[Vakuum]] während der Dauer von [[Lichtgeschwindigkeit|1/299&nbsp;792&nbsp;458 Sekunde]] zurücklegt.<ref>{{Literatur | Titel=Das Internationale Einheitensystem (SI) | TitelErg=Deutsche Übersetzung der BIPM-Broschüre „Le Système international d‘unités/The International System of Units (8e edition, 2006)“ | Sammelwerk=PTB-Mitteilungen | Band=117 | Nummer=2 | Jahr=2007 | Übersetzer=Cecile Charvieux |Seiten=156 | Online=[https://www.hs-heilbronn.de/1019415/PTB-SI-Einheiten-2007.pdf Online Version (PDF-Datei, 1,4&nbsp;MB)]}}</ref> Das [[Einheitenzeichen]] des Meters ist der Kleinbuchstabe „m“. Für dezimale Vielfache und Teile des Meters werden die internationalen [[Vorsätze für Maßeinheiten]] verwendet.
+
+Der Meter wurde 1799 als die Länge des [[Urmeter]]s, eines [[Maßverkörperung|Prototyps]] aus [[Platin]], definiert. Dessen Länge entsprach nach den damals durchgeführten Messungen dem zehnmillionsten Teil der Entfernung vom [[Nordpol]] zum [[Äquator]]. Die aktuelle Definition gilt seit 1983.
+
+== Definitionsgeschichte ==
+[[Datei:Mètre-étalon Paris.JPG|mini|Standard-Meter, Rue de Vaugirard, Paris (Marmor)]]
+Die Längeneinheit Meter ist seit Ende des 18.&nbsp;Jahrhunderts in Gebrauch. Der Ursprung dieser Längeneinheit geht auf einen Beschluss der französischen Nationalversammlung zurück, ein einheitliches Längenmaß zu definieren. Dem gingen einige Vorschläge für die Definition einer Längeneinheit voraus, die anders als die traditionellen Längenmaße nicht von der Länge menschlicher Gliedmaßen (der [[Finger (Einheit)|Fingerbreite]], dem [[Zoll (Einheit)|Zoll]], der [[Handbreit]]e, der [[Spanne (Längenmaß)|Handspanne]], der [[Elle (Einheit)|Elle]], dem [[Fuß (Einheit)|Fuß]], dem [[Schritt (Einheit)|Schritt]] und dem [[Klafter]]) abgeleitet war. So schlug der Abbé [[Jean Picard]] 1668 als Längeneinheit das [[Sekundenpendel]] vor – also die Länge eines [[Pendel]]s, das eine halbe [[Periodendauer]] von einer Sekunde hat. Im [[Erdschwerefeld|Schwerefeld]] von Europa hätte ein solches Pendel die Länge von etwa 0,994&nbsp;m und käme der heutigen Definition eines Meters ziemlich nahe.
+
+=== Erdfigur ===
+[[Datei:Kilometre definition.svg|mini|Der Meter sollte ursprünglich ein Zehnmillionstel der Entfernung zwischen dem Nordpol und dem Äquator auf dem [[Meridian von Paris|Meridian durch Paris]] betragen.]]
+Maßgebend für die neue Längeneinheit wurde jedoch nicht das Sekundenpendel, sondern die [[Erdfigur]]. 1735 entsandte die [[Académie des sciences|Pariser Akademie der Wissenschaften]] zwei Expeditionen zur [[Gradmessung]] in das heutige [[Ecuador]] und nach [[Lappland]], um die genauen Abmessungen der Erde festzustellen. Im Jahr 1793 setzte der französische [[Nationalkonvent]] – neben einem neuen Kalender – auch ein neues Längenmaß fest: Der Meter sollte den 10-millionsten Teil des [[Längenkreis|Erdquadranten]] auf dem [[Meridian von Paris]] betragen – also den zehnmillionsten Teil der Entfernung vom [[Pol (Geographie)|Nordpol]] über Paris zum [[Äquator]]. Ein Prototyp dieses Meters wurde 1795 in Messing gegossen. Er erwies sich später als außerordentlich genau – gemessen am gesteckten Ziel war er nur 0,013 % oder 0,13&nbsp;Millimeter zu lang.
+
+=== Urmeter ===
+[[Datei:US National Length Meter.JPG|mini|Kopie Nummer 27 des [[Urmeter]]s aus Platin-Iridium, die 1889 angefertigt wurde. Sie war von 1893 bis 1960 in den USA als [[Maßverkörperung]] der Längeneinheit Meter in Gebrauch.]]
+Zwischen 1792 und 1799 bestimmten [[Jean-Baptiste Joseph Delambre|Delambre]] und [[Pierre Méchain|Méchain]] die Länge des [[Meridianbogen]]s zwischen [[Dünkirchen]] und [[Barcelona]] erneut. Aus einer Kombination mit den Ecuador-Lappland-Resultaten ergab sich ein neuer Wert zu 443,296 Pariser Linien, der 1799 für verbindlich erklärt und als ein Platinstab, das [[Urmeter]], realisiert wurde. Im 19.&nbsp;Jahrhundert kamen allerdings genauere [[Erdmessung|Vermessungen der Erde]] zum Ergebnis, dass das Urmeter etwa 0,02 % zu kurz geraten war. Dennoch wurde an dem 1799 definierten Meter festgehalten – mit dem Ergebnis, dass der Erdmeridianquadrant nicht 10&nbsp;000&nbsp;km, sondern 10&nbsp;001,966&nbsp;km lang ist. Diese Länge gilt für den Meridian von Paris, andere Meridiane können andere Längen haben. Ein Nebeneffekt war, dass man erkannte, dass die Erde keine exakte Kugel ist, sondern eine unregelmäßige Form hat. Die Erde hatte sich damit als ungeeignet zur Definition des Meters erwiesen. Bis 1960 war deshalb das Meter als die Länge eines konkreten Gegenstands festgesetzt – zuerst des Urmeters, seit 1889 dann des Internationalen Meterprototyps (siehe unten). Alle späteren Definitionen hatten das Ziel, dieser Länge möglichst genau zu entsprechen.
+
+Der [[Norddeutscher Bund|Norddeutsche Bund]] beschloss am 17.&nbsp;August 1868 die Einführung des französischen [[Metrisches Einheitensystem|Metersystems]] zum 1.&nbsp;Januar 1872. Deutschland gehörte 1875 zu den zwölf Gründungsmitgliedern der [[Meterkonvention]].
+
+Im Jahr 1889 führte das [[Internationales Büro für Maß und Gewicht|Internationale Büro für Maß und Gewicht]] (BIPM) den Internationalen Meterprototyp als [[Maßverkörperung|Prototyp]] für die Einheit Meter ein. Dabei handelte es sich um einen Stab mit kreuzförmigem Querschnitt. Als Material wurde eine Platin-[[Iridium]]-[[Legierung]] im Verhältnis 90:10 gewählt. Die Länge des Meters wurde festgelegt als der Abstand der Mittelstriche zweier Strichgruppen auf dem auf einer konstanten Temperatur von 0&nbsp;[[Grad Celsius|°C]] gehaltenen Stab. Es wurden 30 Kopien dieses Prototyps hergestellt und an nationale Eichinstitute übergeben.
+
+=== Wellenlänge ===
+[[Datei:Krypton-86-lamp NIST 49.jpg|mini|Eine [[Krypton-86-Lampe]], deren zinnober&shy;rote Spektral&shy;linie (Wellen&shy;länge ca. 606 nm) zwischen 1960 und 1983 zur Meter&shy;definition heran&shy;gezogen wurde]]Obgleich bei der Herstellung der Meterprototypen größter Wert auf Haltbarkeit und Unveränderbarkeit gelegt worden war, war doch klar, dass diese grundsätzlich vergänglich sind. Die Anfertigung von Kopien führte zwangsläufig zum Risiko von Differenzen und –&nbsp;ebenso wie regelmäßige Vergleiche der Kopien untereinander und mit dem Original&nbsp;– zum Risiko von Beschädigungen.
+
+Um dem Abhilfe zu schaffen, wurde 1960 eine Definition über die Wellenlänge eingeführt: Ein Meter ist das 1&nbsp;650&nbsp;763,73-fache der [[Wellenlänge]] der von Atomen des [[Nuklid]]s <sup>86</sup>[[Krypton|Kr]] beim Übergang vom Zustand 5d<sub>5</sub> zum Zustand 2p<sub>10</sub> ausgesandten, sich im [[Vakuum]] ausbreitenden Strahlung. Die Definition basiert auf Forschungen von [[Johann Georg Ernst Engelhard|Ernst Engelhard]]. Das Verständnis dieser Definition setzt lediglich Kenntnisse in [[Atomphysik]] voraus. Sind diese und die nötige Ausrüstung vorhanden, so kann die Länge eines Meters an jedem beliebigen Ort reproduziert werden. Statt auf der aufzubewahrenden Maßverkörperung, dem Urmeter, beruht die Definition des Meters seitdem auf einer Messvorschrift für Naturkonstanten, die unabhängig von Maßverkörperungen gemessen werden können. Der Zahlenwert wurde dabei so gewählt, dass das Ergebnis dem bis 1960 gültigen Meter innerhalb der damaligen Messunsicherheit entsprach.
+
+=== Lichtgeschwindigkeit ===
+Verbesserungen der [[Genauigkeit]] bei der Messung der Länge eines Meters nach dieser Vorschrift änderten jeweils den Zahlenwert der Naturkonstante [[Lichtgeschwindigkeit]]. Zuletzt geschah dies 1973. Auf der 15.&nbsp;[[Generalkonferenz für Maß und Gewicht|Generalkonferenz für Maße und Gewichte]] (kurz CGPM) wurde beschlossen, den Zahlenwert der Lichtgeschwindigkeit nicht zu messen, sondern zu definieren.<ref>J. Terrien: ''International Agreement on the Value of the Velocity of Light.'' In: ''Metrologia.'' Band 10, Nummer 1, 1974, S.&nbsp;9, [[doi:10.1088/0026-1394/10/1/003]]</ref> Im Gegenzug wurde vorgeschlagen, die Länge eines Meters als diejenige Strecke zu definieren, die Licht im Vakuum innerhalb des Zeitintervalls von 1/299&nbsp;792&nbsp;458&nbsp;[[Sekunde]]n durchläuft.<ref>''Recommended value for the speed of light'' [http://www.bipm.org/en/CGPM/db/15/2/ Resolution 2 of the 15th meeting of the CGPM (1975)].</ref> Die 17.&nbsp;CGPM hat am 20.&nbsp;Oktober 1983 diese Definition angenommen.
+
+== {{Anker|Dezimale Vielfache}} Gebräuchliche dezimale Vielfache {{Anker|Dezimale Vielfache und Teile des Meters}} ==
+Die Einheit Meter ist mit verschiedenen dezimalen Vielfachen (auch [[SI-Präfix]]en) in Verwendung, beispielsweise:
+
+<!-- Bitte keine Anker löschen; siehe auch Disk hierzu -->
+{| class="wikitable"
+|-
+!Bezeichnung || Symbol || Faktor || Vielfaches ||style="text-align:left;font-weight:normal"| '''Anmerkungen''', für Beispiele solcher Längen siehe [[Größenordnung (Länge)]]
+|-
+|Myriameter{{Anker|Myriameter}} ||  || 10<sup>4{{0|-0}}</sup> || 10 km || veraltet, siehe [[Myriameterstein]], nicht SI-konform
+|-
+|Kilometer {{Anker|Km}}{{Anker|km}}|| km || 10<sup>3{{0|-0}}</sup> || 1 000&nbsp;m ||
+|-
+|Hektometer{{Anker|hm}}|| hm  || 10<sup>2{{0|-0}}</sup> || 100&nbsp;m || vor allem verwendet bei Artillerie und Marine, [[Hektometerstein]] an Straßen
+|-
+| Dekameter {{Anker|Dekameter}}
+| dam  || 10<sup>1{{0|-0}}</sup> || 10&nbsp;m || zunächst ''Kette''<ref name="alteNamen">Zu den deutschen Bezeichnungen Kette, Stab, Neuzoll und Strich:<br />[http://www.retrobibliothek.de/retrobib/seite.html?id=135189 Eintrag „Strich, Maßbezeichnung“], Band 15, S. 436, in: Autorenkollektiv: ''Brockhaus' Konversationslexikon.'' F. A. Brockhaus, Leipzig/Berlin/Wien 1894–1896.<br />H. Balsam: ''Leitfaden der Planimetrie nebst einer Sammlung von Lehrsätzen und Aufgaben.'' Nachdruck der 1. Auflage von 1872, Salzwasser Verlag, Paderborn, ISBN 978-3-8460-4629-6, {{Google Buch|BuchID=sVRdyf9bJqcC|Seite=68|Hervorhebung=stab kette neuzoll strich}}.<br />Adam Freiherr v. Burg: ''Das Pendel als Zeit- und Längenmass mit dem Uebergange auf das metrische Mass und Gewicht.'' In: Verein zur Verbreitung naturwissenschaftlicher Kenntnisse in Wien (Hrsg.): ''Populäre Vorträge aus allen Fächern der Naturwissenschaft.'' 16. Cyclus, Wien 1876, S. 509, [http://www.landesmuseum.at/pdf_frei_baende/29953.pdf Scan als PDF] (43 MByte), [http://www.bhl-europe.eu/static/a0r4xh1p/a0r4xh1p_full_ocr.txt OCR-Text].</ref>
+|-
+|Meter {{Anker|m}} || m || 10<sup>0</sup> || 10 dm|| zunächst ''Stab''<ref name="alteNamen" />
+|-
+|Dezimeter {{Anker|dm}}|| dm || 10<sup>−1</sup> || 10 cm|| veraltet ''Decimeter'' (um 1900)
+|-
+|Zentimeter{{Anker|cm}}|| cm || 10<sup>−2</sup> || 10&nbsp;mm|| zunächst ''Neuzoll''<ref name="alteNamen" />
+|-
+|Millimeter{{Anker|mm}}{{Anker|Millimeter}} || mm || 10<sup>−3</sup> || 1 000&nbsp;μm || zunächst ''Strich''<ref name="alteNamen" />
+|-
+|{{Anker|Mikrometer}}Mikrometer{{Anker|µm}}|| μm || 10<sup>−6{{0|0}}</sup> || 1 000&nbsp;nm || veraltet ''Mikron'', im technischen Sprachgebrauch auch kurz μ (Aussprache „mü“)
+|-
+|Nanometer {{Anker|nm}}|| nm || 10<sup>−9{{0|0}}</sup> || 1 000 pm || heute gebräuchlich für die [[Wellenlänge]] von Licht und in der [[Nanotechnologie]]
+|-
+|[[Ångström (Einheit)|Ångström]] || Å || 10<sup>−10</sup> || 100 pm || früher gebräuchlich für Wellenlänge von Licht und in der [[Kristallographie]]
+|-
+|Pikometer {{Anker|pm}}|| pm || 10<sup>−12</sup> ||1 000&nbsp;fm ||
+|-
+|Femtometer {{Anker|fm}}|| fm || 10<sup>−15</sup> ||   || in der [[Kernphysik|Kern-]] und [[Teilchenphysik]] als ''Fermi''
+|}
+Zusammensetzungen mit weiteren Präfixen sind ungebräuchlich.
+
+== Zusammenhang zu anderen gebräuchlichen Längeneinheiten ==
+{| class="wikitable toptextcells"
+|-
+! style="text-align:left;"|Meter ausgedrückt in Nicht-SI-Einheiten
+! style="text-align:left;"|Nicht-SI-Einheiten ausgedrückt in Meter
+|-
+| 1 Meter ≈ {{0}}3,2808 [[Fuß (Einheit)|Fuß]]
+| style="text-align:right;"| 1 Fuß = 0,3048 Meter
+|-
+| 1 Meter ≈ {{0}}0,00062 [[Meile]]n (International)
+| style="text-align:right;"| 1 Meile (International) = 1609,344 {{0}}Meter
+|-
+| 1 Meter ≈ {{0}}0,00054 [[Seemeile]]n
+| style="text-align:right;"| 1 Seemeile = 1852,0 {{0|000}}Meter
+|-
+| 1 Meter ≈ {{0}}1,0936 [[Yard]]
+| style="text-align:right;"| 1 Yard = 0,9144 Meter
+|-
+| 1 Meter ≈ 39,370 [[Zoll (Einheit)|Zoll]]
+| style="text-align:right;"| 1 Zoll = 0,0254 Meter
+|}
+
+== Sprachgebrauch ==
+Der deutsche Einheitenname ''Meter'' geht auf <abbr title="französisch">frz.</abbr> ''mètre'' zurück [aus <abbr title="lateinisch">lat.</abbr> ''metrum'', <abbr title="griechisch">griech.</abbr> ''métron'' = (Vers)maß, Silbenmaß].<ref name="DgWddS">{{Literatur | Titel=DUDEN – Das große Wörterbuch der deutschen Sprache | Verlag=Bibliographisches Institut & F. A. Brockhaus | Ort=Mannheim | Jahr=2000 | ISBN=3-411-71001-2}}</ref>
+
+Der Einheitenname ''Meter'' war nach DIN&nbsp;1301-1:2002-10 Neutrum ''('''das''' Meter)'', analog zu den Ursprungssprachen. Mit DIN&nbsp;1301-1:2010-10 wurde dagegen Maskulinum ''('''der''' Meter)'' als Norm festgelegt.<ref name="DIN1301_1">DIN 1301-1:2010-10 Einheiten – Teil 1: Einheitennamen, Einheitenzeichen, Oktober 2010.</ref> Damit wurde die Fachsprache dem allgemeinen Sprachgebrauch angepasst, wo Maskulinum überwiegt.<ref name="DgWddS" /> „Das“ Meter wird hingegen für die Bedeutung als Messinstrument benutzt, etwa: das Thermometer.
+
+Zur Frage, ob ''Meter'' nach Numerus und Kasus flektiert wird, kann man laut der Duden-Redaktion folgende Fälle unterscheiden:<ref>Duden, Band 9: ''Richtiges und gutes Deutsch'', danach knapp zusammengefasst Juliane Topka: [http://www.julianetopka.de/zwei-minuten-archiv/thema-meter-oder-metern Meter oder Metern?]</ref>
+* Steht das, dessen Maß angegeben wird, direkt hinter der Maßeinheit, wird die endungslose Form verwendet: ''in 2&nbsp;Meter Höhe'' oder ''in 100&nbsp;Meter Entfernung''
+* Steht das, dessen Maß angegeben wird, <u>nicht</u> direkt hinter der Maßeinheit, wird in der Regel die Form mit Flexionsendung verwendet (''-s'' im Genitiv Singular, ''-n'' im Dativ Plural):
+: Dabei ist es egal, ob das Gemessene überhaupt nicht genannt wird ''(in 100&nbsp;Meter<u>n</u>)'' oder an einer anderen Stelle im Satz steht ''(in einer Entfernung von 100&nbsp;Meter<u>n</u>)''.
+* Die Flexionsendung wird auch verwendet, wenn vor Zahl und Maßeinheit noch ein Artikel steht: ''mit den 150&nbsp;Meter<u>n</u> Fußweg'' oder ''Vernachlässigung des einen Meter<u>s</u>''.
+
+== Abgeleitete Maßeinheiten ==
+Vom Meter leiten sich die Flächeneinheit [[Quadratmeter]] und die Volumeneinheit [[Kubikmeter]] ab.
+
+Längenbezogene Größen werden als ''Belag'', manchmal auch als ''Dichte'' bezeichnet. Beispiele sind die [[Massenbelegung]] oder der [[Widerstandsbelag]].
+
+== Literatur ==
+* Hans-Joachim v. Alberti: ''Maß und Gewicht. Geschichtliche und tabellarische Darstellungen von den Anfängen bis zur Gegenwart.'' Akademie-Verlag, Berlin 1957.
+* {{Literatur|Autor=Johannes Hoppe-Blank|Titel=Vom metrischen System zum Internationalen Einheitensystem|Ort=Braunschweig|Verlag=Physikalisch-Technische Bundesanstalt|Jahr=1975|Kommentar=Bericht PTB-ATWD-5}}
+* Reinhard Kreutzfeldt: ''Das Archivmeter – Zur Begründung des metrischen Systems vor 200 Jahren.'' In: ''Der Vermessungsingenieur.'' 3/99, Verlag Chmielorz, 1999, S. 156–158.
+* Bettina Schütze, Andreas Engler, Harald Weber: ''Lehrbuch Vermessung - Grundwissen.'' 2. Auflage. Selbstverlag, Dresden 2007, ISBN 978-3-936203-07-3.
+
+== Weblinks ==
+{{Commonscat|Metre}}
+{{Wiktionary}}
+{{Wikisource|Gesetz, betreffend die Abänderung der Maaß- und Gewichtsordnung. Vom 11. Juli 1884|Gesetz, betreffend die Abänderung der Maaß- und Gewichtsordnung. Vom 11. Juli 1884 (Deutsches Reich)}}
+* [http://www.ptb.de/cms/index.php?id=1450 Das Meter] – Artikel zur Definition und Realisierung, bei der [[Physikalisch-Technische Bundesanstalt|PTB]]
+* [http://www.bipm.org/en/measurement-units/history-si/evolution-metre.html The BIPM and the evolution of the definition of the metre]
+* {{ZDFmediathek| ID=1214236 | Titel=Terra X: Die Jagd nach dem Urmeter (2. Januar 2014) | Typ=video | Zugriffsdatum=2014-03-19 | Offline=}} (Dokumentarfilm über die Vermessung von Delambre und Mechain 1792–1799)
+
+== Einzelnachweise ==
+<references />
+
+{{Navigationsleiste SI-Basiseinheit}}
+
+[[Kategorie:Längeneinheit]]

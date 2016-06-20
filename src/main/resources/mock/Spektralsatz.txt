@@ -1,0 +1,105 @@
+Unter dem Begriff '''Spektralsatz''' versteht man verschiedene miteinander verwandte [[Satz (Mathematik)|mathematische Aussagen]] aus der [[Lineare Algebra|Linearen Algebra]] und der [[Funktionalanalysis]]. Die einfachste Variante macht eine Aussage über die [[Diagonalisierbarkeit]]  einer bestimmten Klasse von [[Matrix (Mathematik)|Matrizen]]. Die weiteren hier betrachteten Spektralsätze übertragen dieses Prinzip auf Operatoren zwischen unendlichdimensionalen Räumen. Der Name leitet sich vom „Spektrum“ der [[Eigenwert]]e her.
+
+== Spektralsatz für Endomorphismen endlichdimensionaler Vektorräume ==
+=== Aussage ===
+Für einen [[Endomorphismus]] eines [[Dimension (Vektorraum)|endlichdimensionalen]] [[Unitärer Raum|unitären]] <math>\mathbb{K}</math>-Vektorraumes (<math>\mathbb{K}=\mathbb{R}</math> oder <math>\mathbb{K}=\mathbb{C}</math>) existiert genau dann eine [[Orthonormalbasis]] von [[Eigenvektor]]en, wenn er [[Normaler Operator|normal]] ist und alle Eigenwerte zu <math>\mathbb{K}</math> gehören. 
+
+In Matrixsprechweise bedeutet dies, dass eine Matrix genau dann unitär diagonalisierbar ist, wenn sie [[Normale Matrix|normal]] ist und nur Eigenwerte aus <math>\mathbb{K}</math> hat. Eine weitere gebräuchliche Formulierung ist, dass eine Matrix <math>A</math> genau dann normal ist, wenn sie unitär diagonalisierbar ist, also eine [[unitäre Matrix]] <math>U</math> (gleicher Dimension) existiert, so dass 
+::<math>U^*AU=D</math>
+
+mit <math>D:=\text{diag}(\lambda_1,\ldots,\lambda_n)</math>, einer Diagonalmatrix mit den Eigenwerten <math>\lambda_1,\ldots,\lambda_n</math> von <math>A</math> auf der [[Hauptdiagonale|Hauptdiagonalen]], ist.
+
+=== Bemerkungen ===
+* Für <math>\mathbb{K}=\mathbb{C}</math> ist die Bedingung, dass alle Eigenwerte in <math>\mathbb{K}</math> liegen, stets erfüllt (<math>\mathbb{C}</math> ist [[algebraisch abgeschlossen]] nach dem [[Fundamentalsatz der Algebra]]), also sind hier alle normalen Matrizen diagonalisierbar. Für <math>\mathbb{K}=\mathbb{R}</math> gilt dies nicht.
+
+* Ein [[selbstadjungiert]]er Endomorphismus bzw. eine [[hermitesche Matrix]] hat nur reelle Eigenwerte. Der Spektralsatz besagt also, dass alle hermiteschen Matrizen diagonalisierbar sind und ein Endomorphismus genau dann selbstadjungiert ist, wenn es eine Orthonormalbasis von Eigenvektoren gibt und alle Eigenwerte reell sind.
+
+== Spektralsatz für kompakte Operatoren ==
+=== Aussage ===
+Sei <math>H</math> ein <math>\mathbb{K}</math>-[[Hilbertraum]] und <math>T : H \to H</math> ein [[kompakter Operator|linearer kompakter Operator]], der im Fall <math>\mathbb{K} = \C</math> [[normaler Operator|normal]] beziehungsweise im Fall <math>\mathbb{K} = \R</math> [[Selbstadjungierter Operator|selbstadjungiert]] ist. Dann existiert ein (eventuell endliches) [[Orthonormalsystem]] <math>e_1 , e_2, \ldots </math> sowie eine [[Nullfolge]] <math>(\lambda_k)_{k \in \mathbb{N}}</math> in  <math>\mathbb{K} \backslash \{0\}</math>, so dass
+:<math>H = \ker(T) \oplus \overline{\operatorname{span}(\{e_1, e_2, \ldots \})}</math> 
+sowie
+:<math>Tx = \sum_{k = 1}^\infty \lambda_k \langle e_k, x \rangle e_k</math>
+für alle <math>x \in H</math> gilt. Die <math>\lambda_k</math> sind für alle <math>k \in \N</math> [[Eigenwert|Eigenwerte]] von <math>T</math> und <math>e_k</math> ist ein [[Eigenvektor]] zu <math>\lambda_k</math>. Außerdem gilt <math>\textstyle \|T\| = \sup_{k \in \N} |\lambda_k|</math>, wobei <math>\|\cdot\|</math> die Operatornorm ist.
+
+=== Projektionsversion des Spektralsatzes ===
+Man kann den Spektralsatz für kompakte Operatoren mit Hilfe von [[Orthogonalprojektion]]en umformulieren. Sei <math>H</math> wieder ein <math>\mathbb{K}</math>-Hilbertraum und <math>T : H \to H</math> ein linearer kompakter Operator, der im Fall <math>\mathbb{K} = \C</math> normal beziehungsweise im Fall <math>\mathbb{K} = \R</math> selbstadjungiert ist. Mit <math>E_k</math> wird die Orthogonalprojektion auf den zu <math>\lambda_k</math> gehörenden [[Eigenraum]] <math>\operatorname{ker}(\lambda_k \mathrm{id}_H - T)</math> bezeichnet. Der Operator <math>E_k</math> hat also die Darstellung <math>\textstyle E_kx = \sum_{i = 1}^{d_k}\langle e^k_i, x \rangle e_i^k</math>, wobei <math>d_k</math> die Dimension des Eigenraums <math>\operatorname{ker}(\lambda_k \mathrm{id}_H - T)</math> und <math>\{e_1^k, \ldots , e_{d_n}^k\}</math> eine Orthonormalbasis des Eigenraums ist. Dann kann der Spektralsatz umformuliert werden: Es existiert eine Nullfolge von Eigenwerten <math>(\lambda_k)_{k \in \mathbb{N}}</math> in <math>\mathbb{K} \backslash \{0\}</math>, sodass 
+:<math>Tx = \sum_{k = 1}^\infty \lambda_k E_k x</math>
+für alle <math>x \in H</math> gilt. Diese Reihe [[Punktweise Konvergenz|konvergiert nicht nur punktweise]], sondern auch bezüglich der Operatornorm.
+
+== Spektralsatz für beschränkte Operatoren ==
+=== Aussage ===
+Sei <math>H</math> ein Hilbertraum und <math>T \colon H \to H</math> ein selbstadjungierter stetiger [[linearer Operator]]. Dann existiert ein eindeutig bestimmtes [[Spektralmaß]] <math>E \colon \Sigma \to L(H,H)</math> mit kompaktem Träger in <math>\R</math> mit
+:<math>T = \int_{\sigma(T)} \lambda \, \mathrm{d} E_\lambda .</math> 
+Dabei bezeichnet <math>\Sigma</math> die [[borelsche σ-Algebra]] von <math>\R</math>, <math>L(H,H)</math> die Menge der beschränkten Operatoren auf <math>H</math> und <math>\sigma(T)</math> das [[Spektrum (Operatortheorie)|Spektrum]] von <math>T</math>.
+
+=== Zusammenhang zu den vorigen Spektralsätzen ===
+* Ist <math>H</math> endlichdimensional, gilt also <math>H \cong \C^n</math>, so besitzt der selbstadjungierte Operator <math>T</math> die paarweise verschiedenen Eigenwerte <math>\mu_1, \ldots , \mu_m</math> und es gilt wie im Artikel schon dargestellt <br 
+/><math style="margin-left:2em">T = \sum_{i=1}^m \mu_i E_{\{\mu_i\}},</math><br
+/>wobei <math>E_{\{\mu_i\}}</math> die Orthogonalprojektion auf den Eigenraum <math>\operatorname{ker}(\mu_i - T)</math> von <math>\mu_i</math> ist. Das Spektralmaß von <math>T</math> ist dann für alle <math>A \in \Sigma</math> durch <br 
+/><math style="margin-left:2em">E_A = \sum_{\{i: \mu_i \in A\}} E_{\{\mu_i\}}</math><br 
+/>gegeben. Daher reduziert sich der Spektralsatz für beschränkte Operatoren mit <math>\textstyle T = \sum_{i=1}^m \mu_i E_{\{\mu_i\}}</math> auf den Spektralsatz aus der linearen Algebra.
+* Sei <math>T : H \to H</math> ein linearer kompakter Operator, so wurde im Artikel ebenfalls dargestellt, dass für solche Operatoren ein Spektralsatz existiert. Sei <math>(\mu_i)_{i \in \N}</math> die Folge der Eigenwerte von <math>T</math> und wählt man wieder <math>\textstyle E_A = \sum_{\{i: \mu_i \in A\}} E_{\{\mu_i\}}</math> als Spektralmaß, wobei die Summe dann im Allgemeinen abzählbar viele Summanden hat und punktweise, aber nicht bezüglich der [[Operatornorm]], konvergiert, dann vereinfacht sich der Spektralsatz für beschränkte Operatoren zu<br 
+/><math style="margin-left:2em">T = \sum_{i =1}^\infty \mu_i E_{\{\mu_i\}}.</math><br
+/>Daher umfasst der Spektralsatz für beschränkte Operatoren auch den Spektralsatz für kompakte Operatoren.
+
+=== Beispiel ===
+Der Operator <math>T \colon L^2([0,1]) \to L^2([0,1])</math> definiert durch <math>T(x)(t) = t \cdot x(t)</math> ist selbstadjungiert mit <math>\sigma(T) \subset [0,1]</math> und besitzt keine Eigenwerte. Das Spektralmaß <math>E_Ax = \chi_{A \cap [0,1]} x</math> mit <math>A \in \Sigma</math> ist ein Spektralmaß mit kompaktem Träger. Es stellt <math>T</math> dar, denn es gilt
+:<math>\int \lambda \, \mathrm{d} \langle E_\lambda x,y\rangle = \int_{[0,1]} \lambda x(\lambda) \overline{y(\lambda)} \, \mathrm{d} \lambda = \langle Tx,y\rangle_{L^2([0,1])}.</math>
+
+=== Messbarer Funktionalkalkül ===
+{{Hauptartikel|Beschränkter Borel-Funktionalkalkül}}
+Sei <math>T \in L(H,H)</math> ein selbstadjungierter Operator. Der messbare Funktionalkalkül ist ein eindeutig bestimmter, stetiger, involutiver Algebrenhomomorphismus <math>\hat{\Phi} \colon B(\sigma(T)) \to L(H,H)</math>. Mit Hilfe der Spektralzerlegung erhält man eine einfache Darstellung dieser Abbildung. Es gilt nämlich
+:<math>\hat{\Phi}(f) = f(T) = \int_{\sigma(T)} f(\lambda) \mathrm{d} E_\lambda.</math>
+
+== Spektralsatz für unbeschränkte Operatoren ==
+Ist <math>A</math> ein [[Unbeschränkter_Operator#Unbeschr.C3.A4nkte_lineare_Operatoren|dicht definierter]] [[Normaler Operator|normaler]] Operator auf einem [[Komplexe Zahlen|komplexen]] [[Hilbertraum]] <math>H</math>,
+so existiert ein eindeutig bestimmtes Spektralmaß <math>E</math>
+auf den [[Borel-Menge]]n von <math>\mathbb{C}</math>, so dass folgendes gilt (<math>\sigma(A)</math> sei das Spektrum von <math>A</math>):
+* <math>A = \int_{z \in \sigma(A)} z \,\mathrm{d}E(z)</math>
+* Für eine Menge <math>M \subseteq \mathbb{C}</math> mit <math>M \cap \sigma(A) = \emptyset</math> gilt <math>E(M) = 0</math>.
+* Für eine offene Menge <math>M \subseteq \mathbb{C}</math> mit <math>M \cap \sigma(A) \neq \emptyset</math> gilt <math>E(M) \neq 0</math>.
+
+Ein selbstadjungierter Operator ist normal mit reellem Spektrum; man kann das obige Integral also auf reelle Zahlen beschränken.
+
+Der Definitionsbereich ist gegeben durch
+
+:<math>D(A) = \left\{ x\in H \left| \int_{\sigma(A)} |\lambda|^2 \mathrm{d} \langle E_\lambda x, x\rangle < \infty \right.\right\}</math>
+
+und der quadratische Formenbereich durch
+
+:<math>Q(A) = \left\{ x\in H \left| \int_{\sigma(A)} |\lambda| \mathrm{d} \langle E_\lambda x, x\rangle < \infty \right.\right\}</math>.
+
+Letzterer ist offensichtlich der maximale Definitionsbereich für die zugehörige [[quadratische Form]] <math>\langle A x, x \rangle</math> die in der Quantenmechanik besonders wichtig ist.
+
+Eine äquivalente Formulierung des Spektralsatzes lautet, dass <math>A</math> [[Unitärer Operator|unitär]] äquivalent zu einem Multiplikationsoperator über einem Raum <math>L_2(\Omega)</math> (für einen [[Maßtheorie|Maßraum]] <math>\Omega</math>) mit einer komplexwertigen [[Maßtheorie|messbaren Funktion]] <math>f \colon \Omega\to \mathbb{C}</math> ist; ist <math>A</math> selbstadjungiert, so ist <math>f</math> reellwertig.
+
+Ein normaler Operator im Komplexen kann in der Regel als  ''Summe zweier mit der reellen bzw. der imaginären Einheit multiplizierter, miteinander vertauschbarer selbstadjungierter Operatoren''  geschrieben werden  (''„Realteil“  +i&nbsp;„Imaginärteil“''), <math>A=\hat W_1+i \hat W_2\,,\hat W_i\equiv\hat W_i^\dagger \,, \,\hat W_1\hat W_2=\hat W_2\hat W_1\,.</math> Ferner gilt - wegen der Vertauschbarkeit der <math>\hat W_i</math> - , dass der Operator  <math>\hat W_2\,</math> und der Operator <math>\hat W_1</math> dieselben ''Eigenvektoren'' haben (trotz ggf.   verschiedener ''Eigenwerte''). So könnte <math>W_2</math> eine ''Funktion''  des selbstadjungierten Operators <math>\hat W_1</math> sein, <math>\hat W_2\equiv f_2(\hat W_1)\,,</math> mit geeignetem ''f<sub>2</sub>''. Dann käme es  letztlich nur auf eine einzige (reelle!) Spektraldarstellung an, etwa die von <math>\hat W_1\,\,(=\frac{A+A^\dagger}{2})</math>, und es würde zum Beispiel gelten, dass<br> <math>\textstyle\hat W_1= \int_{x \in \sigma(\hat W_1)} \,x \,\mathrm{d}E(x)</math> &nbsp;&nbsp;und&nbsp;&nbsp;  <math>\textstyle\hat W_2\,\,(=\frac{A-A^\dagger}{2i})= \int_{x \in \sigma(\hat W_1)} \,f_2(x) \,\mathrm{d}E(x)</math> ist.
+
+== Rolle in der Quantenmechanik ==
+
+In [[Quantenmechanik]] hat der Spektralsatz („Entwicklungssatz“) zentrale Bedeutung, da messbare physikalische Größen, sogenannte (“[[Observable]]n”),  durch ''selbstadjungierten Operatoren'' auf einem Hilbertraum dargestellt werden.
+Die möglichen Messwerte einer Observablen entsprechen ihrem Spektrum, welches in Punktspektrum (oder „diskretes Spektrum“) und kontinuierliches
+Spektrum zerfällt. Die Elemente des Punktspektrums werden auch Eigenwerte genannt. Für eine diskrete Observable, d.h. eine Observable ohne kontinuierliches Spektrum, ist die Wahrscheinlichkeit für einen gegebenen [[Zustand (Quantenmechanik)|quantenmechanischen Zustand]] <math>|\psi\rangle</math> 
+den Messwert <math>\lambda_j</math> zu erhalten, gegeben durch das [[Betragsquadrat]] des Skalarproduktes <math>\langle \phi_j|\psi\rangle</math>, wobei
+<math>\phi_j</math> die Eigenfunktion zum Eigenwert <math>\lambda_j</math> ist.
+
+== Geschichte ==
+Der Spektralsatz für kompakte selbstadjungierte Operatoren und der für beschränkte selbstadjungierte Operatoren gehen insbesondere auf Arbeiten von [[David Hilbert]] zurück. Er veröffentlichte 1906 in seiner 4. Mitteilung einen Beweis für diese Aussagen. Hilberts Darstellung der Sätze unterscheidet sich freilich stark von der heutigen Darstellung. Anstatt des Spektralmaßes verwendete er das [[Stieltjes-Integral]], das [[Thomas Jean Stieltjes]] erst 1894 zur Untersuchung von [[Kettenbruch|Kettenbrüchen]] eingeführt hatte. Nach Hilbert wurden für den Spektralsatz für beschränkte und unbeschränkte Operatoren Beweise unter anderem von [[Frigyes Riesz|Riesz]] (1930–1932) und Lengyel und [[Marshall Harvey Stone|Stone]] (1936) und für den unbeschränkten Fall auch von Leinfelder (1979) gefunden.<ref>Dirk Werner: ''Funktionalanalysis'', Springer-Verlag, Berlin, 2007, ISBN 978-3-540-72533-6, Kapitel VII.6</ref>
+
+== Literatur ==
+* Gerd Fischer: ''Lineare Algebra'', Vieweg-Verlag, ISBN 3-528-03217-0
+* John B. Conway: ''A Course in Functional Analysis'' (Springer, 2. Aufl. 1990)
+* Michael Reed, [[Barry Simon]]: Methods of Modern Mathematical Physics, 4 Bände, Academic Press 1978, 1980
+* [[Dirk Werner (Mathematiker)|Dirk Werner]]: ''Funktionalanalysis'', Springer-Verlag, Berlin, 2007, ISBN 978-3-540-72533-6
+* [[Gerald Teschl]]: Mathematical Methods in Quantum Mechanics; With Applications to Schrödinger Operators, American Mathematical Society, 2009 ([http://www.mat.univie.ac.at/~gerald/ftp/book-schroe/ Freie Online-Version])
+
+== Einzelnachweise ==
+<references />
+
+== Siehe auch ==
+* [[Hauptachsentransformation]]
+
+[[Kategorie:Lineare Algebra]]
+[[Kategorie:Funktionalanalysis]]
+[[Kategorie:Satz (Mathematik)]]

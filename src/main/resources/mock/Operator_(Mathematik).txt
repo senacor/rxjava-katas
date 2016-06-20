@@ -1,0 +1,56 @@
+Ein '''Operator''' ist eine [[Mathematik|mathematische]] Vorschrift (ein [[Kalkül]]), durch die man aus mathematischen Objekten neue Objekte bilden kann. Er kann eine standardisierte [[Funktion (Mathematik)|Funktion]] oder eine Vorschrift über Funktionen sein. Anwendung finden die Operatoren bei Rechenoperationen, also bei manuellen oder bei maschinellen Berechnungen.
+
+== Operator ==
+Standardisierte Operatoren werden in der Mathematik meist dann definiert, wenn es sich um eine häufige, immer wiederkehrende Vorschrift handelt, meist eine [[Einstellige Verknüpfung|ein-]] oder [[zweistellige Verknüpfung]]. Die Argumente dieser Verknüpfung heißen Operanden. Die Operatoren werden durch ein spezielles, kennzeichnendes [[mathematisches Symbol]] (ein spezielles [[Schriftzeichen]] der [[Formelschreibweise]]) dargestellt.
+
+Beispiele:
+* Die für die [[Grundrechenarten]] verwendeten Operatoren für [[Addition]], der als das [[Pluszeichen]] „+“ geschrieben wird, das [[Minuszeichen]] „−“ für [[Subtraktion]], die [[Malzeichen]] „·“, „×“ oder „*“ für die [[Multiplikation]], und für die [[Division (Mathematik)|Division]] die [[Geteiltzeichen]] „÷“, „:“, „/“ und der [[Bruchstrich]]
+* Der einstellige Operator für die [[negative Zahl]], der ebenfalls mit Minus „−“ geschrieben wird
+* Das [[Verkettungszeichen]] „<math>\circ</math>“ für die [[Komposition (Mathematik)|Komposition]] von Funktionen
+* Der [[Klasse (Mengenlehre)|Klassenbildungsoperator]] <math>\{|\}</math>
+
+== {{Anker|Operand}} Operand ==
+Die Argumente, auf die man einen Operator anwendet, heißen Operanden. Beim Ausdruck <math>1+2</math> sind also die Zahlen <math>1</math> und <math>2</math> die Operanden, die mit dem zweiseitigen Operator <math>+</math> verknüpft sind.
+
+== Operatoren in der Funktionalanalysis ==
+In der [[Funktionalanalysis]] hat man es mit [[Vektorraum|Vektorräumen]] zu tun, deren Elemente selbst Funktionen sind. Um die Elemente dieser Vektorräume besser von den Abbildungen zwischen solchen Vektorräumen zu unterscheiden, nennt man letztere auch ''Operatoren''.
+
+=== Beispiele ===
+Bekannte Beispiele für Operatoren, die einer Funktion eine Zahl oder eine andere Funktion zuordnen, sind:
+* Der [[Differentialoperator]] <math>\textstyle \frac{\operatorname{d}}{\operatorname{dx}}</math>  zur Bildung von [[Differential (Mathematik)|Differentialen]].
+* Der [[Volterraoperator]] <math>\textstyle \int_0^t</math> zur Bildung des [[Bestimmtes Integral|bestimmten Integrals]]. Operatoren wie diese, die einer Funktion eine Zahl zuordnen, nennt man [[Funktional]].
+* Der [[Nabla-Operator]] <math>\nabla</math> zur Bestimmung des [[Gradient (Mathematik)|Gradienten]] einer mehrdimensionalen Funktion.
+
+=== Lineare Operatoren zwischen Vektorräumen ===
+{{Hauptartikel|Linearer Operator}}
+
+In der (linearen) Funktionalanalysis betrachtet man Eigenschaften von [[Lineare Abbildung|linearen Abbildungen]] zwischen (unendlichdimensionalen) [[Banachraum|Banachräumen]]. Solche Abbildungen heißen Operatoren. Seien <math>V</math> und <math>W</math> Banachräume, dann nennt man also Abbildungen <math>T\colon V \rightarrow W</math> mit
+:<math>T(\alpha X + \beta Y) = \alpha T(X) + \beta T(Y) \quad \forall\, \alpha, \beta \in K;\, X,Y \in V</math>
+Operatoren. Manchmal, um die Linearität zu betonen, spricht man auch von einem linearen Operator. Entspricht der Raum <math>W</math> dem Raum der reellen oder komplexen Zahlen, so heißt die Abbildung <math>T</math> [[Funktional]].
+
+Die im vorherigen Abschnitt beschriebenen Operatoren sind Beispiele für Operatoren im Sinne der (linearen) Funktionalanalysis. Spezielle Klassen linearer Operatoren sind etwa [[Kompakter Operator|kompakte Operatoren]] oder [[Fredholm-Operator]]en.
+
+=== {{Anker|Nichtlinearer Operator}} Nichtlineare Operatoren ===
+In der (nichtlinearen) Funktionalanalysis nennt man Abbildungen zwischen [[Normierter Raum|normierten Vektorräumen]] manchmal auch Operatoren. Seien also <math>(X,\|\cdot\|_X)</math> und <math>(Y,\|\cdot\|_Y)</math> normierte Räume und <math>\Omega \subset X</math> eine Teilmenge, dann heißt die  Abbildung <math>F \colon \Omega \to Y</math> auch (nichtlinearer) Operator. Ist <math>Y</math> der Körper der reellen oder komplexen Zahlen, dann nennt man <math>F</math> manchmal auch (nichtlineares) Funktional.<ref>Klaus Deimling: ''Nichtlineare Gleichungen und Abbildungsgrade.'' Springer-Verlag, Berlin/ Heidelberg/ New York 1974, ISBN 3-540-06888-0.</ref> Ebenso wie im Bereich der linearen Operatoren bilden auch bei den nichtlinearen Operatoren die [[Kompakter Operator|kompakten Operatoren]] eine wichtige Teilmenge.
+
+== Operatoren der Physik ==
+Operatoren werden auch im mathematischen Kalkül der Physik definiert:
+* [[Dichteoperator]] <math>\rho</math>,
+* [[Ortsoperator]] <math>\hat{\mathbf{x}}</math>,
+* [[Impulsoperator]] <math>\hat{\mathbf{p}}</math>,
+* [[Hamilton-Operator]] <math>\hat H</math> der [[Quantenmechanik]]
+
+== Siehe auch ==
+* [[Logischer Operator]]
+* [[Operatorrangfolge]]
+* [[Operatorenrechnung]]
+* [[Operatorenschreibweise]]
+
+== Literatur ==
+* ''Formelzeichen, Formelsatz, Mathematische Zeichen und Begriffe''. [[DIN-Taschenbuch]] 202. 1994-07.
+
+== Einzelnachweise ==
+<references />
+
+[[Kategorie:Mathematischer Grundbegriff]]
+[[Kategorie:Logik]]

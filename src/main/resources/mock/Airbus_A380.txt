@@ -1,0 +1,921 @@
+{{Infobox Flugzeug
+| Name                = Airbus A380
+| Bild                = [[Datei:Airbus A380 overfly.jpg|300px|Überflug einer A380-800 in Airbus-Werkslackierung]]<br />''Überflug einer A380-800 in Airbus-Werkslackierung''
+| Typ                 = [[Strahltriebwerk|vierstrahliges]] [[Großraumflugzeug]]
+| Entwicklungsland    =
+<div>
+* {{FRA}}
+* {{GER}}
+* {{GBR}}
+* {{ESP}}
+</div>
+| Hersteller          = [[Airbus]]
+| Erstflug            = 27. April 2005
+| Indienststellung    = 25. Oktober 2007
+| Produktionszeitraum = seit 2005 in Serienproduktion
+| Stückzahl = 205 <small>(Stand: 31. Mai 2016)<!-- BITTE: nicht die höchste vergebene Seriennummer eintragen und ebenfalls Flieger ohne Erstflug abziehen!!! -->;</small><ref name="spot-total" /><small> geliefert:&nbsp;190</small><ref name="Produktseite">{{Internetquelle| url=http://www.airbus.com/aircraftfamilies/passengeraircraft/a380family/| titel=Produktseite der A380-Familie
+| werk=airbus.com| zugriff=2016-01-12|sprache=en}}</ref>
+}}
+[[Datei:Airbus A380.jpg|mini|Start eines A380-800 während der Luftfahrtschau 2007 in [[Paris]]]]
+[[Datei:A380 takeoff.ogg|mini|A380 beim Rollen zur Startposition (Video)]]
+
+Der '''Airbus A380''' ist ein [[Strahltriebwerk|vierstrahliges]] [[Großraumflugzeug]] des [[Europa|europäischen]] [[Flugzeughersteller]]s [[Airbus|Airbus S.&nbsp;A.&nbsp;S.]] mit zwei durchgehenden Passagierdecks. Der [[Tiefdecker]] ist mit einer Kapazität von bis zu 853 Passagieren das größte in [[Serienfertigung]] produzierte zivile [[Verkehrsflugzeug]] in der [[Geschichte der Luftfahrt]]. Während der Konzeptionsphase wurde das [[Flugzeug]] als ''Airbus A3XX'' bezeichnet. Die Endmontage findet in [[Toulouse]] und die [[Flugzeugkabine|Kabinenausrüstung]] in [[Hamburg-Finkenwerder]] statt. Der [[Erstflug]] dieses [[Langstreckenflugzeug]]s wurde am 27.&nbsp;April&nbsp;2005 mit der Maschine der Werksseriennummer MSN001 in der Version A380-841 absolviert. Bisher wurden 319 Maschinen dieses Typs bestellt.<ref name="Produktseite" /> Die erste wurde am 15.&nbsp;Oktober&nbsp;2007 in Toulouse an die Fluggesellschaft [[Singapore Airlines]] übergeben<ref>{{cite web| archiveurl=https://web.archive.org/web/20071015093518/http://www.airbus.com/en/presscentre/pressreleases/pressreleases_items/07_10_12_A380_delivery_DE.html | url=http://www.airbus.com/en/presscentre/pressreleases/pressreleases_items/07_10_12_A380_delivery_DE.html| title=Airbus liefert erste A380 am Montag, 15. Oktober, an Singapore Airlines aus | work=airbus.com| date=2007-10-12 |archivedate=2007-10-15| accessdate=2010-06-19}}</ref> und hatte am 25.&nbsp;Oktober 2007 ihren ersten Passagierflug.<ref>{{cite web| url=http://www.presseportal.ch/de/pm/100001998/100542217/singapore_airlines| title=Der erste Flug des Airbus A380 der Singapore Airlines hebt ab am 25. Oktober 2007 | work=Presseportal.ch| date=2007-08-17| accessdate=2010-06-19}}</ref>
+
+== Geschichte ==
+=== Vorgeschichte ===
+Die Entwicklung des Airbus A380 geht bis in die 1980er-Jahre zurück, als erste [[Projektstudie|Machbarkeitsstudien]] bezüglich eines Großflugzeuges sowohl für Passagiere als auch für den [[Luftfracht|Frachtflugverkehr]] erstellt wurden. In der zweiten Hälfte der 1990er-Jahre ergab sich eine Marktsituation, die aus der Sicht von Airbus eine Realisierung der Pläne gestattete. Diese Einschätzung resultierte zum einen aus der wachsenden Nachfrage nach Großraumflugzeugen, zum anderen aus der Entscheidung des Airbus-Konkurrenten [[Boeing]], keine Gelder für neue Versionen seiner Boeing 747 in [[Forschung und Entwicklung]] zu investieren. Nachdem im Jahr 2000 die ersten 50 [[Absichtserklärung|Kaufabsichtserklärungen]] vorlagen, begann Airbus 2001 mit der Konstruktion.
+
+=== Entwicklung ===
+[[Datei:Airbus A380 Frankfurt.jpg|mini|Beispiel der parallelen Abfertigung der beiden Decks. Hier der Airbus A380 am 22. März 2007 auf dem Frankfurter Flughafen nach seiner Rückkehr vom Testflug nach New York.]]
+[[Datei:A380 Reveal 1.jpg|mini|A380 beim Rollout, Januar 2005]]
+Für die Entwicklung des Flugzeuges war sowohl die Erhöhung der möglichen Passagierzahl als auch die Senkung der spezifischen Betriebskosten pro Person und Kilometer gefordert. Die A380 sollte im Vergleich zu anderen modernen Passagierflugzeugen der 1990er-Jahre mit um 15&nbsp;Prozent geringeren Kosten betrieben werden können. Die Entwicklungsziele konnten nur durch einen umfangreichen Einsatz von neuartigen Werkstoffen, wie beispielsweise [[Faser-Kunststoff-Verbund|faserverstärktem Kunststoff]] und [[Sandwichbauweise|Sandwichkonstruktionen]], zur Gewichtseinsparung erreicht werden. Die Rumpfaußenhaut besteht zum Beispiel nur noch an der Unterseite aus [[Aluminium]]. Die oberen zwei Drittel sind aus [[Glasfaserverstärktes Aluminium|glasfaserverstärktem Aluminium]] gefertigt.
+
+Ein anderes Ziel war die Lärmreduzierung. Der [[Lärmteppich]] des Flugzeugs ist erheblich kleiner als bei allen vergleichbar großen Flugzeugen. Die Außenmaße des Flugzeugs übertreffen nicht die 80×80-Meter-Box, wodurch es sich auf bestehenden Rollwegen bewegen und auch die [[Abfertigung (Luftverkehr)|Abfertigungs]][[Flughafeninfrastruktur|infrastruktur]] der [[Flughafenterminal|Terminals]] nutzen kann. Zur optimierten Passagierabfertigung werden allerdings oft die bestehenden Einrichtungen derart erweitert, dass der Ein- und Ausstieg parallel über beide Decks ablaufen kann. Ziel ist das Erreichen vergleichbarer [[Turnaround#Der Turnaround in der Luftfahrt|Turnaround]]-Zeiten wie bei einstöckigen Großraumflugzeugen.
+
+=== Testprogramm ===
+==== Erste öffentliche Präsentation (Rollout) ====
+Der erste für die [[Flugerprobung]] gebaute [[Prototyp (Technik)|Prototyp]] mit der Seriennummer (MSN) 001 stand von Oktober 2004 bis Januar 2005 in der Endfertigung. Am 18.&nbsp;Januar&nbsp;2005 fand schließlich die feierliche Vorstellung der A380 vor versammelter Presse statt.<ref>{{cite web|url=http://events.airbus.com/a380/reveal/index.html|title=Airbus-Portal über die Vorstellung von A380 („Reveal“) |work=Airbus |date=|accessdate=2012-04-27}}</ref> Die Staats- und Regierungschefs der Airbus-Hauptkooperationsländer, [[Jacques Chirac]], [[Gerhard Schröder]], [[Tony Blair]] und [[José Luis Rodríguez Zapatero|José Luis Zapatero]] waren bei der live im Fernsehen übertragenen [[Zeremonie]] anwesend.
+
+==== Strukturbelastungstests ====
+[[Datei:IABG Versuchsaufbau Airbus A380 5-1024.jpg|mini|links|A380 bei der IABG in Dresden]]
+[[Datei:IABG Test Setup A380 Dresden bent wing.jpg|mini|Tragfläche der A380 im Testbetrieb (IABG Dresden)]]
+An einem speziell für Strukturbelastungstests gebauten, nicht flugfähigen Exemplar mit der Seriennummer ([[Manufacturer Serial Number|MSN]]) 5001 wurde vom 1.&nbsp;September 2005 bis zum 16.&nbsp;Juni 2012 (ursprünglich geplant bis 2008) in einer eigens dafür erbauten Testhalle neben dem Gelände des [[Flughafen Dresden|Flughafens Dresden]] der größte [[Ermüdungsversuch|Struktur-Ermüdungsversuch]] an einem Zivilflugzeug durchgeführt. Dabei wurden von der [[IABG]] und der [[IMA Dresden|IMA]]<ref>{{Internetquelle| url=http://www.iabg.de/presse/aktuelles/mitteilungen/200211_airbus_a380_dresden_de.php| titel=Airbus A380 wird in Dresden getestet – Airbus vergibt Auftrag an IABG | werk=IABG – Industrieanlagen-Betriebsgesellschaft mbH | datum=2002-11-12 | zugriff=2010-06-19}}</ref> 60.800 Flüge (Flugzyklen) simuliert. Das entspricht einer Betriebszeit von rund 80 Jahren, dem 3,2-fachen Flugzeugleben der A380. Bei den Lebensdauertests am Airbus A380 setzte die IABG eine neu entwickelte Methode der Versuchssteuerung ein, mit der die Versuchsgeschwindigkeit erheblich gesteigert werden konnte. Dadurch konnten schon frühzeitig verlässliche Aussagen über das Lebensdauerverhalten der Flugzeugzelle gemacht werden. Nach erfolgreich bestandenen 5.000<ref>{{Internetquelle| url=https://www.iabg.de/nachrichten-termine/details/news/rumpfteile-d/ | titel=Rumpfteile des neuen Airbus A380 in Dresden gelandet – Sperrung der Autobahn für Weitertransport zum Flughafen | werk=iabg.de| hrsg=IABG – Industrieanlagen-Betriebsgesellschaft mbH |datum=2004-09-23| zugriff=2010-06-19}}</ref> simulierten Flügen durfte das erste Flugzeug an einen Kunden ausgeliefert werden.
+
+Am 16. Februar 2006 riss bei einem Biegeversuch einer anderen Zelle in [[Toulouse]] eine Tragfläche der A380 nach dem Überschreiten der 1,45-fachen Maximallast zwischen den Triebwerken ein. Für die Zulassung eines neuen Flugzeugtyps ist aber das Erreichen der 1,5-fachen Maximallast vorgeschrieben.<ref>hgn: ''[http://www.sueddeutsche.de/wirtschaft/a-bruchrechnen-bei-airbus-1.816136 Bruchrechnen bei Airbus.]'' In: ''[[Süddeutsche.de]]'', 17. Mai 2010.</ref> Airbus löste das Problem durch zusätzliche Leisten an den Längsspanten, die ein Zusatzgewicht von 30&nbsp;kg bedeuten.<ref>{{cite news| last=Mester| first=Volker| title=Airbus: A380-Tragflügel sind bereits überarbeitet| date=21. Februar 2006| work=[[Hamburger Abendblatt]]| url=http://www.abendblatt.de/wirtschaft/article107090018/Airbus-A380-Tragfluegel-sind-bereits-ueberarbeitet.html}}</ref>
+
+==== Erstflug ====
+[[Datei:A380 teststation fb06rs.jpg|mini|Arbeitskonsole der Flight Test Engineers]]
+[[Datei:1er vol de l' A380.jpg|mini|Erste Landung der A380 nach dem Jungfernflug]]
+Der A380-Erstflug, der wegen technischer Probleme mehrfach verschoben werden musste, fand am 27. April 2005 vor tausenden Zuschauern statt. Die Maschine mit der Seriennummer ([[Manufacturer Serial Number|MSN]]) 001 startete mit einem Startgewicht von 421&nbsp;Tonnen, dem bis dahin höchsten Startgewicht eines zivilen Verkehrsflugzeuges. Der Erstflug dauerte 3:54&nbsp;Stunden. Der genaue Termin war stark vom Wetter abhängig, da bei Südwestwind in Richtung Toulouse hätte gestartet werden müssen, was man aus Sicherheitsgründen vermeiden wollte. Nach dem erfolgreichen Start vom [[Flughafen Toulouse-Blagnac]] um 10:29&nbsp;Uhr auf der Startbahn 32L kreiste die A380 ([[Luftfahrzeugkennzeichen]] F-WWOW) während der ersten Erprobungsphase mit ausgefahrenem Fahrwerk in der Nähe von Toulouse. Während des gesamten Fluges wurde er von einem weiteren Flugzeug begleitet, um das Flugverhalten von außen zu beobachten und mit Videokameras aufzuzeichnen. Nach einer etwa halbstündigen Testphase wurde das Fahrgestell eingefahren und die Flugerprobung fortgesetzt, jedoch nicht, wie ursprünglich geplant, über dem [[Atlantischer Ozean|Atlantik]], sondern über dem Festland parallel zum Nordrand der [[Pyrenäen]]. Um 14:23&nbsp;Uhr landete MSN&nbsp;001 (F-WWOW) wieder auf der Landebahn 32L. Während der gesamten Flugerprobung wurden Testdaten per [[Telemetrie]] über einen Satelliten direkt von der A380 in das Airbus-Testzentrum in Toulouse übertragen.
+
+Durchgeführt wurde der Erstflug von einer sechsköpfigen Besatzung der in Toulouse stationierten Testflugstaffel. Flugkapitän Claude Lelaie, leitender Direktor der Flugzeugsparte, und Chef-Testpilot Kapitän Jacques Rosay teilten sich das Kommando während des Erstfluges. [[Fernando Alonso (Luftfahrtingenieur)|Fernando Alonso]], Direktor der Abteilung für [[Flugtest]]s, war der verantwortliche Versuchsingenieur für die Flugsteuerung und die Flugzeugstruktur. Zudem waren noch Jacky Joye (Systeme), Manfred Birnfeld (Triebwerke) und Gérard Desbois (Flugingenieur, „dritter Mann“ im Cockpit) als Testflug-Ingenieure an Bord des Flugzeuges. Wie bei Erstflügen üblich, trug die Besatzung Fallschirme.<ref>Karl Morgenstern / [[dpa]]: ''[http://www.stern.de/computer-technik/technik/:Jungfernflug-Mit-Fallschirm-Notausstieg/539590.html Mit Fallschirm und Notausstieg.]'' In: ''[[stern.de]]'', 26. April 2005.</ref>
+
+Den Erstflug mit den [[Engine Alliance GP7200|GP7200]]-Triebwerken absolvierte das Flugzeug mit der Seriennummer 009 und dem Kennzeichen F-WWEA am 24. August 2006.
+
+==== Wirbelschleppentests ====
+[[Datei:A 380 Wirbelschleppentests 1.JPG|mini|links|Airbus A380 bei Wirbelschleppentests im Anflug auf den Sonderflughafen Oberpfaffenhofen]]Im Juli und August 2006 führte das [[Deutsches Zentrum für Luft- und Raumfahrt|Deutsche Zentrum für Luft- und Raumfahrt]] (DLR) in [[Flugplatz Oberpfaffenhofen|Oberpfaffenhofen]] im Auftrag von Airbus [[Wirbelschleppe]]ntests durch. Dabei überflog die A380 mehr als 30-mal abwechselnd mit einer [[Boeing 747-400]] der [[Lufthansa]] den Sonderflughafen Oberpfaffenhofen in Höhen zwischen 80 und 400 m.<ref name="DLR">''[http://www.dlr.de/desktopdefault.aspx/tabid-1/86_read-3950/ Im Dienst der Sicherheit: DLR misst Wirbelschleppen des Airbus A380.]'' In: ''[[Deutsches Zentrum für Luft- und Raumfahrt|DLR]]'', 10. Juli 2006.</ref>
+
+Die Experten des DLR vermaßen die Wirbelschleppen hinter beiden Flugzeugen mit einem Spezialinstrument ([[Light detection and ranging|LIDAR]]) vom Boden aus. Da das Verhalten der Wirbelschleppen bei der Boeing 747-400 bekannt ist, konnten Vergleiche gezogen werden. Die Ergebnisse dieser Tests dienen der Sicherheit im Luftverkehr, da durch sie der Mindestabstand nachfolgend anfliegender Flugzeuge festgelegt werden kann.<ref>''[http://www.dglr.de/news/thema-der-woche/index.php?id=45 Thema der Woche. Airbus A 380 fliegt mit GP 7200.]'' In: ''[[Deutsche Gesellschaft für Luft- und Raumfahrt]] (DGLR)'', 2. September 2006.</ref>
+
+Nach Aussagen des DLR entsprechen die Wirbelschleppen denen einer Boeing 747-400 bezüglich ihrer horizontalen Ausdehnung. Auch im normalen Reiseflug und in Warteschleifen ergeben sich keine Einschränkungen. Lediglich bei Start und Landung sind die Wirbelschleppen stärker ausgeprägt, was eine Erhöhung des erforderlichen Mindestabstands bei der [[Staffelung (Flugverkehrskontrolle)|Staffelung]] folgender Flugzeuge gegenüber dem geltenden [[International Civil Aviation Organization|ICAO]]-Abstand um zwei bis vier [[Seemeile|NM]] (ca. 3,7 bis 7,4 km) zur Folge hat.<ref>Michaela Kircher, Thomas Gerz: ''[http://www.dlr.de/desktopdefault.aspx/tabid-4551/84_read-5692/ Airbus A380 Wirbelschleppen-Studie abgeschlossen – DLR-Unterstützung bei Messungen erfolgreich.]'' In: ''DLR'', 3. November 2006.</ref><ref>{{cite web|url=http://www.icao.int/icao/en/ro/apac/2007/FIT_SEA5/ip05.pdf |title=The Fifth Meeting of the FANS Implementation Team, South-East Asia (FIT-SEA/5) |date= 2007-01-16 |work=[[International Civil Aviation Organization|ICAO]] |format=PDF; 5 S., 240 KB |accessdate=2010-06-19 |archiveurl=https://web.archive.org/web/20080422015038/http://www.icao.int/icao/en/ro/apac/2007/FIT_SEA5/ip05.pdf |archivedate=2008-04-22}}</ref>
+
+==== Langstreckenerprobungsflüge ====
+[[Datei:Test A380 lower deck.jpg|mini|Ausrüstung eines Testflugzeugs]]
+[[Datei:A380 Düsseldorf 2006.jpg|mini|Erste Landung im Rahmen der Testflugserie in Düsseldorf]]
+Vom 4. bis zum 8. September 2006 wurden erste Testflüge mit Passagieren an Bord durchgeführt, die sogenannten ''Early Long Flights'' oder kurz ELF. Die Kabine des Flugzeuges war dabei mit 474 Sitzen ausgestattet. Im Gegensatz zum regulären Kabinenbetrieb (555 Sitze in drei Klassen) wurde bei diesen Testflügen auf allen Sitzplätzen der [[Beförderungsklasse|Business-Class]]-Service angeboten. Die Flugtickets für die Testflüge wurden unter den etwa 50.000 Airbus-Mitarbeitern weltweit verlost. Ziel der ELF war es, den Komfort an Bord sowie das einwandfreie Funktionieren der [[Klimaanlage]], Bordküchen, Toiletten und der [[In-flight Entertainment|Unterhaltungselektronik]] unter realen Einsatzbedingungen zu testen. Daher befanden sich unter den 474 Passagieren auch Experten für die oben genannten Systeme, um eventuell auftretende Probleme vor Ort zu analysieren. Das Kabinenpersonal wurde dabei von der [[Lufthansa]] gestellt, die somit Erfahrungen im operativen Kabinenbetrieb sammeln konnte.
+
+Im November 2006 startete die A380 zu einer Testflugserie, welche die Langstrecken- und Flughafentauglichkeit des Flugzeugs unter Beweis stellen sollte. Erstes Ziel war am 12.&nbsp;November 2006 der [[Düsseldorf Airport|Flughafen Düsseldorf]], der seit 2009 als Ausweichflughafen der Lufthansa für Frankfurt geplant ist. Weitere Ziele waren [[Flughafen Singapur|Singapur]], [[Flughafen Kuala Lumpur|Kuala Lumpur]], [[Flughafen Peking|Peking]], [[Flughafen Shanghai-Pudong|Shanghai]], [[Hong Kong International Airport|Hongkong]], [[Flughafen Tokio-Narita|Tokio]], [[Kingsford Smith International Airport|Sydney]], [[Flughafen Johannesburg|Johannesburg]] und [[Flughafen Vancouver|Vancouver]].
+
+Am 17. März 2007 landete die A380 (MSN 007) in Frankfurt zu einer Reihe von verschiedenen Tests. Unter realen Voraussetzungen wurden zum ersten Mal Langstreckenflüge mit 483 geladenen Passagieren geflogen. Als Ziele wurden New York (19. März 2007), Hongkong (23. März 2007) und [[Washington, D.C.|Washington]] (25. März 2007) (von Frankfurt) und Los Angeles (von Toulouse) ausgewählt. Während der Standzeit in Frankfurt wurde die Bodenabfertigung getestet. Der Rückflug über München nach Toulouse war am 28. März 2007.
+
+Im Juni 2007 startete die A380 (MSN 007) zu einer weiteren Demonstrationstour nach [[Flughafen Tokio-Narita|Tokio]], [[Kingsford Smith International Airport|Sydney]], [[Flughafen Taiwan Taoyuan|Taipeh]] und [[Flughafen Paris-Charles-de-Gaulle|Paris]].<ref>{{cite web|url=http://a380.lufthansa.com/#de/galerie/p1/video/video2 |title=Airbus/Lufthansa A 380 Route Proving (Video) |work=A380.lufthansa.com |date=2000-01-01|accessdate=2010-06-19}}</ref>
+
+==== Evakuierung ====
+Die [[Evakuierung]] des Flugzeugs galt als mögliches Problem. Nach internationalen Vorschriften muss ein Flugzeug binnen 90&nbsp;Sekunden durch die Hälfte der zur Verfügung stehenden Türen und in Dunkelheit komplett evakuiert werden können. Aufgrund der Größe der A380 war das eine besondere Herausforderung an die Planer. Neben der zeitlichen Komponente spielten auch verschiedene Szenarien eine Rolle. So müssen die [[Notrutsche]]n auch dann funktionieren, wenn das Flugzeug ohne Fahrwerk landet oder beispielsweise nur das Bugfahrwerk versagt. Letzteres bewirkt einen besonders großen Höhenunterschied zwischen dem Boden und den hinteren Ausgängen.
+
+Der intensiv vorbereitete Evakuierungstest<ref>Video: [https://www.youtube.com/watch?v=DZcBjuhsJtg Über die Vorbereitung und Durchführung des Airbus-Evakuierungstests.] In: ''[[arte]]'', 30. Mai 2012.</ref> vor Vertretern der Zulassungsbehörden fand am 26.&nbsp;März 2006 in Halle 212 des Airbus-Werkes in Hamburg-Finkenwerder statt und verlief erfolgreich. Innerhalb von 78&nbsp;Sekunden gelang es 853 Passagieren und 20 [[Fliegendes Personal|Besatzungsmitgliedern]], ausschließlich über die [[Notausgang|Notausgänge]] auf der rechten Seite das Flugzeug zu verlassen. Unter Berücksichtigung der Zeit für das Öffnen der Türen und Befüllen der Rutschen (etwa 10 bis 15 Sekunden) sprangen somit durchschnittlich alle 1,2 Sekunden je zwei Personen auf eine der doppelbahnigen Notfallrutschen. Um eine realitätsnahe Situation zu simulieren, lagen in der Kabine diverse Gegenstände wie Zeitungen, Decken und Kissen herum und als Lichtquelle stand nur die schwache Notbeleuchtung zur Verfügung.<ref>Ernst August Ginten: ''[http://www.welt.de/print-welt/article206459/Kontrollierte-Rutschpartie-aus-dem-Riesen-Airbus.html Kontrollierte Rutschpartie aus dem Riesen-Airbus. Evakuierungstest für A380 ist Meilenstein in der Zulassungsphase – 853 Personen in 90 Sekunden.]'' In: ''[[Die Welt]]'', 25. März 2006, aufgerufen am 7. März 2016.</ref> Bei der Evakuierung brach sich ein Testkandidat ein Bein, weitere 32 Personen erlitten leichte Verletzungen, meist Hautabschürfungen. Diese Vorfälle beeinträchtigten den Zulassungsprozess nicht,<ref>suc / [[dpa]] / [[Reuters]] / [[Dpa-AFX Wirtschaftsnachrichten|dpa-AFX]]: ''[http://www.spiegel.de/wirtschaft/0,1518,408241,00.html A380-Evakuierung: Airbus meldete aus Versehen Testpanne.]'' In: ''[[SpOn]]'', 27. März 2006.</ref> sie sind bei Evakuierungstests durchaus üblich.<ref>U.S. Congress Office of Technology Assessment: ''[http://purl.access.gpo.gov/GPO/LPS30383 Aircraft evacuation testing: research and technology issues.]'' In: ''[[Library of Congress]]'', September 1993, Seite 17: ''Limitations of full-scale demonstrations'', (PDF; 56&nbsp;S., 1.054&nbsp;KB).</ref>
+
+Drei Tage später, am 29. März 2006, bestätigten die [[Europäische Agentur für Flugsicherheit]] und die [[Federal Aviation Administration|US-Luftfahrtbehörde FAA]] die maximale Sitzplatzkapazität von 853 Passagieren.<ref>''[http://www.abendblatt.de/wirtschaft/article107103152/Airbus-A380-Evakuierung-war-erfolgreich.html Airbus A380: Evakuierung war erfolgreich.]'' In: ''[[Hamburger Abendblatt]]'', 30. März 2006.</ref>
+
+==== Abschluss des Zulassungsprogrammes ====
+Am 30. November 2006 beendete die A380 mit einem letzten Flug von [[Flughafen Vancouver|Vancouver]] über den [[Nordpol]] nach [[Flughafen Toulouse-Blagnac|Toulouse]] das Zulassungsprogramm erfolgreich. Am 12.&nbsp;Dezember&nbsp;2006 erhielt die Passagierversion der A380 mit Triebwerken der [[Rolls-Royce Trent#Trent 900|Trent 900]]-Serie&nbsp;– als erstes bis dahin zivil zugelassenes Passagierflugzeug –&nbsp;die kombinierte behördliche [[Musterzulassung]] durch die [[Europäische Agentur für Flugsicherheit]] (EASA) sowie die US-amerikanische [[Federal Aviation Administration]] (FAA). Am 23.&nbsp;April 2007 erhielt die A380 die Typenzulassung von der EASA für den Betrieb mit Triebwerken der [[Engine Alliance GP7200]]-Serie. Von der FAA war dieser Triebwerkstyp bereits im Dezember 2005 für die A380 zertifiziert worden. Zu diesem Zeitpunkt waren mit dem Triebwerk GP7200 mehr als 111&nbsp;Flüge und 1.348&nbsp;Flugstunden absolviert worden. Im Juli&nbsp;2007 gaben FAA und EASA ihre Zulassung der A380 für den Betrieb auch auf Start- und Landebahnen mit nur 45&nbsp;Metern Breite bekannt. Bis dahin war eine Zulassung ausschließlich für Bahnen ab einer Breite von 60&nbsp;Metern erfolgt.
+
+==== Liste der Testflugzeuge ====
+{| class="wikitable"
+|-
+! MSN<sup>1</sup>
+! Reg
+! Erstflug
+! Typ
+! Triebwerke
+! Aktueller Betreiber
+! Ausstattung bei Airbus
+! Anmerkungen
+|-
+| 001
+| F-WWOW
+| 27.4.2005
+| A380-841
+| [[Rolls-Royce Trent|Rolls-Royce]]
+| Airbus
+| volle Flugerprobungsausstattung
+| verbleibt als Testflugzeug dauerhaft bei Airbus
+|-
+| 002
+| F-WXXL
+| 3.11.2005
+| A380-841
+| Rolls-Royce
+| Airbus (Verkauf nach Flugerprobung an [[Al-Walid ibn Talal]])
+| keine Kabinenausstattung
+| Wurde zwischenzeitlich vollständig elektrisch entkernt und wieder komplett verkabelt. Abgestellt in Toulouse, Umrüstung zur Kundenmaschine ist fast fertiggestellt, M2 ist erreicht. Soll nach erneutem Checkflight in die USA oder Schweiz zum Innenausbau mit einer opulenten Luxusausstattung, die in den Medien zur Titulierung dieser Maschine als ''fliegender Palast'' führte. Sie ist kurz vor der Fertigstellung und soll an einen anonymen Käufer geliefert werden.<ref>''[http://www.emirates247.com/news/region/alwaleed-sells-a380-flying-palace-2013-02-17-1.495324 Alwaleed sells A380 flying palace.]'' In: ''Emirates 24/7'', 17. Februar 2013, abgerufen am 2. Jänner 2016, (englisch).</ref>
+|-
+| 004
+| F-WWDD
+| 18.10.2005
+| A380-841
+| [[Engine Alliance GP7200|Engine Alliance]] <small>zuvor ''Rolls-Royce''</small>
+| Airbus (Verkauf nach Flugerprobung an [[Emirates]])
+| volle Flugerprobungsausstattung
+| erste Kabinensysteme im Test
+|-
+| 007
+| A6-EDF<br /><small>zuvor ''F-WWJB''</small>
+| 19.2.2006
+| A380-841<sup>3</sup>
+| Engine Alliance <small>zuvor ''Rolls-Royce''</small>
+| Emirates
+| volle Kabinenausstattung
+| Wurde für Streckentestflüge ''(Route Proving Flights)'' eingesetzt und noch nach dem älteren „WAVE-1“-Standard verkabelt; wurde zur Kundenmaschine umgerüstet und am 12.&nbsp;Dezember 2009 an Emirates übergeben.<ref name="psw">''[http://plane.spottingworld.com/A380_production_list A380-Produktionsliste.]'' In: ''plane.spottingworld.com'', abgerufen am 2. Juli 2010, (englisch).</ref>
+|-
+| 009
+| A6-EDJ<br /><small>zuvor ''F-WWEA''</small>
+| 25.8.2006
+| A380-861<sup>4</sup>
+| Engine Alliance
+| Emirates
+| reduzierte Flugerprobungsausstattung
+| Erste Maschine mit Engine-Alliance-GP7270-Triebwerken; wurde bis Frühling 2008 noch für Tests eingesetzt und noch nach dem älteren „WAVE-1“-Standard verkabelt; wurde zur Kundenmaschine umgerüstet und am 4.&nbsp;Juni 2010 an Emirates übergeben.<ref name="psw" />
+|-
+| 5000'''†'''
+| ''N/A''
+| ''N/A''
+| A380-800<sup>2</sup>
+| ''N/A''
+| Airbus
+| Testzelle für statischen Test<br />(nur Primärstruktur)
+| erste endmontierte Zelle in Toulouse; Flugzeug wurde bei einem Belastungstest in Toulouse am 27. Juni 2007 planmäßig zerstört
+|-
+| 5001
+| ''N/A''
+| ''N/A''
+| A380-800<sup>2</sup>
+| ''N/A''
+| Airbus
+| Testzelle für dynamischen Test (nur Primärstruktur)
+| Simulation von 3,2 Flugzeugleben durch Strukturfestigkeitstest ("''Essay Fatigue''") in Dresden;<br />Zelle wurde nach Beendigung des Test planmäßig in Teilsegmente demontiert, diese werden an verschiedenen Standorten in Deutschland, Frankreich, Groß Britannien und Spanien für spätere Inspektionen und Analysen gelagert.
+|}
+<sup>1</sup>''Manufacturer Serial Number:'' Hersteller-Seriennummer<br />
+<sup>2</sup> Die zwei letzten Ziffern geben bei Airbus normalerweise den Triebwerkstyp und dessen Unterversion an; die Strukturtestzellen wurden jedoch nicht mit Triebwerken ausgerüstet.<br />
+<sup>3</sup> Diese Maschine sollte ursprünglich an [[Etihad Airways|Etihad]] ausgeliefert werden. Etihad hat die A380-Auslieferungen jedoch verschoben. MSN007 ging nun an Emirates, wofür eine Umrüstung auf Engine-Alliance-Triebwerke nötig wurde. Mit der Umrüstung wechselte die Typbezeichnung somit von A380-8''41'' (Bezeichnung für Maschinen mit Rolls-Royce Trent 970) zu A380-8''61'' (Bezeichnung für Maschinen mit GP7276-Antrieb).<br />
+<sup>4</sup> Wie MSN007 sollte MSN009 ursprünglich an Etihad gehen, was eine Umrüstung auf Rolls-Royce Trent nötig gemacht hätte. Der neue Abnehmer Emirates wird jedoch den Engine-Alliance-Antrieb beibehalten.
+
+=== Auslieferungsschwierigkeiten ===
+[[Datei:A380 im schnellen Vorbeiflug.jpg|mini|links|Airbus A380 beim schnellen Vorbeiflug auf der ILA 2006, Mai 2006]]
+[[Datei:A380 first touchdown hamburg.jpg|mini|Airbus A380 bei seiner ersten Landung in [[Hamburg-Finkenwerder]], 8. November 2005]]
+Am 29. Oktober 2005 wurde der Flughafen Frankfurt als erster Flughafen außerhalb von Toulouse zur Durchführung von Abfertigungstests angeflogen. Am 8. November 2005 wurde zum ersten Mal das [[Flugplatz Hamburg-Finkenwerder|Airbuswerk Hamburg-Finkenwerder]] von der zweiten Versuchsmaschine MSN 002 angeflogen. In den Jahren 2006, 2008, 2010 und 2014 besuchte je eine A380 die [[Internationale Luft- und Raumfahrtausstellung Berlin]]. Der erste Besuch am [[Flughafen München|Flughafen München Franz Josef Strauß]] fand am 28. März 2007 statt.
+
+Die erste Auslieferung der Passagierversion war ursprünglich für Juni 2006 an [[Singapore Airlines]] geplant. Aufgrund von Produktionsproblemen verzögerte sich der Zeitplan jedoch mehrfach, so dass die Erstauslieferung erst am 15. Oktober 2007 stattfinden konnte. Bei derartigen Verzögerungen haben die Fluggesellschaften vertraglich die Möglichkeit, [[Vertragsstrafe|Konventionalstrafen]] gegenüber Airbus einzufordern, was auch getan wurde. Das geschah im Fall des Airbus A380 durch Schadensersatzzahlungen sowie verbilligte Verkäufe von anderen Flugzeugmodellen, insbesondere des [[Airbus A330]], bzw. Nachbestellungen der A380.
+
+[[Datei:A380 starts at ILA 2006.jpg|mini|links|Der Airbus A380 startet auf der ILA 2006 zur Flugvorführung]]
+Die Frachtversion A380F sollte Anfang 2009 folgen. Die Verzögerungen bei der Entwicklung führten jedoch zu einer Stornierung des Kunden [[FedEx]] und einer Umwandlung der [[Emirates]]-Bestellung in Passagiermaschinen. Damit blieben lediglich zehn A380F-Bestellungen der US-Frachtfluggesellschaft [[UPS Airlines]] in den Auftragsbüchern, weswegen Airbus am 1. März 2007 bekannt gab, dass man die Entwicklung und Produktion der A380F bis auf weiteres wegen eines Mangels an „kurzfristigen Perspektiven“ aussetzen werde. Ziel sei, sich zunächst auf die Passagiervariante zu konzentrieren, auch wenn man langfristig von einer Wiederaufnahme des Frachterprogramms ausgehe. Die Frachtversion bleibe ein aktiver Bestandteil der A380-Familie, für den auch weiterhin Werbung bei Kunden betrieben werde. Dennoch wird diese Variante seit 2015 nicht mehr auf der Webseite des Konzerns beworben.
+
+Airbus gab am 13. Juni 2006 bekannt, dass die A380-Auslieferungen, von der ersten Auslieferung abgesehen, wegen Problemen mit der Kabinenelektronik um sechs bis acht Monate verschoben werden müssten.<ref name="eads-termine" /> Diese Probleme lagen teilweise an der uneinheitlichen IT-Entwicklungsumgebung: Einige Standorte nutzten die aktuelle Version des [[CAD]]-Programms [[CATIA]], das jedoch nicht [[Abwärtskompatibilität|abwärtskompatibel]] zur Vorgängerversion ist. Aus diesem Grund muss im Datenaustausch manuell konvertiert werden. Dem neuen Zeitplan zufolge hätten zudem 2007 lediglich neun (gegenüber geplanten 20 bis 25), 2008 nur 26 bis 30 (geplant: 35) und 2009 nur 40 (geplant: 45) A380 ausgeliefert werden sollen.
+
+Am 1. September 2006 wurde durch die mit dem Bau der Startbahnverlängerung beauftragte [[ReGe Hamburg Projekt-Realisierungsgesellschaft|Realisierungsgesellschaft (ReGe) Hamburg]] bekanntgegeben, dass die Landebahn etwa zwei Monate früher als ursprünglich geplant fertiggestellt und an Airbus übergeben werde.<ref name="rege_">{{cite news|last=Petters|first=Karl Olaf|title=Bau der Start- und Landebahnverlängerung läuft sehr zügig. ReGe plant frühere Übergabe an Airbus |work=[[ReGe Hamburg Projekt-Realisierungsgesellschaft|ReGe Hamburg]] |date=1. September 2006|url=http://www.rege-hamburg.de/templates/pressetemplate.php?presseid=41 |archiveurl=https://web.archive.org/web/20070927173441/http://www.rege-hamburg.de/templates/pressetemplate.php?presseid=41 |archivedate=2007-09-27}}</ref> Diese Terminierung konnte durch Übergabe der Bahnverlängerung an Airbus am 16. Juli 2007 eingehalten werden.<ref>{{cite web|url=http://www.rege.hamburg/projekte/referenzen/airbus-werkserweiterung/ |title=Verlängerung der Airbus-Start- und Landebahn Süd (2007) |work=[[ReGe Hamburg Projekt-Realisierungsgesellschaft|ReGe Hamburg]] |date=2007-07-16|accessdate=2016-03-07}}</ref> Damit waren die Voraussetzungen für Bau und Betrieb des geplanten Auslieferungszentrums für Kunden aus dem Nahen Osten und Europa auf dem Werksgelände in Finkenwerder geschaffen. Innerhalb des neuen EADS-Vorstands gab es zeitweise Überlegungen, die komplette Auslieferung in Toulouse abzuwickeln. Auf einer Pressekonferenz am 28. Februar 2007 wurde jedoch bekanntgegeben, dass es mit geringen Abstrichen bei der geplanten Auslieferung ab Hamburg bleiben soll.
+
+Am 3. Oktober 2006 gab die Airbus-Mutter [[EADS]] bekannt, dass sich die Auslieferung der ersten Maschinen im Schnitt um ein weiteres Jahr verzögern werde. Nach Angaben der französischen Airbus-Zentrale liege der Grund für die Pannen im Hamburger Airbus-Werk. Ein dort verwendetes Designprogramm habe zu kurze, nicht passende Kabel produziert. Das Problem sei im Sommer entdeckt worden, nun werde in Deutschland das erprobte Programm aus der Airbus-Zentrale in Toulouse verwendet. Hamburger Darstellungen zufolge lieferte das Werk Finkenwerder zwar Segmente mit zu kurzen Kabeln, diese Kabel basierten jedoch auf Plänen, die in Toulouse erstellt worden seien. Im Juni 2006, als man zuletzt einen neuen Auslieferungsplan bekanntgab, habe man den benötigten Aufwand unterschätzt und sei nun nach eingehender Prüfung zu dem Schluss gekommen, die Auslieferung nochmals zu verschieben und tiefgreifende Änderungen der Managementstrukturen vorzunehmen, die letztlich zu den Auslieferungsproblemen geführt hätten.
+
+=== Erste Auslieferungen ===
+[[Datei:Singapore Airlines Airbus A380 woah!.jpg|mini|Singapore Airlines stellte die A380 als erste Fluggesellschaft in Dienst]]
+[[Datei:Sia pioneer pilots a380.jpg|mini|Namen der ''SIA&nbsp;Pioneer&nbsp;Pilots&nbsp;A380'' auf der vorderen Fahrwerksklappe]]
+Am 15. Oktober 2007 wurde die erste Maschine an [[Singapore Airlines]] übergeben. Sie wurde am 25. Oktober 2007 auf der Strecke [[Singapur]]–[[Sydney]] in Dienst gestellt.<ref>Oliver Meiler: {{Webarchiv | url=http://sc.tagesanzeiger.ch/dyn/news/wirtschaft/806209.html | wayback=20081225234734 | text=''Singapore Airlines startet Mission A380.''}}. In: ''[[Tages-Anzeiger]]'', 24. Oktober 2007.</ref>
+
+2007 wurde nur dieser eine A380 an einen Kunden übergeben. 2008 konnte Airbus entgegen diverser Spekulationen wie geplant zwölf Maschinen ausliefern, im Jahr 2009 sollten es ursprünglich 21 sein.<ref>''[http://www.nzz.ch/nachrichten/wirtschaft/aktuell/champagner_fuer_airbus-chef__1.1621990.html Zwölfter Superjumbo A380 nach Sonderschicht ausgeliefert. Champagner für den Airbus-Chef.]'' In: ''[[Neue Zürcher Zeitung]]'', 30. Dezember 2008.</ref><ref>''[http://www.airliners.de/airbus-will-zwoelfte-a380-silvester-ausliefern/17028 Auslieferungsziel für 2008: Airbus will zwölfte A380 Silvester ausliefern.]'' In: ''airliners.de'', 29. Dezember 2008.</ref> Aufgrund der durch die [[Finanzkrise ab 2007|Wirtschaftskrise]] geringeren Nachfrage wurde die Produktion aber auf 14 Flugzeuge gesenkt.<ref>SST: ''[http://www.flugrevue.de/zivilluftfahrt/flugzeuge/airbus-senkt-a380-produktion/495172 Airbus senkt A380-Produktion.]'' In: ''[[Flug Revue]]'', 6. Mai 2009.</ref>
+
+Nach Angaben von Airbus sind trotz der mehrfachen Verzögerungen keine Kunden der Passagierversion abgesprungen. [[Emirates]] erklärte zwar unmittelbar nach dem Bekanntwerden der letzten Verzögerung, dass man „alle Optionen prüfen“ werde, orderte zwischenzeitlich aber sogar noch weitere Maschinen. Der damalige Vorstandschef der [[Lufthansa]], [[Jürgen Weber (Ingenieur)|Jürgen Weber]], unterzeichnete bereits 2001 den ersten Auftrag an Airbus, im Oktober 2009 flog die schon teilweise lackierte A380 mit der Baunummer 038, die am 19.&nbsp;Mai 2010 offiziell an Lufthansa übergeben wurde und seitdem das Kennzeichen ''D-AIMA'' sowie den Namen ''Frankfurt am Main'' trägt, zur Innenausstattung nach Hamburg-Finkenwerder.<ref>''[http://www.flugrevue.de/zivilluftfahrt/airlines/lufthansa-hat-a380-uebernommen/477373 A380 Lufthansa Intro. Lufthansa hat A380 übernommen.]'' In: ''[[Flug Revue]]'', 9. Juni 2008, zum Erstflug der für die Lufthansa vorgesehenen A380.</ref><ref>''[http://www.wallstreet-online.de/community/posting-drucken.php?posting_id=24390296 Fluggesellschaften berichten über weitere Verzögerungen bei A380.]'' In: ''[[Dpa-AFX Wirtschaftsnachrichten|dpa-AFX]]'', 3. Oktober 2006.</ref> [[Virgin Atlantic Airways]] teilte im Oktober 2006 mit, dass sie ihre Bestellung um vier Jahre aufschieben und die erste A380 erst 2013 erhalten werde. Die Fluggesellschaft wolle sich vor der Indienststellung vom kommerziellen Erfolg des Flugzeuges bei anderen Betreibern überzeugen.<ref>{{cite web|url=http://news.bbc.co.uk/2/hi/business/6089198.stm|title=Virgin defers A380 by four years |work=[[BBC News]] |date=2006-10-26 |accessdate=2010-06-19 |language=englisch}}</ref> Insgesamt beläuft sich die Verzögerung der Auslieferungen gegenüber dem ursprünglichen Plan nun auf 22 Monate.
+
+Diese Verzögerungen haben Airbus in eine schwere [[Krise bei Airbus|Krise]] gestürzt. Gegenüber früheren Schätzungen wird das Airbus-Ergebnis zwischen 2006 und 2010 um zusätzliche 2,8 Milliarden Euro (insgesamt 4,8 Mrd. Euro) belastet.<ref name="eads-delay" /><ref name="eads-final" />
+
+Die MSN 011 wurde am 28. Juli 2008 als erste A380 im Auslieferungszentrum Hamburg an den zweiten Kunden [[Emirates]] übergeben.<ref>{{Webarchiv | url=http://www.airbus.com/en/presscentre/pressreleases/pressreleases_items/08_07_04_A380_auslieferungszentrum_in_Hamburg.html | wayback=20080706024951 | text=''A380 Auslieferungszentrum in Hamburg. Airbus benennt A380-Auslieferungszentrum in Hamburg nach Jürgen Thomas.''}}. In: ''airbus.com'', 4. Juli 2008.</ref> Am 19. September 2008 wurde die erste Maschine (MSN 014) an den dritten Betreiber [[Qantas Airways|Qantas]] ausgeliefert.<ref>{{cite web|archiveurl=https://web.archive.org/web/20100225145505/http://www.airbus.com/en/myairbus/headlinenews/headlineitem/a380_in_sydney.html|url=http://www.airbus.com/en/myairbus/headlinenews/headlineitem/a380_in_sydney.html|title=A380 in Sydney|work=airbus.com|archivedate=2010-02-25|accessdate=2010-06-19}}</ref>
+
+Im Februar 2009 wurde die Qualitätsdebatte um die A380 von Managern der Fluggesellschaft Emirates erneut entfacht, als sie bei einem Krisentreffen Fotos von teilweise abgerissenen Verkleidungsblechen, defekten Teilen an den Triebwerken und von weiterhin angeschmorten Stromkabeln in einer A380 zeigten. Emirates wirft Airbus vor, dass die häufigen Defekte zu Ausfällen und erheblichen unplanmäßigen Standzeiten der Flugzeuge führten.
+
+Im September 2009 zog die Fluggesellschaft [[Singapore Airlines]] eine positive Bilanz von der Eingliederung der ersten zehn A380 in ihre Flotte. Besonders der hohe wirtschaftliche Erfolg wurde gelobt. Das Flugzeug habe sich in den vergangenen zwei Jahren als verlässlich und vor allem als profitabel bewährt. Auch die einfache Wartung wurde lobend erwähnt.<ref>{{cite web|url=http://www.pressetext.com/news/20090919002|title=Größter-Jet A380 als effizientes Großraumflugzeug. Singapore-Airlines zieht positive Bilanz aus zwei-jähriger Erfahrung |author=Wolfgang Weitlaner |work=pressetext.com |date=2009-09-19|accessdate=2010-06-19}}</ref>
+
+Am 8. Juni 2010 bestellte Emirates weitere 32 Flugzeuge und wird somit im Jahr 2017 insgesamt 90 A380 besitzen.<ref>{{cite web|url=http://diepresse.com/home/wirtschaft/international/571966/Rekordauftrag_Emirates-kauft-32-Airbus-A380?_vl_backlink=/home/wirtschaft/international/index.do|title=Rekordauftrag: Emirates kauft 32 Airbus A380 |author=Ag. |work=[[Die Presse]]|date=2010-06-08|accessdate=2010-06-19}}</ref>
+
+=== Bauliche Anpassungen auf Flughäfen (in Kontinentaleuropa) ===
+[[Datei:A380-airbus-fraport-04-2010-008.jpg|mini|Trainingsbesuch auf dem Rhein-Main-Airport in Frankfurt]]
+[[Datei:15-07-11-Flughafen-Paris-CDG-RalfR-N3S 8864.jpg|mini|Abfertigung einer A380 in Paris Charles de Gaulle]]
+Das neue Großraumflugzeug verlangt –&nbsp;zumindest in der Passagierversion&nbsp;– auch größere Investitionen in die [[Flughafeninfrastruktur]] seitens der [[Flughafenbetreiber]]gesellschaften:
+* Grundsätzlich soll jeder Flugplatz gemäß dem Annex 14 Code F (Spannweite 65 bis 80 m) zertifiziert sein. Allerdings erlaubt die ICAO Ausnahmen für Code-4E-Flugplätze.
+* Als erster europäischer Flughafen erhielt [[Flughafen München|München]] im April 2004 die offizielle Zulassung für den Verkehr mit Luftfahrzeugen vom Typ A380. Mehrere größere Abstellpositionen sind dort in das im Jahre 2003 eröffnete zweite Terminal integriert. Ebenfalls wurde im Jahre 2011 im Zuge der Aufnahme von A380-Linienflügen der Emirates nach München die Position 113 am Terminal 1 mit drei Fluggastbrücken ausgerüstet. Der neu gebaute Satellit des Terminal 2, welcher voraussichtlich Ende 2015 / Anfang 2016 eröffnet wird, wird weitere fünf A380-Positionen am Flughafen bereitstellen.
+* Das Terminal 2 in [[Flughafen Frankfurt am Main|Frankfurt]] (Baubeginn 1990, Eröffnung 1994) wurde auf die sogenannte 80×80-Meter-Box dimensioniert, ist also für die A380 vorbereitet. Die für die schnelle Abfertigung notwendigen zusätzlichen Fluggastbrücken wurden bislang an mindestens fünf Gates des Terminals&nbsp;2 installiert. Im Terminal&nbsp;1, das vorwiegend von Lufthansa genutzt wird, wurden ebenfalls Gates in den Abflugbereichen&nbsp;B und C so gestaltet, dass die A380 dort abgefertigt werden kann. Jeweils drei Fluggastbrücken erlauben an diesen Gates ein simultanes Boarding beider Ebenen. Im Rahmen des Flughafenausbaus kamen im Oktober 2012 weitere vier Positionen am neuen Flugsteig A-Plus hinzu, welche nun den Schwerpunkt der A380-Abfertigung darstellen.<ref>{{cite web|author=[[Fraport AG]] |url=http://www.fraport.de/de/kompetenzen/entwicklung-frankfurt-airport/erweiterungen/a-plus.html|title=Fraport – Flugsteig A-Plus|accessdate=2014-04-24|offline=}}</ref><ref>{{cite web|author=Matthias Menge|url=http://www.fraport.de/cms/a380/dok/248/248652.die_a380massnahmen_in_fra_auf_einen_blic.htm |title=Die A380-Maßnahmen in FRA auf einen Blick |work=[[Fraport]].de |date=2007-06-04 |accessdate=2010-06-19 |archiveurl=https://web.archive.org/web/20080325011803/http://www.fraport.de/cms/a380/dok/248/248652.die_a380massnahmen_in_fra_auf_einen_blic.htm|archivedate=2008-03-25}}</ref> Im Januar 2008 wurde der erste Teil der A380-Werft der Lufthansa fertiggestellt.<ref>{{Webarchiv | url=http://www.faz.net/s/RubBEFA4EA6A59441D98AC2EC17C392932A/Doc~E3859202E5613481EABB9ADDB12C65028~ATpl~Ecommon~Scontent.html?rss_aktuell | wayback=20080123074711 | text=''A380-Wartungshalle. Europas größte Flugzeug-Werft in Betrieb.''}}. In: ''[[Frankfurter Allgemeine Zeitung]]'', 11. Januar 2008.</ref>
+* Auch am [[Flughafen Zürich]] wurden beim zwischen 1999 und 2004 neu erstellten Dock Midfield/Dock&nbsp;E zwei Standplätze für die A380 fest eingeplant. Inzwischen wurde ein Gate bereits mit einer zweigeschossigen Fluggastbrücke umgerüstet.<ref name="tp-zuerich-umbau" />
+* Am [[Flughafen Pulkowo]] bei [[Sankt Petersburg]] wurde im Sommer 2006 eine Start- und Landebahn umgebaut. Sie ist die erste Piste in Russland, die für die A380 zugelassen ist.
+* Der [[Flughafen Berlin Brandenburg]] wird ab Eröffnung, voraussichtlich Ende 2017, A380-tauglich sein. Allerdings müssen hierfür an den bestehenden Terminals erhebliche Veränderungen vorgenommen werden, die ein wesentlicher Grund für die um viele Jahre verzögerte Eröffnung und die erhebliche Kostensteigerung sind. 
+* Am [[Flughafen Hamburg]] wurden die Grünstreifen neben beiden Landebahnen mit einem Kunstharz befestigt; zwar sind ab Hamburg keine Linienflüge geplant, doch ist der Flughafen eine Ausweichstelle für den [[Flugplatz Hamburg-Finkenwerder|Airbus-Werksflughafen]] in [[Hamburg-Finkenwerder]].
+* Der [[Flughafen Leipzig/Halle]] ist seit Erstinbetriebnahme der Südbahn 08R/26L am 5. Juli 2007 ebenfalls A380-tauglich.
+* Die Landebahn des Flugplatzes Hamburg-Finkenwerder wurde für den (vorerst gestoppten) Bau der Frachtversion um 589&nbsp;m verlängert.<ref>{{cite web|archiveurl=https://web.archive.org/web/20071222122858/http://www1.ndr.de/wirtschaft/unternehmen/wi3082.html |url=http://www1.ndr.de/wirtschaft/unternehmen/wi3082.html |title=Letzter A380F-Interessent abgesprungen – Landebahngegner hoffen |work=[[ndr.de]] |archivedate=2007-12-22|accessdate=2010-06-19}}</ref>
+* Der [[Düsseldorf Airport|Flughafen Düsseldorf]] erweiterte am Kopf von Terminal C ein Gate mit drei Fluggastbrücken für die A380 und verbreiterte die Rollwege auf 95 Meter. Außerdem wurde der Wartebereich am Gate auf 225 Sitzplätze vergrößert.<ref>{{cite web|url=https://www.dus.com/de-de/services/news/flughafen-d%C3%BCsseldorf-und-emirates-er%C3%B6ffnen-neues-a380-gate|title=Flughafen Düsseldorf und Emirates eröffnen neues A380-Gate|accessdate=2015-07-01|work=dus.com}}</ref>
+
+=== Einsatz im Liniendienst ===
+Die weltweit erste Linienverbindung für die A380 richtete Singapore Airlines am 25. Oktober 2007 zwischen [[Flughafen Singapur|Singapur]] und [[Kingsford Smith International Airport|Sydney]] ein, die erste Strecke nach Europa nahm am 18. März 2008 ebenfalls Singapore Airlines zwischen Singapur und [[London Heathrow Airport|London-Heathrow]] auf.
+
+Im März 2013 wurde der 100. A380 an [[Malaysia Airlines]] ausgeliefert.<ref>''[http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/airbus-delivers-100th-a380/ Airbus delivers 100th A380.]'' In: ''airbus.com'', 14. März 2013.</ref> Mitte Februar 2014 gab Airbus bekannt, dass seit dem Beginn der Nutzung im Liniendienst 55 Millionen Passagiere auf 151.000 Flügen transportiert wurden.<ref name="fluege-gesamt" />
+
+Bis Anfang Dezember 2014 wurden im Liniendienst von zu diesem Zeitpunkt 147 eingesetzten Maschinen insgesamt 1.700.000 Flugstunden absolviert und etwa 75 Mio. Passagiere befördert.<ref name="aib-etihad" />
+
+== Wirtschaftliche Aspekte ==
+=== Finanzierung der Entwicklung ===
+Das A380-Programm war für Airbus lange defizitär. Ein gutes Drittel der Entwicklungskosten von 12 Milliarden Euro wurde aus Steuergeldern finanziert. Ob allein die von Airbus geleisteten Aufwendungen wieder eingespielt werden können, war lange offen.<ref name="handelsblatt-2012-217-16">Markus Fasse: ''Milliardengrab A 380.'' In: ''[[Handelsblatt]]'', Nr. 217, 8. November 2012, S. 16f., [http://www.genios.de/presse-archiv/artikel/HB/20121108/milliardengrab-a380/2B70894B-6C35-4D7B-A956-B0B5783C418D.html Artikelanfang].</ref> Airbus selbst hat im Laufe der Jahre unterschiedliche Angaben zum Erreichen der [[Gewinnschwelle]] gemacht und statt der ursprünglich genannten Stückzahl von 230 später das Jahr 2015 genannt. Das dürfte dann einer Stückzahl ausgelieferter Maschinen von über 400 entsprechen. Zeitweise wurde aber auch das Erreichen dieses Ziels offiziell in Frage gestellt.<ref name="faz-gewinn" /> Die ungefähren Aussagen von Seiten von Airbus dürften so zu verstehen sein, dass mit Erreichen der Gewinnschwelle für Airbus, unter Außerachtlassen der Kosten für den Steuerzahler, bis Ende 2016 gerechnet wird. Durch Neuentwicklungen dieser Größenordnung wird auch neues Wissen generiert, das über das einzelne Projekt hinaus auch in anderen Projekten, z.&nbsp;B. der Neuentwicklung der [[Airbus A350|A350 XWB]] weiter zur Verfügung steht. Auf der Jahrespressekonferenz am 12. Januar 2016 teilte Airbus mit, 2015 die Gewinnschwelle erreicht zu haben<ref>{{Internetquelle|url=http://www.flugrevue.de/zivilluftfahrt/flugzeuge/bregier-a380-erreicht-schwarze-zahlen/662864|titel=Hersteller will Produktionskosten weiter senken: Brégier: A380 hat schwarze Zahlen erreicht|werk=FLUG REVUE|zugriff=2016-03-18}}</ref>.
+
+=== Wirtschaftlichkeit für die Fluggesellschaften ===
+Ihre Überlegenheit bzgl. Kosten pro Passagier spielt die A380 vor allem im Einsatz im [[Luftfahrt-Drehkreuz|Drehkreuz]] aus. Wo das Prinzip herrscht, viele Passagiere über einen zentralen Flughafen abzuwickeln, der mit möglichst vielen Zulieferflügen zu einem möglichst hohen Passagieraufkommen ausgebaut wird, sind hohe Kapazitäten, wie sie durch die A380 zur Verfügung gestellt werden, von besonders großem Nutzen. Umgekehrt hat vor allem der Hauptkonkurrent [[Boeing]] öfter verlautbart, man stelle sich darauf ein, dass Drehkreuzkonzepte aufgrund vermehrter Punkt-zu-Punkt-Verbindungen an Bedeutung abnähmen. Bei Direktflügen würden grundsätzlich geringere Passagierzahlen als im Drehkreuzkonzept anfallen, so dass große Kapazitäten eines einzelnen Flugzeugs auch Überkapazitäten sein könnten und sich so von einem Vor- zu einem Nachteil wandeln würden. Tatsächlich lässt sich nicht feststellen, dass das Drehkreuzkonzept ausläuft. Zudem steigt bei einem steigenden Fluggastaufkommen, das auch von Boeing unterstellt wird, auch die Sinnhaftigkeit des Einsatzes der A380 im Bereich der Direktflüge (Punkt-zu-Punkt).
+
+=== Listenpreis ===
+{| class="wikitable"
+|+ Listenpreis für einen Airbus A380-800
+|-
+! Jahr
+! Preis in Millionen [[US-Dollar]]
+! Quelle
+|-
+| Mai 2008
+| 317,2–337,5 (Durchschnitt: 327,4)
+| <ref>{{Webarchiv | url=http://www.airbus.com/store/mm_repository/pdf/att00011726/media_object_file_ListPrices2008.pdf | wayback=20081003223325 | text=''Airbus Aircraft Range of 2008 List Prices.''.}} In: ''[[Airbus]]'', 2008, (PDF; 48&nbsp;KB).</ref>
+|-
+| 2012
+| 389,9
+| <ref>{{Internetquelle|url=http://www.airbus.com/newsevents/news-events-single/detail/new-airbus-aircraft-list-prices-for-2012/ |titel=New Airbus aircraft list prices for 2012 |werk=airbus.com |zugriff=2012-01-18}}</ref>
+|-
+| 2013
+| 403,9
+| <ref>{{Internetquelle|url=http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/new-airbus-aircraft-list-prices-for-2013/ |titel=New Airbus aircraft list prices for 2013 |werk=airbus.com |zugriff=2013-01-13}}</ref>
+|-
+| 2014
+| 414,4
+| <ref>{{Internetquelle|url=http://www.airbus.com/newsevents/news-events-single/detail/new-airbus-aircraft-list-prices-for-2014/ |titel=New Airbus aircraft list prices for 2014 |werk=airbus.com |zugriff=2014-01-13}}</ref>
+|-
+| 2015
+| 428,0
+| <ref>{{Internetquelle|url=http://www.airbus.com/newsevents/news-events-single/detail/new-airbus-aircraft-list-prices-for-2015/ |titel=New Airbus aircraft list prices for 2015 |werk=airbus.com |zugriff=2015-01-13}}</ref>
+|-
+|2016
+|432,6
+|<ref>{{Internetquelle|url = http://www.airbus.com/newsevents/news-events-single/detail/new-airbus-aircraft-list-prices-for-2016/|titel = New Airbus aircraft list prices for 2016. Price adjustment for Airbus’ modern, fuel-efficient aircraft Family |autor = |hrsg = |werk = airbus.com |datum = 2016-01-12|sprache = en|zugriff = 2016-01-27}}</ref>
+|}
+
+Der Listenpreis unterscheidet sich deutlich von dem Preis, der von Fluggesellschaften tatsächlich bezahlt wird.
+
+=== Flugzeugfinanzierung ===
+Der Fonds ''Hansa Treuhand Sky Cloud Airbus A380'' gibt als Kaufpreis für einen Airbus A380 den Betrag von 149,2 Millionen [[Euro]] bzw. 210 Millionen US-Dollar an. Es handelt sich dabei um ein 2009 an Singapore Airlines ausgeliefertes Flugzeug.<ref>Markus Gotzi: ''[http://www.wallstreet-online.de/nachricht/2850446-fonds-check-flugzeugfonds-vom-schiffsexperten Fonds-Check: Flugzeugfonds vom Schiffsexperten.]'' In: ''wallstreet-online'', 27. November 2009.</ref>
+
+Die Leasinggesellschaft ''Hannover Leasing'' gibt als Kaufpreis für einen ebenfalls an Singapore Airlines ausgelieferten Airbus A380 den Betrag von 180 Millionen US-Dollar an. Der Kaufpreis liegt etwa 30 Mio. US-Dollar günstiger als für Mitbewerber, da Singapore Airlines den Innenausbau und die Bestuhlung selbst vornimmt.
+
+=== Alleinstellungsmerkmal ===
+[[Datei:Md-12-2.png|mini|So sollte die [[McDonnell Douglas MD-12]] aussehen]]
+Der Airbus A380 hat aufgrund seiner maximalen Passagieranzahl ein Alleinstellungsmerkmal, d.&nbsp;h. es existiert kein vergleichbares Flugzeug. Lediglich in den 1990er-Jahren verfolgten mehrere Hersteller bereits ähnliche Pläne: So plante etwa ''[[McDonnell Douglas]]'' mit der [[McDonnell Douglas MD-12|MD-12]] in den frühen 1990ern ein Großraumflugzeug mit über 500 Sitzplätzen und zwei durchgehenden Passagierdecks. Boeing plante zuerst die 600- bis 800-sitzige [[Boeing NLA]] mit zwei durchgehenden Passagierdecks und danach verschiedene Weiterentwicklungen der [[Boeing 747]] und stellte nach dem Scheitern derselben das Konzept des schnellen [[Boeing Sonic Cruiser|Sonic Cruisers]] vor, das jedoch mittlerweile ebenfalls abgebrochen wurde. Auch der russische Flugzeughersteller [[Iljuschin]] projektierte mit der [[Iljuschin Il-96#Il-96-550 (Projekt)|Iljuschin Il-96-550]] ein vergleichbares Modell, das jedoch aus einem Doppelrumpf bestanden hätte. Alle diese Projekte scheiterten. Zurzeit sorgen jedoch die relativ kleinen Langstreckenflugzeuge [[Boeing 787]] sowie [[Airbus A350]] für spürbare Konkurrenz. Diese Flugzeuge sind für den Einsatz im Direktflugverkehr anstatt im [[Luftfahrt-Drehkreuz|Drehkreuzkonzept]] optimiert und bieten trotzdem vergleichbar niedrige Betriebskosten. Weiterhin entwickelte Boeing mit der [[Boeing 747#747-8|Boeing 747-8]] einen leiseren, sparsameren und gering vergrößerten Jumbojet, der am 28. Februar 2012 erstmals ausgeliefert wurde.<ref>{{Internetquelle|url=http://www.flightglobal.com/news/articles/boeing-delivers-first-747-8i-368908 |titel=Boeing delivers first 747-8I | autor=Jon Ostrower |werk=flightglobal.com |zugriff=2012-03-06}}</ref> Dieser ist jedoch kleiner als der Airbus A380.
+
+== Konstruktive Ausführung und Technik ==
+[[Datei:A380-800v1.0.png|mini|Risszeichnungen der A380-800]]
+Der Airbus A380 ist ein vierstrahliger Tiefdecker mit einem im Querschnitt ovalen Rumpf, an dem die nach hinten gepfeilten Tragflächen und ein Leitwerk in konventioneller Bauweise montiert sind. Wesentliches äußeres Unterscheidungsmerkmal gegenüber anderen Zivilflugzeugen sind die beiden übereinander angebrachten und über die gesamte Rumpflänge verlaufenden Fensterreihen. Das Basismodell der A380-Familie stellt die A380-800 dar, auf den sich die folgenden Abschnitte auch beziehen.
+
+=== Rumpf ===
+[[Datei:Airbus A380 cross section.svg|mini|links|Rumpfquerschnitt Airbus A380 in der Economy Class]]
+[[Datei:Airbus A380 Interior.jpg|mini|Blick in ein Modell der A380-Kabine]]
+[[Datei:Affaires-Klasse bei Air France.jpg|mini|Sitze in der Business-Klasse ([[Air France]])]]
+Um die Passagierkapazität bei gleichbleibender Länge zu erhöhen, bekam die A380 zwei durchgängige Passagierdecks. Zur Verringerung des Luftwiderstandes und um im Oberdeck eine Großraumkabine unterbringen zu können, erhielt er im Gegensatz zur Boeing 747 kein aufgesetztes Oberdeck über dem Vorderrumpf, sondern einen elliptischen Rumpfquerschnitt von 7,15&nbsp;m Breite und 8,40&nbsp;m Höhe über die ganze Länge.
+
+Der Flugzeugrumpf hat damit drei durchgehende Decks. Sie werden Ober-, Haupt- und Unterdeck genannt. Im Oberdeck finden bis zu acht Passagiere pro Sitzreihe Platz, während im Hauptdeck pro Reihe bis zu zehn Passagiere untergebracht werden können. Diese beiden Ebenen sind durch zwei Treppen sowie zwei Transportaufzüge für Speisen verbunden. Das untere Deck ist vor allem für Fracht vorgesehen, allerdings können hier auch Schlafräume für die Besatzung, Toiletten, Restaurants oder Bars eingerichtet werden. In normaler Konfiguration finden bis zu 38 [[Unit Load Device|LD3-Frachtcontainer]] im Unterdeck Platz. Alle drei Decks sind Teil der [[Druckkabine]]. Der Rumpf besteht weitgehend aus den [[Aluminium]]legierungen [[Aluminium-Lithium-Legierung|Aluminium-Lithium]], Aluminium-Kupfer sowie Aluminium-Zink. Die Außenhaut besteht auf der Oberseite aus einem [[Glasfaserverstärktes Aluminium|glasfaserverstärkten Metalllaminat]] ''(Glare)''. Die Längsversteifungen ([[Stringer (Flugzeugbau)|Stringer]]) des unteren Rumpfbereiches ([[Bilge]]) werden durch ein [[Laserstrahlschweißen|Laserschweißverfahren]] gefügt. Das hintere Druckschott, der Heckkonus und die Querträger des Oberdecks sind aus [[Kohlenstofffaserverstärkter Kunststoff|kohlenstofffaserverstärktem Kunststoff]] gefertigt. Der [[Flügelmittelkasten]] besteht zum ersten Mal bei einem zivilen Luftfahrzeug auch aus kohlenstofffaserverstärktem Kunststoff. Um Gewicht zu sparen, werden die elektrischen Leitungen, anders als ursprünglich geplant, aus Aluminium anstatt aus [[Kupfer]] gefertigt.
+
+Wie der Vorstand des Airbus Future Programs, Christian Scherer, am 21.&nbsp;November&nbsp;2006 bekannt gab, hat der Flugzeugbauer notwendige Gewichtsreduzierungen an der A380 erfolgreich abgeschlossen. Dennoch blieb gegenüber den Planungen ein konzeptionelles Übergewicht von 5,5&nbsp;Tonnen, was jedoch mit 1,5 % des Leergewichtes innerhalb der vereinbarten Toleranz liegt.
+
+=== Cockpit und Avionik ===
+[[Datei:Airbus A380 cockpit.jpg|mini|Cockpit]]
+Das Cockpit befindet sich zwischen Haupt- und Oberdeck. Der Zugang erfolgt über das Hauptdeck durch eine schuss- und schlagsichere Tür. Es ist für maximal fünf Personen ausgelegt. Erstmals bei Airbus-Flugzeugen findet sich im Cockpit auch ein ''Onboard Maintenance Terminal'', welches das papierlose Cockpit vervollständigt. An diesem Terminal hat das Wartungspersonal Zugriff auf die Logbücher, Wartungshandbücher, Systemparameter und Diagnosesysteme. Zum ''papierlosen'' Cockpit gehört auch das ''Onboard Information Terminal'' (OIT). Dort werden beispielsweise interaktive Navigationskarten, Wetterkarten und Checklisten angezeigt. Zudem ist im Cockpit auch ein Zugang zum ''Avionics Compartment'' zu finden, das die Steuerzentrale des Flugzeuges darstellt und verschiedenste Computer und Komponenten beinhaltet.
+
+Die [[Avionik]] basiert überwiegend auf der Architektur der [[Integrated Modular Avionics]] (IMA), die Airbus erstmals in der A380 einsetzt. Dabei sind die Avionik-Funktionen für Klimaanlage, Zapfluft, Cockpit-Datenkommunikation und Bord-Boden-Datenrouting, elektrische Stromversorgung, Treibstoff-Management, Fahrgestell, Bremsen und Lenkung auf insgesamt acht verschiedenen Typen von IMA-Rechnern (in redundant doppelter oder vierfacher Ausführung) integriert. Die IMA-Rechner, auch CPIOM (Core Processing Input/Output Module) genannt, basieren auf identischen [[PowerPC]]-Prozessoren, jedoch unterscheiden sie sich in den spezifischen Signalschnittstellen für die jeweils auf den Modulen integrierten Systeme.
+
+Die IMA-Rechner sind untereinander über das [[AFDX]]-Netzwerk (Avionics Full DupleX Switched Ethernet) verbunden, das zweifach redundant mit je acht zentralen Switches ausgelegt ist. Zusätzliche Input-Output-Module (IOM) dienen dazu, Systeme und Sensoren in das AFDX-Netzwerk einzubinden, die kein eigenes AFDX-Interface besitzen.
+
+Der überwiegende Teil der IMA-Rechner für die A380 wird von der Firma [[Thales Group|Thales]] in Kooperation mit der deutschen [[Diehl Aerospace]] entwickelt und geliefert. Für einige Cockpit-Funktionen entwickelt Airbus die IMA-Rechner selbst.
+
+=== Kabinenelektronik ===
+Das zentrale Kabinen-Management-System besteht aus drei zentralen Rechnern und mehreren Datennetzwerken, die lateral in der Kabine verlegt sind. Die wichtigsten Aufgaben des Kabinen-Management-Systems, das von Airbus auch als Cabin Intercommunication Data System (CIDS) bezeichnet wird, sind die Kommunikation der Kabinenbesatzung untereinander und mit dem Cockpit, Durchsagen an die Passagiere (Passenger Address), Steuerung des (farbigen) Lichtes in der Kabine sowie die Signale für ''Non-Smoking'' und ''Fasten Seat Belt'' anzuzeigen. Darüber hinaus steuert und überwacht das CIDS zahlreiche weitere Kabinensysteme.
+
+Die Netzwerke des CIDS gliedern sich in die Topline, Middleline und das sogenannte Panel Netzwerk. Über die Topline, die oberhalb der Hatracks verläuft, sind die passagierbezogenen Geräte wie die Passenger Supply Unit (PSU) mit Lautsprechern, Non-Smoking- bzw. Fasten-Seat-Belt-Anzeigen und die Servicetasten der Passagiere sowie die Steuergeräte für das Kabinenlicht an die zentralen Rechner angeschlossen. Über die Middleline sind die von der Besatzung benötigten Geräte wie zum Beispiel On-Bord-Telefone und diverse Geräte für die Signalisierung des Kabinenpersonals angeschlossen. Das Panelnetzwerk verbindet alle Bedienterminals des CIDS. Die Bedienterminals funktionieren ähnlich wie Tablett-PCs mit einer berührungsempfindlichen graphischen Oberfläche. Die Bedienterminals (Flight Attendant Panels) befinden sich zumeist in den (Eingangs-)Türbereichen.
+
+=== Tragflächen ===
+[[Datei:A380 ILA 2008 Ueberflug.jpg|mini|links|Tragflächen von unten]]
+[[Datei:AirbusA380AtHongKong.jpg|mini|Airbus A380 ohne Wingtip Fences]]
+Die Tragflächen weisen bei 25 % Tiefe eine [[Pfeilung]] von 33° 30′ auf und tragen zur Reduzierung des induzierten Luftwiderstandes 2,30&nbsp;m hohe [[Winglet|Wingtip Fences]] aus Verbundwerkstoff an ihren Enden.<ref>Achim Figgen, Karl Morgenstern, Dietmar Plath: ''A380. Geschichte, Technik und Erprobung des Mega-Airbus.'' [[GeraMond Verlag]], 2006, ISBN 978-3-7654-7049-3, S. 20.</ref> Die Rippen bestehen aus kohlenstofffaserverstärktem Kunststoff. Als [[Auftriebshilfe]]n werden pro Seite an der Flächenvorderkante außen sechs [[Vorflügel]] und in den zwei inneren Bereichen [[Auftriebshilfe|Kippnasen]] angewendet. Die Auftriebshilfen werden durch Kombinationen von Elektro- und Hydraulikmotoren angetrieben. Die Antriebswellen bestehen aus kohlefaserverstärktem Kunststoff. An der Hinterkante gibt es in drei Bereichen Einfachspaltklappen mit einer Fläche von insgesamt 120&nbsp;m². Das Hochauftriebssystem wird von einem redundanten Rechner betätigt und überwacht.
+
+Die drei [[Querruder]] auf jeder Seite werden durch jeweils zwei Antriebe betätigt, diese werden auch parallel zu den Landeklappen zur Auftriebserhöhung abgesenkt. Darüber hinaus gibt es acht Spoiler pro Seite, jeweils mit eigenem Antrieb. Die Tragflächen bestehen im Wesentlichen aus Aluminiumlegierungen.
+
+Im Januar 2012 wurden bei der Reparatur einer durch einen Triebwerksfehler beschädigten A380 der Qantas wenige kleine Risse in den Rippen eines Flügels entdeckt. Daraufhin wurden weitere Maschinen untersucht und bei drei Flugzeugen ähnliche Risse gefunden. Nach Angaben von Airbus stellen diese jedoch kein Problem für die Flugsicherheit dar.<ref>{{cite web|url=http://www.smh.com.au/travel/travel-incidents/cracks-found-in-a380s-during-qantas-repairs-20120105-1pmyv.html |title=Cracks found in A380s during Qantas repairs |author=Matt O'Sullivan | work=[[The Sydney Morning Herald]] |date=2012-01-06 |accessdate=2012-01-06 |archiveurl=https://web.archive.org/web/20120802070842/http://www.smh.com.au/travel/travel-incidents/cracks-found-in-a380s-during-qantas-repairs-20120105-1pmyv.html |archivedate=2012-08-02}}</ref>
+
+=== Leitwerke ===
+[[Datei:A 380 Wirbelschleppentests Oberpfaffenhofen - Seitenansicht.JPG|mini|Höhen- und Seitenleitwerk]]
+Der Airbus A380 besitzt zwei Leitwerke in konventioneller Bauweise, das [[Höhenleitwerk]] und das [[Seitenleitwerk]].
+
+Das Seitenleitwerk besteht komplett aus kohlefaserverstärktem Kunststoff. Das [[Seitenruder]] ist zweiteilig ausgeführt. Die notwendige große Fläche des Seitenruders würde hohe Kräfte beim seitlichen Ausschlag verursachen und damit stärkere und schwerere Ruderbeschläge notwendig machen. Deshalb wurde das Ruder gesplittet, um die Belastungen zu reduzieren. Die beiden Hälften werden jedoch simultan bewegt, so dass es die Wirkung wie ein einziges großes Ruder besitzt. Jede der beiden Steuerflächen wird von zwei Hydraulikaktoren angetrieben.
+
+Das Höhenleitwerk ist wie das Seitenleitwerk und die Hecksektion ebenfalls komplett aus kohlefaserverstärktem Kunststoff hergestellt. Es besitzt die Fläche einer gesamten Tragfläche eines [[Airbus-A320-Familie|Airbus A320]]. Es hat insgesamt vier Höhenruder, die jeweils von zwei Hydraulikaktoren betätigt werden. Zudem befindet sich im Höhenleitwerk auch ein Kraftstofftank, der zur Optimierung des Schwerpunktes individuell und automatisch am Boden gefüllt und im Flug geleert wird. Dieser [[Trimmtank]] kann mit 18,6&nbsp;t Kerosin befüllt werden.
+
+=== Triebwerke ===
+==== Strahltriebwerke ====
+[[Datei:A 380 Wirbelschleppentests Oberpfaffenhofen - Triebwerk.JPG|mini|links|[[Rolls-Royce Trent#Trent 900|Rolls-Royce-Trent-970]]-Triebwerk]]
+[[Datei:GP7200.jpg|mini|[[Engine Alliance GP7200|Engine-Alliance-GP7200]]-Triebwerk]]
+Die A380-800 ist mit vier Triebwerken ausgestattet, die an [[Außenlaststation|Pylonen]] unter den Tragflächen montiert sind. Der Kunde hat die Wahl zwischen Triebwerken der [[Rolls-Royce Trent#Trent 900|Rolls-Royce-Trent-900]]- oder [[Engine Alliance GP7200|Engine-Alliance-GP7200]]-Serien. Rolls-Royce bietet für die A380 das Trent 970 mit 311&nbsp;[[Newton (Einheit)|kN]] (70.000&nbsp;[[Pound-force|lbf]]) Schub und das Trent 972 mit 320&nbsp;kN (72.000&nbsp;lbf) Schub an. So ausgerüstete A380 erhalten die Unterversion -x41 für das Trent 970 bzw -x42 für das Trent 972. Für künftige schwerere Varianten wie die A380F und die A380-900 würden zudem die noch einmal stärkeren Varianten Trent 977 mit 340&nbsp;kN (77.000&nbsp;lbf) Schub (Unterversion -x43) und Trent 980 mit 356&nbsp;kN (80.000&nbsp;lbf) Schub zur Verfügung stehen. Eine A380-800 mit Trent-970-Triebwerken erhält somit die Versionsbezeichnung A380-841, mit Trent 972 wäre es A380-842.
+
+Bei Engine Alliance gibt es momentan nur das GP7270 mit 311&nbsp;kN (70.000&nbsp;lbf) Schub (Unterversion -x61) und für geplante schwerere Versionen der A380 das GP7277 mit 343&nbsp;kN (77.000&nbsp;lbf) Schub (Unterversion -x63),<ref>{{Webarchiv | url=http://www.enginealliance.com/gpspec.html | wayback=20101207025108 | text=''GP7200/GP7277-Spezifikation.''}}. In: ''enginealliance.com'', (englisch).</ref> eine A380-800 mit GP7270-Triebwerken erhält somit die Versionsbezeichnung A380-861.
+Beide Triebwerkstypen bieten einen statischen Schub auf Meereshöhe und Standardatmosphäre ab 311&nbsp;kN und sind damit die größten und leistungsfähigsten Triebwerke, die je für ein vierstrahliges Passagierflugzeug entwickelt wurden. Der Fandurchmesser beträgt 2,95&nbsp;Meter, die Triebwerke saugen 1,55&nbsp;Tonnen (mehr als 1000 m<sup>3</sup>) Luft pro Sekunde an.
+
+Eine Besonderheit ist, dass nur die Triebwerke an den inneren Flügelpositionen [[Schubumkehr]] aufweisen. Die äußeren Triebwerke befinden sich bei den [[Boeing 747|Boeing-747]]-kompatiblen, üblicherweise 45 m breiten Bahnen bereits über den so genannten ''Schultern'', die aus befestigten Grasflächen neben der Bahn bestehen. Bei der Anwendung der Schubumkehr würden hier Fremdkörper aufgewirbelt werden, die zu Beschädigungen am Rollfeld, an den Triebwerken und an sonstigen Flugzeugteilen führen könnten. Ein weiterer Grund liegt in der Gewichtsersparnis, die dadurch erreicht werden konnte. Zudem wird die Schubumkehr erstmals elektrisch und nicht wie üblich hydraulisch oder pneumatisch betätigt. Beide Triebwerke verwenden zur Steuerung und Regelung dasselbe [[FADEC]]-System von [[Hamilton Sundstrand]].
+
+==== Steuerung ====
+Eine Neuerung im zivilen Luftfahrtsektor ist das ''Airbus Cockpit Universal Thrust Emulator''-System (kurz ''ACUTE''). Dabei werden zur Schubanzeige im Cockpit nicht mehr Triebwerksparameter wie die Wellendrehzahl des Fans (N1) oder das Druckverhältnis ''EPR'' zwischen Einlass- und Auslassdruck (Engine Pressure Ratio) verwendet, sondern ein Prozentsatz von 0 % bis 100 %. Das garantiert eine Gemeinsamkeit im Cockpit zwischen den verschiedenen Triebwerkstypen, da bei bisherigen Flugzeugtypen die Schubanzeige im Cockpit immer vom Triebwerkstyp abhängig war. Der Prozentsatz wird durch das [[FADEC]] errechnet und setzt sich aus einer Vielzahl von Parametern zusammen wie zum Beispiel Druckhöhe, Außentemperatur, Triebwerksdrehzahl, Druckdifferenz (EPR).
+
+Anzeige des ''ACUTE'' im Cockpit:
+* Anzeigebereich 0 % bis 100 % positiver Schub bzw. THR ''idlerev'' bis THR ''maxrev'' bei aktivierter Schubumkehr. Die Anzeige der Schubumkehr ist aber nicht in Prozent angegeben, sondern dimensionslos und wird nur visuell als Halbkreis dargestellt.
+* 100 % ''THR'' (engl. ''Thrust'', deutsch ''Schub'') entsprechen dem maximal verfügbaren [[Schub]] (TOGA=Take Off/Go Around) in Abhängigkeit zur aktuellen Flugphase mit ausgeschalteter ''[[Zapfluft]]''.
+* 0 % THR entsprechen einem abgeschalteten Triebwerk bzw. einem Triebwerk, das sich im ''Windmilling'' (Triebwerk abgeschaltet und Antrieb nur durch den Windstrom im Flug) befindet.
+
+Das ''ACUTE''-System ist die primäre Anzeige für die Schubbestimmung, alle anderen Parameter wie ''N1'', ''N2'' bzw. ''N3'' (bei Rolls-Royce-Triebwerken) werden nur noch als sekundäre Parameter im [[Electronic Centralized Aircraft Monitoring|ECAM]] angezeigt.
+
+==== Hilfstriebwerk ====
+[[Datei:Airbus A380 p1230284.jpg|mini|Hilfstriebwerksauslass und -einlass]]
+Das [[Hilfstriebwerk]] (APU) der A380 stammt von [[Pratt & Whitney|Pratt & Whitney Canada]] und [[Hamilton Sundstrand]], wobei P&W die Turbine herstellt und HS für die Systemintegration verantwortlich ist. Es befindet sich im Heck des Rumpfs, dem sogenannten Heckkonus. Benutzt wird es zur Bereitstellung von Elektrizität (2&nbsp;× 115&nbsp;V bei 400&nbsp;Hz mit je 120&nbsp;[[Voltampere|kVA]]) für alle hydraulischen und elektrischen Systeme, wenn die Haupttriebwerke abgestellt sind. Zudem liefert es [[Zapfluft]], die zur Versorgung der Klimaanlagen (möglich bis 22.500 [[Fuß (Einheit)|ft]] Flughöhe) und zum Starten der Haupttriebwerke verwendet wird. Falls der Flughafen über ein stationäres System zur Energieübertragung verfügt, kann das Flugzeug auch an dieses angeschlossen werden. Das Hilfstriebwerk ist mit etwa 1,30&nbsp;MW die bisher stärkste Hilfsgasturbine für Flugzeuge und erreicht 20 % mehr Leistung als die nächstkleinere. Vom Gesamtleistungsbedarf aller Bordsysteme von 1,20&nbsp;MW werden allein für die Bereitstellung der pneumatischen Energie etwa 900&nbsp;kW in Anspruch genommen.
+
+==== Ram-Air-Turbine ====
+Bei einem kompletten Stromausfall steht zur [[Allgemeine Ersatzstromversorgung|Notstromerzeugung]] eine [[Ram-Air-Turbine]] mit 1,625&nbsp;Metern (64&nbsp;[[Zoll (Einheit)|Zoll]]) Durchmesser zur Verfügung. Damit ist sie die bisher größte Ram-Air-Turbine auf dem Markt. Hersteller ist [[Hamilton Sundstrand]]. Deren Propeller treibt einen luftgekühlten Generator an, der 70&nbsp;kW Leistung als Notstrom bereitstellt. Die [[Baugruppe]] sitzt unter der linken Tragfläche, rechts des inneren Triebwerkes (Fixed Flap Track Fairing #2).
+
+=== Klimatisierung ===
+Der Airbus A380 besitzt zwei Klimaanlagen ([[Klimaanlage (Flugzeug)|packs]]), die jeweils zwei sogenannte ''Air Generation Units'' (AGUs) beinhalten. Der Vorteil beim Design der AGUs besteht in einer sehr kompakten Bauweise. Die Leistung der ''packs'' beträgt etwa 450&nbsp;[[Watt (Einheit)|kW]] und bewirkt einen Luftstrom in die Kabine von 2,5 bis 2,7&nbsp;kg/s. Die Versorgung durch Stauluft ([[Ram-Air|ram air]]) liegt bei 6,5&nbsp;kg/s. Die Kabinenluft wird bei voller Leistung etwa alle drei Minuten komplett durch Frischluft ersetzt.
+
+Der [[Druckkabine|Kabinendruck]] im Airbus A380 entspricht dem [[Luftdruck]] auf einer Höhe von rund 2.100&nbsp;m (7.000&nbsp;ft).<ref name="CabinAltitudeA380">{{cite web|url=http://www.hamiltonsundstrand.com/StaticFiles/HS/Communications/General/Documents/A380%20Fact%20Sheet_June%202011.pdf |title=The Airbus A380 Fact Sheet June 2011 |work=[[Hamilton Sundstrand]] |accessdate=2016-03-07 |format=PDF; 93&nbsp;kB | archiveurl = https://web.archive.org/web/20120302225154/http://www.hamiltonsundstrand.com/StaticFiles/HS/Communications/General/Documents/A380%20Fact%20Sheet_June%202011.pdf | archivedate = 2012-03-02}}</ref>
+
+=== Hydrauliksystem ===
+==== Hydraulikkreisläufe ====
+Die A380 besitzt im Unterschied zu herkömmlichen Verkehrsflugzeugen nur noch zwei Hydraulikkreisläufe. Der sonst übliche dritte Hydraulikkreislauf wurde durch lokale elektro-hydraulische [[Aktor]]en ersetzt. Diese kommen aber nur zum Einsatz, wenn eines oder beide Hydrauliksysteme ausgefallen sind. Das spart Gewicht, da Leitungen und Ventile entfallen, die sonst durch das komplette Flugzeug verlegt sind. Weitere erhebliche Gewichtsersparnis bringt die Reduktion des Leitungsquerschnitts der Hydraulikleitungen. Dafür hat Airbus den Systemdruck von den sonst üblichen rund 207 bar auf etwa 345 bar erhöht. Die einzelnen Hydraulikkreisläufe werden zur besseren Unterscheidung in Farben unterteilt. Der erste Hydraulikkreislauf wird als ''GREEN'' (grün) bezeichnet, der zweite als ''YELLOW'' (gelb), wobei beide die gleiche Priorität besitzen.
+
+Den grünen Kreislauf versorgen dabei die Triebwerke 1 und 2 mit jeweils zwei Hydraulikpumpen. Den gelben Kreislauf versorgen dementsprechend die Triebwerke&nbsp;3 und&nbsp;4. Die Hydraulikpumpen sind als [[Axialkolbenpumpe]]n ausgeführt. Zudem besitzt jeder Hydraulikkreislauf noch zwei elektrisch betriebene Pumpen, die bei abgestellten Triebwerken die Versorgung übernehmen. Das wird benötigt, um beispielsweise die Frachtraumtüren zu öffnen und zu schließen, beim [[Flugzeugschlepper|Schleppen]] des Flugzeuges zur Ansteuerung der Rumpffahrwerkslenkung oder auch für Wartungsarbeiten und Kontrollen am Boden, wenn die Triebwerke nicht in Betrieb sind.
+
+==== Hydro-elektrisches Backupsystem ====
+Dieses Backupsystem ist ein für die A380 neu entwickeltes System und kam bisher bei keinem anderen Verkehrsflugzeug zum Einsatz. Die hydraulische Energie wird lokal erzeugt. Bei den Aktoren der Flugsteuerung sitzen dafür direkt an diesen ein Hydraulikreservoir und eine elektrisch betriebene Pumpe. Bei der Brems- und Lenkanlage sind es ebenfalls lokale Hydraulikkreisläufe, die unabhängig von den Hauptkreisläufen Grün und Gelb im Falle eines Ausfalls den Betrieb der Anlagen übernehmen. Bei der A380 werden zwei Arten eingesetzt:
+* Flugsteuerung: ''Electrical-Hydrostatic Actuators (EHAs)'' und ''Electrical Backup Hydraulic Actuators (EBHAs)''
+* Bremssystem und Fahrwerkslenkung: ''Local Electro-Hydraulic Generation System (LEHGS'')
+
+===== EHAs/EBHAs =====
+Als EHAs werden Hydraulikaktoren bezeichnet, die zusätzlich einen eigenen Hydraulikkreislauf mit bürstenlosem Gleichstrommotor, Hydraulikpumpe und Niederdruckspeicher besitzen. EHAs sind während des Betriebs des Flugzeugs völlig autonom von den Hydraulikkreisläufen des Flugzeuges und besitzen lediglich eine Füllleitung für den internen Flüssigkeitsspeicher. Zur Versorgung der EHAs wird nur elektrische Energie benötigt. Eine komplexe Leistungselektronik treibt drehzahlgeregelt die Konstantpumpe an, die direkt mit dem Hydraulikzylinder verbunden ist. Die Positionierung des Hydraulikzylinders erfolgt ohne Servoventil direkt über das durch die Pumpe geförderte Hydrauliköl und ist in erster Näherung proportional zur Umdrehungszahl der Pumpe. Ein Richtungswechsel wird durch Reversieren der Pumpe realisiert.
+
+Bei EBHAs geht man noch einen Schritt weiter. Das sind kombinierte Hydraulikaktoren, was bedeutet, dass EBHAs genauso wie EHAs eine durch eine eigene Leistungselektronik versorgte autonome Hydraulikversorgung besitzen, aber im Normalbetrieb vom entsprechenden Hydraulikkreislauf im Flugzeug gespeist werden. Nur im Notfall kapseln sie sich automatisch ab und fungieren dann als EHAs. Der EBHA stellt also die Kombination eines klassischen Aktors mit Servoventil mit einem EHA dar.
+
+EHAs und EBHAs finden nur bei der Flugsteuerung Anwendung. Mit diesen Geräten ist die A380 in der Lage, rein elektrisch, d.&nbsp;h. bei Ausfall beider Hydrauliksysteme, das Flugzeug zu steuern.
+
+===== LEHGS =====
+LEHGS ist ein eigener, im Notfall unabhängig arbeitender Hydraulikkreislauf. Dieser beinhaltet Förderleitungen, Ventile, Akkumulatoren, Pumpen und Reservoirs. Anwendung findet dieses System im Bereich des Fahrwerks.
+
+=== Kraftstoffanlage ===
+Die Kraftstoffanlage dient zur Unterbringung des Kraftstoffes, überwacht die Kraftstoffmenge in jedem Tank und kontrolliert bzw. steuert den Kraftstofftransfer zwischen den einzelnen Tanks. Neben der Kraftstoffversorgung für die Triebwerke kann mit ihrer Hilfe der Flugzeugschwerpunkt gesteuert werden und die Belastung der Flugzeugstruktur beeinflusst werden. Das Be- und Enttanken steuert die Anlage automatisch. Im Notfall können bis zu 150&nbsp;Tonnen [[Kerosin]] pro Stunde abgelassen werden.
+
+Die Kraftstofftanks sind als Integraltanks ausgeführt und sind somit Teil der tragenden Struktur. Die ''Outer'', ''Feed'', ''Mid'' und ''Inner Tanks'' sind in die Tragflächen integriert und der ''Trim-Tank'' in das Höhenleitwerk. Die Transfer-Tanks sind nur zur Unterbringung des Kraftstoffes gedacht. Der darin enthaltene Kraftstoff wird automatisch zu den jeweiligen Feed-Tanks umgepumpt. Der Trim-Tank dient ebenfalls wie die Transfer-Tanks zur Kraftstofflagerung, zusätzlich kann aber auch der Schwerpunkt während des gesamten Flugprofils automatisch durch gesteuertes Entleeren des Tanks beeinflusst werden. Die Feed-Tanks liefern Kraftstoff an die Triebwerke und werden dazu von den Transfer-Tanks mit Kraftstoff versorgt. Jeder Feed-Tank besitzt eine separate Abteilung mit einem Fassungsvermögen von 1000&nbsp;kg, die so genannte ''Collector Cell'', die das Trockenlaufen der Kraftstoffpumpen verhindert.
+{| class="wikitable"
+|+ Kraftstoffmengen beim A380-800
+|-
+! Zwei<br />Outer-Tanks || Feed Tanks<br />1 und 4 || Zwei<br />Mid-Tanks || Zwei<br />Inner-Tanks || Feed-Tanks<br />2 und 3 || Trim-Tank || Gesamt
+|-
+| 10.520&nbsp;l (8260&nbsp;kg) || je 27.960&nbsp;l (21.950&nbsp;kg) || 38.460&nbsp;l (28.620&nbsp;kg) || 46.140&nbsp;l (36.220&nbsp;kg) || je 29.340&nbsp;l (23.030&nbsp;kg) || 23.700&nbsp;l (18.600&nbsp;kg) || 328.540&nbsp;l (254.760&nbsp;kg)
+|}
+
+''Die angegebenen Massen (in Kilogramm) beziehen sich auf eine Kraftstoffdichte von 0,785 kg/l, die Nummerierung der Feed-Tanks läuft von links nach rechts.''
+
+=== Fahrwerk ===
+[[Datei:A380-Undercarriage.JPG|mini|Bugfahrwerk]]
+[[Datei:Airbus A380 Fahrwerk.jpg|mini|links|Rumpf- und Tragflächenfahrwerke]]
+Das [[Fahrwerk (Flugzeug)|Fahrwerk]] besteht aus einem Bugfahrwerk, zwei Rumpffahrwerken und zwei Tragflächenfahrwerken. Zudem enthält es die Bremsanlage und die Lenkanlage sowie eine Anlage zur Überwachung von Reifendruck, Bremsentemperatur und Druck der Federbeine. Ursprünglich gab es 38 Alternativen in verschiedensten Konfigurationen. Airbus entschloss sich zur jetzigen Anordnung mit sogenannten „Longitudinal Bays“ (Rumpf- und Tragflächenfahrwerk sind in einem Fahrwerkschacht untergebracht). Des Weiteren musste der Betrieb auf einer 45&nbsp;m breiten Landebahn und 23&nbsp;m breiten Rollwegen sowie eine 180°-Wende auf einer 60&nbsp;m breiten Landebahn ermöglicht werden. Die Fahrwerksanlage hat insgesamt 22 Räder. Davon entfallen zwei Räder auf das Bugfahrwerk mit 1,20&nbsp;m Durchmesser und einer Breite von 0,50&nbsp;m, zwölf Räder auf das Rumpffahrwerk und acht Räder auf die Tragflächenfahrwerke. Diese haben jeweils einen Durchmesser von 1,40&nbsp;m und eine Breite von etwa 0,50&nbsp;m. [[Michelin]] Aircraft Tires konnte durch eine Neukonstruktion der Reifen für die A380 eine Gewichtsersparnis von insgesamt 360&nbsp;kg<ref>{{Webarchiv | url=http://www.airmichelin.com/releases/2005-01-21.doc | wayback=20060225191124 | text=''Michelin to Equip the A380 aircraft.''}}. In: ''airmichelin.com'', 21. Januar 2005.</ref> nur bei den Reifen erreichen. Jeder Reifen kann mit bis zu 33&nbsp;t und 378&nbsp;km/h belastet werden. Das Bugfahrwerk kann bis zu ±&nbsp;70° mit der Hydraulikanlage und bis zu ±&nbsp;60° beim Schleppen ausgelenkt werden. Der mechanische Anschlag liegt bei ±&nbsp;75°. So lässt sich bei asymmetrischem Schub und Differentialbremsung ein [[Wendekreis (Fahrzeug)|Wendekreis]] von 107,52&nbsp;m erreichen. Die verwendeten Werkstoffe beim Bugfahrwerk sind hauptsächlich hochfester Stahl, Aluminium sowie ein geringer Anteil Titan. Das Hauptfahrwerk besteht zum größten Teil aus Titan, gefolgt von hochfestem Stahl und einem geringen Teil Aluminium.
+
+Die hydraulische Versorgung der Fahrwerke übernehmen bei den Tragflächenfahrwerken und dem Bugfahrwerk der grüne Hydraulikkreislauf, bei den Rumpffahrwerken der gelbe. Für die Lenkung am Bugfahrwerk und die Bremsen an den Hauptfahrwerken sind LEHGS als Backup vorgesehen. Alle acht Räder der Tragflächenfahrwerke sind gebremst, ebenso wie die vorderen zwei Räderpaare am Rumpffahrwerk mit insgesamt acht Reifen. Das Bremssystem umfasst also insgesamt 16 hydraulisch betätigte Bremspakete aus Kohlenstoff ([[Kohlenstofffaserverstärkter Kohlenstoff|CFC]]), die an den jeweiligen Haupt- bzw. Rumpffahrwerken montiert sind. Das Bremssystem besitzt einen separaten Nothydraulikkreislauf für Notfälle mit eigenem Reservoir, eigener Steuereinheit und elektrischer Hydraulikpumpe. Jedes Rad hat einen Sensor zur Überwachung des Reifendrucks sowie jedes Bremspaket einen Sensor zur Temperaturüberwachung. Auch sind in jedem Federbein Sensoren zur Überwachung des Stickstoffdrucks integriert. Optional können auch Kühlventilatoren in die Radnabe installiert werden. Diese dienen bei kurzen Umlaufzeiten zur Kühlung der Bremspakete. Für die Betätigung der Bremsen gibt es vier Modi, die je nach Situation automatisch aktiviert werden. Diese sind:
+
+[[Datei:4str-080531 Airbus 380 F-WWDD Berlin (ILA).JPG|mini|Ausfahren des Fahrwerks zur Landung]]
+* ''Normal:'' Normale [[Bremskraft]] liegt über die entsprechenden Hydraulikkreise an. Steuerung über die Seitenruderpedale
+* ''Alternate:'' Normale Bremskraft liegt über die entsprechenden Hydraulikakkumulatoren ''und'' einem separat installierten elektrischen Hydraulikkreislauf an. Steuerung über die Seitenruderpedale
+* ''Emergency:'' Verminderte Bremskraft liegt über die entsprechenden Hydraulikakkumulatoren (Anzahl der Bremsbetätigungen limitiert) ''oder'' einem separat installierten elektrischen Hydraulikkreislauf an. Steuerung über die Seitenruderpedale
+* ''Ultimate:'' Verminderte Bremskraft liegt über die entsprechenden Hydraulikakkumulatoren an (Anzahl der Bremsbetätigungen limitiert). Steuerung via Parkbremshebel
+
+== Fertigung und Logistik ==
+[[Datei:A380 Airbus-Standorte.png|mini|links|Standorte der Fertigung der A380]]
+[[Datei:Toulouse 7412m.jpg|mini|links|A380-Fertigungsstätten am [[Flughafen Toulouse-Blagnac]] (links unten im Bild)]]
+Die [[Produktion|Fertigung]] der Teilkomponenten ist, wie auch bei den anderen Airbus-Modellen, auf die verschiedenen [[Europa|europäischen]] Airbus-Standorte verteilt. Aus [[Broughton (Wales)|Broughton]] ([[Vereinigtes Königreich|GB]]) kommen die [[Tragfläche|Flügel]], Rumpfsektion&nbsp;18 sowie die Bugsektion&nbsp;13 und ein Teil der Sektion&nbsp;15 aus [[Flugplatz Hamburg-Finkenwerder|Hamburg-Finkenwerder]] ([[Deutschland|D]]), die Cockpitsektion&nbsp;11 aus [[Nantes]] ([[Frankreich|F]]), die Rumpfmittelsektion&nbsp;15 aus [[Saint-Nazaire]] ([[Frankreich|F]]), das Seitenleitwerk aus [[Stade]] (D), das Höhenleitwerk aus [[Getafe]] ([[Spanien|E]]), die Flugsteuerung aus [[Toulouse]] (F). In [[Bremen]] (D) und [[Nordenham]] (D) werden unter anderem [[Glasfaserverstärktes Aluminium|Glare]]-Bauteile der Außenhaut gefertigt, in Bremen außerdem noch die Endmontage der drei Landeklappen pro Tragfläche. Sie bestehen aus zwei Materialien, die innere Landeklappe aus Aluminium, die beiden anderen aus [[Kohlenstofffaserverstärkter Kunststoff|kohlenstofffaserverstärktem Kunststoff]]; Letztere werden in Stade gebaut. Diese [[Bauteil (Technik)|Komponenten]] werden per [[Schwertransport]] oder [[Airbus Beluga|Transportflugzeug]], bei Übergrößen auch per Schiff, aus den Standorten nach [[Toulouse]] gebracht. Hinzu kommen die [[Strahltriebwerk|Triebwerke]], die nicht von Airbus selbst produziert werden. Außerdem werden die [[Notrutsche]]n in den [[USA]] produziert.<ref>''[http://www.abendblatt.de/wirtschaft/article107372802/Airbus-A380-Probleme-mit-Notrutschen.html Airbus A380. Probleme mit Notrutschen.]'' In: ''[[Hamburger Abendblatt]]'', 11. Februar 2008.</ref> Die Endmontage dieser Komponenten erfolgt in Toulouse.
+
+Nach der Überführung des Flugzeugs nach Hamburg-Finkenwerder (D) erfolgen dort die Lackierung der Außenhaut und die Innenausrüstung der [[Kabine]] mit Bauteilen von [[Diehl Aircabin]] aus [[Laupheim]] (D), von dem Airbus-Standort [[Buxtehude]] (D) und Teilen anderer Hersteller.
+
+Zwei Standorte sind für die Übergabe der A380 an Kunden vorgesehen: Für Kunden in [[Europa]] und dem [[Naher Osten|Nahen Osten]] erfolgt die Auslieferung in Hamburg-Finkenwerder, für die übrigen Kunden in Toulouse.
+
+== Versionen ==
+[[Datei:Airbus A380 seatmap.svg|mini|Typisches Dreiklassenlayout einer A380-800]]
+Bei allen Versionen der A380 wurden die glatten Hunderternummern in offiziellen Angaben noch weiter unterteilt. Die Bedeutung der zweiten und dritten Stelle ist im Absatz [[Airbus_A380#Strahltriebwerke|Triebwerke]] aufgezeigt.
+
+Alle geplanten Versionen werden voraussichtlich die gleichen Tragflächen mit einer Spannweite von 79,8&nbsp;m besitzen.
+
+=== A380-700 ===
+Die A380-700 (Arbeitstitel: A3XX-50R) ist eine auf 67,9&nbsp;Meter gekürzte projektierte Version der A380-800 mit einer maximalen Reichweite von etwa 16.200&nbsp;km für 481 Passagiere in drei Klassen.<ref name="Flugrevue 07/00">Volker K. Thomalla (VKT): ''Airbus A3XX, der größte Airliner der Welt: Der Gigant rollt an den Start.'' In: ''[[Flug Revue]]'', Juli 2000.</ref> Die Umsetzung dieses Konzepts ist jedoch sehr fraglich, da die A380-700 strukturbedingt höhere Sitzplatzkosten als die ebenfalls in diesem Segment operierende Boeing 747-8 haben würde und daher große Bestellungen von Fluggesellschaften unwahrscheinlich sind. Bisher hat sich keine Fluggesellschaft öffentlich für diese Version interessiert.
+
+=== A380-800 ===
+[[Datei:Giant planes comparison.svg|mini|links|Vergleich A380-800 (rot) mit [[An-225]], [[Hughes H-4]] und [[Boeing 747-8]]]]
+Die A380-800 ist die Basisversion und wurde ursprünglich als A3XX-100 vermarktet. Die Sitzplatzkapazität des A3XX-100 sollte nach den Planungen im Jahr 2000 555 in drei Klassen betragen.<ref name="Flugrevue 07/00" /> Der Erstflug fand am 27. April 2005 statt. Bei einem maximalen Startgewicht von 560 Tonnen ist das Flugzeug für bis zu 853 Passagiere zugelassen (+ 20 Personen Besatzung<ref name="Flugrevue 07/07">Sebastian Steinke: ''Airbus A380 steht vor der ersten Auslieferung. Gereifter Riese.'' In: ''[[Flug Revue]]'', Juli 2007.</ref> = 873); die maximale Reichweite beträgt 15.000 Kilometer, die Dienstgipfelhöhe 13.100 Meter. Erstkunden waren [[Emirates]], [[Singapore Airlines]], [[Qantas Airways|Qantas]], [[Air France]] und [[Lufthansa]]. Im Jahr 2007 gab Airbus dann jedoch die Sitzplatzkapazität mit 525 in drei Klassen an,<ref name="Flugrevue 07/07" /> und erhöhte die Kapazität durch eine andere Sitzanordnung im Jahr 2013 auf 558 Plätze in drei Klassen.<ref name="aero.de">''[http://www.aero.de/news-17940/Neue-A380-Standardkabine-hat-Platz-fuer-558-Passagiere.html Flugzeugbau. Neue A380-Standardkabine hat Platz für 558 Passagiere.]'' In: ''aero.de'', 1. August 2013.</ref>
+
+Ab Herbst 2009 wurde die A380-800 mit verbesserten elektronischen Schutzmaßnahmen gegen das Überrollen des Landebahnendes und für besseren Kollisionsschutz in der Luft ausgestattet. Dafür wurde eine ''Brake to Vacate'' (geregeltes Bremsen bis zur Abrollgeschwindigkeit von zehn Knoten Fahrt am vorgewähltem Ziel), ROW/ROP (Landebahnüberrollwarnung und Schutz mit automatischer Berechnung der Bremsstrecke abhängig von den Witterungsbedingungen) und APTCAS (mit dem Autopiloten vernetztes automatisches Kollisionswarn- und Ausweichmanöversystem) nachgerüstet.<ref>''Der Riese wird schlauer: [[Deutsches Zentrum für Luft- und Raumfahrt|DLR]]-Testpilot Berns flog die A380.'' In: ''[[Flug Revue]]'', August 2009, S.&nbsp;30–35.</ref>
+
+Eine weitere projektierte Variante der A380-800 ist die A380-800R, anfangs als Airbus A3XX-100R bekannt. Er besitzt zusätzliche Tanks im Frachtraum, eine verstärkte Struktur und deshalb auch ein erhöhtes Abfluggewicht.
+
+Ziel ist eine Erhöhung der Reichweite auf 16.200 Kilometer.<ref name="Flugrevue 07/00" /> Eine mögliche Indienststellung des Typs ist nicht vor 2015 geplant.
+
+=== A380F ===
+Die A380F ist eine Frachtvariante der A380-800, deren Entwicklung auf unbestimmte Zeit verschoben ist. Angestrebt ist, bei einer Reichweite von 10.400 Kilometern bis zu 157,4 Tonnen Fracht sowie zwölf Passagiere transportieren zu können. Die Frachtflugvariante wurde ursprünglich von [[ILFC]], [[Emirates]], [[FedEx]] und [[UPS Airlines]] bestellt, die ihre Order entweder stornierten oder in Bestellungen für die Passagiervariante umwandelten.
+
+=== A380-900 ===
+Die A380-900, ehemals auch Airbus A3XX-200 genannt, befindet sich im Projektstadium und ist eine gestreckte Version der A380-800 mit einer Länge von knapp unter 80 Metern. Die Variante soll eine verstärkte Struktur für höheres Abfluggewicht von etwa 590&nbsp;t, stärkere Triebwerke und eine Reichweite von rund 14.200&nbsp;km erhalten.<ref name="Flugrevue 07/00" /> Die maximale Passagierkapazität läge bei 963 Personen, die typische Kapazität im Drei-Klassen-Layout bei etwa 656 Personen. An dieser Variante haben 2008 die Fluggesellschaften [[Emirates]], [[Air France]]<ref> {{Webarchiv | url=http://www.aero.de/news.php?varnewsid=6584 | wayback=20081225232936 | text=''Air France Vorstandschef fordert Airbus A380-900.''}}. In: ''aero.de'', 3. Juni 2008.</ref> und [[Lufthansa]]<ref>{{Webarchiv | url=http://www.aero.de/news.php?varnewsid=7118 | wayback=20081225232941 | text=''Gallois: Lufthansa will Airbus A380-900.''}}. In: ''aero.de'', 28. August 2008.</ref> Interesse bekundet. Zeitweise plante Airbus, die Entwicklung der A380-900 ab 2010 aufzunehmen und ihn ab 2015 auszuliefern.<ref>{{cite web|url=http://derstandard.at/?url=/?id=3359567|title=Ein A380 für fast 1000 Menschen |work=[[Der Standard]] |date=2008-06-13 |accessdate=2010-06-19}}</ref> Mitte 2010 gab [[Thomas Enders]] angesichts der Verzögerungen bei der Serienfertigung der A380-800 bekannt, dass die Entwicklung in nicht naher Zukunft beginnen werde,<ref>David Kaminski-Morrow: ''[https://www.flightglobal.com/news/articles/a380-900-and-freighter-both-on-back-burner-enders-342239/ A380-900 and freighter both on 'back-burner': Enders.]'' In: ''flightglobal.com'', 20. Mai 2010.</ref> Verkaufsvorstand [[John Leahy]] ergänzte jedoch bei der Präsentation der 20-Jahres-Prognose 2011, dass die Maschine Ende des Jahrzehnts verwirklicht werden könnte.<ref>Gerhard Hegmann: {{Webarchiv | url=http://www.ftd.de/unternehmen/industrie/:starke-nachfrage-in-asien-airbus-spielt-groesseren-a380-fuer-1000-passagiere-durch/60106359.html | wayback=20110923172109 | text=''Starke Nachfrage in Asien: Airbus spielt größeren A380 für 1000 Passagiere durch.''}}. In: ''[[Financial Times Deutschland|FTD]]'', 20. September 2011.</ref> Ende April 2012 berichtete ein französischer Fernsehsender, dass Airbus die Indienststellung der A380-900 für das Jahr 2020{{Zukunft|2020}} plant.<ref>Laura Frommberg: ''[http://www.aerotelegraph.com/langversion-grosser-a380-schon-2020-stretch-version Stretch-A380 schon 2020.]'' In: ''aeroTelegraph'', 30. April 2012, abgerufen 30. April 2012.</ref>
+
+Auf der [[Pariser Luftfahrtschau|Pariser Luftfahrtschau 2015]] brachte Leahy hingegen eine moderater gestreckte Version mit in etwa dem halben Sitzplatzzuwachs auf ungefähr 650 Sitze in der Basisausführung ins Gespräch. Dieser Entwurf wird zunächst mit den Fluglinien diskutiert und basierend auf deren Resonanz möglicherweise um 2020 ein entsprechendes Entwicklungsprogramm gestartet. Ob diese weniger als ursprünglich geplant gestreckte Variante dann immer noch den Zusatz ''-900'' haben wird, ließ er offen.<ref>{{Internetquelle |url=http://www.flightglobal.com/news/articles/paris-airbus-in-early-talks-over-moderate-a380-stretch-413552 |titel=Airbus in early talks over moderate A380 stretch |werk=flightglobal.com |zugriff=2015-06-16}}</ref>
+
+== Bestellungen und Auslieferungen ==
+=== Bestellungen und Auslieferungen allgemein ===
+<div class="floatright">
+{| style="border:solid 1px #AAAAAA;" cellpadding="10" cellspacing="0"
+|+ style="padding-bottom:5px"| '''Bestellungen und Auslieferungen nach Jahr (kumuliert)'''<ref name="DefBest" />
+|-
+| <timeline>
+ImageSize  = width:auto height:150 barincrement:28
+PlotArea   = left:35 bottom:15 top:10 right:10
+AlignBars  = justify
+DateFormat = yyyy
+Period     = from:0 till:350
+TimeAxis   = orientation:vertical
+ScaleMajor = unit:year increment:50 start:0
+
+PlotData=
+  color:skyblue width:25
+  bar:2001 from:start till:85  text:85  align:center
+  bar:2002 from:start till:95  text:95  align:center
+  bar:2003 from:start till:129 text:129 align:center
+  bar:2004 from:start till:139 text:139 align:center
+  bar:2005 from:start till:159 text:159 align:center
+  bar:2006 from:start till:166 text:166 align:center
+  bar:2007 from:start till:189 text:189 align:center
+  bar:2008 from:start till:198 text:198 align:center
+  bar:2009 from:start till:202 text:202 align:center
+  bar:2010 from:start till:234 text:234 align:center
+  bar:2011 from:start till:253 text:253 align:center
+  bar:2012 from:start till:262 text:262 align:center
+  bar:2013 from:start till:304 text:304 align:center
+  bar:2014 from:start till:317 text:317 align:center
+  bar:2015 from:start till:319 text:319 align:center
+  color:powderblue width:25
+  bar:2016 from:start till:319 text:319 align:center
+  color:green width:25
+  bar:2007 from:start till:1   text:  1  align:center
+  bar:2008 from:start till:13  text:  13 align:center
+  bar:2009 from:start till:23  text:  23 align:center
+  bar:2010 from:start till:41  text:  41 align:center
+  bar:2011 from:start till:67  text:  67 align:center
+  bar:2012 from:start till:97  text:  97 align:center
+  bar:2013 from:start till:122 text: 122 align:center
+  bar:2014 from:start till:152 text: 152 align:center
+  bar:2015 from:start till:179 text: 179 align:center
+  bar:2016 from:start till:190 text: 190 align:center
+</timeline>
+|}
+</div>
+
+Für alle A380-Versionen zusammen liegen derzeit 319 Bestellungen<ref name="DefBest">Die Zahl der Bestellungen schließt hier die bereits ausgelieferten Maschinen mit ein. Die Differenz aus Bestellungen und Auslieferungen ergibt die Anzahl der noch offenen Bestellungen.</ref> vor (Stand: 30. April 2016). Aufgrund der im Herbst 2006 bekanntgewordenen Produktionsprobleme und der damit verbundenen Einnahmeausfälle und Strafzahlungen an die Kunden erreicht die A380 erst ab etwa 420 verkauften Flugzeugen die [[Gewinnschwelle|Gewinnzone]]. Zuvor war man davon ausgegangen, dieses Ziel bereits nach 250 Einheiten zu erreichen. Seitens Airbus wird bis etwa 2030 mit insgesamt 1300 Bestellungen im Segment jenseits 400 Sitzplätzen gerechnet, von denen man mindestens 50 % erhalten möchte. Demgegenüber sieht Boeing, dessen als „Jumbo-Jet“ bekannte [[Boeing 747]] nach 36-jähriger [[Monopol]]stellung als weltweit größtes Passagierflugzeug nun abgelöst wurde, einen deutlich geringeren Bedarf in dieser Größenkategorie.
+
+Als die Lieferprobleme bekannt wurden, gab es Spekulationen über Abbestellungen verärgerter Kunden. Storniert wurden jedoch lediglich die Bestellungen für die von Airbus zunächst auf Eis gelegte Frachtversion. Für die Passagiervariante sind dagegen zahlreiche Nachbestellungen bestehender Kunden eingegangen, zuerst im Dezember 2006 von [[Singapore Airlines]]. Auch [[Air France-KLM]], [[Qantas Airways|Qantas]], [[Lufthansa]] und [[Emirates]] haben mittlerweile weitere A380 bestellt; den ersten A380-Neukunden nach etwa zwei Jahren hatte Airbus im September 2007 gewonnen, als [[British Airways]] ankündigte, zwölf Exemplare erwerben zu wollen.
+
+Am 13. November 2007 gab Airbus auf der [[Dubai Air Show|Luftfahrtmesse in Dubai]] bekannt, dass Prinz [[Al-Walid ibn Talal]] als erster Privatkunde eine A380 gekauft habe. Die von ihm bestellte VIP-Variante läuft unter der Bezeichnung ''A380 Flying Palace'' ''(Fliegender Palast)''. Inzwischen hat Prinz Al-Walid die Maschine noch vor der Auslieferung an einen nicht genannten Käufer veräußert.<ref>{{Internetquelle|url=http://www.aerotelegraph.com/airbus-a380-privatjet-verkauft/|titel=Prinz will Luxus-380 nicht mehr |autor=Laura Frommberg |werk=aeroTelegraph.com |zugriff=2013-04-01}}</ref>
+
+Im Mai 2008 musste EADS allerdings einräumen, im weiteren Verlauf des Jahres nur zwölf anstelle der ursprünglich geplanten 13 Auslieferungen leisten zu können. 2009 sollten nur 21 statt 25 Maschinen an Kunden übergeben werden. Großkunden wie [[Emirates|Emirates Airlines]] und [[Etihad Airways]] wurden darüber informiert, dass es bei der Auslieferung der bestellten Flugzeuge zu Verzögerungen von 2,5 bis 3 Monaten kommen könne. Diese Ankündigungen sorgten für Verstimmungen am Aktienmarkt. Grund für die neuerliche Lieferverzögerung war der schwierige Übergang zur vollständigen Serienfertigung.
+
+Am 15. Januar 2009 veröffentlichte Airbus die Absichtserklärung der französischen [[Air Austral]], zwei A380 in reiner Economy-Bestuhlung&nbsp;– mit bis zu 840 Sitzplätzen –&nbsp;zu kaufen und auf der Route von [[Saint-Denis (Réunion)|Saint-Denis]] auf [[Réunion]] nach Paris einzusetzen. Der Absichtserklärung folgte am 17. November 2009 die Bekanntgabe der verbindlichen Bestellung. Die Auslieferung der ersten Maschine sollte 2014 erfolgen. Air Austral wäre damit die erste Fluggesellschaft, welche die A380 in nahezu maximaler Konfiguration eingesetzt hätte. Derzeit prüft die Gesellschaft, die Bestellung in eine Mehrklassenkonfiguration zu ändern oder die Maschinen ganz abzubestellen.<ref>Stefan Eiselin: ''[http://www.aerotelegraph.com/air-austral-a380-neue-konfiguration-oder-abbestellung Air Austral gibt A380 noch nicht auf.]'' In: ''aeroTelegraph.com'', 20. Juli 2012, abgerufen am 27. Juli 2012.</ref><ref>''[http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/air-austral-waehlt-a380-mit-einklassenkonfiguration-fuer-zukuenftiges-wachstum/ Air Austral wählt A380 mit Einklassenkonfiguration für zukünftiges Wachstum.]'' In: ''airbus.com'', 15. Januar 2009, aufgerufen am 7. März 2016.</ref><ref>''[http://www.airbus.com/no_cache/newsevents/news-events-single/detail/air-austral-erteilt-festauftrag-ueber-zwei-a380-in-einklassen-konfiguration/ Air Austral erteilt Festauftrag über zwei A380 in Einklassen-Konfiguration.]'' In: ''airbus.com'', 17. November 2009, aufgerufen am 7. März 2016.</ref>
+
+Im Mai 2009 wurde die Auslieferungsmenge erneut angepasst, diesmal jedoch aufgrund von Kundenwünschen, die aus der Wirtschaftskrise resultierten. 2009 sollten nun nur noch 14 Flugzeuge ausgeliefert werden, 2010 dann 20. Tatsächlich ausgeliefert wurden 2009 nur zehn und 2010 nur 18 Maschinen.<ref>''[http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/airbus-aendert-a380-auslieferungszeitplan-fuer-20092010/ Airbus ändert A380-Auslieferungszeitplan für 2009/2010.]'' In: ''airbus.com'', 6. Mai 2009, aufgerufen am 7. März 2016.</ref>
+
+Emirates verkündete am 8. Juni 2010, weitere 32 Maschinen bestellt zu haben und erhöhte den bestehenden Auftrag somit auf insgesamt 90 Airbus A380-800.<ref>{{Webarchiv | url=http://event.airbus.com/airshows/ilaberlin2010/news/news-single/back/2044/article/emirates-orders-a-further-32-airbus-a380s.html | wayback=20110707095353 | text=''Emirates orders a further 32 Airbus A380s.''}} In: ''event.airbus.com'', 8. Juni 2010.</ref>
+
+Am 6. Januar 2011 unterschrieb die südkoreanische [[Asiana Airlines]] einen Kaufvertrag über sechs A380.<ref>{{Internetquelle|url=http://www.flugrevue.de/de/zivilluftfahrt/fluggeraete/asiana-hat-sechs-airbus-a380-bestellt.36364.htm |titel=Asiana hat sechs Airbus A380 bestellt |autor=Volker K. Thomalla |werk=[[Flug Revue]] |datum=2011-01-06|zugriff=2012-02-16}}</ref>
+
+Am 17. Februar 2011 unterschrieb die japanische Fluggesellschaft [[Skymark]] einen Kaufvertrag über vier Airbus A380-800, über die Anfang November 2010 bereits eine Absichtserklärung vereinbart worden war.<ref name="aib-skym-sign" /> Diese Bestellung wurde im Juli 2014 jedoch storniert,<ref name="aib-skym-cancel" /> nachdem die Strukturmontage des ersten Exemplars bereits im Februar 2014 abgeschlossen war<ref name="aib-struct-ass" /> und dieses im April seinen Erstflug absolvierte.<ref name="aib-maid-flight" /> Insgesamt wurden zwei A380 komplett fertiggestellt, bevor der Vertrag storniert wurde.<ref name="reuters-state-skym" /><ref name="onv-skym-state" />
+
+Am 8. März 2011 gab die US-amerikanische Leasinggesellschaft [[ILFC]] bekannt, die georderten zehn A380 in Bestellungen für [[A320neo]] und [[A321neo]] umwandeln zu wollen.<ref>Pressemitteilung: {{Internetquelle|url=http://207.45.187.42/~ilfc01/viewArticle.php?id=292 |titel=ILFC orders aircraft from Airbus and Boeing |archiv-url=https://web.archive.org/web/20110314174111/http://207.45.187.42/~ilfc01/viewArticle.php?id=292 |archiv-datum=2011-03-14 |werk=[[ILFC]] |datum=2011-03-08 |zugriff=2012-02-16|sprache=en}}</ref> Die Umwandlung wurde am 27. April 2011 im Auftragsbuch vermerkt.
+
+Am 29. September 2011 stimmte der Aufsichtsrat der [[Deutsche Lufthansa|Deutschen Lufthansa]] einer Umwandlung von zwei der fünf Optionen zu den bisherigen 10 Festbestellungen zu.<ref>{{Internetquelle|url=http://presse.lufthansa.com/de/meldungen/view/archive/2011/september/29/article/2010.html |titel=Lufthansa Aufsichtsrat stimmt Bestellung von zwölf Flugzeugen für den Konzern zu |werk=Lufthansa|datum=2011-09-29|zugriff=2012-02-16|zitat=Der Aufsichtsrat der Deutschen Lufthansa AG hat in seiner heutigen Sitzung der Bestellung von insgesamt zwölf neuen Flugzeugen für den Konzern zugestimmt. Davon sollen zwei Airbus A380 und ein Airbus A330-300 kurzfristig bei der Lufthansa Passage auf der Langstrecke eingesetzt werden.}} Hinweis: Die weiteren neun Bestellungen betreffen vier [[Airbus-A320-Familie#A320|Airbus A320]] und fünf [[Embraer-E-Jet-Familie|Embraer 195]].</ref>
+
+Am 15. November 2011 bestellte ''Qatar Airways'' im Rahmen der [[Dubai Air Show]] 2011 fünf weitere A380 (fest) und schloss ferner eine Option für drei weitere Maschinen ab.<ref>''[http://www.welt.de/wirtschaft/article13718150/Katar-laesst-Airbus-bei-Milliardenauftrag-zappeln.html Katar lässt Airbus bei Milliardenauftrag zappeln.]'' In: ''[[Die Welt]]'', 15. November 2011.</ref>
+
+Ende April 2012 verschob die australische Fluggesellschaft ''Qantas'' die Auslieferung von zwei bestellten Airbus A380 um drei Jahre von 2013 auf 2016.{{Zukunft|2016}} Qantas begründete diesen Schritt mit dem starken Gewinneinbruch Anfang 2012.<ref>''[http://www.airliners.de/qantas-verzoegert-a380-lieferung/27039 Sparmaßnahmen. Qantas verzögert A380-Lieferung.]'' In: ''airliners.de'', 4. Mai 2012.</ref>
+
+Am 14. März 2013 meldete Airbus die Auslieferung der hundertsten A380. Die Maschine wurde an ''Malaysia Airlines'' geliefert, die damit ihre sechste A380 erhielt, womit die Bestellung komplett ausgeführt wurde.<ref>''[http://www.airbus.com/newsevents/news-events-single/detail/airbus-delivers-100th-a380/ Airbus delivers 100th A380.]'' In: ''airbus.com'', 14. März 2013.</ref>
+
+Ebenfalls am 14. März 2013 vermeldete die Deutsche Lufthansa einen Großauftrag an Airbus. Neben 100 [[A320]] wurden auch zwei weitere A380 bestellt.<ref>{{Internetquelle|url=http://www.airbus.com/no_cache/presscentre/pressreleases/press-release-detail/detail/lufthansa-aufsichtsrat-genehmigt-airbus-grossauftrag/ |titel=Lufthansa-Aufsichtsrat genehmigt Airbus-Großauftrag • 100 Flugzeuge der A320-Familie und zwei weitere A380 |werk=airbus.com |datum=2013-03-14 |zugriff=2013-03-15}}</ref> Anfang Oktober 2013 wurden dann die verbliebenen drei Optionen aufgegeben. Damit ergeben sich insgesamt 14 Festbestellungen für die Lufthansa.<ref>{{Internetquelle|url=http://www.aero.de/news/Lufthansa-streicht-drei-Airbus-A380.html |titel=Airbus bucht drei A380 von Lufthansa aus |werk=aero.de |datum=2013-10-07 |zugriff=2015-12-16}}</ref>
+
+Am 17. November 2013 gaben ''Emirates'' und Airbus im Rahmen der Dubai Airshow 2013 eine Bestellung über 50 weitere A380 bekannt.<ref>{{Internetquelle|url=http://www.airbus.com/newsevents/news-events-single/detail/emirates-orders-50-additional-a380s-boosting-fleet-to-140/ |titel=Airbus: Emirates orders 50 additional A380s, boosting fleet to 140 | werk=airbus.com |datum=2013-11-17 |zugriff=2013-11-17}}</ref>
+
+Am 12. Februar 2014 gab Airbus die Festbestellung der Leasinggesellschaft ''Amedeo'' (vormals ''Doric'') über 20 A380 bekannt.<ref name="aib-amedeo" />
+
+Am 10. April 2015 übernahm Lufthansa den vierzehnten A380. Das Flugzeug mit der Kennung D-AIMN erhielt die Zusatzbezeichnung „San Francisco“, wurde aber am 18. November 2015 von der Bundeskanzlerin auf den Namen „Deutschland“ getauft. Die Bestellung mit 14 Exemplaren ist damit vollständig ausgeliefert.
+
+Am 2. Oktober 2015 musste [[Transaero Airlines]] Insolvenz anmelden, dadurch ist ein weiterer Kunde verloren gegangen. Die Airline hatte vier A380 bestellt, aus dieser Bestellung war schon einer teilweise fertiggestellt.<ref>Stefan Eiselin: ''[http://www.aerotelegraph.com/airbus-verliert-weiteren-a380-kunden-transaero-stellt-betrieb-ein Transaero stellt Betrieb ein. Airbus verliert weiteren A380-Kunden.]'' In: ''aeroTelegraph.com'', 3. Oktober 2015.</ref>
+
+Zum 31. Dezember 2015 löschte Airbus die vier Bestellungen von ''[[Transaero Airlines]]'', führte jedoch drei dieser teilweise fertiggestellten Maschinen unter der Leasingfirma [[Air Accord]] neu auf.<ref>{{Internetquelle|url=http://www.aero.de/news-23242/Bermuda-Gesellschaft-uebernimmt-drei-A380-Auftraege.html |titel=Transaero Airlines. Airbus: Zweckgesellschaft übernimmt drei A380-Aufträge |werk=aero.de |datum=2016-01-13|zugriff=2016-01-19}}</ref> Darüber hinaus wurde eine, ebenfalls fast fertiggestellte, Maschine von ''Skymark'' für einen unbekannten Kunden wieder neu ins Auftragsbuch aufgenommen.<ref>{{Internetquelle|url=http://www.flugrevue.de/zivilluftfahrt/flugzeuge/bregier-a380-erreicht-schwarze-zahlen/662864 |titel=Brégier: A380 hat schwarze Zahlen erreicht |werk=[[Flug Revue]] |datum=2016-01-13 |zugriff=2016-01-19}}</ref>
+
+Am 28. Januar 2016 gaben ''[[Iran Air]]'' und ''Airbus'' eine Festbestellung über zwölf A380-800 bekannt.<ref>{{Internetquelle|url=http://www.airbus.com/no_cache/newsevents/news-events-single/detail/translate-to-deutch-iran-selects-airbus-for-its-civil-aviation-renewal |titel=Iran Air bestellt 118 Flugzeuge bei Airbus |werk=airbus.com |datum=2016-01-28 |zugriff=2016-01-28}}</ref>
+
+Am 29. Januar 2016 gaben ''[[All Nippon Airways]]'' und ''Airbus'' eine Festbestellung über drei A380-800 bekannt.<ref>{{Internetquelle|url=http://www.anahd.co.jp/en/pr/201601/pdf/20160129-3.pdf|titel=Notification of Acquisition of Fixed Assets (Aircraft) |werk=anahd.co.jp |datum=2016-01-29 |zugriff=2016-04-20}}</ref>
+
+Mit der Veröffentlichung des Orderbuchs <ref>{{Internetquelle|titel = Orders & deliveries|url = http://www.airbus.com/no_cache/company/market/orders-deliveries/ 
+|datum = 2016-03-31|zugriff = 2016-04-11}}</ref> am 31. März 2016 gab Airbus bekannt, dass Air Austral die zwei Maschinen endgültig nicht abnimmt, gleichzeitig seien zwei Exemplare an einen noch ungenannten Käufer verkauft worden.<ref>{{Internetquelle|titel=Airbus verliert Kunden und verkauft zwei A380|url=http://www.aerotelegraph.com/airbus-verliert-kunden-air-austral-verkauft-2-neue-a380 |datum=2016-04-11|zugriff=2016-04-11}}</ref> Laut Aerotelegraph vom 13.&nbsp;April 2016 ist Emirates dieser Käufer. Die Flugzeuge sollen in einer Zwei-Klassen-Ausführung im 4. Quartal 2017 geliefert werden.<ref>{{Internetquelle |url=http://www.aerotelegraph.com/emirates-ist-besteller-der-zwei-a380 |titel=Emirates ist Besteller der zwei A380 |hrsg=aeroTELEGRAPH |datum=2016-04-13 |zugriff=2016-04-13}}</ref> Die Arabian Business berichtete hingegen, dass es unklar sei, ob die Bestellung von Emirates mit der Abbestellung von Air Austral im Zusammenhang stünde und erwähnte eine noch andere Bestellung zweier A380 von einem ungenannten Abnehmer.<ref>{{Internetquelle |url=http://www.arabianbusiness.com/emirates-buys-two-more-a380s-in-fillip-airbus-628326.html |titel=Emirates käuft zwei A380 mehr |hrsg=Arabian Business |datum=2016-04-13 |zugriff=2016-04-22}}</ref>
+
+Im April 2016 gab Airbus bekannt, ab 2017 die Produktion der A380 von bisher zwei Maschinen pro Monat auf 1,7 Maschinen zu senken.<ref> [http://www.aerotelegraph.com/airbus-verlangsamt-a380-produktion aero telegraph, 22.4.2016 ]</ref>
+
+=== Tabelle der Festbestellungen und Auslieferungen ===
+Aufgeführt sind ausschließlich die
+<!--
+Neubestellung vor Eintragung anhand von http://www.airbus.com/no_cache/company/market/orders-deliveries/ (bei Unklarheiten auch mit Hilfe der verlinkten Excel-Tabelle unterhalb der 'Orders and Deliveries'-Statistik !!! ) oder http://www.airbus.com/aircraftfamilies/passengeraircraft/a380family/ prüfen! Weitere Infos können bei http://www.planespotters.net/Production_List/Airbus/A380 eingesehen werden.
+--> 
+offiziell in den Auftragsbüchern von Airbus zum 30. April 2016 geführten Festbestellungen.<ref>''[http://www.airbus.com/no_cache/company/market/orders-deliveries/ Orders & deliveries.]'' In: ''airbus.com'', abgerufen am 06. Juni 2016, verlinkte [[Microsoft Excel|Excel]]-Tabelle am Ende der Seite.</ref> [[Absichtserklärung]]en werden nicht berücksichtigt. Angaben zu Erstauslieferungsdaten, Triebwerkstypen und Klassenkonfigurationen beziehen sich auf ''planespotters.net''.<ref name="planespotters">[http://www.planespotters.net/Production_List/Airbus/A380/index.php ''Airbus A380 Production List.''] In: ''planespotters.net'', abgerufen am 10. November 2015.</ref>
+{| class="wikitable sortable" style="text-align:center;"
+|+ style="padding-bottom:5px"| Bestellungen und Auslieferungen nach Auftraggeber<ref name="DefBest" />
+! Auftraggeber
+! A380-800
+! davon<br />geliefert
+! Erstauslieferung
+! Triebwerke
+! [[Beförderungsklasse|Klassenkonfiguration]]<br />Gesamt (F/B/Premium Eco/Eco)
+|-
+| style="text-align:left;"| {{BMU|Air Accord|Air Accord}}<br /><small>(ehem. {{RUS|Transaero|Transaero Airlines}})</small>
+| {{0}}{{0}}3
+|
+| unbekannt
+| ehem. GP7270
+| ehem. 652 (12/24/–/616)
+|-
+| style="text-align:left;"| {{FRA|Air France|Air France}}
+| {{0}}12
+| {{0}}10
+| {{SortDate|2009-10-30}}
+| GP7270
+| 516 (9/80/38/389)
+|-
+| style="text-align:left;"| {{JPN|All Nippon Airways|All Nippon Airways}}
+| {{0}}{{0}}3
+|
+| ''{{SortDate|2019-00-00|davor=vsl.}}''
+| [[Rolls-Royce Trent#Trent 900|Trent 900]]<ref>''[http://www.flugrevue.de/flugzeugbau/triebwerke/ana-entscheidet-sich-fuer-rolls-royce-trent-900/664730 Neuer Kunde für Megaliner. ANA entscheidet sich für Rolls-Royce Trent 900.]'' In: ''[[Flug Revue]]'', 29. Februar 2016.</ref>
+| noch offen
+|-
+| style="text-align:left;"| {{IRL|Amedeo (Leasinggesellschaft)|Amedeo (Leasinggesellschaft)}}
+| {{0}}20
+| {{0}}{{0}}
+| ''{{SortDate|2016-00-00|davor=vsl.}}''<ref name="amedeo-order" />
+| noch unbekannt
+| 573 (12/66/–/495)<ref name="aib-amedeo" />
+|-
+| style="text-align:left;"| {{KOR|Asiana Airlines|Asiana Airlines}}
+| {{0}}{{0}}6
+| {{0}}{{0}}4
+| {{SortDate|2014-05-29}}
+| [[Rolls-Royce Trent#Trent 900|Trent 970]]
+| 495 (12/66/–/417)
+|-
+| style="text-align:left;"| {{GBR|British Airways|British Airways}}
+| {{0}}12
+| {{0}}11
+| {{SortDate|2013-07-04}}
+| Trent 970
+| 469 (14/97/55/303)
+|-
+| style="text-align:left;"| {{CHN|China Southern Airlines|China Southern Airlines}}
+| {{0}}{{0}}5
+| {{0}}{{0}}5
+| {{SortDate|2011-10-14}}
+| Trent 970
+| 506 (8/70/–/428)
+|-
+| style="text-align:left;"| {{ARE|Emirates|Emirates}}
+| 142
+| {{0}}79
+| {{SortDate|2008-07-28}}
+| GP7270<br />[[Rolls-Royce Trent#Trent 900|Trent 97X]]<ref>''[http://www.aero.de/news-21542/Emirates-bestellt-bei-Rolls-Royce-Triebwerke-fuer-50-Airbus-A380.html Emirates bestellt bei Rolls-Royce Triebwerke für 50 Airbus A380.]'' In: ''aero.de'' / ''[[Dpa-AFX Wirtschaftsnachrichten|dpa-AFX]]'', 17. April 2015, aufgerufen am 6. März 2016.</ref>
+| 489 (14/76/–/399)<br />517 (14/76/–/427)<br />615 (–/58/–/557)
+|-
+| style="text-align:left;"| {{ARE|Etihad Airways|Etihad Airways}}
+| {{0}}10
+| {{0}}{{0}}8
+| {{SortDate|2014-12-16}}
+| GP7270
+| 498 (11/70/–/417)
+|-
+| style="text-align:left;"| Ungenannter Käufer<br /><small>(ehem. {{CHN|Hong Kong Airlines|Hong Kong Airlines}})</small>
+| {{0}}10
+|
+| unbestimmt verschoben
+| noch unbekannt
+| noch offen
+|-
+| style="text-align:left;"| {{KOR|Korean Air|Korean Air}}
+| {{0}}10
+| {{0}}10
+| {{SortDate|2011-05-31}}
+| GP7270
+| 407 (12/94/–/301)
+|-
+| style="text-align:left;"| {{GER|Lufthansa|Lufthansa}}
+| {{0}}14
+| {{0}}14
+| {{SortDate|2010-05-19}}
+| Trent 970
+| 509 (8/78/52/371)<br />488 (8/92/52/336)<ref>Lufthansa:[http://www.lufthansa.com/de/de/Sitzplaene_A380 ''Sitzpläne Airbus A380-800''], abgerufen am 10. November 2015.</ref>
+|-
+| style="text-align:left;"| {{MYS|Malaysia Airlines|Malaysia Airlines}}
+| {{0}}{{0}}6
+| {{0}}{{0}}6
+| {{SortDate|2012-05-29}}
+| Trent 970
+| 494 (8/66/–/420)
+|-
+| style="text-align:left;"| {{AUS|Qantas Airways|Qantas}}
+| {{0}}20
+| {{0}}12
+| {{SortDate|2008-09-19}}
+| [[Rolls-Royce Trent#Trent 900|Trent 972]]
+| 484 (14/64/35/371)
+|-
+| style="text-align:left;"| {{QAT|Qatar Airways|Qatar Airways}}
+| {{0}}10
+| {{0}}{{0}}6
+| {{SortDate|2014-09-16}}<ref>[http://www.airliners.de/qatar-airways-uebernimmt-ersten-airbus-a380/33623 ''Qatar Airways übernimmt ersten Airbus A380''.] In: ''airliners.de'', 17. September 2014.</ref>
+| GP7270
+| 517 (8/48/–/461)
+|-
+| style="text-align:left;"| {{SGP|Singapore Airlines|Singapore Airlines}}
+| {{0}}24
+| {{0}}19
+| {{SortDate|2007-10-15}}
+| Trent 970
+| 471 (12/60/–/399)<br />409 (12/86/–/311)
+|-
+| style="text-align:left;"| {{THA|Thai Airways International|Thai Airways}}
+| {{0}}{{0}}6
+| {{0}}{{0}}6
+| {{SortDate|2012-09-27}}
+| Trent 970
+| 507 (12/60/–/435)
+|-
+| style="text-align:left;"| {{GBR|Virgin Atlantic Airways|Virgin Atlantic Airways}}
+| {{0}}{{0}}6
+|
+| ''{{SortDate|2018-00-00|davor=vsl.}}''<ref>Laura Frommberg: ''[http://www.aerotelegraph.com/virgin-uebelerlegt-abbestellung-airbus-a380 Lässt Virgin die A380 fallen?]'' In: ''aeroTelegraph.com'', 19. Juli 2013, abgerufen am 10. November 2015.</ref>
+| [[Rolls-Royce Trent#Trent 900|Trent 97X]]
+| noch offen
+|-
+! Gesamt
+! 319
+! 190
+!
+!
+!
+|}
+'''Bilder des Airbus A380 in typischer Lackierung der jeweiligen Fluggesellschaft in der chronologischen Reihenfolge der Erstauslieferungen.'''
+<gallery mode="packed">
+<!-- Am besten je Betreiber ein Bild in der jeweiligen Lackierung in chronologischer Reihenfolge der Indienststellung -->
+Singapore Airlines A380-800(9V-SKK) (4840475653).jpg|Erstkunde [[Singapore Airlines]]
+Emirates Airbus A380-861 A6-EER MUC 2015 04.jpg|Der größte Kunde [[Emirates]]
+Qantas a380 vh-oqa takeoff heathrow arp.jpg|[[Qantas Airways|Qantas]]
+Air France A380 F-HPJB.jpg|[[Air France]]
+2010-07-21 A380 LH D-AIMB EDDF 04.jpg|[[Lufthansa]]
+Korean Air A388 HL7611.JPG|[[Korean Air]]
+China Southern Airlines Airbus A380-841 Zhao.jpg|[[China Southern Airlines]]
+Malaysia-airlines-a380-flies.jpg|[[Malaysia Airlines]]
+Airbus A380-841, Thai Airways International AN2253510.jpg|[[Thai Airways International|Thai Airways]]
+British Airways A388 G-XLEA.JPG|[[British Airways]]
+HL7626 (17239930302).jpg|[[Asiana Airlines]]
+QTR A7-APA A380!137 EDHI 16-04-14.jpg|[[Qatar Airways]]
+Etihad Airways Airbus A380-861 at Finkenwerder.jpg|[[Etihad Airways]]
+</gallery>
+
+== Technische Daten ==
+{| class="wikitable center"
+|-
+! style="background:#F2F2F4"| Kenngröße
+! style="background:#F2F2F4"| A380-800
+! style="background:#F2F2F4"| A380F<br /><small>(Entwicklung zurzeit zurückgestellt)</small>
+! style="background:#F2F2F4"| A380-900<br /><small>(Entwicklung noch nicht begonnen)</small>
+|-
+| style="text-align:left; background-color:#f2f2f4"| [[Liste der Flugzeugtypencodes|Flugzeugtypcode]]
+| 380 (IATA)<br />A388 (ICAO)
+| 38F (IATA)
+|
+|-
+| style="text-align:left; background-color:#f2f2f4"| Länge
+|colspan="2"| 72,30 m
+| ca. 79,40 m
+|-
+| style="text-align:left; background-color:#f2f2f4"| [[Flügelspannweite]]
+|colspan="3"| 79,80 m
+|-
+| style="text-align:left; background-color:#f2f2f4"| Höhe
+|colspan="3"| 24,10 m
+|-
+| style="text-align:left; background-color:#f2f2f4"|Triebwerksdurchmesser
+|colspan="3"| 2,95 m
+|-
+| style="text-align:left; background-color:#f2f2f4"| Kabinenlänge
+|colspan="2"| 50,68 m
+| ''k. A.''
+|-
+| style="text-align:left; background-color:#f2f2f4"| Rumpfdurchmesser
+|colspan="3"| 7,14 m × 8,40 m
+|-
+| style="text-align:left; background-color:#f2f2f4"| Maximale Kabinenbreite
+|colspan="3"| 5,92 m (Oberdeck)<br />6,58 m (Hauptdeck)
+|-
+| style="text-align:left; background-color:#f2f2f4"| [[Flügelfläche]]
+|colspan="3"| 846 m²<ref name="lhmag06-10">Emanuel Eckardt: ''[http://www.lhm-lounge.de/lh_1006_interkonti/lh_1006_inter_doppel.pdf Aviation A360. Flug in eine neue Ära.]'' In: ''Lufthansa Magazin'', Juni 2010, S. 10 – 28, S.&nbsp;14, (PDF; 92&nbsp;S., 17,6&nbsp;MB).</ref>
+|-
+| style="text-align:left; background-color:#f2f2f4"| [[Flügelpfeilung]] (t/4-Linie)
+|colspan="3"| 33,5°
+|-
+| style="text-align:left; background-color:#f2f2f4"| Leitwerksspannweite
+|colspan="3"| 27,35 m
+|-
+| style="text-align:left; background-color:#f2f2f4"| Maximales Leergewicht
+| 275 t
+| 286 t
+| ''k. A.''
+|-
+| style="text-align:left; background-color:#f2f2f4"| Maximales Startgewicht ([[MTOW]])
+| 569 t
+| 590 t
+| ca. 590 t
+|-
+| style="text-align:left; background-color:#f2f2f4"| Maximales Rollgewicht (max. Ramp Weight)
+| 571 t
+| ''k. A.''
+| ''k. A.''
+|-
+| style="text-align:left; background-color:#f2f2f4"| Maximales [[Landegewicht]]
+| 391 t<sup>1</sup>
+| 427 t
+| ''k. A.''
+|-
+| style="text-align:left; background-color:#f2f2f4"| Typische Nutzlast
+| 66,4 t
+| 157,4 t
+| ''k. A.''
+|-
+| style="text-align:left; background-color:#f2f2f4"| Passagierkapazität<br /><small>(3 Klassen)</small>
+| 558<sup>2</sup>
+| rowspan="2"| 12
+| ca. 650
+|-
+| style="text-align:left; background-color:#f2f2f4"| Maximale Passagierkapazität
+| 853<sup>3</sup>
+| ca. 960
+|-
+| style="text-align:left; background-color:#f2f2f4"| Maximale Tankkapazität
+| 320.000 l
+| 310.000 l
+| 370.000 l
+|-
+| style="text-align:left; background-color:#f2f2f4"| Triebwerkstypen
+| A380-841: [[Rolls-Royce Trent#Trent 900|Trent 970(B)]]<br />A380-842: [[Rolls-Royce Trent#Trent 900|Trent 972(B)]]<br />A380-861: [[Engine Alliance GP7200|GP7270]]
+| A380-843F: [[Rolls-Royce Trent#Trent 900|Trent 977(B)]]<br />A380-863F: [[Engine Alliance GP7200|GP7277]]
+| Engine Alliance<br />Rolls-Royce Trent
+|-
+| style="text-align:left; background-color:#f2f2f4"| [[Schub]]
+| ab 311&nbsp;kN pro Triebwerk
+| ab 340&nbsp;kN pro Triebwerk
+| ab 340&nbsp;kN pro Triebwerk (geplant)
+|-
+| style="text-align:left; background-color:#f2f2f4"| Höchstgeschwindigkeit
+|colspan="3"| [[Mach-Zahl|Mach]] 0,89 (~958 km/h, ~517 [[Knoten (Einheit)|kn]])
+|-
+| style="text-align:left; background-color:#f2f2f4"| Wirtschaftlichste Geschwindigkeit
+|colspan="3"| Mach 0,85<ref>{{cite web|url=http://www.malaysiaairlines.com/hq/en/mh-experience/fleet/airbus-a380.html|title=MH Experience – Fleet – Airbus A380|work=[[Malaysia Airlines]] |date=|accessdate=2013-05-03}}</ref> (~915 km/h, ~494 kn)
+|-
+| style="text-align:left; background-color:#f2f2f4"| [[Reichweite (Transportwesen)|Reichweite]]
+| 15.200&nbsp;km<ref>{{cite web|url=http://www.airbus.com/en/aircraftfamilies/a380/a380/specifications/ |title=A380 Airplane Characteristics Sheet from |work=airbus.com |date= |accessdate=2010-06-19}}</ref>
+| 10.400&nbsp;km
+| ca. 14.200&nbsp;km
+|-
+| style="text-align:left; background-color:#f2f2f4"| [[Dienstgipfelhöhe]]
+|colspan="3"| 13.100 m
+|-
+| style="text-align:left; background-color:#f2f2f4"| Startrollstrecke (maximales Startgewicht)
+| 2.750 m
+| 2.900 m
+| ''k. A.''
+|-
+| style="text-align:left; background-color:#f2f2f4"| Landestrecke (maximales Landegewicht)
+| 2.620 m
+| 2.770 m
+| ''k. A.''
+|-
+|colspan="4" style="text-align:left; background-color:#f2f2f4"| <sup>1</sup> Ungefähre Angabe; durch verschiedene Ausstattungsvarianten kann der tatsächliche Wert je nach Flugzeug/Fluggesellschaft abweichen.<ref>{{Internetquelle|url=http://www.airbus.com/en/aircraftfamilies/a380/a380/specifications/|titel=A380 Family|titelerg=''Love at First Flight''|werk=airbus.com|zugriff=2012-02-15|sprache=en}}</ref><ref>{{Internetquelle|url=http://konzern.lufthansa.com/flotte/interkontinental-flotte/airbus-a380-800.html|titel=Das neue Flaggschiff der Flotte: Airbus A380|archiv-url=https://web.archive.org/web/20100713234837/http://konzern.lufthansa.com/flotte/interkontinental-flotte/airbus-a380-800.html|archiv-datum=2010-07-13|werk=Lufthansa|zugriff=2012-02-15|zitat=Max. Landegewicht: 391.000 kg}}</ref><br />
+<sup>2</sup> Airbus-Angabe; die Umsetzungen bei den einzelnen Fluggesellschaften weichen davon ab.<ref name="aero.de" /><br />
+<sup>3</sup> Entspricht dem Zulassungsgrenzwert.
+|}
+
+== Zwischenfälle und Probleme ==
+=== Übersicht ===
+Seit der Aufnahme des Liniendienstes 2007 wurden bis zum März 2014 mehr als 151.000 Flüge absolviert,<ref name="fluege-gesamt" /> bei denen sich bis heute keine Zwischenfälle ereigneten, die zu Todesopfern, schwereren Verletzungen oder Totalverlusten führten. Neben einigen kleineren Problemen des neu eingeführten Flugzeugtyps kam es allerdings während eines Fluges von Qantas zu einem schweren Triebwerksschaden, der großes öffentliches Aufsehen erregte:
+
+=== Zwischenfall am 4. November 2010 bei Qantas Airways ===
+Am 4. November 2010 kam es bei einer A380-842 der australischen Fluggesellschaft [[Qantas Airways|Qantas]] kurz nach dem Start in Singapur zu einem schweren Triebwerkschaden. Es wurde niemand verletzt. Bei Triebwerk Nr. 2, dem inneren Triebwerk der linken Tragfläche, brach über der indonesischen Insel [[Batam]] die Turbinenscheibe der Mitteldruckturbine in Stücke. Diese Teile wurden mit hoher Geschwindigkeit aus dem Triebwerk geschleudert („uncontained engine failure“) und durchschlugen die linke Tragfläche an 4 Stellen. Dabei wurden Treibstofftanks, Hydraulikleitungen, elektrische Versorgungsleitungen, elektrische Steuerleitungen sowie weitere Bauteile im Flügel beschädigt. Das Flugzeug (MSN 0014, Kennzeichen VH-OQA) war benannt nach [[Nancy Bird-Walton]] und befand sich auf dem Flug QF32 von [[London]] über [[Singapur]] nach [[Sydney]]. An Bord befanden sich 440 Passagiere, 5 Piloten und 24 Flugbegleiter. Nach Durchführung der Notfallprozeduren kehrten die Piloten für eine [[Landung#Sicherheitslandung|Sicherheitslandung]] nach Singapur zurück. Weil unter anderem der Treibstoffnotablass nicht mehr funktionierte, landete die A380 nach 1 h 49 min Flugzeit 50 Tonnen schwerer als das empfohlene maximale Landegewicht und mit „Schieflage“: Zwischen der linken und rechten Tragfläche gab es einen Gewichtsunterschied von 10 Tonnen.<ref>{{Internetquelle|url=http://www.spiegel.de/reise/aktuell/qantas-a380-zwischenfall-am-gefaehrlichsten-war-die-zeit-nach-der-landung-a-733975.html|titel=Qantas-A380-Zwischenfall: „Am gefährlichsten war die Zeit nach der Landung“ |autor=Florian Diekmann |werk=[[SpOn]] / [[Associated Press|AP]] |datum=2010-12-10 |zugriff=2012-02-15 |zitat=Die Piloten entschieden, diese Anweisung zu ignorieren und die Landung mit unterschiedlich schweren Tragflächen zu wagen, das Gewichtsgefälle betrug zehn Tonnen: ''„Das System, mit dem Treibstoff in der Luft abgelassen werden kann, war ausgefallen, und wir waren 50 Tonnen schwerer als das maximal zulässige Landegewicht“'', erzählt Evans.}}</ref> Durch die Schäden in der Tragfläche arbeiteten die hydraulischen Systeme nur noch sehr eingeschränkt; unter anderem funktionierten die Auftriebshilfen nicht mehr richtig und auch das Fahrwerk musste manuell ausgefahren werden.<ref>{{Internetquelle|url=http://wissen.spiegel.de/wissen/image/show.html?did=75159858&aref=image045/2010/11/13/CO-SP-2010-046-0147-0147.PDF&thumb=false |titel=Springreiter nach dem Sturz |autor=Gerald Traufetter |werk=[[Der Spiegel]] |seiten=147 |datum=2010-11-15 |zugriff=2012-02-15|zitat=So fiel eines der beiden Hydrauliksysteme aus, außerdem wurden wichtige Verbindungskabel durchtrennt, unter anderem zum äußeren Triebwerk 1.}}</ref> Von den Passagieren und Besatzungsmitgliedern kam niemand zu Schaden, aber auf der Insel Batam wurden zwei Personen durch herabstürzende Triebwerksteile leicht verletzt.<ref>''[http://www.n24.de/n24/Nachrichten/Panorama/d/1139076/a380-muss-mit-triebwerkschaden-notlanden.html A380 muss mit Triebwerkschaden notlanden.]'' In: ''[[N24]].de'', 4. November 2010, abgerufen am 26. November 2010.</ref><ref name="ATSB">''[http://www.atsb.com.au/publications/investigation_reports/2010/aair/ao-2010-089.aspx Reports – Qantas, Airbus A380, VH-OQA.]'' In: ''[[Australian Transport Safety Bureau]] (ATSB)'', 27. Juni 2013, (engl.) <br />„Schlüsselerkenntnis: Ermüdungsbruch der Ölleitung“, S. 16.</ref><ref>''[http://blogs.crikey.com.au/planetalking/2010/11/17/the-anatomy-of-the-airbus-a380-qf32-near-disaster/ The Anatomy of the Airbus A380 QF32 near disaster.]'' In: ''blogs.crikey.com.au'', 17. November 2010, (englisch), abgerufen am 26. November 2010.</ref><ref>''[http://www.aerosocietychannel.com/aerospace-insight/2010/12/exclusive-qantas-qf32-flight-from-the-cockpit/ Qantas QF32 flight from the cockpit.]'' In: ''Aerospace Insight'', 8. Dezember 2010.</ref>
+
+Qantas ist derzeit die einzige Fluggesellschaft, die den Airbus A380-842 mit den etwas stärkeren [[Rolls-Royce Trent#Trent 900|Rolls-Royce-Trent-972]]-Triebwerken einsetzt.<ref name="planespotters" /> Als sie bei einer sofort durchgeführten Kontrolle an drei weiteren Triebwerken ihrer A380-842 Öllecks fand, belegte sie all ihre sechs A380 mit einem Startverbot.<ref>{{Webarchiv | url=http://www.handelszeitung.ch/artikel/Unternehmen-AWP_Airbus-gibt-vorerst-keine-neuen-Empfehlungen-fuer-A380_810517.html | wayback=20101206104452 | text=''Airbus gibt vorerst keine neuen Empfehlungen für A380.''}}. In: ''[[Handelszeitung]]'', 8. November 2010.</ref><ref>''[http://www.welt.de/aktuell/article10801986/Raetselraten-ueber-Oelleck-an-Triebwerk-des-Airbus-A380.html Rätselraten über Ölleck an Triebwerk des Airbus A380.]'' In: ''[[Die Welt]]'', 8. November 2010.</ref> Nach gut drei Wochen wurden zwei davon wieder in Betrieb genommen.<ref name="LH2TauschTrent">''[http://www.welt.de/wirtschaft/article11339499/Lufthansa-flog-zwei-Wochen-mit-Pannen-Triebwerk.html Lufthansa flog zwei Wochen mit Pannen-Triebwerk.]'' In: ''Die Welt'', 2. Dezember 2010.</ref>
+
+Die beiden anderen Betreiber von A380 mit Rolls-Royce-Triebwerken, Lufthansa und Singapore Airlines, führten ebenfalls besondere Triebwerkskontrollen an ihren A380-841 (mit etwas schwächeren Trent-970-Triebwerken) durch. Auch hier wurden an insgesamt fünf Triebwerken Spuren von ausgetretenem Öl festgestellt, worauf vier dieser Triebwerke ausgetauscht wurden.<ref>fdi / [[dapd]] / [[dpa]]: ''[http://www.spiegel.de/reise/aktuell/rolls-royce-antrieb-lufthansa-tauscht-ein-a380-triebwerk-aus-a-728321.html Rolls-Royce-Antrieb. Lufthansa tauscht ein A380-Triebwerk aus.]'' In: ''[[SpOn]]'', 10. November 2010.</ref> Inzwischen wurde bekannt, dass Lufthansa ein zweites Triebwerk austauschen musste, weil auch bei diesem bereits zwei Wochen zuvor ein Ölleck gefunden wurde, ein Austauschtriebwerk aber nicht sofort verfügbar war. Während der Wartezeit wurde die Maschine weiter eingesetzt, aber zusätzlich kontrolliert.<ref name="LH2TauschTrent" />
+
+Als Schlüsselerkenntnis nennt der ATSB-Report<ref name="ATSB" /> vom 3. Dezember 2010 einen Ermüdungsbruch einer Ölleitung zum Turbinenlager zwischen der Hoch- und der Mitteldruckturbine des Triebwerks als Folge einer nicht zentrisch ausgeführten Bohrung (das Rohr wurde offenbar durch zwei von beiden Enden ausgehende Bohrungen aus einem soliden Werkstück herausgearbeitet). Die [[Europäische Agentur für Flugsicherheit|EASA]] nennt nach vorläufigen Erkenntnissen einen Ölaustritt an einem defekten Lager als Fehlerquelle. Auslaufendes Öl entzündete sich und führte zu Überhitzung. Als Folge davon brach in der Mitteldruckturbine eine Scheibe, und die Trümmer der Scheibe durchschlugen die Turbinenverkleidung und die Tragfläche.<ref>{{Webarchiv | url=http://www.faz.net/s/RubCD175863466D41BB9A6A93D460B81174/Doc~EBD77BFB4506B4297829D15898A09D947~ATpl~Ecommon~Scontent.html | wayback=20101112194228 | text=''Ölfeuer sollen Triebwerkspanne verursacht haben.''}} In: ''[[faz.net]]'' / ''[[dpa]]'', 11. November 2010.</ref> Dieses als Ölbrand bekannte Phänomen war von der EASA bereits im August 2010 in einer Direktive als mögliche Folge einer festgestellten stärkeren Abnutzung bestimmter Teile in Triebwerken der Trent-900-Reihe beschrieben worden. Auch vor dem möglichen Austreten von Teilen aus dem Triebwerk wurde in dieser Direktive bereits gewarnt. Ferner sah die Direktive verschärfte Kontrollen aller Triebwerke dieser Reihe vor.<ref>''[http://www.flugrevue.de/flugzeugbau/update-trent-900-zwischenfall-an-a380-von-qantas/491898 Update: Trent-900-Zwischenfall an A380 von Qantas.]'' In: ''[[Flug Revue]]'', 4. November 2010, abgerufen am 26. November 2010.</ref>
+
+Die betroffene, schwer beschädigte A380 der Qantas mit dem Kennzeichen ''VH-OQA'' war nach dem Zwischenfall bis April 2012 in Singapur abgestellt. Die Gesamtkosten für die Reparatur wurden anfangs auf 60 Millionen US-Dollar geschätzt, zuzüglich 2 × 20 Millionen US-Dollar für die Triebwerke,<ref>''[http://www.spiegel.de/wirtschaft/flugzeugbauer-airbus-erhoeht-preise-fuer-a380-a-361193.html Qantas will beschädigte A380 bis Jahresende reparieren.]'' In: ''[[SpOn]]'', 17. März 2011.</ref> das ist etwa ein Drittel des Neupreises.<ref>''[http://www.spiegel.de/wirtschaft/flugzeugbauer-airbus-erhoeht-preise-fuer-a380-a-361193.html Airbus erhöht Preise für A380.]'' In: ''[[SpOn]]'', 19. Juni 2005.</ref> Im April 2012 wurde nach 18 Monaten Reparatur an der beschädigten Flügelstruktur und den hydraulischen, pneumatischen und elektrischen Systemen für insgesamt 144 Mio. US-Dollar die Maschine wieder in Betrieb genommen.<ref>''[http://www.asianaviation.com/articles/281/Nancy-Bird-Walton-returns Qantas A380 Nancy Bird-Walton returns.]'' In: ''asianaviation.com'', 27. April 2012, (englisch).</ref>
+
+=== Risse in Tragflächenteilen ===
+Anfang Januar 2012 wurde bekannt, dass bei der Reparatur der wegen der Triebwerksexplosion in Singapur notgelandeten Qantas A380 in einigen der Metallklammern, welche die Flügelrippen mit der Tragflächen-Außenhaut verbinden, [[Haarriss]]e gefunden wurden.<ref>{{Internetquelle|url=http://www.spiegel.de/wissenschaft/technik/flugsicherheit-aufregung-um-risse-in-a380-fluegeln-a-807560.html|titel=Aufregung um Risse in A380-Flügeln |werk=[[SpOn]] |datum=2012-01-06|zugriff=2012-01-21}}</ref> Bei daraufhin erfolgten Kontrollen wurden diese Haarrisse auch bei weiteren Maschinen entdeckt. Die Europäische Agentur für Flugsicherheit (EASA) gab daraufhin eine [[Lufttüchtigkeitsanweisung]] heraus, um alle älteren A380, die eine bestimmte Anzahl an Flügen zurückgelegt haben, zu kontrollieren. Eine Ermittlungsgruppe des Flugzeugbauers soll darüber hinaus feststellen, wie die Risse auftreten konnten.<ref>{{Internetquelle|url=http://www.guardian.co.uk/business/2012/feb/15/airbus-a380-cracks-investigation?INTCMP=SRCH |titel=Airbus launches investigation into A380 cracks |autor=Dan Milmo |werk=[[The Guardian]] |datum=2012-02-15 |zugriff=2012-02-17 |sprache=en |zitat=The Airbus chief executive, Tom Enders, said the world’s largest and most advanced passenger airliner was „absolutely“ safe to fly but a probe is now underway. Speaking at the Singapore Airshow, he said the company would ensure that the flaws, created during the manufacturing process, are not repeated with the A350 mid-sized jetliner project. ''„Are we learning from this? Absolutely. We are taking lessons from the A380 programme for the A350 programme.“''}}</ref>
+
+Nach Angaben von Airbus sind die Risse nicht auf Belastungen beim Flug, sondern auf Überbeanspruchung bei der Herstellung zurückzuführen.<ref>chs / [[Reuters]]: ''[http://www.spiegel.de/wissenschaft/technik/sicherheitsbehoerde-a380-muss-zum-fluegel-check-a-810351.html Sicherheitsbehörde: A380 muss zum Flügel-Check.]'' In: ''[[SpOn]]'', 20. Januar 2012.</ref><ref>{{Internetquelle|url=http://www.flightglobal.com/news/articles/three-factors-conspiring-to-stress-a380-wing-components-367394/ |titel=Three factors conspiring to stress A380 wing components |autor=David Kaminski-Morrow |werk=flightglobal.com |datum=2012-01-26 |zugriff=2012-01-26 |sprache=en}}</ref> Airbus betonte, dass diese Risse keine unmittelbare Gefahr für die Flugsicherheit darstellten. Ein Reparaturkit sei bereits entwickelt und der Herstellungsprozess korrigiert worden. Nachdem am 8. Februar 2012 bei einer Maschine der Qantas 36 Risse festgestellt worden sind, gab die EASA bekannt, dass nun alle 68 derzeit in Dienst stehenden A380 auf diese Risse überprüft werden müssen.<ref>{{Internetquelle|url=http://www.airliners.de/easa-schickt-alle-a380-zur-inspektion/26334|titel=EASA ordnet A380-Inspektionen an. Weitere Haarrisse im Flügel |autor=|werk=Airliners.de |datum=2012-02-08|zugriff=2012-02-08}}</ref><ref name="guardian2012-02-08">{{Internetquelle|url=http://www.guardian.co.uk/business/2012/feb/08/a380-superjumbo-checks-wing-cracks|titel=All A380 superjumbos to be checked for wing cracks |autor=Dan Milmo |werk=[[The Guardian]] |datum=2012-02-08 |zugriff=2012-02-08 |sprache=en |zitat=European aviation safety body about to expand directive to include all aircraft, not just those that have exceeded a certain number of flights.}}</ref><ref>{{Internetquelle|url=http://www.nytimes.com/2012/02/09/business/global/regulators-order-inspections-for-entire-airbus-a380-fleet.html?_r=1&scp=2&sq=a380&st=Search|titel=Regulators Order Inspections for Entire Airbus A380 Fleet |autor=Nicola Clark |werk=[[New York Times]] |datum=2012-02-08|zugriff=2012-02-08|sprache=en}}</ref><ref>{{Internetquelle|titel=Haarrisse in Flügeln: Alle A380-Maschinen müssen untersucht werden|url=http://www.faz.net/aktuell/wirtschaft/haarrisse-in-fluegeln-alle-a380-maschinen-muessen-untersucht-werden-11642003.html |autor=Ulrich Friese, Christian Schubert |werk=[[Frankfurter Allgemeine Zeitung]] |datum =2012-02-08 |zugriff=2012-02-08}}</ref><ref>{{Internetquelle|url=http://www.flightglobal.com/news/articles/qantas-grounds-a380-after-finding-36-cracks-on-wings-367923/ |titel=Qantas grounds A380 after finding 36 cracks on wings |autor=Mavis Toh |werk=Flightglobal.com |datum=2012-02-08 |zugriff=2012-02-08|sprache=en}}</ref> Die Überprüfung ist spätestens nach 1.300 absolvierten Starts und Landungen durchzuführen.<ref>{{Internetquelle|url=http://www.aero.de/news-14433/EASA-weitet-Inspektionspflicht-auf-alle-A380-aus.html |titel=EASA weitet Inspektionspflicht auf alle A380 aus |werk=aero.de |datum=2012-02-08 |zugriff=2012-02-08}}</ref> Die Rissproblematik soll durch Fehler im Zusammenspiel zwischen Legierung und Design der Rippenfüße entstanden sein. Verantwortlich für die Produktion dieser Teile war ein Unternehmen aus Filton bei [[Bristol]] in [[Vereinigtes Königreich|Großbritannien]].<ref>{{Internetquelle|autor=Laura Frommberg |werk=aeroTelegraph |titel=Woher die A380-Risse stammen |url=http://www.aerotelegraph.com/herkunft-risse-airbus-a380 |datum=2012-03-03 |zugriff=2012-03-03 |zitat=Wie Quellen aus dem Unternehmen erklären, liegt das Problem an der Aluminiumlegierung, die genutzt wurde – allerdings in Kombination mit der Art und Weise, wie man die Teile schließlich zusammenfügte. Im Endeffekt sei es sowohl ein Designproblem als auch eines der Ingenieursarbeit, schreibt die Zeitung Daily Mail.}}</ref><ref>{{Internetquelle|autor=Tom Gardner |werk=[[Daily Mail]] |titel=Wing cracks in £250million A380 superjumbos that grounded entire fleet blamed on British engineering |url=http://www.dailymail.co.uk/news/article-2109150/Wing-cracks-A380-superjumbos-sparked-global-recall-blamed-British-engineering-firm.html?ito=feeds-newsxml |datum=2012-03-02 |zugriff=2012-03-03 |sprache=en |zitat=A senior industry expert told The Times: ‘The issue is around the type of aluminum being used and the fitting which, as a result of the assembly, creates the crack’, with a source close to the problem adding, ‘It is a design and process engineering failure’.}}</ref>
+
+Seit Mai 2013 ist der [[Flughafen Dresden]] Reparaturstützpunkt für den Airbus A380. Es wurden Haarrisse an den Tragflächen bei der [[Elbe Flugzeugwerke|EADS Elbe Flugzeugwerke GmbH]] repariert.<ref>{{Webarchiv | url=http://www.mdr.de/sachsen/dresden/airbus-elbe-flugzeugwerke-dresden100_zc-cf5ff0a4_zs-6689deb8.html | wayback=20130520140435 | text=''Riesenairbus A380 wird in Dresden repariert.''}} In: ''[[MDR]]'', 11. Mai 2013.</ref><ref>''[http://www.airliners.de/elbe-flugzeugwerke-reparieren-airbus-a380-haarrisse-in-dresden/29597 Elbe-Flugzeugwerke reparieren Airbus-A380-Haarrisse in Dresden.]'' In: ''[[Dpa-AFX Wirtschaftsnachrichten|dpa-AFX]]'', ''airliners.de'', 13. Mai 2013, aufgerufen am 6. März 2016.</ref>
+
+Der [[Norddeutscher Rundfunk|Norddeutsche Rundfunk]] berichtete am 17. November 2013 über erneute Risse an den Tragflächen. Diese sollen in der Nähe des Rumpfes am hinteren Ende der Tragflächen auftreten und können die „strukturelle Integrität“ der Tragflächen beeinflussen. Laut Airbus handele es sich nicht um ein sicherheitsrelevantes Ereignis. Betroffen seien die ersten 70 ausgelieferten Maschinen. Airbus ist die „Schwachstelle“ bei einem Dauerbelastungstest aufgefallen. Die betroffenen Flugzeuge können weiter im Einsatz bleiben und sollen bei den regulären Wartungsarbeiten überprüft und repariert werden. Die europäische Luftaufsichtsbehörde schlägt eine Reparatur nach spätestens 4.000 Flügen oder 30.000 Flugstunden vor.<ref>''[http://www.ndr.de/regional/hamburg/airbus1013.html Wieder Risse im Riesen-Airbus.]'' In: ''[[ndr.de]]'', aufgerufen am 6. März 2016.</ref>
+
+== Siehe auch ==
+* [[Liste von Flugzeugtypen]]
+
+== Literatur ==
+* {{Literatur|Autor=Andreas Spaeth|Titel=Airbus A 380. Der fliegende Gigant aus Europa|Verlag=Heel|Jahr=2005|Ort=Königswinter|ISBN=978-3-89880-410-3}}
+* Peter-Michael Ziegler, Benjamin Benz: ''Fliegendes Rechnernetz. IT-Technik an Bord des Airbus A380.'' In ''[[c’t]]'', 2005, Nr. 17, {{ISSN|0724-8679}}, S.&nbsp;84.
+* {{Literatur|Autor=Achim Figgen, Karl Morgenstern, Dietmar Plath|Titel=A380. Geschichte, Technik und Erprobung des Mega-Airbus|Verlag=[[GeraMond Verlag|GeraMond]]|Jahr=2006|Ort=München|ISBN=3-7654-7030-9}}
+* {{Literatur|Autor=Norbert Andrup|Titel=Airbus. Von der A300 bis zur A380 und A350|Auflage=1.|Verlag=Motorbuch Verlag|Ort=Stuttgart|Jahr=2011|ISBN=978-3-613-03330-6}}
+
+== Filme ==
+* ''Der Super-Airbus. Vom Rohling zum Luxusliner''. Fernsehreportage, Deutschland, 2013, 28:30 Min., Buch und Regie: Volker Schult, Produktion: ZAG!media, [[NDR]], Reihe: die reportage, Erstsendung: 11. Dezember 2013 bei NDR, [http://programm.ard.de/TV/ndrfsnds/der-super-airbus/eid_2822611234752430 Inhaltsangabe] von [[ARD]] und [https://www.youtube.com/watch?v=cz80_AjbsFY online-Video].
+* ''Mit dem Doppeldecker nach Johannesburg – Der Airbus A380 im Liniendienst.'' Fernsehreportage, Deutschland, 2010, 45:14 Min., Buch: Michael Langer, Regie: Yousif Al-Chalabi, Produktion: TV21, [[N24]], Erstsendung: 20. März 2011 bei N24, [https://www.youtube.com/watch?v=vEi9NYDC_fM online-Video].<br />„Der erste Langstreckenflug von Lufthansa mit dem Airbus A380 führte nach Johannesburg: Am 6. Juni 2010 startete das neue Flaggschiff mit der deutschen Fußball-Nationalmannschaft an Bord zur Weltmeisterschaft nach Südafrika.“
+
+== Weblinks ==
+{{Commons}}
+{{Wiktionary|Superjumbo}} 
+* [http://easa.europa.eu/system/files/dfu/EASA-TCDS-A.110_Airbus_A380-08-24092013.pdf Musterzulassung der A380 – EASA-TCDS-A.110] (PDF; 397&nbsp;kB)
+* [http://easa.europa.eu/system/files/dfu/EASA-TCDS-E.012_Rolls--Royce_plc._RB211_Trent_900_series_engines-06-11122013.pdf Musterzulassung der RB211 Trent 900-Serie – EASA-TCDS-E.012] (PDF; 201&nbsp;kB)
+* [http://easa.europa.eu/system/files/dfu/20140404_TCDS_IM.E.026_issue04_0.pdf Musterzulassung der APU GP7200 – EASA-TCDS-E.026] (PDF; 188&nbsp;kB)
+* [http://www.airbus.com/aircraftfamilies/passengeraircraft/a380family A380] – Präsentation der Produktfamilie von Airbus (englisch)
+* [http://www.planespotters.net/Production_List/Airbus/A380/index.html Airbus-A380-Produktionsliste] in ''planespotters.net'' (englisch)
+* [http://www.planespotters.net/Production_List/Airbus/A380/operator.php Airbus-A380-Betreiber] in ''planespotters.net'' (englisch)
+* [http://www.fliegerweb.com/search?q=A380 A380] – Dossier zum Stichwort ''A380'' in ''fliegerweb.com''
+* [http://a380.lufthansa.com/TAKEPART/#/DE/DE/HOME Lufthansa A380] − aufwändige Präsentation der [[Lufthansa]]
+
+'''Videos'''
+* [http://www.austrianwings.info/aw/?p=11457 Erstlandung des A 380 in Wien und Linz am 2. Juni 2010] – Foto- und Videoreportage
+* [http://www.messelive.tv/index.php/videos/reportage-news/viewvideo/53/reportage-a-news/bericht-airbus-a380-zieht-die-besucher-zur-ila-berlin-air-show-2010 Airbus A380 auf der ILA 2010 in Berlin] – Video in ''messelive.tv''
+
+== Einzelnachweise ==
+<references>
+<ref name="spot-total">
+[http://www.airfleets.net/listing/listing.htm Produktionslisten] bei ''airfleets.net'' (englisch). Gesamtzahl aller registrierten A380 ''mit Erstflug'', abgerufen am 20. September 2015, umfasst auch die Prototypen und im Innenausbau befindliche Flugzeuge.
+</ref>
+<ref name="aib-skym-cancel">{{Internetquelle|url=http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/airbus-terminates-purchase-order-with-skymark-airlines-for-a380s/|titel=Airbus terminates purchase order with Skymark Airlines for A380s|werk=[[Airbus Group]]|datum=2014-07-29|zugriff=2015-02-22|sprache=en}}
+</ref>
+<ref name="aib-skym-sign">{{Internetquelle|url=http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/skymark-airlines-of-japan-confirms-order-for-four-a380s/|titel=Skymark Airlines of Japan confirms order for four A380s|werk=[[Airbus Group]]|datum=2011-02-18|zugriff=2011-01-10|sprache=en}}
+</ref>
+<ref name="fluege-gesamt">
+''[http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/the-airbus-a380-in-operational-service-a-continuing-success-story/ The Airbus A380 in operational service: A continuing success story.]'' In: ''airbus.com'', 12. Februar 2014.
+</ref>
+<ref name="aib-struct-ass">{{Internetquelle|url=http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/skymark-airlines-first-airbus-a380-structural-assembly-completed/|titel=Skymark Airlines’ first Airbus A380 structural assembly completed|werk=[[Airbus Group]]|datum=2014-02-24|zugriff=2015-02-22|sprache=en}}
+</ref>
+<ref name="aib-maid-flight">{{Internetquelle|url=http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/skymark-airlines-first-a380-completes-its-maiden-flight/|titel=Skymark Airlines’ first A380 completes its maiden flight|werk=[[Airbus Group]]|datum=2014-04-08|zugriff=2015-02-22|sprache=en}}
+</ref>
+<ref name="reuters-state-skym">{{Internetquelle|url=http://de.reuters.com/article/companiesNews/idDEKBN0FY15520140729|titel=Airbus lässt in Japan Auftrag für sechs A380 platzen|werk=[[Reuters]]|datum=2014-07-29|zugriff=2015-02-22}}
+</ref>
+<ref name="onv-skym-state">{{Internetquelle|url=http://www.onvista.de/news/airbus-laesst-in-japan-auftrag-fuer-sechs-a380-platzen-1049241|titel=Airbus lässt in Japan Auftrag für sechs A380 platzen|werk=[[OnVista Group]]|datum=2014-07-29|zugriff=2015-02-22}}
+</ref>
+<ref name="aib-etihad">{{Internetquelle|url=http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/etihad-airways-a380-delivery-continues-the-momentum-for-airbus-21st-century-flagship-jetliner/|titel=Etihad Airways’ A380 delivery continues the momentum for Airbus’ 21st century flagship jetliner|werk=[[Airbus Group]]|datum=2014-12-18|zugriff=2015-02-22|sprache=en}}
+</ref>
+<ref name="eads-delay">{{Internetquelle|url=http://eads.net/1024/de/pressdb/archiv/2006/2006/Airbus/20061003_airbus_a380_delay.html|titel=Airbus bestätigt weitere Verzögerung beim A380 und leitet unternehmensweite Umstrukturierungsmaßnahmen ein|werk=[[EADS]]|datum=2006-10-03|archiv-url=https://web.archive.org/web/20071020043522/http://eads.net/1024/de/pressdb/archiv/2006/2006/Airbus/20061003_airbus_a380_delay.html|archiv-datum=2007-10-20|zugriff=2015-02-22}}
+</ref>
+<ref name="eads-final">{{Internetquelle|url=http://www.eads.net/1024/de/pressdb/archiv/2006/2006/20061003_eads_airbus.html|titel=EADS und Airbus schließen Überprüfung des A380-Programms ab|werk=EADS|datum=2006-10-03|archiv-url=https://web.archive.org/web/20080220102710/http://www.eads.net/1024/de/pressdb/archiv/2006/2006/20061003_eads_airbus.html|archiv-datum=2008-02-20|zugriff=2015-02-22}}
+</ref>
+<ref name="eads-termine">{{Internetquelle|url=http://www.eads.net/1024/de/pressdb/archiv/2006/2006/Airbus/20060613_airbus_a380.html|titel=Airbus hält am Zieltermin für die A380-Zulassung und Erstauslieferung zum Jahresende fest, kündigt aber Verschiebung im Produktionsprogramm an|werk=EADS|datum=2006-06-13|archiv-url=https://web.archive.org/web/20080214154319/http://www.eads.net/1024/de/pressdb/archiv/2006/2006/Airbus/20060613_airbus_a380.html|archiv-datum=2008-02-14|zugriff=2015-02-22}}
+</ref>
+<ref name="tp-zuerich-umbau">{{Internetquelle|url=http://www.touristikpresse.net/news/32279/Zurich-Dritte-Fluggastbrucke-fur-Airbus-A380.html |titel=Zürich: Dritte Fluggastbrücke für Airbus A380 |werk=touristikpresse.net |datum=2011-01-19|zugriff=2015-02-22}}
+</ref>
+<ref name="faz-gewinn">{{Internetquelle|url=http://www.faz.net/agenturmeldungen/unternehmensnachrichten/airbus-sieht-erreichen-der-a380-gewinnschwelle-gefaehrdet-zeitung-12641045.html|titel=Airbus sieht Erreichen der A380-Gewinnschwelle gefährdet|werk=[[FAZ]]|datum=2013-10-30|archiv-url=https://web.archive.org/web/20131220090620/http://www.faz.net/agenturmeldungen/unternehmensnachrichten/airbus-sieht-erreichen-der-a380-gewinnschwelle-gefaehrdet-zeitung-12641045.html|archiv-datum=2013-12-20|zugriff=2015-02-22}}
+</ref>
+<ref name="amedeo-order">{{Internetquelle|url=http://www.amedeo.aero/portfolio/#ordered-aircraft|titel=Portfolio: Ordered Aircraft|werk=amedeo.aero|zugriff=2015-02-22|sprache=en}}
+</ref>
+<ref name="aib-amedeo">Pressemitteilung: {{Webarchiv | url=http://www.airbus.com/no_cache/newsevents/news-events-single/detail/amedeo-unterzeichnet-auftrag-ueber-20-airbus-a380/ | wayback=20150222213855 | text=''Amedeo unterzeichnet Auftrag über 20 Airbus A380.''}}. In: ''[[Airbus Group]]'', 12. Februar 2014.</ref>
+</references>
+
+{{Navigationsleiste Airbus|[[Boeing 747-8]] – [[McDonnell Douglas MD-12]]}}
+
+{{Exzellent|26. Juni 2008|47704912}}
+
+{{Normdaten|TYP=s|GND=4644751-9}}
+
+[[Kategorie:Großraumflugzeug]]
+[[Kategorie:Langstreckenflugzeug]]
+[[Kategorie:Airbus|A380]]
+[[Kategorie:Vierstrahliges Flugzeug]]
+[[Kategorie:Wikipedia:Artikel mit Video]]

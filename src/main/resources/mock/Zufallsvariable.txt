@@ -1,0 +1,205 @@
+In der [[Stochastik]] ist eine '''Zufallsvariable''' oder '''Zufallsgröße''' (auch '''zufällige Größe''',<ref name="Bewersdorff2012" /> '''Zufallsveränderliche''', selten '''stochastische Variable''' oder '''stochastische Größe''') eine Größe, deren Wert vom Zufall abhängig ist.<ref>[[Norbert Henze]]: ''Stochastik für Einsteiger: Eine Einführung in die faszinierende Welt des Zufalls.'' Vieweg+Teubner Verlag, 2010, ISBN 978-3-8348-0815-8, {{DOI|10.1007/978-3-8348-9351-2}}, S. 12.</ref> Formal ist eine Zufallsvariable eine [[Zuordnungsvorschrift]], die jedem [[Ergebnis (Stochastik)|möglichen Ergebnis]] eines [[Zufallsexperiment]]s eine Größe zuordnet.<ref name="Bewersdorff2012" /> Ist diese Größe eine [[Zahl]], so spricht man von einer [[Zufallszahl]].  Beispiele für Zufallszahlen sind die Augensumme von zwei geworfenen Würfeln und die Gewinnhöhe in einem [[Glücksspiel]]. Zufallsvariablen können aber auch komplexere mathematische Objekte, wie [[Zufallsbewegung]]en, [[Zufallspermutation]]en oder [[Zufallsgraph]]en, sein.
+
+Über verschiedene Zuordnungsvorschriften können einem Zufallsexperiment auch verschiedene Zufallsvariablen zugeordnet werden.<ref name="Bewersdorff2012" /> Den einzelnen Wert, den eine Zufallsvariable bei der Durchführung eines Zufallsexperiments annimmt, nennt man [[Realisierung|Realisation]]<ref name="Pflaumer2001" /> oder im Falle eines stochastischen Prozesses einen [[Pfad (Stochastik)|Pfad]].
+
+Während früher der von [[Andrei Nikolajewitsch Kolmogorow|A. N. Kolmogorow]] eingeführte Begriff ''Zufallsgröße'' der übliche deutsche Begriff war, hat sich heute (ausgehend vom englischen ''random variable'') der etwas irreführende Begriff ''Zufallsvariable'' durchgesetzt.<ref>Jeff Miller: ''Earliest Known Uses of Some of the Words of Mathematics.'' Abschnitt [http://jeff560.tripod.com/r.html R].</ref>
+
+== Motivation des formalen Begriffs ==
+Die Funktionswerte <math>X(\omega)</math> einer Zufallsvariablen <math>X</math> sind abhängig von einer den Zufall repräsentierenden Größe <math>\omega</math>. Zum Beispiel kann <math>\omega</math> das zufällige [[Ergebnis (Stochastik)|Ergebnis]] eines Münzwurfs sein. Dann kann zum Beispiel eine Wette auf den Ausgang eines [[Münzwurf]]s mithilfe einer Zufallsvariablen modelliert werden. Angenommen, es wurde auf Zahl gewettet, und wenn richtig gewettet wurde, wird 1 EUR ausgezahlt, sonst nichts. Sei <math>X</math> die Auszahlungssumme. Da der Wert von <math>X</math> vom Zufall abhängt, ist <math>X</math> eine Zufallsvariable, insbesondere eine [[#Reelle Zufallsvariable|reelle Zufallsvariable]]. Sie bildet die Menge der Wurfergebnisse <math>\{\text{Kopf}, \text{Zahl}\}</math> auf die Menge der möglichen Auszahlungsbeträge <math>\{0, 1\}</math> ab:
+:<math>X(\omega) = \begin{cases}
+0, & \text{wenn }\omega = \text{Kopf},\\
+1, & \text{wenn }\omega = \text{Zahl}.
+\end{cases}</math>
+
+Wettet man bei zwei Münzwürfen beide Male auf Kopf und bezeichnet die Kombination der Ausgänge der Münzwürfe mit <math>\omega=\left(\omega_1,\omega_2\right)</math>, so lassen sich beispielsweise folgende Zufallsvariablen untersuchen:
+# <math>X_1(\omega) := X(\omega_1) \in\{0,1\}</math> als Auszahlung nach der ersten Wette,
+# <math>X_2(\omega) := X(\omega_2) \in\{0,1\}</math> als Auszahlung nach der zweiten Wette,
+# <math>S(\omega) := X(\omega_1) + X(\omega_2) \in\{0,1,2\}</math> als Summe der beiden Auszahlungen.
+
+Zufallsvariable<!--das ist der hier verwendete fachsprachliche Plural--> selbst werden üblicherweise mit einem Großbuchstaben bezeichnet (hier <math>X_1, X_2, S</math>), während man für die Realisierungen die entsprechenden Kleinbuchstaben verwendet (so beispielsweise für <math>\omega=\left(\text{Zahl},\text{Kopf}\right)</math> die Realisierungen <math>x_1 = 1</math>, <math>x_2=0</math>, <math>s=1</math>).
+
+Im Beispiel hat die Menge <math>\Omega = \{\text{Kopf}, \text{Zahl}\}</math> eine konkrete Interpretation. In der weiteren Entwicklung der Wahrscheinlichkeitstheorie ist es oft zweckmäßig, die Elemente von <math>\Omega</math> als abstrakte Repräsentanten des Zufalls zu betrachten, ohne ihnen eine konkrete Bedeutung zuzuweisen, und dann sämtliche zu modellierende Zufallsvorgänge als Zufallsvariable zu erfassen.
+
+== Definition ==
+
+Als Zufallsvariable bezeichnet man eine [[messbare Funktion]] von einem [[Wahrscheinlichkeitsraum]] in einen [[Messraum (Mathematik)|Messraum]].
+
+Eine formale mathematische Definition lässt sich wie folgt geben:<ref>Karl Hinderer: ''Grundbegriffe der Wahrscheinlichkeitstheorie.'' Springer, Berlin 1980, ISBN 3-540-07309-4 (nicht überprüft)</ref>
+: Es seien <math>(\Omega,\Sigma,P)</math> ein Wahrscheinlichkeitsraum und <math>(\Omega',\Sigma')</math> ein Messraum. Eine <math>(\Sigma,\Sigma')</math>-messbare Funktion <math>X\colon\Omega\to\Omega'</math> heißt dann eine <math>\Omega'</math>-Zufallsvariable auf <math>\Omega</math>.
+
+=== Beispiel: Zweimaliger Würfelwurf ===
+[[Datei:Twodice.svg|mini|Summe von zwei Würfeln:<math>(\Omega,\Sigma,P) \xrightarrow{S} (\Omega',\Sigma', P^S)</math>.]]
+
+Das Experiment, mit einem fairen Würfel zweimal zu würfeln, lässt sich mit folgendem Wahrscheinlichkeitsraum <math>(\Omega, \Sigma, P)</math> modellieren:
+* <math>\Omega</math> ist die Menge der 36 möglichen Ergebnisse <math>\Omega=\{(1,1), (1,2), \dotsc, (6,5), (6,6)\}</math>
+* <math>\Sigma</math> ist die [[Potenzmenge]] von <math>\Omega</math>
+* Will man zwei unabhängige Würfe mit einem fairen Würfel modellieren, so setzt man alle 36 Ergebnisse gleich wahrscheinlich, wählt also das [[Wahrscheinlichkeitsmaß]] <math>P</math> als <math>P\left(\{(n_1,n_2)\}\right) = \tfrac {1}{36}</math> für <math>n_1, n_2 \in \{1,2,3,4,5,6\}</math>.
+
+Die Zufallsvariablen <math>X_1</math> (gewürfelte Zahl des ersten Würfels), <math>X_2</math> (gewürfelte Zahl des zweiten Würfels) und <math>S</math> (Augensumme des ersten und zweiten Würfels) werden als folgende Funktionen definiert:
+
+# <math>X_1\colon \Omega \to \R;\quad\left(n_1,n_2\right) \mapsto n_1,</math>
+# <math>X_2\colon \Omega \to \R;\quad\left(n_1,n_2\right) \mapsto n_2,</math> und
+# <math>S\colon \Omega \to \R;\quad\left(n_1,n_2\right) \mapsto n_1+n_2,</math>
+wobei für <math>\Sigma'</math> die [[borelsche σ-Algebra]] auf den reellen Zahlen gewählt wird.
+
+=== Bemerkungen ===
+In der Regel wird auf die konkrete Angabe der zugehörigen Räume verzichtet; es wird angenommen, dass aus dem Kontext klar ist, welcher Wahrscheinlichkeitsraum auf <math>\Omega</math> und welcher Messraum auf <math>\Omega'</math> gemeint ist.
+
+Bei einer endlichen Ergebnismenge <math>\Omega</math> wird <math>\Sigma</math> meistens als die Potenzmenge von <math>\Omega</math> gewählt. Die Forderung, dass die verwendete Funktion messbar ist, ist dann immer erfüllt. Messbarkeit wird erst wirklich bedeutsam, wenn die Ergebnismenge <math>\Omega</math> [[Abzählbarkeit|überabzählbar]] viele Elemente enthält.
+
+Einige Klassen von Zufallsvariablen mit bestimmten Wahrscheinlichkeits- und Messräumen werden besonders häufig verwendet. Diese werden teilweise mit Hilfe alternativer Definitionen eingeführt, die keine Kenntnisse der Maßtheorie voraussetzen:
+
+=== Reelle Zufallsvariable ===
+
+Bei reellen Zufallsvariablen ist der Bildraum die Menge <math>\R</math> der [[Reelle Zahl|reellen Zahlen]] versehen mit der [[Borelsche σ-Algebra|borelschen <math>\sigma</math>-Algebra]]. Die allgemeine Definition von Zufallsvariablen lässt sich in diesem Fall zur folgenden Definition vereinfachen:
+
+: Eine reelle Zufallsvariable ist eine Funktion <math>X\colon\Omega\to\R</math>, die jedem Ergebnis <math>\omega</math> aus einer [[Ergebnismenge]] <math>\Omega</math> eine reelle Zahl <math>X(\omega)</math> zuordnet und die folgende Messbarkeitsbedingung erfüllt:
+::<math>\forall x \in \R:\ \lbrace \omega \mid X(\omega) \leq x \rbrace \in \Sigma</math>
+Das bedeutet, dass die Menge aller Ergebnisse, deren Realisierung unterhalb eines bestimmten Wertes liegt, ein Ereignis bilden muss.
+
+Im Beispiel des zweimaligen Würfelns sind <math>X_1</math>, <math>X_2</math> und <math>S</math> jeweils reelle Zufallsvariable.
+
+=== Mehrdimensionale Zufallsvariable ===
+
+Eine mehrdimensionale Zufallsvariable ist eine messbare Abbildung <math>X\colon\Omega\to\R^n</math> für eine Dimension <math>n\in\Bbb N</math>. Sie wird auch als '''Zufallsvektor''' bezeichnet. Damit ist <math>X=(X_1,\dotsc,X_n)</math> gleichzeitig ein Vektor von einzelnen reellen Zufallsvariablen <math>X_i\colon\Omega\to\R</math>, die alle auf dem gleichen Wahrscheinlichkeitsraum definiert sind. Die Verteilung von <math>X</math> wird als [[Multivariate Verteilung|multivariat]] bezeichnet, die Verteilungen der Komponenten <math>X_i</math> nennt man auch [[Randverteilung]]en. Die mehrdimensionalen Entsprechungen von Erwartungswert und Varianz sind der [[Erwartungswertvektor]] und die [[Kovarianzmatrix]].
+
+Im Beispiel des zweimaligen Würfelns ist <math>X=(X_1,X_2)</math> eine zweidimensionale Zufallsvariable.
+
+Zufallsvektoren sollten nicht mit [[Wahrscheinlichkeitsvektor]]en (auch stochastische Vektoren genannt) verwechselt werden. Diese sind Elemente des <math> \R^n </math>, deren Komponenten positiv sind und deren Summe 1 ergibt. Sie beschreiben die Wahrscheinlichkeitsmaße auf Mengen mit <math> n </math> Elementen.
+
+=== Komplexe Zufallsvariable ===
+
+Bei komplexen Zufallsvariablen ist der Bildraum die Menge <math>\Bbb C</math> der [[Komplexe Zahl|komplexen Zahlen]] versehen mit der durch die kanonische Vektorraumisomorphie zwischen <math>\Bbb C</math> und <math>\R^2</math> „geerbten“ borelschen σ-Algebra. <math>X</math> ist genau dann eine Zufallsvariable, wenn Realteil <math>\operatorname{Re}(X)</math> und Imaginärteil <math>\operatorname{Im}(X)</math> jeweils reelle Zufallsvariablen sind.
+
+== Die Verteilung von Zufallsvariablen, Existenz ==
+{{Hauptartikel|Verteilung einer Zufallsvariablen}}
+Eng verknüpft mit dem eher technischen Begriff einer Zufallsvariablen ist der Begriff der auf dem Bildraum von <math>X\;</math> induzierten [[Wahrscheinlichkeitsverteilung]]. Mitunter werden beide Begriffe auch synonym verwendet. Formal wird die Verteilung <math>\;P^X</math> einer Zufallsvariablen <math>X\;</math> als das [[Bildmaß]] des Wahrscheinlichkeitsmaßes <math>P\;</math> definiert, also
+:<math>\;P^X (A) = P \left(X^{-1}(A)\right)</math> für alle <math> A \in \Sigma'</math>, wobei <math>\Sigma'</math> die auf dem Bildraum der Zufallsvariablen <math>X</math> gegebene σ-Algebra ist.
+Statt <math>\;P^X</math> werden in der Literatur für die Verteilung von <math>X\;</math> auch die Schreibweisen <math>P_X, X(P)\;</math> oder <math>P \circ X^{-1}</math> verwendet.
+
+Spricht man also beispielsweise von einer normalverteilten Zufallsvariablen, so ist damit eine Zufallsvariable mit Werten in den reellen Zahlen gemeint, deren Verteilung einer [[Normalverteilung]] entspricht.
+
+Eigenschaften, welche sich allein über gemeinsame Verteilungen von Zufallsvariablen ausdrücken lassen, werden auch ''wahrscheinlichkeitstheoretisch'' genannt.<ref>Loève: ''Probability Theory.'' 4. Auflage. Band 1, Springer 1977, ISBN 0-387-90210-4, S. 172f.</ref> Für Behandlung solcher Eigenschaften ist es nicht notwendig, die konkrete Gestalt des (Hintergrund-)[[Wahrscheinlichkeitsraum]]es zu kennen, auf dem die Zufallsvariablen definiert sind.
+
+Häufig wird deswegen von einer Zufallsvariablen lediglich die Verteilungsfunktion angegeben und der zu Grunde liegende Wahrscheinlichkeitsraum offen gelassen. Dies ist vom Standpunkt der Mathematik erlaubt, sofern es tatsächlich einen Wahrscheinlichkeitsraum gibt, der eine Zufallsvariable mit der gegebenen Verteilung erzeugen kann. Ein solcher Wahrscheinlichkeitsraum <math>(\Omega,\Sigma,P)</math> lässt sich aber zu einer konkreten Verteilung leicht angeben, indem beispielsweise <math>\Omega=\R</math>, <math>\Sigma</math> als die Borelsche σ-Algebra auf den reellen Zahlen und <math>P</math> als das durch die Verteilungsfunktion induzierte [[Lebesgue-Stieltjes-Maß]] gewählt wird. Als Zufallsvariable kann dann die [[identische Abbildung]] <math>X \colon \R \to \R</math> mit <math>X(\omega) = \omega</math> gewählt werden.<ref>Robert B. Ash: ''Real Analysis and Probability.'' Academic Press, New York 1972, ISBN 0-12-065201-3, Definition 5.6.2.</ref>
+
+Wenn eine Schar von Zufallsvariablen betrachtet wird, reicht es aus wahrscheinlichkeitstheoretischer Perspektive genauso, die gemeinsame Verteilung <!-- endlicher Unterfamilien, um genau zu sein --> der Zufallsvariablen anzugeben, die Gestalt des Wahrscheinlichkeitsraums kann wiederum offen gelassen werden.
+
+Die Frage nach der konkreten Gestalt des Wahrscheinlichkeitsraumes tritt also in den Hintergrund, es ist jedoch von Interesse, ob zu einer Schar von Zufallsvariablen mit vorgegebenen endlichdimensionalen gemeinsamen Verteilungen ein Wahrscheinlichkeitsraum existiert, auf dem sie sich gemeinsam definieren lassen. Diese Frage wird für unabhängige Zufallsvariablen durch einen Existenzsatz von [[Émile Borel|É. Borel]] gelöst, der besagt, dass man im Prinzip auf den von Einheitsintervall und Lebesgue-Maß gebildeten Wahrscheinlichkeitsraum zurückgreifen kann. Ein möglicher Beweis nutzt, dass sich die binären Nachkommastellen der reellen Zahlen in [0,1] als ineinander verschachtelte [[Bernoulli-Prozess|Bernoulli-Folgen]] betrachten lassen (ähnlich [[Hilberts Hotel]]).<ref>Olav Kallenberg: ''Foundations of Modern Probability.'' 2. Ausgabe. Springer, New York 2002, ISBN 0-387-95313-2, S. 55.</ref>
+
+== Mathematische Attribute für Zufallsvariablen ==
+
+Verschiedene mathematische Attribute, die in der Regel denen für allgemeine Funktionen entlehnt sind, finden bei Zufallsvariablen Anwendung. Die häufigsten werden in der folgenden Zusammenstellung kurz erklärt:
+
+=== diskret ===
+Eine Zufallsvariable wird als [[Diskretheit|diskret]] bezeichnet, wenn sie nur [[Endliche Menge|endlich viele]] oder [[Abzählbarkeit|abzählbar unendlich viele]] Werte annimmt. Im obigen Beispiel des zweimaligen Würfelns sind alle drei Zufallsvariablen <math>X_1</math>, <math>X_2</math> und <math>S</math> diskret. Ein weiteres Beispiel für diskrete Zufallsvariablen sind [[Zufällige Permutation|zufällige Permutationen]].
+
+=== konstant ===
+Eine Zufallsvariable wird als [[Konstante Funktion|konstant]] bezeichnet, wenn sie nur einen Wert annimmt: <math>X(\omega)=c</math> für alle <math>\omega</math>. Sie ist ein Spezialfall der diskreten Zufallsvariable.
+=== unabhängig ===
+{{Hauptartikel|Stochastisch unabhängige Zufallsvariablen}}
+Zwei reelle Zufallsvariablen <math>X,Y</math> heißen unabhängig, wenn für je zwei Intervalle <math>[a_1,b_1]</math> und <math>[a_2,b_2]</math> die Ereignisse <math>E_X := \{ \omega | X(\omega) \in [a_1,b_1] \}</math> und <math>E_Y := \{ \omega | Y(\omega) \in [a_2,b_2] \}</math> [[Stochastisch unabhängige Ereignisse|stochastisch unabhängig]] sind. Das sind sie, wenn gilt: <math>P(E_X \cap E_Y ) = P(E_X) P(E_Y)</math>.
+
+In obigem Beispiel sind <math>X_1</math> und <math>X_2</math> unabhängig voneinander; die Zufallsvariablen <math>X_1</math> und <math>S</math> hingegen nicht.
+
+Unabhängigkeit mehrerer Zufallsvariablen <math>X_1, X_2, \dotsc, X_n</math> bedeutet, dass das Wahrscheinlichkeitsmaß <math>P_X</math> des Zufallsvektors <math>X=\left(X_1, X_2, \dotsc, X_n\right)</math> dem [[Produktmaß]] der Wahrscheinlichkeitsmaße der Komponenten, also dem Produktmaß von <math>P_{X_1}, P_{X_2}, \dotsc, P_{X_n}</math> entspricht.<ref>Robert B. Ash: ''Real Analysis and Probability.'' Academic Press, New York 1972, ISBN 0-12-065201-3 (Definition 5.8.1)</ref> So lässt sich beispielsweise dreimaliges unabhängiges Würfeln durch den Wahrscheinlichkeitsraum <math>(\Omega,\Sigma,P)</math> mit
+:<math>\Omega=\{1,2,3,4,5,6\}^3</math>,
+:<math>\Sigma</math> der Potenzmenge von <math>\Omega</math> und
+:<math>P\left(\left(n_1, n_2, n_3\right)\right)=\frac{1}{6^3}=\frac{1}{216}</math>
+modellieren; die Zufallsvariable "Ergebnis des <math>k</math>-ten Wurfes" ist dann
+:<math>X_k\left(n_1, n_2, n_3\right)=n_k</math> für <math>k\in\{1,2,3\}</math>.
+Die Konstruktion eines entsprechenden Wahrscheinlichkeitsraums für eine beliebige Familie unabhängiger Zufallsvariable mit gegebenen Verteilungen ist ebenfalls möglich.<ref>Klaus D. Schmidt: ''Maß und Wahrscheinlichkeit.'' Springer-Verlag, Berlin/ Heidelberg 2009, ISBN 978-3-540-89729-3, Kapitel 11.4.</ref>
+
+=== identisch verteilt ===
+Zwei oder mehr Zufallsvariablen heißen identisch verteilt (bzw. ''i.d. für identically distributed''), wenn ihre [[#Die Verteilung von Zufallsvariablen, Existenz|induzierten Wahrscheinlichkeitsverteilungen]] gleich sind. In Beispiel des zweimaligen Würfelns sind <math>X_1</math>, <math>X_2</math> identisch verteilt; die Zufallsvariablen <math>X_1</math> und <math>S</math> hingegen nicht.
+
+=== unabhängig und identisch verteilt ===
+Häufig werden [[Folge (Mathematik)|Folgen]] von Zufallsvariablen untersucht, die sowohl unabhängig als auch identisch verteilt sind; demnach spricht man von '''unabhängig identisch verteilten Zufallsvariablen'''. Dieser Fall wird üblicherweise mit '''u.i.v.''' bzw. '''i.i.d.''' (für ''independent and identically distributed'') abgekürzt.
+
+In obigem Beispiel des dreimaligen Würfelns sind <math>X_1</math>, <math>X_2</math> und <math>X_3</math> i.i.d. Die Summe der ersten beiden Würfe <math>S_{1,2}=X_1+X_2</math> und die Summe des zweiten und dritten Wurfs <math>S_{2,3}=X_2+X_3</math> sind zwar identisch verteilt, aber nicht unabhängig. Dagegen sind <math>S_{1,2}</math> und <math>X_3</math> unabhängig, aber nicht identisch verteilt.
+
+=== austauschbar ===
+[[Austauschbare Familie von Zufallsvariablen|Austauschbare Familien von Zufallsvariablen]] sind Familien, deren Verteilung sich nicht ändert, wenn man endlich viele Zufallsvariablen in der Familie vertauscht. Austauschbare Familien sind stets identisch verteilt, aber nicht notwendigerweise unabhängig.
+
+== Mathematische Attribute für reelle Zufallsvariablen ==
+=== Kenngrößen ===
+
+Zur Charakterisierung von Zufallsvariablen dienen einige wenige Funktionen, die wesentliche mathematische Eigenschaften der jeweiligen Zufallsvariable beschreiben. Die wichtigste dieser Funktionen ist die [[Verteilungsfunktion]], die Auskunft darüber gibt, mit welcher Wahrscheinlichkeit die Zufallsvariable einen Wert bis zu einer vorgegebenen Schranke annimmt, beispielsweise die Wahrscheinlichkeit, höchstens eine Vier zu würfeln. Bei stetigen Zufallsvariablen wird diese durch die [[Dichtefunktion|Wahrscheinlichkeitsdichte]] ergänzt, mit der die Wahrscheinlichkeit berechnet werden kann, dass die Werte einer Zufallsvariablen innerhalb eines bestimmten [[Intervall (Mathematik)|Intervalls]] liegen. Des Weiteren sind Kennzahlen wie der [[Erwartungswert]], die [[Varianz (Stochastik)|Varianz]] oder höhere mathematische [[Moment (Stochastik)|Momente]] von Interesse.
+
+=== stetig oder kontinuierlich ===
+Das Attribut [[Stetigkeit|stetig]] wird für unterschiedliche Eigenschaften verwendet.
+:* Eine reelle Zufallsvariable wird als stetig (oder auch absolut stetig) bezeichnet, wenn sie eine [[Wahrscheinlichkeitsdichte|Dichte]] besitzt (ihre Verteilung [[Absolut stetiges Maß|absolutstetig]] bezüglich des [[Lebesgue-Maß]]es ist).<ref>[[Marek Fisz]]: ''Wahrscheinlichkeitsrechnung und mathematische Statistik.'' 11. Auflage. VEB Deutscher Verlag der Wissenschaften, Berlin 1989, Definition 2.3.3.</ref>
+:* Eine reelle Zufallsvariable wird als stetig bezeichnet, wenn sie eine stetige [[Verteilungsfunktion]] besitzt.<ref>Robert B. Ash: ''Real Analysis and Probability.'' Academic Press, New York 1972, ISBN 0-12-065201-3, S. 210.</ref> Insbesondere bedeutet das, dass <math>P(\{X=x\})=0</math> für alle <math>x\in\R</math> gilt.
+
+=== Messbarkeit, Verteilungsfunktion und Erwartungswert ===
+Wenn eine reelle Zufallsvariable <math>X</math> auf dem Ergebnisraum <math>\Omega</math> und eine messbare Funktion <math>g\colon \R \to \R</math> gegeben ist, dann ist auch <math>Y = g(X)</math> eine Zufallsvariable auf demselben Ergebnisraum, da die Verknüpfung messbarer Funktionen wieder messbar ist. <math>g(X)</math> wird auch als ''Transformation'' der Zufallsvariablen <math>X</math> unter <math>g</math> bezeichnet. Die gleiche Methode, mit der man von einem Wahrscheinlichkeitsraum <math>(\Omega, \Sigma, P)</math> nach
+<math>(\R, \mathcal{B}(\R),P^X)</math> gelangt, kann benutzt werden, um die Verteilung von <math>Y</math> zu erhalten.
+
+Die [[Verteilungsfunktion]] von <math>Y</math> lautet
+:<math>F_Y(y) = \operatorname{P}(g(X) \leq y)</math>.
+
+Der [[Erwartungswert]] einer [[Quasiintegrierbare Zufallsvariable|quasi-integrierbaren]] Zufallsgröße <math>X</math> von <math>(\Omega, \Sigma, P)</math> nach <math>(\bar{\R}, \mathcal{B}(\bar{\R}))</math> berechnet sich folgend:
+
+:<math>\operatorname{E}(X) = \int_\Omega X(\omega)\mathrm{d}P(\omega)\,</math>.
+
+=== integrierbar und quasi-integrierbar ===
+Eine Zufallsvariable heißt [[Lebesgue-Integral|integrierbar]], wenn der [[Erwartungswert]] der Zufallsvariable existiert und endlich ist. Die Zufallsvariable heißt [[Quasiintegrierbare Zufallsvariable|quasi-integrierbar]], wenn der Erwartungswert existiert, möglicherweise aber unendlich ist. Jede integrierbare Zufallsvariable ist folglich auch quasi-integrierbar.
+
+=== Beispiel ===
+
+Es sei <math>X</math> eine reelle stetig verteilte Zufallsvariable und <math>Y = X^2</math>.
+
+Dann ist
+:<math>F_Y(y) = \operatorname{P}(X^2 \leq y).</math>
+
+Fallunterscheidung nach <math>y</math>:
+
+<math>y<0:</math>
+:<math>
+  \begin{alignat}{2}
+    &            & \operatorname P(X^2 \leq y) &= 0\\
+    &\Rightarrow & F_Y(y)                      &= 0
+  \end{alignat}
+</math>
+
+<math>y\geq 0:</math>
+:<math>
+  \begin{alignat}{2}
+    &            & \operatorname P\left(X^2\leq y\right) &=\operatorname P\left(|X|\leq\sqrt y\right)\\
+    &            &                        &= \operatorname P\left(-\sqrt y\leq X\leq\sqrt y\right)\\
+    &\Rightarrow & F_Y\left(y\right)                 &= F_X\left(\sqrt y\right) - F_X\left(-\sqrt y\right)
+  \end{alignat}
+</math>
+
+=== Standardisiertheit ===
+{{Hauptartikel|Standardisierung (Statistik)}}
+Eine Zufallsvariable nennt man standardisiert, wenn ihr [[Erwartungswert]] 0 und ihre [[Varianz (Stochastik)|Varianz]] 1 ist. Die Transformation einer Zufallsvariable <math>Y</math> in eine standardisierte Zufallsvariable
+:<math>X=\frac{Y-\operatorname{E}(Y)}{\sqrt{\operatorname{Var}(Y)}}</math>
+bezeichnet man als Standardisierung der Zufallsvariable <math>Y</math>.
+
+== Sonstiges ==
+
+* Zeitlich zusammenhängende Zufallsvariablen können auch als [[stochastischer Prozess]] aufgefasst werden
+* Eine Folge von Realisierungen einer Zufallsvariable nennt man auch [[Zufallssequenz]]
+* Eine Zufallsvariable <math>X: \Omega \to \R^n</math> erzeugt eine σ-Algebra <math>\mathcal{F}_X(\mathcal{B}):=\{X^{-1}(B)|B\in\mathcal{B}(\R^n)\}</math>, wobei <math>\mathcal{B}(\R^n)</math> die [[Borelsche σ-Algebra]] des <math>\R^n</math> ist.
+
+== Einzelnachweise ==
+
+<references>
+<ref name="Bewersdorff2012"> {{Literatur | Autor= [[Jörg Bewersdorff]] | Titel= Glück, Logik und Bluff. Mathematik im Spiel - Methoden, Ergebnisse und Grenzen | Auflage= 6. | Verlag= Springer Spektrum | Ort= Wiesbaden | Jahr= 2012| Seiten= 39 | ISBN= 978-3-8348-1923-9| DOI=10.1007/978-3-8348-2319-9|Online= {{Google Buch | BuchID = aC0gBAAAQBAJ | Seite = 39}} }}</ref>
+<ref name="Pflaumer2001"> {{Literatur | Autor= Peter Pflaumer, Joachim Hartung, Barbara Heine | Titel= Statistik für Wirtschafts- und Sozialwissenschaften: Induktive Statistik | Verlag= Oldenbourg | Ort= München | Jahr= 2001| Seiten= 26 | ISBN= 3-486-24015-3| Online= {{Google Buch | BuchID = 04cuBAAAQBAJ | Seite = 26}} }}</ref>
+</references>
+
+== Literatur ==
+
+* [[Karl Hinderer]]: ''Grundbegriffe der Wahrscheinlichkeitstheorie.'' Springer, Berlin/ Heidelberg/ New York 1980, ISBN 3-540-07309-4.
+* Erich Härtter: ''Wahrscheinlichkeitsrechnung für Wirtschafts- und Naturwissenschaftler.'' Vandenhoeck & Ruprecht, Göttingen 1974, ISBN 3-525-03114-9.
+* [[Michel Loève]]: ''Probability Theory I.'' 4. Auflage. Springer, 1977, ISBN 0-387-90210-4.
+
+== Weblinks ==
+{{Wikibooks|Statistik: Zufallsvariablen|Zufallsvariablen}}
+{{Wikibooks|Statistik: Funktionen von Zufallsvariablen|Funktionen von Zufallsvariablen}}
+* [http://www.biostat.uzh.ch/teaching/lecturenotes/scripts2/skript.pdf Statistik III] – Skript zur Vorlesung von Leonhard Held, [[Ludwig-Maximilians-Universität München]], 2006 (PDF-Datei; 741 kB)
+
+[[Kategorie:Zufallsvariable| ]]
+[[Kategorie:Statistischer Grundbegriff]]

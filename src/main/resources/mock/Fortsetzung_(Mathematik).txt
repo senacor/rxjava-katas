@@ -1,0 +1,45 @@
+Die '''Fortsetzung''' einer [[Abbildung (Mathematik)|Abbildung]] ist ein Begriff aus der [[Mathematik]], der insbesondere in der [[Analysis]] und der [[Topologie (Mathematik)|Topologie]] verwendet wird. Unter einer Fortsetzung einer Abbildung versteht man eine weitere Abbildung, die auf einer Teilmenge ihres [[Definitionsbereich]]s mit der gegebenen Abbildung übereinstimmt. Von besonderem Interesse ist es, ob es Fortsetzungen zu [[Stetige Funktion|stetigen]] beziehungsweise [[Analytische Funktion|analytischen]] Funktionen gibt, die ebenfalls stetig beziehungsweise analytisch sind.
+
+== Definition ==
+Seien <math>X,\, Y</math> und <math>A</math> [[Menge (Mathematik)|Mengen]]. Eine Abbildung <math>f \colon X \to Y</math> heißt Fortsetzung der Abbildung <math>g \colon A \to Y</math> genau dann, wenn <math>A</math> eine Teilmenge von <math>X</math> ist und
+<math>g(x) = f(x)</math> für alle <math>x \in A</math> gilt.<ref>''Fortsetzung einer Abbildung.'' In: Guido Walz (Hrsg.): ''Lexikon der Mathematik.'' Band 1: ''A bis Eif.'' Spektrum – Akademischer Verlag, Heidelberg u. a. 2000, ISBN 3-8274-0303-0.</ref>
+
+== Stetige Fortsetzung ==
+=== Definition ===
+Seien <math>X</math> und <math>Y</math> [[Topologischer Raum|topologische Räume]], <math>A \subset X</math> ein [[Unterraumtopologie|Teilraum]] von <math>X</math> und <math>g \colon A \to Y</math> eine [[Stetigkeit (Topologie)|stetige Abbildung]]. Eine Abbildung <math>f \colon X \to Y</math> heißt, analog zu obiger Definition, stetige Fortsetzung von <math>g</math>, falls <math>f</math> stetig ist und <math>g(x) = f(x)</math> für alle <math>x \in A</math> gilt.<ref>{{Literatur  | Autor = Dušan Repovš, Pavel Vladimirovič Semenov | Titel = Continuous selections of multivalued mappings |Sammelwerk= Mathematics and its Applications| Band= Bd. 455 | Jahr = 1998 | Verlag = Kluwer Academic | Ort = Dordrecht u. a. | ISBN = 0-7923-5277-7 | Seiten =  23–24}}</ref>
+
+=== Beispiele ===
+* Die Funktion <math>g \colon \R \setminus \{0\} \to \R</math>, definiert durch <math>x \mapsto \tfrac{x}{x} + 5x</math>, ist stetig auf ihrem Definitionsbereich <math>\R \setminus \{0\}</math> und hat eine stetige Fortsetzung auf ganz <math>\R</math>, welche lautet
+::<math>f(x) = \begin{cases}
+\frac{x}{x} + 5x &\text{für}\ x \in \R \setminus \{0\},\\
+1 &\text{für}\ x = 0\,.
+\end{cases}</math>
+:Hier wird die Funktion auf einen weiteren Punkt fortgesetzt und man spricht in diesem speziellen Fall auch von einer [[Stetig behebbare Definitionslücke|stetig behebbaren Definitionslücke]].
+* Die Funktion <math>g \colon \R \setminus \{0\} \to \R</math>, definiert durch <math>x \mapsto \tfrac{1}{x} \sin(x)</math>, ist stetig auf ihrem Definitionsbereich <math>\R \setminus \{0\}</math> und hat eine stetige Fortsetzung auf ganz <math>\R</math>. Denn gemäß der [[Regel von de l’Hospital]] gilt <math>\lim_{x \to 0} \tfrac{1}{x} \sin(x) = 1</math>, und damit ist 
+::<math>f(x) = \begin{cases}
+\frac{1}{x} \sin(x) &\text{für}\ x \in \R \setminus \{0\},\\
+1 &\text{für}\ x = 0\,
+\end{cases}</math>
+:eine stetige Fortsetzung von <math>g</math>.
+* Die Funktion <math>g \colon \R \setminus \{0\} \to \R</math>, definiert durch <math>x \mapsto \sin(\tfrac{1}{x})</math>, ist stetig auf ihrem Definitionsbereich <math>\R \setminus \{0\}</math>, besitzt jedoch anders als die vorgenannten Funktionen keine stetige Fortsetzung auf den gesamten Zahlenraum <math>\R</math>, da der Grenzwert <math>\lim_{x \to 0} \sin(\tfrac{1}{x})</math> nicht existiert.
+* Im mathematischen Bereich der [[Funktionalanalysis]] wird die [[Fourier-Transformation]] betrachtet. Dies ist eine Abbildung <math>\mathcal{F} \colon \mathcal{S} \to \mathcal{S}</math> auf dem [[Schwartz-Raum]]. Da der Schwartz-Raum [[Dichte Teilmenge|dicht]] im Raum der [[Quadratintegrierbare Funktion|quadratintegrierbaren Funktionen]] <math>L^2</math> liegt, kann die Fourier-Transformation stetig auf <math>L^2</math> fortgesetzt werden. Jedoch hat sie auf diesem Raum nicht mehr die übliche Integraldarstellung, die sie auf dem Schwartz-Raum hat.
+
+=== Fortsetzungssatz von Tietze ===
+{{Hauptartikel|Fortsetzungssatz von Tietze}}
+
+Der Fortsetzungssatz von Tietze charakterisiert topologische Räume, in denen stetige Funktionen auf [[Abgeschlossene Menge|abgeschlossenen Teilmengen]] immer stetig fortgesetzt werden können. Es sind genau die [[normaler Raum|normalen topologischen Räume]], in denen das immer möglich ist. Der Satz kann als Verallgemeinerung des [[Lemma von Urysohn|Lemmas von Urysohn]] verstanden werden.
+
+== Einschränkung ==
+{{Hauptartikel|Einschränkung}}
+
+Das zur Fortsetzung von Funktionen gegenteilige Konzept ist die Einschränkung des Definitionsbereichs einer Abbildung.
+
+== Siehe auch ==
+* [[Analytische Fortsetzung]]
+* [[Fortsetzungssatz von Dugundji]]
+
+== Einzelnachweise ==
+<references />
+
+[[Kategorie:Analysis]]
+[[Kategorie:Mengentheoretische Topologie]]

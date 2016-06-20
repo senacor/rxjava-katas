@@ -1,0 +1,45 @@
+{| class="wikitable float-right" style="width: 260px;"
+! colspan="2" bgcolor="#FFCCCC" | Gelbes Meer
+|-
+| [[Geographische Lage]]
+| {{Coordinate|text=/|article=/|NS=35/0//N|EW=123/0//E|type=waterbody|dim=900000|region=XP|elevation=-105}}
+|-
+! colspan="2" | [[Chinesische Sprache|Chinesischer]] Name
+|-
+| [[Kurzzeichen]]
+| {{zh|kurz=|v=黄海}}
+|-
+| [[Langzeichen]]
+| {{zh|kurz=|t=黃海}}
+|-
+| [[Pinyin]]
+| Huánghǎi
+|-
+! colspan="2" | [[Koreanische Sprache|Koreanischer]] Name
+|-
+| [[Hangeul]]
+| {{lang|ko-Hang|황해}}
+|-
+| [[Hanja]]
+| {{lang|ko-Hani|黃海}}
+|-
+| [[Revidierte Romanisierung]]
+| Hwanghae
+|-
+| [[McCune-Reischauer]]
+| Hwanghae
+|-
+| colspan="2" | [[Datei:Bohai Sea map.png|mini|zentriert|250px|Karte des Gelben Meeres]]
+|}
+Das '''Gelbe Meer''' ist ein Teil des [[Chinesisches Meer|Chinesischen Meeres]] und ein von der [[Volksrepublik China]] und der [[Koreanische Halbinsel|Koreanischen Halbinsel]] umgebenes [[Randmeer]] des [[Pazifischer Ozean|Pazifischen Ozeans]]. Der [[Golf von Bohai]] und die [[Koreabucht]] im Norden sind Teile des Gelben Meeres. Im Süden schließt sich das [[Ostchinesisches Meer|Ostchinesische Meer]] an.
+
+Das Gelbe Meer misst 960 Kilometer von Nord nach Süd, und ist 700 Kilometer breit. Die Flächenausdehnung beträgt 380.000&nbsp;km². Es ist durchschnittlich 44 Meter und maximal 152 Meter tief. Damit ergibt sich ein Wasservolumen von 16.720&nbsp;km³. Das Gelbe Meer ist ein flaches Meer, vergleichbar mit der [[Nordsee]] am anderen Ende des eurasischen Kontinents. Seine [[Watt (Küste)|Wattflächen]] sind ein bedeutendes Rastgebiet für [[Watvögel]].
+
+Seine charakteristische Farbe, die zur Namensgebung führte, erhält es von dem nährstoffhaltigen gelben Schwemmsand, dem [[Löss]], den der [[Gelber Fluss|Gelbe Fluss]] und andere Flüsse an ihrer [[Mündung (Gewässer)|Mündung]] in das Gelbe Meer hineintragen und dort ablagern.
+
+== Weblinks ==
+{{Commonscat|Yellow Sea|Gelbes Meer}}
+
+[[Kategorie:Gelbes Meer| ]]
+[[Kategorie:Geographie (China)]]
+[[Kategorie:Geographie (Korea)]]

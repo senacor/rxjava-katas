@@ -1,0 +1,116 @@
+{{Dieser Artikel|erläutert das Ereignis. Zum deutschen Schauspieler siehe [[Jörg Zufall]]. Für die Spedition [[Zufall (Unternehmen)]].}}
+
+Von '''Zufall''' spricht man dann, wenn für ein einzelnes [[Ereignis]] oder das Zusammentreffen mehrerer Ereignisse keine [[Kausalität|kausale]] Erklärung gegeben werden kann. Als kausale Erklärungen für Ereignisse kommen in erster Linie allgemeine Gesetzmäßigkeiten oder Absichten handelnder Personen in Frage. Die ''Erklärung'' für Zufall ist also gerade der Verzicht auf eine (kausale) Erklärung.
+
+Das Wort „Zufall“ in der in diesem Artikel beschriebenen Bedeutung kam erst im 17. Jahrhundert in allgemeinen Gebrauch und gilt unter Linguisten als vom [[latein]]ischen ''ac-cidens''  in Wortform und Sinn vorgeprägt.<ref>http://www.dwds.de/?qu=Zufall&view=1</ref>
+
+== Allgemeines ==
+Wenn von Zufall gesprochen wird, kann konkret gemeint sein:
+# Ein Ereignis geschieht objektiv ohne Ursache.
+# Ein Ereignis geschieht, ohne dass eine Ursache erkennbar wäre.
+# Ein Ereignis geschieht, bei dem man zwar die Einflussfaktoren kennt, sie aber nicht messen oder steuern kann, so dass das Ergebnis nicht vorhersehbar ist („empirisch-pragmatischer Zufall“<ref>[[Ulrich Lüke]] im Philosophischen Radio in [[Westdeutscher Rundfunk Köln|WDR]] 5 am 15. Februar 2013</ref>).
+# Zwei Ereignisse stehen in keinem (bekannten) kausalen Zusammenhang.
+
+Fall 1 ist in der makroskopischen Welt bisher nicht beobachtet worden und dürfte prinzipiell nicht nachweisbar sein. In der [[Quantenmechanik]] wird die Existenz des objektiven Zufalls im Rahmen ihrer verschiedenen [[Interpretationen der Quantenmechanik|Interpretationen]] diskutiert. So ist der Zeitpunkt des Zerfalls des nächsten [[Radioaktivität|radioaktiven]] Atoms aus einer Stoffmenge nicht vorhersagbar.
+
+Fall 2 bedeutet, dass die Kausalkette oder die Einflussfaktoren nicht lückenlos nachgewiesen sind, aber ihr Vorhandensein zu vermuten ist. ''Beispiele:''
+* Warum hat der Baum gerade hier einen Ast ausgebildet, im Gegensatz zum benachbarten Baum?
+* Bei der geschlechtlichen Vermehrung werden die Erbinformationen der Eltern neu kombiniert und zwar in einer Weise, die nicht vorherbestimmbar ist.
+
+Fall 3 setzt eine gewisse Komplexität voraus. ''Beispiele:''
+* Nicht manipulierte [[Glücksspiel]]<span/>situationen: Warum eine Roulette-Kugel gerade auf eine bestimmte Zahl gefallen ist, ist erklärbar, aber trotzdem nicht vorhersehbar, weil in der Ausgangssituation (Wurf der Kugel) kleinste, nicht willentlich beeinflussbare Variationen großen Einfluss auf das Ergebnis haben. – Bei einem idealen Würfel kann für jeden Wurf ein Wert von 1 bis 6 auftreten. Vor dem Werfen kann nicht vorhergesagt werden, welches Ereignis eintritt. Es gibt keine Erklärung für das Auftreten einer bestimmten Zahl.
+* Zwei – einander unbekannte – Menschen waren gleichzeitig im selben Eisenbahn-Abteil und kamen durch irgendein beobachtetes Ereignis ins Gespräch; bald darauf haben sie geheiratet und Kinder bekommen.
+
+Fall 4 ist der Versuch, voneinander unabhängige Dinge in Verbindung zu bringen. (Das ist eine der Formen [[Magisches Denken|magischen Denkens]].) ''Beispiel:'' Zwei Menschen haben jeweils eine Telefonnummer. Ob der ältere oder jüngere die größere Nummer hat, ist „Zufall“.
+
+Verwendet man Zufall als Beschreibung dafür, dass die eingetretene Endsituation keine Begründung in der Ausgangssituation finden kann, dann muss auch gelten:
+
+* Bei gleicher Ausgangssituation kann es mehrere unterschiedliche Endsituationen geben.
+* Es gibt keine erkennbare Ursache für das Zustandekommen einer bestimmten Endsituation.
+* Bei Wiederholungen von derselben Ausgangssituation können auch andere Endsituationen eintreten.
+
+Auch [[Umgangssprache|umgangssprachlich]] wird der Begriff Zufall verwendet, wenn ein [[Ereignis]] nicht [[Kausalität|kausal]] erklärbar ist. Er ist schwer abgrenzbar gegen [[Berechenbarkeit|Unberechenbarkeit]] und [[Vorhersagbarkeit|Unvorhersagbarkeit]]. Wenn gezielt Zufall als Gestaltungselement bei Auswahlverfahren genutzt wird, wird in diesem Zusammenhang der Begriff „[[Zufallsprinzip]]“ verwendet.
+
+== Wissenschaftliche Einordnung ==
+Eine systematische Untersuchung des Phänomens Zufall geschieht
+* in der [[Philosophie]] (Was ist Zufall?)
+* in der [[Mathematik]] und [[Statistik]] (Wie lässt sich Zufall quantitativ fassen ([[Wahrscheinlichkeitsrechnung]], [[Stochastik]])? Wie lässt sich Zufall künstlich erzeugen ([[Zufallszahl]] und [[Pseudozufall]]szahl)?)
+* in der [[Physik]] (Welche Prozesse sind zufällig, welche kausal?)
+* in der [[Psychologie]] (Wahrnehmung eines Ereignisses als „zufällig“; Erwartung an die Zufälligkeit bzw. Wahrscheinlichkeit eines Ereignisses oder Ereigniskomplexes)
+* in der [[Soziologie]] (Wie entwickelt sich die [[Gesellschaft (Soziologie)|Gesellschaft]]?) Gibt es sozio-historische Gesetze? (siehe auch [[Geschichtsphilosophie]])
+
+== Zufallsprozesse in der Welt ==
+Teilbereiche der Philosophie beschäftigen sich mit der Frage, ob unsere Welt im innersten [[Determinismus|deterministisch]] (also kausal eindeutig vorherbestimmt) oder zufällig ist. Bei auf den ersten Blick zufällig erscheinenden Ereignissen stellt sich die Frage, ob der Beobachter lediglich zu wenig Informationen hatte, um eine exakte Vorhersage zu treffen, oder ob das beobachtete [[Systemtheorie|System]] ''in sich'' zufällig ist. 
+
+Bei der ersten Art – den deterministischen Systemen – ist das Ergebnis eines [[Experiment]]s bei identischen Bedingungen immer gleich. Eine beobachtete [[Varianz (Stochastik)|Varianz]] lässt darauf schließen, dass der Beobachter an zumindest einer Stelle ungenau gemessen hat. Heute untersucht die [[Chaosforschung]] [[Deterministisches Chaos|deterministisch chaotische Systeme]]; das sind deterministische Systeme, die sich aber aufgrund ihrer großen Komplexität für den Menschen momentan unvorhersagbar verhalten.
+
+Die [[Quantenmechanik|Quantenphysik]] hat eine neuerliche Diskussion darüber ausgelöst, ob die Welt fundamental [[Determinismus|deterministischen]] oder im innersten zufälligen Prinzipien gehorcht. Die experimentell nachgewiesene Verletzung der [[Bellsche Ungleichung|Bellschen Ungleichung]] impliziert, dass die Natur auf mikroskopischer Ebene nicht durch eine [[Realismus (Philosophie)|realistische]] und [[Lokalität (Physik)|lokale]] Theorie beschrieben werden kann. Dies bedeutet, dass das Ergebnis eines Experiments selbst bei Kenntnis aller lokalen Gegebenheiten im Allgemeinen nicht exakt vorhergesagt werden kann und dementsprechend auch verschiedene Konsequenzen aus identischen Ausgangssituationen folgen können. So ist es beispielsweise nicht möglich, den exakten Zeitpunkt des Zerfalls eines Atomkerns zu bestimmen, und zwar nicht, weil noch Eigenschaften des Kerns unbekannt wären, sondern weil keine (lokalen) Ursachen existieren. Im Rahmen der [[Kopenhagener Deutung]] der Quantenmechanik spricht man daher von einem objektiven Zufall.
+
+Andere [[Interpretationen der Quantenmechanik]] unterscheiden sich nicht in ihrem physikalischen Inhalt von der Kopenhagener Deutung, allerdings in ihrer Bewertung des Zufalls. So geht die [[Viele-Welten-Interpretation]] beispielsweise davon aus, dass immer alle quantenmechanischen Möglichkeiten tatsächlich realisiert sind und nur in den jeweiligen Welten zufällig erscheinen. Alle Welten zusammen wären demnach deterministisch beschreibbar. Des Weiteren existieren nicht-lokale Interpretationen (z.&nbsp;B. die [[De-Broglie-Bohm-Theorie]]), in denen der Zufall auf das Unwissen bezüglich des Zustands des gesamten Universums zurückgeführt wird.
+
+Schließlich darf der quantenmechanische Zufall nicht mit Regellosigkeit gleichgesetzt werden. Auch wenn die einzelnen Messergebnisse nicht vorhersagbar sind, so sind die Wahrscheinlichkeiten ihres Eintretens durch die quantenmechanischen Gesetzmäßigkeiten streng determiniert. Auf makroskopischer Ebene spielen Quanteneffekte aufgrund der [[Dekohärenz]] keine Rolle, so dass uns die klassische Welt immer deterministisch erscheint.
+
+== Zufall und freier Wille ==
+Zwischen den Begriffen Zufall und [[freier Wille]] existiert ein enger Zusammenhang. Es kann argumentiert werden, dass eine freie Entscheidung, zumindest teilweise, durch andere Einflüsse (innerer und äußerer Art) nicht beeinflusst ist. Sie ist also nicht [[Determinismus|determiniert]]. Dies lässt sich indes gerade auch als Definition von Zufall ansehen: Nach dieser Auffassung kann es in einem Universum ohne Zufall keinen freien Willen geben, da jede Entscheidung bei Kenntnis aller Einflussgrößen vorhergesagt werden könnte. Aber wenn unsere Entscheidungen zufällig zustande kommen, ist das erst recht nicht, was wir uns unter freiem Willen vorstellen.
+
+Immanuel Kant schlägt dafür in der ''[[Kritik der reinen Vernunft]]'' folgenden Ausweg vor: Der Widerspruch zwischen Determinismus und Unbestimmtheit des Willens („[[Antinomie]]“ der Willensfreiheit) entsteht nur, wo [[Phänomen|Erscheinungen]] (der Erfahrungswelt) mit dem „[[Ding an sich]]“ gleichgesetzt werden. „Denn, sind Erscheinungen Dinge an sich selbst, so ist Freiheit nicht zu retten. […] Wenn dagegen Erscheinungen für nichts mehr gelten, als sie in der Tat sind, nämlich nicht für Dinge an sich, sondern bloße Vorstellungen, die nach empirischen Gesetzen zusammenhängen, so müssen sie selbst noch Gründe haben, die nicht Erscheinungen sind.“ (B 564f, Kritik der reinen Vernunft). Willensfreiheit bedeutet danach „das Vermögen, einen Zustand von selbst anzufangen“ (B 561, Kritik der reinen Vernunft).
+
+Wie frei der menschliche Wille wirklich ist, und wie sehr menschliche Entscheidungen von Erfahrungen, Gefühlen und Instinkten geprägt sind, ist ein Untersuchungsgegenstand der [[Psychologie]]. Ein Mensch mit einem freien Willen hat vielleicht nur einen umfangreichen Erfahrungsschatz, moralische Grundsätze und einen scharfen Verstand, die ihm eigenständige, differenzierte Entscheidungen auf fundierter Basis erlauben, welche womöglich absolut deterministisch zustande kommen. Ein solcher Willen ist immerhin ein Stück weit frei von gesellschaftlichen Zwängen, Gewohnheiten usw.
+
+Die christliche Religion setzt keinen freien Willen im Menschen voraus, so weit es sich um die Möglichkeit handelt, sich Gott zuzuwenden oder sich von ihm abzukehren. Paulus, Augustinus und die Reformatoren sind wichtige Vertreter der Willensunfreiheit des Menschen in christlicher Hinsicht. Da diese Willensunfreiheit aber zu Schwierigkeiten mit den Konzepten von [[Sünde]], [[Schuld]] und [[Vergebung]] führt, wird im heutigen Katholizismus, in manchen nichtreformatorischen Ausprägungen des Protestantismus und in anderen Konfessionen Willensfreiheit positiv vertreten. Neben Determinismus und Zufall als „Naturkräften“ und den freien Willen des Menschen tritt in religiösen Vorstellungen das Wirken höherer Wesen als weiteres Kausalprinzip.
+
+== Wahrnehmung des Zufalls ==
+Die Untersuchung der menschlichen Fähigkeit Zufallserscheinungen zu beurteilen fällt in das Gebiet der [[Kognitionspsychologie]]. Maßgebliche Beiträge hierzu stammen von den Wissenschaftlern [[Amos Tversky]] und [[Daniel Kahneman]]. Der Mensch besitzt eine Grundfähigkeit zum Einschätzen von Wahrscheinlichkeiten, jedoch sind im Einzelnen verschiedene systematische Fehleinschätzungen identifiziert worden. Prominente Beispiele sind zum einen Nichtberücksichtigung von [[Bedingte Wahrscheinlichkeit|bedingten Wahrscheinlichkeiten]] oder die Umkehr der Schlussrichtung von Aussagen mit diesen,<ref>Craig R. Fox, Jonathan Levav: ''Partition-Edit-Count. Naive Extensional Reasoning in Judgment of Conditional Probability''. In: ''Journal of Experimental Psychology/General'', Bd. 133 (2004), Heft 4, S. 626–642, {{ISSN|0096-3445}}.</ref> wie das bekannte [[Ziegenproblem]] illustriert.
+
+Weiter neigen Versuchspersonen dazu, in zufälligen Mustern Regelmäßigkeiten wahrzunehmen ([[Apophänie]]) und davon auf einen systematischen Erzeugungsprozess zu schließen. Damit verwandt ist die von H. Reichenbach 1934 formulierte Beobachtung, dass Menschen beim Versuch, sich zufällige Zahlensequenzen auszudenken, eine Tendenz zeigen, die Frequenz aufeinander folgender identischer Ziffern zu unterschätzen.<ref name="Griffiths">Thomas L. Griffiths, Josuah B. Tenenbaum: ''Randomness and coincidences. Reconciling intuition and probability theory.'' In: Joanna D. Moore, Keith Stenning (Hrsg.): ''Proceedings of the 23rd Annual Conference of the Cognitive Science Society,, August 1–4, 2001''. Erlbaum Press, Mahwah, N.J. 2001, S. 370–375, ISBN 0-8058-4152-0 ([http://web.mit.edu/cocosci/Papers/random.pdf Article in Psychology Today]; PDF-Datei; 69&nbsp;kB).<br /> Hans Reichenbach: ''The theory of probability''. University of California Press, Berkeley 1934/1949 (dt. Ausg. ''Wahrscheinlichkeitslehre. Eine Untersuchung über die logischen und mathematischen Grundlagen der Wahrscheinlichkeitsrechnung''. Sijthoff, Leiden 1935).</ref> Ein klassischer Datensatz für statistische Nachweise besteht aus einer großen Zahl im Rahmen eines Versuches zum Nachweis von Gedankenübertragung eingesendeter Zahlenfolgen, dem [[Zenith Radio Experiment]] von 1937, dessen Ergebnisse zunächst von L. D. Goodfellow in dieser Hinsicht untersucht wurden.<ref>Louis D. Goodfellow: ''A Psychological Interpretation Of The Results Of The Zenith Radio Experiments In Telepathy''. In: ''Journal of Experimental Psychology'', Bd. (23) 1938, Heft 6, S. 601–632, {{ISSN|0096-3445}}.</ref>
+
+Eine andere Klasse von Fehlurteilen rührt aus der Anwendung [[Spielerfehlschluss|fehlerhafter Varianten des Gesetzes der großen Zahl]].
+
+Derartige Denkfehler unterlaufen auch ausgebildeten Mathematikern. Ein bekannteres Beispiel ist das von [[Paul Erdős]], der für das Verständnis des Ziegenproblems mehrere Anläufe brauchte. [[Persi Diaconis]] fasst die Situation wie folgt zusammen: „Our brains are just not wired to do probability problems very well.“ Ein Erklärungsansatz sind von Tversky und Kahneman untersuchte automatische Denkprozesse, sogenannte [[Urteilsheuristik]]en.
+
+T. Griffiths und J. Tenenbaum versuchen die Diskrepanz zwischen menschlicher Intuition und stochastischer Sichtweise dahingehend aufzulösen, dass die menschlichen Einschätzungen mit mathematischen Vorhersagen der Frage nach der [[Likelihood]] eines bestimmten generierenden Prozesses im Einklang stehen (und nicht mit der Wahrscheinlichkeit eines Ereignisses unter einem vorgegebenen generierenden Prozess).<ref name="Griffiths"/>
+
+== Zufall im Recht ==
+Zufall ([[Latein|lat.]] ''casus fortuitus'') ist im deutschen Zivilrecht die weder auf [[Vorsatz (Deutschland)|Vorsatz]] noch auf [[Fahrlässigkeit]] einer [[Person]] beruhende Ursache von Ereignissen. Grundsätzlich trägt jeder, der durch Zufall einen Schaden erleidet, diesen Schaden selbst; jedoch haften z.&nbsp;B. der [[Schuldner]] im [[Schuldnerverzug (Deutschland)|Verzug]] und der [[Diebstahl (Deutschland)|Dieb]]. Letzterer haftet nach dem römischen Rechtssatz [[fur semper in mora]], weil er immer im Verzug ist (nämlich im Verzug der Rückgabe). Dies hat zur Folge, dass der Dieb immer für den [[Zufälliger Untergang|zufälligen Untergang]] der Sache haftet, selbst wenn der Untergang der Sache für ihn weder vermeidbar noch vorhersehbar war.
+
+{{Siehe auch|Kausalität (Recht)}}
+
+== Literatur ==
+=== Zeitgenössische Werke ===
+* Georg Brunold: ''Fortuna auf Triumphzug. Von der Notwendigkeit des Zufalls''. Galiani, Berlin 2011, ISBN 978-3-86971-044-0.
+* Karl Bosch: ''Statistik für Nichtstatistiker. Zufall oder Wahrscheinlichkeit''. Oldenbourg Verlag, München 2007, ISBN 978-3-486-58219-2.
+* Allan Combs, Mark Holland: ''Die Magie des Zufalls Synchronizität, eine neue Wissenschaft'' („Synchronicity“). Rowohlt, Reinbek 1992, ISBN 3-499-19177-6.
+* [[Manfred Eigen]], Ruthild Winkler: ''Das Spiel. Naturgesetze steuern den Zufall''. Piper Verlag, München 1996, ISBN 3-492-20410-4.
+* [[Gerd Gigerenzer]] u.&nbsp;a.: ''Das Reich des Zufalls. Wissen zwischen Wahrscheinlichkeiten, Häufigkeiten und Unschärfen'' (''The empire of chance''). Spektrum Akademischer Verlag, Heidelberg 1999, ISBN 3-8274-0101-1 (Buch über die Geschichte der Wahrscheinlichkeitsrechnung).
+* [[Stefan Klein (Wissenschaftsautor)|Stefan Klein]]: ''Alles Zufall. Die Kraft, die unser Leben bestimmt.'' Rowohlt Verlag, Reinbek 2005, ISBN 3-498-03519-3.
+* [[Klaus Mainzer]]: ''Der kreative Zufall. Wie das Neue in die Welt kommt''. Beck, München 2007 ISBN 3-406-55428-8
+* {{LexMA|9|682|683|Zufall|Winfried Rottenecker}}
+* [[David Ruelle]]: ''Zufall und Chaos.''. Springer, Berlin Heidelberg 1992 ISBN 3-540-55168-9
+
+=== Klassische Werke ===
+* [[Aristoteles]]: ''[[Metaphysik|Physika]]''. Akademischer Verlag, Berlin 1990, ISBN 3-05-000695-1.
+* [[Girolamo Cardano]]: ''Liber de Ludo Alea'' („Das Buch der Glücksspiele“), veröffentlicht posthum 1663.
+* [[Jakob I. Bernoulli|Jakob Bernoulli]]: ''Wahrscheinlichkeitsrechnung, Ars conjectandi'' (Ostwalds Klassiker der exakten Wissenschaften; Bd. 107). Edition Deutsch, Thun 2002, ISBN 3-8171-3107-0 (Nachdruck der Ausgabe Leipzig 1713).
+* [[Pierre Simon Laplace]]: ''Philosophischer Versuch über die Wahrscheinlichkeit'' (Ostwalds Klassiker der exakten Wissenschaften; Bd. 233). Edition Deutsch, Thun 1998, ISBN 3-8171-3233-6 (Nachdruck der Ausgabe Leipzig 1814).
+
+== Weblinks ==
+{{Wiktionary|Zufall}}
+{{Wikiquote|Zufall}}
+{{Wikibooks|Zufall}}
+* [http://plato.stanford.edu/entries/chance-randomness/ Antony Eagle: ''Chance versus Randomness''. In: ''The Stanford Encyclopedia of Philosophy'', Spring 2011 Edition, Edward N. Zalta (Hrg.).]
+* Roderich Tumulka: [http://www.mathematik.uni-muenchen.de/~bohmmech/chance/sueddeutsche.htm ''Würfelt Gott? Und wenn ja, wann?''] 
+* [http://www.philosophiebuch.de/lassonzu.htm A. Lasson: ''Über den Zufall'']
+* [https://www.random.org/ "RANDOM.ORG bietet ''echte'' Zufallszahlen für jeden im Internet. (englisch)"]
+* [http://www.lehrer-online.de/zufall-auf-der-spur.php Lehrer-Online: Unterrichtsmaterial "Zufall" für den Mathematikunterricht]
+
+== Einzelnachweise ==
+<references/>
+
+{{Normdaten|TYP=s|GND=4068050-2}}
+
+[[Kategorie:Allgemeine Psychologie]]
+[[Kategorie:Naturphilosophie]]
+[[Kategorie:Stochastik]]
+[[Kategorie:Ontologie]]
+[[Kategorie:Wahrscheinlichkeitsrechnung]]
+[[ar:عشوائية]]

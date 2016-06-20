@@ -1,0 +1,56 @@
+Eine '''Pseudonorm''' ist in der [[Algebra]] eine abgeschwächte Variante einer [[Norm (Mathematik)|Norm]], bei der die Eigenschaft der Homogenität zur Subhomogenität abgeschwächt wird. So wie die Norm als eine Verallgemeinerung eines [[Betragsfunktion|Betrages]] ins Mehrdimensionale angesehen werden kann, verhält sich die Pseudonorm zu einem [[Pseudobetrag]], bei dem im Gegensatz zum Betrag die Bedingung der Multiplikativität zur [[Submultiplikativität]] abgeschwächt wird.
+
+== Definition ==
+Sei <math>M</math> ein <math>R</math>-(Links-)[[Modul (Mathematik)|Modul]] über einem [[unitärer Ring|unitären Ring]] <math>(R, |\cdot|)</math> mit [[Pseudobetrag]]. Eine Abbildung <math>\|\cdot\|:M\to\R_+</math> in die nichtnegativen [[reelle Zahlen|reellen Zahlen]] heißt eine Pseudonorm, wenn für alle <math>a,b\in M</math> und <math>\lambda\in R</math> folgende Eigenschaften gelten:
+: (1)<math> \|a\|=0\;\Leftrightarrow\; a=0</math> (Definitheit)
+: (2)<math> \|\lambda a\|\leq |\lambda|\cdot\|a\|</math> (Subhomogenität)
+: (3)<math> \|a+b\|\leq \|a\| + \|b\|</math> (Dreiecksungleichung).
+Wird (2) verschärft zu
+: (2a)<math>\|\lambda a\| = | \lambda | \cdot \|a\|</math> (Homogenität),
+so heißt <math>\|\cdot\|</math> eine [[Norm (Mathematik)|Norm]].
+
+== Eigenschaften ==
+* Ist die Pseudonorm <math>\|\cdot\|</math> sogar eine Norm auf <math>M</math>, so ist notwendigerweise der zugehörige Pseudobetrag <math>|\cdot|</math> ein [[Betrag]] auf <math>R</math>.
+
+== p-Pseudonormen ==
+=== Definition ===
+Ist <math>(R,|\cdot|)</math> ein unitärer Ring mit Pseudobetrag, so wird auf dem <math>R</math>-Modul <math>R^n</math> durch
+:<math>\|v\|_p = \sqrt[p]{\sum_{i=1}^n |v_i|^p}</math>
+für jedes <math>p\in [1,\infty)</math> bzw. durch
+:<math>\|v\|_{\infty} = \max_{i=1}^n |v_i|</math>
+für <math>p=\infty</math> eine Pseudonorm, die '''p-Pseudonorm''' erklärt.
+
+=== Bemerkung ===
+Für den Nachweis der Pseudonormeigenschaften benutzt man die [[Minkowski-Ungleichung]].
+=== Eigenschaften ===
+* Für <math>1\leq p\leq q\leq\infty</math> gilt stets <math>\|v\|_q \leq \|v\|_p</math>.
+* Für <math>1\leq p < \infty</math> gilt stets <math>\|v\|_p \leq \sqrt[p]{n}\,\|v\|_{\infty}</math>.
+=== Anwendung ===
+Ist <math>(R,|\cdot|)</math> ein unitärer Ring mit Pseudobetrag, so können wir die Polynomringe <math>R[X]</math> oder <math>R[X_1,\dots,X_n]</math> und die [[Matrizenring]]e <math>R^{m\times n}</math> auch als <math>R</math>-Module auffassen. Dies geschieht durch das „Hintereinanderschreiben“ der Koeffizienten. Damit können durch oben genannte Definition die <math>p</math>-Pseudonormen erklärt werden. Diese sind im Allgemeinen auf den Polynomalgebren und auf den Matrizenalgebren nicht [[Submultiplikativität|submultiplikativ]]. Umso wertvoller sind folgende Spezialfälle:
+* Die <math>1</math>-Pseudonorm ist auf der Polynomalgebra <math>R[X]</math> submultiplikativ.
+* Für zwei multiplizierbare Matrizen <math>A\in R^{l\times m}</math> und <math>B\in R^{m\times n}</math> sowie gewählte <math>p,q\in [1,\infty]</math> mit <math>\tfrac{1}{p}+\tfrac{1}{q}=1</math> gilt
+::<math>\|A B\|_p \leq \|A\|_p\, \|B\|_{\min(p,q)}</math>,
+::<math>\|A B\|_p \leq \|A\|_{\min(p,q)}\, \|B\|_p</math>.
+* Für den Beweis dieser Aussage verwendet man die [[Hölder-Ungleichung]] und die Minkowski-Ungleichung.
+* Ist <math>p\in [1,2]</math>, so ist die <math>p</math>-Pseudonorm also submultiplikativ für alle multiplizierbaren Matrizen über <math>R</math>, und dies gilt insbesondere auf den Algebren <math>R^{n\times n}</math> der quadratischen Matrizen.
+* Beispiel für die <math>1</math>-Pseudonorm: Ist ''R'' ein kommutativer Ring mit Pseudobetrag und ''M'' eine <math>n\times n</math>-Matrix über ''R'' mit den Zeilen <math>M_1,\dots,M_n</math>, so gilt die abgeschwächte [[Hadamard-Ungleichung]] <math>\textstyle |\det M|\leq \prod_{i=1}^n \|M_i\|_1</math> mit der 1-Pseudonorm.
+
+== Anwendungen und Bedeutung ==
+
+=== Assoziative Algebren ===
+Auf [[assoziative Algebra|assoziativen Algebren]] sind Strukturen, die gleichzeitig Norm- und Betragseigenschaften besitzen, relativ einfach zu klassifizieren: Sei <math>A</math> eine assoziative <math>R</math>-Algebra über einem kommutativen unitären Ring <math>(R,|\cdot|)</math> mit Pseudobetrag.
+* Ist <math>\|\cdot\|</math> eine ''submultiplikative'' Pseudonorm auf <math>A</math> als Modul, so ist <math>\|\cdot\|</math> ein Pseudobetrag auf <math>A</math> als Ring.
+* Ist <math>\|\cdot\|</math> sogar eine ''[[Submultiplikativität|multiplikative]]'' Pseudonorm, so ist <math>\|\cdot\|</math> ein Betrag auf <math>A</math>.
+
+=== Iterativer Aufbau von Polynom- und Matrizenalgebren ===
+Eine Vielzahl an wichtigen Komplexitätsabschätzungen in der [[Computeralgebra]] funktioniert für Pseudonormen in Matrizen- und Polynomalgebren über Ringen mit Pseudobetrag.
+
+Zur Gewinnung solcher Abschätzungen dient häufig folgende iterative Konstruktion von assoziativen Algebren wie Polynom- und Matrizenalgebren:
+
+Ausgehend von einem Grundring ''R'' mit Pseudobetrag (das kann in der Praxis noch oft ein echter Betrag sein) sei eine assoziative ''R''-Algebra ''A'' mit einer submultiplikativen Pseudonorm gegeben. Dann ist ''A'' insbesondere auch selbst ein Ring mit Pseudobetrag, über dem man wiederum Module, Polynom- und Matrizenringe betrachten kann. Auf diese Art ist zum Beispiel die iterative Konstruktion der Polynomalgebren <math>R[X_1,\dots,X_n] = R[X_1,\dots,X_{n-1}][X_n]</math> möglich, wobei jede Zwischenalgebra selbst mit einer Pseudonorm ausgestattet ist. 
+
+==== Beispiel: Pseudodivision von Polynomen in mehreren Variablen ====
+Sei ''R'' ein kommutativer unitärer Ring und <math>R[X_1,\dots,X_n]</math> die Polynomalgebra in ''n'' Variablen über ''R''. Dann wird durch <math>|f|:=2^{\operatorname{grad} f}</math> ein nicht-archimedischer Pseudobetrag auf dem Polynomring erklärt. Dabei sei <math>\operatorname{grad} f</math> der totale Grad von ''f'' mit der zusätzlichen Konvention <math>2^{\operatorname{grad} (0)}=2^{-\infty}=0</math>. Die Einschränkung dieses Pseudobetrags auf ''R'' ergibt den trivialen Pseudobetrag, der immer 1 ist mit Ausnahme der Null, die den Wert 0 erhält. Bezüglich dieses Pseudobetrags auf ''R'' ist der Betrag <math>f\mapsto 2^{\operatorname{grad} f}</math> auch eine Norm auf <math>R[X_1,\dots,X_n]</math>, nun aufgefasst als ''R''-Modul. Ist ''R'' zusätzlich ein Integritätsring, so ist <math>f\mapsto 2^{\operatorname{grad} f}</math> sogar ein nicht-archimedischer Betrag auf dem Polynomring. Mit diesen Hilfsmitteln kann man eine wertvolle Abschätzung des Koeffizientenwachstums bei der „[[Pseudodivision]] mit Rest“ bezüglich einer Variablen von Polynomen in mehreren Variablen herleiten.
+<!-- Muss noch weiter ausgebaut werden. -->
+
+[[Kategorie:Algebra]]

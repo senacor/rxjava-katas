@@ -1,0 +1,11 @@
+Unter der '''Komplementarität''' zweier messbarer Größen ([[Observable]]n) versteht man in der [[Quantenmechanik]] die Eigenschaft, dass bei vollständiger Bekanntheit der ersten Größe über das Ergebnis einer [[quantenmechanische Messung|Messung]] der zweiten Größe überhaupt nichts ausgesagt werden kann (alle möglichen Ergebnisse sind gleich wahrscheinlich).
+
+Auch wenn über eine Observable nur Teil[[wissen]] vorhanden ist (z. B. „Messwert 1 hat doppelt so hohe [[Wahrscheinlichkeit]].“ oder „Der Wert liegt ziemlich sicher in diesem [[Intervall (Mathematik)|Intervall]].“), ist das mögliche Wissen über die komplementäre Größe beschränkt. Diese Beschränkung wird durch die [[heisenbergsche Unschärferelation]] beschrieben.
+
+Das wichtigste Paar zueinander konjugierter Observablen sind [[Geometrischer Ort|Ort]] und [[Impuls (Physik)|Impuls]]. Da die klassische [[Trajektorie (Physik)|Trajektorie]] eines Teilchens durch Ort und Impuls beschrieben wird, bedeutet die Komplementarität dieser beiden Größen, dass das Konzept einer klassischen Bahnbewegung in der Quantenmechanik aufgegeben werden muss.
+
+Andere Beispiele für zueinander komplementäre Observable:
+* Bei einem [[Spin]]-1/2-Teilchen sind je zwei Spinkomponenten, die zueinander senkrecht stehen, komplementär.
+* Beim [[Photon]] ist die Unterscheidung der [[Polarisation]]srichtung horizontal/vertikal komplementär zu der Unterscheidung der um 45° gedrehten Polarisationsrichtungen, sowie zur [[Zirkularpolarisation]] (linkszirkular/rechtszirkular).
+
+[[Kategorie:Quantenmechanik]]

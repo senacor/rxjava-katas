@@ -1,0 +1,192 @@
+In der [[Quantenmechanik|quantenmechanischen]] Behandlung<ref>Ob ein System der klassischen oder der quantenmechanischen Behandlung unterliegt, ist keine Frage der Willkür: Vielmehr ist für viele Systeme (z.&nbsp;B. Atome, Moleküle u.a.) die quantenmechanische Behandlung zwingend erforderlich. Die klassische Behandlung ist dagegen i.a. nur begrenzt sinnvoll (z.&nbsp;B. für makroskopische Objekte) und ergibt sich aus der Quantenmechanik durch geeignete Grenzübergänge, worauf aber im Folgenden nicht explizit eingegangen wird.</ref> eines physikalischen Systems ist der momentane '''Zustand''' des Systems ein mathematisch-kompliziertes Objekt, z.&nbsp;B. eine sog. „Zustandsfunktion“ oder ein spezieller sogenannter „Zustandsoperator“, der für jede am System mögliche (fehlerfreie) Messung und für jedes der dabei möglichen Messergebnisse die ''Wahrscheinlichkeit'' festlegt, mit der das betreffende Messergebnis erhalten wird.
+
+== Grundbegriffe ==
+=== Unterschied zur klassischen Physik ===
+{{Hauptartikel|Zustand (Physik)}}
+
+Die Einführung von Wahrscheinlichkeiten verschiedener Ergebnisse anstelle einer eindeutigen Voraussage bedeutet eine grundsätzliche Abkehr von der [[Klassische Physik|klassischen Physik]]. Dort ist mit der Angabe des momentanen Zustands des Systems das Ergebnis jeder möglichen Messung eindeutig festgelegt (immer fehlerfreie Messung vorausgesetzt). Im Allgemeinen trifft das für makroskopische Systeme (z.&nbsp;B. aus dem Alltag) sehr gut zu, wird aber für immer kleinere Systeme zunehmend falsch. Beispielsweise lässt sich im makroskopischen Alltag einer Schrotkugel oder einem Sandkorn in jedem Moment mit praktisch eindeutiger Genauigkeit ein bestimmter Ort und eine bestimmte Geschwindigkeit zuschreiben. Für ein Ensemble von quantenmechanischen Teilchen<ref>Für ein ''einzelnes'' Elektron in einem Teilchenstrahl ist zwar eine gleichzeitige „scharfe“ registrierende Messung von Impuls und Ort durch ein-und-dieselbe Messapparatur („Zähler“) möglich. Eine ''Vorhersage'', welcher Zähler aus einer vorgegebenen Anordnung, die alle Möglichkeiten abdeckt, beim anschließend folgenden Elektron anspricht, oder zumindest die Gleichzeitigkeit „scharfer“ Mittelwerte von Ort und Impuls bei einer Messreihe, sind dagegen ''ausgeschlossen''. Vgl. ''[[Feynman-Vorlesungen über Physik]]''. 3 Bände, ISBN 0-201-02115-3 (dt. ''Vorlesungen über Physik''. Oldenbourg Wissenschaftsverlag, München 2007, ISBN 978-3-486-58444-8), zuerst 1963/1965 bei Addison/Wesley. In Band&nbsp;3, Quantenmechanik, Kap. 16, wird ausführlich die Begrifflichkeit der [[Heisenbergsche Unschärferelation|Heisenbergschen Unschärferelation]] behandelt.</ref> ist dies dagegen ausgeschlossen. Die streng gültige Heisenbergsche Unschärferelation besagt nämlich: liegt der Aufenthaltsort eindeutig fest, dann kann eine Messung der Geschwindigkeit mit gleicher Wahrscheinlichkeit jeden beliebigen Wert ergeben, und umgekehrt ebenso ([[Heisenbergsche Unschärferelation]] von 1927).
+Diese Unbestimmtheit lässt sich auch durch präziseste Präparierung des Zustands des Systems nicht beseitigen. Sie ist mathematisch rigoros, relativ einfach zu beweisen<ref>Siehe Artikel [[Heisenbergsche Unschärferelation]] oder zum Beispiel Albert Messiah ''Quantenmechanik'', de Gruyter 1978, Band 1, S. 121ff</ref> und eine zentrale begriffliche Grundlage der Physik.
+
+=== Reiner Zustand und Zustandsgemisch ===
+{{Hauptartikel|Reiner und gemischter Zustand}}
+Zusätzliche Unsicherheit über das zu erwartende Messergebnis entsteht dann, wenn der Zustand des Systems nicht eindeutig festgelegt ist. Das gilt z.&nbsp;B. für den häufigen Fall, dass das beobachtete System aus einer Anzahl gleichartiger Systeme herausgegriffen wird, die nicht alle im selben Zustand präpariert sind. Die Zustände, in denen sich das beobachtete System (mit möglicherweise unterschiedlicher Wahrscheinlichkeit) befinden kann, bilden ein [[Zustandsgemisch]]. Hier ließe sich die Unsicherheit über die zu erwartenden Messergebnisse noch verringern, indem nur Systeme im selben Zustand zur Messung ausgewählt werden. Zur Verdeutlichung des Unterschieds zum Zustandsgemisch bezeichnet man einen eindeutig präparierten Zustand gelegentlich auch als [[Reiner Zustand|'''reinen Zustand''']]. Im Folgenden bedeutet ''Zustand'' hier immer ''reiner Zustand''.
+
+=== Eigenzustand ===
+Ein Zustand, in dem für eine bestimmte Messgröße der zu erwartende Messwert eindeutig festliegt, heißt [[Eigenzustand]] zu dieser Messgröße. Beispiele sind
+
+# das an einem Ort lokalisierte Teilchen (Ortseigenzustand)
+# das Teilchen mit einer bestimmten Geschwindigkeit bzw. Impuls (Impulseigenzustand)
+# das Teilchen in einem gebundenen Zustand bestimmter Energie ([[Energieeigenzustand]]).<ref>Bei ungebundenen Eigenzuständen des Energieoperators treten analoge Grenzwertprobleme wie bei Beispiel 1 und 2 (s.&nbsp;u.) auf</ref>
+
+Hier sind streng genommen wegen einer mathematischen Subtilität (des Vorliegens eines sog. „kontinuierlichen Spektrums“) die Beispiele 1 und 2 nur im Grenzfall zulässig (beim Beispiel 2 etwa im „monochromatischen Grenzfall“ eines Wellenpakets, während man das Beispiel 1 daraus durch eine Fouriertransformation erhalten kann).
+
+Beide Beispiele spielen jedenfalls eine bedeutende Rolle in der theoretischen Beschreibung. Das Beispiel 3 ist ein Zustand, in dem eine physikalische Größe (Energie) einen bestimmten Wert hat, während sowohl für den Ort als auch den Impuls nur Wahrscheinlichkeiten für verschiedene Messergebnisse angegeben werden können (für den Ort z.&nbsp;B. durch das [[Orbital]], für den Impuls durch das [[Betragsquadrat]] der Fouriertransformierten der betreffenden [[Wellenfunktion|Ortswellenfunktion]]).
+
+=== Superposition von Zuständen ===
+Für ein (potentiell punktförmiges) Teilchen ist in der [[Klassische Mechanik|klassischen Mechanik]] der Zustand durch dessen Ort und [[Impuls]] gegeben, also durch einen Punkt im sechsdimensionalen Zustandsraum, dem sog. [[Phasenraum]]. Die an Strahlen solcher Teilchen beobachteten Interferenzeffekte (sog. [[Welle-Teilchen-Dualismus]]) erzwingen aber die Möglichkeit, dass auch die Superposition (oder ''Überlagerung'', ''Linearkombination'' mit [[Komplexe Zahl|komplexen]] Faktoren) mehrerer Zustände einen möglichen Zustand bildet (siehe z.&nbsp;B. [[Materiewelle]]n). Jeder Zustand, für den zu einer bestimmten Messgröße verschiedene Messwerte mit verschiedenen Wahrscheinlichkeiten vorausgesagt werden, ist eine '''Superposition''' der zu diesen Messwerten gehörigen Eigenzustände. Die Wahrscheinlichkeit, einen bestimmten dieser Eigenwerte als Messergebnis zu erhalten, ist durch das ''Betragsquadrat'' des (i.&nbsp;allg. komplexen) Faktors festgelegt, mit dem der betreffende Eigenzustand in dieser Überlagerung vorkommt. Dieser Faktor wird als Wahrscheinlichkeitsamplitude bezeichnet.
+
+Es gibt keinen prinzipiellen Unterschied zwischen Superpositionszuständen und den Basiszuständen bzw. Eigenzuständen: Für ein gegebenes System kann vielmehr jeder Zustand mit jedem anderen überlagert werden, und jeder Zustand kann als Überlagerung anderer Zustände dargestellt werden. Auch die superponierten Zustände sind also ''reine Zustände'' im obigen Sinn.
+
+Zustände, die durch Superposition gebildet werden, werden gelegentlich auch ungenau als ''gemischte Zustände'' angesprochen, was aber vermieden werden sollte, weil Verwechslungen mit dem Begriff ''Zustandsgemisch'' auftreten könnten.
+
+=== Zustand und statistisches Gewicht ===
+Die Menge möglicher Zustände des durch die Möglichkeit der Superposition erweiterten Phasenraums ist von erheblich größerer Mächtigkeit als der Originalraum der klassischen Mechanik. Als Maß dieses erweiterten Raumes gilt in der statistischen Quantenphysik nicht die Größe dieser Menge selbst, sondern deren ''Dimension''<ref>Diese Dimension kann endlich sein, oder abzählbar-unendlich (wie etwa im Standardfall des sog. Hilbertraums) oder sogar überabzählbar-unendlich (wie bei den sog. Gelfandschen Raumtripeln, einer Verallgemeinerung des Hilbertraums zur besseren Erfassung kontinuierlicher Spektren)</ref>, das ist die Zustandszahl der kleinstmöglichen Teilmenge, so dass sich daraus durch Superposition alle überhaupt möglichen Zustände des Systems ergeben können. Da sich innerhalb dieser Auswahl keiner der Zustände als Superposition der anderen darstellen lässt, sind sie ''linear unabhängig'' und bilden eine ''Basis'' des erweiterten Phasenraums. Im Vergleich mit der Zustandsdichte in der klassischen statistischen Physik zeigt sich, dass jeder quantenmechanische Zustand einer solchen Basis das „Phasenraumvolumen“ <math>2 \pi \hbar</math> belegt. (Die physikalische Dimension dieses „Volumens“ ist die einer „Wirkung“, = Energie mal Zeit bzw. = Ort mal Impuls. <math>2 \pi \hbar = h</math> ist das Plancksche [[Wirkungsquantum]].)
+
+== Mathematische Darstellung ==
+{{Hauptartikel|Bra-Ket|Wellenfunktion}}
+
+=== Zustand ===
+Für die mathematische Darstellung des oben physikalisch definierten Zustands eignen sich zwei Formen:
+
+* eine orts- und zeitabhängige [[Materiewelle]] oder
+* ein Zustandsvektor in einem [[Abzählbar unendlich|abzählbar-unendlich]]-dimensionalen [[Vektorraum]], der als [[Hilbertraum]] bezeichnet wird.
+
+Beide Darstellungen sind äquivalent. Die erste, die auf [[Erwin Schrödinger]] zurückgeht<ref name="Schroedinger1926">[[Erwin Schrödinger|E. Schrödinger]]: „''Quantisierung als Eigenwertproblem I''“, Annalen der Physik 79 (1926), 361-376. E. Schrödinger: „''Quantisierung als Eigenwertproblem II''“, Annalen der Physik 79 (1926), 489-527. E. Schrödinger: „''Quantisierung als Eigenwertproblem III''“, Annalen der Physik 80 (1926), 734-756. E. Schrödinger: „''Quantisierung als Eigenwertproblem IV''“, Annalen der Physik 81 (1926), 109-139</ref>, ist oft leichter zu veranschaulichen. Die zweite, die auf [[Werner Heisenberg]]<ref name="Heisenberg1925a">W. Heisenberg: ''Über quantentheoretische Umdeutung kinematischer und mechanischer Beziehungen''. In: ''Zeitschrift für Physik''. Band 33, 1925, S. 879–893.</ref>
+und [[Paul Dirac]]<ref>[[Paul Dirac|P.A.M. Dirac]]: ''On the theory of quantum mechanics''. In: ''Proceedings of the Royal Society of London A''. Band 112, 1926, S. 661–77.</ref> zurückgeht, hat oft den Vorzug der übersichtlicheren Darstellung in algebraischen Gleichungen. Ein Zustand kann entweder als [[Wellenfunktion]] notiert werden, z.&nbsp;B. <math>\psi(t, \vec r)</math>, oder als Vektor, wofür sich nach Dirac das ''ket''-Symbol <math>\vert\psi\rangle</math> eingebürgert hat. Handelt es sich um einen Eigenzustand zu einer physikalischen Messgröße, wird der betreffende Eigenwert meist im Symbol mit angegeben. Beispiele:
+
+# <math>\vert \vec r \rangle</math> bezeichnet den Ortseigenzustand eines Teilchens,
+# <math>\vert \vec p \rangle</math> oder <math>\psi_{\vec p}(t, \vec r)</math> den Impulseigenzustand,
+# <math>\vert E \rangle</math> oder <math>\psi_{E}(t, \vec r)</math> den Energieeigenzustand. Dabei kann <math>E</math> sowohl diskrete Werte (z.&nbsp;B. bei gebundenen Zuständen) als auch kontinuierliche Werte annehmen (z.&nbsp;B. bei ungebundenen Zuständen).
+# Wird einem Eigenwert eine [[Quantenzahl]] zugeordnet (z.&nbsp;B. Quantenzahl <math>\,n</math> für das <math>\,n</math>-te [[Energieniveau]] <math>\,E_n</math>, Quantenzahlen <math>\,j,\,m</math> für Betrag und z-Komponente des [[Drehimpuls]]es), so wird der zugehörige Eigenzustand einfach durch Angabe der Quantenzahl(en) oder ein extra vereinbartes Symbol angegeben (Beispiele: <math>\vert n\rangle, \vert j, m\rangle, \vert\uparrow\rangle, \vert x\rangle, \vert p\rangle </math>).
+
+Allerdings legt der physikalische Zustand, aus dem sich die Wahrscheinlichkeiten aller möglichen Messergebnisse ergeben sollen, die Funktion <math>\psi(t, \vec r)</math> bzw. den Vektor <math>\vert\psi\rangle</math> nicht umkehrbar eindeutig fest, sondern nur bis auf einen konstanten Faktor. Alle Funktionen <math>\alpha \psi(t, \vec r)</math> bzw. Vektoren <math>\alpha \vert\psi\rangle</math> bezeichnen denselben Zustand, wenn <math>\alpha </math> eine konstante komplexe Zahl ist. Im Hilbertraum entspricht ein Zustand daher nicht einem Vektor, sondern dem eindimensionalen Unterraum (Strahl), der von ihm aufgespannt wird. Dies wird mathematisch durch den Projektionsoperator <math>\hat P = \vert\psi\rangle \langle \psi \vert</math> ausgedrückt.
+
+=== Wahrscheinlichkeitsamplitude ===
+Die Wahrscheinlichkeitsamplitude, mit der ein Zustand <math>\psi</math> in einem Zustand <math>\phi</math> enthalten ist, wird durch das [[Faltungsintegral]] bzw. das [[Skalarprodukt]] wiedergegeben:
+
+: <math> \int \phi^* (\vec r)\ \psi(\vec r)\ d^3r \equiv \langle\phi\vert\psi\rangle </math>.&nbsp;<ref>Hat das System weitere Variablen, z. &nbsp; eine [[Spin]]koordinate, muss das Ortsintegral durch einen Zusatzfaktor mit der Summe über die endlich vielen Werte der Spinvariablen ergänzt werden.</ref>
+
+Darin ist <math> \langle\phi\vert </math> der zu <math> \vert\phi\rangle </math> duale Vektor, der als ''bra''-Vektor bezeichnet wird. (''bra'' und ''ket'' fügen sich zu ''bracket'' zusammen, engl. für ''Klammer''.) Man beachte, dass der ''bra'' zum Vektor <math>\alpha \vert\phi\rangle </math> durch <math>\alpha^* \langle\phi\vert </math> gegeben ist.
+Weiter ist hier vorausgesetzt, dass die Funktionen bzw. Vektoren normiert sind:
+
+: <math> \int \psi^* (\vec r)\ \psi(\vec r)\ d^3r \equiv \langle\psi\vert\psi\rangle = 1</math>,
+
+damit für die Wahrscheinlichkeit, im Zustand <math> \psi</math> denselben Zustand <math> \psi</math> zu beobachten, richtig 1 herauskommt. (Eigenzustände zu Messgrößen mit kontinuierlichen Eigenwerten wie Ort und Impuls müssen über die Diracsche [[Delta-Distribution|&delta;-Distribution]] normiert werden, s.&nbsp;u.) Wenn ein System in einem Eigenzustand einer messbaren Größe vorliegt, ist es sicher nicht in einem Eigenzustand (derselben Messgröße) mit einem anderen Eigenwert anzutreffen, die Wahrscheinlichkeitsamplitude hierfür hat den Wert null:
+
+: <math>\langle E_2\vert E_1\rangle =\delta_{1,2}</math>, wenn beide Zustände gebunden sind, bzw. <math>=\delta (E_1-E_2)</math>, wenn beide ungebunden sind. Dabei ist ''&delta;<sub>i,k</sub>'' das [[Kronecker-Delta]] und ''&delta;(x-y)'' die [[Diracfunktion]].
+: <math>\langle \vec p_2 \vert \vec p_1 \rangle = \delta(\vec p_2-\vec p_1)</math>,
+: <math>\langle \vec r_2 \vert \vec r_1 \rangle = \delta(\vec r_2-\vec r_1)</math>.
+
+Zwei Zustände mit dem Skalarprodukt null heißen auch ''zueinander orthogonal''.
+Die wegen ihrer leichteren Anschaulichkeit oft gebrauchte Wellenfunktion des Zustands <math>\vert\psi\rangle</math> ist <math>\psi(\vec r) = \langle \vec r\vert\psi\rangle</math>, also die Komponente des Zustandsvektors <math>\vert\psi\rangle</math> längs des Basisvektors <math>\vert \vec r\rangle</math>, der den Zustand für das am Ort <math>\,\vec r</math> fixierte Teilchen beschreibt (auch wenn dieser lokalisierte Zustand in der Natur nicht realisiert ist).
+
+=== Messgröße (Observable) ===
+Eine messbare physikalische Größe wird durch einen [[Linearer Operator|Operator]] dargestellt, der im Hilbertraum eine lineare Transformation bewirkt. Das zugehörige Symbol besteht aus dem gewöhnlich benutzten Buchstaben mit einem Dach darüber. Beispiele:
+
+# Der Operator <math>\hat V</math> für die ortsabhängige potentielle Energie <math>V(\vec r)</math> verwandelt die Wellenfunktion <math> \psi(\vec r) </math> in <math> V(\vec r)\cdot\psi(\vec r) </math>.
+# Der Operator <math> \hat{\vec p} </math> für den Impuls verwandelt die Wellenfunktion <math> \psi(\vec r) </math> in <math> \frac{\hbar}{i} \nabla \psi(\vec r) </math>.
+# Der Hamilton-Operator <math>\hat H</math> steht für die Gesamtenergie <math>E</math> des Systems, für ein punktförmiges Teilchen also <math>E = \tfrac{p^2}{2m}+V(\vec r)</math>. Daher <math>\hat H = \tfrac{\hat p^2}{2m}+\hat V(\vec r)</math>.
+
+Physikalische Messgröße <math>\ A</math> und zugehöriger Operator <math>\hat A</math> werden zusammengefasst '''[[Observable]]''' genannt. Da alle möglichen Messergebnisse reelle Zahlen sind, muss der Operator [[Hermitescher Operator|hermitesch]] sein, d.&nbsp;h. die Bedingung
+
+:<math>\langle \phi \vert \hat A \vert \psi \rangle = \langle \psi \vert \hat A \vert \phi \rangle^*</math>
+
+erfüllen.
+
+=== Eigenwert, einzelner Messwert, Erwartungswert ===
+Wirkt eine Observable <math>\hat A</math> auf einen ihrer eigenen Eigenzustände <math> \varphi_a </math> (worin der Index <math>a</math> den Eigenwert angibt), multipliziert sich der Zustandsvektor mit dem Eigenwert ([[Eigenwertgleichung]]):
+
+: <math>\hat A \vert \varphi_a\rangle = a\cdot\vert \varphi_a\rangle</math>.
+
+Die Wahrscheinlichkeit, an einem beliebigen Zustand <math> \psi</math> bei einer Messung der Observable <math>\hat A</math> gerade den Wert <math>a</math> zu erhalten, ist das Betragsquadrat der Wahrscheinlichkeitsamplitude, das System im zugehörigen Eigenzustand <math> \varphi_a </math> anzutreffen:
+
+: <math>P_a = \vert \langle \varphi_a \vert \psi \rangle \vert^2</math>
+
+Dadurch hat man gleichzeitig das System im Eigenzustand <math> \varphi_a </math> präpariert, denn nach dieser Messung liegt es genau in diesem Zustand vor.
+
+Als '''Erwartungswert''' <math>\langle \hat A \rangle </math> wird der Mittelwert vieler Einzelmessungen der Observable an immer gleichen Systemen im Zustand <math> \psi</math> bezeichnet. Aus dem Spektrum aller möglicher Einzelergebnisse <math>a</math> und ihren Wahrscheinlichkeiten <math>P_a</math> ergibt sich:
+
+:<math>\langle \hat A \rangle = \langle \psi \vert \hat A \vert \psi \rangle</math>.
+
+=== Phasenfaktor und Superposition ===
+Zwei ''kets'', die sich nur um einen konstanten Faktor unterscheiden <ref>D.&nbsp;h. dass die zwei ''kets'' als Vektoren im Hilbertraum zum selben eindimensionalen Unterraum gehören, also gewissermaßen „dieselbe Richtung“ haben.</ref>, beschreiben denselben Zustand, denn alle für diesen Zustand abzuleitenden ''messbaren'' Eigenschaften sind von diesem Faktor unabhängig. Der Faktor darf von der Zeit abhängen, aber von keiner Observablen wie z.&nbsp;B. dem Ort. Hat der Faktor den Betrag 1, heißt er auch '''Phasenfaktor''', denn er kann in der Form <math>e^{i\Phi}</math> geschrieben werden, worin <math>\Phi</math> als '''quantenmechanische Phase''' bezeichnet wird.
+
+''Linearkombinationen'' zweier Zustandsvektoren, also z.&nbsp;B. <math>|\psi\rangle =c_1|\psi_1\rangle +c_2|\psi_2\rangle</math>, mit komplexen Zahlen <math>c_1, c_2</math>, beschreiben ebenfalls erlaubte Zustände (s.&nbsp;o. [[#Superposition von Zuständen|Superposition von Zuständen]]). Hier ist die ''relative Phase'' der Faktoren
+<ref>Die relative Phase ist die komplexe Phase <math>\phi</math> im ''Quotienten'' <math>\tfrac{c_2}{c_1} = \vert\tfrac{c_2}{c_1}\vert e^{i\phi}</math>.</ref> nicht mehr beliebig. Je nach Phase hat der Überlagerungszustand verschiedene messbare Eigenschaften.<ref>Beispiel: Wenn <math>\vert\! \!\uparrow\rangle,\ \vert\!\! \downarrow\rangle </math> die Eigenzustände zum Spin „auf“ bzw „ab“ in z-Richtung sind, dann ist <math>\vert\!\! \rightarrow \rangle =\vert\!\! \uparrow\rangle + \vert\!\! \downarrow\rangle </math> der Eigenzustand „auf“ in x-Richtung, aber <math>\vert\!\! \nearrow \rangle = \vert\!\! \uparrow\rangle + i\vert \!\!\downarrow\rangle </math> der Eigenzustand „auf“ in y-Richtung. (Der Normierungsfaktor <!-- 1/(2<sup>1/2</sup>) <math>1/\sqrt{2} </math> --> wurde fortgelassen.)</ref> Man spricht daher von ''kohärenter'' Superposition, weil wie bei optischer Interferenz mit kohärentem Licht nicht die Betragsquadrate sondern die „erzeugenden Amplituden“ selbst, also <math>|\psi_1\rangle</math> und <math>|\psi_2\rangle</math>, superponiert werden.
+
+=== Zustandsgemisch und Dichteoperator ===
+Ein Zustandsgemisch, in dem sich das System mit Wahrscheinlichkeit <math>p_i</math> im Zustand <math>\psi_i</math> (mit <math>i = 1,2, \ldots,\,n</math>) befindet, wird durch den [[Dichteoperator]] <math>\hat \rho</math> dargestellt, das ist die Summe der entsprechenden Projektionsoperatoren:
+
+: <math>\hat \rho = \sum_{i}p_i \vert\psi_i\rangle \langle \psi_i \vert </math>
+
+Im Gegensatz zur [[#Phasenfaktor und Superposition|kohärenten Superposition]] bleibt der Dichteoperator ungeändert, wenn man die im Gemisch vertretenen Zustände <math>\psi_i</math> mit beliebigen Phasenfaktoren versieht. Im Zustandsgemisch werden die Zustände also ''inkohärent'' überlagert.
+
+Der Erwartungswert einer Messung der Observable <math>\hat A</math> ist dementsprechend die gewichtete inkohärente Summe der Erwartungswerte der einzelnen Bestandteile des Gemischs:
+
+: <math>\langle \hat A \rangle = \sum_{i}p_i \langle\psi_i\vert \hat A \vert\psi_i \rangle </math>
+
+Dies kann auch einfach als Spur des Operators <math>\hat \rho \hat A</math> dargestellt werden:
+
+: <math>\langle \hat A \rangle = Sp(\hat \rho \hat A) </math>.
+
+Die letzte Gleichung hat den Vorzug, dass sie gleichermaßen für Gemische und für reine Zustände gilt. (Bei einem reinen Zustand ist <math>\hat \rho </math> einfach der zum Zustand gehörige Projektionsoperator.)
+
+Der Dichteoperator wird auch als „Zustandsoperator“ bezeichnet.
+
+== Beispiele ==
+a) Die Zustände eines (eindimensionalen) Teilchens in einem [[Potentialtopf]] der Breite <math>a</math> (von 0 bis <math>a</math>) sind Superpositionen von Eigenzuständen des Energieoperators, die durch die Wellenfunktionen <math>\langle x \vert n\rangle = \cos\,n\tfrac{\pi x}{a},\ \ n=1,2,\dots</math> beschrieben sind und die Energieeigenwerte <math>E_n = n^2 \tfrac{\pi^2 \hbar^2}{2 m a^2}</math> haben. Ein beliebiger Zustand lässt sich dann immer als <math>\vert\psi\rangle = \sum\,\alpha_n \vert n\rangle</math> schreiben, wobei die Normierungsbedingung <math> \sum\,\vert\alpha_n\vert^2 = 1</math> zu beachten ist.
+
+b) Für Teilchen in einem Zentralfeld sind die Energieeigenzustände auch Eigenzustände des Drehimpulsoperators und tragen daher alle drei Quantenzahlen <math>\, n,j,m</math>:
+
+:<math>\hat H \vert n, j,m\rangle = E_{n,j} \vert n, j,m\rangle,\ \ \ \hat J^2 \vert n, j,m\rangle = \hbar^2 j (j+1) \vert n,j,m\rangle,\ \ \hat J_z \vert n, j,m\rangle = \hbar m \vert n, j,m\rangle</math>
+
+Bezüglich <math>\,m</math> ist die Energie entartet, so dass ein beliebiger Zustand zu <math>\,E_{n,j}</math> als
+<math>\vert\psi\rangle = \sum\nolimits_{m} \alpha_{m} \vert n,j,m\rangle</math> geschrieben werden kann, wieder mit geeigneter Normierungsbedingung.
+
+c) Die Spineigenzustände zu <math>m_s = \pm \tfrac{1}{2}</math> eines (fermionischen) Teilchens werden einfach als <math>\vert\!\!\uparrow\rangle</math> und <math>\vert\!\!\downarrow\rangle</math> geschrieben.
+
+== Formales ==
+Im mathematischen Formalismus der [[Quantenmechanik]] und [[Quantenfeldtheorie]] ist ein Zustand ein abstraktes Objekt. Der Bezug eines Zustandes zur realen Welt wird durch spezielle [[Darstellungstheorie|Darstellungen]] beispielsweise in Ortskoordinaten oder Impulskoordinaten repräsentiert. Die Darstellung in Ortskoordinaten wird als [[Wellenfunktion]] bezeichnet. Aus diesen Darstellungen der Zustandsvektoren lassen sich nach den Gesetzen der Quantenmechanik exakte Wahrscheinlichkeitsaussagen über Eigenschaften von Teilchen oder Teilchensystemen machen. Die zeitliche Veränderung der Zustandsvektoren wird in der Quantenmechanik durch die [[Schrödingergleichung]] beschrieben und ist damit eindeutig bestimmt.
+
+Meist ist mit einem Zustand ein Element (Vektor) eines abstrakten Hilbertraums gemeint. Zustände, die auf diese Weise dargestellt werden, heißen Vektorzustände. Die meisten Zustände lassen sich jedoch nur über Dichtematrizen oder gar nicht in einem Hilbertraum darstellen. Zur Beschreibung allgemeiner Zustände wird der Formalismus der [[C*-Algebra|C*-Algebren]] herangezogen. Ein Zustand auf einer C*-Algebra <math>A</math> ist dann ein [[lineares Funktional]] <math>f\colon A\rightarrow \C</math> mit <math>\|f\|=1</math> und <math>f(x^*x)\ge 0\,\forall x\in A</math>. Die Menge dieser Zustände ist eine [[konvexe Menge]], die [[Reiner Zustand|reinen Zustände]] sind dann genau die [[Extremalpunkt]]e dieser Menge. Jedem Zustand kann man mittels der [[GNS-Konstruktion]] eine [[Hilbertraum-Darstellung]] zuordnen. Genauer findet man eine Hilbertraum-Darstellung <math>\pi\colon A\rightarrow B(H)</math> und einen Einheitsvektor <math>\psi \in H</math>, so dass <math>f(\cdot)=\langle \pi(\cdot)\psi|\psi \rangle</math>. Dabei werden den reinen Zuständen genau die [[Irreduzible Darstellung|irreduziblen Darstellungen]] zugeordnet.
+
+== Ein weiteres Beispiel ==
+Es sei ein Zweielektronensystem gegeben, wobei eines der beiden Elektronen sehr weit vom anderen entfernt sei. Gegeben sei ferner an jedem der beiden Orte eine Messapparatur, die nur auf die Spineigenschaften des einzelnen Elektrons ansprechen soll und mit gleicher Wahrscheinlichkeit diesen nach oben bzw. nach unten orientiert. Der betrachtete Zustand des Zweielektron-Systems sei <math>|\psi\rangle \propto { (\,\,|\uparrow\rangle }_1 {|\downarrow\rangle }_2 </math><math>-{|\downarrow\rangle }_1 {|\uparrow\rangle }_2 \,\,)</math>.
+
+<math>|\psi\rangle</math> ist – wohlgemerkt! – ein einziger, wohldefinierter reiner Zustand. Solche Zustände können in natürlicher Weise durch s-Wellen-Zerfall eines einzigen, zunächst gebundenen Elementarteilchensystems entstehen.<ref>Aus dem einen gebundenen Teilchen entstehen durch den Zerfall zwei diametral auseinanderlaufende Objekte: eines läuft z.&nbsp;B. nach rechts, das andere nach links. Diese Objekte bleiben, wie sich herausstellt, auch in beliebig großer Entfernung korreliert.</ref>
+
+Die möglichen Messergebnisse sind trotzdem zweifach (und haben gleiche Wahrscheinlichkeit): Spin nach oben bei einem der beiden Elektronen und nach unten beim anderen. Aber: Welches der beiden Elektronen, 1 oder 2, den Spin nach oben haben wird, kann man nicht voraussagen.
+
+Wegen der großen gegenseitigen Entfernung erwartet man also Unabhängigkeit der Messresultate. Stattdessen erhält man eine sehr strenge Korrelation (oder besser: Antikorrelation), obwohl man nur Wahrscheinlichkeiten angeben kann.
+
+Dies ist ein Beispiel für einen [[Quantenverschränkung|verschränkten]] Zustand, der zugleich die extremen Besonderheiten des Zustandsbegriffs in der Quantenmechanik zeigt.
+
+== Reine Zustände und Zustandsgemische ==
+{{Hauptartikel|Reiner und gemischter Zustand}}
+
+In der [[Quantenmechanik]] und der [[Quantenstatistik]] wird zwischen [[Reiner Zustand|reinen Zuständen]] und Zustandsgemischen unterschieden. Reine Zustände stellen den Idealfall einer maximalen Kenntnis der beobachtbaren Eigenschaften ([[Observable]]n) des Systems dar. Häufig ist aber nach der Präparation oder aufgrund von Messungenauigkeiten der Zustand des Systems nur unvollständig bekannt (Beispiel: der Spin des einzelnen Elektrons in einem unpolarisierten Elektronenstrahl).<ref>Man stelle sich die praktisch unmögliche Aufgabe vor, den Vielteilchenzustand <math>\psi_{1,2, ..., N}</math> eines Systems aus ''N=10<sup>23</sup>'' Elektronen zu bestimmen.</ref> Dann können den verschiedenen möglicherweise vorkommenden reinen Zuständen <math>|\psi_i\rangle</math> bzw. den zugeordneten Projektionsoperatoren <math>\mathrm P_i=|\psi_i\rangle\langle\psi_i|</math> nur Wahrscheinlichkeiten ''p<sub>i</sub>'' zugeordnet werden (siehe unten). Solche unvollständig bekannten Zustände werden als Zustandsgemische bezeichnet. Zur Darstellung von Zustandsgemischen verwendet man den [[Dichteoperator]] ρ, der auch Dichtematrix oder Zustandsoperator der Quantenstatistik genannt wird.
+
+Ein reiner Zustand entspricht einem eindimensionalen Unterraum (Strahl) in einem [[Hilbertraum]]. Die zugehörige Dichtematrix <math>\rho = \mathrm P_i=|\psi_i\rangle\langle\psi_i|</math> ist der Operator für die [[Projektion (lineare Algebra)|Projektion]] auf diesen Unterraum. Sie erfüllt die Bedingung der [[Idempotenz]], d.&nbsp;h. ρ<sup>2</sup>=ρ. Zustandsgemische sind dagegen nur durch nicht-triviale Dichtematrizen darstellbar, d.&nbsp;h. dass ρ<sup>2</sup> < ρ gilt. Eine Beschreibung durch einen Strahl ist dann nicht möglich.
+
+Charakteristische Merkmale dieser Zustandsbeschreibung sind die [[Superposition (Physik)|Superponierbarkeit]] („Kohärenz“) der reinen Zustände und das daraus folgende Phänomen der [[Quantenverschränkung]], während bei den Zustandsgemischen die Beiträge der verschiedenen beteiligten Zustände inkohärent summiert werden.
+
+Das Ergebnis von Messungen an einem Quantensystem ergibt bei Wiederholung an einem exakt gleich präparierten System auch bei reinen Zuständen eine nicht-triviale Verteilung von Messwerten, die in der Quantenstatistik zusätzlich (inkohärent!&nbsp;<ref name="Inkohärenz">„Inkohärent“ deshalb, weil die ''p<sub>i</sub>'' mit einem quadratischen Ausdruck in den |ψ<sub>i</sub>| gewichtet werden</ref>) mit den ''p<sub>i</sub>'' gewichtet wird. Die Verteilung entspricht im Einzelnen dem quantenmechanischen Zustand <math>|\psi\rangle</math> (bzw. <math>|\psi_i\rangle </math>) und der Observablen <math>\,A</math> für den Messprozess (<math> \,A</math> repräsentiert i.W. die Messapparatur). Für reine Zustände folgt aus der Quantenmechanik: Der Mittelwert der durch Wiederholung erzeugten Messreihe und der quantenmechanische Erwartungswert <math>\langle\psi |A|\psi\rangle</math> sind identisch.
+
+Für das Ergebnis der Messungen ist also im Unterschied zur klassischen Physik selbst bei reinen (also vollständig bekannten) quantenmechanischen Zuständen nur eine Wahrscheinlichkeit angebbar (deshalb heißt es im Folgenden nicht ''das Resultat'', sondern ''das zu erwartende Resultat'', s.&nbsp;u.). Für Zustandsgemische gilt wegen der ''p<sub>i</sub>'' eine zusätzliche (inkohärente!) Unbestimmtheit: <math>\overline A =\sum\,p_i\cdot\langle\psi_i |A|\psi_i\rangle\,.</math>
+
+Also selbst das zu erwartende Resultat des Ausgangs einer einzelnen Messung kann nur in Spezialfällen (etwa <math>p_1=1,\,\,p_2=p_3=...=0</math>) sicher vorhergesagt werden. Nur die (speziellen!) Eigenzustände <math>|\phi_k\rangle</math> der betrachteten Observable <math>\,A</math> bzw. die zugehörigen Eigenwerte <math>\,a_k</math> kommen bei gegebenem <math>|\psi\rangle </math> überhaupt als Messwerte in Frage, und selbst in dem oben angegebenen Fall eines reinen Zustands, etwa <math>|\psi\rangle \equiv |\psi_1\rangle</math>, d.&nbsp;h. selbst bei vollständig bekannter Wellenfunktion, kann man für die verschiedenen Eigenzustände <math>|\phi_k\rangle</math> bei gegebenem <math>|\psi\rangle</math> nur Wahrscheinlichkeiten angeben, <math>w_k=|\langle\psi|\phi_k\rangle |^2\,,</math> obwohl der Zustand <math>|\phi_k\rangle </math> bei einer unmittelbar anschließenden Folgemessung mit derselben Apparatur genau reproduziert wird. Unbekannte Zustände können dagegen nicht durch Messung bestimmt werden (siehe [[No-Cloning-Theorem]]).<ref>Das heißt unter anderem, dass die ''p<sub>i</sub>'' nicht durch Angabe der ''a<sub>k</sub>'' und der ''w<sub>k</sub>'' bestimmt werden können.</ref> Es gilt ferner<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <math>\rho =\sum p_i\,\mathrm P_i\,,</math><br /> d.&nbsp;h. dass jetzt nicht die zu den Projektionsoperatoren gehörigen ''kets'' superponiert werden, sondern die ''Projektionsoperatoren selbst'' mit Wahrscheinlichkeiten versehen werden.
+
+Insgesamt gilt also: <math>\overline A =\sum\sum\, p_i\cdot a_k\cdot|\langle\psi_i|\phi_k\rangle |^2</math>, wobei sich der Index ''i'' auf die (reinen) Zustände, der Index ''k'' dagegen auf die Messgröße bezieht.
+
+(Wenn auch die ''a<sub>k</sub>'' bzw. die <math>\,|\phi_k\rangle</math> nur „ungefähr“ bekannt wären, müsste man die ''p<sub>i</sub>'' noch mit zwei entsprechenden Wahrscheinlichkeitsfaktoren, ''q&nbsp;<sub>k</sub>'' bzw. ''r&nbsp;<sub>i,k</sub>'', multiplizieren.)
+
+== Informationsentropie ==
+Die [[Informationsentropie]] des Zustandes bzw. die mit der Boltzmannkonstante multiplizierte [[Von-Neumann-Entropie]] ist ein quantitatives Maß für dessen Unkenntnis. Die Von-Neumann-Entropie, <math>\rm{ -k_B}\,\operatorname{tr}\,(\rho \ln\,(\rho))\,</math>, ist für reine Zustände null und entsprechend <math>\rm{-k_B}\,\sum\,p_i\cdot \ln\,p_i</math> für Zustandsgemische. Dabei wurden [[Ludwig Boltzmann|Boltzmann]]'sche Einheiten benutzt, insbesondere ist k<sub>B</sub> die [[Boltzmann-Konstante]]. In [[Claude Shannon|Shannon]]'schen Einheiten wird dagegen diese Konstante durch eins und der [[Natürlicher Logarithmus|natürliche Logarithmus]], ''ln ...&nbsp;&nbsp;''(''=<sub>e</sub> log …''), durch ''<sub>2</sub> log …'' ersetzt.
+
+== Resümee ==
+Der quantenmechanische Zustand („Reinheit“ vorausgesetzt), Zustandsvektor <math>|\psi\rangle</math> beschreibt also nicht einfach, „was ist“, sondern gibt die Gesamtheit der „Komponenten“ von <math>|\psi\rangle</math> an, die <math>\{|\phi_k\rangle \},</math> die durch eine zur Messgröße <math>\,A</math> passende Messung aus dem Vektor herausprojiziert werden können („Präparation“), und gibt insbesondere an, mit welcher Wahrscheinlichkeit dabei die k-te Komponente ausgewählt wird <math>(w_k=|\langle \psi |\phi_k\rangle |^2 ).</math> Auch <math>|\psi\rangle </math> selbst muss i.A. erst durch Messungen präpariert werden.
+
+Dagegen ist der Zustand der Messapparatur i.W. „klassisch“ (obwohl sie auch von der quantenmechanischen Messgröße <math>\, A</math> abhängt). Trotzdem ist ein wesentlicher Aspekt der Messapparatur deshalb „klassisch“, weil die Apparatur analog zu einer hinreichend großen Uhr eindeutig (z.&nbsp;B. durch Zeigerstellung) feststellt, welcher Eigenwert a<sub>k</sub> bei der Messung herausgekommen ist („Registrierung“). Der neu präparierte Zustand, jetzt <math>|\phi_k\rangle</math>, gehorcht trotzdem bis zur nächsten Messung nicht der klassischen, sondern der quantenmechanischen Zeitentwicklung (siehe [[Mathematische Struktur der Quantenmechanik#Zeitliche Entwicklung]]).
+
+Anders gesagt: Der quantenmechanische Zustand ist „präparatorisch“, der klassische dagegen „registrierend“.
+
+== Siehe auch ==
+* [[Quantenmechanische Messung]]
+* [[Quantentomografie]]
+* [[Heisenbergsche Unschärferelation]]
+* [[Einstein-Podolsky-Rosen-Paradoxon]]
+
+== Einzelnachweise und Fußnoten ==
+<references />
+
+[[Kategorie:Quantenmechanik]]

@@ -1,0 +1,145 @@
+{{Dieser Artikel|behandelt das Teilchen. Für weitere Bedeutungen siehe [[Photon (Begriffsklärung)]].}}
+
+{{Infobox Teilchen
+|name = Photon (ɣ)
+|klassifikation=[[Elementarteilchen]]<br />[[Boson]]<br />[[Eichboson]]
+|wechselwirkung=elektromagnetisch<br />gravitativ
+|ladung_e=0
+|masse_kg=0
+|masse_ev=0
+|spinzahl=1
+|paritaet=−
+}}
+
+Das '''Photon''' (von [[Griechische Sprache|griechisch]] φῶς ''phōs'', Genitiv φωτός ''phōtos'' ‚[[Licht]]‘) ist das Elementarteilchen ([[Quant]]) des [[Elektromagnetisches Feld|elektromagnetischen Feldes]]. Anschaulich gesprochen sind Photonen das, woraus elektromagnetische Strahlung besteht. Daher wird gelegentlich auch die Bezeichnung '''Lichtquant''' oder '''Lichtteilchen''' verwendet. In der [[Quantenelektrodynamik]] gehört das Photon als Vermittler der elektromagnetischen Wechselwirkung zu den [[Eichboson]]en.
+
+== Forschungsgeschichte ==
+Seit der Antike gab es verschiedene, einander teilweise widersprechende Vorstellungen von der Natur des Lichts. Bis Anfang des [[19. Jahrhundert]]s konkurrierten Wellen- und Teilchentheorien miteinander ''(siehe Abschnitt [[Licht#Geschichte|Geschichte]] im Artikel [[Licht]])''. Dann schien die Wellennatur des Lichts durch viele Phänomene (z.&nbsp;B. [[Interferenz (Physik)|Interferenz]]- und [[Polarisation]]serscheinungen) bewiesen und durch die 1867 aufgestellten [[Maxwellsche Gleichungen|Maxwellschen Gleichungen]] als elektromagnetische Welle verstanden. Daneben gab es auch Indizien für einen Teilchencharakter. Ein historisch wichtiges Experiment hierzu war im Jahre 1887 die Beobachtung des [[Photoelektrischer Effekt|Photoelektrischen Effekts]] durch [[Heinrich Hertz]] und [[Wilhelm Hallwachs]].
+
+Die Entdeckung der Quantisierung der elektromagnetischen Strahlung ging im Jahr 1900 vom [[Plancksches Strahlungsgesetz|planckschen Strahlungsgesetz]] aus, das die [[Wärmestrahlung]] eines [[Schwarzer Körper|schwarzen Körpers]] beschreibt. Um dieses Gesetz theoretisch erklären zu können, musste [[Max Planck]] annehmen, dass die Oberfläche des schwarzen Körpers nur [[Quantelung|diskrete]], zur Frequenz proportionale Energiemengen mit dem elektromagnetischen [[Feld (Physik)|Feld]] austauschen kann. Planck selbst stellte sich allerdings nur den Energieaustausch quantisiert vor, noch nicht die elektromagnetische Strahlung an sich.
+
+[[Albert Einstein]] stellte dann 1905 in seiner Publikation zum [[Photoelektrischer Effekt|photoelektrischen Effekt]] die [[Quantenhypothese|Lichtquantenhypothese]] auf. Ihr zufolge ist Licht ein Strom von „in Raumpunkten lokalisierten Energiequanten, welche sich bewegen, ohne sich zu teilen, und nur als Ganze absorbiert und erzeugt werden können“.<ref>{{Literatur|Autor=Albert Einstein|Titel=Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt|Sammelwerk=Annalen der Physik|Band=322|Nummer=6|Datum=1905|Seiten=133|Online=[http://einstein-annalen.mpiwg-berlin.mpg.de/annalen/alphabetical/HUN315QN Online]|Abruf=2012-01-24}}</ref> Aufgrund verbreiteter Zweifel an diesen Ansichten wurden diese Arbeiten erst 1919<ref>1918 wurde kein Physik-Nobelpreis vergeben. Ende 1919 erhielten Johannes Stark den Physik-Nobelpreis 1919 und Max Planck den [http://www.nobelprize.org/nobel_prizes/physics/laureates/1918/ Physik-Nobelpreis 1918].</ref> (Planck) und 1922<ref>Der [http://www.nobelprize.org/nobel_prizes/physics/laureates/1921/ Physik-Nobelpreis 1921] wurde erst 1922 Albert Einstein zugesprochen, wobei die Lichtquantenhypothese noch aus der Begründung ausgespart blieb. Zugleich erhielt [[Niels Bohr]] den Physik-Nobelpreis für 1922.</ref> (Einstein) mit dem [[Nobelpreis]] ausgezeichnet.
+
+Vielfach wurde der Teilchencharakter der elektromagnetischen Strahlung aber weiterhin bezweifelt, bis [[Arthur Holly Compton]] in den Jahren 1923–1925 nachweisen konnte, dass Röntgenstrahlung auf einzelne Elektronen genau so wirkt wie der Beschuss mit einzelnen Teilchen, deren Energien und Impulse gerade denen von hochenergetischen Lichtquanten entsprachen. Für diese Entdeckung und Interpretation des [[Compton-Effekt]]s erhielt er 1927 den Nobelpreis.
+
+Die formale Quantentheorie des Lichtes wurde seit 1925 beginnend mit Arbeiten von [[Max Born]], [[Pascual Jordan]] und [[Werner Heisenberg]] entwickelt. Die heute gültige Theorie der elektromagnetischen Strahlung ist die [[Quantenelektrodynamik]] (QED); sie beschreibt auch die Lichtquanten. Sie geht in ihren Anfängen auf eine Arbeit von [[Paul Dirac]] im Jahre 1927 zurück, in der die Wechselwirkung von quantisierter elektromagnetischer Strahlung mit einem Atom analysiert wird.<ref>Paul Dirac: ''The Quantum Theory of Emission and Absorption of Radiation.'' In: ''Proc. Roy. Soc.'' A114, 1927. [http://hermes.ffn.ub.es/luisnavarro/nuevo_maletin/Dirac_QED_1927.pdf (online)].</ref>
+Die QED wurde in den 1940er Jahren entwickelt und 1965 mit der Verleihung des [[Nobelpreis für Physik|Nobelpreises für Physik]] an [[Richard P. Feynman]], [[Julian Schwinger]] und [[Shinichirō Tomonaga]] gewürdigt. In der QED ist das elektromagnetische Feld selbst quantisiert und das Photon seine elementare Anregung.
+
+Albert Einstein schrieb 1951 in einem Brief an seinen Freund [[Michele Besso]]:
+
+{{Zitat|Die ganzen 50 Jahre bewusster Grübelei haben mich der Antwort der Frage ‚Was sind Lichtquanten‘ nicht näher gebracht. Heute glaubt zwar jeder Lump, er wisse es, aber er täuscht sich…|ref=&nbsp;&nbsp;zitiert nach<ref>[[Harry Paul (Physiker)|Harry Paul]]: ''Photonen: Experimente und ihre Deutung''. Akademie-Verlag, Berlin 1985, ISBN 3-528-06868-X, {{Google Buch|BuchID=_eiEBwAAQBAJ|Seite=7}}.</ref>}}
+
+== Bezeichnung und Symbol ==
+Das Wort ''Photon'' leitet sich vom griechischen Wort für Licht, ''{{lang|grc|φῶς}}'' (''phôs''), ab. Der Name war durch verschiedene Autoren schon seit 1916 für eine kleine Energiemenge, die einen photochemischen oder photoelektrischen Effekt auslösen kann, eingeführt worden, wurde aber kaum beachtet.<ref name="Kragh" /> Max Planck z.&nbsp;B. sprach in seiner Nobelpreisrede 1920 noch von „Lichtquanten“.
+Endgültig wurde der Name durch [[Arthur Compton]] bekannt gemacht,<ref name="Kragh">[[Helge Kragh]]: [http://arxiv.org/abs/1401.0293 ''Photon: New light on an old name'']. arXiv, 28. Februar 2014.</ref> der sich dabei auf eine Veröffentlichung des Chemikers [[Gilbert Newton Lewis]] im Jahre 1926<ref>Gilbert N. Lewis: ''The Conservation of Photons.'' In: ''Nature.'' 118, 1926, S. 874–875. [[doi:10.1038/118874a0]] ([http://www.nobeliefs.com/photon.htm online]).</ref> berief. Lewis verwandte den Begriff im Rahmen eines von ihm vorgeschlagenen Modells der Wechselwirkung von Atomen mit Licht. Dieses Modell sah unter anderem fälschlich eine Erhaltung der Photonenzahl vor und wurde allgemein nicht anerkannt.
+
+Für das Photon wird im Allgemeinen das Symbol <math>\ \gamma</math> ([[gamma]]) verwendet. In der [[Hochenergiephysik]] ist dieses Symbol allerdings reserviert für die hochenergetischen Photonen der [[Gammastrahlung]] (Gamma-Quanten), und die in diesem Zweig der Physik ebenfalls relevanten [[Röntgenstrahlung|Röntgen]]<nowiki />photonen erhalten häufig das Symbol ''X'' (von ''X-Strahlen'' und Englisch: ''X-ray'').
+
+Sehr oft wird ein Photon auch durch die enthaltene Energie <math>E</math> dargestellt:
+* <math>E_\text{photon} = h \, \nu</math>
+: mit dem [[Plancksches Wirkungsquantum|planckschen Wirkungsquantum]] <math>\, h</math> und der (Licht-)[[Frequenz]] <math>\, \nu</math>
+bzw.
+* <math>E_\text{photon} = \hbar \, \omega</math>
+: mit dem [[Plancksches Wirkungsquantum #Werte|reduzierten planckschen Wirkungsquantum]] <math>\hbar = \frac{h}{2\pi}</math> und der (Licht-)[[Kreisfrequenz]] <math>\, \omega = 2 \pi \, \nu</math>.
+
+== Eigenschaften ==
+Jegliche elektromagnetische Strahlung, von [[Radiowelle]]n bis zur [[Gammastrahlung]], ist in Photonen quantisiert. Das bedeutet, die kleinste Menge an elektromagnetischer Strahlung bestimmter Frequenz ist ein Photon. Photonen haben eine unendliche natürliche Lebensdauer, können aber bei einer Vielzahl physikalischer Prozesse erzeugt oder vernichtet werden. Ein Photon besitzt keine [[Masse (Physik)|Masse]]. Daraus folgt, dass es sich im Vakuum immer mit [[Lichtgeschwindigkeit]] <math>c</math> bewegt, sofern es in einem Zustand mit wohldefiniertem Impuls ist, also durch eine einzige [[ebene Welle]] darzustellen ist. Sonst bewegt es sich mit der [[Gruppengeschwindigkeit]] der beteiligten ebenen Wellen. Ein Photon im Überlagerungszustand von Impulsen mehrerer Richtungen bewegt sich auch im Vakuum langsamer als die Lichtgeschwindigkeit ''(siehe [[Bessel-Strahl]])''. In optischen Medien mit einem [[Brechungsindex]] <math>n>1</math> ist die Gruppengeschwindigkeit aufgrund der Wechselwirkung der Photonen mit der Materie um den Faktor <math>n</math> verringert.
+
+=== Erzeugung und Detektion ===
+Photonen können auf vielerlei Arten erzeugt werden, insbesondere durch Übergänge („[[Quantensprung|Quantensprünge]]“) von [[Elektron]]en zwischen verschiedenen Zuständen (z.&nbsp;B. verschiedenen [[Atomorbital|Atom]]- oder [[Molekülorbital]]en oder [[Bändermodell|Energiebändern]] in einem [[Festkörper]]). Photonen können auch bei [[Atomkern|nuklearen]] Übergängen, Teilchen-[[Antiteilchen]]-Vernichtungsreaktionen ([[Annihilation]]) oder durch beliebige [[Fluktuation]]en in einem elektromagnetischen Feld erzeugt werden.
+
+Zum Nachweis von Photonen können unter anderem [[Photomultiplier]], [[Photoleiter]] oder [[Photodiode]]n verwendet werden. [[CCD-Sensor|CCDs]], [[Vidicon]]s, [[Position Sensitive Device|PSDs]], [[Quadrantendiode]]n oder Foto-Platten und Filme werden zur ortsauflösenden Detektion von Photonen benutzt. Im [[Infrarotstrahlung|IR]]-Bereich werden auch [[Bolometer]] eingesetzt. Photonen im Gammastrahlen-Bereich können durch [[Geigerzähler]] einzeln nachgewiesen werden. [[Photomultiplier]] und [[Avalanche-Photodiode]]n können auch zur Einzelphotonendetektion im optischen Bereich verwendet werden, wobei Photomultiplier im Allgemeinen die niedrigere Dunkelzählrate besitzen, Avalanche-Photodioden aber noch bei niedrigeren Photonenenergien bis in den IR-Bereich einsetzbar sind.
+
+=== Masse ===
+Das Photon ist ein Elementarteilchen mit der [[Masse (Physik)|Masse]] <math>m=0</math>. Neben experimentellen Messungen, die diese Tatsache sehr gut belegen (s.&nbsp;u.), ist dies theoretisch dadurch begründet, dass ein Masseterm des Photons die Eichinvarianz der Lagrangedichte im Rahmen der Quantenelektrodynamik verletzen würde. Im Gegensatz zu anderen Teilchen erhält das Photon auch keine Massenänderung durch Wechselwirkung mit [[Vakuumfluktuation]]en.
+
+Wegen der [[Äquivalenz von Energie und Masse]] ist gleichzeitig richtig, dass ein physikalisches System, wenn es eine Masse <math>m>0</math> besitzt, einen Massenzuwachs <math>\Delta m=E/c^2</math> erfährt, wenn es ein Photon der Energie <math>E</math> aufnimmt.
+
+==== Theoretische Formulierung ====
+Nach der [[Spezielle Relativitätstheorie|Speziellen Relativitätstheorie]] gilt für ein physikalisches System mit der Masse <math>m</math>, das sich mit der Geschwindigkeit <math>\vec v</math> und dem Impuls <math>\vec p</math> bewegt, die [[Energie-Impuls-Relation]]
+:<math>E^2=p^2 \, c^2 + m^2\,c^4</math>
+und
+:<math>v = \sqrt{1-\left( \tfrac{mc^2}{E}\right) ^2}\cdot c \ .</math>
+Dabei ist <math>E</math> die Energie des Systems, <math>c</math> die Lichtgeschwindigkeit im Vakuum. <math>v</math> und <math>p</math> sind die Beträge der beiden entsprechenden Vektoren.
+
+Durch Einsetzen von <math>m=0</math> ergibt sich die Energie-Impuls-Relation der Photonen zu
+:<math>E=p \, c \ </math>
+und die Geschwindigkeit der Photonen zu
+:<math>v =  c \ .</math>
+Diese Gleichungen sind für jedes Photon erfüllt, das einen [[Eigenzustand]] zu Impuls und Energie mit den Eigenwerten <math>\vec p</math> bzw. <math>E</math> einnimmt.
+
+Ebenso ergeben sich die Feldgleichungen des Photonenfelds, d.&nbsp;h. die elektromagnetischen [[Maxwellgleichungen]] im Vakuum
+:<math> \frac 1 {c^2} \frac{\partial^2 E_i}{\partial t^2}-\sum_{j=1}^{3} \left( \frac{\partial^2 E_i}{\partial x_j^2} \right) = 0 \ </math>
+: (für jede Komponente der [[Elektrische Feldstärke|elektrischen Feldstärke]] <math>\vec{E}= (E_1, E_2, E_3)</math> und auch der [[Magnetische Flussdichte|magnetischen Flussdichte]] <math>\vec{B}</math>)
+als Spezialfall der quantentheoretischen [[Klein-Gordon-Gleichung]] für solche Felder, deren Quanten die Masse <math>m=0</math> haben. Ebene elektromagnetische Wellen haben daher im Vakuum sowohl die [[Phasengeschwindigkeit]] als auch die [[Gruppengeschwindigkeit]] <math>c</math>. Statische elektrische und magnetische Felder entstehen nach der [[Quantenelektrodynamik]] durch [[Virtuelles Teilchen|virtuelle Anregung]] des Photonenfelds.
+
+==== Experimentelle Befunde ====
+Wenn die Masse des Photons größer als null wäre, dann würde sie sich durch verschiedene Folgen bemerkbar machen. Keine von ihnen ist bisher beobachtet worden. Die Genauigkeit der Experimente erlaubt die Aussage, dass eine eventuelle Photonenmasse in jedem Fall unter <math>10^{-18}\,\mathrm{eV} \! / \!c^2</math> liegen muss, das ist der <math>10^{27}</math>ste Teil der Masse des Wasserstoffatoms.
+
+Falls die Photonenmasse größer als null wäre,
+* dann wäre wegen der Energie-Impuls-Relation die Geschwindigkeit <math>v</math> der Photonen nicht gleich der universellen Grenzgeschwindigkeit für die Übertragung von Information <math>c</math>, sondern sie hinge von der Energie der Photonen ab. Photonen einer kurzwelligen Strahlung wären somit schneller als die einer langwelligen, da ihre Energie nach <math>E = \tfrac{h c}{\lambda}</math> von der Wellenlänge <math>\lambda</math> abhängt. Eine solche [[anomale Dispersion]] gibt es in Medien zwar häufig, sie wird aber vollkommen dadurch erklärt, dass die Photonen je nach Energie verschieden stark mit den Teilchen des durchstrahlten Mediums wechselwirken. Die genauesten Messungen der Dispersion erfolgten an extrem langwelliger Strahlung in der Erdatmosphäre und brachten das Ergebnis, dass eine eventuelle Photonenmasse nicht größer als <math>3\cdot 10^{-13}\,\mathrm{eV\!/c^2}</math> sein kann.<ref name="GoldhaberNieto RMP 2010">{{Literatur | Autor= Alfred Scharff Goldhaber, Martin Nieto| Titel= Photon and graviton mass limits| Sammelwerk= Rev. Mod. Phys.| Band= 82|Datum=2010| Seiten= 939| DOI=10.1103/RevModPhys.82.939}}</ref>
+* dann würde sich für das elektrostatische Feld einer Punktladung statt des [[Coulomb-Gesetz|Coulomb-Potentials]] ein [[Yukawa-Potential]] ergeben, also ein zusätzlicher exponentieller Abschwächungsfaktor. Dass dies in Laborexperimenten nicht beobachtet wurde, lässt darauf schließen, dass eine eventuelle Masse des Photons nicht größer als <math>1{,}5\cdot 10^{-9}\,\mathrm{eV\!/c^2}</math> sein kann.<ref name="GoldhaberNieto RMP 2010" /><ref name="PDG 2014">Particle Data Group [http://pdg.lbl.gov/2014/listings/rpp2014-list-photon.pdf abgerufen 18. Mai 2015]</ref>
+* dann würden sich für das Magnetfeld eines rotierenden Dipols Änderungen ergeben, die sich im Fall der Sonne am [[Sonnenwind]] bis zum Abstand des [[Pluto]] auswirken würden.<ref name="GoldhaberNieto RMP 2010" /><ref>[http://www.desy.de/user/projects/Physics/ParticleAndNuclear/photon_mass.html What is the mass of a photon?] Abgerufen am 10. August 2011.</ref> Solche Abweichungen konnten bislang nicht nachgewiesen werden, woraus sich die momentan (Stand: 2014) niedrigste experimentelle Obergrenze von <math>10^{-18}\,\mathrm{eV} \! / \!c^2</math> für eine eventuelle Photonenmasse ergibt.<ref name="PDG 2014" />
+
+=== Schwerefeld ===
+Photonen unterliegen der Schwerebeschleunigung doppelt so stark wie nach der klassischen Physik zu erwarten. Nach der [[Gravitation#Allgemeine Relativitätstheorie|relativistischen Beschreibung der Gravitation]] folgen sie einer Geodäte der gekrümmten Raumzeit. Photonen gehören selbst zu den Quellen der Gravitation, indem sie mit ihrer Energie die Krümmung der Raumzeit beeinflussen (siehe [[Energie-Impuls-Tensor#Der Energie-Impuls-Tensor in der allgemeinen Relativitätstheorie|Energie-Impuls-Tensor in der allgemeinen Relativitätstheorie]]).
+
+=== Spin ===
+Photonen sind [[Spin]]-1-Teilchen und somit [[Boson]]en. Es können also beliebig viele Photonen denselben [[Quantenmechanik|quantenmechanischen]] Zustand besetzen, was zum Beispiel in einem [[Laser]] realisiert wird.
+
+Während etwa der Elektronenspin parallel oder antiparallel zu einer ''beliebig'' vorgegebenen Richtung ist,<ref>Siehe z. B. [http://www.pro-physik.de/Phy/leadArticle.do?laid=10053 pro-physik.de] über ''Spin-Hall-Effekt jetzt auch mit Photonen''</ref> kann der Photonenspin wegen fehlender Masse nur parallel oder antiparallel zur ''Flugrichtung'' orientiert sein. [[Polarisation#Polarisation elektromagnetischer Wellen|Zirkular polarisierte E-M-Wellen]] haben nach dem Maxwell-Gleichungen immer den Drehimpulsbetrag von ħ pro Photon.  Die [[Helizität]] der Photonen einer zirkular polarisierten Welle ist daher eine charakteristische Größe. Wird durch einen Spiegel die Ausbreitungsrichtung umgekehrt, oder wird die Rotationsrichtung umgekehrt, zum Beispiel durch eine λ/2-Platte, so wechselt die Helizität das Vorzeichen. ''Linear'' polarisierte elektromagnetische Wellen bestehen aus der Überlagerung von rechts und links polarisierten Photonen. Auch ein einzelnes Photon kann linear polarisiert werden, indem zwei entgegengesetzt zirkular polarisierte Zustände überlagert werden.
+
+=== Photonen im Vakuum ===
+Photonen mit wohldefiniertem Impuls bewegen sich mit Lichtgeschwindigkeit <math>c = 299\,792\,458 \; \mathrm{m/s}</math>. Die [[Dispersionsrelation]], d.&nbsp;h. die Abhängigkeit der Energie <math>E\,</math> von der Frequenz <math>\nu</math> ([[ny]]), ist linear, und die Proportionalitätskonstante ist das [[Wirkungsquantum|Plancksche Wirkungsquantum]] <math>h</math>,
+:<math>E \;=\; h\nu\,.</math>
+Der [[Impuls]] <math>p</math> eines Photons beträgt
+:<math>p \;=\; \frac{h}{\lambda}\,.</math>
+
+Zahlenwerte, wie sie in optischen Spektren typischerweise auftreten, können wie folgt ermittelt werden:<ref>{{Internetquelle |url=http://physics.nist.gov/cgi-bin/cuu/Value?hbarev |hrsg=National Institute of Standards and Technology |titel=CODATA Recommended Values |zugriff=2015-08-04}} Wert für <math>\hbar</math> in der Einheit eVs.</ref><ref>{{Internetquelle |url=http://physics.nist.gov/cgi-bin/cuu/Value?hev |hrsg=National Institute of Standards and Technology |titel=CODATA Recommended Values |zugriff=2015-08-04}} Wert für h in der Einheit eVs.</ref>
+
+:<math>E = \hbar \omega = (6{,}582\,119\,514 \cdot 10^{-16}\,\rm{eVs}) \cdot \omega</math>&nbsp;,&nbsp;&nbsp;''E'' dabei in eV ([[Elektronenvolt]]), ω in s<sup>−1</sup> ([[Kreisfrequenz]]), 1&nbsp;eV entspricht etwa einem ω von 1,520&nbsp;·&nbsp;10<sup>15</sup>&nbsp;s<sup>−1</sup>
+
+:<math>E = h \cdot \nu = h \cdot c / \lambda = \left(1{,}239\,841\,974\ \mathrm {eV\mu m}\right) / \lambda</math>&nbsp;,&nbsp;&nbsp;&nbsp;''E'' dabei in eV (Elektronenvolt), λ in μm ([[Wellenlänge]]), 1&nbsp;eV entspricht etwa 1,240&nbsp;μm&nbsp;=&nbsp;1240&nbsp;nm
+
+Beispiel: Rotes Licht mit 620&nbsp;nm Wellenlänge hat eine Photonenenergie von ungefähr 2&nbsp;eV.
+
+=== Photonen in optischen Medien ===
+In einem optischen Medium wechselwirken Photonen mit dem Material. Durch [[Absorption (Physik)|Absorption]] kann ein Photon vernichtet werden. Dabei geht seine Energie in andere Energieformen über, beispielsweise in elementare Anregungen ([[Quasiteilchen]]) des Mediums wie [[Phonon]]en oder [[Exziton]]en. Möglich ist auch, dass das Photon sich durch ein Medium ausbreitet. Dabei wird es durch eine Abfolge von Streuprozessen behindert, in denen Teilchen des Mediums virtuell angeregt werden. Photon und Reaktion des Mediums zusammen kann man durch ein Quasiteilchen, das [[Polariton]], beschreiben. Diese elementaren Anregungen in Materie haben üblicherweise keine lineare Dispersionsrelation. Ihre Ausbreitungsgeschwindigkeit ist niedriger als die Lichtgeschwindigkeit im Vakuum. In Experimenten der [[Quantenoptik]] konnte die Geschwindigkeit der Ausbreitung von Licht in einem verdünnten Gas von geeignet präparierten [[Atom]]en auf wenige Meter pro Sekunde gesenkt werden.
+
+== Wechselwirkung von Photonen mit Materie ==
+Photonen, die auf Materie treffen, können je nach Energiebereich unterschiedliche Prozesse auslösen. Im Folgenden sind für verschiedene Prozesse die Energiebereiche angegeben, in denen sie relevant sind:
+* ab 0 eV: [[Rayleigh-Streuung]]
+* unter 5 eV: [[Angeregter Zustand|Anregung]] höherenergetischer Zustände von Elektronen, [[Photochemie|photochemische Prozesse]], keine [[Ionisation]]
+* 5 eV bis 100 keV: [[Photoeffekt]],
+* 50 keV bis 1 MeV: [[Compton-Effekt]],
+* 1,022 bis 6 MeV: [[Paarbildung (Physik)|Paarbildung]] (unter gewissen Bedingungen auch durch direkte Photon-Photon-Wechselwirkung möglich),<ref>[http://www.slac.stanford.edu/exp/e144/e144.html SLAC Experiment 144 Home Page]</ref><ref>[http://www.slac.stanford.edu/exp/e144/diezeit.jpg Zeit-Artikel zum SLAC Experiment]</ref>
+* 2,18 bis 16 MeV: [[Kernphotoeffekt]].
+* Höhere Energien: [[Photodesintegration]] von Atomkernen
+
+== Literatur ==
+* Chandrasekhar Roychoudhuri, A.F. Kracklauer, Kathy Creath (Eds.): ''The nature of light: What is a photon?''. CRC, 2008, ISBN 978-1-4200-4424-9, {{Google Buch|BuchID=Z6hWmaHZFigC}}.
+* [[Harry Paul (Physiker)|Harry Paul]]: ''Photonen: Eine Einführung in die Quantenoptik.'' 2. Auflage. Teubner, Stuttgart 1999, ISBN 3-519-13222-2. (Teubner-Studienbücher Physik)
+* [[Klaus Hentschel]]: ''Einstein und die Lichtquantenhypothese.'' In: ''Naturwissenschaftliche Rundschau.'' 58(6), 2005, {{ISSN|0028-1050}}, S. 311–319.
+* Liang-Cheng Tu, Jun Luo, George T. Gillies: ''The mass of the photon.'' In: ''Reports on Progress in Physics.'' 68, Nr. 1, 2005, [[doi:10.1088/0034-4885/68/1/R02]], S. 77–130.
+* [[Richard Feynman]]: ''QED. The Strange Theory of Light and Matter.'' 1985. (dt. ''QED. Die seltsame Theorie des Lichts und der Materie''. 1987, ISBN 3-492-21562-9)
+
+== Weblinks ==
+{{Wiktionary}}
+{{Commonscat}}
+* [http://www.hydrogenlab.de/ HydrogenLab] 3D Animationen von atomaren Übergängen: Absorption und Emission von Photonen (semiklassisch)
+* [http://www.quantumlab.de/ QuantumLab] Experimente mit einzelnen Photonen: Beweis der Existenz, Quantenzufall, Verschränkung,...
+* Klaus Hentschel: [https://eldorado.tu-dortmund.de/handle/2003/24257 Light quanta - The maturing of a concept by the stepwise accretion of meaning], in: ''Physics and Philosophy'' (an online journal, freely available since April 2007).
+
+''Zu Wechselwirkung von Photonen mit Photonen:''
+* [http://www.slac.stanford.edu/exp/e144/e144.html Homepage des SLAC Experiment 144] (engl.)
+* [http://www.hep.ucl.ac.uk/opal/gammagamma/gg-tutorial.html Jan A. Lauber: A small tutorial in gamma-gamma Physics] (engl.)
+
+== Einzelnachweise ==
+<references />
+
+{{Normdaten|TYP=s|GND=4045922-6}}
+
+[[Kategorie:Elementarteilchen]]
+[[Kategorie:Quantenfeldtheorie]]
+[[Kategorie:Quantenoptik]]
+[[Kategorie:Boson]]

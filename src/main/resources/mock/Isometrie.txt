@@ -1,0 +1,70 @@
+{{Begriffsklärungshinweis}}
+Eine '''Isometrie''' ist in der [[Mathematik]] eine [[Funktion (Mathematik)|Abbildung]], die zwei [[Metrischer Raum|metrische Räume]] aufeinander abbildet und dabei die Metrik (Abstand, Distanz) erhält. Das heißt, der Abstand zweier Bildpunkte ist gleich groß wie der der Urbildpunkte.
+
+In der [[Euklidische Geometrie|Euklidischen]] und der [[Synthetische Geometrie|synthetischen Geometrie]]  werden speziell solche Isometrien betrachtet, die zugleich [[Abbildungsgeometrie|geometrische Abbildungen]] für die betrachteten Räume sind. Meist spricht man dann von einer '''abstandserhaltenden''', '''längentreuen''' oder auch '''isometrischen''' Abbildung. Wenn die geforderten Zusatzeigenschaften aus dem Zusammenhang klar sind, einfach von einer ''Isometrie''.
+
+Davon abweichend versteht man in der [[Riemannsche Geometrie|riemannschen Geometrie]] unter einer ''[[Isometrie (Riemannsche Geometrie)|Isometrie]]'' eine Abbildung, die die [[riemannsche Metrik]], und damit nur die Längen von Vektoren und die Längen von Kurven erhält. Eine solche Abbildung braucht nicht die Abstände zwischen zwei Punkten zu erhalten.
+
+== Definition ==
+Sind zwei metrische Räume <math>(M_1,d_1)</math>, <math>(M_2,d_2)</math> gegeben, und <math>f\colon M_1\rightarrow M_2</math> eine Abbildung mit der Eigenschaft
+: <math>d_2\left(f(x),f(y)\right) = d_1(x,y)\ </math> für alle <math>x,y\in M_1</math>,
+dann heißt <math>f</math> Isometrie von <math>M_1</math> nach <math>M_2</math>. Eine solche Abbildung ist stets [[Injektivität|injektiv]]. Ist <math>f</math> sogar [[Bijektivität|bijektiv]], dann heißt <math>f</math> [[isometrischer Isomorphismus]], und die Räume <math>M_1</math> und <math>M_2</math> heißen isometrisch isomorph; andernfalls nennt man <math>f</math> eine isometrische [[Einbettung (Mathematik)|Einbettung]] von <math>M_1</math> in <math>M_2</math>.
+
+== Spezialfälle ==
+=== Normierte Vektorräume ===
+In [[Normierter Raum|normierten Vektorräumen]] <math>V</math> ist der Abstand zwischen zwei Vektoren <math>u, v \in V</math> durch die [[Norm (Mathematik)|Norm]] des Differenzvektors definiert:
+
+:<math>d(u,v) = \|v-u\|</math>.
+
+Sind <math>V</math> und <math>W</math> zwei normierte Vektorräume mit Norm <math>\| \cdot \|_V</math> bzw. <math>\| \cdot \|_W</math> und ist <math>f \colon V \to W</math> eine [[lineare Abbildung]], so ist diese Abbildung genau dann eine Isometrie, wenn sie die Norm erhält, wenn also für alle <math>v \in V</math>
+:<math>\|f(v) \|_W = \|v \|_V</math>
+gilt.
+
+Ohne die Voraussetzung der Linearität gilt für reelle normierte Vektorräume:
+* Wenn die Norm <math>\| \cdot \|_W</math> des Zielraums strikt konvex ist, ist jede Isometrie <math>V</math> nach <math>W</math> eine [[affine Abbildung]].<ref>{{Internetquelle | url=http://www.helsinki.fi/~jvaisala/mazurulam.pdf | titel=A proof of the Mazur-Ulam theorem | autor=Jussi Väisälä | hrsg= | datum= | zugriff=2014-04-14}}</ref>
+* Jede surjektive Isometrie ist eine affine Abbildung ([[Satz von Mazur-Ulam]]).<ref>{{Literatur | Autor=Stanisław Mazur, Stanisław Ulam| Titel=Sur les transformationes isométriques d’espaces vectoriels normés | Sammelwerk=C. R. Acad. Sci. Paris | Band=194 | Nummer= | Jahr=1932 | Seiten=946–948 | DOI=}}</ref>
+In beiden Fällen gilt:
+Bildet die Abbildung den Nullvektor von <math>V</math> auf den Nullvektor von <math>W</math> ab, so ist sie linear.
+
+=== Vektorräume mit Skalarprodukt ===
+Ist <math>V</math> ein Vektorraum mit [[Skalarprodukt]], so ist die [[Skalarproduktnorm|induzierte Norm]] (Länge) eines Vektors definiert als die Quadratwurzel aus dem Skalarprodukt des Vektors mit sich selbst. Für den Abstand zweier Vektoren <math>u</math> und <math>v</math> ergibt sich dann:
+:<math>d(u,v) = \|v-u\| = \sqrt{\langle u-v, u-v \rangle}</math>,
+wobei das Skalarprodukt hier durch spitze Klammern bezeichnet wird. 
+
+Sind <math>V</math> und <math>W</math> Vektorräume mit Skalarprodukt <math>\langle \cdot , \cdot \rangle_V</math> bzw. <math>\langle \cdot , \cdot \rangle_W</math> und ist <math>f \colon V \to W</math> eine lineare Abbildung,
+so ist diese Abbildung genau dann eine lineare Isometrie, wenn sie das Skalarprodukt erhält, das heißt
+:<math>\langle f(u), f(v) \rangle_W = \langle u, v \rangle_V</math> für alle <math>u,v \in V</math>.
+Solche Abbildungen werden auch [[orthogonale Abbildung]]en (im Fall reeller Skalarprodukträume) oder [[unitäre Abbildung]]en (im Fall komplexer Skalarprodukträume) genannt. Bei reellen Skalarprodukträumen muss dabei nicht vorausgesetzt werden, dass die Abbildung linear ist, denn jede Isometrie, die den Nullvektor auf den Nullvektor abbildet, ist in diesem Fall linear.
+
+Ist <math>\{a_1,\ldots ,a_n\}</math> eine [[Orthonormalbasis]] von <math>V</math>, so ist eine lineare Abbildung  <math>f\colon V\to W</math> genau dann eine Isometrie, wenn
+<math>\{f(a_1),\ldots, f(a_n)\}</math> ein [[Orthonormalsystem]] in <math>W</math> ist.
+
+Die Menge aller linearen Isometrien eines euklidischen Vektorraums in sich bildet eine [[Gruppe (Mathematik)|Gruppe]], die [[orthogonale Gruppe]] des Raums. Entsprechend bildet die Menge aller linearen Isometrien eines unitären Vektorraums in sich die [[unitäre Gruppe]] des Raums.
+
+=== Euklidischer Punktraum ===
+{{Hauptartikel|Bewegung (Mathematik)}}
+Jede Isometrie <math>f \colon E \to F</math>  zwischen zwei [[euklidischer Punktraum|euklidischen Punkträumen]] <math>E</math> und <math>F</math> ist eine [[affine Abbildung]]. Sie lässt sich in der Form
+:<math>f(Q) = f(P) + \vec f (\overrightarrow{PQ})</math> für alle <math>P, Q \in E</math>
+darstellen, wobei <math>\vec f \colon V_E \to V_F</math> eine lineare Isometrie zwischen den zugehörigen euklidischen Vektorräumen <math>V_E</math> und <math>V_F</math> ist.
+
+Umgekehrt ist jede Abbildung, die sich so darstellen lässt, eine Isometrie.
+Isometrien eines euklidischen Punktraums in sich heißen auch ''Bewegungen''.
+
+== Weitere Eigenschaften ==
+* Aus der Definition folgt unmittelbar, dass jede Isometrie stetig ist.
+* Jede Isometrie ist sogar [[Lipschitz-Stetigkeit|Lipschitz-stetig]], also insbesondere [[Gleichmäßige Stetigkeit|gleichmäßig stetig]]. Isometrien sind damit stetig fortsetzbar auf den Abschluss, wenn der Bildraum [[Vollständiger Raum|vollständig]] ist.
+* Jeder metrische Raum ist isometrisch isomorph zu einer abgeschlossenen Teilmenge eines normierten Vektorraums, und jeder vollständige metrische Raum ist isometrisch isomorph zu einer abgeschlossenen Teilmenge eines [[Banachraum]]s.
+* Gilt <math>M_1 = M_2</math> und <math>d_1 = d_2</math> und werden durch <math>f</math> zwei Figuren aufeinander abgebildet, so heißen die Figuren [[Kongruenz (Geometrie)|kongruent]] zueinander. Gilt <math>M_1 = M_2</math> und <math>d_1 \neq d_2</math>, so heißen sie [[Ähnlichkeit (Geometrie)|ähnlich]]; ansonsten spricht man einfach von isometrischen Figuren.
+* Jede Isometrie eines euklidischen Raums erhält auch [[Winkel]], [[Flächeninhalt]] und [[Volumen]].
+* Allgemein erhält jede Isometrie zwischen metrischen Räumen die [[Hausdorff-Maß]]e.
+
+== Literatur ==
+* [[Siegfried Bosch]]: ''Lineare Algebra''. 2. überarbeitete Auflage. Springer, Berlin u. a. 2003, ISBN 3-540-00121-2, (''Springer-Lehrbuch'').
+
+== Einzelnachweise ==
+<references />
+
+[[Kategorie:Lineare Algebra]]
+[[Kategorie:Euklidische Geometrie]]
+[[Kategorie:Synthetische Geometrie]]
+[[Kategorie:Geometrische Abbildung]]

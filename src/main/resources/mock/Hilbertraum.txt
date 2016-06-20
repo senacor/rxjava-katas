@@ -1,0 +1,116 @@
+Ein '''Hilbertraum''' (auch '''Hilbert-Raum, Hilbertscher Raum'''), benannt nach dem deutschen [[Mathematiker]] [[David Hilbert]], ist ein Begriff aus dem [[Teilgebiete der Mathematik|mathematischen Teilgebiet]] der [[Funktionalanalysis]]. Ein Hilbertraum ist ein [[Vektorraum]] über dem Körper der [[Reelle Zahl|reellen]] oder [[Komplexe Zahl|komplexen Zahlen]], versehen mit einem [[Skalarprodukt]] – und damit Winkel- und Längenbegriffen –, der [[Vollständiger Raum|vollständig]] ist bezüglich der vom Skalarprodukt induzierten [[Norm (Mathematik)|Norm]] (des Längenbegriffs). Ein Hilbertraum ist ein [[Banachraum]], dessen Norm durch ein Skalarprodukt induziert ist. Lässt man die Bedingung der Vollständigkeit fallen, spricht man von einem [[Prähilbertraum]].
+
+Die Struktur eines Hilbertraums ist eindeutig festgelegt durch seine [[Hilbertraumdimension]]. Diese kann eine beliebige [[Kardinalzahl (Mathematik)|Kardinalzahl]] sein. Ist die Dimension endlich, so handelt es sich um einen [[Euklidischer Raum|euklidischen Raum]]. In vielen Gebieten, etwa in der mathematischen Beschreibung der [[Quantenmechanik]], ist „der“ Hilbertraum mit [[Abzählbare Menge|abzählbarer]] Dimension, d.&nbsp;h. mit der kleinstmöglichen unendlichen Dimension, von besonderer Bedeutung. Ein Element eines Hilbertraums kann als eine [[Familie (Mathematik)|Familie]] einer der Dimension entsprechenden Anzahl reeller bzw. komplexer Werte (im Endlichdimensionalen [[kartesische Koordinaten]] genannt) aufgefasst werden. Analog zu Vektorräumen, deren Elemente stets nur in endlich vielen Koordinaten einer [[Basis (Vektorraum)|Hamelbasis]] ungleich null sind, ist jedes Element eines Hilbertraums nur in ''abzählbar'' vielen Koordinaten einer [[Orthonormalbasis]] ungleich null und die Koordinatenfamilie ist ''quadratsummabel''.
+
+Hilberträume tragen durch ihr Skalarprodukt eine [[Topologischer Raum|topologische Struktur]], dadurch sind hier im Gegensatz zu allgemeinen Vektorräumen Grenzwertprozesse möglich. Hilberträume sind abgeschlossen unter abzählbaren Summen von orthogonalen Elementen mit einer quadratsummablen Folge von [[Norm (Mathematik)|Normen]] bzw. von parallelen Elementen mit einer absolutsummablen Folge von Normen.
+
+== Definition ==
+Ein ''Hilbertraum'' ist ein reeller oder komplexer Vektorraum <math>H</math> mit einem Skalarprodukt <math>\langle\cdot,\cdot\rangle</math>, der [[Vollständiger Raum|vollständig]] bezüglich der durch das Skalarprodukt [[Skalarproduktnorm|induzierten Norm]] ist, in dem also jede [[Cauchy-Folge]] [[Grenzwert (Folge)|konvergiert]]. Ein Hilbertraum ist also ein vollständiger Prähilbertraum.
+
+Im Folgenden sei das Skalarprodukt [[Lineare Abbildung|linear]] im zweiten und [[Semilineare Abbildung|semilinear]] im ersten Argument, d.&nbsp;h. ist <math>H</math> ein komplexer Vektorraum und sind <math>u,v\in H</math> Vektoren und <math>\lambda</math> eine komplexe Zahl, so ist
+:<math>\langle u,\lambda v \rangle = \lambda\langle u,v \rangle</math> und <math>\langle\lambda  u,v \rangle=\bar{\lambda}\langle u,v \rangle</math>.
+In welchem Argument das Skalarprodukt semilinear ist, ist Konvention und wird auch oft andersherum gehandhabt.
+
+== Bedeutung ==
+Hilberträume spielen in der [[Funktionalanalysis]], speziell in der Lösungstheorie [[Partielle Differentialgleichung|partieller Differentialgleichungen]], und damit auch in der [[Physik]] eine große Rolle. Als Beispiel sei hier die [[Quantenmechanik]] genannt, wo die [[Zustand (Quantenmechanik)|Zustände]] eines quantentheoretischen Systems einen Hilbertraum bilden. Aus Sicht der Funktionalanalysis bilden die Hilberträume eine Klasse von Räumen mit besonders spezieller und einfacher Struktur.
+
+== Beispiele für Hilberträume ==
+* Der [[Koordinatenraum]] <math>\R^n</math> mit dem reellen [[Standardskalarprodukt]] <math>\langle u, v \rangle = u_1 v_1 + \dotsb + u_n v_n</math>.
+
+* Der Koordinatenraum <math>\C^n</math> mit dem komplexen Standardskalarprodukt <math>\langle u, v \rangle = \bar u_1 v_1 + \dotsb + \bar u_n v_n</math>.
+
+* Der [[Matrizenraum]] <math>{\mathbb K}^{m \times n}</math> der reellen oder komplexen [[Matrix (Mathematik)|Matrizen]] mit dem [[Frobenius-Skalarprodukt]].
+
+* Der [[Folgenraum]] <math>\ell^2</math> aller Folgen mit der Eigenschaft, dass die Summe der Quadrate aller Folgenglieder endlich ist. Dieser ist der ursprüngliche Hilbertraum, anhand dessen David Hilbert die Eigenschaften solcher Räume untersuchte. Weiter ist dieses Beispiel wichtig, weil alle [[Separabler Raum|separablen]] [[Dimension (Mathematik)|unendlichdimensionalen]] Hilberträume [[isometrisch isomorph]] zu <math>\ell^2</math> sind.
+
+* Der Raum der [[Quadratintegrierbar|quadratintegrierbaren Funktionen]] <math>L^2</math> mit dem Skalarprodukt <math>\textstyle \langle f,g \rangle_{L^2} = \int \overline{f(x)}\, g(x) \,{\rm d}x</math>. Eine vollständige Definition, die insbesondere die Vollständigkeit näher beleuchtet, findet sich im Artikel über [[Lp-Raum|L<sup>p</sup>-Räume]].
+
+* Der Raum <math>\mathrm{AP}^2</math> der fast-periodischen Funktionen, welcher folgendermaßen definiert wird: Zu <math>\lambda\in\R</math> betrachte man die Funktionen <math>f_\lambda\colon\R\to\C</math> mit <math>f_\lambda \left(t\right) = e^{i\lambda t}</math>. Durch das Skalarprodukt <math>\textstyle \langle f,g \rangle = \lim_{T\to +\infty}\tfrac{1}{4T} \int_{-T}^T \overline{f(t)}\,g(t)\,{\rm d}t</math> wird der Raum <math>\operatorname{lin}\left\{f_\lambda:\lambda\in\R \right\}</math> (der von den Funktionen <math>f_\lambda</math> aufgespannte Unterraum des Raums aller Funktionen) zu einem Prähilbertraum. Die [[Vervollständigung (metrischer Raum)|Vervollständigung]] <math>\mathrm{AP}^2</math> dieses Raums ist also ein Hilbertraum. Im Gegensatz zu den obigen Beispielen ist dieser Raum nicht separabel.
+
+* Der [[Sobolev-Raum]] <math>H^p</math> für alle <math>p \geq 0</math> und die entsprechenden Unterräume. Diese bilden eine Grundlage der Lösungstheorie [[Partielle Differentialgleichung|partieller Differentialgleichungen]].
+
+* Der Raum <math>HS</math> der [[Hilbert-Schmidt-Operator|Hilbert-Schmidt-Operatoren]].
+
+* Für <math>p = 2</math> sind der [[Hardy-Raum]] <math>H^2(\mathbb{D})</math> und der [[Reeller Hardy-Raum|reelle Hardy-Raum]] <math>\mathcal{H}^2(\R^n)</math> Hilberträume.
+
+== Orthogonalität und Orthogonalsysteme ==
+Zwei Elemente des Hilbertraumes heißen ''orthogonal'' zueinander, wenn ihr Skalarprodukt 0 ergibt. Eine Familie von paarweise orthogonalen Vektoren heißt Orthogonalsystem. Unter den Orthogonalsystemen spielen die [[Orthogonalbasis|Orthogonalbasen]] eine besondere Rolle: das sind Orthogonalsysteme, die nicht mehr durch Hinzufügen eines weiteren Vektors vergrößert werden können, also bezüglich Inklusion maximal sind. Äquivalent dazu ist, dass die [[lineare Hülle]] im Hilbertraum dicht ist. Außer im Falle von endlichdimensionalen Räumen bilden Orthogonalbasen ''keine Basis'' im üblichen Sinn der linearen Algebra ([[Hamelbasis]]). Sind diese Basisvektoren darüber hinaus so normiert, dass das Skalarprodukt eines Vektors mit sich selbst 1 ergibt, so spricht man von einem Orthonormalsystem bzw. einer Orthonormalbasis.
+Die Vektoren
+<math> v_i </math> bilden also genau dann ein [[Orthonormalsystem]], wenn <math> \langle v_i , v_j \rangle = \delta_{ij} </math> für alle <math>i, j</math>. Dabei ist <math> \delta_{ij} </math> das [[Kronecker-Delta]].
+
+Mittels des [[Lemma von Zorn|Lemmas von Zorn]] lässt sich zeigen, dass jeder Hilbertraum eine Orthonormalbasis besitzt (es kann sogar jedes Orthonormalsystem zu einer Orthonormalbasis ergänzt werden).
+
+== Unterräume ==
+Ein ''Unterhilbertraum'' oder ''Teilhilbertraum'' eines Hilbertraums ist eine [[Teilmenge]], die mit der [[Skalarmultiplikation]], Addition und Skalarprodukt eingeschränkt auf diese Teilmenge wiederum einen Hilbertraum bildet. Konkret heißt das, dass die Teilmenge die Null enthält und abgeschlossen unter Skalarmultiplikation und Addition ist, das heißt ein [[Untervektorraum]] ist, und bezüglich des Skalarprodukts immer noch vollständig ist. Dies ist äquivalent dazu, dass die Teilmenge im topologischen Sinne [[Abgeschlossene Menge|abgeschlossen]] ist. Daher bezeichnet man Unterhilberträume auch als ''abgeschlossene Unterräume'' bzw. ''abgeschlossene Teilräume'' und bezeichnet im Gegensatz dazu beliebige Untervektorräume einfach nur als ''Unterräume'' bzw. ''Teilräume''. Ein Solcher ist im Allgemeinen nur ein Prähilbertraum. Jeder Prähilbertraum ist in einem Hilbertraum als [[Dichte Teilmenge|dichter]] Untervektorraum enthalten, nämlich in seiner [[Vervollständigung (metrischer Raum)|Vervollständigung]]. Auch ist es möglich einen [[Quotientenvektorraum|Quotientenraum]] bezüglich eines Unterhilbertraums zu bilden, der wiederum ein Hilbertraum ist.
+
+Dies alles gilt im Wesentlichen analog für beliebige [[Banachraum|Banachräume]], wobei deren Untervektorräume dann nicht unbedingt Prähilberträume, wohl aber [[Normierter Raum|normierte Räume]] sind. Eine Besonderheit dagegen ist die Gültigkeit des [[Projektionssatz]]es: Für jeden Unterhilbertraum und jedes beliebige Element des Hilbertraums gibt es ein Element des Unterhilbertraums mit minimalem Abstand. Dies gilt für Banachräume dagegen schon im Endlichdimensionalen im Allgemeinen nicht. Dies erlaubt eine kanonische Identifikation des Quotientenraums bezüglich eines Unterhilbertraums mit einem Unterhilbertraum, das [[Orthogonales Komplement|orthogonale Komplement]], und das Konzept der [[Orthogonalprojektion]]. Das orthogonale Komplement eines Unterhilbertraums ist ein [[Komplementärraum|komplementärer]] Unterhilbertraum, für Banachräume dagegen existiert zu einem Unterbanachraum im Allgemeinen kein komplementärer Unterbanachraum.
+
+== Konjugierter Hilbertraum ==
+Im Falle eines komplexen Hilbertraums besteht eine gewisse Asymmetrie zwischen den beiden Komponenten des Skalarproduktes; das Skalarprodukt ist linear in der zweiten Komponente und [[konjugiert linear]] in der ersten. Man kann daher zu einem komplexen Hilbertraum <math>H</math> wie folgt einen weiteren Hilbertraum <math>\overline{H}</math> definieren. Als Menge ist <math>\overline{H} = H</math>, auch die Addition auf <math>\overline{H}</math> wird von <math>H</math> übernommen. Die skalare Multiplikation und das Skalarprodukt für <math>\overline{H}</math> werden wie folgt erklärt:
+:skalare Multiplikation: <math>\lambda \cdot_{\overline{H}}u := \overline{\lambda}u</math>
+:Skalarprodukt: <math>\langle u,v \rangle_{\overline{H}}:= \overline {\langle u, v\rangle} = \langle v,u \rangle</math>.
+Man prüft nach, dass <math>\overline{H}</math> mit diesen Definitionen wieder ein Hilbertraum ist, man nennt ihn den ''konjugierten Hilbertraum''. Der zu <math>\overline{H}</math> konjugierte Hilbertraum ist offenbar wieder <math>H</math>.
+
+== Operatoren zwischen Hilberträumen ==
+{{Hauptartikel|Linearer Operator}}
+Reichhaltiger Untersuchungsgegenstand in der Funktionalanalysis sind auch gewisse strukturerhaltende Abbildungen zwischen Hilberträumen. Hauptsächlich betrachtet man dabei Abbildungen, die die Vektorraumstruktur erhalten, das heißt [[lineare Abbildung]]en, im Folgenden ''lineare Operatoren'' genannt.
+
+Eine bedeutende Klasse von linearen Operatoren zwischen Hilberträumen ist die der ''[[stetig]]en Operatoren'', die zusätzlich die topologische Struktur, und damit etwa Grenzwerte, erhalten. Weitere wichtige Klassen linearer Operatoren ergeben sich dadurch, dass man von ihnen bestimmte Beschränktheitseigenschaften fordert. Die Stetigkeit ist, wie allgemein bei normierten Räumen, äquivalent zur Beschränktheit des Operators. Eine stärkere Einschränkung ist die der [[Kompakter Operator|Kompaktheit]]. Die [[Schattenklasse]]n sind echte Teilklassen der Klasse der kompakten Operatoren. Auf den jeweiligen Klassen von Operatoren werden verschiedene Normen und [[Operatortopologie]]n definiert.
+
+[[Unitärer Operator|Unitäre Operatoren]] liefern einen natürlichen [[Isomorph]]ismenbegriff für Hilberträume, sie sind gerade die Isomorphismen in der [[Kategorie (Mathematik)|Kategorie]] der Hilberträume mit den linearen [[Kontraktion (Mathematik)|Kontraktionen]] als [[Morphismus|Morphismen]]. Konkret: die linearen, surjektiven Isometrien. Sie erhalten alle Längen und Winkel. Aus dem Satz von Fréchet-Riesz folgt auch, dass der [[Adjungierter Operator|adjungierte Operator]] zu einem linearen Operator von <math>X</math> nach <math>Y</math> als linearer Operator von <math>Y</math> nach <math>X</math> verstanden werden kann. Dies erlaubt es, dass ein Operator mit seinem adjungierten Operator [[Kommutator (Mathematik)|kommutiert]], solche Operatoren bilden die Klasse der ''[[Normaler Operator|normalen Operatoren]]''. Bei Operatoren innerhalb eines Hilbertraums ergibt sich die Möglichkeit, dass der adjungierte Operator wiederum der Operator selbst ist, man spricht dann von einem ''[[Selbstadjungierter Operator|selbstadjungierten Operator]]''.
+
+Viele der oben aufgeführten Klassen von Operatoren bilden eingeschränkt auf Operatoren auf einem einzigen Hilbertraum [[Operatoralgebra|Operatoralgebren]]. Mit der Adjungierung als [[Involution (Mathematik)|Involution]], unter der alle oben aufgeführten Klassen abgeschlossen sind, und einer passenden Norm ergeben sich sogar [[Involutive Banachalgebra|involutive Banachalgebren]]. Die stetigen linearen Operatoren auf einem Hilbertraum mit der Adjungierung und der [[Operatornorm]] bilden eine [[C*-Algebra]].
+
+== Klassifikation ==
+{{Hauptartikel|Satz von Fischer-Riesz}}
+Unter Verwendung von Orthonormalbasen lassen sich die Hilberträume vollständig klassifizieren. Jeder Hilbertraum besitzt eine Orthonormalbasis und je zwei Orthonormalbasen eines Hilbertraums sind [[gleichmächtig]]. Die [[Kardinalität (Mathematik)|Kardinalität]] einer jeden Orthonormalbasis ist also eine wohldefinierte Eigenschaft eines Hilbertraums, welche ''[[Hilbertraumdimension]]'' oder kurz ''Dimension'' genannt wird. Je zwei Hilberträume mit derselben Dimension sind [[isomorph]]: Man erhält einen Isomorphismus, indem man eine Bijektion zwischen einer Orthonormalbasis des einen und einer Orthonormalbasis des anderen eindeutig zu einem stetigen linearen Operator zwischen den Räumen fortsetzt. Jeder stetige lineare Operator zwischen zwei Hilberträumen ist eindeutig durch seine Werte auf einer Orthonormalbasis des Raumes festgelegt, auf dem er definiert ist. Tatsächlich gibt es zu jeder [[Kardinalzahl (Mathematik)|Kardinalzahl]] einen Hilbertraum mit dieser Dimension, konstruierbar etwa als Raum [[ℓ2-Raum|<math>\ell^2(I)</math>]] (wobei <math>I</math> eine Menge mit der Dimension als Kardinalität sei, etwa die Kardinalzahl selbst):
+:<math>\ell^2(I):=\left\{u\colon I\to K \mid \sum_{i\in I} \left|u(i)\right|^2 < \infty\right\}</math>,
+wobei <math>K=\R</math> oder <math>K=\C</math> und die Konvergenz der Summe so zu lesen ist, dass nur [[Abzählbare Menge|abzählbar]] viele Summanden ungleich <math>0</math> sind (vgl. [[unbedingte Konvergenz]]). Dieser Raum wird versehen mit dem Skalarprodukt
+:<math>\langle u, v\rangle:=\sum_{i\in I} \overline{u(i)} v(i)</math>,
+welches wohldefiniert ist. Die Vektoren <math>u_i</math> mit <math>u_i(j)=\delta_{ij}</math> bilden dann eine Orthonormalbasis des Raumes <math>\ell^2(I)</math>. Die Isomorphie eines jeden Hilbertraums mit einem solchen Raum <math>\ell^2(I)</math> für passendes <math>I</math> ist als ''Satz von Fischer-Riesz'' bekannt.
+
+== Dualraum ==
+Der [[Topologischer Dualraum|topologische Dualraum]] <math>H^\prime</math> der stetigen, linearen [[Funktional]]e auf einem Hilbertraum <math>H</math> ist wie bei jedem Banachraum selbst wieder ein Banachraum. Eine Besonderheit bei Hilberträumen ist der [[Satz von Fréchet-Riesz]]: Jeder reelle Hilbertraum <math>H</math> ist mittels des [[Isometrie|isometrischen]] [[Isomorphismus|Vektorraumisomorphismus]] <math>H \rightarrow H^\prime,\, v \mapsto \langle v,\cdot\rangle</math> isomorph zu seinem Dualraum. Die Norm auf dem Dualraum ist daher ebenfalls von einem Skalarprodukt induziert, er ist somit ebenfalls ein Hilbertraum. Im Falle eines komplexen Hilbertraums gilt der Satz analog, allerdings ist jene Abbildung nur [[semilinear]], das heißt ein [[antiunitärer Operator]]. In beiden Fällen ist der Hilbertraum isomorph zu seinem Dualraum (ein antiunitärer Operator <math>H\to H^\prime</math> lässt sich nämlich in einen unitären Operator <math>H\to H^\prime</math> und einen antiunitären Operator <math>H^\prime\to H^\prime</math> zerlegen), und somit erst recht zu seinem [[Bidualraum]], jeder Hilbertraum ist also [[Reflexiver Raum|reflexiv]].
+
+== Fourierkoeffizient ==
+Eine Orthonormalbasis ist ein mächtiges Hilfsmittel bei der Untersuchung von Hilberträumen über <math>\mathbb R</math> bzw. <math>\mathbb C</math> und ihren Elementen. Insbesondere bietet eine Orthonormalbasis eine einfache Möglichkeit, die Darstellung eines Vektors durch die Elemente der Orthonormalbasis zu bestimmen. Sei <math> B = (b_1, b_2, \dots) </math> eine Orthonormalbasis und <math> v </math> ein Vektor aus dem Hilbertraum. Da <math> B </math> eine [[Hilbertraumbasis]] des Raumes bildet, gibt es Koeffizienten <math> \alpha_k\in \mathbb R</math> bzw. <math>\mathbb C</math>, so dass
+
+:<math>v=\sum_k\alpha_k b_k</math>
+
+ist. Diese Koeffizienten bestimmt man unter Ausnutzung der speziellen Eigenschaften der Orthonormalbasis als
+
+:<math> \langle  b_n, v \rangle = \left\langle b_n,\sum_k \alpha_k b_k\right\rangle = \sum_k \alpha_k \langle b_n, b_k \rangle = \alpha_n</math>,
+
+da das Skalarprodukt von unterschiedlichen Basisvektoren 0 und von gleichen Basisvektoren 1 ist. Der <math>n</math>-te Basiskoeffizient der Darstellung eines Vektors in einer Orthonormalbasis kann also durch Skalarproduktbildung ermittelt werden. Diese Koeffizienten werden auch ''Fourierkoeffizienten'' genannt, da sie eine Verallgemeinerung des Konzeptes der [[Fourieranalyse]] darstellen.
+
+== RKHS ==
+Wenn man einen Hilbertraum mit einem [[Kern (Mathematik)|Kern]] assoziiert, der innerhalb des Raums jede Funktion reproduziert, spricht man von einem ''Reproducing Kernel Hilbert Space'' (RKHS, deutsch: Hilbertraum mit reproduzierendem Kern). Dieser Ansatz wurde 1907 von dem Mathematiker [[Stanisław Zaremba]] erstmals formuliert und begann ein halbes Jahrhundert später in der [[Funktionalanalysis]] eine wichtige Rolle zu spielen. Heute sind Hilberträume mit reproduzierendem Kern ein gängiges Werkzeug in der statistischen Lerntheorie, insbesondere beim [[Maschinelles Lernen|Maschinenlernen]].
+
+== Hilberträume in der Quantenmechanik ==
+Die Axiome der [[Quantenmechanik]] besagen, dass die Menge der möglichen [[Zustand (Quantenmechanik)|Zustände]] eines quantenmechanischen Systems die Struktur eines Hilbertraumes besitzt. Insbesondere heißt das, dass quantenmechanische Zustände eine lineare Struktur besitzen, dass also eine [[Linearkombination]] von Zuständen wieder einen physikalisch möglichen Zustand ergibt. Außerdem ist ein Skalarprodukt <math>\langle\psi|\phi\rangle</math> zwischen zwei Zuständen <math>|\psi\rangle</math> und <math>|\phi\rangle</math> definiert, das nach der [[Bornsche Wahrscheinlichkeitsinterpretation|Bornschen Wahrscheinlichkeitsinterpretation]] angibt, wie wahrscheinlich es ist, ein System das sich im Zustand <math>|\phi\rangle</math> befindet, bei einer [[Quantenmechanische Messung|Messung]] im Zustand <math>|\psi\rangle</math> vorzufinden. Ist in der Physik also die Rede von ''dem'' Hilbertraum, so ist damit der Zustandsraum des gegebenen quantenmechanischen Systems gemeint.
+
+Beispiele sind
+* die möglichen [[Wellenfunktion|Wellenfunktionen]] eines freien Teilchens sind der Hilbertraum <math>L^2</math> aller quadratintegrablen Funktionen <math>\psi \colon \R^3 \rightarrow \C</math> mit dem üblichen <math>L^P</math>-Skalarprodukt <math>\textstyle \langle \psi \,|\, \phi \rangle = \int_{\R^3} \psi^*(\vec{x})\, \phi(\vec{x}) \,{\rm d}\vec{x}</math>.
+* die möglichen [[Spin|Spinzustände]] eines Elektrons spannen den Hilbertraum <math>\C^2</math>mit dem euklidischen Skalarprodukt auf.
+
+==Trivia==
+An mehreren deutschen Universitäten gibt es als „Hilbertraum“ bezeichnete Räumlichkeiten.
+
+== Literatur ==
+* [[Dirk Werner (Mathematiker)|Dirk Werner]]: ''Funktionalanalysis.'' 5., erweiterte Auflage. Springer, Berlin u. a. 2005, ISBN 3-540-43586-7, Kapitel V, VI und VII.
+* [[Richard Kadison|Richard V. Kadison]], [[John R. Ringrose]]: ''Fundamentals of the Theory of Operator Algebras.'' Band 1: ''Elementary Theory.'' Academic Press, New York NY 1983, ISBN 0-12-393301-3 (''Pure and Applied Mathematics'' 100, 1), Kapitel 2: ''Basics of Hilbert Space and Linear Operators''.
+
+== Siehe auch ==
+* [[Besselsche Ungleichung]]
+* [[Cauchy-Schwarzsche Ungleichung]]
+* [[Hilbertraumbasis]]
+* [[Hilbertraum-Tensorprodukt]]
+* [[Parallelogrammgleichung]]
+* [[Parsevalsche Gleichung]]
+* [[Peetre-Ungleichung]]
+
+{{Normdaten|TYP=s|GND=4159850-7|REMARK=Ansetzungsform GND: „Hilbert-Raum“.}}
+
+[[Kategorie:Skalarproduktraum]]
+[[Kategorie:Funktionalanalysis]]
+[[Kategorie:David Hilbert als Namensgeber]]

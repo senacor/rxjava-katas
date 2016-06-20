@@ -1,0 +1,19 @@
+Gemäß [[DIN 1319]] zu den „Grundlagen der [[Messtechnik]]“ ist die '''Messgröße''' diejenige [[physikalische Größe]], der eine [[Messung]] gilt.<ref name="DIN1319-1_Messgröße">Definition des Begriffs "Messgröße", DIN 1319-1, Kapitel 2, Nr. 1.1.</ref> Dabei wird in dieser Norm der Begriff sowohl für „Messgröße im allgemeinen Sinn“ als auch für „spezielle Messgröße“ verwendet.
+* Im allgemeinen Sinn handelt es sich um eine physikalische Größe wie z.&nbsp;B. [[Masse (Physik)|Masse]], [[Elektrische Leistung|Leistung]], [[Temperatur]], die Ziel einer Messung war oder sein wird. Abgrenzung: Da z.&nbsp;B. der [[Intelligenzquotient]] keine physikalische Größe ist, kann er im Sinne dieser Definition keine messbare Größe sein.
+* Als spezielle Größe handelt es sich um eine zu speziellen Sachbezügen gehörende Größe wie z.&nbsp;B. [[Volumen]] eines vorgelegten Körpers, [[Elektrischer Widerstand|Widerstand]] eines vorgelegten Kupferdrahtes bei einer gegebenen Temperatur. Der von einem [[Messgerät]] oder einer [[Messeinrichtung]] gelieferte oder zu liefernde Wert einer speziellen Messgröße nennt man den ''[[Messwert]]''; er wird durch das Produkt aus Zahlenwert und [[Maßeinheit]] ausgedrückt. Abgrenzung: Im Sinne dieser Festlegung sind Werte, die z.&nbsp;B. durch bloße Überlegung oder Vermutung gewonnen wurden, nicht als Messwerte zu bezeichnen.
+
+Die Messgröße muss nicht unmittelbar Gegenstand der Messung sein. Sie kann auch über physikalisch bekannte oder festgelegte mathematische Beziehungen aus Größen bestimmt werden, denen unmittelbare Messungen gelten. Ziel jeder Messung ist es, den '' [[Wahrer Wert|wahren Wert]]'' der Messgröße zu ermitteln. Möglich ist aber bestenfalls, durch ein ''vollständiges [[Messergebnis]]'' einen Schätzwert anzugeben. 
+
+Die Messgröße wird häufig Eigenschaft eines Körpers sein; sie kann auch Eigenschaft eines Vorganges (z.&nbsp;B. einer [[Strahlung]]) oder eines Zustandes (z.&nbsp;B. eines [[Elektrisches Feld|elektrischen Feldes]]) sein.<ref name="DIN1319-1_Messobjekt">Definition des Begriffs "Messobjekt", DIN 1319-1, Kapitel 2, Nr. 1.2.</ref>
+
+Man unterscheidet [[Dimensionslose Größe|''dimensionslose]]'' Messgrößen (z.&nbsp;B. [[Winkel]], [[Brechungsindex]], [[Exzentrizität (Astronomie)|Exzentrizität]] der Bahn eines Satelliten usw.), deren Werte unmittelbar als [[rationale Zahlen]] zu erhalten sind,
+und ''[[Dimension (Physik)#Dimensionen und Maßeinheiten|dimensionsbehaftete]]'' Messgrößen (z.&nbsp;B. [[Zeit|Dauer]], [[Ladung (Physik)|Ladung]], [[Dichte]]), deren Werte jeweils mit Werten derselben Dimension zu vergleichen sind. Diese Vergleichbarkeit wird dadurch ausgedrückt, dass man den Wert einer dimensionsbehafteten Messgröße als Vielfaches der zugehörigen [[Maßeinheit]] angibt. In der Praxis werden auch für dimensionslose Größen der Deutlichkeit wegen oft Einheiten ([[Hilfsmaßeinheit]]en) verwendet. 
+
+Im Bereich der [[Quantenphysik]] sind bestimmte Messgrößen ein und desselben Systems ''komplementär'' zueinander, d. h., die Messung der einen Größe bewirkt, dass der Wert der anderen Größe völlig unbestimmt wird (siehe [[Quantenmechanik]] oder [[Observable]]).
+
+== Quellen ==
+<references />
+
+{{SORTIERUNG:Messgrosse}}
+[[Kategorie:Metrologie]]
+[[Kategorie:Messgröße|!]]

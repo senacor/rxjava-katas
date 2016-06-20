@@ -1,0 +1,7 @@
+#WEITERLEITUNG [[Wahrscheinlichkeitsmaß]]
+[[Kategorie:Wahrscheinlichkeitsverteilung| Wahrscheinlichkeitsverteilung]]
+[[Kategorie:Wahrscheinlichkeitsrechnung]]
+[[Kategorie:Stochastik]]
+
+
+[[it:Variabile casuale#Distribuzione di probabilità]]

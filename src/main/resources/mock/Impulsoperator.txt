@@ -1,0 +1,82 @@
+Der '''Impulsoperator''' <math>\hat{p}</math>  ist in der [[Quantenmechanik]] der [[Operator (Mathematik)|Operator]] zur [[Impuls]]<nowiki/>messung von [[Teilchen]]. In der [[Ortsdarstellung]] ist der Impulsoperator in einer [[Dimension (Mathematik)|Dimension]] gegeben durch:
+
+:<math>\hat{p}_x = -\mathrm i \hbar \frac{\partial}{\partial x}</math> 
+
+Dabei bezeichnet
+* <math>\mathrm i</math> die [[Imaginäre Einheit]]
+* <math>\hbar</math> das reduzierte [[Plancksches Wirkungsquantum|plancksche Wirkungsquantum]] und
+* <math>\frac{\partial}{\partial x}</math> die [[partielle Ableitung]] in Richtung der Ortskoordinate <math>x</math>.
+Mit dem [[Nabla-Operator]] <math>\nabla</math> erhält man in drei Dimensionen den [[Vektor]]:
+
+:<math>\hat{\mathbf{p}} = - \mathrm i \hbar \nabla</math>
+
+Der physikalische [[Quantenmechanischer Zustand|Zustand]] <math>\Psi\,</math> eines Teilchens ist in der Quantenmechanik mathematisch durch einen zugehörigen Vektor eines [[Hilbertraum]]es <math>\mathcal H</math> gegeben. Dieser Zustand wird folglich in der [[Bra-Ket|Bra-Ket-Notation]] durch den Vektor <math>|\Psi \rangle</math> beschrieben. Die [[Observable]]n werden durch [[Selbstadjungierter Operator|selbstadjungierte Operatoren]] auf <math>\mathcal H</math> dargestellt. Speziell ist der Impuls-Operator die Zusammenfassung der drei Observablen <math>\hat{\mathbf{p}} = (\hat{p}_1,\hat{p}_2,\hat{p}_3)</math>, so dass
+
+:<math>E(\hat{p}_j) = \langle \Psi|\hat{p}_j \, |\Psi \rangle \, \quad j = 1, 2, 3</math>
+
+der Mittelwert ([[Erwartungswert]]) der Messergebnisse der ''j''-ten Komponente des Impulses des Teilchens im Zustand <math>\Psi</math> ist.
+
+== Definition und Eigenschaften ==
+* Bei der [[Quantisierung_(Physik) #Quantenmechanik (ab 1925)|kanonischen Quantisierung]] deutet man die [[Phasenraum]]<nowiki/>koordinaten, also den Ort <math>x</math> und den Impuls <math>p</math> des klassischen Systems, als selbstadjungierte Operatoren eines Hilbertraums und fordert für diese [[Ortsoperator|Orts-]] und Impulsoperatoren die [[kanonische Vertauschungsrelation|kanonischen Vertauschungsrelationen]]:
+
+::<math> [\hat{x}_i, \hat{p}_j] = \mathrm{i} \, \hbar \, \delta_{ij} \, \quad
+[\hat{x}_i, \hat{x}_j] = 0 = [\hat{p}_i, \hat{p}_j]\ ,\quad i, j \in \{1, 2, 3\}</math> 
+
+:in Analogie zu den [[Poisson-Klammer]]n der [[Hamiltonsche Mechanik|Hamiltonschen Formulierung]]
+
+:::<math>\{ x_i, p_j \} = \delta_{ij} \, \quad
+\{ x_i, x_j \} = 0 = \{ p_i, p_j \} \, .</math>
+
+:Der Faktor <math>\hbar</math> ist aus [[Dimensionsanalyse|Dimensionsgründen]] erforderlich, denn Ort mal Impuls hat die Dimension eines [[Drehimpuls]]es oder einer [[Wirkung (Physik)|Wirkung]]. Die imaginäre Einheit <math>\rm i</math> muss auftreten, da <math>\hat{x}_i</math> und <math>\hat{p}_j</math> [[selbstadjungiert]] sind und ihr [[Kommutator (Mathematik)|Kommutator]] daher bei [[Adjunktion (Algebra)|Adjunktion]] sein Vorzeichen wechselt. 
+* Aus den kanonischen Vertauschungsrelationen folgt, dass die drei Komponenten des Impulses gemeinsam messbar sind und dass ihr [[Spektrum (Operatortheorie)|Spektrum]] (Bereich der möglichen ''Messwerte'') aus dem gesamten Raum <math>\mathbb{R}^3</math> besteht. Die möglichen Impulse sind also nicht quantisiert, sondern [[Kontinuum (Physik)|kontinuierlich]].
+* Die '''Ortsdarstellung''' ist durch die Spektraldarstellung des Ortsoperators definiert. Der Hilbertraum <math>\mathcal H=L^2(\R^3; \C)</math> ist der Raum der [[quadratintegrierbar]]en, [[komplexe Funktion|komplexen Funktionen]] des [[Ortsraum]]s <math>\R^3;</math> jeder Zustand <math>\Psi</math> ist durch eine Orts[[wellenfunktion]] <math>\psi(\mathbf{x})</math> gegeben. Die Ortsoperatoren <math>\hat{\mathbf{x}} = (\hat{x}_1, \hat{x}_2, \hat{x}_3)</math> sind die Multiplikationsoperatoren mit den Koordinatenfunktionen, d.&nbsp;h. der Ortsoperator <math>\hat{x}_i</math> wirkt auf Ortswellenfunktionen durch die Multiplikation der Wellenfunktion mit der Koordinatenfunktion <math>x_i</math>:
+
+::<math>(\hat{x}_i\, \psi)(\mathbf{x}) = x_i \, \psi(\mathbf{x}) \, .</math>
+
+:Der mathematische ''Satz von Stone und von Neumann'' besagt dann, dass bei geeigneter Wahl von Phasen der Impulsoperator, der in den kanonischen Vertauschungsrelationen auftritt, auf Ortswellenfunktionen als [[Differentialoperator]] wirkt:
+
+::<math>(\hat{p}_j\psi)(x) = -{\rm i} \, \hbar \, \left( \frac{\partial}{\partial x_j}\psi \right)(x) \, .</math>
+
+:Sein Erwartungswert ist:
+
+::<math>E(\hat{p}_j) =  \langle \Psi| \hat{p}_j\, | \Psi \rangle =
+\int \overline{\psi(\mathbf{x})} \, \left( -\mathrm{i} \, \hbar \frac{\partial}{\partial x_j}\psi(\mathbf{x}) \right) \, \mathrm d^3 x \, .</math> 
+* In der '''Impulsdarstellung''' wirkt der Impulsoperator multiplikativ auf quadratintegrierbare Impulswellenfunktionen <math>\tilde{\psi}(\mathbf{p})</math>:
+
+::<math>(\hat{p}_j\,\tilde{\psi})(\mathbf{p})=p_j\,\tilde{\psi}(\mathbf{p})</math>
+
+:und der Ortsoperator wirkt als Differentialoperator:
+
+::<math>(\hat{x}_i\,\tilde{\psi})(\mathbf{p}) = \mathrm{i}\, \hbar\,\left(\frac{\partial}
+{\partial p_i}\tilde{\psi}\right)(\mathbf{p})\,.</math>
+
+* Die Orts- und Impulsoperatoren sind [[Linearkombination]]en von [[Erzeugungs- und Vernichtungsoperator]]en: 
+
+::<math>\hat{x}_i = l_i \frac{a_i + a_i^{\dagger}}{\sqrt{2}} \, \quad \hat{p}_j = \frac{\hbar}{l_j} \frac{a_j - a_j^{\dagger}}{\sqrt{2}\, \mathrm{i}} \, .</math>
+
+:Dabei sind <math>l_1, l_2, l_3</math> frei wählbare Längen (größer Null) und die Erzeugungs- und Vernichtungsoperatoren genügen den kanonischen Vertauschungsrelationen:
+
+::<math>[a_i, a^\dagger_j] = \delta_{ij} \, \quad [a_i, a_j] = 0 = [a_i^\dagger, a_j^\dagger] \, \quad i, j \in\{1, 2, 3\} \, .</math>
+
+== Warum ist der Impulsoperator in Ortsdarstellung ein Differentialoperator? ==
+Nach dem [[Noether-Theorem]] gehört zu jeder kontinuierlichen [[Symmetrie (Physik)|Symmetrie]] der [[Wirkung (Physik)|Wirkung]] eine [[Erhaltungsgröße]] und umgekehrt. Beispielsweise ist der Impuls genau dann erhalten, wenn die Wirkung translationsinvariant ist. In der Hamiltonschen Formulierung erzeugt die Erhaltungsgröße die Symmetrietransformation im Phasenraum durch ihre Poisson-Klammer, der Impuls erzeugt Verschiebungen.
+
+Auf eine Wellenfunktion <math>\psi</math> angewendet, ergibt jede Verschiebung um <math>a</math> die verschobene Funktion <math>(T_a\,\psi)</math>, die an jeder Stelle <math>x</math> den Wert hat, den <math>\psi</math> am Urbild <math>x-a</math> hatte,
+: <math>(T_a\,\psi)(x)=\psi(x-a)=\sum_{n=0}^\infty{\frac{1}{n!}\left(-a\frac{\partial}{\partial x} \right)^n}\psi=\exp\left(-a\frac{\partial}{\partial x}\right)\psi</math> (also: über [[Taylorreihe]] zu einer formalen Exponentialfunktion).
+Der infinitesimale [[Stark_stetige_Halbgruppe#Infinitesimaler_Erzeuger|Erzeuger]] dieser einparametrigen Schar von Verschiebungen definiert also bis auf einen Faktor <math>-\mathrm{i}/\hbar</math> den Impuls, das heißt, der Impuls <math>\hat{p}_x</math> erfüllt definitionsgemäß 
+: <math>T_a\,\psi=\exp\left(-a\frac{\partial}{\partial x}\right)\psi=\exp{\left(-{\rm i}\,a\frac{\hat{p}_x}{\hbar}\right)}\,\psi\,.</math>
+Dabei tritt der Faktor <math>\hbar</math> aus Dimensionsgründen auf, denn das Produkt von Impuls und Ort hat die Dimension eines Drehimpulses oder einer Wirkung. Die [[imaginäre Einheit]] <math>\mathrm i</math> ist erforderlich, da <math>T_a</math> ein [[unitärer Operator]] ist und der Impuls [[Selbstadjungierter Operator|selbstadjungiert]] sein soll. Leitet man die Gleichung 
+:<math>\left(\exp{\left(-{\rm i}\,\frac{\hat{p}_j\, a^j}{\hbar}\right)}\, \psi\right)(x) = \psi(x-a)</math> 
+nach <math>a^j</math> bei <math>a=0</math> ab, so ergibt sich der Impulsoperator als Ableitung nach dem Ort,
+: <math>(\hat{p}_j\,\psi)(x) = \left.\mathrm{i}\, \hbar\,\frac{\partial}{\partial a^j}\right|_{a=0}
+\psi(x-a)= -\mathrm{i}\,\hbar\frac{\partial}{\partial x^j} \psi(x)\,.</math>
+
+Dass der Impulsoperator im Ortsraum diese Form annimmt, lässt sich auch ohne die Kenntnis des zugehörigen unitären Operators <math>T_a</math> wie folgt aus dem Noether-Theorem ablesen:
+Man rekonstruiert zunächst aus der Schrödingergleichung die zugehörige [[Lagrange-Dichte]] und bestimmt dann explizit den bei einer infinitesimalen Verschiebung der Wellenfunktion erhaltenen Erwartungswert.
+
+== Literatur ==
+* [[Torsten Fließbach]]: ''Quantenmechanik: Lehrbuch zur Theoretischen Physik III.'' Spektrum Akademischer Verlag, 2008, ISBN 978-3-8274-2020-6.
+* [[Richard Feynman]]: ''Feynman Vorlesungen über Physik, Bd. 3, Quantenmechanik.'' Oldenbourg, 2007, ISBN 978-3-486-58109-6.
+
+[[Kategorie:Quantenmechanik]]
+[[Kategorie:Quantenchemie]]

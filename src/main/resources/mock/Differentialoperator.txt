@@ -1,0 +1,191 @@
+Ein '''Differentialoperator''' ist in der [[Mathematik]] eine [[Funktion (Mathematik)|Funktion]], die einer Funktion eine Funktion zuordnet und die [[Differentialrechnung|Ableitung]] nach einer oder mehreren Variablen enthält. Insbesondere verschlechtern Differentialoperatoren die [[Regularitätsklasse|Regularität]] der Funktion, auf die sie angewendet werden.
+
+Der wohl wichtigste Differentialoperator ist die gewöhnliche Ableitung, d.&nbsp;h. die Abbildung <math>\textstyle \frac{\mathrm d}{\mathrm dx}</math> (gesprochen: „d nach dx“), die einer differenzierbaren Funktion <math>f</math> ihre Ableitung <math>f^\prime</math> zuordnet:
+
+: <math>\frac{\mathrm d}{\mathrm d x}\colon f \mapsto \frac{\mathrm d}{\mathrm d x}f= \frac{\mathrm d f}{\mathrm d x} = f'</math>
+
+Differentialoperatoren lassen sich miteinander verknüpfen. Durch Weglassen der Funktion, auf die sie wirken, erhält man reine Operatorgleichungen.
+
+Es gibt unterschiedliche Definitionen eines Differentialoperators, die alle Spezialfälle oder Verallgemeinerungen voneinander sind. Da die allgemeinste Formulierung entsprechend schwer verständlich ist, werden hier unterschiedliche Definitionen mit unterschiedlicher Allgemeingültigkeit gegeben. So bestehen gewöhnliche Differentialoperatoren aus der Verkettung von ganzen Ableitungen, während in partiellen Differentialoperatoren auch partielle Ableitungen auftauchen.
+
+Soweit nicht anders angegeben, sei in diesem Artikel <math>M \subset \R^n</math> eine [[Beschränkte Menge|beschränkte]] und [[offene Menge]]. Außerdem wird mit <math>C^k(M)</math> die Menge der <math>k</math>-mal stetig differenzierbaren Funktionen <math>f \colon M \to \R</math> und mit <math>C(M) = C^0(M)</math> die Menge der stetigen Funktionen bezeichnet. Die Beschränkung, dass <math>f</math> zwischen reellen Teilmengen abbildet, ist nicht notwendig, wird aber in diesem Artikel meist vorausgesetzt. Sind andere [[Definitionsbereich|Definitions-]] und Bildbereiche notwendig oder sinnvoll, so wird dies im Folgenden explizit angegeben.
+
+Dieser Artikel beschränkt sich außerdem weitestgehend auf Differentialoperatoren, die auf den gerade erwähnten Räumen der stetig differenzierbaren Funktionen operieren. Es gibt Abschwächungen der Definitionen. So führte beispielsweise das Studium der Differentialoperatoren zur Definition der [[Schwache Ableitung|schwachen Ableitung]] und damit zu den [[Sobolev-Raum|Sobolev-Räumen]], die eine Verallgemeinerung der Räume der stetig-differenzierbaren Funktionen sind. Dies führte weiter zu dem Gedanken, lineare Differentialoperatoren mit Hilfe der [[Funktionalanalysis]] in der [[Linearer Operator|Operatortheorie]] zu untersuchen. Auf diese Aspekte wird jedoch vorerst in diesem Artikel nicht weiter eingegangen. Eine Verallgemeinerung eines Differentialoperators ist der [[Pseudo-Differentialoperator]].
+
+== Linearer Differentialoperator erster Ordnung ==
+=== Definition ===
+Sei <math>M \subset \R^n</math> eine [[Offene Menge|offene Teilmenge]]. Ein linearer Differentialoperator erster Ordnung ist eine Abbildung
+:<math>D\colon C^1(M) \to C(M),</math>
+die durch
+:<math>u \mapsto \sum_{i = 1}^n a_i(x) \partial_{x_i} u</math>
+dargestellt werden kann, wobei <math>a_i</math> eine stetige Funktion ist.
+
+=== Beispiele ===
+* Das wichtigste Beispiel eines Differentialoperators erster Ordnung ist die gewöhnliche Ableitung
+::<math>\frac{\mathrm{d}}{\mathrm{d} x}\colon f \mapsto f'.</math>
+
+* Die [[partielle Ableitung]]
+::<math>\frac{\partial}{\partial x_i}\colon f \mapsto \frac{\partial f}{\partial x_i}</math>
+:in <math>x_i</math>-Richtung ist ein partieller Differentialoperator erster Ordnung.
+
+* Andere Differentialoperatoren dieser Gattung erhält man durch Multiplikation mit einer stetigen Funktion. Sei dazu <math>a \in C(M)</math> eben so eine stetige Funktion, dann ist der durch
+::<math>D = a \frac{\mathrm{d}}{\mathrm{d} x}\colon f \mapsto a f'
+\quad \text{d. h.} \quad Df(x) = a(x)f'(x)</math>
+:definierte Operator <math>D</math> ebenfalls wieder ein Differentialoperator erster Ordnung.
+
+* Drei weitere Beispiele sind die Operatoren [[Gradient (Mathematik)|Gradient]] (grad), [[Divergenz eines Vektorfeldes|Divergenz]] (div) und [[Rotation eines Vektorfeldes|Rotation]] (rot) aus der [[Vektoranalysis]]. Sie werden durch das [[Nabla-Operator|Nabla-Symbol]] <math>\nabla</math> bezeichnet, das im dreidimensionalen Fall in [[Kartesisches Koordinatensystem|kartesischen Koordinaten]] die Gestalt
+::<math>\nabla =
+\begin{pmatrix}\frac{\partial}{\partial x_1} \\ \frac{\partial}{\partial x_2} \\ \frac{\partial}{\partial x_3}\end{pmatrix}.</math>
+: hat.
+
+* Die [[Wirtinger-Ableitung]]en
+::<math>\frac{\partial}{\partial z} = \frac{1}{2} \left(\frac{\partial}{\partial x} - i\frac{\partial}{\partial y}\right)</math>
+:und
+::<math>\frac{\partial}{\partial \overline{z}} = \frac{1}{2} \left(\frac{\partial}{\partial x} + i\frac{\partial}{\partial y}\right)</math>
+:sind zwei weitere Beispiele für Differentialoperatoren. Das besondere in diesen Operatoren ist, dass man mit ihnen Funktionen <math>M \subset \C \to \C</math> auf [[holomorphe Funktion|Holomorphie]] untersucht, gilt nämlich <math>\textstyle \frac{\partial f}{\partial \overline{z}} = 0</math> so ist die Funktion <math>f</math> holomorph.
+
+== Gewöhnlicher Differentialoperator ==
+Gewöhnliche Differentialoperatoren treten insbesondere im Zusammenhang mit [[gewöhnliche Differentialgleichung|gewöhnlichen Differentialgleichungen]] auf.
+
+=== Definition ===
+Analog zur Definition des Differentialoperators erster Ordnung ist ein gewöhnlicher Differentialoperator der Ordnung <math>k</math> eine Abbildung
+:<math>D \colon C^k(M) \to C(M),</math>
+die durch
+:<math>D(f)(x) := \sum_{i=0}^k a_i(x) \left(\frac{\mathrm{d}^i f}{\mathrm{d} x^i}(x)\right)^{\beta_i}</math>
+gegeben ist. Hier ist <math>a_i</math> für alle <math>i</math> wieder eine stetige Funktion. Im Fall <math>\beta_i = 1</math> für alle <math>i</math> nennt man diesen Operator einen gewöhnlichen, linearen Differentialoperator.
+
+=== Beispiele ===
+* Die Ableitung <math>k</math>-ter Ordnung
+::<math>\frac{\mathrm{d}^k}{\mathrm{d} x^k}\colon f \mapsto f^{(k)}</math>
+:ist der einfachste Fall eines gewöhnlichen Differentialoperators. Setzt man <math>a_k = 1</math>, <math>a_i=0</math> für <math>i < k</math> und <math>\beta_k = 1</math>, so ergibt sich dies aus der Definition.
+
+== Linearer partieller Differentialoperator ==
+=== Definition ===
+Sei <math>M \subset \R^n</math> eine offene Teilmenge. Ein linearer partieller Differentialoperator der Ordnung <math>k</math> ist ein [[linearer Operator]]
+:<math>D \colon C^k(M) \to C(M),</math>
+der durch
+:<math>D(f)(x) := \sum_{|\alpha| \leq k} a_{\alpha}(x) \frac{\partial^\alpha f}{\partial x^\alpha}(x)</math>
+dargestellt werden kann. Wobei <math>a_{\alpha}</math> für alle [[Multiindex|Multiindizes]] <math>\alpha \in \N^n</math> eine stetige Funktion ist.
+
+=== Beispiele ===
+* Der [[Laplace-Operator]] in kartesischen Koordinaten lautet
+::<math>\Delta= \nabla^2 = \sum_{k=1}^n \frac{\partial^2}{\partial x_k^2}.</math>
+:Dies ist ein elementares Beispiel eines partiellen Differentialoperators. Außerdem ist diese das wichtigste Beispiel eines [[elliptischer Differentialoperator|elliptischen Differentialoperators]]. Elliptische Differentialoperatoren sind eine besondere Klasse partieller Differentialoperatoren.
+
+* Der der Wärmeleitungs- oder [[Diffusionsgleichung]] entsprechende Operator ist
+::<math>\Delta - \frac{\partial}{\partial t}.</math>
+:Dies ist ein Beispiel eines parabolischen Differentialoperators.
+
+* Der [[d’Alembertoperator]]
+::<math>\Box\varphi(x,y,z, t)=\frac{1}{c^2}\frac{\partial^2\varphi}{\partial t^2}(x,y,z,t) - \Delta_{(x,y,z)}\varphi(x,y,z,t),</math>
+:wobei <math>c</math> einer Geschwindigkeit entspricht, ist ein weiterer wichtiger partieller Differentialoperator. Dieser ist ein [[Hyperbolischer Differentialoperator|hyperbolischer Operator]] und wird bei der [[Wellengleichung]] verwendet.
+
+== Partieller Differentialoperator ==
+=== Definition ===
+Ein (nicht linearer) partieller Differentialoperator der Ordnung <math>k</math> ist ebenfalls wieder eine Abbildung
+:<math>D \colon C^k(M) \to C(M).</math>
+Diese ist gegeben durch
+:<math>D(f)(x) := \sum_{i} \sum_{|\alpha| \leq k} a_{\alpha i}(x) \left(\frac{\partial^\alpha f}{\partial x^\alpha}(x)\right)^{i}.</math>
+Hier sind <math>a_{\alpha i}</math> für alle <math>\alpha \in \N^n</math> und <math>i</math> stetige Funktionen.
+
+== {{Anker|Linearer Differentialoperator}} Lineare Differentialoperatoren ==
+In den obigen Definitionen wurde schon kurz erwähnt, wann ein gewöhnlicher beziehungsweise ein partieller Differentialoperator linear genannt wird. Der Vollständigkeit halber wird nun die abstrakte Definition eines linearen Differentialoperators genannt. Diese ist analog zur Definition der [[lineare Abbildung|linearen Abbildung]]. Alle oben angeführten Beispiele, soweit nichts anderes dabei steht, sind lineare Differentialoperatoren.
+
+=== Definition ===
+Sei <math>D</math> ein (beliebiger) Differentialoperator. Dieser heißt linear, falls
+:<math>{D}\,(f+g) = ({D}f) + ({D}g)</math>
+:<math>{D}\,(cf) = c\,({D}f)</math>
+für alle Funktionen <math>f, g \in C^1(M)</math> und alle Konstanten <math>c</math> gilt.
+
+Prominentestes Beispiel hierfür ist der Differentialoperator
+::<math>\frac{\mathrm{d}}{\mathrm{d} x}\colon f \mapsto f',</math>
+der einer Funktion f ihre Ableitung zuordnet.
+
+Der Lösungsraum einer linearen Differentialgleichung bildet einen [[Vektorraum]]. Nach [[Fouriertransformation]] lassen sie sich häufig auf algebraische Gleichungen und Konzepte der linearen Algebra zurückführen. Nichtlineare Differentialoperatoren sind wesentlich schwieriger zu behandeln.
+
+=== Algebra der Differentialoperatoren ===
+Mit <math>\operatorname{Diff}^k(C^k(M))</math> wird die Menge aller linearen Differentialoperatoren der Ordnung k bezeichnet, die auf <math>C^k(M)</math> operieren. Die Menge
+:<math>\operatorname{Diff}(C^k(M)) := \bigoplus_{k \geq 0} \operatorname{Diff}^k(C^k(M))</math>
+wird zusammen mit der Hintereinanderschaltung von linearen Differentialoperatoren als Multiplikation
+:<math>(\mathrm{D}_1\circ \mathrm{D}_2)(f) = \mathrm{D}_1(\mathrm{D}_2(f))</math>
+zu einer <math>\Z_+</math>-[[Graduierung (Algebra)|graduierten Algebra]]. Die Multiplikation ist aber im Allgemeinen nicht kommutativ. Eine Ausnahme sind beispielsweise Differentialoperatoren mit konstanten Koeffizienten, bei denen die Kommutativität aus der [[Satz von Schwarz|Vertauschbarkeit der partiellen Ableitungen]] folgt.
+
+Man kann auch formal Potenzreihen mit den Differentialoperatoren <math>D</math> bilden und darüber z.&nbsp;B. Exponentialfunktionen <math>\exp (D)</math>. Für das Rechnen mit solchen Exponentialausdrücken von linearen Operatoren gelten die [[Baker-Campbell-Hausdorff-Formel]]n.
+
+== {{Anker|Geometrischer Differentialoperator}} Differentialoperator auf einer Mannigfaltigkeit ==
+Da man auf Mannigfaltigkeiten nur die lokalen Koordinatensysteme in Form von Karten und keine global gültigen Koordinatensysteme zur Verfügung hat, muss man auf diesen Differentialoperatoren koordinatenunabhängig definieren. Solche Differentialoperatoren auf Mannigfaltigkeiten werden auch geometrische Differentialoperatoren genannt.
+
+=== Koordinaten-invariante Definition ===
+Sei <math>M</math> eine [[glatte Mannigfaltigkeit]] und seien <math>E, F \to M</math> [[Vektorbündel]]. Ein Differentialoperator der Ordnung <math>k</math> zwischen den [[Schnitt (Faserbündel)|Schnitten]] von <math>E</math> und <math>F</math> ist eine [[lineare Abbildung]]
+:<math>D \colon \Gamma^\infty(M,E) \to \Gamma^{\infty}(M,F)</math>
+mit den folgenden Eigenschaften:
+* Der Operator <math>D</math> ist lokal, das heißt, es gilt
+::<math>\operatorname{supp}(Ds) \subseteq \operatorname{supp}(s).</math>
+* Für <math>x \in M</math> existieren eine offene Umgebung <math>U \subseteq M</math> von <math>x</math>, [[Atlas (Mathematik)|Bündelkarten]] <math>\phi \colon E|_U \to U \times \C^r</math> und <math>\psi \colon F|_U \to U \times \C^s</math> sowie ein Differentialoperator <math>\tilde{D} \in \operatorname{Diff}^k(U,\C^r,\C^s),</math> sodass das Diagramm<br 
+\><math style="margin-left:2em">\begin{array}{ccc}
+\Gamma^\infty_0(E\vert_U) & \xrightarrow D & \Gamma^\infty_0(F\vert_U) \\
+\big\downarrow \phi^* & & \big\downarrow \psi^*\\
+C^\infty(U, \C^r) & \xrightarrow{\tilde D} & C^\infty(U, \C^s)
+\end{array}</math><br 
+\>[[Kommutatives Diagramm|kommutiert]]. Mit <math>\phi^*</math> ist der [[Rücktransport|Pullback]] eines glatten Vektorfeldes in den Raum <math>C^\infty(U, \C^r)</math> bezeichnet.
+
+=== Beispiele ===
+Im Folgenden werden Beispiele von geometrischen Differentialoperatoren aufgezeigt.
+
+* Die Menge der [[Differentialform|Differentialformen]] bildet ein glattes Vektorbündel über einer glatten Mannigfaltigkeit. Die [[Cartan-Ableitung]] und ihr [[adjungierter Operator]] sind Differentialoperatoren auf diesem Vektorbündel.
+* Der [[Laplace-Beltrami-Operator]] sowie andere [[Verallgemeinerter Laplace-Operator|verallgemeinerte Laplace-Operatoren]] sind Differentialoperatoren.
+* Das [[Tensorbündel]] ist ein Vektorbündel. Für jedes fest gewählte Vektorfeld <math>X</math> ist die Abbildung <math>\nabla_X \colon \Gamma^\infty(T^k_lM) \rightarrow \Gamma^\infty(T^k_lM)</math> definiert durch <math>T \mapsto \nabla_X T</math>, wobei <math>\nabla</math> die [[kovariante Ableitung]] ist, ein Differentialoperator.
+* Die [[Lie-Ableitung]] ist ein Differentialoperator auf den Differentialformen.
+
+== Symbol eines Differentialoperators ==
+Die in den Beispielen angegebenen Differentialoperatoren 2.&nbsp;Ordnung entsprechen, wenn man die partiellen Ableitungen <math>\partial_i</math> formal durch Variablen <math>y_i</math> ersetzt und nur die Terme höchster –&nbsp;also zweiter&nbsp;– Ordnung betrachtet, einer [[quadratische Form|quadratischen Form]] in den <math>y_i</math>. Im elliptischen Fall haben alle Koeffizienten der Form ein [[Vorzeichen (Zahl)|Vorzeichen]], im hyperbolischen Fall wechselt das Vorzeichen, im parabolischen Fall fehlt für eines der <math>y_i</math> der Term höchster Ordnung. Die entsprechenden [[Partielle Differentialgleichung|partiellen Differentialgleichungen]] zeigen jeweils sehr unterschiedliches Verhalten. Die Namen kommen von den Analoga zu [[Kegelschnitt]]gleichungen.
+
+Das lässt sich durch den Begriff des Hauptsymbols des Differentialoperators auch auf andere Fälle erweitern. Man behält nur Terme der höchsten Ordnung bei, ersetzt Ableitungen durch neue Variable <math>y_i</math> und erhält ein Polynom in diesen neuen Variablen, mit dem man den Differentialoperator charakterisieren kann. Beispielsweise ist er vom elliptischen Typ, wenn gilt: das Hauptsymbol ist ungleich Null, wenn mindestens ein <math>y_i</math> ungleich Null ist. Es gibt aber schon bei Differentialoperatoren 2.&nbsp;Ordnung „gemischte“ Fälle, die keiner der drei Klassen zuzuordnen sind.
+
+Die folgenden Definitionen halten dies nochmal in mathematischer Präzision fest.
+
+=== Symbol ===
+Es sei
+:<math>P(u)(x) = \sum_{|\alpha|\leq m} b_\alpha(x) \frac{\partial^\alpha}{\partial x^\alpha}u(x)</math>
+ein allgemeiner Differentialoperator der Ordnung <math>m</math>. Die Koeffizientenfunktion <math>b_{\alpha} \in C^\infty(\R^n)</math> kann matrixwertig sein. Das [[Polynom]]
+:<math>p(x,\xi) = \sum_{|\alpha|\leq m}b_\alpha(x) \left(i\xi\right)^\alpha</math>
+in <math>\xi \in \R^n</math> heißt das Symbol von <math>P</math>. Da jedoch wie in der Einleitung schon angedeutet, die wichtigsten Informationen im Term der höchsten Ordnung zu finden sind, wird meist mit der folgenden Definition des Hauptsymbols gearbeitet.
+
+=== Hauptsymbol ===
+Sei <math>P</math> wieder der oben definierte Differentialoperator der Ordnung <math>m</math>. Das homogene Polynom
+:<math>p_m(x,\xi) = \sum_{|\alpha|=m}b_\alpha(x) \left(i\xi\right)^\alpha</math>
+in <math>\xi \in \R^n</math> heißt Hauptsymbol von <math>P</math>. Oft nennt man das Hauptsymbol auch einfach nur Symbol, wenn Verwechslungen mit der oben gegebenen Definition ausgeschlossen sind.
+
+=== Beispiele ===
+* Das Symbol und das Hauptsymbol des [[Laplace-Operator]]s <math>\Delta</math> lauten
+::<math>\sum_{i=1}^n -\xi_i^2 = -|\xi|^2.</math>
+
+=== Hauptsymbol eines Differentialoperators zwischen Vektorbündeln ===
+Differentialoperatoren auf Mannigfaltigkeiten kann man auch ein Symbol und ein Hauptsymbol zuordnen. Dabei muss in der Definition natürlich berücksichtigt werden, dass das Hauptsymbol und das Symbol unter Kartenwechsel invariant definiert ist. Da der Kartenwechsel bei Symbolen sehr kompliziert ist, beschränkt man sich meist auf die Definition des Hauptsymbols.
+
+Sei <math>D \colon \Gamma^\infty(M,E) \to \Gamma^\infty(M,F)</math> ein (koordinaten-invarianter) Differentialoperator, der zwischen Schnitten von Vektorbündeln operiert. Sei <math>p \in M</math>, <math>\xi \in T_p^*M</math> und <math>e \in E_p</math>. Wähle <math>f \in C^\infty_c(M)</math> und <math>s \in \Gamma^\infty_c(M,E)</math> mit <math>f(p) = 0</math>, <math>\textstyle\mathrm{d}f_p = \xi</math> und <math>s(p) = e</math>. Dann ist der Ausdruck
+:<math>\sigma^k_D(p,\xi) e := \frac{i^k}{k!}D(f^k s)(p)</math>
+unabhängig von der Wahl von <math>f</math> und <math>s</math>.
+Die Funktion
+:<math>\sigma_D^k(p, \xi) \in \operatorname{Hom}(E_p,F_p)</math>
+heißt dann das Hauptsymbol von <math>D</math>.
+
+== Pseudo-Differentialoperatoren ==
+{{Hauptartikel|Pseudo-Differentialoperator}}
+
+Die Ordnung eines Differentialoperators ist immer ganzzahlig und positiv. In der Theorie der Pseudo-Differentialoperatoren wird dies verallgemeinert. Lineare Differentialoperatoren der Ordnung <math>k</math> mit glatten und beschränkten Koeffizienten können als Pseudo-Differentialoperatoren der gleichen Ordnung verstanden werden. Sei <math>D \colon C^k_c(\R^n) \to C_c(\R^n)</math> ein solcher Differentialoperator, dann kann man auf <math>D f</math> die [[Kontinuierliche Fourier-Transformation|Fourier-Transformation]] <math>\mathcal{F}</math> und danach die inverse Fourier-Transformation <math>\mathcal{F}^{-1}</math> anwenden. Das heißt, es gilt
+:<math>(D u) (x) = (\mathcal{F}^{-1} \mathcal{F} D u) (x) =
+\frac{1}{(2 \pi)^n} \int_{\mathbb{R}^n} \int_{\mathbb{R}^n} e^{i (x - y) \xi} D(\xi) u(y) dy d\xi.</math>
+Dies ist ein Spezialfall eines Pseudo-Differentialoperators
+:<math>(P u) (x) = \frac{1}{(2 \pi)^n} \int_{\mathbb{R}^n} \int_{\R^n} e^{i (x - y) \xi} a(x,y,\xi) u(y) dy d\xi.</math>
+Hieran sieht man auch, dass gewisse Differentialoperatoren als [[Integraloperator]]en dargestellt werden können und somit Differentialoperatoren und Integraloperatoren nicht ganz gegensätzlich sind.
+
+== Literatur ==
+* [[Otto Forster]]: ''Analysis 2. Differentialrechnung im'' '''R'''<sup>''n''</sup>''. Gewöhnliche Differentialgleichungen.'' Vieweg-Verlag, 7.&nbsp;Aufl., 2006, ISBN 3-528-47231-6.
+* [[Konrad Königsberger]]: ''Analysis 2.'' Springer-Verlag, Berlin/Heidelberg 2000, ISBN 3-540-43580-8.
+* [[Dirk Werner (Mathematiker)|Dirk Werner]]: ''Funktionalanalysis.'' Springer-Verlag, Berlin 2007, ISBN 978-3-540-72533-6.
+* [[Lawrence C. Evans|Lawrence Evans]]: ''Partial Differential Equations.'' American Mathematical Society, ISBN 0-8218-0772-2.
+* Liviu I. Nicolaescu: ''Lectures on the geometry of manifolds.'' World Scientific Pub Co (für Differentialoperatoren zwischen Vektorbündeln).
+
+[[Kategorie:Differentialoperator| ]]
+[[Kategorie:Funktionalanalysis]]

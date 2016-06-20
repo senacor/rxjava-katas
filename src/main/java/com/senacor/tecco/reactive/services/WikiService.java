@@ -6,8 +6,14 @@ import com.senacor.tecco.reactive.services.integration.WikipediaServiceJapi;
 import com.senacor.tecco.reactive.services.integration.WikipediaServiceJapiImpl;
 import com.senacor.tecco.reactive.services.integration.WikipediaServiceJapiMock;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
+import org.apache.commons.lang3.StringUtils;
 import rx.Observable;
+import rx.functions.Action1;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -23,23 +29,45 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 public class WikiService {
 
     private final MediaWikiTextParser parser = new MediaWikiTextParser();
-    private final boolean MOCKMODE = false;
+    private static final boolean MOCKMODE = true;
+    private static final boolean RECORD = false;
+
+    /**
+     * when true, the results from fetchArticleObservable will be recorded for use in MOCKMODE;
+     */
+    private final boolean record;
+
     private final WikipediaServiceJapi wikiServiceJapi;
 
     private final ExecutorService pool = Executors.newFixedThreadPool(4);
 
     public WikiService() {
+        this(false);
+    }
+
+    /**
+     * @param record when true, the results from fetchArticleObservable will be recorded for use in MOCKMODE;
+     */
+    public WikiService(boolean record) {
         if (MOCKMODE) {
+            this.record = false;
             wikiServiceJapi = new WikipediaServiceJapiMock();
         } else {
+            this.record = record || RECORD;
             wikiServiceJapi = new WikipediaServiceJapiImpl();
         }
     }
 
     public WikiService(String language) {
+        this(language, false);
+    }
+
+    public WikiService(String language, boolean record) {
         if (MOCKMODE) {
+            this.record = false;
             wikiServiceJapi = new WikipediaServiceJapiMock();
         } else {
+            this.record = record || RECORD;
             wikiServiceJapi = new WikipediaServiceJapiImpl("http://" + language + ".wikipedia.org");
         }
     }
@@ -49,7 +77,31 @@ public class WikiService {
      * @return fetches a wiki article as a media wiki formated string
      */
     public Observable<String> fetchArticleObservable(final String wikiArticle) {
-        return wikiServiceJapi.getArticleObservable(wikiArticle);
+        return wikiServiceJapi.getArticleObservable(wikiArticle)
+//                .onErrorReturn(throwable -> {
+//                    print("ERROR: %s", throwable.getClass());
+//                    print("try mock ...");
+//                    return new WikipediaServiceJapiMock().readArticle(wikiArticle);
+//                })
+                .doOnNext(record(wikiArticle));
+    }
+
+    private Action1<String> record(String wikiArticle) {
+        return article -> {
+            if (record && StringUtils.isNotBlank(article)) {
+                try {
+                    Path path = Paths.get("./src/main/resources/mock/" + wikiArticle + ".txt");
+                    if (!path.toFile().exists()) {
+                        print("RECORDING: writing Article '%s' to %s", wikiArticle, path);
+                        Files.write(path, article.getBytes());
+                    } else {
+                        print("RECORDING: mock data for Article '%s' already exists: %s", wikiArticle, path);
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
     }
 
     /**
