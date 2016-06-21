@@ -9,6 +9,7 @@ import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.apache.commons.lang3.StringUtils;
 import rx.Observable;
 import rx.functions.Action1;
+import rx.subjects.PublishSubject;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -29,7 +30,7 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 public class WikiService {
 
     private final MediaWikiTextParser parser = new MediaWikiTextParser();
-    private static final boolean MOCKMODE = true;
+    private static final boolean MOCKMODE = false;
     private static final boolean RECORD = false;
 
     /**
@@ -68,7 +69,7 @@ public class WikiService {
             wikiServiceJapi = new WikipediaServiceJapiMock();
         } else {
             this.record = record || RECORD;
-            wikiServiceJapi = new WikipediaServiceJapiImpl("http://" + language + ".wikipedia.org");
+            wikiServiceJapi = new WikipediaServiceJapiImpl("https://" + language + ".wikipedia.org");
         }
     }
 
@@ -200,16 +201,20 @@ public class WikiService {
      *
      * @param interval interval size in time units (see below)
      * @param unit     time units to use for the interval size
-     * @return Wiki Aritikel, der gerade gelesen wird
+     * @return Wiki Aritikel, der gerade gelesen wird.
+     * ATTETION, this is a HOT observable, which emits the Items without a subscription
      */
     public Observable<String> wikiArticleBeingReadObservable(final long interval, final TimeUnit unit) {
-        final Random randomGenerator = new Random();
-        return Observable.interval(interval, unit)
+        final Random randomGenerator = new Random(8L);
+        PublishSubject<String> publishSubject = PublishSubject.create();
+        Observable.interval(interval, unit)
                 .map(time -> {
                     String article = WIKI_ARTICLES.get(randomGenerator.nextInt(WIKI_ARTICLES.size()));
                     print("wikiArticleBeingReadObservable=%s", article);
                     return article;
-                });
+                }).subscribe(publishSubject);
+
+        return publishSubject;
     }
 
     /**
@@ -217,15 +222,18 @@ public class WikiService {
      * - Es gibt immer wieder Bursts, dann kommen sehr viele Elemente in sehr kurzer Zeit
      *
      * @return Wiki Aritikel, der gerade gelesen wird
+     * ATTETION, this is a HOT observable, which emits the Items without a subscription
      */
     public Observable<String> wikiArticleBeingReadObservableBurst() {
-        final Random randomGenerator = new Random();
-        return ReactiveUtil.burstSource()
+        final Random randomGenerator = new Random(4L);
+        PublishSubject<String> publishSubject = PublishSubject.create();
+        ReactiveUtil.burstSource()
                 .map(ignore -> {
                     String article = WIKI_ARTICLES.get(randomGenerator.nextInt(WIKI_ARTICLES.size()));
                     System.out.println(getThreadId() + "wikiArticleBeingReadObservable=" + article);
                     return article;
-                });
+                }).subscribe(publishSubject);
+        return publishSubject;
     }
 
     /**
@@ -234,9 +242,10 @@ public class WikiService {
      * - Manchmal gibt es einen Fehler (Exception)
      *
      * @return Wiki Aritikel, der gerade gelesen wird
+     * ATTETION, this is a HOT observable, which emits the Items without a subscription
      */
     public Observable<String> wikiArticleBeingReadObservableWithRandomErrors() {
-        final Random randomGenerator = new Random();
+        final Random randomGenerator = new Random(12L);
         return wikiArticleBeingReadObservableBurst().map(article -> {
             if (randomGenerator.nextInt() % 20 == 0) {
                 throw new IllegalStateException("something's wrong");
