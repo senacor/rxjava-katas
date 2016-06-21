@@ -21,7 +21,7 @@ public class Kata7ErrorHandling {
 
     @Test
     public void errors() throws Exception {
-        // 1. use fetchArticleObservableWithRandomErrors that that randomly has a Timeout (ERROR).
+        // 1. use fetchArticleObservableWithRandomErrors which randomly has a Timeout (ERROR).
         // 2. handle error: use retries with increasing delays
         // 3. if retries fail, use a default.
         // 4. parse article with wikiService.parseMediaWikiText
