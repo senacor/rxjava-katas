@@ -1,0 +1,105 @@
+{{Begriffsklärungshinweis|Weitere Bedeutungen werden unter [[Ökonomie (Begriffsklärung)]] und [[Wirtschaft (Begriffsklärung)]] aufgeführt.}}
+'''Wirtschaft''' oder '''Ökonomie''' ist die Gesamtheit aller [[Wirtschaftseinheit|Einrichtungen]] und Handlungen, die der [[Planung|planvollen]] Befriedigung der [[Bedürfnis#In_den_Wirtschaftswissenschaften|Bedürfnisse]] dienen. Zu den wirtschaftlichen Einrichtungen gehören [[Unternehmen]], [[Privathaushalt|private]] und [[Öffentlicher Haushalt|öffentliche Haushalte]], zu den Handlungen des Wirtschaftens [[Produktion|Herstellung]], [[Absatzwirtschaft|Absatz]], [[Tausch]], [[Konsum]], Umlauf, Verteilung und [[Entsorgungswirtschaft|„Recycling“/„Entsorgung“]] von [[Ökonomisches Gut|Gütern]]. Solche Zusammenhänge bestehen zum Beispiel auf [[Weltwirtschaft|welt-]], [[Volkswirtschaft|volks-]], [[Stadtwirtschaft|stadt]]- und [[Betriebswirtschaft|betriebswirtschaftlicher]] Ebene.
+
+== Begriff ==
+Das Wort ''Wirtschaft'' wird von ''Wirt'' im Sinne von ''Gastgeber'' und ''bewirten'' im Sinne von ''(ein-)schenken'' abgeleitet und ist die deutsche Übersetzung des {{ELSalt2}}en Wortes {{lang|grc|οἰkονόμος}} ''oíkonomos'' (von altgriech. {{lang|grc|οἶκος}} ''oíkos'' ‚Haus‘ und {{lang|grc|νόμος}} ''nomos'' ‚Gesetz‘ oder ‚Regel‘, ursprünglich: νέμω ''nemein'': ‚zuteilen‘/‚entscheiden‘) das ''Haushälter'' oder eben ''Wirt'' bedeutet. Davon leitet sich auch das deutsche Wort ''Ökonomie'' ab. In genau diesem Sinne beschäftigt sich die [[Wirtschaftstheorie|ökonomische Theorie]] mit den Gesetzmäßigkeiten des Wirtschaftshaushalts.
+
+== Grundlagen ==
+Unter [[Wirtschaften]] werden alle menschlichen Aktivitäten verstanden, die mit dem Ziel einer bestmöglichen Bedürfnisbefriedigung planmäßig und [[Wirtschaftlichkeit|effizient]] über knappe Ressourcen entscheiden. Die Notwendigkeit zu Wirtschaften ergibt sich aus der [[Knappheit]] der [[Gut (Wirtschaftswissenschaft)|Güter]] einerseits und der Unbegrenztheit der menschlichen [[Bedürfnis#In_den_Wirtschaftswissenschaften|Bedürfnisse]] andererseits. Grundlegender Untersuchungsgegenstand der [[Volkswirtschaftslehre]] ist die Frage was wird wie ([[Ressourcenallokation|Allokation]]) und für wen ([[Einkommensverteilung|Distribution]]) produziert?
+
+== Organisation ==
+=== Wirtschaftsformen ===
+Der Begriff „Wirtschaftsform“ (auch „-weise“ oder „-typ“) bezeichnet die [[Subsistenz]]strategie (Art und Weise des Lebensunterhaltes), die daraus resultierende [[Produktion]] und die [[Sozialstruktur|sozialen Bedingungen]], unter denen produziert wird.<ref>Walter Hirschberg (Hrsg.): ''Wörterbuch der Völkerkunde.'' Neuausgabe, 2. Auflage, Reimer, Berlin 2005. S. 360–361, 415</ref>
+
+Dient das Wirtschaften weitestgehend der [[Selbstversorgung]] mit Gütern, spricht man von [[Subsistenzwirtschaft|Subsistenz- oder Bedarfswirtschaft]]. Ausgehend von dieser elementaren Strategie haben sich vielfältige Formen landwirtschaftlicher Betriebssysteme entwickelt, die als [[traditionelle Wirtschaftsform]]en bezeichnet werden (Beispiele: ursprüngliche [[Jäger und Sammler]], [[Nomadismus|Hirtennomaden]] oder [[Traditionelle Wirtschaftsform#Traditioneller Feldbau (Pflanzbau) und -Gartenbau|Feldbauern]]). 
+
+Demgegenüber stehen die Wirtschaftsformen, die vorwiegend vom [[Handel|Warenaustausch]] geprägt werden. Sie werden auch [[Erwerbswirtschaft]]en genannt. Ihre Entwicklung hat zu den modernen Wirtschaftssystemen geführt.
+
+=== Wirtschaftssysteme ===
+Es bestehen eine Reihe von [[Wirtschaftssystem]]en; als ihre wesentlichen Formen gelten [[Marktwirtschaft]] und [[Zentralverwaltungswirtschaft]]. 
+
+Die politische und rechtliche Form, die den Rahmen für die wirtschaftlichen Tätigkeiten innerhalb einer Wirtschaft vorgibt, wird als [[Wirtschaftsordnung]] bezeichnet. 
+
+Die folgenden Ausprägungen von Wirtschaftordnungen haben von oben nach unten eine zunehmende Staatsquote:
+* [[Anarchokapitalismus]]
+* [[Freie Marktwirtschaft]] (basierend auf dem klassischen [[Liberalismus]] ([[Wirtschaftsliberalismus]]))<ref> ''[http://www.bpb.de/popup/popup_lemmata.html?guid=GQ9ARC Freie Marktwirtschaft.]'' In: ''Das Lexikon der Wirtschaft.'' Grundlegendes Wissen von A bis Z. 2. Aufl. Bibliographisches Institut & F.A. Brockhaus, Mannheim 2004, Bundeszentrale für politische Bildung, Bonn 2004 (Lizenzausg.). </ref>
+* [[Soziale Marktwirtschaft]] (basierend auf dem [[Neoliberalismus]] bzw. [[Ordoliberalismus]])<ref> Uwe Andersen: ''[http://www.bpb.de/wissen/07366806922938336269163160936993,1,0,Soziale_MarktwirtschaftWirtschaftspolitik.html Soziale Marktwirtschaft/Wirtschaftspolitik].'' In: Uwe Andersen, Wichard Woyke (Hrsg.): ''Handwörterbuch des politischen Systems der Bundesrepublik Deutschland.'' 5. Aufl. Leske+Budrich, Opladen 2003. Bundeszentrale für politische Bildung, Bonn 2003 (Lizenzausg.)</ref>
+* [[Wohlfahrtsstaat]] ([[Skandinavisches Modell]])
+* [[Korporatismus]] (inkl. [[Kriegswirtschaft|Wehrwirtschaft]])
+* [[Planwirtschaft]]
+
+=== Wirtschaft nach Geographie ===
+Traditionellerweise wird zwischen der (nationalen) [[Volkswirtschaft]] und der [[Weltwirtschaft]] (der Gesamtheit der internationalen Wirtschaftsbeziehungen) unterschieden. Zunehmende Bedeutung erhalten transnationale Wirtschaftsräume. Einer ihrer wichtigsten Vertreter ist der [[Europäischer Binnenmarkt|Europäische Binnenmarkt]]; daneben ist infolge der [[Globalisierung]] die ganze Welt ein Wirtschaftsraum. 
+
+Die nationalen Wirtschaften unterscheiden sich deutlich und sind daher in jeweiligen Artikeln dargestellt:
+* [[Wirtschaft Deutschlands|Wirtschaft der Bundesrepublik Deutschland]]
+* [[Deutsche Demokratische Republik#Wirtschaft|Wirtschaft der Deutschen Demokratischen Republik]] 
+* [[Wirtschaft Österreichs]]
+* [[Wirtschaft der Schweiz]]
+* [[Wirtschaft der Vereinigten Staaten]]
+
+Weitere Artikel über die [[Volkswirtschaft]]en einzelner [[Nation]]en finden sich in der
+* [[:Kategorie:Wirtschaft nach Staat]].
+
+=== Wirtschaftsbereiche ===
+Die [[Wirtschaftswissenschaft]] teilt die Wirtschaft in [[Wirtschaftssektor]]en ein. Dies findet seine Grundlage in der [[Drei-Sektoren-Hypothese]] der Volkswirtschaftslehre.
+
+Weiterhin wird die Wirtschaft in [[Wirtschaftszweig]]e (Synonym: Branche) eingeteilt. Dies sind Gruppen von Unternehmen, die ähnliche Produkte herstellen oder ähnliche Dienstleistungen erbringen. Die amtliche Statistik der Wirtschaftszweige basiert auf der Europäischen Norm ''[[Nomenclature générale des activités économiques]]'' (kurz ''NACE'').
+
+=== Wirtschaftspolitik ===
+[[Wirtschaftspolitik]] ist die Gesamtheit aller politischen, vor allem staatlichen Bestrebungen, Handlungen und Maßnahmen, die darauf abzielen, den Ablauf des Wirtschaftsgeschehens in einem Gebiet oder Bereich zu ordnen, zu beeinflussen, zu gestalten oder unmittelbar festzulegen. 
+Die Wissenschaft der Wirtschaftspolitik ist die [[Finanzwissenschaft]].
+
+Die Wirtschaftspolitik wird meist in [[Ordnungspolitik]], [[Strukturpolitik]] und [[Prozesspolitik]] unterteilt.
+
+* Zur Ordnungspolitik zählt die [[Wettbewerbspolitik]].
+* Zur Strukturpolitik gehören Infrastrukturpolitik, [[Regionalpolitik]] und sektorale Strukturpolitik.
+* Zur Prozesspolitik gehören [[Arbeitsmarktpolitik]], [[Finanzpolitik]], [[Fiskalpolitik]], [[Geldpolitik]], [[Handelspolitik]], [[Konjunkturpolitik]].
+
+== Wirtschaftsbezogene Disziplinen ==
+=== Wirtschaftswissenschaft ===
+Die [[Wirtschaftswissenschaft]]en (auch ''Ökonomik'') beschäftigen sich mit der wissenschaftlichen Untersuchung der Wirtschaft. Traditionell werden hier [[Volkswirtschaftslehre]] und [[Betriebswirtschaftslehre]] unterschieden.
+
+Die [[Wirtschaftsgeschichte]] ist eine Brückendisziplin zwischen den Wirtschaftswissenschaften und der [[Geschichtswissenschaft]]. Sie untersucht die historische Wirtschaftsentwicklung in Zusammenhang mit anderen Kulturveränderungen.
+
+Die Wirtschaftswissenschaften haben eine Reihe von [[Wirtschaftstheorie]]n hervorgebracht. Wichtige Wirtschaftstheorien sind (chronologisch nach Entstehungszeitraum):
+* [[Klassische Nationalökonomie]] (unter anderem [[Adam Smith]], [[David Ricardo]], [[John Stuart Mill]], [[Thomas Robert Malthus]] und [[Jean-Baptiste Say]])
+* [[Marxismus]] (unter anderem [[Karl Marx]], [[Friedrich Engels]], [[Rosa Luxemburg]])
+* [[Neoklassische Theorie]] (unter anderem [[Vilfredo Pareto]], [[Léon Walras]])
+* [[Österreichische Schule]] (unter anderen [[Ludwig von Mises]], [[Friedrich August von Hayek]] und [[Carl Menger]])
+* [[Neoliberalismus]]/[[Ordoliberalismus]] (unter anderem [[Walter Eucken]], [[Alexander Rüstow]], [[Frank Knight]])
+* [[Keynesianismus]] ([[John Maynard Keynes]])
+* [[Monetarismus]] (unter anderem [[Milton Friedman]])
+
+=== Wirtschaftsrecht ===
+Das [[Wirtschaftsrecht]] ist die Gesamtheit aller privatrechtlichen, strafrechtlichen und öffentlich-rechtlichen [[Rechtsnorm]]en und Maßnahmen, mit denen der Staat auf die Rechtsbeziehungen der am Wirtschaftsleben Beteiligten untereinander und im Verhältnis zum Staat einwirkt und ist der Oberbegriff für das Recht des Wirtschaftsverkehrs sowie die rechtliche Grundlage der Wirtschaftspolitik.
+
+Das Wirtschaftsrecht besteht aus drei Elementen: [[Wirtschaftsverfassungsrecht]], [[Wirtschaftsverwaltungsrecht]] und [[Wirtschaftsprivatrecht]].
+
+Teilweise hinzugezählt wird auch das [[Wirtschaftsstrafrecht]], also die Rechtsvorschriften gegen [[Wirtschaftskriminalität]].
+
+=== Wirtschaftssoziologie ===
+Die [[Wirtschaftssoziologie]] befasst sich mit der [[Soziologie|soziologischen]] Analyse der Wirtschaft und der Wirtschaftswissenschaften. Themen sind z.&nbsp;B. die Netzwerkbildung, die Dynamik von Märkten abseits von auf [[Vollkommener Markt|vollkommenen Märkten]] basierenden Modellen und die Folgen von [[Begrenzte Rationalität|begrenzter Rationalität]] beim Verbraucher.
+
+=== Sonstiges ===
+* Die [[Wirtschaftspädagogik]] beschäftigt sich mit der Vermittlung von Wissen und [[Fähigkeiten]] aus dem Gebiet der Ökonomie.
+* Der [[Wirtschaftsjournalismus]] berichtet über Vorgänge in der Wirtschaft und setzt sich mit diesen auseinander. 
+* Die [[Wirtschaftsphilosophie]] reflektiert über die theoretischen und praktischen Grundlagen der Wirtschaft und ihrer Wissenschaften.
+* Die [[Wirtschaftsethik]] befasst sich mit der moralischen Rechtfertigung von Wirtschaftssystemen, ethischem Handeln der Wirtschaftssubjekte (siehe [[Unternehmensethik]]) oder auch mit der Wertfreiheit der Ökonomik. 
+* Die [[Wirtschaftsgeschichte]] untersucht die historische Entwicklung von Volkswirtschaften und die darunterliegenden [[Sozialer Prozess|sozialen Prozesse]].
+
+== Siehe auch ==
+{{Portal|Wirtschaft}}
+
+== Weblinks ==
+{{Wikinews|Portal:Wirtschaft|Wirtschaft}}
+{{Wikiquote|Wirtschaft}}
+{{Wiktionary}}
+*{{DNB-Portal|4066399-1|TYP=Literatur zum Thema}}
+
+== Einzelnachweise ==
+<references />
+
+{{Normdaten|TYP=s|GND=4066399-1}}
+
+[[Kategorie:Wirtschaft| ]]

@@ -1,0 +1,84 @@
+{{Dieser Artikel|behandelt die Maßeinheit Joule für die Energie. Weitere Bedeutungen siehe [[Joule (Begriffsklärung)]].}}
+{{Infobox Physikalische Einheit
+| Name             = Joule
+| Einheitenzeichen = <math>\mathrm{J}</math>
+| PhysGröße        = [[Energie]], [[Arbeit (Physik)|Arbeit]], [[innere Energie]], [[Wärme]]
+| Formelzeichen    = <math>W;\, A;\, E;\, U;\, Q</math>
+| Dimension        = <math>\mathsf{M\;L^2\;T^{-2} }</math>
+| System           = SI
+| SI               = <math>\mathrm{1 \, J = 1 \; \frac{kg \, m^2}{s^2} = 1 \; {N m} }</math> <math>\mathrm{ = 1 \; {V A s}= 1 \; {C V} = 1 \; {W s} }</math>
+| CGS              = <math>\mathrm{1 \, J = 10^7\; erg = 10^7 \; \frac{cm^2\, g}{s^2} }</math>
+| BenanntNach      = [[James Prescott Joule]]
+| AbgeleitetVon    = [[Kilogramm]], [[Meter]], [[Sekunde]]
+| SieheAuch        = 
+}}
+
+'''Joule''' [{{IPA|dʒuːl}}] ist die [[Internationales Einheitensystem#Kohärente SI-Einheiten|abgeleitete]] [[Internationales_Einheitensystem#SI-Einheiten|SI-Einheit]] der [[Energie]]. Benannt nach [[James Prescott Joule]], wird diese Einheit heute für alle [[Energieform]]en verwendet, also auch für die [[Arbeit (Physik)|Arbeit]] und [[Wärme]]&shy;menge.<ref name="PTB">{{Internetquelle|url=http://www.ptb.de/cms/fileadmin/internet/publikationen/broschueren/Einheiten_deutsch.pdf|titel=Die gesetzlichen Einheiten in Deutschland|hrsg=[[Physikalisch-Technische Bundesanstalt]]|seiten=12|datum=Juni 2015|zugriff=2015-11-22|format=PDF; 1,6&nbsp;MB}}</ref> 
+
+Wie jede abgeleitete Einheit kann das Joule durch [[Internationales_Einheitensystem#SI-Basiseinheiten|Basiseinheiten]] ausgedrückt werden. Mit den Einheiten [[Kilogramm|kg]], [[Meter|m]] und [[Sekunde|s]] gilt:
+:<math>\mathrm{1\, J = 1\, \frac{kg\, m^2} {s^2}}</math>
+
+== Veranschaulichung ==
+Ein Joule ist gleich der Energie, die benötigt wird, um:
+* einen Körper mit der Masse 0,102&nbsp;[[Kilogramm]] –&nbsp;das entspricht etwa einer Tafel Schokolade&nbsp;– um einen Meter anzuheben (''1&nbsp;Newtonmeter'') oder
+* eine [[Sekunde]] lang die [[Leistung (Physik)|Leistung]] von einem [[Watt (Einheit)|Watt]] –&nbsp;das ist ungefähr die Leistung des menschlichen [[Herz]]ens&nbsp;– zu erbringen (''1&nbsp;Wattsekunde'') oder
+* bei einer [[Elektrische Spannung|elektrischen Spannung]] von einem [[Volt]] für die Dauer einer Sekunde einen [[Elektrischer Strom|elektrischen Strom]] von einem [[Ampere]] fließen zu lassen (''1&nbsp;Voltamperesekunde'') oder
+* ein Gramm Wasser um ca. 0,239&nbsp;[[Kelvin]] zu [[Kalorie#Definitionen|erwärmen]] oder
+* einen Körper der Masse 2&nbsp;Kilogramm aus der Ruhe auf eine [[Geschwindigkeit]] von 1&nbsp;m/s zu [[Beschleunigung|beschleunigen]].
+
+In [[Nährwertkennzeichnung]]en werden Kilojoule (kJ) –&nbsp;bezogen auf 100&nbsp;[[Gramm|g]], 100&nbsp;[[Liter|ml]] oder 1 Portion&nbsp;– für die Angabe des [[Physiologischer Brennwert|physiologischen Brennwerts]] verwendet.<ref name="EG-2009-3">[http://iobic.de/8439 ''Richtlinie 2009/3/EG''] des Europäischen Parlaments und des Rates vom 11.&nbsp;März 2009 zur Änderung der Richtlinie 80/181/EWG des Rates zur Angleichung der Rechtsvorschriften der Mitgliedstaaten über die Einheiten im Messwesen.</ref>
+
+== Aussprache ==
+Die Aussprache des Wortes „Joule“ ist uneinheitlich: Im deutschen Sprachraum ist die Aussprache [{{IPA|dʒuːl}}] gebräuchlich, wahrscheinlich sprach auch James Prescott Joule seinen Namen so aus.<ref>Zitat ([[Oxford English Dictionary]]): „Although some people of this name call themselves ''dʒaʊl'', and others ''dʒəʊl'', it is almost certain that J. P. Joule (and at least some of his relatives) used ''dʒuːl''.“</ref>
+
+== Geschichte ==
+Auf dem ersten [[Internationaler Elektrizitätskongress|Internationalen Elektrizitätskongress]] am 20. und 21.&nbsp;September 1881 in Paris war nicht nur das [[CGS-System]] für verbindlich erklärt worden, sondern zusätzlich zu diesem „absoluten System“ auch ein „praxisnahes System“, bestehend aus [[Ohm]], [[Ampere]], [[Volt]], [[Coulomb]] und [[Farad]], das für den praktischen Gebrauch in der [[Elektrotechnik]] handlichere Größenordnungen liefert als direkt aus dem CGS-System abgeleitete Einheiten. Beide Systeme unterscheiden sich aber nur durch Faktoren aus Zehnerpotenzen.
+
+In seiner Antrittsrede als Präsident der [[British Association for the Advancement of Science]] hat [[Carl Wilhelm Siemens|Wilhelm Siemens]] am 23.&nbsp;August 1882 zur Ergänzung des praxisnahen Systems neben [[Weber (Einheit)|Weber]], [[Watt (Einheit)|Watt]] und [[Gauß (Einheit)|Gauß]] auch das Joule als Einheit für die [[Wärme]] vorgeschlagen. Es sollte abgeleitet von den anderen [[Elektrodynamik|elektromagnetischen]] Einheiten als die Wärmemenge, die ein Strom von 1&nbsp;Ampere an einem [[Elektrischer Widerstand|Widerstand]] von 1&nbsp;Ohm innerhalb von 1&nbsp;[[Sekunde]] produziert, definiert sein und damit äquivalent zu 10<sup>7</sup>&nbsp;[[Erg (Einheit)|erg]], der Einheit der [[Energie]] im CGS-System.
+
+{{Zitat|Text=The unit of heat has hitherto been taken variously as the heat required to raise a pound of water at the freezing-point through 1°&nbsp;Fahrenheit or Centigrade, or, again, the heat necessary to raise a kilogramme of water 1°&nbsp;Centigrade. The inconvenience of a unit so entirely arbitrary is sufficiently apparent to justify the introduction of one based on the electro-magnetic system, viz. the heat generated in one second by the current of an Ampère flowing through the resistance of an Ohm. In absolute measure its value is 10<sup>7</sup> C.G.S. units, and, assuming Joule's equivalent as 42,000,000, it is the heat necessary to raise 0.238&nbsp;grammes of water 1°&nbsp;Centigrade, or, approximately, the ⅟₁₀₀₀th part of the arbitrary unit of a pound of water raised 1°&nbsp;Fahrenheit and the ⅟₄₀₀₀th of the kilogramme of water raised 1°&nbsp;Centigrade. Such a heat unit, if found acceptable, might with great propriety, I think, be called the Joule, after the man who has done so much to develop the dynamical theory of heat.|Autor=Carl Wilhelm Siemens|Quelle=Report of the Fifty-Second Meeting of the British Association for the Advancement of Science|lang=en|vor=“|nach=”|Übersetzung=Die Einheit der Wärme wurde bisher verschiedenartig definiert, zum Beispiel als die Wärme, die benötigt wird, um ein Pfund Wasser vom Gefrierpunkt um 1°&nbsp;Fahrenheit oder Celsius zu erwärmen, oder anders auch als die Wärme, die benötigt wird um ein Kilogramm Wasser um 1°&nbsp;Celsius zu erwärmen. Die Unzulänglichkeit einer so völlig zufälligen Einheit ist offensichtlich genug, um die Einführung einer auf dem elektromagnetischen System basierenden Einheit zu rechtfertigen, nämlich definiert als die Wärme, die während einer Sekunde erzeugt wird, wenn 1&nbsp;Ampère durch einen Widerstand von 1&nbsp;Ohm fließt. Dieser Wert hat im CGS-System die Maßzahl 10<sup>7</sup> und ist, wenn man Joules mechanisches Wärmeäquivalent mit 42.000.000 annimmt, gleich der Wärme, die benötigt wird, um 0,238&nbsp;Gramm Wasser um 1°&nbsp;Celsius zu erwärmen, oder ungefähr der 1/1000ste Teil der zufällig festgelegten Einheit von einem Pfund Wasser, das um 1°&nbsp;Fahrenheit erwärmt wird und etwa der 1/4000ste Teil von einem Kilogramm Wasser, das um 1°&nbsp;Celsius erwärmt wird. Falls eine solche Wärmeeinheit allgemein akzeptiert wird, sollte sie meiner Meinung nach „Joule“ genannt werden, da dieser so viel für die Entwicklung der dynamischen Wärmetheorie getan hat.|ref=<ref>[http://gallica.bnf.fr/ark:/12148/bpt6k781656 ''Report of the Fifty-Second Meeting of the British Association for the Advancement of Science.''] S.&nbsp;6&nbsp;f.</ref>}}
+
+Der zweite Internationale Elektrizitätskongress in Paris hat das Joule schließlich am 31.&nbsp;August 1889 als Einheit in der vorgeschlagenen Form beschlossen, neben dem Watt und dem [[Henry (Einheit)|Henry]] (damals noch ''Quadrant'' genannt).<ref>Pat Naughtin: [http://www.metricationmatters.com/docs/MetricationTimeline.pdf ''A chronological history of the modern metric system.''] Auf: ''metricationmatters.com.'' (PDF-Datei; 1,44&nbsp;MB), 2009.</ref> Das Joule war also sowohl über die CGS-Basiseinheiten als auch über Ohm und Ampere definiert, die zwar ihrerseits von den CGS-Basiseinheiten abgeleitet werden können, aber trotzdem auch mit direkten Messvorschriften spezifiziert waren.
+
+Der vierte Internationale Elektrizitätskongress im August 1893 in Chicago hat deshalb zusätzlich das ''internationale Joule'' eingeführt, das von den Spezifikationen für das ''internationale Ohm'' und das ''internationale Ampere'' abgeleitet ist, die zudem gegenüber dem alten Ohm und Ampere leicht verändert worden waren. Im Gegensatz dazu hat das ''absolute Joule'' oder ''theoretische Joule'' den wahren Wert auf Grundlage des CGS-Systems bezeichnet.
+
+Im Juni 1935 hat die [[Internationale elektrotechnische Kommission]], die Nachfolgerin der Internationalen Elektrizitätskongresse, die Übernahme des [[Giovanni Giorgi (Physiker)|Giorgi]]-Systems beschlossen, einem [[MKS-System]], in dem die bestehenden „praxisnahen Einheiten“ ohne die Zehnerpotenzen als Umrechnungsfaktoren einen natürlichen Platz finden, indem die [[magnetische Feldkonstante]] passend definiert wird. Auch das Joule hat hier weiter seinen Platz gehabt.<ref>Arthur E. Kennelly: [http://www.pnas.org/cgi/reprint/21/10/579.pdf ''Adoption of the Meter-Kilogram-Mass-Second (M.K.S.) Absolute System of Practical Units by the International Electrotechnical Commission (I.E.C.), Bruxelles, June, 1935.''] (PDF-Datei; 440&nbsp;kB), 9.&nbsp;August 1935.</ref>
+
+Im Zug der [[Meterkonvention]] hat das [[Internationales Komitee für Maß und Gewicht|Internationale Komitee für Maß und Gewicht]] im Jahr 1946 das Joule als die [[Arbeit (Physik)|Arbeit]] definiert, die dadurch verrichtet wird, dass der Punkt, an dem 1&nbsp;MKS-Einheit der [[Kraft]] (damals noch nicht offiziell als [[Newton (Einheit)|Newton]] benannt) ansetzt, um 1&nbsp;[[Meter]] in deren Richtung bewegt wird. Ausdrücklich war das Joule auch als Einheit der Energie und für die Verwendung im elektromagnetischen Kontext vorgesehen.<ref>[http://www.bipm.org/en/CIPM/db/1946/2/ ''CIPM, 1946, Resolution 2, Definitions of electric units.''] Auf: ''bipm.org.''</ref>
+
+Die [[Generalkonferenz für Maß und Gewicht]] hat diese Definition auf ihrer 9.&nbsp;Konferenz im Jahr 1948 ratifiziert und insbesondere auch verlangt, dass das Joule in der [[Kalorimetrie]] nach Möglichkeit anstelle der [[Kalorie]] verwendet wird.<ref>[http://www.bipm.org/en/CGPM/db/9/3/ ''9th CGPM, Resolution 3: Triple point of water; thermodynamic scale with a single fixed point; unit of quantity of heat (joule).''] Auf: ''bipm.org.''</ref> Seit 1960 ist das Joule schließlich Teil des [[Internationales Einheitensystem|internationalen Einheitensystems]] (SI).
+
+In der [[Europäische Union|EU]] hat die [[EG-Richtlinie]] 71/354/EWG<ref name="71/354/EWG">{{EG-RL|1971|354|format=PDF}} des Rates vom 18.&nbsp;Oktober 1971 zur Angleichung der Rechtsvorschriften der Mitgliedstaaten über die Einheiten im Messwesen.</ref> vom 18.&nbsp;Oktober 1971 das Joule wie die übrigen SI-Einheiten für „endgültig zugelassen“ erklärt. Innerhalb von fünf Jahren mussten die [[Mitgliedstaaten der Europäischen Union|EU-Mitgliedstaaten]] den Zwang zur Anwendung einführen; die Verwendung der konkurrierenden Kalorie war bis spätestens Ende 1977 zu untersagen. Das Schicksal des [[Erg (Einheit)|Erg]] wurde zunächst offengelassen; seine Verwendung war schließlich bis Ende 1979 zu untersagen.<ref>{{EG-RL|1976|770|format=PDF}} des Rates vom 27.&nbsp;Juli 1976 zur Änderung der Richtlinie 71/354/EWG zur Angleichung der Rechtsvorschriften der Mitgliedstaaten über die Einheiten im Messwesen.</ref>
+
+Die Richtlinie 80/181/EWG<ref name="EG-80-181-kons">{{EG-RL|1980|0181||27.05.2009}} des Rates vom 20.&nbsp;Dezember 1979 zur Angleichung der Rechtsvorschriften der Mitgliedstaaten über die Einheiten im Messwesen und zur Aufhebung der Richtlinie 71/354/EWG.</ref> vom 20.&nbsp;Dezember 1979 (gültig seit Oktober 1981) hat das SI mit dem Joule bestätigt, aber den Mitgliedstaaten die Möglichkeit eingeräumt, andere Einheiten befristet wieder zuzulassen, solang sie nur zusätzlich verwendet werden und die SI-Einheit hervorgehoben wird. Die Frist war zunächst auf Ende 1989 festgelegt und ist später erst auf Ende 1999 und dann auf Ende 2009 verlängert worden.<ref>{{EG-RL|1989|617|format=PDF}} des Rates vom 27.&nbsp;November 1989 zur Änderung der Richtlinie 80/181/EWG zur Angleichung der Rechtsvorschriften der Mitgliedstaaten über die Einheiten im Messwesen.</ref><ref>{{EG-RL|1999|103|format=PDF}} des Europäischen Parlaments und des Rates vom 24.&nbsp;Januar 2000 zur Änderung der Richtlinie 80/181/EWG zur Angleichung der Rechtsvorschriften der Mitgliedstaaten über die Einheiten im Messwesen.</ref> Seit dem 1.&nbsp;Januar 2010 ist die zusätzliche Angabe von Kalorien neben Joule in der EU nun unbefristet zulässig.<ref name="EG-2009-3" />
+
+Bei [[Lebensmittel]]n schreibt die [[Lebensmittel-Informationsverordnung]] (LMIV) seit 13.&nbsp;Dezember 2014 im Warenverkehr der EU die Angabe des [[Physiologischer Brennwert|physiologischen Brennwerts]] in der Einheit kJ pro 100&nbsp;g vor. Neben der Angabe in kJ kann der Brennwert zusätzlich auch in der veralteten Einheit kcal pro 100&nbsp;g angegeben werden.
+
+== Verwandte Einheiten==
+Eine Umrechnungstabelle für verbreitete Energieeinheiten findet sich im Artikel [[Energie#Einheiten|Energie]].
+
+Wichtige Einheiten für Energie sind:
+* 1 MJ = <math>0{,}2\overline 7 </math> [[Wattstunde|kWh]]
+* 1 kWh = 3,6 MJ
+
+Einheiten der elektrischen [[Scheinenergie]] sind:
+* 1 '''Voltamperesekunde''' (VAs) = 1 J
+* 1 '''Voltamperestunde''' (VAh) = 3,6 kJ
+* 1 '''Kilovoltamperestunde''' (kVAh) = 3,6 MJ
+
+Einheiten der elektrischen [[Blindenergie]] sind:
+* 1 '''Varsekunde''' (vars) = 1 J
+* 1 '''Varstunde''' (varh) = 3,6 kJ
+* 1 '''Kilovarstunde''' (kvarh) = 3,6 MJ
+
+== Siehe auch ==
+* [[Größenordnung (Energie)]] – Zusammenstellung alltäglicher und nicht alltäglicher Energien.
+
+== Weblinks ==
+{{Wiktionary|Joule}}
+
+== Einzelnachweise ==
+<references/>
+
+[[Kategorie:Energieeinheit]]
+[[Kategorie:James Prescott Joule]]

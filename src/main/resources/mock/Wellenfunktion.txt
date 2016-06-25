@@ -1,0 +1,273 @@
+Die '''Wellenfunktion''' <math>\psi\,\!</math> beschreibt den [[Quantenmechanischer Zustand|quantenmechanischen Zustand]] eines [[Elementarteilchen]]s oder eines [[System]]s von Elementarteilchen im [[Ortsraum]]. Ihr [[Betragsquadrat]] bestimmt die Wahrscheinlichkeitsdichte für den Ort des Teilchens. Nach der [[Kopenhagener Deutung]] der Quantenmechanik enthält die Wellenfunktion eine Beschreibung aller [[Information]]en einer [[Entität (Philosophie)|Entität]] oder eines ganzen Systems. 
+
+Eine Wellenfunktion ist die [[Funktion (Mathematik)|Funktion]], die die [[Schrödingergleichung]] (im Ortsraum) löst. Lösungen dieser Wellengleichungen können sowohl [[Gebundener Zustand|gebundene]] [[Teilchen (Physik)|Teilchen]] (wie [[Elektron|Elektronen]] in den [[Atomorbital|Schalen eines Atoms]]) oder [[freies Teilchen|freie Teilchen]] (z.&nbsp;B. ein [[Alphastrahlung|α-]] oder [[Betastrahlung|β-Teilchen]] als [[Wellenpaket]]) beschreiben.
+Die Wellenfunktion ist in der Regel eine [[Komplexe Zahl|komplexe]] Funktion.
+
+Bei Teilchen''systemen'' (z.&nbsp;B. mit mehreren [[Ununterscheidbare Teilchen|gleichen]] Teilchen) bezeichnet man eine solche Lösung als [[Zweite Quantisierung|Vielteilchen-Wellenfunktion]]. Wegen der Wechselwirkung der Teilchen untereinander lassen sich diese Lösungen jedoch meist nicht mehr ohne die modernere Methodik der [[Quantenfeldtheorie]] berechnen.
+
+== Quantenteilchen als Welle ==
+In der [[Schrödinger-Bild|schrödingerschen Quantenmechanik]] ergeben sich Wellenfunktionen als Lösung der [[Schrödingergleichung]].
+
+Da die Schrödingergleichung im [[komplexe Zahl|komplexen Raum]] definiert ist, benötigt sie zur allgemeinen Lösung in der Regel eine Funktion, deren [[Funktionswert]]e ebenfalls im komplexen Raum liegen. Daher ist die Wellenfunktion nicht reell, sondern [[Komplexe Zahl|komplexwertig]]. Dies spiegelt sich u.&nbsp;a. darin wider, dass <math>\psi(\mathbf{r},t)</math> nicht unbedingt eine reale physikalische Bedeutung zukommt. Sie ist in der Regel nicht [[Messung|messbar]], sondern dient nur der mathematischen Beschreibung des quantenmechanischen Zustands eines physikalischen Systems. Aus ihr lässt sich jedoch das zu erwartende Ergebnis einer Messung durch [[Komplexe_Zahlen#Komplexe_Konjugation|komplexe Konjugation]] berechnen. 
+
+Zum Vergleich: Auch die [[elektrische Feldstärke]] <math>\mathbf{\Epsilon}(\mathbf{r},t)</math> einer [[Radiowelle]] ist die Lösung einer (klassischen) [[Elektrodynamik#Potentiale_und_Wellengleichung|elektrodynamischen]] [[Wellengleichung]]. Die elektrische Feldstärke ist jedoch z.&nbsp;B. durch eine Antenne und einen Radioempfänger messbar. 
+ 
+Teilchen mit inneren Eigenschaften (wie zum Beispiel dem [[Elektronenspin|Spin]] eines gebundenen Elektrons oder dem [[Helizität|Drehimpuls eines Photons]]) werden durch Wellenfunktionen mit mehreren Komponenten beschrieben. Je nach dem Transformationsverhalten der Wellenfunktionen bei [[Lorentztransformation|Lorentztransformationen]] unterscheidet man in der relativistischen Quantenfeldtheorie [[Skalar (Physik)|skalare]], [[tensor]]ielle und [[spinor]]ielle Wellenfunktionen bzw. Felder. 
+
+=== Normierungsbedingung und Aufenthaltswahrscheinlichkeit ===
+Im Unterschied zur [[Klassische Physik|klassischen Physik]] ist eine exakte Aussage über den Aufenthaltsort <math>\mathbf{r}</math> eines Quantenteilchens im Allgemeinen nicht möglich ([[Heisenbergsche Unschärferelation]]). Stattdessen lässt sich nur die [[Aufenthaltswahrscheinlichkeit|Wahrscheinlichkeit]] angeben, ein Teilchen (z.&nbsp;B. Elektron) in einem Ortsbereich (einem [[Intervall (Mathematik)|Intervall]] des [[Ortsraum]]s) zu finden. Sie ergibt sich für Teilchen-Wellenfunktionen durch die Integration der [[Wahrscheinlichkeitsdichte]] <math>\rho(\mathbf{r},t)</math> über diesen Raumbereich:
+
+:<math>P(\mathbf{r},t) = \int_{\text{V}}^{} \rho(\mathbf{r},t) \mathrm \; \mathrm dV</math>
+
+Die Wahrscheinlichkeitsdichte wird für eine normierte Wellenfunktion durch das Betragsquadrat der Wellenfunktion angegeben:
+
+::<math>\begin{align}
+\rho(\mathbf{r},t) & = |\psi(\mathbf{r},t)|^2\\
+                   & = \psi(\mathbf{r},t) \; \psi^*(\mathbf{r},t)
+\end{align}</math>
+
+mit der komplex konjugierten Funktion <math>\psi^*(\mathbf{r},t)</math> zu <math>\psi(\mathbf{r},t)</math>. Man spricht bei der Wellenfunktion daher auch von einer „Wahrscheinlichkeitswelle“.
+
+Wenn ein Teilchen existiert, muss es sich zu jeder Zeit irgendwo im Raum aufhalten. D.h. die differentielle Wahrscheinlichkeit <math>\mathrm dP(\mathbf{r},t)</math>, das Teilchen zur Zeit&nbsp;''t'' am Ort <math>\mathbf{r} = (x, y, z)</math> im Volumenelement <math>\mathrm dV = \mathrm dx\, \mathrm dy\, \mathrm dz</math> anzutreffen, muss über den Ortsraum [[Integralrechnung|integriert]] Eins ergeben:
+
+:<math>\begin{align}
+P(\mathbf{r},t) & = \int_{\text{Raum}}^{} \mathrm dP(\mathbf{r},t)\\
+                & = \int_{\text{Raum}}^{} \rho(\mathbf{r},t) \mathrm \; \mathrm dV = 1
+\end{align}</math>
+
+Damit muss die Wellenfunktion die räumliche Normierungsbedingung erfüllen:
+
+:<math>\Rightarrow \int_{\text{Raum}}^{} \psi(\mathbf{r},t) \; \psi^*(\mathbf{r},t) \, \mathrm dV = 1</math> 
+
+=== Einfache Wellenfunktion ===
+==== Wellenfunktion ====
+Die Wellenfunktion <math>\psi(\mathbf{r},t)</math> eines [[Welle-Teilchen-Dualismus|quantenmechanischen freien Teilchens]] kann z.&nbsp;B. die Form einer [[ebene Welle|ebenen Welle]] mit einem (mathematisch) reellen und einem (mathematisch) [[Imaginäre Zahl|imaginären]] Teil besitzen:
+
+:<math>\begin{align}
+\psi(\mathbf{r},t) & = A_0 \cos(\omega t - \mathbf{k}\mathbf{r})\\
+                   & = A_R \cos(\omega t - \mathbf{k}\mathbf{r}) + i A_I \cos(\omega t - \mathbf{k}\mathbf{r})
+\end{align}</math>
+
+mit
+* <math>\mathbf{r}</math> der Ort als Vektor ([[Ortsvektor]]),
+* <math>A_0</math> die ([[Komplexe Zahlen|komplexwertige]]) [[Amplitude]], mit dem reellen Teil <math>A_R</math> und dem imaginären <math>A_I</math>, so dass <math>A_0 = A_R + i A_I </math> 
+* <math>\mathbf{k}</math> der [[Wellenvektor]], der Richtung und [[Wellenlänge]] der Welle festlegt
+* <math>\omega</math> die [[Kreisfrequenz]], die die [[Periode (Physik)|Schwingungsperiode]] der Welle beschreibt.
+
+==== Messung ====
+Die Wellenfunktion multipliziert mit ihrer [[Komplexe_Zahlen #Komplexe_Konjugation|komplexen Konjugation]] <math>\psi^*(\mathbf{r},t)</math> ergibt das Betragsquadrat der Wellenfunktion:
+
+:<math>\begin{align}
+|\psi(\mathbf{r},t)|^2 & = \psi(\mathbf{r},t) \, \psi^*(\mathbf{r},t)\\
+                       & = A_0 \, A_0^*    \, \cos^2(\omega t - \mathbf{k} \mathbf{r})\\
+                       & = (A_R^2 + A_I^2) \, \cos^2(\omega t - \mathbf{k} \mathbf{r})
+\end{align}</math>
+
+Diese Funktion gibt annähernd (nicht genau, da <math>|\psi|^2</math> noch nicht [[Wellenfunktion #Normierungsbedingung und Aufenthaltswahrscheinlichkeit|normiert]] ist) die [[Dichtefunktion]] <math>\rho(\mathbf{r},t)</math> des Teilchens als Funktion des Ortes und der Zeit an:
+
+:<math>|\psi(\mathbf{r},t)|^2 \approx \rho(\mathbf{r},t)</math>
+
+==== Normierung ====
+Um die Wellenfunktion zu normieren, teilt man sie durch die Wurzel des Integrals über <math>|\psi|^2(\mathbf{r},t)</math>. Aus der normierten Wellenfunktion erhält man damit die korrekte Wahrscheinlichkeitsdichtefunktion:
+
+:<math>\rho(\mathbf{r},t) = \frac{|\psi(\mathbf{r},t)|^2}{\int_\text{Raum}|\psi(\mathbf{r},t)|^2 \, \mathrm dV}</math>
+
+Das Integral über eine ebene Welle ist jedoch nicht definiert. Aus diesem Grund multipliziert man die Wellenfunktion <math>\psi\left(\mathbf{r},t\right)</math> mit einer [[Einhüllende|einhüllenden Funktion]] (z.&nbsp;B. einer [[Normalverteilung|Gaußfunktion]]). Die entstehende Funktion kann ein berechenbares endliches Integral haben. Zudem kann sie für alle anderen Anwendungen praktisch gleiche Eigenschaften wie <math>\psi</math> haben. In diesem Fall spricht man von einem Wellenpaket.
+
+== Definition ==
+
+Eine ''Wellenfunktion'' bezieht sich auf jeden [[Vektor]] oder jede [[Funktion (Mathematik)|Funktion]], die den ''Zustand eines physikalischen Systems'' beschreibt, indem sie es als Entwicklung nach anderen Zuständen desselben Systems darstellt.
+
+Typische Wellenfunktionen sind entweder:
+
+* Ein Vektor aus [[Komplexe Zahl|komplexen Zahlen]] mit endlich vielen Komponenten:
+
+:<math>\vec \psi = \begin{bmatrix} c_1 \\ \vdots \\ c_n \end{bmatrix}</math>,
+
+* Ein Vektor aus komplexen Zahlen mit [[Abzählbarkeit|abzählbar unendlich]] vielen Komponenten (diskreter Index):
+
+:<math>\vec \psi = \begin{bmatrix} c_1 \\ \vdots \\ c_n \\ \vdots \end{bmatrix}</math>,
+
+* oder eine komplexwertige Funktion einer oder mehrerer stetig veränderlicher [[Reelle Zahl|reeller Variablen]]:
+
+:<math>\psi(x_1, \, \ldots \, x_n)</math>.
+
+In allen Fällen liefert die Wellenfunktion eine vollständige Beschreibung des betreffenden physikalischen Systems. Es ist allerdings wichtig anzumerken, dass eine einem bestimmten System zugeordnete Wellenfunktion das System nicht eindeutig bestimmt; vielmehr können viele verschiedene Wellenfunktionen das gleiche physikalische System beschreiben.
+
+== Teilcheninterpretation ==
+
+Die physikalische Interpretation einer Wellenfunktion ist kontextabhängig. Mehrere Beispiele werden unten angeführt, gefolgt von einer Interpretation der oben beschriebenen drei Fälle. 
+
+=== Ein Teilchen in einer Raumdimension ===
+
+Die Wellenfunktion eines Teilchens im eindimensionalen Raum ist eine [[Komplexe Zahl|komplexe]] [[Funktion (Mathematik)|Funktion]] <math>\psi(x)\,</math> über der Menge der [[Reelle Zahl|reellen Zahlen]]. Das Betragsquadrat der Wellenfunktion, <math>|\psi|^2\,</math>, wird als [[Wahrscheinlichkeitsdichte]] der Teilchenposition interpretiert.
+
+Die Wahrscheinlichkeit, bei einer Messung das Teilchen im Intervall <math>[a, b]</math> zu finden, ist folglich 
+
+:<math>\int_{a}^{b} |\psi(x)|^2\, \mathrm dx \quad </math>.
+
+Dies führt zu der [[Normierter Raum|Normierungsbedingung]] 
+
+:<math> \int_{-\infty}^{\infty} |\psi(x)|^2\, \mathrm dx \,\stackrel{!}{=}\, 1 \quad </math>
+
+da eine Messung der Teilchenposition eine reelle Zahl ergeben muss. Das heißt: Die Wahrscheinlichkeit, ein Teilchen an irgendeinem Ort zu finden, ist gleich 1.
+
+=== Ein Teilchen in drei Raumdimensionen ===
+
+Der dreidimensionale Fall ist analog zum Eindimensionalen; Die Wellenfunktion ist eine komplexe Funktion <math>\psi(x, y, z)\,</math> definiert über dem dreidimensionalen Raum, und ihr Betragsquadrat wird als dreidimensionale Wahrscheinlichkeitsdichte interpretiert. Die Wahrscheinlichkeit, bei einer Messung das Teilchen im Volumen <math>R</math> zu finden, ist deshalb
+
+:<math>\int_R |\psi(x, y, z)|^2\, \mathrm dV</math>.
+
+Die Normierungsbedingung ist analog zum eindimensionalen Fall
+
+:<math> \int |\psi(x, y, z)|^2\, \mathrm dV = 1</math>
+
+wobei das Integral sich über den gesamten Raum erstreckt.
+
+=== Zwei unterscheidbare Teilchen in drei Raumdimensionen ===
+
+In diesem Fall ist die Wellenfunktion eine komplexe Funktion von sechs Raumvariablen,
+
+:<math>\psi(x_1, y_1, z_1, x_2, y_2, z_2)\,</math>,
+
+und <math>|\psi|^2\,</math> ist die gemeinsame Wahrscheinlichkeitsdichtefunktion der Positionen beider Teilchen. Die Wahrscheinlichkeit einer Positionsmessung beider Teilchen in den beiden jeweiligen Regionen R und S ist dann 
+
+:<math>\int_R \int_S |\psi|^2 \, \mathrm dV_2\,\mathrm dV_1 </math>
+
+wobei <math>\mathrm dV_1 = \mathrm dx_1 \mathrm dy_1 \mathrm dz_1</math> und ebenso für <math>\mathrm dV_2</math>. Die Normierungsbedingung ist deshalb
+
+:<math>\int |\psi|^2 \, \mathrm dV_2\,\mathrm dV_1 = 1</math>,
+
+wobei das vorgestellte Integral über den gesamten Bereich aller sechs Variablen reicht.
+
+Dabei ist von entscheidender Bedeutung, dass im Fall von Zwei-Teilchen-Systemen nur das System, das aus ''beiden'' Teilchen besteht, eine wohldefinierte Wellenfunktion haben muss. Daraus ergibt sich, dass es unmöglich sein kann, eine Wahrscheinlichkeitsdichte für Teilchen EINS zu definieren, welche nicht ausdrücklich von der Position von Teilchen ZWEI abhängt. Die [[Moderne Physik]] nennt dieses Phänomen [[Quantenverschränkung]] bzw. [[Quanten-Nichtlokalität]].
+
+=== Ein Teilchen im eindimensionalen Impulsraum ===
+
+Die Wellenfunktion eines eindimensionalen Teilchens im Impulsraum ist eine komplexe Funktion <math>\psi(p)\,</math> definiert auf der Menge der reellen Zahlen. Die Größe <math>|\psi|^2\,</math> wird als Wahrscheinlichkeitsdichtefunktion im Impulsraum interpretiert. Die Wahrscheinlichkeit, dass eine Impulsmessung einen Wert im Intervall <math>[a, b]</math> ergibt, ist folglich
+
+:<math>\int_{a}^{b} |\psi(p)|^2\, \mathrm dp\quad </math>.
+
+Dies führt zur Normierungsbedingung
+
+:<math>\int_{-\infty}^{\infty} |\psi(p)|^2\, \mathrm dp = 1 </math>,
+
+weil eine Messung des Teilchenimpulses immer eine reelle Zahl ergibt.
+
+=== Spin-1/2-Teilchen (z.&nbsp;B. Elektron) ===
+
+Die Wellenfunktion eines Teilchens mit [[Spin]] 1/2 (ohne Berücksichtigung seiner räumlichen Freiheitsgrade) ist ein Spalten-Vektor
+
+:<math>\vec \psi = \begin{bmatrix} c_1 \\ c_2 \end{bmatrix}</math>.
+
+Die Bedeutung der Komponenten des Vektors hängt von der verwendeten Basis ab, typischerweise entsprechen <math>c_1</math>
+und <math>c_2</math> den Koeffizienten für eine Ausrichtung des Spins in <math>z</math>-Richtung (''spin up'') und entgegen der <math>z</math>-Richtung (''spin down''). In der [[Bra-Ket|Dirac-Notation]] ist dies:
+
+:<math>| \psi \rangle = c_1 | \uparrow_z \rangle + c_2 | \downarrow_z \rangle</math>
+
+Die Werte <math>|c_1|^2 \,</math> und <math>|c_2|^2 \,</math> werden dann als die Wahrscheinlichkeiten interpretiert, dass der Spin bei einer Messung in <math>z</math>-Richtung oder entgegen der <math>z</math>-Richtung orientiert ist.
+ 
+Dies führt zur Normierungsbedingung
+
+:<math>|c_1|^2 + |c_2|^2 = 1\,</math>.
+
+== Grundsätzliche Interpretation der Vektor-Darstellung ==
+
+Wellenfunktionen lassen sich als Elemente eines [[Vektorraum]]s auffassen ([[Hilbertraum]]). 
+Eine Wellenfunktion, die den Zustand eines physikalischen Systems beschreibt, kann durch [[Linearkombination]] von anderen Zuständen desselben Systems beschrieben werden. Wir bezeichnen den Zustand des betrachteten Systems als <math>| \psi \rangle\,</math> und die Zustände, in die es entwickelt wird, als <math>| \phi_i \rangle</math>. Die letzteren Zustände sollen eine ''Basis'' des Vektorraums darstellen. Im Folgenden werden alle Wellenfunktionen als normiert angenommen. 
+
+=== Endliche Vektoren ===
+
+Eine vektorielle Wellenfunktion <math>\vec \psi</math> mit <math>n</math> Komponenten beschreibt, wie man den Zustand des physikalischen Systems <math>| \psi \rangle</math> als lineare Kombination endlich vieler Grundelemente <math>| \phi_i \rangle</math>, welche <math>i</math> von <math>1</math> zu <math>n</math> laufen, ausdrückt. Insbesondere ist die Gleichung
+
+:<math>\vec \psi = \begin{bmatrix} c_1 \\ \vdots \\ c_n \end{bmatrix}</math>,
+
+welche eine Relation zwischen Spaltenvektoren ist, gleichwertig mit der Basiszerlegung
+
+:<math>|\psi \rangle = \sum_{i = 1}^n c_i | \phi_i \rangle</math>,
+
+welche eine Relation zwischen den Zuständen eines physikalischen Systems ist. Zu beachten ist, dass man beim Wechsel zwischen diesen Ausdrücken die verwendete Basis kennen muss, und folglich zwei Spaltenvektoren mit den gleichen Komponenten zwei verschiedene Systemzustände repräsentieren, wenn die zugrundegelegten Basiszustände verschieden sind. Ein Beispiel einer endlichen, vektoriellen Wellenfunktion ist gegeben durch den Spinzustand eines Teilchens mit Spin 1/2, wie oben beschrieben. 
+
+Die physikalische Bedeutung der Komponenten von <math>\vec \psi</math> ist durch das Postulat des [[Kollaps der Wellenfunktion|Zusammenbruchs der Wellenfunktion]] gegeben:
+
+:Wenn den Zuständen <math>| \phi_i \rangle</math> eindeutige, endliche Werte <math>\lambda_i</math> ''diskret-wertiger'' dynamischer Variablen entsprechen (z.&nbsp;B. Komponenten von Bahndrehimpuls <math>\vec{\mathcal L}</math>, [[Spin]]drehimpuls <math>\vec{\mathcal S}</math> und Gesamtdrehimpuls <math>\vec{\mathcal J}:=\vec{\mathcal L}+\vec{\mathcal S}</math>), und diese Variablen in einem System im Zustand <math>|\psi \rangle = \sum_i c_i | \phi_i \rangle</math> gemessen werden, 
+:dann ist die Wahrscheinlichkeit, den Wert <math>\lambda_k</math> zu messen, gegeben durch <math>|c_k|^2</math>, und wenn die Messung den Wert <math>\lambda_k</math> ergibt, dann nimmt das System unmittelbar danach den Zustand <math>| \phi_k \rangle</math> an.
+
+(Impuls- und Ortsvariable haben dagegen ein ''kontinuierliches'' Spektrum. Bei ihnen ist die Basiszerlegung durch ein Integral gegeben, das heißt, die obige Summendarstellung für <math>|\psi\rangle</math> ist durch ein Integral <math>|\psi\rangle =\int {\rm d}\kappa\, c(\kappa )\,|\kappa\rangle</math> zu ersetzen, und die Wahrscheinlichkeiten <math>|c_k|^2</math> durch Ausdrücke der Form <math>\mathrm d\kappa |c(\kappa ) |^2 </math>&nbsp;.)
+
+=== Unendliche Vektoren ===
+
+Der Fall unendlicher Vektoren mit diskretem Index wird genauso behandelt wie ein endlicher Vektor, mit der Ausnahme dass die Summe über alle (unendlich viele) Basiselemente ausgedehnt wird. Folglich ist
+
+:<math>\vec \psi = \begin{bmatrix} c_1 \\ \vdots \\ c_n \\ \vdots \end{bmatrix}</math>
+
+äquivalent zu
+
+:<math>|\psi \rangle = \sum_{i} c_i | \phi_i \rangle</math>, 
+
+wobei in der obenstehenden Summe alle Komponenten von <math>\vec \psi</math> berücksichtigt sind. Die Interpretation der Komponenten ist die gleiche wie im endlichen Fall (der Messvorgang wird ebenso wie für Vektoren aus einem endlichdimensionalen Hilbertraum interpretiert: vergleiche [[Kollaps der Wellenfunktion]]).
+
+=== Stetig indizierte Vektoren (Funktionen) ===
+
+Falls der Index nicht diskret, sondern stetig ist, wird die Summe durch ein Integral ersetzt; ein Beispiel dafür ist die örtliche Darstellung der Wellenfunktion eines Teilchens in einer Dimension, welche den (abstrakten) Zustand des Teilchens <math>|\psi \rangle</math> in einer speziellen Ortsbasis <math>|x\rangle</math> darstellt:
+
+:<math>| \psi \rangle = \int_{-\infty}^{\infty} \psi(x)\,| x \rangle\,\mathrm dx</math>.
+
+Dabei ist der Zustandsvektor <math>|\psi\rangle</math> nicht zu verwechseln mit seiner „Komponenten-Darstellung“ <math>\psi(x)=\langle x|\psi\rangle</math> im Ortsraum. Der erstere Ausdruck bezeichnet den Zustand des Teilchens abstrakt, und ohne Bezug auf eine spezielle Basisdarstellung, während der letztere die Wellenfunktion im Ortsraum bezeichnet, welche als [[Superposition (Physik)|Superposition]] der Basiszustände mit definierten Positionen interpretiert wird. Die Basiszustände können auch als Integral
+
+:<math>|x\rangle = \int_{-\infty}^{\infty} \,\delta(x - x')\, |x'\rangle\,\mathrm dx'</math>
+
+formuliert werden. Damit kann eine zu <math>|x_0\rangle</math> gehörende Wellenfunktion im Ortsraum auch als [[Deltafunktion|Delta-Distribution]] <math>\delta(x-x_0)</math> geschrieben werden. Man beachte, dass letztere jedoch nicht als gewöhnliche Wellenfunktion im Hilbertraum der quadratintegrablen Funktionen enthalten ist.
+
+== Formalismus ==
+
+Bei einem gegebenen isolierten physikalischen System sind die erlaubten Zustände (also die Zustände, die das System einnehmen kann, ohne die Gesetze der Physik zu verletzen) eine Teilmenge eines [[Vektorraum]]s ''H'', des [[Hilbert-Raum]]s. Konkret ist diese Teilmenge die Menge aller Vektoren mit der Länge 1, also die Einheitskugel um den Ursprung. Dies folgt aus der Tatsache, dass alle physikalisch erlaubten Zustände normiert sind. Daraus folgt:
+
+* Wenn <math>| \psi \rangle</math> und <math>| \phi \rangle</math> zwei erlaubte Zustände sind, dann ist <math>\alpha | \psi \rangle + \beta | \phi \rangle</math> ebenfalls ein erlaubter Zustand genau dann wenn <math>|\alpha|^2 + |\beta|^2 =1</math> gilt (Normierung).
+
+* Wegen der Normierung kann für den Vektorraum ''H'' stets eine [[Orthonormalbasis]] aus physikalisch erlaubten Zuständen gefunden werden.
+
+In diesem Zusammenhang kann die Wellenfunktion eines bestimmten Zustands als Entwicklung des Zustandes auf einer Basis des Vektorraums <math>H</math> betrachtet werden. Zum Beispiel ist
+
+:<math>\{ |\uparrow_z \rangle, |\downarrow_z \rangle \}</math>
+
+eine Basis des Raums, der ein Teilchen mit Spin 1/2 beschreibt, und daraus folgt, dass der Spinzustand eines solchen Teilchens durch
+
+:<math>a|\uparrow_z \rangle + b|\downarrow_z \rangle</math> eindeutig beschrieben wird.
+
+Es ist üblich, <math>H</math> mit einem [[Skalarprodukt|inneren Produkt]] (Skalarprodukt) zu versehen, wobei die Art des inneren Produkts von der verwendeten Basis abhängt. Wenn es abzählbar viele Basiselemente <math>\{ | \phi_i \rangle \}\,</math>, welche alle zu <math>H</math> gehören, gibt, dann ist <math>H</math> mit dem eindeutigen inneren Produkt, welches diese Basis [[Orthonormalität|orthonormal]] macht, versehen, z.&nbsp;B.:
+
+:<math>\langle \phi_i | \phi_j \rangle = \delta_{ij}.</math> 
+
+Wenn das geschehen ist, ist das innere Produkt von <math>| \phi_i \rangle</math> mit der Entwicklung eines beliebigen Vektors
+
+:<math>\langle \phi_i | \sum_j c_j | \phi_j \rangle = c_i</math>.
+
+Der Koeffizient <math>c_i</math> der Entwicklung des Zustandes <math>| \psi \rangle</math> in die Basis <math>\{ | \phi_i \rangle \}\,</math> ergibt sich also durch Projektion auf den Basisvektor <math>| \phi_i \rangle</math>. 
+
+Wenn die Eigenwerte ein Kontinuum bilden, was zum Beispiel bei der Orts- oder Koordinatenbasis der Fall ist, lässt sich aus den entsprechenden Eigenzuständen kein Hilbertraum aufbauen, da diese Eigenzustände nicht quadratintegrabel sind.
+Durch Verwendung der [[Delta-Distribution|Dirac'schen Delta-Distribution]] lässt sich jedoch für diese Basiszustände eine verallgemeinerte Orthonormalisierungsbedingung formulieren. Derartige Basen werden auch als ''uneigentliche Basen'' bezeichnet.
+Ein Beispiel dafür ist die oben erwähnte Entwicklung der räumlichen Wellenfunktion eines Teilchens in Zustände <math>\{ | x \rangle \}</math> mit bestimmter Position <math>x</math>, mit der ''Dirac-Normalisierung''
+
+:<math>\langle x | x' \rangle = \delta(x - x')</math>
+
+so dass die analoge Identität 
+
+:<math>\langle x | \int \psi(x') | x' \rangle \,\mathrm dx' = \int \psi(x') \delta(x - x')\,\mathrm dx' = \psi(x)</math>
+
+erfüllt ist.
+
+== Siehe auch ==
+
+* [[Boson]] – Teilchen mit [[Symmetrie (Physik)|symmetrischer]] Wellenfunktion unter [[Permutation]].
+* [[Fermion]] – Teilchen mit antisymmetrischer Wellenfunktion unter Permutation.
+* [[Dimension (Physik)]]
+* [[Dimension (Mathematik)]]
+* [[Austauschwechselwirkung]]
+
+== Weblinks ==
+
+* [http://www.quanten.de/schroedingers_katze.html Schrödingers Katze]
+* [http://www.rokip.net/index.php?option=com_content&view=article&id=170:normierungsfaktor&catid=55:theoretische-physik-quantenmechanik&Itemid=19 Normierung einer Wellenfunktion anhand eines Beispiels]
+
+[[Kategorie:Quantenmechanik]]

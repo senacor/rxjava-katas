@@ -1,0 +1,350 @@
+In der Physik beschreibt der '''Dichteoperator''' (auch '''statistischer Operator''') für ein [[Ensemble  (Physik)|Ensemble]] gleichartiger Systeme, mit welcher [[Wahrscheinlichkeit]] sich ein herausgegriffenes System in einem bestimmten [[Zustand (Physik)|Zustand]] befindet. Der Dichteoperator kann durch die '''Dichtematrix''' (bzw. '''statistische Matrix''') ''[[Darstellungstheorie|dargestellt]]'' werden.
+
+Der Dichteoperator wurde ursprünglich im Rahmen der [[klassische Physik|klassischen Physik]] von [[George Gabriel Stokes|Stokes]] für den [[Polarisation]]s<nowiki/>zustand eines [[Lichtstrahl]]s entwickelt ([[Stokes-Parameter]]). Im Folgenden wird der Dichteoperator im Zusammenhang mit Systemen in [[Zustand (Quantenmechanik)|quantenmechanisch definierten Zuständen]] dargestellt.
+
+Der Dichteoperator tritt im Kontext der [[Quantenstatistik]] auf.
+
+Die Dichtematrix bzw. der Dichteoperator stammt von [[Lew Landau]] (1927) und [[John von Neumann]] (1927)<ref>John von Neumann, Wahrscheinlichkeitstheoretischer Aufbau der Quantenmechanik, Göttinger Nachrichten 1, 1927, S. 245–272</ref>. Sie wurde von [[Paul Dirac]] in seinen ''Principles of Quantum Mechanics'' (1930) dargestellt und von John von Neumann in dessen ''Mathematische Grundlagen der Quantenmechanik'' (1932).
+== Konstruktion ==
+Der Dichteoperator beschreibt einen [[Gemischter Zustand|gemischten Zustand]]. In dem betrachteten Ensemble befinden sich mehrere gleichartige Systeme mit den Wahrscheinlichkeiten <math>p_i\,</math> in den orthogonalen Zuständen  <math>|\psi_i\rangle</math>. Sind die Zustände  nicht orthogonal, so ist das jeweilige Gewicht <math>p_i\,</math> nicht mehr die Wahrscheinlichkeit, mit der das Gemisch im jeweiligen Zustand vorliegt. Die Gewichte sind auf 1 normiert: <math>\sum_i p_i =1\ .</math> Dann ist (in [[Bra-Ket]]-Schreibweise) der Dichteoperator gegeben durch
+:<math>\hat {\rho} = \sum_i p_i \left|\psi_i\right\rangle\left\langle\psi_i\right| \quad (1)</math>
+
+Darin ist 
+:<math>\hat {\mathbb{P}}_{\psi_i} = |\psi_i\rangle \; \langle\psi_i|</math>
+
+der [[Projektion (lineare Algebra)|Projektionsoperator]], der angewandt auf einen beliebigen Zustandsvektor <math>|\Phi\rangle</math> dessen Komponente „parallel“ zum Zustand <math>|\psi_i\rangle</math> herausprojiziert:
+
+: <math>\hat {\mathbb{P}}_{\psi_i} |\Phi\rangle = |\psi_i\rangle \; \langle\psi_i|\Phi\rangle \ .</math>
+
+Der Faktor <math>\langle\psi_i|\Phi\rangle</math> darin ist die Wahrscheinlichkeitsamplitude, das im Zustand <math>|\Phi\rangle</math> vorliegende System im Zustand <math>|\psi_i\rangle</math> vorzufinden.
+
+Mit Hilfe der Projektionsoperatoren lässt sich der Dichteoperator auch schreiben als
+:<math>\hat {\rho} = \sum_i p_i \; \hat {\mathbb{P}}_{\psi_i}\ . </math>
+
+Für ein Ensemble, in dem alle Systeme im selben Zustand <math>|\psi\rangle </math> präpariert sind, ist der Dichteoperator daher einfach der Projektionsoperator selbst:
+:<math>\hat {\rho} = \hat {\mathbb{P}}_{\psi} = |\psi\rangle \langle\psi|\ . </math>
+
+Der Dichteoperator für das [[Kanonisches Ensemble|kanonische Ensemble]] ist:
+:<math>\hat {\rho} = \frac{e^{-\beta \hat H}}{\rm{Spur}\{e^{-\beta \hat H}\}}</math><ref>{{Literatur | Autor = Anton Amann, Ulrich Müller-Herold | Titel = Offene Quantensysteme | Verlag = Springer | Jahr = 2011 | ISBN = 9783642051876|Online = {{Google Buch|BuchID=W6hfGqmKDzsC|Seite=80}}|Seiten=80 ff}}</ref>
+In der Eigenbasis des Hamiltonoperators nimmt <math>\hat {\rho}</math> die Form (1) an. Analoges erhält man für den Dichteoperator des großkanonischen Ensembles
+:<math>\hat \rho = \frac{e^{-\beta (\hat H-\mu \hat N)}}{\rm{Spur}\{e^{-\beta (\hat H-\mu \hat N)}\}}</math>.
+
+== Messwerte ==
+Für jeden einzelnen Bestandteil <math>|\psi_i\rangle</math> des Zustandsgemischs ist der Mittelwert der Messergebnisse einer physikalischen Größe <math>A</math> gegeben durch den Erwartungswert
+<math>\langle A \rangle_{\psi_i} = \langle\psi_i| \hat {A} |\psi_i\rangle \ .</math>
+Darin ist <math>\hat {A}</math> der zu <math>A</math> gehörige Operator (s. [[Quantenmechanik]], [[Observable]]).
+
+Da das Ensemble ein Gemisch von Systemen in den verschiedenen beteiligten Zuständen <math>|\psi_i\rangle</math> ist, ist der Mittelwert aller Messungen an den einzelnen Systemen die gewichtete Summe der einzelnen Erwartungswerte:
+: <math>\langle A \rangle_{\hat {\rho}} = \sum_i \;p_i \; \langle\psi_i| \hat {A} |\psi_i\rangle \ .</math>
+
+Dies ist gleich der Spur
+: <math>\langle A \rangle_{\hat {\rho}} = \operatorname{Tr}(\hat {\rho} \hat {A} ) \ ,</math>
+wie man mit Hilfe eines vollständigen Systems von orthonormierten Basisvektoren <math>|\varphi_k\rangle</math> sehen kann: Wegen
+<math>\hat {1} = \sum_k |\varphi_k\rangle \langle\varphi_k|</math> (Einheitsoperator) ist
+: <math>\langle A \rangle_{\hat {\rho}} = \sum_i \;p_i \; \langle\psi_i| \hat {A}\cdot \hat {1} |\psi_i\rangle = 
+\sum_{i,k} \;p_i \; \langle\psi_i|\hat {A}| \varphi_k\rangle \cdot \langle\varphi_k|\psi_i\rangle  =
+\sum_{k} \langle\varphi_k| \; \left(\sum_{i} |\psi_i\rangle p_i \langle\psi_i| \hat {A}\right)\;|\varphi_k\rangle=
+\sum_{k} \langle\varphi_k| \; \hat {\rho} \hat {A} \;|\varphi_k\rangle
+ =\operatorname{Tr}(\hat {\rho} \hat {A} ) \ .</math>
+
+Sind die <math>|\varphi_k\rangle</math> gerade die Eigenzustände zur Observable <math>A</math> (d.&nbsp;h. <math>\hat {A}|\varphi_k\rangle= a_k |\varphi_k\rangle</math> mit den Eigenwerten <math>a_k</math>), dann gilt weiter
+: <math>\langle A \rangle_{\hat {\rho}} =
+\sum_{i,k} \;p_i \; \langle\psi_i| a_k| \varphi_k\rangle \cdot \langle\varphi_k|\psi_i\rangle  =
+\sum_{k} a_k \left(\sum_{i} p_i\;\langle\varphi_k| \psi_i\rangle \; \langle\psi_i|\varphi_k\rangle \right)\; =
+\sum_{k} a_k \left(\sum_{i} p_i \;|\langle\varphi_k| \psi_i\rangle|^2 \right)\; = \sum_{k} a_k P_k\ .</math>
+
+Darin ist <math>P_k = \sum_{i} p_i\;|\langle\varphi_k| \psi_i\rangle|^2 \ </math> das über das Ensemble gewichtete Mittel für die Wahrscheinlichkeit, ein herausgegriffenes System im Eigenzustand <math>|\varphi_k\rangle</math> anzutreffen. <math>P_k </math> ist also auch die Wahrscheinlichkeit, bei einer einzelnen Messung den Eigenwert <math>a_k</math> als Ergebnis zu erhalten. Charakteristisch ist, dass <math>P_k </math> durch eine [[inkohärent]]e Summe gegeben wird, die von den relativen Phasen der am Ensemble beteiligten Zustände <math>|\psi_i\rangle</math> unabhängig ist.
+
+== Beispiel: Dichteoperator und Dichtematrix für Elektronen-Polarisation ==
+Die '''Dichtematrix''' ist die Matrix, mit der der Operator <math>\hat {\rho}</math> in Bezug auf eine orthonormierte Basis <math>| \varphi_k \rangle</math> dargestellt werden kann:
+: <math>\rho_{mn} = \langle \varphi_m | \hat {\rho} | \varphi_n \rangle</math>
+
+=== Basiszustände ===
+Im Folgenden bezeichnet das Zeichen „<math>\overset{.}{=}</math>“, dass ein Bra, Ket oder ein Operator bezüglich einer Basis [[Darstellungstheorie|dargestellt]] wird (vergleiche auch [[Bra-Ket#Darstellung]]).
+Die Zustände „Spin auf“ (bezgl. z-Achse) <math>|\!\! \uparrow \rangle \overset{.}{=} \bigl(
+ \begin{smallmatrix}
+  1\\
+  0
+ \end{smallmatrix}
+\bigr)</math>
+und „Spin ab“ <math>|\!\! \downarrow \rangle \overset{.}{=} \bigl(
+ \begin{smallmatrix}
+  0\\
+  1
+ \end{smallmatrix}
+\bigr)</math>
+werden als ket-Vektoren durch Spalten dargestellt. Die zugehörigen bra-Vektoren sind dann Zeilenvektoren: <math>\langle  \uparrow \!| \overset{.}{=}(1\ 0)</math> bzw. <math>\langle \downarrow \!| \overset{.}{=} (0\ 1)</math>. Die Projektionsoperatoren (durch [[Matrizenmultiplikation]]):
+: <math>\hat {P}_{\uparrow} \overset{.}{=} \bigl(
+ \begin{smallmatrix}
+  1\\
+  0
+ \end{smallmatrix}
+\bigr) \cdot (1\ 0)\  = \bigl(
+ \begin{smallmatrix}
+  1 & 0\\
+  0 & 0
+ \end{smallmatrix}
+\bigr)\quad, \ 
+\hat {P}_{\downarrow} \overset{.}{=} \bigl(
+ \begin{smallmatrix}
+  0\\
+  1
+ \end{smallmatrix}
+\bigr) \cdot (0\ 1)\ = \bigl(
+ \begin{smallmatrix}
+  0 & 0\\
+  0 & 1
+\end{smallmatrix}\bigr)
+</math>
+Dies sind auch die Dichtematrizen für vollständig in <math>+z</math>- bzw. <math>-z</math>-Richtung polarisierte Elektronen.
+
+=== Polarisation in z-Richtung ===
+Die z-Komponente des Spins hat die aus den Eigenwerten gebildete Diagonalmatrix <math>\hat {s_z} \overset{.}{=} \left(
+ \begin{smallmatrix}
+  1/2 & 0\\
+  0 & -1/2
+ \end{smallmatrix}
+\right)\ .</math> Für das vorausgesagte Messergebnis ergibt sich für das Ensemble <math>\hat {P_{\uparrow}}</math> richtig 
+: <math>\langle \hat {s_z} \rangle = \operatorname{Tr}(\hat P_{_\uparrow}\cdot \hat s_z) \overset{.}{=}
+\operatorname{Tr}\left(
+\bigl(
+ \begin{smallmatrix}
+  1 & 0\\
+  0 & 0
+ \end{smallmatrix}\bigr)
+\cdot
+\bigl(
+ \begin{smallmatrix}
+  1/2 & 0\\
+  0 & -1/2
+ \end{smallmatrix}
+\bigr)
+\right)\ =
+\operatorname{Tr} \bigl(
+ \begin{smallmatrix}
+  1/2 & 0\\
+  0 & 0
+ \end{smallmatrix}\bigr)
+= \tfrac{1}{2}
+.</math>
+
+Für das Ensemble <math>\hat P_{\downarrow}</math> ergibt sich 
+<math>\langle \hat s_z \rangle = \operatorname{Tr}(\hat P_{\downarrow}\cdot \hat s_z) \overset{.}{=}
+\operatorname{Tr} \bigl(
+ \begin{smallmatrix}
+  0 & 0\\
+  0 & -1/2
+ \end{smallmatrix}\bigr)
+= -\tfrac{1}{2}
+.</math>
+
+=== Andere Polarisionsrichtung ===
+Die Zustände von in <math>+x</math>- bzw. <math>-x</math>-Richtung polarisierten Elektronen sind 
+<math>|\!\!\rightarrow \rangle \overset{.}{=} \left(
+ \begin{smallmatrix}
+  \sqrt{1/2}\\
+  \sqrt{1/2}
+ \end{smallmatrix}\right)\;,\ 
+|\!\!\leftarrow \rangle \overset{.}{=} \left(
+\begin{smallmatrix}
+ \sqrt{1/2}\\
+  -\sqrt{1/2}
+\end{smallmatrix}\right)
+.</math>
+Die Projektionsoperatoren dazu haben (in der Basis der <math>s_z</math>-Eigenzustände!) die Matrizen <math>\hat P_{| \rightarrow \rangle} \overset{.}{=} \bigl(
+ \begin{smallmatrix}
+  1/2 & 1/2\\
+  1/2 & 1/2
+ \end{smallmatrix}\bigr)\;,\ 
+\hat P_{| \leftarrow \rangle} \overset{.}{=}
+\bigl(
+ \begin{smallmatrix}
+  1/2 & -1/2\\
+  -1/2 & 1/2
+ \end{smallmatrix}
+\bigr)\ 
+.</math>
+Charakteristisch ist, dass dies keine Diagonalmatrizen sind und dass sich die verschiedenen Phasen, mit denen die <math>s_z</math>-Eigenzustände als ket-Vektoren hier überlagert wurden, in den Matrixelementen außerhalb der [[Hauptdiagonale]] wiederfinden. Das ist Ausdruck der kohärenten Überlagerung, durch die aus <math>s_z</math>-Eigenzuständen die <math>s_x</math>-Eigenzustände gebildet werden.
+
+=== Unpolarisiertes Ensemble ===
+Sind die Elektronen je zur Hälfte in <math>\pm z</math>-Richtung polarisiert, heißt die Dichtematrix:
+: <math>\hat \rho \overset{.}{=} \tfrac{1}{2} \bigl(
+ \begin{smallmatrix}
+  1 & 0\\
+  0 & 0
+ \end{smallmatrix}
+\bigr)\ +
+\tfrac{1}{2} \bigl(
+ \begin{smallmatrix}
+  0 & 0\\
+  0 & 1
+ \end{smallmatrix}
+\bigr) = \bigl(
+ \begin{smallmatrix}
+  1/2 & 0\\
+  0 & 1/2
+ \end{smallmatrix} \bigr)= \tfrac{1}{2} \cdot \hat 1</math>
+
+Die gleiche Dichtematrix ergibt sich für ein Gemisch aus Elektronen, die zu je 50 % in <math>\pm x</math>-Richtung polarisiert sind. Damit sind auch alle möglichen Messergebnisse identisch zu denen am Ensemble, das aus <math>\pm z</math>-polarisierten Elektronen gebildet wurde. Die ursprünglichen Polarisationsrichtungen sind physikalisch (und damit auch begrifflich) nicht mehr zu unterscheiden: Es ist beide Male ''ein und dasselbe'' Ensemble geworden.
+
+=== Gemisch verschiedener Polarisationsrichtungen ===
+Für ein Gemisch aus Elektronen mit Spin in <math>+z</math>-Richtung und <math>-x</math>-Richtung (Anteile <math>p_\uparrow</math> bzw. <math>p_\leftarrow</math>), heißt die Dichtematrix
+: <math>\hat \rho_{p_{_\uparrow},p_{_\leftarrow}} = p_\uparrow \;\hat P_{|\uparrow \rangle} + p_\leftarrow \;\hat P_{|\leftarrow \rangle} \overset{.}{=} 
+p_\uparrow \cdot \bigl(
+ \begin{smallmatrix}
+  1 & 0\\
+  0 & 0
+ \end{smallmatrix}
+\bigr)\ 
++
+p_\leftarrow \cdot \bigl(
+ \begin{smallmatrix}
+  1/2 & -1/2\\
+  -1/2 & 1/2
+ \end{smallmatrix}
+\bigr) =
+\left(
+ \begin{smallmatrix}
+  p_{_\uparrow} + \tfrac{p_{_\leftarrow}}{2} & -\tfrac{p_{_\leftarrow}}{2}\\
+  -\tfrac{p_{_\leftarrow}}{2} & \tfrac{p_{_\leftarrow}}{2}
+ \end{smallmatrix}
+\right)</math>
+
+Der Erwartungswert des Spins in <math>\pm z</math>-Richtung ist dann 
+: <math>\langle \hat s_z \rangle = \operatorname{Tr}(\hat \rho_{p_{_\uparrow},p_{_\leftarrow}} \cdot \hat s_z) \overset{.}{=}
+\operatorname{Tr} \left(
+ \left( \begin{smallmatrix}
+  p_{_\uparrow} + \tfrac{p_{_\leftarrow}}{2} & -\tfrac{p_{_\leftarrow}}{2}\\
+  -\tfrac{p_{_\leftarrow}}{2} & \tfrac{p_{_\leftarrow}}{2}
+ \end{smallmatrix} \right)
+\cdot
+\bigl(
+ \begin{smallmatrix}
+  1/2 & 0\\
+  0 & -1/2
+ \end{smallmatrix}\bigr)
+\right) = 
+\operatorname{Tr}\left(
+\left(
+ \begin{smallmatrix}
+  \tfrac{1}{2} \left(p_{_\uparrow} + \tfrac{p_{_\leftarrow}}{2}\right) & \tfrac{p_{_\uparrow}}{4}\\
+  -\tfrac{p_{_\leftarrow}}{4} & -\tfrac{p_{_\leftarrow}}{4}
+ \end{smallmatrix} \right)\right)
+= \tfrac{1}{2}p_\uparrow 
+.</math>
+Die in (<math>-x</math>)-Richtung polarisierten Elektronen tragen also erwartungsgemäß nichts zum Erwartungswert <math>\langle \hat s_z \rangle </math> bei.
+
+== Formale Definition ==
+Gegeben sei ein [[Quantenmechanik|quantenmechanisches]] System, das auf einem [[Hilbertraum]]&nbsp;<math>\mathbf H</math> modelliert ist.
+Ein beschränkter [[linearer Operator]] <math>\hat \rho \,\;</math> auf <math>\mathbf H</math> ist ein Dichteoperator, wenn gilt:
+# er ist [[Hermitescher Operator|hermitesch]]
+# er ist [[positiv semidefinit]],
+# er ist [[Spurklasse]] mit Spur gleich 1.
+
+Obwohl die Begriffe '''Dichtematrix''' und '''Dichteoperator''' oft synonym gebraucht werden, besteht ein mathematischer Unterschied. Genau wie in der [[Lineare Algebra|linearen Algebra]] eine [[Matrix (Mathematik)|Matrix]] die Basisdarstellung eines linearen Operators ist, kann in der Quantenmechanik zwischen abstraktem ''Dichteoperator'' und einer konkreten ''Dichtematrix'' in einer bestimmten Darstellung unterschieden werden. Ist <math>\hat \rho</math> ein Dichteoperator, so bezeichnet
+:<math>\rho(x,y)= \langle x|\hat \rho|y\rangle</math>
+die Dichtematrix in [[Ortsdarstellung]]. Sie ist allerdings keine echte Matrix, da die Ortsdarstellung über ein Kontinuum von ''uneigentlichen'' [[Basisvektor]]en <math>|x\rangle</math> definiert ist, sondern ein so genannter [[Integralkern]].
+
+In endlichdimensionalen Hilberträumen (z.&nbsp;B. bei Spinsystemen) ergibt sich dagegen dann eine positiv semidefinite Matrix mit Spur 1, also eine echte Dichtematrix, wenn eine [[Orthonormalbasis]] <math>\mathbf{e}_i</math> gewählt wird:
+:<math>\rho_{ij}=\langle \mathbf{e}_i|\hat \rho|\mathbf{e}_j\rangle</math>.
+
+== Eigenschaften ==
+* Die Menge aller Dichteoperatoren ist eine [[konvexe Menge]], deren [[Rand (Topologie)|Rand]] die Menge der reinen (quantenmechanischen) Zustände ist. Die Menge ist im Gegensatz zu klassischen Theorien kein [[Simplex (Mathematik)|Simplex]], d.&nbsp;h. ein Dichteoperator ist im Allgemeinen nicht eindeutig als [[Konvexkombination]] von reinen Zuständen darstellbar.
+
+* Die Wahrscheinlichkeit, bei der Messung einer [[Observable]]n&nbsp;<math>A \!\,</math> an einem System, das durch den Dichteoperator&nbsp;<math>\hat \rho\,</math> beschrieben wird, den Messwert&nbsp;<math>a\,</math> zu erhalten, ist gegeben durch
+:<math>p_a = \sum_i\left\langle a_i\right|\hat  {\rho} \left|a_i\right\rangle=\operatorname{Tr}(\hat {\mathbb{P}}_a \hat {\rho}),</math>
+:wobei <math>\left|a_i\right\rangle</math> die orthonormierten [[Eigenvektor]]en zum [[Eigenwert]]&nbsp;<math>a \!\,</math> sind und <math>\hat {\mathbb{P}}_a</math> der [[Projektionsoperator]] auf den entsprechenden [[Eigenraum]] ist. Anschließend befindet sich das System im Zustand <math>\frac{\hat{\mathbb{P}}_a \hat{\rho} \hat{\mathbb{P}}_a}{\operatorname{Tr}(\hat{\mathbb{P}}_a \hat{\rho} \hat{\mathbb{P}}_a)}</math>
+
+* Der Mittelwert der Messwerte ([[Erwartungswert]]) bei Messung einer Observablen <math>A \!\,</math> ist
+:<math>\left\langle \hat A \right\rangle = \operatorname{Tr}(\hat A \hat \rho).</math>
+
+=== Dichtematrix für reine Zustände ===
+Ist das betrachtete [[Ensemble (Physik)|Ensemble]] ein ''reines Ensemble'', besteht das System also nur aus einem reinen Zustand, so gilt für die Dichtematrix
+<math>\operatorname{Tr}\,(\hat {\rho}^2) = \operatorname{Tr}\,(\hat {\rho}) = 1</math>. 
+
+Für gemischte Zustände gilt stets <math>\operatorname{Tr}\,(\hat {\rho}^2) < 1</math>.
+
+=== Dichtematrix für ein gleichverteiltes Ensemble ===
+Ein <math>N</math>-Niveau-System, bei dem alle <math>N \,\!</math> Zustände gleich wahrscheinlich sind, hat die Dichtematrix
+:<math>\hat \rho = \frac{1}{N}\ \mathbf{1}_N\ ,</math>
+wobei <math>\mathbf{1}_N</math> die <math>N</math>-dimensionale [[Einheitsmatrix]] bezeichnet.
+
+== Reduzierter Dichteoperator ==
+Der reduzierte Dichteoperator wurde 1930 durch [[Paul Dirac]] eingeführt.<ref>{{cite journal|doi=10.1017/S0305004100016108|title=Note on Exchange Phenomena in the Thomas Atom|year=1930|last1=Dirac|first1=P. A. M.|journal=Mathematical Proceedings of the Cambridge Philosophical Society|volume=26|issue=3|pages=376|bibcode=1930PCPS...26..376D}}</ref><ref>{{cite journal|doi= 10.1103/RevModPhys.29.74 |title=Description of States in Quantum Mechanics by Density Matrix and Operator Techniques|year=1957|last1=Fano|first1=U.|journal=Rev. Mod. Phys.|volume=29|pages=74}}</ref> Er bezieht sich auf ein herausgegriffenes Teilsystem eines zusammengesetzten Systems und dient dazu, die Ergebnisse von Messungen an dem Teilsystem vorherzusagen, wenn die übrigen Teile des Systems gar nicht mit beobachtet werden. 
+
+Sind <math>A</math> und <math>B</math> zwei Systeme mit (normierten) Zuständen  <math> |\psi_A\rangle\, , |\varphi_B\rangle </math> in ihrem jeweiligen Hilbertraum <math>\mathbb{H}_A,\ \mathbb{H}_B</math>, dann hat das zusammengesetzte System <math>A+B</math> den Tensorraum  <math> \mathbb{H}_A \otimes \mathbb{H}_B </math> zum Hilbertraum. Das Gesamtsystem befindet sich in einem ''separablen'' Zustand  <math> |\psi_A\rangle\, |\varphi_B\rangle \in  \mathbb{H}_A \otimes \mathbb{H}_B</math>, wenn feststeht, dass die beiden Teilsysteme sich in den Zuständen <math> |\psi_A\rangle </math> bzw.  <math>|\varphi_B\rangle </math> befinden. Allgemein befindet sich das Gesamtsystem  in einem Zustand  
+:<math> |\Psi \rangle = \sum_{ik}\, c_{ik}\, |\psi_{Ai}\rangle\, |\varphi_{Bk}\rangle </math> 
+(mit orthonormierten Basisvektoren <math> |\psi_{Ai}\rangle\,,\, |\varphi_{Bk}\rangle </math> und Konstanten <math>c_{ik} </math> ), der als [[Quantenverschränkung|verschränkt]] bezeichnet wird, wenn er sich ''nicht'' als separabler Zustand darstellen lässt. 
+
+Für eine Observable des Teilsystems <math>A</math> ist der Operator <math>\hat O_{\!A}</math> zunächst nur im Hilbertraum <math> \mathbb{H}_A </math> definiert. Für die Messung dieser, nur das System <math>A</math> betreffenden Observablen am Gesamtsystem muss der Operator gemäß <math>\hat O_{\!A} \otimes \hat{\mathbf{1}}_B</math> zu einem Operator auf <math> \mathbb{H}_A \otimes \mathbb{H}_B </math> erweitert werden, wobei <math>\hat{\mathbf{1}}_B</math> der Einheitsoperator in <math> \mathbb{H}_B</math> ist. Für einen separablen Zustand
+ergibt sich der Erwartungswert 
+:  <math>\langle\psi_A|\, \langle\varphi_B| \,\left( \hat O_{\!A} \otimes \hat \mathbf{1}_B \right) \,|\psi_A\rangle\, |\varphi_B\rangle = \langle\psi_A|\, \hat O_{\!A} |\psi_A\rangle \cdot \langle\varphi_B|\hat{\mathbf{1}}_B \, |\varphi_B\rangle =  \langle\psi_A|\, \hat O_{\!A} |\psi_A\rangle \ .</math>
+Das stimmt mit dem Ergebnis überein, das man erhält, wenn man das Teilsystem <math>A</math> von vornherein als ein isoliertes System betrachtet.  
+Im Allgemeinen hingegen folgt für den Erwartungswert:
+:  <math>\langle\Psi| \,\left( \hat O_{\!A} \otimes \hat{\mathbf{1}}_B \right) \,|\Psi\rangle 
+= \sum_{ik\,i'k'} c_{ik} c^*_{i'k'}   \langle\psi_{Ai'}|\, \hat O_{\!A} |\psi_{Ai}\rangle \cdot \langle\varphi_{Bk'}|\hat{\mathbf{1}}_B \,  |\varphi_{Bk}\rangle
+= \sum_{ii'} \left( \sum_{k} c_{ik} c^*_{i'k} \right)  \langle\psi_{Ai'}|\, \hat O_{\!A} |\psi_{Ai}\rangle  
+= \operatorname{Tr}(\hat \rho_{\!A} \, \hat O_{\!A}) </math>
+Darin ist  <math>\hat \rho_{\!A} </math> der reduzierte Dichteoperator für das System <math>A</math>, wenn das Gesamtsystem im Zustand <math>\Psi</math> ist. Er ist ein Operator im Raum <math>\mathbb{H}_A</math> und hat die Matrixelemente (in der Basis <math> |\psi_{Ai}\rangle </math>)
+: <math> (\rho_{\!A})_{ii'} =   \sum_{k} c_{ik} c^*_{i'k}  </math>
+Allgemein ausgedrückt geht der reduzierte Dichteoperator für das Teilsystem <math>A</math> aus dem Dichteoperator <math> \hat \rho_{\!A+B}</math> für das Gesamtsystem, der die Matrixelemente <math> (\rho_{\!A+B})_{iki'k'} = c_{ik} c^*_{i'k'}  </math> hat,  durch Bildung der [[Partialspur|partiellen Spur]] über den  Raum <math>\mathbb{H}_B</math> des Teilsystems  <math>B</math> hervor.
+
+Eine einfache Interpretation ergibt sich für den Fall, dass es sich bei der Basis <math> |\psi_{Ai}\rangle </math> um die Eigenvektoren des Operators  <math>\hat O_{\!A}</math> handelt (mit Eigenwerten <math> X_i</math>). Dann ist der Erwartungswert  von  <math>\hat O_{\!A}</math> ein inkohärent gewichteter Mittelwert von dessen Eigenwerten:
+: <math>\operatorname{Tr}(\hat \rho_{\!A} \, \hat O_{\!A}) = \sum_{i} \left( \sum_{k} |c_{ik}|^2 \right)  X_i .\ </math>
+Für den Fall, dass das Gesamtsystem in einem separablen Zustand vorliegt, z.&nbsp;B. <math> |\psi_{A{i_0}}\rangle |\varphi_B\rangle </math>, ergibt diese Formel das erwartete Ergebnis <math>\operatorname{Tr}(\hat \rho_{\!A} \, \hat O_{\!A}) = X_{i_0} , </math> denn alle Glieder mit Index  <math>i \ne i_0</math> sind Null, und die Summe <math>\left( \sum_{k} |c_{i_0 k}|^2 \right)  </math> ist die Norm von <math>|\varphi_B\rangle</math>, also gleich 1.
+
+== Einteilchendichteoperator ==
+Der Einteilchendichteoperator<ref>{{Literatur
+ | Autor=Frank L. Pilar
+ | Titel=Elementary Quantum Chemistry
+ | Verlag=McGraw-Hill
+ | Ort=NY
+ | Jahr=1968
+ | ISBN=
+ | Seiten=354ff.
+}}</ref> ist bei einem Vielteilchensystem der auf den Hilbertraum eines Teilchens reduzierte Dichteoperator. Bei Systemen identischer Teilchen genügt die Kenntnis des Einteilchendichteoperators, um Erwartungswerte und Übergangsmatrixelemente jedes Operators auszurechnen, der die Summe von Einteilchenoperatoren ist. Das betrifft z.&nbsp;B. die kinetische Energie und die potenzielle Energie in einem äußeren Feld und ist daher ein wichtiges Hilfsmittel bei der Modellierung der Elektronenhülle von Atomen und Molekülen. Die Berechnungen werden häufig in Ortsdarstellung durchgeführt, also basierend auf der N-Teilchen-Wellenfunktion <math>\Psi(\vec r_1, m_{s1},\,\vec r_2, m_{s2},\ldots,\,\vec r_N, m_{sN},)</math>. Darin sind <math>\vec r_i, m_{si},</math> die Orts- und Spinkoordinate des i-ten Teilchens. In  der Matrixdarstellung treten sie hier als z.&nbsp;T. kontinuierliche Indizes auf und werden deshalb nicht als unterer Index sondern wie das Argument einer Funktion geschrieben. Die Dichtematrix des Gesamtsystems heißt
+:<math> \rho(\vec r_1', m_{s1}',\,\vec r_2', m_{s2}',\ldots,\,\vec r_N', m_{sN}',\ \vec r_1, m_{s1},\,\vec r_2, m_{s2},\ldots,\,\vec r_N, m_{sN}) </math>
+:<math>=\Psi^*(\vec r_1', m_{s1}',\,\vec r_2', m_{s2}',\ldots,\,\vec r_N', m_{sN}')\cdot \Psi(\vec r_1, m_{s1},\,\vec r_2, m_{s2},\ldots,\,\vec r_N, m_{sN})  </math>
+Die Einteilchendichtematrix ist dann
+:<math> \rho_1(\vec r', s',\ \vec r, s) = \sum_{m_{s2},\ldots m_{sN}}\int_{dV_2 \ldots dV_N} \Psi^*(\vec r', s',\,\vec r_2, m_{s2},\ldots,\,\vec r_N, m_{sN})\cdot \Psi(\vec r, s,\,\vec r_2, m_{s2},\ldots,\,\vec r_N, m_{sN})  </math>  
+Die Wahl der (N-1) Integrations- (bzw. Summations-)variablen mit den Nummern 2 bis <math>N</math> ist beliebig, da die Wellenfunktion bei identischen Teilchen gegenüber Umnummerierung höchstens das Vorzeichen wechselt und daher für die  Einteilchendichtematrix immer dasselbe Ergebnis herauskommt. 
+
+Das Diagonalelement <math> \rho_1(\vec r, s,\, \vec r, s) </math> gibt die Gesamtdichte an, die die <math>N</math> Teilchen am Ort <math>\vec r</math> mit Spinrichtung <math>m_s</math> bilden. 
+
+Da der Einteilchendichteoperator <math>\hat \rho_1</math> hermitesch ist, gibt es eine Basis <math> \{|\chi_n \rangle\, , n=1,2,\ldots\}</math> aus Eigenzuständen: <math>\hat \rho_1 |\chi_n\rangle = \lambda_n | \chi_n\rangle</math>. Für die Eigenwerte gilt <math>0 \le \lambda_n \le 1</math> und <math>\sum_n \lambda_n = N</math>. Die <math>N</math> Eigenzustände mit den größten Eigenwerten heißen ''natürliche Orbitale''. Wenn man jedes natürliche Orbital mit einem Teilchen besetzt, also einen Zustand in Form der [[Slater-Determinante]] bildet, stellt diese die beste Annäherung an die ursprüngliche N-Teilchen-Wellenfunktion <math>\Psi</math> dar, die man im Rahmen eines Einzelteilchenmodells  in Bezug auf die gesamte Teilchendichte erreichen kann.
+
+== Zeitentwicklung ==
+{{Hauptartikel|Von-Neumann-Gleichung}}
+Aus der [[Schrödingergleichung]], die die Zeitentwicklung (Dynamik) reiner Quantenzustände beschreibt, kann man unmittelbar die Zeitentwicklung gemischter Zustände ableiten. Dazu benutzt man eine beliebige Zerlegung der Dichtematrix in reine Zustände, deren Dynamik der Schrödinger-Gleichung genügt, und berechnet daraus die Dynamik des gemischten Zustandes zu
+:<math>\frac{\partial\hat{\rho}}{\partial t}=\frac{i}{\hbar}\left[\hat{\rho},\hat{H}\right],</math>
+wobei <math>\hat {H}</math> der [[Hamilton-Operator]] des Systems ist. Diese Gleichung ist als [[Von-Neumann-Gleichung|von-Neumann'sche Bewegungsgleichung]] bekannt (nicht zu verwechseln mit der [[Heisenbergsche Bewegungsgleichung|Heisenberg'schen Bewegungsgleichung]]).
+
+Diese [[Differentialgleichung]] kann man für zeitunabhängige Hamilton-Operatoren lösen und erhält mit dem [[Unitärer Operator|unitären]] [[Zeitentwicklungs-Operator]] <math>\hat U(t) = e^{-i H t/\hbar}</math> die Gleichung
+
+:<math>\hat  \rho(t)=\hat U(t)\;\hat \rho(0)\;\hat U^\dagger(t)</math>.
+Diese Lösung kann man durch Einsetzen leicht überprüfen.
+
+Bemerkenswert ist hierbei, dass für den Operator <math>\hat U(t)</math> die übliche [[Heisenberg'sche Bewegungsgleichung]] ''nicht'' gilt, da der Zeitentwicklungsoperator der direkt aus der Schrödingergleichung abgeleiteten Dynamik <math>i\hbar \partial_t U(t)=H(t)U(t)</math> gehorcht. Auch die Zeitentwicklung des Operators <math>\rho</math> durch den Zeitentwicklungsoperator <math>\hat U(t)</math> erfolgt nicht gemäß der üblichen Zeitentwicklungsgleichung für Operatoren (<math>U(t)^\dagger A U(t)</math> für eine gewöhnliche Observable A), was jedoch verständlich ist, da <math>\hat  \rho(t)=\hat U(t)\;\hat \rho(0)\;\hat U^\dagger(t)=\sum_i p_i U(t) |\psi(0)\rangle \langle \psi(0)|U(t)^\dagger=\sum_i p_i |\psi(t)\rangle \langle \psi(t)|</math>
+
+== Entropie ==
+Mit Hilfe der Dichtematrix <math>\hat \rho \,\!</math> lässt sich die [[Von-Neumann-Entropie]] eines Systems wie folgt definieren:
+
+:<math>S = - k_\mathrm{B} \operatorname{Tr} \left( \hat \rho \ln{\hat \rho} \right),</math>
+
+wobei <math>k_\mathrm{B}</math> die [[Boltzmannkonstante]] ist, und die Spur über dem Raum <math>\mathbf H</math> genommen ist, in dem <math>\hat \rho \,\!</math> operiert.
+
+Die Entropie jedes reinen Zustands ist Null, da die Eigenwerte der Dichtematrix Null und Eins sind. Dies stimmt mit der [[heuristisch]]en Argumentation überein, dass keine Unsicherheit über die Präparation des Zustandes herrscht.
+
+Man kann zeigen, dass auf einen Zustand angewendete unitäre Operatoren (wie der aus der Schrödinger-Gleichung gewonnene Zeitentwicklungs-Operator) die Entropie des Systems nicht ändern. Das verbindet die [[Reversibler Prozess|Reversibilität]] eines Prozesses mit seiner Entropieänderung - ein fundamentales Ergebnis, das die Quantenmechanik mit der [[Informationstheorie]] und der [[Thermodynamik]] verbindet.
+
+== Siehe auch ==
+* [[Quantentomographie]]
+
+== Weblinks ==
+*[http://www.ster.be/padint/hst1.html Artikel von Lieven Smits aus Antwerpen über ''De dichtheidsmatrix in de statistische mechanica'' (Auf Niederländisch)]
+
+== Einzelnachweise ==
+<references/>
+
+[[Kategorie:Quantenphysik]]
+[[Kategorie:Statistische Physik]]

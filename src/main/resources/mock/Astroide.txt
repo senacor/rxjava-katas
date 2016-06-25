@@ -1,0 +1,86 @@
+[[Datei:Astroid2.gif|miniatur|Animation der Astroide]]
+
+Die '''Astroide''' (auch Sternkurve genannt) ist eine ebene [[Kurve (Mathematik)|Kurve]], die sich 
+mit einem Parameter <math>t \in [0,2\pi]</math> durch die Parametergleichungen
+
+:<math>x = a (\cos t)^3 \ </math>
+:<math>y = a (\sin t)^3 \ </math>
+
+oder durch die implizite Gleichung
+
+:<math>x^{\frac{2}{3}} + y^{\frac{2}{3}} = a^{\frac{2}{3}} \quad </math> ,&nbsp; welche äquivalent zu &nbsp; <math> \quad
+(x^2+y^2-a^2)^3 + 27 a^2 x^2 y^2 = 0</math> ist,
+
+beschreiben lässt, wobei ''a'' eine feste positive, [[reelle Zahl]] ist. Für ihren Flächeninhalt A gilt
+
+:<math>A = \frac{3}{8} \pi a^2</math>.
+
+Die Länge <math>\ell</math> der gesamten Kurve beträgt <math>\ell = 6a</math>.
+Innerhalb eines Kurvenviertels <math> 0 \le t \le \frac{\pi}{2} </math> gilt für die [[Bogenlänge]]
+:<math>s(t) = \frac{3}{2}a\sin^2(t) </math>
+und für den [[Krümmungsradius]]
+:<math> \rho(t) = \frac{3}{2}a\sin(2t)</math>.
+
+Die Astroide ist auch ein Spezialfall der [[Zykloide#Epi- und Hypozykloide|Hypozykloide]]. Sie ähnelt auch dem [[Karo (Farbe)|Karo]] auf gewöhnlichen Spielkarten.
+
+== Schwerpunkt ==
+
+{| class="prettytable"
+|----
+! colspan="4" class="hintergrundfarbe6" | Schwerpunkte der Astroiden
+|----
+! 
+| align="center" | [[Intervall_(Mathematik) |Intervall]]
+| align="center" | <math>x_\mathrm{S}</math>
+| align="center" | <math>y_\mathrm{S}</math>
+|----
+! align="left" | Ebenes [[Kurve_(Mathematik) | Kurvenstück]]
+| align="center" | 0 ≤ t ≤ <math>\tfrac{\pi}{2}</math>
+| align="center" | <math>\tfrac{3}{10}a^2 \sqrt{2-\sqrt{2}}</math>
+| align="center" | <math>\tfrac{3}{10}a^2 \sqrt{2-\sqrt{2}}</math>
+|----
+! 
+| align="center" | 0 ≤ t ≤ <math>\pi</math>
+| align="center" |  0
+| align="center" | <math>\tfrac{3}{10}a^2 \sqrt{2-\sqrt{2}}</math>
+|----
+! align="left" | Ebene Figur
+| align="center" |  0 ≤ t ≤ <math>\tfrac{\pi}{2}</math>
+| align="center" | <math>\tfrac{256}{315 \pi} a</math>
+| align="center" | <math>\tfrac{256}{315 \pi} a</math>
+|----
+! 
+| align="center" | 0 ≤ t ≤ <math>\pi</math>
+| align="center" | 0
+| align="center" | <math>\tfrac{256}{315 \pi} a</math>
+|----
+! align="left" | [[Drehkörper]]*
+| align="center" | 0 ≤ t ≤ <math>\tfrac{\pi}{2}</math>
+| align="center" | <math>\tfrac{21}{128}a</math>
+| align="center" | 0
+|----
+|}
+<small>*Bei Rotation um die X-Achse <math>( z_S = 0 )</math></small>
+
+==Schiefe Astroide==
+Eine Verallgemeinerung ist die schiefe Astroide, die sich durch die Parametergleichungen
+
+:<math>x = a (\cos t)^3 \ </math>
+:<math>y = b (\sin t)^3 \ </math>
+
+oder durch die implizite Gleichung
+
+:<math>\left({\frac{x}{a}}\right)^{\frac{2}{3}} + \left({\frac{y}{b}}\right)^{\frac{2}{3}} = 1</math>
+
+beschreiben lässt. Die [[Evolute]] einer [[Ellipse]] ist ebenfalls eine schiefe Astroide.
+
+== Siehe auch ==
+*[[orthoptische Kurve#orthoptische Kurve einer Astroide|orthoptische Kurve einer Astroide]]
+
+== Weblinks ==
+{{Commonscat|Astroid}}
+* {{MathWorld|urlname=Astroid|title=Astroid}}
+* [http://www.2dcurves.com/roulette/roulettea.html Astroide bei 2dcurves.com (englisch)]
+* [http://www.bama.ua.edu/~tmewes/Java/Astroid/StonerAstroid.shtml Stoner-Wohlfarth Astroiden Applet (Physik - englisch)]
+
+[[Kategorie:Kurve (Geometrie)]]

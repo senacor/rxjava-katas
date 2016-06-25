@@ -1,0 +1,33 @@
+Ein '''vollständiger Satz kommutierender Observablen (v.S.k.O.)''' ist ein Begriff aus der [[Quantenmechanik]], in der Messgrößen wie [[Energie]], Ort oder [[Impuls]] durch [[Operator (Mathematik)|Operatoren]] dargestellt und als [[Observable]]n bezeichnet werden. Messgrößen, die man gleichzeitig genau bestimmen kann, heißen ''[[Kommutator (Mathematik)|kommutierende]] Observablen''; sie haben die Eigenschaft, dass ihre Operatoren miteinander vertauschen.
+
+Solch ein Verhalten ist in der Quantenmechanik allerdings eher die Ausnahme. Die meisten Paare von Observablen lassen sich ''nicht'' gleichzeitig beliebig genau messen, was eine Konsequenz aus der [[Heisenbergsche Unschärferelation|heisenbergschen Unschärferelation]] ist. Man spricht dann auch von [[Komplementäre Observablen|komplementären Observablen]].
+
+Um einen [[Quantenmechanischer Zustand|quantenmechanischen Zustand]] eindeutig zu charakterisieren, sind oft mehrere Observablen notwendig. Beispielsweise ist es beim [[Wasserstoffatom]] nicht ausreichend, nur die Energie anzugeben (mittels der Haupt[[quantenzahl]] <math>n</math>), sondern es sind zwei weitere Observablen notwendig: der [[Betragsfunktion|Betrag]] des [[Drehimpuls]]es (Quantenzahl <math>l</math>) und die <math>z</math>-Komponente des Drehimpuls (Quantenzahl <math>m</math>). Diese drei Größen bilden dann einen vollständigen Satz kommutierender Observablen.
+
+== Definition ==
+Eine Menge von Observablen <math>A</math>, <math>B</math>, <math>C</math>,... bildet einen v.S.k.O., wenn eine [[Orthonormalbasis|orthonormale Basis]] des [[Zustand (Quantenmechanik)|Zustandsraums]] aus gemeinsamen [[Eigenvektor|Eigenvektoren]] der Observablen existiert, und diese Basis (bis auf einen Phasenfaktor) eindeutig ist.
+
+Eine äquivalente Formulierung lautet:
+
+Eine Menge von Observablen <math>A</math>, <math>B</math>, <math>C</math>,... bildet einen v.S.k.O. genau dann, wenn:
+:# alle Observablen paarweise [[Kommutator (Mathematik)|miteinander vertauschen]], und
+:# die Angabe der Eigenwerte aller dieser Operatoren ausreicht, um (bis auf einen Faktor) eindeutig einen gemeinsamen Eigenvektor zu bestimmen.
+
+== Bedeutung==
+Um ein quantenmechanisches Problem zu lösen, ist man bemüht eine Menge von Observablen zu finden, die das System beschreiben und einen v.S.k.O. bilden. Durch die Angabe der Messwerte der Observablen (das sind die [[Eigenwert|Eigenwerte]] der Observablen) ist es damit möglich den Zustand eines Systems eindeutig zu bestimmen. Umgekehrt bedeutet das, dass man eine Messung auf einen vollständigen Satz kommutierender Observablen erstrecken muss, um den Zustand des Systems nach der [[Quantenmechanische Messung|Messung]] durch die Angabe der Messwerte eindeutig zu bestimmen.
+
+==Konstruktion ==
+Gegeben sei eine Observable <math>A</math>, deren Eigenvektoren eine Basis des Zustandsraumes bilden. Sind diese sämtlich nicht-[[Entartung_(Quantenmechanik)|entartet]], so lässt sich der Zustand des Systems durch die Angabe des zu einem Eigenvektor gehörigen Eigenwertes eindeutig charakterisieren. <math>A</math> bildet dann „für sich“ einen v.S.k.O.. Sind die Eigenvektoren jedoch in irgendeiner Form entartet, nimmt man eine weitere Observable <math>B</math> hinzu, die mit <math>A</math> vertauscht und deren Eigenvektoren wiederum eine Basis des Zustandsraumes bilden. Aus beiden Mengen von Eigenvektoren wählt man nun die nicht-Entarteten. Bilden diese eine Basis des Zustandsraumes stellen <math>A</math> und <math>B</math> einen v.S.k.O. dar. Wenn nicht, nimmt man solange weitere Observablen <math>C</math>, <math>D</math>,... hinzu, die jeweils paarweise mit den anderen Observablen vertauschen, bis man eine Basis aus Eigenvektoren zu nicht-entarteten Eigenwerten konstruieren kann.
+
+== Beispiele ==
+* Eine Observable mit nicht-entarteten Eigenwerten, also einem nicht-entarteten Spektrum, bildet „für sich“ einen v.S.k.O.. Ein Beispiel für so einen Fall ist der [[Hamilton-Operator]] des unendlich hohen [[Teilchen im Kasten|Potentialtopfs]] in einer Dimension.  
+* Der [[Ortsoperator]] sowie der [[Impulsoperator]] bilden jeweils „für sich“ einen v.S.k.O. des Zustandsraumes eines [[spin]]<nowiki/>losen Teilchens.
+* Bei einem spinlosen Teilchen in einem [[Zentralpotential]] bilden der Hamilton-Operator <math>H</math>, das Quadrat des [[Drehimpulsoperator|Drehimpulsoperators]] <math>L^2</math>, sowie eine beliebige Komponente des Drehimpulsoperator <math>L_i</math> (wobei <math>i=x,y,z</math>) einen v.S.k.O.. Die Eigenwerte der drei Observablen entsprechen der Hauptquantenzahl <math>n</math>, der Drehimpulsquantenzahl <math>l</math> und der magnetischen Quantenzahl <math>m</math> (siehe [[Quantenzahl]]). Die Angabe des [[Tripel]]s <math>(n,l,m)</math> beschreibt eindeutig einen quantenmechanischen Zustand (z.B. beim [[Wasserstoffatom]]).
+
+==Literatur==
+*[[Claude Cohen-Tannoudji]], Bernard Diu, Franck Laloë: ''Quantenmechanik''. 2. Auflage. De Gruyter, Berlin 1999, ISBN 3-11-016458-2.
+*Wolfgang Nolting: ''Grundkurs Theoretische Physik, Band 5/1, Quantenmechanik: Grundlagen''. 3. Auflage. Vieweg, Braunschweig 1996, ISBN 3-528-06935-X.
+*Franz Schwabl: ''Quantenmechanik Eine Einführung''. 6. Auflage, Springer, Berlin, Heidelberg, New York 2002, ISBN 3-540-43106-3.
+
+{{DEFAULTSORT:Vollstandiger Satz Kommutierender Observablen}}
+[[Kategorie:Quantenmechanik]]

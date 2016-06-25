@@ -1,0 +1,397 @@
+{{Zeichen|ℂ}}Die '''komplexen Zahlen''' erweitern den [[Zahlenmenge|Zahlenbereich]] der [[Reelle Zahl|reellen Zahlen]] derart, dass die Gleichung <math>x^2 + 1 = 0</math> lösbar wird.
+Dies gelingt durch Einführung einer neuen [[Imaginäre Zahl|imaginären Zahl]] <math>\mathrm i</math> mit der Eigenschaft <math>\mathrm i^2 = -1</math>. Diese Zahl <math>\mathrm i</math> wird als '''imaginäre Einheit''' bezeichnet. In der [[Elektrotechnik]] wird stattdessen der Buchstabe <math>\mathrm j</math> verwendet, um einer Verwechslung mit einer (durch <math>i</math> oder <math>i(t)</math> bezeichneten) von der [[Zeit]] <math>t</math> abhängigen [[Stromstärke]] vorzubeugen.
+
+Der Begriff „komplexe Zahlen“ wurde von [[Carl Friedrich Gauß]] (''Theoria residuorum biquadraticorum'', 1831) eingeführt, der Ursprung der Theorie der komplexen Zahlen geht auf die italienischen Mathematiker [[Gerolamo Cardano]] (''Ars magna'', Nürnberg 1545) und [[Rafael Bombelli]] (''L'Algebra'', Bologna 1572; wahrscheinlich zwischen 1557 und 1560 geschrieben) zurück.<ref>{{Literatur|Autor = [[Helmuth Gericke]]|Titel = Geschichte des Zahlbegriffs|Verlag = Bibliographisches Institut|Ort = Mannheim|Jahr = 1970|Seiten = 57–67}}</ref> Die Einführung der imaginären Einheit <math>\mathrm i</math> als neue Zahl wird [[Leonhard Euler]] zugeschrieben.
+
+Komplexe Zahlen können in der Form <math>a+b\cdot \mathrm i</math> dargestellt werden, wobei <math>a</math> und <math>b</math> reelle Zahlen sind und <math>\mathrm i</math> die imaginäre Einheit ist. Auf die so dargestellten komplexen Zahlen lassen sich die üblichen Rechenregeln für reelle Zahlen anwenden, wobei <math>\mathrm i^2</math> stets durch <math>-1</math> ersetzt werden kann und umgekehrt. Für die Menge der komplexen Zahlen wird das Symbol <math>\mathbb C</math> ([[Unicode]] U+2102: {{Unicode|ℂ|U+2102 DOUBLE-STRUCK CAPITAL C}}, siehe [[Buchstabe mit Doppelstrich]]) verwendet.
+
+Der so konstruierte Zahlenbereich der komplexen Zahlen bildet einen [[Körpererweiterung|Erweiterungskörper]] der reellen Zahlen und hat eine Reihe vorteilhafter Eigenschaften, die sich in vielen Bereichen der Natur- und [[Ingenieurwissenschaften]] als äußerst nützlich erwiesen haben. Einer der Gründe für diese positiven Eigenschaften ist die [[Algebraisch abgeschlossen|algebraische Abgeschlossenheit]] der komplexen Zahlen. Dies bedeutet, dass jede [[algebraische Gleichung]] positiven Grades über den komplexen Zahlen eine Lösung besitzt, was für reelle Zahlen nicht gilt. Diese Eigenschaft ist der Inhalt des [[Fundamentalsatz der Algebra|Fundamentalsatzes der Algebra]]. Ein weiterer Grund ist ein Zusammenhang zwischen [[Trigonometrische Funktion|trigonometrischen Funktionen]] und der [[Exponentialfunktion]], der über die komplexen Zahlen hergestellt werden kann. Ferner ist jede auf einer [[Offene Menge|offenen Menge]] ''einmal'' [[Differenzierbarkeit#Komplexe Funktionen|komplex differenzierbare]] Funktion dort auch ''beliebig oft'' differenzierbar&nbsp;– anders als in der [[Analysis]] der reellen Zahlen. Die Eigenschaften von Funktionen mit komplexen Argumenten sind Gegenstand der [[Funktionentheorie]], auch komplexe Analysis genannt.
+
+== Definition ==
+Die komplexen Zahlen lassen sich als Zahlbereich im Sinne einer [[Menge (Mathematik)|Menge]] von Zahlen, für die die [[Grundrechenart]]en [[Addition]], [[Multiplikation]], [[Subtraktion]] und [[Division (Mathematik)|Division]] erklärt sind, mit den folgenden Eigenschaften definieren:
+* Die reellen Zahlen sind in den komplexen Zahlen enthalten. Das heißt, dass jede reelle Zahl eine komplexe Zahl ist.
+* Das [[Assoziativgesetz]] und das [[Kommutativgesetz]] gelten für die Addition und die Multiplikation komplexer Zahlen.
+* Das [[Distributivgesetz]] gilt.
+* Für jede komplexe Zahl <math>x</math> existiert eine komplexe Zahl <math>-x</math>, sodass <math>x+(-x)=0</math>.
+* Für jede von null verschiedene komplexe Zahl <math>x</math> existiert eine komplexe Zahl <math>\tfrac{1}{x}</math>&nbsp;, sodass <math>\tfrac{1}{x}\cdot x=1</math>.
+* Es existiert eine komplexe Zahl <math>\mathrm i</math> mit der Eigenschaft <math>\mathrm i^2=-1</math>.
+* Unter allen Zahlbereichen mit den zuvor genannten Eigenschaften sind die komplexen Zahlen minimal.
+
+Die letzte Forderung ist gleichbedeutend damit, dass sich jede komplexe Zahl in der Form <math>a+b\cdot\mathrm i</math> (bzw. in verkürzter Notation <math>a+b\,\mathrm i</math> oder auch <math>a+\mathrm i\,b</math>) mit reellen Zahlen <math>a</math> und <math>b</math> darstellen lässt. Die imaginäre Einheit <math>\mathrm i</math> ist dabei keine reelle Zahl. Die Existenz eines solchen Zahlbereichs wird im Abschnitt zur ''[[#Konstruktion der komplexen Zahlen|Konstruktion der komplexen Zahlen]]'' nachgewiesen.
+
+Unter Verwendung der Begriffe [[Körper (Algebra)|Körper]] und [[Isomorphismus|Isomorphie]] lässt sich das so formulieren: Es gibt minimale Körper, die den Körper der reellen Zahlen und ein Element <math>\mathrm i</math> mit der Eigenschaft <math>\mathrm i^2=-1</math> enthalten. In einem solchen Körper hat jedes Element <math>z</math> eine und nur eine Darstellung als <math>z=a+b\,\mathrm i</math> mit reellen <math>a, b.</math> Die komplexen Zahlen sind isomorph zu jedem solchen Körper.
+
+Die [[Koeffizient]]en <math>a, b</math> werden als '''Real-''' bzw. '''Imaginärteil''' von <math>a + b\,\mathrm i</math> bezeichnet. Dafür haben sich zwei Notationen etabliert:
+* <math>a = \operatorname{Re}{(a + b\,\mathrm i)}</math> und <math>b = \operatorname{Im}{(a + b\,\mathrm i)}</math>
+* <math>a = \Re{(a + b\,\mathrm i)}</math> und <math>b = \Im{(a + b\,\mathrm i)}</math>
+
+== Notation ==
+Die Notation in der Form <math>a+b\,\mathrm i\ </math> wird auch als (nach [[René Descartes]] benannte) [[Kartesisches Koordinatensystem|kartesische]] oder ''algebraische Form'' bezeichnet. Die Bezeichnung ''kartesisch'' erklärt sich aus der Darstellung in der komplexen bzw. gaußschen Zahlenebene (siehe weiter unten). Es findet sich auch die Darstellung <math>\left( a, b\right)</math>;<ref>{{Literatur|Autor=Eberhard Freitag, Rolf Busam|Titel=Funktionentheorie 1: Mit Lösungshinweisen zu 420 Übungsaufgaben|Verlag=Springer|Ort=Berlin|ISBN=978-3-540-31764-7 |Auflage=4.|Jahr=2007}}</ref> in der [[Normung|Norm]] [[DIN 1302|DIN 1302:1999]] ''Allgemeine mathematische Zeichen und Begriffe'' kommt sie allerdings nicht vor.
+
+In der [[Elektrotechnik]] wird das kleine ''i'' schon für zeitlich veränderliche Ströme verwendet (siehe [[Wechselstrom]]) und kann zu Verwechslungen mit der imaginären Einheit i führen. Daher kann in diesem Bereich gemäß DIN 1302 der Buchstabe j verwendet werden.
+<!-- (z.&nbsp;B. in 
+<ref>{{Literatur|Autor=Hans Heinrich Meinke, Friedrich-Wilhelm Gundlach|Titel=Taschenbuch der Hochfrequenztechnik I: Grundlagen: Band|Verlag=Springer|Ort=Berlin|ISBN=3540547142|Auflage=5.|Jahr=1992}}</ref>
+<ref>{{Literatur|Autor=Hans Heinrich Meinke, Friedrich-Wilhelm Gundlach|Titel=Taschenbuch der Hochfrequenztechnik II: Komponenten: Band|Verlag=Springer|Ort=Berlin|ISBN=3540547150|Auflage=5.|Jahr=1992}}</ref>
+<ref>{{Literatur|Autor=Hans Heinrich Meinke, Friedrich-Wilhelm Gundlach|Titel=Taschenbuch der Hochfrequenztechnik III: Systeme: Band|Verlag=Springer|Ort=Berlin|ISBN=3540547169|Auflage=5.|Jahr=1992}}</ref>).-->
+
+In der [[Physik]] wird zwischen <math>i\ </math> für die [[Stromstärke]] bei [[Wechselstrom]] und <math>\mathrm i\ </math> für die imaginäre Einheit unterschieden. Dies führt durch die recht klare Trennung beim aufmerksamen Leser nicht zu Verwechslungen und wird in dieser Form weitgehend sowohl in der physikalisch-experimentellen als auch in der physikalisch-theoretischen Literatur angewandt; handschriftlich ist diese Feinheit allerdings nicht zu halten. Siehe auch: [[Komplexe Wechselstromrechnung]]
+
+Komplexe Zahlen können gemäß [[DIN 1304]]-1 und [[DIN 5483]]-3 unterstrichen dargestellt werden, um sie von [[Reelle Zahlen|reellen Zahlen]] zu unterscheiden.
+
+== Rechnen in der algebraischen Form ==
+=== Addition ===
+[[Datei:Argand_1.svg|thumb|Die Addition zweier komplexer Zahlen in der komplexen Ebene veranschaulicht]]
+Für die Addition zweier komplexer Zahlen <math>z_1=a+b\,\mathrm i</math> und <math>z_2=c+d\,\mathrm i</math> gilt
+:<math>z_1+z_2=(a+c)+(b+d)\,\mathrm i.</math>
+
+=== Subtraktion ===
+Für die Subtraktion zweier komplexer Zahlen <math>z_1</math> und <math>z_2</math> (siehe Addition) gilt
+:<math>z_1-z_2=(a-c)+(b-d)\,\mathrm i.</math>
+
+=== Multiplikation ===
+Für die Multiplikation zweier komplexer Zahlen <math>z_1</math> und <math>z_2</math> (siehe Addition) gilt
+:<math> z_1\cdot z_2=(ac+bd\,\mathrm i^2)+(ad+bc)\,\mathrm i=(ac-bd)+(ad+bc)\,\mathrm i.</math>
+
+=== Division ===
+Für die Division der komplexen Zahl <math>z_1</math> durch die komplexe Zahl <math>z_2</math> (siehe Addition) mit <math>z_2\neq 0</math> [[Kürzen|erweitert]] man den Bruch mit der zum Nenner <math>z_2</math> [[#Komplexe Konjugation|konjugiert komplexen]] Zahl <math>\bar z_2=c-d\,\mathrm i</math>. Der Nenner wird dadurch reell (und ist gerade das Quadrat des Betrages von <math>c+d\,\mathrm i</math>):
+: <math>\frac{z_1}{z_2} = \frac{(a+b\,\mathrm i)(c-d\,\mathrm i)}{(c+d\,\mathrm i)(c-d\,\mathrm i)} = \frac{ac+bd}{c^2+d^2}+\frac{bc-ad}{c^2+d^2}\mathrm i.</math>
+
+=== Rechenbeispiele ===
+Addition:
+: <math>(3+2\mathrm i) + (5+5\mathrm i) = (3+5) + (2+5)\mathrm i =  8 + 7\mathrm i</math>
+
+Subtraktion:
+: <math>(5+5\mathrm i) - (3+2\mathrm i) = (5-3) + (5-2)\mathrm i = 2 + 3\mathrm i</math>
+
+Multiplikation:
+: <math>(3+5\mathrm i) \cdot (4+11\mathrm i) = (3\cdot 4 - 5\cdot 11)+(3\cdot 11 + 5\cdot 4)\mathrm i = -43 + 53\mathrm i</math>
+
+Division:
+: <math>{\frac{(2+5\mathrm{i})}{(3+7\mathrm{i})} = \frac{(2+5\mathrm{i})}{(3+7\mathrm{i})} \cdot \frac{(3-7\mathrm{i})}{(3-7\mathrm{i})} = \frac{(6 + 35) + (15\mathrm{i}-14\mathrm{i})}{(9 + 49) + (21\mathrm{i}-21\mathrm{i})} = \frac{41+\mathrm{i}}{58} = \frac{41}{58} + \frac{1}{58}\cdot\mathrm{i}}</math>
+
+== Weitere Eigenschaften ==
+* Der Körper <math>\C</math> der komplexen Zahlen ist einerseits ein Oberkörper von <math>\R</math>, andererseits ein zweidimensionaler <math>\R</math>-[[Vektorraum]]. Der [[Isomorphismus]] <math>\C \cong \R^2</math> wird auch als [[natürliche Identifikation]] bezeichnet.
+* Die [[Körpererweiterung]] <math>\C:\R</math> ist vom Grad <math>[\C:\R]=2</math>; genauer ist <math>\C</math> isomorph zum [[Faktorring]] <math>\R[X]/(X^2+1)</math>, wobei <math>X^2+1</math> das [[Minimalpolynom]] von <math>\mathrm{i}</math> über <math>\R</math> ist. Ferner bildet <math>\C</math> bereits den [[Algebraischer Abschluss|algebraischen Abschluss]] von <math>\R</math>.
+* Als <math>\R</math>-Vektorraum besitzt <math>\C</math> die Basis <math>\{1, \mathrm{i}\}</math>. Daneben ist <math>\C</math> wie jeder Körper auch ein Vektorraum über sich selbst, also ein eindimensionaler <math>\C</math>-Vektorraum mit Basis <math>\{1\}</math>.
+* <math>\mathrm{i}</math> und <math>-\mathrm{i}</math> sind genau die Lösungen der [[Quadratische Gleichung|quadratischen Gleichung]] <math>x^2 + 1 = 0</math>. In diesem Sinne kann <math>\mathrm{i}</math> (aber auch <math>\mathrm{-i}</math>) als „[[Quadratwurzel|Wurzel]] aus <math>-1</math>“ aufgefasst werden.
+* <math>\C</math> ist im Gegensatz zu <math>\R</math> kein [[geordneter Körper]], d. h., es gibt keine mit der Körperstruktur verträgliche lineare Ordnungsrelation auf <math>\C</math>. Von zwei unterschiedlichen komplexen Zahlen kann man daher nicht sinnvoll (bezogen auf die Addition und Multiplikation in <math>\C</math>) festlegen, welche von beiden die größere bzw. die kleinere Zahl ist.
+
+== Betrag und Metrik ==
+=== Betrag ===
+Der Betrag <math>|z|</math> einer komplexen Zahl <math>z</math> ist die [[Euklidischer Raum|Länge]] ihres Vektors in der [[Gaußsche Zahlenebene|Gaußschen Zahlenebene]] und lässt sich z.&nbsp;B. zu
+:<math>|z| = \sqrt{a^2 + b^2}</math>
+aus ihrem Realteil <math>\operatorname{Re}{(z)}=a</math> und Imaginärteil <math>\operatorname{Im}{(z)}=b</math> berechnen. Als eine Länge ist der Betrag reell und nicht negativ.
+
+Beispiel:
+: <math>|239+\mathrm i| = \sqrt{239^2+1^2} = \sqrt{57121+1} = \sqrt{57122} = 169\cdot\sqrt{2}</math>
+
+=== Metrik ===
+Die durch die Abstandsfunktion <math>d_{\C}(z_1,z_2):=|z_1-z_2|</math> induzierte [[metrischer Raum|Metrik]] versieht den komplexen Vektorraum <math>\C</math> mit seiner [[Standardtopologie]]. Sie stimmt mit der [[Produkttopologie]] von <math>\R \times \R</math> überein, wie die [[Einschränkung]] <math>d_{\R}</math> von <math>d_{\C}</math> auf <math>\R</math> mit der Standardmetrik auf <math>\R</math> übereinstimmt.
+
+Beide Räume <math>\C</math> wie <math>\R</math> sind [[vollständiger Raum|vollständig]] unter diesen ihren Metriken. Auf beiden Räumen lässt sich der topologische Begriff der [[Stetigkeit]] zu [[Analysis|analytischen]] Begriffen wie [[Differentialrechnung|Differentiation]] und [[Integralrechnung|Integration]] erweitern.
+
+== Komplexe Zahlenebene ==
+[[Datei:Gaussplane kartesianAndPolar.png|thumb|[[Gaußebene|Gaußsche Ebene]] mit einer komplexen Zahl in kartesischen Koordinaten (a,b) und in Polarkoordinaten (r,φ)]]
+
+Während sich die Menge <math>\Bbb R</math> der [[Reelle Zahlen|reellen Zahlen]] durch Punkte auf einer [[Zahlengerade]]n veranschaulichen lässt, kann man die Menge <math>\C</math> der komplexen Zahlen als Punkte in einer Ebene (komplexe Ebene, gaußsche Zahlenebene) darstellen. Dies entspricht der „doppelten Natur“ von <math>\C</math> als zweidimensionalem reellem Vektorraum. Die Teilmenge der reellen Zahlen bildet darin die waagerechte Achse, die Teilmenge der rein imaginären Zahlen (d.&nbsp;h. mit Realteil 0) bildet die senkrechte Achse. Eine komplexe Zahl <math>z = a+b\,\mathrm{i}</math> mit <math>a,b \in \mathbb{R}</math> besitzt dann die horizontale Koordinate <math>a</math> und die vertikale Koordinate <math>b</math>, wird also mit dem Zahlenpaar <math>(a,b)</math> identifiziert.
+
+Gemäß Definition entspricht die Addition komplexer Zahlen der Vektoraddition, wobei man die Punkte in der Zahlenebene mit ihren [[Ortsvektor]]en identifiziert. Die Multiplikation ist in der gaußschen Ebene eine [[Drehstreckung]], was nach Einführung der Polarform weiter unten klarer werden wird. 
+
+=== Polarform ===
+[[Datei:Complex_coloring.jpg|thumb|Die Farbdarstellung der komplexen Zahlenebene wird häufig zur Veranschaulichung komplexer Funktionen angewendet. Die Farbe kodiert das Argument und die Helligkeit gibt den Betrag an.]]
+Verwendet man anstelle der kartesischen Koordinaten <math>a = \mathrm{Re}(z)</math> und <math>b = \mathrm{Im}(z)</math> [[Polarkoordinaten]] <math>\ r = |z|</math> und <math>\varphi = \operatorname{arg}(z)</math>, kann man die komplexe Zahl <math>z=a+b\,\mathrm{i}</math> auch in der folgenden, auf der [[Eulersche Relation|eulerschen Relation]] beruhenden sogenannten ''Polarform''
+:<math>z = r \cdot e^{\mathrm{i}\varphi} = r \cdot (\cos \varphi + \mathrm{i} \cdot \sin \varphi)</math> 
+darstellen, die sich aus <math>a = r \cdot \cos \varphi</math> und <math>b = r \cdot \sin \varphi</math> ergibt.
+Die Darstellung mit Hilfe der komplexen [[e-Funktion]] <math>r \cdot e^{\mathrm{i}\varphi}</math> heißt dabei auch Exponentialdarstellung (der Polarform), die Darstellung mittels des Ausdrucks <math>r \cdot (\cos \varphi + \mathrm{i} \cdot \sin \varphi)</math> trigonometrische Darstellung (der Polarform). Aufgrund der [[Eulersche Relation|eulerschen Relation]] sind beide Darstellungen gleichwertig. Des Weiteren gibt es für sie, namentlich in der Praxis, die verkürzten Schreibweisen
+<!--- BITTE NICHT IN "cos" ABÄNDERN, "cis" IST RICHTIG --->
+:<math>z = r \cdot\operatorname{cis}\,\varphi = r \cdot\operatorname{E}\,(\varphi) = r\,\angle\,\varphi\,,</math>
+in denen <math>\operatorname{cis}\, \varphi</math> für die Summe <math>\cos \varphi + \mathrm{i} \cdot \sin \varphi</math> steht und die Darstellung mit dem Winkeloperator <math>\angle</math> als [[Versor]]darstellung bezeichnet wird.
+
+In der komplexen Zahlenebene entspricht dabei <math>\ r</math> der euklidischen Vektorlänge (d. h. dem Abstand zum Ursprung 0) und <math>\varphi</math> dem mit der reellen Achse eingeschlossenen Winkel der Zahl <math>\ z</math>. Üblicherweise jedoch nennt man <math>\ r</math> hier den ''[[Absoluter Betrag|Betrag]]'' von <math>\ z</math> (oder auch sein ''Modul'') (Schreibweise <math>\ r = |z|</math>) und den Winkel <math>\varphi</math> das ''Argument'' (oder auch die ''Phase'') von <math>\ z</math> (Schreibweise <math>\varphi = \operatorname{arg}(z)</math>). 
+
+Da <math>\varphi</math> und <math>\varphi+2\pi</math> dabei derselben Zahl <math>\ z</math> zugeordnet werden können, ist die Polardarstellung zunächst nicht eindeutig. Deshalb schränkt man <math>\varphi</math> meist auf das [[Intervall (Mathematik)|Intervall]] <math>(-\pi;\pi]</math>, also <math>-\pi < \varphi \leq \pi</math><!-- -\pi gehört NICHT dazu! --> ein, um anschließend statt vom Argument selbst von seinem Hauptwert für <math>z\neq 0</math> zu sprechen. Der Zahl <math>\ z =  0</math> indes ließe sich jedes beliebige Argument zuordnen, und zum Zweck einer eindeutigen Darstellung kann man es in diesem Fall tatsächlich auf 0 festlegen.
+
+Das Argument von <math>\ z</math> ist auch der Imaginärteil des komplexen natürlichen [[Logarithmus]]
+: <math>\ln z=\ln|z|+\mathrm i\cdot\arg (z).</math>
+Mit der Wahl eines auf ganz <math>\mathbb C</math> definierten Zweiges des Logarithmus ist also auch eine Argumentfunktion bestimmt (und umgekehrt).
+
+Alle Werte <math> e^{\mathrm{i} \varphi}</math> bilden den Einheitskreis der komplexen Zahlen mit dem Betrag <math>1</math>, diese Zahlen werden auch '''unimodular''' genannt und bilden die [[Kreisgruppe]].
+
+Dass die Multiplikation von komplexen Zahlen (außer der Null) Drehstreckungen entspricht, lässt sich mathematisch wie folgt ausdrücken: Die multiplikative [[Gruppe (Mathematik)|Gruppe]] <math> \C^\times</math> der komplexen Zahlen ohne die Null lässt sich als [[direktes Produkt]] der Gruppe der [[Drehung]]en, der [[Kreisgruppe]], und der Streckungen um einen Faktor ungleich Null, der multiplikativen Gruppe <math>\R^+</math> auffassen. Erstere Gruppe lässt sich durch das Argument <math>\varphi</math> [[Einparameter-Untergruppe|parametrisieren]], zweitere entspricht gerade den Beträgen.
+
+=== Komplexe Konjugation ===
+{{Hauptartikel|Konjugation (Mathematik)}}
+[[Datei:Konjugiert.png|thumb|Eine komplexe Zahl <math>z = a+b\,\mathrm{i}</math> und die zu ihr konjugiert komplexe Zahl <math>\bar z=a-b\,\mathrm{i}</math>]]
+Ändert man das [[Vorzeichen (Zahl)|Vorzeichen]] des Imaginärteils <math>b</math> einer komplexen Zahl <math>z = a+b\,\mathrm{i},</math> so erhält man die zu <math>z</math> [[Konjugation (Mathematik)|konjugiert komplexe]] Zahl <math>\bar z=a-b\,\mathrm{i}</math> (manchmal auch <math>z^*</math> geschrieben).
+
+Die Konjugation <math>\C\to\C,\,z\mapsto \bar z</math> ist ein [[Involution (Mathematik)|(involutorischer)]] Körperautomorphismus, da sie mit Addition und Multiplikation verträglich ist, d.&nbsp;h., für alle <math>y,z\in\C</math> gilt
+: <math>\overline{y+z}=\bar y+\bar z,\quad \overline{y\cdot z}=\bar y\cdot \bar z.</math>
+In der Polardarstellung hat die konjugiert komplexe Zahl <math>\bar z</math> bei unverändertem Betrag gerade den negativen Winkel von <math>z.</math> Man kann die Konjugation in der komplexen Zahlenebene also als die ''Spiegelung an der reellen Achse'' interpretieren. Insbesondere werden unter der Konjugation genau die reellen Zahlen auf sich selbst abgebildet.
+
+Das Produkt aus einer komplexen Zahl <math>z=a+b\,\mathrm{i}</math> und ihrer komplex Konjugierten <math>\bar z</math> ergibt das Quadrat ihres Betrages:
+: <math>z\cdot\bar z = (a+b\,\mathrm{i}) (a-b\,\mathrm{i}) = a^2 + b^2=|z|^2</math>
+
+Die komplexen Zahlen bilden damit ein triviales Beispiel einer [[C*-Algebra]].
+
+Die Summe aus einer komplexen Zahl <math>z=a+b\,\mathrm{i}</math> und ihrer komplex Konjugierten <math>\bar z</math> ergibt das 2-fache ihres Realteils:
+: <math>z + \bar z = (a+b\,\mathrm{i}) + (a-b\,\mathrm{i}) = 2a = 2\,\operatorname{Re}{(z)}</math>
+
+Die Differenz aus einer komplexen Zahl <math>z=a+b\,\mathrm{i}</math> und ihrer komplex Konjugierten <math>\bar z</math> ergibt das 2i-fache ihres Imaginärteils:
+: <math>z - \bar z = (a+b\,\mathrm{i}) - (a-b\,\mathrm{i}) = 2b\,\mathrm{i} = 2\,\mathrm{i}\,\operatorname{Im}{(z)}</math>
+
+=== Umrechnungsformeln ===
+==== Von der algebraischen Form in die Polarform ====
+Für <math>z=a+b\,\mathrm{i}</math> in algebraischer Form ist
+:<math>r = |z| = \sqrt{a^2 + b^2}=\sqrt{z \cdot \overline z}.</math>
+Für <math>z = 0</math> kann das Argument mit 0 definiert werden, bleibt aber meist undefiniert. Für <math>z \neq 0</math> kann das Argument <math>\varphi</math> im Intervall <math>(-\pi;\pi]</math> mit Hilfe des [[Arkuskosinus]] bzw. des [[Arkustangens]] durch
+:<math>\varphi=\arg(z)=\begin{cases}
+\arccos\frac{a}{r}&\text{für } b\geq 0\\
+-\arccos\frac{a}{r}&\text{sonst}
+\end{cases}=\begin{cases}\pi&\text{für}\ z\in\mathbb{R^-}\\
+2\cdot\arctan\frac{b}{a+r}&\text{sonst} 
+\end{cases}</math>
+ermittelt werden. Etwas umständlicher (da der Fall <math>a=0</math> gesondert behandelt werden muss und der [[Tangens]]  im Intervall <math>(-\pi, \pi]</math> seinen Wertebereich zweimal durchläuft) ist die Berechnungsvariante
+:<math>\varphi = \arg(z) = \begin{cases}\arctan\frac{b}{a}&\text{für } a>0,b\, \text{beliebig}\\
+\arctan \left(\frac{b}{a}\right) + \pi&\text{für } a<0,b\geq 0\\
+\arctan \left(\frac{b}{a}\right) - \pi&\text{für } a<0,b<0\\
+\frac{\pi}{2}&\text{für } a=0,b>0\\
+-\frac{\pi}{2}&\text{für } a=0,b<0\\
+\text{unbestimmt} & \text{für } a = 0, b = 0
+\end{cases}.</math>
+für alle <math>z\in \mathbb{C}</math>. Viele [[Programmiersprache]]n und [[Tabellenkalkulation]]en stellen aber eine Variante der Arkustangensfunktion zur Verfügung (häufig mit dem Namen ''[[atan2]]'' bezeichnet), die beide Werte übergeben bekommt und das Ergebnis je nach Vorzeichen von <math>a</math> und <math>b</math> dem passenden Quadranten zuordnet.
+
+Die Berechnung des Winkels <math>\varphi</math> im Intervall <math>[0,2\pi)</math> kann im Prinzip so durchgeführt werden, dass der Winkel zunächst wie vorstehend beschrieben im Intervall <math>(-\pi,\pi]</math> berechnet wird und dann um <math>2\pi</math> vergrößert wird, falls er negativ ist:
+:<math>\varphi' = \arg(z) = \begin{cases}
+\varphi + 2\pi & \text{falls}\ \varphi < 0\\
+\varphi        & \text{sonst}
+\end{cases}</math>
+(siehe [[Polarkoordinaten]]).
+
+==== Von der Polarform in die algebraische Form ====
+: <math>a = \mathrm{Re}(z) = r \cdot \cos\varphi</math>
+: <math>b = \mathrm{Im}(z) = r \cdot \sin\varphi</math>
+Wie weiter oben stellt a den Realteil und b den Imaginärteil jener komplexen Zahl dar.
+
+=== Arithmetische Operationen in der Polarform ===
+Durch arithmetische Operationen sind folgende Operanden miteinander zu verknüpfen:
+:<math>z_1=r\cdot (\cos \varphi + \mathrm{i}\cdot\sin \varphi) = r\cdot e^{\mathrm{i}\varphi}</math>
+:<math>z_2=s\cdot (\cos \psi    + \mathrm{i}\cdot\sin \psi)    = s\cdot e^{\mathrm{i}\psi}</math>
+
+Bei der Multiplikation werden die Beträge <math>r</math> und <math>s</math> miteinander multipliziert und die zugehörigen Phasen <math>\varphi</math> bzw. <math>\psi</math> addiert. Bei der Division wird der Betrag des [[Dividend]]en durch den Betrag des [[Division (Mathematik)|Divisors]] geteilt und die Phase des Divisors von der Phase des Dividenden subtrahiert. Für die Addition und die Subtraktion existiert auch eine, etwas kompliziertere, Formel:
+
+==== Trigonometrische Form ====
+[[Datei:ExponentielleComplexe_MultiplicationComplexe.png|thumb|Die Multiplikation von zwei komplexen Zahlen entspricht dem Addieren der Winkel und dem Multiplizieren der Beträge.]]
+* <math>{z_1 \cdot z_2 = r \cdot s \cdot \left[ \cos (\varphi+\psi) + \mathrm{i} \cdot \sin (\varphi+\psi) \right]}</math>
+
+[[Datei:ExponentielleComplexe_DivisionComplexe.png|thumb|Die Division von zwei komplexen Zahlen entspricht dem Subtrahieren der Winkel und dem Dividieren der Beträge.]]
+
+* <math>\frac{z_1}{z_2} = \frac{r}{s} \cdot \left[ \cos (\varphi-\psi) + \mathrm{i} \cdot \sin (\varphi-\psi) \right]</math>
+
+* <math>z_1 \pm z_2 = t \cdot (\cos \chi + \mathrm{i} \cdot \sin \chi),</math> wobei
+: <math>t := \sqrt{r^2 + s^2 \pm 2 r s \cos (\varphi - \psi)}</math> und<br /><math>\chi := \operatorname{atan2}\left( r \sin \varphi \pm s \sin \psi, r \cos \varphi \pm s \cos \psi \right)</math> mit der [[atan2]]-Funktion gesetzt ist.
+
+==== Exponentialform ====
+* <math>z_1 \cdot z_2 = r \cdot s \cdot e^{\mathrm{i}(\varphi+\psi)}</math>
+* <math>\frac{z_1}{z_2} = \frac{r}{s} \cdot e^{\mathrm{i}(\varphi-\psi)}</math>
+* <math>z_1 \pm z_2 = t \cdot e^{ \mathrm{i} \chi}</math> mit <math>t</math> und <math>\chi</math> wie oben.
+
+== Rechenoperationen 3. Stufe ==
+Zu den Rechenoperationen der dritten Stufe gehören [[Potenz (Mathematik)|Potenzieren]], [[Wurzel (Mathematik)|Wurzelziehen]] (Radizieren) und [[Logarithmus|Logarithmieren]].
+
+=== Potenzen ===
+==== Natürliche Exponenten ====
+Für natürliche Zahlen <math>n</math> berechnet sich die <math>n</math>-te Potenz in der polaren Form <math>z=r e^{\mathrm i \varphi}</math> zu 
+:<math>z^n = r^n \cdot e^{\mathrm i n\varphi} = r^n \cdot (\cos n\varphi + \mathrm i \cdot \sin n \varphi)</math>
+
+oder für die algebraische Form <math>z=a+b\,\mathrm i</math> mit Hilfe des [[binomischer Lehrsatz|binomischen Satzes]] zu
+:<math> z^n=\sum_{k=0, \atop k\text{ gerade}}^n \binom nk (-1)^{\frac k2} a^{n-k}b^k + \mathrm i \sum_{k=1, \atop k\text{ ungerade}}^n \binom nk (-1)^{\frac{k-1}2} a^{n-k}b^k.</math>
+
+==== Beliebige komplexe Exponenten ====
+Die allgemeine Definition einer Potenz mit komplexer Basis <math>z\neq 0</math> und komplexem Exponenten <math>\omega</math> lautet
+:<math>z^\omega := e^{ \omega \cdot \ln z},</math>
+
+wobei <math>\ln(z)</math> für den [[Logarithmus#Komplexer Logarithmus|Hauptwert des komplexen Logarithmus]] steht (siehe unten), damit liefert die Formel ebenfalls einen Hauptwert. Im Fall <math>\omega \in \mathbb{Z}</math> oder <math>z \in \mathbb{R}^+</math> allerdings stimmen alle in Frage kommenden Ergebnisse mit diesem Hauptwert überein und die Funktion wird eindeutig.
+
+=== Wurzeln ===
+{{Hauptartikel|Wurzel (Mathematik)#Wurzeln aus komplexen Zahlen|titel1=Wurzeln aus komplexen Zahlen}}
+
+=== Logarithmen ===
+Der [[Logarithmus#Komplexer Logarithmus|komplexe natürliche Logarithmus]] ist (anders als der [[Logarithmus#Definition|reelle]]) nicht eindeutig. Eine komplexe Zahl ''w'' heißt Logarithmus der komplexen Zahl ''z'', wenn
+:<math>e^w=z.</math>
+Mit ''w'' ist auch jede Zahl <math>w + 2m \pi \mathrm i</math> mit beliebigem <math>m\in \Z</math> ein Logarithmus von ''z''. Man arbeitet daher mit [[Logarithmus#Komplexer Logarithmus|Hauptwert]]en, d.&nbsp;h. Werten eines bestimmten Streifens der komplexen Ebene.
+
+Der Hauptwert des natürlichen Logarithmus der komplexen Zahl
+:<math>z = re^{\mathrm i \phi}</math>
+mit <math>r>0</math> und <math>-\pi <\phi \leq \pi</math> ist
+:<math>\ln z = \ln r + \mathrm i \phi.</math>
+Anders formuliert: Der Hauptwert des natürlichen Logarithmus der komplexen Zahl ''z'' ist
+:<math>\ln z = \ln |z| + \mathrm i\, \operatorname{Arg}(z),</math>
+wobei <math>\operatorname{Arg}(z)</math> der Hauptwert des [[#Polarform|Argument]]s von ''z'' ist.
+
+== Die endlichen Untergruppen ==
+Alle Elemente einer endlichen Untergruppe der multiplikativen [[Einheitengruppe]] <math>\C^\times = \C \setminus \{0\}</math> sind [[Einheitswurzel]]n. Unter allen [[Ordnung eines Gruppenelementes|Ordnungen]] von Gruppenelementen gibt es eine maximale, etwa <math>n\in \N</math>. Da <math>\C</math> kommutativ ist, erzeugt ein Element mit dieser maximalen Ordnung dann auch die Gruppe, so dass die Gruppe [[Zyklische Gruppe|zyklisch]] ist und genau aus den Elementen
+:<math> \exp\left({2\pi \mathrm i k\over n}\right),\quad k=0,1,\dotsc, n-1</math>
+besteht. Alle Elemente liegen auf dem [[Einheitskreis]].
+
+Die Vereinigung aller endlichen Untergruppen ist eine Gruppe, die zur [[Torsion (Algebra)|Torsionsgruppe]] <math>\Q/\Z</math> [[Isomorphismus|isomorph]] ist. Sie liegt [[Dichte Teilmenge|dicht]] in ihrer [[Vollständiger Raum|Vervollständigung]], der schon erwähnten [[Kreisgruppe]], die auch als [[Sphäre (Mathematik)|1-Sphäre]] aufgefasst werden kann und zu <math>\R/\Z</math> isomorph ist.
+
+== Pragmatische Rechenregeln ==
+Am einfachsten lassen sich die Berechnungen folgendermaßen durchführen:
+* Addition und Subtraktion komplexer Zahlen werden (in der algebraischen Form) komponentenweise durchgeführt.
+* Die Multiplikation komplexer Zahlen kann je nach Vorgabe vorteilhaft in algebraischer Form oder in Exponentialform (Multiplikation der Beträge und Addition der Argumente (Winkel)) durchgeführt werden.
+* Bei der Division komplexer Zahlen werden in Exponentialform ihre Beträge dividiert und ihre Argumente (Winkel) subtrahiert, oder in algebraischer Form der Quotient mit dem konjugierten Nenner erweitert.
+* Beim Potenzieren einer komplexen Zahl mit einem reellen Exponenten wird ihr Betrag potenziert und ihr Argument (Winkel) mit dem Exponenten multipliziert; die Benutzung der algebraischen Form (mit Newtons [[Binomialsatz]]) ist in den meisten Fällen umständlicher (insbesondere für höhere Potenzen).
+* Beim Radizieren (Wurzelziehen) einer komplexen Zahl mit einem reellen Exponenten wird ihr Betrag radiziert und ihr Argument (Winkel) durch den Exponenten dividiert. Hierdurch entsteht die erste Lösung. Bei einer <math>n</math>-ten Wurzel entstehen <math>n</math> Lösungen, die im Winkel von <math>2\pi/n</math> um den Ursprung der gaußschen Ebene verteilt sind. ''Siehe'' [[Wurzel (Mathematik)]]. Eine [[Quadratwurzel]] kann auch recht einfach in kartesischer Form berechnet werden.
+* Beim Multiplizieren in algebraischer Form lässt sich durch folgendes Verfahren eine der vier Multiplikation einsparen und durch drei Additionen bzw. Subtraktionen ersetzen. Das kann Computerberechnungen beschleunigen. 
+::<math>p_1=(a-b)(c+d)</math>
+::<math>p_2=bc</math>
+::<math>p_3=ad</math>
+::<math>\operatorname{Re}(z_1 z_2)=p_1+p_2-p_3</math>
+::<math>\operatorname{Im}(z_1 z_2)=p_2+p_3</math>
+
+== Konstruktion der komplexen Zahlen ==
+In diesem Abschnitt wird nachgewiesen, dass tatsächlich ein [[Körper (Algebra)|Körper]] <math>\mathbb C</math> der komplexen Zahlen existiert, der den in der obigen Definition geforderten Eigenschaften genügt. Es sind dabei verschiedene Konstruktionen möglich, die jedoch bis auf Isomorphie zum selben Körper führen.
+
+=== Paare reeller Zahlen ===
+Die Konstruktion nimmt zunächst keinerlei Bezug auf die imaginäre Einheit <math>\mathrm i</math>: Im 2-dimensionalen reellen [[Vektorraum]] <math>\R^2</math> der geordneten reellen Zahlenpaare <math>z=(a,b)</math> wird neben der [[Addition]] 
+:<math>(a, b) + (c, d) = (a + c , b + d)</math> 
+(das ist die gewöhnliche Vektoraddition) eine [[Multiplikation]] durch
+:<math>(a, b) \cdot (c, d) = (a \cdot c - b \cdot d, a \cdot d + b \cdot c)</math>
+definiert.
+
+Nach dieser Festlegung schreibt man <math>\C=\R^2</math>, und <math>(\mathbb{C}, +, \cdot)</math> wird zu einem Körper, dem '''Körper der komplexen Zahlen'''.
+
+==== Erste Eigenschaften ====
+* Die Abbildung <math>\R\to\C,\,a\mapsto (a,0)</math> ist eine Körpereinbettung von <math>\R</math> in <math>\C</math>, aufgrund derer wir die reelle Zahl <math>a</math> mit der komplexen Zahl <math>(a,0)</math> identifizieren.
+Bezüglich der Addition ist:
+* die Zahl <math>0=(0,0)</math> das neutrale Element (das Nullelement) in <math>\C</math> und
+* die Zahl <math>-z=(-a,-b)</math> das inverse Element in <math>\C</math>.
+Bezüglich der Multiplikation ist:
+* die Zahl <math>1=(1,0)</math> das neutrale Element (das Einselement) von <math>\C</math> und
+* das Inverse ([[Kehrwert|Reziproke]]) zu <math>z=(a,b)\neq (0,0)</math> ist <math>z^{-1} = \left(\frac{a}{a^2+b^2},\,\frac{-b}{a^2+b^2}\right)</math>.
+
+==== Bezug zur Darstellung in der Form ''a'' + ''b''i ====
+Durch <math>\mathrm i:=(0,1)</math> wird die imaginäre Einheit festgelegt; für diese gilt <math>\mathrm i^2=(-1,0)</math>, was nach obiger Einbettung gleich <math>-1\in\R</math> entspricht. 
+
+Jede komplexe Zahl <math>z=(a,b)\in\C</math> besitzt die ''eindeutige'' Darstellung der Form
+:<math>z = (a,b) = (a,0)+(0,b)=a\cdot(1,0)+b\cdot(0,1) = a + b\,\mathrm{i}</math>
+mit <math>a,b\in\R</math>; dies ist die übliche Schreibweise für die komplexen Zahlen.
+
+=== Polynome: Adjunktion ===
+Eine weitere Konstruktion der komplexen Zahlen ist der [[Faktorring]]
+: <math>\R[X]/(X^2+1)</math>
+des [[Polynomring]]es in einer Unbestimmten über den reellen Zahlen. Die Zahl <math>\mathrm i</math> entspricht dabei dem Bild der Unbestimmten <math>X</math>, die reellen Zahlen werden mit den konstanten Polynomen identifiziert.
+
+Dieses Konstruktionsprinzip ist auch in anderem Kontext anwendbar, man spricht von [[Adjunktion (Algebra)|Adjunktion]].
+
+=== Matrizen ===
+Die Menge der <math>2\times2</math>-[[Matrix (Mathematik)|Matrizen]] der Form
+: <math>Z = \begin{pmatrix}a&-b\\b&a\end{pmatrix} = a \begin{pmatrix}1&0\\0&1\end{pmatrix} + b \begin{pmatrix}0&-1\\1&0\end{pmatrix} = a \cdot E + b \cdot I</math> mit <math>a,b\in\R</math>
+bildet ebenfalls ein Modell der komplexen Zahlen. Dabei werden die reelle Einheit <math>1</math> bzw. die imaginäre Einheit <math>\mathrm i</math> durch die [[Einheitsmatrix]] <math>E</math> bzw. die Matrix <math>I</math> dargestellt. Daher gilt:
+: <math>\operatorname{Re}(Z) = a</math>
+: <math>\operatorname{Im}(Z) = b</math>
+: <math>I^2 = -E</math>
+: <math>\operatorname{abs}(Z) = \sqrt{a^2 + b^2} = \sqrt{\det Z}</math>
+Diese Menge ist ein [[Untervektorraum|Unterraum]] des [[Vektorraum]]s der reellen <math>2\times2</math>-Matrizen.
+
+Reelle Zahlen entsprechen [[Diagonalmatrix|Diagonalmatrizen]] <math>\begin{pmatrix}a&0\\0&a\end{pmatrix}.</math>
+
+Die zu den Matrizen gehörenden linearen Abbildungen sind, sofern <math>a</math> und <math>b</math> nicht beide null sind, [[Drehstreckung]]en im Raum <math>\R^2</math>. Es handelt sich um genau dieselben Drehstreckungen wie bei der Interpretation der Multiplikation mit einer komplexen Zahl <math>a+b\mathrm i</math> in der [[Gaußsche Zahlenebene|gaußschen Zahlenebene]].
+
+== Geschichte ==
+Die Unmöglichkeit der oben angegebenen Lösung ist bei der Behandlung der quadratischen Gleichung schon sehr früh bemerkt und hervorgehoben worden, z.&nbsp;B. schon in der um 820 n.&nbsp;Chr. verfassten Algebra des [[Al-Chwarizmi|Muhammed ibn Mûsâ Alchwârizmî]]. Aber bei dem nächstliegenden und unanfechtbaren Schluss, dass diese Art von Gleichung nicht lösbar sei, blieb die mathematische Forschung nicht stehen.
+
+In gewissem Sinne ist bereits der Italiener [[Gerolamo Cardano]] (1501–1576) in seinem 1545 erschienenen Buch ''Artis magnae sive de regulis algebraicis liber unus'' darüber hinausgegangen. Er behandelt dort die Aufgabe, zwei Zahlen zu finden, deren Produkt 40 und deren Summe 10 ist. Er hebt hervor, dass die dafür anzusetzende Gleichung
+: <math>x(10-x)=40</math>
+: <math>x^2-10x+40=0</math>
+keine Lösung hat, fügt aber einige Bemerkungen hinzu, indem er in die Lösung
+: <math>x_{1,2} = - \frac{p}{2}\pm\sqrt{ \frac{p^2}{4} - q }</math>
+der allgemeinen normierten [[Quadratische Gleichung|quadratischen Gleichung]]
+: <math>x^2+px+q=0</math>
+für <math>p</math> und <math>q</math> die Werte −10 bzw. 40 einsetzt. Wenn es also möglich wäre, dem sich ergebenden Ausdruck
+: <math>\sqrt{25-40}=\sqrt{-15}</math>
+einen Sinn zu geben, und zwar so, dass man mit diesem Zeichen nach denselben Regeln rechnen dürfte wie mit einer reellen Zahl, so würden die Ausdrücke
+: <math>5 + \sqrt{-15}</math>
+: <math>5 - \sqrt{-15}</math>
+in der Tat je eine Lösung darstellen.
+
+Für die Quadratwurzel aus negativen Zahlen und allgemeiner für alle aus einer beliebigen reellen Zahl <math>\alpha</math> und einer positiven reellen Zahl <math>\beta</math> zusammengesetzten Zahlen
+: <math>\alpha + \sqrt{-\beta}</math> oder <math>\alpha - \sqrt{-\beta}</math>
+hat sich seit der Mitte des 17.&nbsp;Jahrhunderts die Bezeichnung [[imaginäre Zahl]] eingebürgert.
+
+Im Gegensatz dazu wurden als ''gewöhnliche'' Zahlen die [[Reelle Zahl|reellen Zahlen]] bezeichnet. Eine solche Gegenüberstellung der zwei Begriffe findet sich in der 1637 erschienenen ''La Géométrie'' von [[Descartes]] und taucht dort wohl zum ersten Mal auf.
+
+Heute bezeichnet man nur noch den Ausdruck, der durch die Wurzel aus einer negativen Zahl gebildet wird, als imaginäre Zahl und die von beiden Arten von Zahlen gebildete Menge von Zahlen als komplexe Zahlen. Man kann daher sagen, dass Cardano zum ersten Mal im heutigen Sinne mit komplexen Zahlen gerechnet hat und damit eine Reihe von Betrachtungen angestellt hat.
+
+Da das Rechnen mit diesen als „sinnlos“ angesehenen Zahlen zunächst als bloßes Spiel erschien, war man umso überraschter, dass dieses „Spiel“ sehr häufig wertvolle Ergebnisse lieferte oder schon bekannten Ergebnissen eine befriedigendere Form zu geben erlaubte. So kam [[Leonhard Euler]] zum Beispiel in seiner ''Introductio in analysin infinitorum'' zu einigen bemerkenswerten Gleichungen, die nur reelle Zahlen enthielten und sich ausnahmslos als richtig erwiesen, die aber auf anderem Wege nicht so einfach gewonnen werden konnten.
+
+So kam es, dass man diese Zahlen nicht als widersinnig verwarf, sondern sich immer mehr mit ihnen beschäftigte. Trotzdem umgab dieses Gebiet der Mathematik noch immer etwas Geheimnisvolles, Rätselhaftes und Unbefriedigendes. Erst durch die Abhandlung ''Essai sur la représentation analytique de la direction'' aus dem Jahre 1797 des norwegisch-dänischen Landmessers [[Caspar Wessel]] (1745–1818) wurde die Aufklärung über diese Zahlen angebahnt.<ref>{{Literatur|Autor = [[Heinz-Wilhelm Alten]]|Titel = 4000 Jahre Algebra. Geschichte, Kulturen, Menschen|Verlag = Springer|Ort = Berlin u.&nbsp;a.|Jahr = 2003|ISBN = 3-540-43554-9|Seiten = 306–307}}</ref> Diese Arbeit, die er bei der dänischen Akademie einreichte, fand anfangs keine Beachtung. Ähnlich erging es Arbeiten anderer Mathematiker, sodass diese Betrachtungen noch mehrfach angestellt werden mussten.
+
+Als erster definierte [[Augustin-Louis Cauchy]] 1821 in seinem Lehrbuch ''Cours d’analyse'' eine Funktion einer komplexen Variablen in die komplexe Zahlenebene und bewies viele grundlegende Sätze der [[Funktionentheorie]].
+
+Allgemeine Beachtung fanden sie erst, nachdem auch [[Carl Friedrich Gauß]] im Jahre 1831 in einem Artikel in den ''Göttingschen gelehrten Anzeigen'' dieselben Auffassungen entwickelt hatte, offensichtlich ohne Wissen von irgendwelchen Vorgängern. Ausgehend von philosophischen Ideen [[Immanuel Kant]]s fand [[William Rowan Hamilton]] 1833 eine logisch einwandfreie Begründung der komplexen Zahlen. Er deutete die komplexe Zahl <math>a+b\cdot\mathrm i</math> als Zahlenpaar <math>(a,b)</math> und definierte Addition beziehungsweise die Multiplikation durch:<ref>{{Literatur|Autor = [[Heinz-Wilhelm Alten]]|Titel = 4000 Jahre Algebra. Geschichte, Kulturen, Menschen|Verlag = Springer|Ort = Berlin u.&nbsp;a.|Jahr = 2003|ISBN = 3-540-43554-9|Seiten = 310}}</ref>
+:<math>\begin{align}
+(a_1,b_1)+(a_2,b_2) &= (a_1 + a_2,b_1 + b_2)\\
+(a_1,b_1)(a_2,b_2) &= (a_1a_2 - b_1b_2,a_1b_2 + a_2b_1)
+\end{align}</math>
+
+Heute machen diese Dinge keinerlei begriffliche oder tatsächliche Schwierigkeiten. Durch die Einfachheit der Definition, der bereits erläuterten Bedeutung und Anwendungen in vielen Wissenschaftsgebieten stehen die komplexen Zahlen den reellen Zahlen in nichts nach. Der Begriff der „imaginären“ Zahlen, im Sinne von eingebildeten bzw. unwirklichen Zahlen, hat sich also im Laufe der Jahrhunderte zu einer schiefen, aber beibehaltenen Bezeichnung entwickelt.
+
+== Bedeutung ==
+=== Komplexe Zahlen in der Physik ===
+Komplexe Zahlen spielen in der Grundlagenphysik eine zentrale Rolle. In der [[Quantenmechanik]] wird der Zustand eines physikalischen Systems als Element eines ([[projektiver Hilbertraum|projektiven]]) [[Hilbertraum]]s über den komplexen Zahlen aufgefasst. Komplexe Zahlen finden Verwendung bei der Definition von [[Differentialoperator]]en in der [[Schrödingergleichung]] und der [[Klein-Gordon-Gleichung]]. Für die [[Dirac-Gleichung]] benötigt man eine [[Zahlbereichserweiterung]] der komplexen Zahlen, die [[Quaternionen]]. Alternativ ist eine Formulierung mit [[Pauli-Matrizen]] möglich, die aber die gleiche [[Algebra|algebraische Struktur]] wie die Quaternionen aufweisen.
+
+Komplexe Zahlen haben in der Physik und Technik eine wichtige Rolle als Rechenhilfe. So lässt sich insbesondere die Behandlung von Differentialgleichungen zu Schwingungsvorgängen vereinfachen, da sich damit die komplizierten Beziehungen in Zusammenhang mit Produkten von Sinus- bzw. Kosinusfunktionen durch Produkte von Exponentialfunktionen ersetzen lassen, wobei lediglich die Exponenten addiert werden müssen. So fügt man dazu beispielsweise in der [[Komplexe Wechselstromrechnung|komplexen Wechselstromrechnung]] geeignete Imaginärteile in die reellen Ausgangsgleichungen ein, die man bei der Auswertung der Rechenergebnisse dann wieder ignoriert. Dadurch werden in der Zwischenrechnung harmonische Schwingungen (reell) zu [[Eulersche Formel|Kreisbewegungen in der komplexen Ebene]] ergänzt, die mehr Symmetrie aufweisen und deswegen einfacher zu behandeln sind.  
+
+In der [[Optik]] werden die brechenden und absorbierenden Effekte einer Substanz in einer komplexen, [[Wellenlänge]]n-abhängigen [[Permittivität]] (Dielektrizitätskonstante) oder dem komplexen [[Brechungsindex]] zusammengefasst, die wiederum auf die [[elektrische Suszeptibilität]] zurückgeführt wird.
+
+In der [[Fluiddynamik]] werden komplexe Zahlen eingesetzt, um ebene [[Potentialströmung]]en zu erklären und zu verstehen. Jede beliebige komplexe Funktion eines komplexen Arguments stellt immer eine ebene Potenzialströmung dar – der geometrische Ort entspricht dem komplexen Argument in der gaußschen Zahlenebene, das Strömungspotenzial dem Realteil der Funktion, und die Stromlinien den Isolinien des Imaginärteils der Funktion mit umgekehrtem Vorzeichen. Das Vektorfeld der Strömungsgeschwindigkeit entspricht der konjugiert komplexen ersten Ableitung der Funktion. Durch das Experimentieren mit verschiedenen Überlagerungen von Parallelströmung, Quellen, Senken, Dipolen und Wirbeln kann man die Umströmung unterschiedlicher Konturen darstellen. Verzerren lassen sich diese Strömungsbilder durch [[konforme Abbildung]] – das komplexe Argument wird durch eine Funktion des komplexen Arguments ersetzt.  Beispielsweise lässt sich die Umströmung eines Kreiszylinders (Parallelströmung + Dipol + Wirbel) in die Umströmung eines tragflügel-ähnlichen Profils ([[Kutta-Schukowski-Transformation|Joukowski-Profil]]) verzerren und die Rolle des tragenden Wirbels an einer Flugzeug-Tragfläche studieren. So nützlich diese Methode zum Lernen und Verstehen ist, zur genauen Berechnung reicht sie im Allgemeinen nicht aus.
+
+=== Komplexe Zahlen in der Elektrotechnik ===
+In der Elektrotechnik besitzt die Darstellung elektrischer Größen mit Hilfe komplexer Zahlen weite Verbreitung. Sie wird bei der Berechnung von zeitlich sinusförmig veränderlichen Größen wie elektrischen und magnetischen Feldern verwendet. Bei der Darstellung einer sinusförmigen [[Wechselspannung]] als komplexe Größe und 
+entsprechenden Darstellungen für Widerstände, Kondensatoren und Spulen vereinfachen sich die Berechnungen des [[Elektrische Stromstärke|elektrischen Stromes]], der [[Wirkleistung|Wirk-]] und der [[Blindleistung]] in einer Schaltung. Die durch Differentialquotienten oder Integrale gegebene Verkopplung geht über in eine Verkopplung durch trigonometrische Funktionen; die Berechnung der Zusammenhänge lässt sich damit wesentlich erleichtern. Auch das Zusammenwirken mehrerer verschiedener sinusförmiger Spannungen und Ströme, die zu unterschiedlichen Zeitpunkten ihre Nulldurchgänge haben können, lässt sich in komplexer Rechnung leicht darstellen. Genaueres über dieses Thema steht im Artikel über die [[komplexe Wechselstromrechnung]].
+
+In den letzten Jahren hat die [[digitale Signalverarbeitung]] außerordentlich an Bedeutung gewonnen, deren Fundament die Rechnung mit komplexen Zahlen bildet.
+
+=== Körpertheorie und algebraische Geometrie ===
+Der [[Körper (Algebra)|Körper]] der komplexen Zahlen ist der [[Algebraischer Abschluss|algebraische Abschluss]] des Körpers der reellen Zahlen.
+
+Je zwei algebraisch abgeschlossene Körper mit derselben [[Charakteristik (Algebra)|Charakteristik]] und demselben [[Transzendenzgrad]] über ihrem [[Primkörper]] (der durch die Charakteristik festgelegt ist) sind ([[Ringtheorie|ringtheoretisch]]) [[Isomorphismus|isomorph]].<ref>Daher kommt auch, dass es überabzählbar viele „wilde“ [[Automorphismus|Automorphismen]] von <math>\C</math> gibt; siehe Paul B. Yale: ''Automorphisms of the Complex Numbers.'' ([https://www.maa.org/sites/default/files/pdf/upload_library/22/Ford/PaulBYale.pdf PDF; 217&nbsp;kB]).</ref> Bei einem Körper von Charakteristik&nbsp;0 mit [[überabzählbar]]em Transzendenzgrad ist dieser gleich der [[Kardinalität (Mathematik)|Kardinalität]] des Körpers. Körpertheoretisch bilden die komplexen Zahlen also den einzigen algebraisch abgeschlossenen Körper mit Charakteristik&nbsp;0 und der Kardinalität des [[Kontinuum (Mathematik)|Kontinuum]]s. Eine Konstruktion des Körpers der komplexen Zahlen ist mithilfe dieser Feststellung auch rein algebraisch etwa als Erweiterung des algebraischen Abschlusses der rationalen Zahlen um Kontinuum viele transzendente Elemente. Eine weitere Konstruktion liefert ein [[Ultraprodukt]]: Hierzu bilde man zu jedem [[endlicher Körper|endlichen Körper]] seinen algebraischen Abschluss und bilde von ihnen das Ultraprodukt bezüglich eines beliebigen freien [[Ultrafilter]]s. Aus dem [[Satz von Łoś]] folgt, dass dieses Ultraprodukt ein algebraisch abgeschlossener Körper mit Charakteristik&nbsp;0 ist, die Kardinalität des Kontinuums folgt aus mengentheoretischen Überlegungen.<ref>H. Schoutens, ''[http://www.springer.com/cda/content/document/cda_downloaddocument/9783642133671-c1.pdf?SGWID=0-0-45-966343-p174008461 The Use of Ultraproducts in Commutative Algebra]'', [[Springer Science+Business Media|Springer]] 2010, S. 16.</ref>
+
+Unter dem Schlagwort [[Lefschetz-Prinzip]] werden verschiedene Sätze zusammengefasst, die es erlauben, Ergebnisse der [[Algebraische Geometrie|algebraischen Geometrie]], die über den komplexen Zahlen bewiesen werden, auf andere algebraisch abgeschlossene Körper mit Charakteristik 0 zu übertragen (was maßgeblich auf der [[Vollständigkeit (Logik)|Vollständigkeit]] der Theorie der algebraisch abgeschlossenen Körper mit Charakteristik 0 aufbaut). Die Betrachtung des komplexen Falls bietet den Vorteil, dass dort topologische und analytische Methoden eingesetzt werden können, um algebraische Ergebnisse zu erhalten.<ref>{{Literatur|Online=[http://gdz.sub.uni-goettingen.de/dms/load/img/?PPN=PPN365956996_0055&DMDID=DMDLOG_0026&LOGID=LOG_0026&PHYSID=PHYS_0389 online]|Titel=The Strong Lefschetz Principle in Algebraic Geometry|Autor=[[Gerhard Frey (Mathematiker)|Gerhard Frey]], Hans-Georg Rück|Jahr=1986|Sammelwerk=manuscripta mathematica|Seiten=385|Band=Bd. 55}}</ref> Obige Ultraproduktkonstruktion erlaubt die Übertragung von Ergebnissen im Fall einer Charakteristik ungleich 0 auf die komplexen Zahlen.<ref>Frey, Rück, S. 389.</ref>
+
+=== Spektraltheorie und Funktionalanalysis ===
+Viele Ergebnisse der [[Spektraltheorie]] gelten für komplexe [[Vektorraum|Vektorräume]] in größerem Umfang als für reelle. So treten z.&nbsp;B. komplexe Zahlen als [[Eigenwert]]e reeller [[Matrix (Mathematik)|Matrizen]] auf (dann jeweils zusammen mit dem konjugiert-komplexen Eigenwert). Das erklärt sich dadurch, dass das [[Charakteristisches Polynom|charakteristische Polynom]] der Matrix aufgrund der algebraischen Abgeschlossenheit von <math>\C</math> über den komplexen Zahlen stets in [[Linearfaktor]]en zerfällt. Dagegen gibt es reelle Matrizen ohne reelle Eigenwerte, während das [[Spektrum (Operatortheorie)|Spektrum]] eines beliebigen [[Beschränkter Operator|beschränkten Operators]] auf einem komplexen (mindestens eindimensionalen) [[Banachraum]] nie leer ist.<ref>{{Literatur|Autor=[[Dirk Werner (Mathematiker)|Dirk Werner]]|Titel=Funktionalanalysis|Auflage=7|Verlag=[[Springer Science+Business Media|Springer]]|Jahr=2011|ISBN=978-3-642-21016-7|Seiten=261}}</ref> In der Spektraltheorie auf [[Hilbertraum|Hilberträumen]] lassen sich Sätze, die im reellen Fall nur für [[Selbstadjungierter Operator|selbstadjungierte Operatoren]] gelten, im komplexen Fall oft auf [[Normaler Operator|normale Operatoren]] übertragen.
+
+Auch in weiteren Teilen der [[Funktionalanalysis]] spielen die komplexen Zahlen eine besondere Rolle. So wird etwa die Theorie der [[C*-Algebra|C*-Algebren]] meist im Komplexen betrieben, die [[harmonische Analyse]] befasst sich mit [[Darstellung (Gruppe)|Darstellungen von Gruppen]] auf komplexen Hilberträumen.
+
+=== Funktionentheorie und komplexe Geometrie ===
+Das Studium differenzierbarer Funktionen auf Teilmengen der komplexen Zahlen ist Gegenstand der [[Funktionentheorie]]. Sie ist in vieler Hinsicht starrer als die reelle Analysis und lässt weniger Pathologien zu. Beispiele sind die Aussage, dass jede in einem [[Gebiet (Mathematik)|Gebiet]] differenzierbare Funktion bereits beliebig oft differenzierbar ist, oder der [[Identitätssatz für holomorphe Funktionen]].
+
+Die Funktionentheorie ermöglicht oft auch Rückschlüsse auf rein reelle Aussagen, beispielsweise lassen sich manche Integrale mit dem [[Residuensatz]] berechnen. Ein wichtiges Einsatzgebiet dieser Methoden ist die [[analytische Zahlentheorie]], die Aussagen über ganze Zahlen auf Aussagen über komplexe Funktionen zurückführt, häufig in der Form von [[Dirichletreihe]]n. Ein prominentes Beispiel ist die Verbindung zwischen [[Primzahlsatz]] und [[Riemannsche Zetafunktion|riemannscher ζ-Funktion]]. In diesem Zusammenhang spielt die [[riemannsche Vermutung]] eine zentrale Rolle.
+
+Die oben erwähnte Starrheit holomorpher Funktionen tritt noch stärker bei globalen Fragen in Erscheinung, d.&nbsp;h. beim Studium [[Komplexe Mannigfaltigkeit|komplexer Mannigfaltigkeiten]]. So gibt es auf einer [[Kompakter Raum|kompakten]] komplexen Mannigfaltigkeit keine nichtkonstanten globalen holomorphen Funktionen; Aussagen wie der [[Einbettungssatz von Whitney]] sind im Komplexen also falsch. Diese so genannte „analytische Geometrie“ (nicht mit der klassischen analytischen Geometrie von René Descartes zu verwechseln!) ist auch eng mit der [[Algebraische Geometrie|algebraischen Geometrie]] verknüpft, viele Ergebnisse lassen sich übertragen. Die komplexen Zahlen sind auch in einem geeigneten Sinne ausreichend groß, um die Komplexität [[Algebraische Varietät|algebraischer Varietäten]] über beliebigen Körpern der [[Charakteristik (Algebra)|Charakteristik]]&nbsp;0 zu erfassen ([[Lefschetz-Prinzip]]).
+
+== Verwandte Themen ==
+* [[Gaußsche Zahlen]] und  [[Eisenstein-Zahlen]] sind eine Verallgemeinerung der ganzen Zahlen auf die komplexen Zahlen. 
+* [[Hyperkomplexe Zahlen]] verallgemeinern die algebraische Struktur der komplexen Zahlen.
+* [[Komplexwertige Funktion]]en bilden komplexe Zahlen auf komplexe Zahlen ab.
+
+== Weblinks ==
+{{Commonscat|Complex numbers|Komplexe Zahlen}}
+{{Wikibooks|Imaginäre und komplexe Zahlen||eine kompakte Einführung}}
+{{Wikibooks|Komplexe Zahlen}}
+* Schriften, Dokumentationen, Videos
+** [http://members.chello.at/gut.jutta.gerhard/imaginaer1.htm Geschichte der komplexen Zahlen]
+** [http://www.komplexe-zahlen.de Eine Facharbeit, die eine Einführung in die komplexen Zahlen gibt]
+** [http://www.tf.uni-kiel.de/matwis/amat/mw1_ge/kap_2/basics/b2_1_5.html Rechnen mit komplexen Zahlen]
+** [http://www.dimensions-math.org/Dim_reg_DE.htm Dimensions: a math film.] Einbettung der komplexen Zahlen in die Darstellung höherer Dimensionen (auch Chaostheorie) [http://www.dimensions-math.org/Dim_download2_E.htm insb. Kapitel 5 und 6]
+* Programme zur direkten Ausführung
+** [http://www.walter-fendt.de/m14d/komplz.htm Java-Applet zur geometrischen Deutung]
+** [http://www.it-host.de/jserv/java-tools/complex/ Java-Klasse, zur Berechnung komplexer Zahlen]
+** [http://www.calc3d.com/gjavascriptcomplexcalc.html Rechner für komplexe Zahlen]
+
+== Einzelnachweise ==
+<references />
+
+[[Kategorie:Zahl]]

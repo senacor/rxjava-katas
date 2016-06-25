@@ -1,0 +1,597 @@
+{{Hatnote|"A319", "A320" and "A321" redirect here. For the British roads, see [[A319 road]], [[A320 road]] and [[A321 road]].}}
+<!-- This article is a part of [[Wikipedia:WikiProject Aircraft]]. Please see [[Wikipedia:WikiProject Aircraft/page content]] for recommended layout, and guidelines. -->
+{|{{Infobox aircraft begin
+ |name= A320 family <br /> A318/A319/A320/A321
+ |image= File:Lufthansa Airbus A320-211 D-AIQT 01.jpg<!-- Flight images are preferred for aircraft. Discuss on talk page first before changing, thanks! -->
+ |caption= [[Lufthansa]] A320-211 on 7 February 2011
+}}{{Infobox aircraft type
+ |type = [[Narrow-body]] [[jet airliner]]
+ |national origin = Multi-national<ref>Final assembly in France (Toulouse,) Germany (Hamburg), China (Tianjin,) and the United States (Mobile, AL)</ref> <!-- Use the main nation (e.g. UK), not constituent country (England); don't use "EU". List collaborative programs of only 2 or 3 nations; for more than 3, use "Multi-national" per [[Template:Infobox aircraft type]] and [[WP:Air/PC]] guidelines. -->
+ |manufacturer = [[Airbus]]
+ |first flight = 22 February 1987
+ |introduced = 18 April 1988 with [[Air France]]<ref>{{cite journal|author1=David Learmount|title=A320 in service: an ordinary aeroplane|journal=Flight International|date=3 September 1988|volume=134|issue=4129|pages=132, 133|url=http://www.flightglobal.com/pdfarchive/view/1988/1988%20-%202445.html|publisher=Reed Business Publishing|issn=0015-3710}}</ref>
+ |produced= 1986–present
+ |retired=
+ |status= In service
+ |primary user= [[American Airlines]]{{efn|At 31 March 2016, Airbus still list American Airlines and US Airways as separate operators. Following a merger<ref name="USA Today">{{cite news| title=US Airways' final flight closes curtain on another major airline| url=http://www.usatoday.com/story/travel/flights/todayinthesky/2015/10/15/us-airways-final-flight-american-merger/73922874/| work=USA Today| date=16 October 2015| accessdate=22 October 2015}}</ref> of the airlines in October 2015, the American Airlines total used here is combined for both carriers}} <!--Limit one (1) primary user. Top four (4) users listed in 'primary user' and 'more users' fields based on number of their fleets. -->
+ |more users= {{Plainlist|
+* [[China Eastern Airlines]]
+* [[easyJet]]
+* [[China Southern Airlines]] <!--Limit is three (3) in "more users" field. Separate with bullets (*).-->
+ }}
+ |number built= 7,061 {{as of|2016|05|31|df=y|lc=y}}<ref name=AirbusOrd&Del>[http://www.airbus.com/no_cache/company/market/orders-deliveries/ ORDERS & DELIVERIES], Airbus Int. Official, retrieved: 7 June 2016</ref><!-- please see discussion about number built before changing this -->
+ |unit cost= {{Plainlist|
+* 2016 prices:<ref name="2016 prices">{{cite web|title=New Airbus aircraft list prices for 2016|url=http://www.airbus.com/newsevents/news-events-single/detail/new-airbus-aircraft-list-prices-for-2016/|website=airbus.com|publisher=Airbus|accessdate=12 January 2016}}</ref>
+* A318: US$75.1&nbsp;(€69.1) million
+* A319: US$89.6&nbsp;(€82.4) million
+* A320: US$98.0&nbsp;(€90.2) million
+* A321: US$114.9&nbsp;(€105.7) million
+ }}
+ |variants with their own articles= [[Airbus A318]]
+ |developed into= [[Airbus A320neo family]]
+ }}
+|}
+
+The '''Airbus A320 family''' consists of [[Flight length#Categories|short- to medium-range]], [[Narrow-body aircraft|narrow-body]], commercial passenger [[Twinjet|twin-engine]] [[jet airliner]]s manufactured by [[Airbus]]. The family includes the '''[[Airbus A318|A318]]''', '''A319''', '''A320''' and '''A321''', as well as the [[Airbus Executive and Private Aviation|ACJ]] [[business jet]]. The A320s are also named '''A320ceo''' (current engine option) after the introduction of the [[Airbus A320neo family|A320neo]].<ref name="A320ceo + A320neo family information">{{cite web|url=http://www.airbus.com/aircraftfamilies/passengeraircraft/a320family/ |title=Airbus A320 (A320ceo and A320neo) Aircraft family |publisher=Airbus.com |date=3 March 2013 |accessdate=21 April 2013 |archiveurl= http://web.archive.org/web/20130303214628/http://www.airbus.com/aircraftfamilies/passengeraircraft/a320family/ |archivedate= 21 April 2013 |deadurl= no}}</ref> Final assembly of the family takes place in [[Toulouse]], France, and [[Hamburg]], Germany. A plant in [[Tianjin]], China, has also been producing aircraft for Chinese airlines since 2009,<ref>{{cite web|last=Airbus|title=Aircraft Families|url=http://www.airbus.com/aircraftfamilies/passengeraircraft/a320family/|accessdate=1 March 2011}}</ref> while a final assembly facility in [[Mobile, Alabama]] delivered its first A321 in April 2016.<ref>"[http://www.businessalabama.com/Business-Alabama/June-2016/Mobile-Amasses-a-Mountain-of-Manufacturers/ Mobile Amasses a Mountain of Manufacturers]," ''Business Alabama,'' June 2016. Retrieved 10 June 2016.</ref> The aircraft family can accommodate up to 220 passengers and has a [[Range (aircraft)|range]] of {{Convert|3100|to|12000|km|nmi|sigfig=2|lk=in|abbr=on}}, depending on model.
+
+The first member of the A320 family—the A320—was launched in March 1984, [[Maiden flight|first flew]] on 22 February 1987, and was first delivered in March 1988. The family was soon extended to include the A321 (first delivered 1994), the A319 (1996), and the A318 (2003). The A320 family pioneered the use of digital [[fly-by-wire]] [[Aircraft flight control system|flight control system]]s, as well as [[side-stick]] controls, in commercial aircraft. There has been a continuous improvement process since introduction.
+
+As of 29 February 2016, a total of 6,932 Airbus A320-family aircraft [[List of Airbus A320 operators|have been delivered]], of which 6,631 are in service. In addition, another 5,531 airliners are [[List of Airbus A320 orders|on firm order]]. It ranked as the world's fastest-selling jet airliner family according to records from 2005 to 2007, and as the best-selling single-generation aircraft programme.<ref>[http://www.airbus.com/en/presscentre/pressreleases/pressreleaseS_items/07_01_25_5000th_A320_EN.html Airbus A320 Family passes the 5,000th order mark] Airbus {{wayback|url=http://www.airbus.com/en/presscentre/pressreleases/pressreleaseS_items/07_01_25_5000th_A320_EN.html |date=20071218170600 |df=y }}</ref><ref>{{cite web|url=http://www.hellocompany.org/entry/airbus-steals-the-paris-air-show/ |title=Airbus steals the Paris air show |publisher=Hellocompany.org |date=19 June 2007 |accessdate=26 June 2011| archiveurl= http://web.archive.org/web/20110726144716/http://www.hellocompany.org/entry/airbus-steals-the-paris-air-show/| archivedate= 26 July 2011 | deadurl= no}}</ref> The A320 family has proved popular with airlines including [[low-cost carriers]] such as [[EasyJet]], which purchased A319s and A320s to replace its [[Boeing 737|737]] fleet. As of 31 March 2016, [[American Airlines]] was the largest operator of the Airbus A320 family aircraft, operating 362 aircraft.{{efn|At 31 March 2016, Airbus still list American Airlines and US Airways as separate operators. Following a merger<ref name="USA Today"/> of the airlines in October 2015, the American Airlines total used here is combined for both carriers}}<ref name=AirbusOrd&Del>[http://www.airbus.com/no_cache/company/market/orders-deliveries/ ORDERS & DELIVERIES], Airbus Int. Official, retrieved: 12 April 2016</ref> The aircraft family competes directly with the [[Boeing 737|737]] and has competed with the [[Boeing 717|717]], [[Boeing 757|757]], and the [[McDonnell Douglas MD-80|MD-80]]/[[McDonnell Douglas MD-90|MD-90]].
+
+<!-- This paragraph is intended for a brief description of the A320neo only, please add detailed information in the main A320neo page. Thanks. -->
+In December 2010, Airbus announced a new generation of the A320 family, the [[Airbus A320neo family|A320neo]] (new engine option).<ref>{{cite web|url=http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/airbus-offers-new-fuel-saving-engine-options-for-a320-family/ |title=Airbus offers new fuel saving engine options for A320 Family |publisher=Airbus |date=1 December 2010 |accessdate=31 December 2011}}</ref>  The A320neo offers new, more efficient engines, combined with airframe improvements and the addition of [[winglet]]s, named ''Sharklets'' by Airbus.  The aircraft will deliver fuel savings of up to 15%. As of January 2016, a total of 4,508 A320neo family aircraft had been ordered by more than 70 airlines, making it the fastest ever selling commercial aircraft.<ref>{{Cite web |title = Spotlight on... {{!}} Airbus, a leading aircraft manufacturer|url = http://www.airbus.com/aircraftfamilies/passengeraircraft/a320family/spotlight-on-a320neo/|website = airbus|access-date = 11 January 2016|language = en-US}}</ref> The first A320neo was delivered to [[Lufthansa]] on 20 January 2016 and it entered service on 25 January 2016.<ref>{{Cite web|title = First A320neo delivery opens new era in commercial aviation|url = http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/first-a320neo-delivery-opens-new-era-in-commercial-aviation/|website = airbus|access-date = 30 January 2016|language = en-US}}</ref><ref>{{Cite web|title = Lufthansa's First Airbus A320neo Lands in Frankfurt|url = http://airwaysnews.com/blog/2016/01/22/lh-320neo-fra/|website = Airchive|access-date = 30 January 2016|language = en-US}}</ref>
+
+== Development ==
+
+=== Origins ===
+When Airbus designed the [[Airbus A300]] during the late 1960s and early 1970s, it envisaged a broad family of airliners with which to compete against [[Boeing]] and [[Douglas Aircraft Company|Douglas]], two established US aerospace manufacturers. From the moment of formation, Airbus had begun studies into derivatives of the Airbus A300B in support of this long-term goal.<ref>{{harvnb|Wensveen|2007|page = 63}}</ref> Prior to the service introduction of the first Airbus airliners, engineers within Airbus had identified nine possible variations of the A300 known as A300B1 to B9.<ref name="gunston2009">{{harvnb|Gunston|2009}}</ref> A 10th variation, conceived in 1973, later the first to be constructed, was designated the A300B10.<ref name="N&W p.18">{{harvnb|Norris|Wagner|2001|p=18}}</ref> It was a smaller aircraft which would be developed into the long-range [[Airbus A310]]. Airbus then focused its efforts on the single-aisle market, which was dominated by the [[Boeing 737|737]] and [[McDonnell Douglas DC-9]].
+[[File:Airbus A320-100 Air Inter Gilliand.jpg|thumb|[[Air Inter]] A320-100 in 1991, one of the few A320-100s]]
+
+Plans from a number of European aircraft manufacturers called for a successor to the relatively successful [[BAC One-Eleven]], and to replace the [[Boeing 737-200|737–200]] and DC-9.<ref name="FG.com A320"/> Germany's MBB (''[[Messerschmitt-Bölkow-Blohm]]''), [[British Aircraft Corporation]], Sweden's [[Saab AB|Saab]] and Spain's [[EADS CASA|CASA]] worked on the ''EUROPLANE'', a 180- to 200-seat aircraft.<ref name="FG.com A320">{{cite web |url=http://www.flightglobal.com/pdfarchive/view/1997/1997%20-%202904.html |title=A320 family |accessdate=17 February 2011 |year=1997 |work=Flight International }}</ref><ref>{{harvnb|Norris|Wagner|1999|p=38}}</ref> It was abandoned after intruding on A310 specifications.<ref>{{harvnb|Norris|Wagner|1999|p=41}}</ref> [[VFW-Fokker]], [[Dornier Flugzeugwerke|Dornier]] and [[Hawker Siddeley]] worked on a number of 150-seat designs.<ref name="FG.com A320"/>
+
+Alongside BAe (which at the time was not part of Airbus) were MBB, Fokker-VFW and [[Aérospatiale]]. The design within the JET study that was carried forward was the JET2 (163 passengers), which then became the Airbus S.A1/2/3 series (Single Aisle), before settling on the A320 name for its launch in 1984. Previously, Hawker Siddeley had produced a design called the HS.134 "Airbus" in 1965, an evolution of the [[Hawker Siddeley Trident|HS.121]] (formerly DH.121) ''Trident'',<ref>{{cite web| url = http://www.century-of-flight.net/Aviation%20history/coming%20of%20age/Hawker-Siddeley%20Trident.htm| title = Hawker Siddeley Trident|accessdate =7 January 2010| publisher=Century of Flight}}</ref> which shared much of the general arrangement of the later JET3 study design. The name "Airbus" at the time referred to a [[British European Airways|BEA]] requirement, rather than to the later international programme.
+
+=== Design effort ===
+<!-- Development cost $1.7&nbsp;billion<ref name=autogenerated1/>-->
+
+A new programme was initiated subsequently, called ''Joint European Transport'' (JET). This was set up in June 1977,<ref>Payne, R. Stuck on the Drawing Board. Tempus, 2004.</ref> and was based at the then [[British Aerospace]] (formerly [[Vickers]]) site in [[Weybridge]], [[Surrey]], UK. Although the members were all of Airbus' partners, they regarded the project as a separate collaboration from Airbus.<ref name="Aris p.119">{{harvnb|Aris|2002|p=119}}</ref> This project was considered the forerunner of Airbus A320, encompassing the 130- to 188-seat market, powered by two [[CFM56]]s.<ref name="FG.com A320"/> It would have a cruise speed of Mach 0.84 (faster than Boeing 737).<ref name="FG.com A320"/> The programme was later transferred to Airbus, leading up to the creation of the ''Single-Aisle'' (SA) studies in 1980, led by former leader of JET programme, Derek Brown.<ref>{{harvnb|Norris|Wagner|1999|p=43}}</ref> The group looked at three different variants, covering the 125- to 180-seat market, called ''SA1'', ''SA2'' and ''SA3''.<ref name="FG.com A320"/> Although unaware at the time, the consortium was producing the blueprints for the A319, A320 and A321, respectively.<ref name="N&W p.44">{{harvnb|Norris|Wagner|1999|p=44}}</ref> The single-aisle programme created divisions within Airbus about whether to design a shorter-range twinjet than a longer-range quadjet wanted by the West Germans, particularly [[Lufthansa]].<ref name="FG.com A320"/><ref>{{harvnb|Aris|2002|p=120}}</ref> However, works proceeded, and the German carrier would eventually order the twinjet.
+
+In February 1981, the project was re-designated A320,<ref name="N&W p.44"/> with efforts focused on the former SA2. During the year, Airbus worked with [[Delta Air Lines]] on a 150-seat aircraft envisioned and required by the airline. The A320 would carry 150 passengers {{Convert|1,860|nmi|km|lk=in}} using fuel from wing fuel tanks only.<ref name="N&W p.44"/> The Dash 200 had more fuel through the activation of centre fuel tank, increasing fuel capacity from {{Convert|3,429|impgal|L|order=flip}} to {{Convert|5,154|impgal|L|abbr=on|order=flip}},<ref name="Eden p.23">{{harvnb|Eden|2008|p=23}}</ref> enabling flights with a distance of {{Convert|2,850|nmi|km|abbr=on}}.<ref name="N&W p.44"/> The aircraft would measure {{convert|36.04|m|ftin|abbr=on}} and {{convert|39.24|m|ftin|abbr=on}}, respectively.<ref name="N&W p.44"/> Airbus then had to decide on a cross-section for the A320. It considered a fuselage diameter of "the Boeing 707 and 727, or do something better".<ref name="FG.com A320"/> It eventually settled on a wider diameter, with the internal width at {{convert|3.7|m|ftin|abbr=on}},<ref name="FG.com A320"/> compared to {{Convert|3.45|m|ftin|abbr=on}}<ref name="FG.com A320"/> of the Boeing aircraft. Although heavier, this specification allowed the aircraft to compete more effectively with the 737. The A320 wing went through several stages of design, finally settling on {{Convert|33.91|m|ftin|abbr=on}}.<ref name="Eden p.23"/> It is long and thin, offering better aerodynamic efficiency because of the higher [[Aspect ratio (wing)|aspect ratio]] than the competition, namely the 737 and MD-80.<!--it also feature what Airbus calls "[[Wingtip device|wingtip fences]]".-->
+
+[[File:Turkish Airlines Airbus A321 cockpit Karakas.jpg|thumb|left|The cockpit of the A321 is similar to that of the A318, A319 and A320. This layout would be incorporated into the [[Airbus A330|A330]], [[Airbus A340|A340]], [[Airbus A350|A350]] and [[Airbus A380|A380]]. This "[[commonality]]" enables pilots to quickly transition among these aircraft.]]
+
+With the A320, Airbus made a controversial decision. For the first time, digital [[fly-by-wire]] (FBW) [[Aircraft flight control system|flight control system]] would be incorporated into a commercial airliner,<ref name="N&W p.45">{{harvnb|Norris|Wagner|1999|p=45}}</ref> although it was previously successfully proven on military fighter aircraft,<ref name="N&W p.45"/> such as the [[Vought F-8 Crusader]]. Aside from associated reduction in weight and cost, this system would provide [[flight envelope protection]].<ref>{{harvnb|Norris|Wagner|1999|pp=45–46}}</ref> The pilot, in essence, places inputs into the flight control computer, which interprets these actions and moves the [[flight control surface]]s. FBW also allows Airbus to make flying characteristics similar to later models,<ref name="N&W p.46">{{harvnb|Norris|Wagner|1999|p=46}}</ref> such as the [[Airbus A330]], [[Airbus A340|A340]], [[Airbus A380|A380]], and the [[Airbus A350|A350]]. It would feature [[side-stick]] control for the first time on a commercial aircraft. [[Bernard Ziegler]], son of the former Airbus CEO, [[Henri Ziegler]], was the initiator of the aircraft's revolutionary fly-by-wire flight controls with side-stick cockpit controller and full glass cockpit. He successfully convinced aviation authorities of the concept's validity.<ref>{{cite web|url=http://www.flightglobal.com/news/articles/farnborough-airbuss-fly-by-wire-pioneer-bernard-ziegler-wins-flightglobal-lifetime-achievement-award-373768/|title=FARNBOROUGH: Airbus's fly-by-wire pioneer Bernard Ziegler wins Flightglobal Lifetime Achievement Award|work=Flight Daily News|date=11 July 2012|accessdate=9 July 2013}}</ref>
+
+During the A320 development programme, Airbus considered [[propfan]] technology, backed by [[Lufthansa]].<ref>{{harvnb|Aris|2002|p=122}}</ref> At the time unproven, it was essentially a fan placed outside the engine [[nacelle]], offering speed of a turbofan at [[turboprop]]s economics; eventually, Airbus stuck with turbofans. Power on the A320 would be supplied by two [[CFM International CFM56|CFM56-5-A1s]] rated at 25,000&nbsp;lbf (112.5&nbsp;kN).<ref name="Eden p.23"/> It was the only available engine at launch until the [[IAE V2500]], offered by [[International Aero Engines]], a group composed of [[Rolls-Royce plc|Rolls-Royce]], [[Pratt & Whitney]], [[Japanese Aero Engine Corporation]], [[Fiat]] and [[MTU Aero Engines]] (MTU). The first V2500 variant, the V2500-A1, has a thrust output of {{Convert|25,000|lbf|kN|lk=on}},<ref>{{cite web|url=http://www.i-a-e.com/media/facts.pdf |title=V2500 |accessdate=18 February 2011 |work=International Aero Engines |deadurl=yes |archiveurl=https://web.archive.org/20110712233832/http://www.i-a-e.com/media/facts.pdf |archivedate=12 July 2011 }}</ref> hence the name, and is marginally more efficient than the CFM56, with [[Thrust specific fuel consumption|specific fuel consumption]] at 0.560 lb/(lbf·h), compared to 0.591 lb/(lbf·h) of the CFM56.<ref>{{harvnb|Gunston|2009|p=167}}</ref>
+<!--
+After the [[1970s energy crisis|oil price rises of the 1970s]], Airbus needed to minimise the trip fuel costs of the A320. To that end, it adopted [[Composite material|composite]] primary structures, [[Center of mass|centre-of-gravity]] control using fuel, [[glass cockpit]] ([[Electronic Flight Information Systems|EFIS]]) and a two-crew [[Cockpit|flight deck]]. The end result was that the A320 consumed 50% less fuel than the 727{{Citation needed|date=February 2011}}. According to a study cited by the Stockholm Environmental Institute, the A320 burns {{Convert|11,608|kg|lb}} of [[Aviation fuel|jet fuel]] flying between Los Angeles and New York City, which is about {{Convert|77.4|kg|lb|1}} per passenger in an A320 with 150 seats.<ref>Gillespie, S. (2007). CO2 emissions model for air travel public documentation (v1.1). TRX Travel Analytics, 13 December 2007.</ref>
+-->
+
+=== Production and testing ===
+[[File:Airbus-Höhenruder.jpg|thumb|The [[horizontal stabilizer]] of the A320 is produced in Spain. Other A320 parts are manufactured at sites throughout Europe and the world.]]
+
+Production of the A320 was postponed for a number of reasons. From the start, the UK, France and [[West Germany]] wanted the responsibility of final assembly and the associated duties. These disputes were known as "work-share arguments",<ref name="Aris p.123">{{harvnb|Aris|2002|p=123}}</ref> driven by, apart from money, prestige.<ref name="Aris p.123"/> The Germans requested an increased work-share of 40%,<ref name="Aris p.123"/> while the British wanted the major responsibilities to be swapped around to give partners production and [[research and development]] (R&D) experience.<ref name="Aris p.123"/> In the end, British work-share was increased from that of the two previous Airbuses,<ref name="Aris p.123"/> while virtually no changes took place for the other three major member-countries. Another contributing factor was launch aid, or subsidies, for the aerospace companies from their respective governments. France was willing to commit, while the Germans were more cautious.<ref name=autogenerated1>{{harvnb|Aris|2002|p=124}}</ref> The UK government, on the other hand, was unwilling to provide funding for the tooling requested by [[British Aerospace]] (BAe). Estimated at [[Pound sterling|₤]]250&nbsp;million, it was postponed for three years until 1 March 1984,<ref name="Eden p.23"/> when an announcement was made about the deal between government and manufacturer. The agreement dictates that ₤50&nbsp;million would be paid whether the A320 would fly or not, while the rest would be paid as a levy on each aircraft sold.<ref>{{harvnb|Aris|2002|p=126}}</ref>
+
+The programme was launched the following day<ref name="Airbus timeline">{{cite web|title=Timeline 40 Years of Innovation |work=Airbus|url=http://www.airbus.com/fileadmin/media_gallery/files/press_centre/presskits_backgrounders/Airbus_40_years_of_innovation_-_timeline_illustrated.pdf |format=PDF |accessdate=14 December 2013}}</ref> off the back of orders for 96 aircraft from five customers. [[Air France]] was the first customer for the type, having placed an order for 50 aircraft, split evenly between firm and options, between 16 A320-100s and 34 -200s.<ref name="N&W p.45"/> However, [[British Caledonian]] was the first to place a firm order for seven back in October 1983.<ref name="N&W p.49">{{harvnb|Norris|Wagner|1999|p=48}}</ref> [[Cyprus Airways]] became the first to place order for V2500-powered A320s in November 1984.<ref>{{harvnb|Norris|Wagner|1999|p=49}}</ref> [[Pan American World Airways|Pan Am]] also selected V2500 when it requested 16 firm orders and 34 options in January 1985, as did [[Inex Adria]].<ref name="N&W p.49"/> The most significant order was to come when [[Northwest Airlines]] placed an order for 100 A320s in October 1986, later confirmed at the 1990 Farnborough Airshow, powered by CFM56 engines.<ref>{{harvnb|Norris|Wagner|1999|pp=49–50}}</ref>
+
+[[File:Airbus beluga beladung.jpg|thumb|left|An [[Airbus Beluga]] unloading A320-family aircraft parts at [[Finkenwerder]], northern Germany.|alt=Bulbous aircraft unloading green cylindrical aircraft fuselage through upward-hinging door above nose.]]
+
+The first Airbus A320 was rolled out on 14 February 1987 amid [[dry ice]] and laser beams as part of a spectacular unveiling ceremony.<ref name="N&W p.50">{{harvnb|Norris|Wagner|1999|p=50}}</ref><ref name="Eden p.22">{{harvnb|Eden|2008|p=22}}</ref> A number of high-profile figures were present, including the [[Charles, Prince of Wales|Prince]] and [[Diana, Princess of Wales|Princess of Wales]].<ref>{{harvnb|Reed|1992|p=86}}</ref> The [[Maiden flight|first flight]] came on 22 February,<ref name="Eden p.22"/> during which the aircraft flew for 3 hours 23 minutes.<ref name="Airbus timeline"/> The flight marked the beginning of a flight test programme involving 1,200 airborne hours on 530 flights.<ref name="N&W p.50"/> European [[Joint Aviation Authorities]] (JAA) certification was received on 26 February 1988.<ref name="N&W p.50"/>  The first A320 delivery was to Air France on 26 March 1988.<ref name="N&W p.50"/>
+
+On 26 June 1988, a chartered Air France Airbus A320-111 ({{Nowrap|F-GFKC}})<ref name="Reed p.84">{{harnvb|Reed|1992|p=84}}</ref> [[Air France Flight 296|crashed]] into trees at the end of runway at [[Mulhouse-Habsheim Airport]]. Three out of 130 passengers were killed.<ref name="Reed p.84"/> In February 1990 another A320, flown by [[Indian Airlines]], [[Indian Airlines Flight 605|crashed]] landed short of the airport runway in [[Bangalore]]. The ensuing fire contributed to the casualty count of ninety-two, out of 146 on board.<ref>{{ASN accident|id=19900214-2|type=Accident|accessdate=19 February 2011}}</ref> The press and media later questioned the fly-by-wire flight control system.<ref name="Reed p.84"/> Subsequent investigations by commission of inquiry found "no malfunction of the aircraft or its equipment which could have contributed towards a reduction in safety or an increase in the crew's workload during the final flight phase&nbsp;... the response of the engines was normal and in compliance with certification requirement" .<ref name="Reed p.84"/>
+
+[[File:A321 final assembly (9351765668).jpg|thumb|An Airbus A321 on [[Assembly line|final assembly line]] 3 in the Airbus plant at [[Hamburg Finkenwerder Airport]]]]
+In 2009, Airbus required about eight months to build one A320.<ref>"Economy catches up with Airbus", ''Wall Street Journal'', 20 February 2009, p. B3</ref> Components from various Airbus plants are transported to the final assembly plant at [[Hamburg Finkenwerder Airport|Hamburg Finkenwerder]] for the A318/A319/A320/A321<ref>{{Cite news|work=[[Hamburger Abendblatt]]|url=http://www.abendblatt.de/wirtschaft/article526681/Airbus-baut-erstmals-den-A320-in-Hamburg.html |title=Airbus baut erstmals den A320 in Hamburg|language=German|date=26 March 2008|accessdate=7 June 2011}}</ref> and to [[Toulouse Blagnac International Airport|Toulouse Blagnac]] for the A320. Nearly all assemblies are moved using Airbus' [[Airbus Beluga|A300-600ST ''Beluga'']] outsized transporters. Airbus A320s sold to Chinese airlines scheduled for delivery between 2009 and 2012 are being assembled in [[Tianjin]], China.<ref name="eads_20061026_pr">{{Cite news|title = Airbus signs framework agreement with Chinese consortium on A320 Final Assembly Line in China|publisher=Airbus|date = 26 October 2006 |url = http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/airbus-signs-framework-agreement-with-chinese-consortium-on-a320-final-assembly-line-in-china/}}</ref>
+
+Airbus produces 42 A320 per month in 2015, and expects to increase to 50 per month in 2017, and possibly 60.<ref name=osb1>{{cite news |url=http://aviationweek.com/commercial-aviation/analysts-flag-potential-airliner-glut |title=Analysts Flag Potential Airliner Glut |work=[[Aviation Week & Space Technology]] |first=Joe |last=Anselmo |date=2 March 2015 |accessdate=4 March 2015 |archiveurl=http://web.archive.org/web/20150304202822/http://aviationweek.com/commercial-aviation/analysts-flag-potential-airliner-glut |archivedate=4 March 2015 |deadurl=no}}</ref>
+
+===Stretching the A320: A321===
+[[File:A32XFAMILYv1.0.png|thumb|left|Airbus A32X family]]
+
+The first derivative of the A320 was the Airbus A321, also known as the ''Stretched A320'', ''A320-500'' and ''A325''.<ref name="N&W p.50"/><ref>{{harvnb|Laming|Hewson|2000|p=23}}</ref> Its launch came on 24 November 1988 after commitments for 183 aircraft from 10 customers were secured.<ref name="N&W p.50"/><ref name=autogenerated2>{{harvnb|Reed|1992|p=84}}</ref> The aircraft would be a minimum-changed derivative, apart from a number of minor modifications to the wing, and the fuselage stretch itself. The wing would incorporate [[Flap (aircraft)|double-slotted flaps]] and minor [[trailing edge]] modifications,<ref name="N&W p.51">{{harvnb|Norris|Wagner|1999|p=51}}</ref> increasing the wing area from {{Convert|124|m2|sqft|abbr=on}} to {{Convert|128|m2|sqft|abbr=on}}.<ref name="A321 described">{{cite web |author1=Moxon |author2=Julian | url=http://www.flightglobal.com/pdfarchive/view/1993/1993%20-%200507.html |title=A321: Taking on thee 757 |accessdate=25 February 2011 |date=17 March 1993 |work=Flight International }}</ref> The fuselage was lengthened by four plugs (two ahead and two behind the wings), giving the A321 an overall length of {{Convert|6.94|m|ftin}} longer than the A320.<ref name="N&W p.51"/><ref name="A320 specifications"/><ref name="A321 specifications"/> The length increase required the overwing exits of the A320 to be enlarged and repositioned in front of and behind the wings.<ref name="Eden p.25">{{harvnb|Eden|2008|p=25}}</ref> The centre fuselage and [[Landing gear|undercarriage]] were reinforced to accommodate the increase in [[maximum takeoff weight]] of {{Convert|9,600|kg|lb|sigfig=3|abbr=on}}, taking it to {{Convert|83,000|kg|lb|sigfig=3|abbr=on}}.<ref name="N&W p.51"/>
+
+[[File:Alitalia Airbus A321 I-BIXT.jpg|thumb|[[Alitalia]] was the second to receive the stretched A321, after Lufthansa.<ref name="Eden p.25"/> ]]
+Final assembly for the A321 would be, as a first for any Airbus, carried out in Germany (then West Germany).<ref>{{Cite news |url=http://www.flightglobal.com/pdfarchive/view/1990/1990%20-%200274.html |title=A321 victory for West Germany |accessdate=24 February 2011 |author =Sebdon, Gilbert |date=7 February 1990 |work=Flight International }}</ref> This came after a dispute between the French, who claimed the move would incur $150&nbsp;million (€135 million) in unnecessary expenditure associated with the new plant,<ref name="N&W p.53">{{harvnb|Norris|Wagner|1999|p=53}}</ref> and the Germans, arguing it would be more productive for Airbus in the long run. The second production line was located at [[Hamburg]], which would also subsequently produce the smaller Airbus A319 and A318. For the first time, Airbus entered the [[bond market]], through which it raised $480&nbsp;million (€475 million) to finance development costs.<ref name="Reed p.84"/> An additional $180&nbsp;million (€175 million) was borrowed from [[European Investment Bank]] and private investors.<ref>{{harvnb|Norris|Wagner|1999|p=52}}</ref>
+
+The [[maiden flight]] of the Airbus A321 came on 11 March 1993, when the [[prototype]], registration F-WWIA, flew with [[IAE V2500]] engines; the second prototype, equipped with CFM56-5B turbofans, flew in May.<ref name="Eden p.25"/> Lufthansa and [[Alitalia]] were the first to order the stretched Airbuses, with 20 and 40 aircraft requested, respectively.<ref name="Eden p.25"/> The first of Lufthansa's V2500-A5-powered A321s arrived on 27 January 1994, while Alitalia received its first CFM56-5B-powered aircraft on 22 March.<ref name="Eden p.25"/>
+
+=== Shrinking the A320: A319 ===
+The A319 is the next derivative of the baseline A320. The design is a "shrink" with its origins in the 130- to 140-seat SA1, part of the Single-Aisle studies.<ref name="N&W p.53"/> The SA1 was shelved as the consortium concentrated on its bigger siblings. After healthy sales of the A320/A321, Airbus re-focused on what was then known as the ''A320M-7'', meaning A320 ''minus seven fuselage frames''.<ref>{{harvnb|Eden|2008|p=26}}</ref> It would provide direct competition for the [[Boeing 737-300|737–300]]/[[Boeing 737 Next Generation|-700]].<ref name="N&W p.53"/> The shrink was achieved through the removal of four fuselage frames fore and three aft the wing, cutting the overall length by {{Convert|3.73|m|ftin}}.<ref name="A320 specifications"/><ref name="Meeting demand">{{cite web |author =Moxon, Henley |url=http://www.flightglobal.com/pdfarchive/view/1995/1995%20-%202575.html |title=Meeting demands |accessdate=25 February 2011 |date=30 August 1995 |work=Flight International }}</ref><ref name="A319 specifications"/>  Consequently, the number of overwing exits were reduced from four to two. The bulk-cargo door was replaced by an aft container door, which can take in reduced height [[Unit Load Device|LD3-45 containers]].<ref name="Meeting demand"/> Minor [[Computer programming|software]] changes were made to accommodate the different handling characteristics; otherwise the aircraft is largely unchanged. Power is provided by the CFM56-5A or V2500-A5, derated to {{Convert|98|kN|lbf|abbr=on|lk=in}}, with option for {{Convert|105|kN|lbf|abbr=on}} thrust.<ref>{{cite web |url=http://www.flightglobal.com/pdfarchive/view/1997/1997%20-%202909.html |title=A319 flight test |accessdate=26 February 2011 |author =Henley, Peter |work=Flight International }}</ref>
+
+[[File:US Airways A319-132 LAS N838AW.jpg|thumb|A [[US Airways]] A319 in [[America West]] heritage livery. The A319's wingspan is longer than the aircraft's overall length.]]
+Airbus began offering the new model from 22 May 1992, with the actual launch of the programme $275&nbsp;million (€250 million) occurring 10 June 1993;<ref name="Meeting demand"/><ref name="N&W p.54">{{harvnb|Norris|Wagner|1999|p=54}}</ref><ref name="Gunston 2009 216">{{harvnb|Gunston|2009|p=216}}</ref> the A319's first customer is ILFC, who signed for six aircraft. On 23 March 1995, the first A319 underwent final assembly at Airbus' German plant in Hamburg, where the A321s are assembled. It was rolled out on 24 August 1995, with the maiden flight the following day.<ref>{{harvnb|Eden|2008|p=27}}</ref> The certification programme would take 350 airborne hours involving two aircraft; certification for the CFM56-5B6/2-equipped variant was granted in April 1996, after which qualification for the V2524-A5 started the following month.<ref name="N&W p.55"/>
+
+Delivery of the first A319, to [[Swissair]], took place on 25 April 1996, entering service by month's end.<ref name="N&W p.55">{{harvnb|Norris|Wagner|1999|p=55}}</ref> In January 1997, an A319 broke a record during a delivery flight by flying {{Convert|3,588|nmi|km|sigfig=4}} the [[great circle]] route to [[Winnipeg]], Manitoba from Hamburg, in 9 hours 5 minutes.<ref name="N&W p.55"/> The A319 has proved popular with low-cost airlines such as [[EasyJet]], who has orders for 172, with 172 delivered.<ref name="Airbus_Orders"/>
+
+=== Second shrink: A318 ===
+{{Main|Airbus A318#Development|l1=Airbus A318 – Development}}
+
+The A318 was born out of mid-1990 studies between [[Aviation Industry Corporation of China|Aviation Industries of China]] (AVIC), [[ST Aerospace|Singapore Technologies Aerospace]], [[Alenia Aeronautica|Alenia]] and Airbus on a 95- to 125-seat aircraft project. The programme was called the ''AE31X'', and covered the 95-seat AE316 and 115- to 125-seat AE317.<ref name="N&W p.87">{{harvnb|Norris|Wagner|1999|p=87}}</ref> The former would have had an overall length of {{Convert|31.3|m|ftin|abbr=on}}, while the AE317 was longer by {{Convert|3.2|m|ftin|abbr=on}}, at {{Convert|34.5|m|ftin|abbr=on}}.<ref name=AE31X>{{cite journal|author1=Paul Lewis|url=http://www.flightglobal.com/pdfarchive/view/1997/1997%20-%203026.html|title=Time out in asia|journal=Flight International|date=5 November 1997|volume=152|issue=4599|page=38,39|publisher=Reed Business Information|issn=0015-3710}}</ref> The engines were to be supplied from two Rolls-Royce BR715s, CFM56-9s, or the Pratt & Whitney PW6000s;<ref name="N&W p.87"/><ref name=AE31X/> with the MTOW of {{Convert|53.3|t|lb|abbr=on}} for the smaller version and {{Convert|58|t|lb|abbr=on}} for the AE317, the thrust requirement were {{Convert|77.9|-|84.6|kN|lbf|abbr=on}} and {{Convert|84.6|-|91.2|kN|lbf|abbr=on}}, respectively.<ref name=AE31X/> Range was settled at {{Convert|5,200|km|nmi|abbr=on}} and {{Convert|5,800|km|nmi|abbr=on}} for the high gross weights of both variants.<ref name=AE31X/> Both share a wingspan of {{Convert|31.0|m|ftin|abbr=on}}<ref name=AE31X/> and a flight deck similar to that of the A320 family. Costing $2&nbsp;billion (€1.85 billion) to develop, aircraft production to take place in China.<ref name="N&W p.87"/>
+
+[[File:British Airways A318.jpg|thumb|A British Airways A318 at London City Airport]]
+Simultaneously, Airbus was developing Airbus A318. In early 1998, Airbus revealed its considerations of designing a 100-seat aircraft based on the A320. The AE31X project was terminated by September 1998, after which Airbus officially announced an aircraft of its own, the ''A318'',<ref>{{harvnb|Norris|Wagner|1999|p=88}}</ref> at that year's Farnborough Airshow.<ref name="Gunston p.222"/> The aircraft is the smallest product of Airbus's product range, and was developed coincidentally at the same time as the largest commercial aircraft in history, the Airbus A380. First called ''A319M5'' in as early as March 1995, it was shorter by {{Convert|0.79|m|ftin|adj=on}} ahead of the wing and {{Convert|1.6|m|ftin}} behind.<ref name="Gunston p.222">{{harvnb|Gunston|2009|p=222}}</ref> These cuts reduced passenger capacity from 124 on the A319 to 107 passengers in a two-class layout.<ref name="A318 specifications"/> Range was {{Convert|5,700|km|nmi}}, or {{Convert|5,950|km|nmi}} with upcoming [[Sharklet (wingtip device)|Sharklets]].<ref name="A318 specifications"/><!-- For the first time, laser welding featured prominently during final assembly, eliminating the necessity for heavy rivets and bolts.-->
+
+The 107-seater was launched on 26 April 1999 with the options and orders count at 109 aircraft.<ref name="Gunston p.222"/> After three years of design, the [[maiden flight]] took place at Hamburg on 15 January 2002.<ref>{{cite web |url=http://events.airbus.com/a380/first_flight/seeing/learnandplay/history.html#a318 |title=Flights that made Airbus' history |accessdate=1 March 2011 |work=Airbus}}</ref> Tests on the lead engine, the [[Pratt & Whitney PW6000]], revealed worse-than-expected fuel consumption.<ref name="Minibus">{{cite web |url=http://www.flightglobal.com/pdfarchive/view/2003/2003%20-%201445.html |title=The Minibus Arrives |accessdate=1 March 2011 |author =Kingsley-Jones, Max |date=10–16 June 2003 |work=Flight International }}</ref> Consequently, Pratt & Whitney abandoned the five-stage high pressure compressor (HPC) for the MTU-designed six-stage HPC. The 129 order book for the A318 shrunk to 80 largely because of switches to other A320 family members.<ref name="Minibus"/> After 17 months of flight certification, during which 850 hours and 350 flights were accumulated, JAA certification was obtained for the CFM56-powered variant on 23 May 2003.<ref name="Minibus"/> On 22 July 2003, first delivery for launch customer [[Frontier Airlines]] occurred,<ref name="Gunston p.223">{{harvnb|Gunston|2009|p=223}}</ref> entering service before the end of the month.
+
+=== A320 Enhanced family ===
+[[File:ZK-OXB NZ510 NZAA 0696 (9960722725) (4).jpg|thumb|left|[[Air New Zealand]] Airbus A320 Enhanced (A320E) with Sharklets]]
+
+''A320 Enhanced family'' (or ''A320E family'') is the working title for a series of improvements to the A320 family. The improvements include engine improvements, aerodynamic refinements&nbsp;– such as adding large curved [[Wingtip device|winglets]] (Sharklets), weight savings, and a new cabin design.<ref>{{cite web |url= http://www.flightglobal.com/articles/2006/06/20/207273/pictures-airbus-aims-to-thwart-boeings-narrowbody-plans-with-upgraded-a320.html |title= Airbus aims to thwart Boeing's narrowbody plans with upgraded 'A320 Enhanced' |publisher=Flight International |date= 20 June 2006}}</ref><ref>{{cite web|url=http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/avianca-takes-delivery-of-sharklet-equipped-a320/ |title=Avianca takes delivery of Sharklet equipped A320 |work=Airbus |date=13 February 2013 |accessdate=4 July 2013}}</ref>
+
+In 2006, Airbus tested three styles of winglet intended to counteract the wing's [[induced drag]] and [[wingtip vortices]] more effectively than the previous wingtip fence. The first design type to be tested was developed by Airbus and was based on work done by the AWIATOR programme. The second type of winglet incorporated a more blended design and was designed by Winglet Technology, a company based in Wichita, Kansas. Two aircraft were used in the flight test evaluation campaign&nbsp;– the prototype A320, which had been retained by Airbus for testing, and a new build aircraft which was fitted with both types of winglets before it was delivered to [[JetBlue]].
+
+Despite the anticipated efficiency gains and development work, Airbus announced that the new winglets will not be offered to customers, claiming that the weight of the modifications required would negate any aerodynamic benefits.<ref name="fi_20061010">{{Cite news|last= Kingsley-Jones|first= Max|title = Airbus rethinks plan to put winglets on A320|work=[[Flight International]] |date = 10 October 2006| url = http://www.flightglobal.com/articles/2006/10/10/209738/airbus-rethinks-plan-to-put-winglets-on-a320.html}}</ref> Instead, on 17 December 2008, Airbus announced it was to begin flight testing an existing blended winglet design developed by [[Aviation Partners Inc.]] as part of an A320 modernisation programme using the A320 prototype.<ref>{{cite web|url = http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/airbus-undertakes-blended-winglet-evaluation-on-a320 |title = Airbus undertakes Blended-Winglet evaluation on A320 |publisher=Airbus |date = 17 December 2008 |accessdate=7 June 2011}}</ref>
+
+[[File:L1090685 (1449886015).jpg|thumb|right|[[Virgin America]] Airbus A320 Enhanced economy class [[cabin (aircraft)|Cabin]] with [[light-emitting diode|LED]] lighting]]
+On 15 November 2009, Airbus announced future additions of ''Sharklets''<ref name="TheAus. Sharklets">{{Cite news |url=http://www.theaustralian.com.au/travel/news/airbus-launches-new-a320-sharklet-wingtips/story-e6frg8ro-1225798047478 |title=Airbus launches new A320 'Sharklet' wingtips |date=16 November 2009 |work=The Australian |accessdate=22 February 2011}}</ref> to A320s beginning in 2012 with [[Air New Zealand]].<ref>{{cite web |url=http://www.deagel.com/news/Airbus-A320-to-Get-Sharklets-Large-Wingtip-Devices-by-the-End-of-2012_n000006814.aspx |title=Airbus A320 to Get Sharklets Large Wingtip Devices by the End of 2012 |date=15 November 2009 |publisher=Deagel.com |accessdate=22 February 2011}}</ref> These Airbus winglets, which are {{Convert|2.4|m|ftin}} tall and weigh {{Convert|200|kg|lb}},<ref>{{Cite news |url=http://www.flightglobal.com/articles/2009/11/15/334945/dubai-09-a320s-sharklets-to-deliver-3.5-lower-fuel-burn-from.html |title=Dubai 09: A320's sharklets to deliver 3.5% lower fuel burn from 2012 |author =Kingsley-Jones, Max |date=15 November 2009 |work=Flight International |accessdate=22 February 2011}}</ref> would reduce fuel burn by 4% and offer increases in payload of {{convert|500|kg|lb|abbr=on}}, or range by {{convert|110|nmi|km|sigfig=3|abbr=on}} at the original payload.<ref>{{cite web|url=http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/american-airlines-takes-delivery-of-its-first-a320-family-aircraft/ |title=American Airlines takes delivery of its first A320 Family aircraft}}</ref> This corresponds to an annual [[Carbon dioxide|CO<sub>2</sub>]] reduction of around {{Convert|700|MT|LT|abbr=on}} per aircraft,<ref name="TheAus. Sharklets"/> saving operators US$220,000 per aircraft per year.<ref>{{cite news |url=http://uk.reuters.com/article/2009/11/15/btscenes-us-airbus-wingtip-idUKTRE5AE0VD20091115 |title=Airbus says wingtip change to save fuel |date=15 November 2009 |agency=Reuters |first=John |last=Irish |accessdate=22 February 2011}}</ref> The Sharklets are to be manufactured and distributed by [[Korean Air#Aerospace research and manufacturing|Korean Air Aerospace Division]].<ref>{{cite web |url=http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/korean-air-aerospace-to-manufacture-new-a320-family-sharklets/ |title= Korean Air Aerospace to manufacture new A320 Family "Sharklets" |work=Airbus |date= 31 May 2010 |accessdate=18 February 2013}}</ref>
+
+The cabin was fitted to more than 600 aircraft (as of March 2009) since 2007. Airbus claims it offers better luggage storage and a quieter cabin, packaged with a more modern look and feel. Additionally, improved cabin efficiency by a new galley concept, reduced weight, improved ergonomics and food hygiene and recycling requirements.<ref>[http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/airbus-drives-cabin-efficiency-at-aircraft-interiors-expo/ Airbus drives cabin efficiency at Aircraft Interiors Expo] Airbus</ref> [[Light-emitting diode|LED]] ambiance lighting is optionally available. Anytime LEDs are used for the Passenger Service Unit (PSU)<ref>[http://www.youtube.com/watch?v=a3NgXk4I3wQ Airbus A320 overhead LED lights] YouTube video (requires Flash plugin)</ref> and passengers can get information with touchscreen displays.<ref>[http://www.youtube.com/watch?v=IW8ql_3NUjg Enhanced Fap&nbsp;– Airbus 320 touchscreen display] YouTube video (requires Flash plugin)</ref> Older A320 series aircraft can be updated.<ref>[http://www.airbus.com/events/bourget2009/news/news-single/browse/3/back/10/article/condor-launch-the-a320-enhanced-cabin-retrofit-programme.html Condor launch the A320 Enhanced Cabin Retrofit programme] Airbus</ref>
+
+=== New Engine Option: A320neo ===
+{{anchor|New Engine Option}}
+{{Main|Airbus A320neo family}}
+[[File:Kish Air Airbus A320 in Mehrabad Airport 02.jpg|thumb|left|A [[Kish Air]] Airbus A320 in [[Mehrabad Airport]], [[Tehran]] in 2016]]
+Airbus developed a new version of the A320, called A320neo, for ''new engine option,'' based on more efficient engines, at least partly in response to the threat posed by [[Bombardier Aerospace]]'s development of the [[Bombardier CSeries|CSeries]] airliner, with which Bombardier hoped to compete directly with Boeing and Airbus for the first time.<ref>Ostrower, Jon, and Paul Vieira, Bigger proves far from better, Wall Street Journal, 9 January 2015, p.A1</ref><ref>Auaten, Ian, Longer odds for a jet, New York Times, 9 January 2015, p.B8</ref><ref name="flightglobal.com">[http://www.flightglobal.com/articles/2010/08/23/346349/a320-neo-to-have-7-8-million-price-premium.html A320 NEO to have $7–8&nbsp;million price premium] Flightglobal</ref><ref>{{cite web|author =Kinsgley-Jones, Max|url=http://www.flightglobal.com/news/articles/singapore-2010-airbus-targets-early-a320-re-engining-decision-2015-338026/|title=SINGAPORE 2010: Airbus targets early A320 re-engining decision, 2015 debut|work=Flight International|date=4 February 2010|accessdate=7 July 2013}}</ref><ref>{{Cite news|author1=Stearns, Jonathan |author2=Rothman, Andrea |url=http://www.bloomberg.com/news/2010-12-01/airbus-to-deploy-superjumbo-military-engineers-for-a320-neo.html|title=Airbus to Deploy Superjumbo, Military Engineers for A320 NEO|newspaper=Bloomberg|date=1 December 2010|accessdate=7 July 2013}}</ref> The choice for new engines include the [[CFM International LEAP|CFM International LEAP-1A]] and the [[Pratt & Whitney PW1000G|Pratt & Whitney PW1100G]].<ref name="flightglobal.com"/>  Though the new engines will burn 16% less fuel, the actual fuel gain on an A320 installation will be slightly less, since 1–2% is typically lost upon installation on an existing aircraft. This means an additional range of {{Convert|950|km|nmi|abbr=on}}, or {{Convert|2|t|lb|abbr=on}} of extra payload.<ref>{{cite web|url=http://www.aviationnews.eu/2011/02/28/tam-becomes-first-a320neo-customer-in-latin-america/ |title=TAM becomes first A320neo customer in Latin America |publisher=Aviationnews.eu |date=28 February 2011 |accessdate=26 June 2011| archiveurl= http://web.archive.org/web/20110720153302/http://www.aviationnews.eu/2011/02/28/tam-becomes-first-a320neo-customer-in-latin-america/| archivedate= 20 July 2011 | deadurl= no}}</ref> The A320neo will also include some modifications to the wing, mainly the installation of blended winglets called "Sharklets".<ref>{{cite web|url=http://www.airbus.com/aircraftfamilies/passengeraircraft/a320family/ |title=Airbus A320 Aircraft family |publisher=Airbus.com |date=25 June 2011 |accessdate=26 June 2011| archiveurl= http://web.archive.org/web/20110704055351/http://www.airbus.com/aircraftfamilies/passengeraircraft/a320family/| archivedate= 4 July 2011 | deadurl= no}}</ref>
+
+[[File:Airbus A320neo landing 03.jpg|thumb|First Airbus A320neo in 2014]]
+Airbus' CEO said to be "comfortable" with the projections of 20% lower maintenance cost for the Pratt & Whitney's PW1000G family, compared with engines powering the A320.<ref name="flightglobal.com"/> In 2011, Airbus targeted early 2016 for the first delivery and planned to deliver 4,000 A320neo over 15 years. [[Virgin America]] became the launch customer with a firm order of 30 A320neo aircraft as a part of a 60 aircraft order on 17 January 2011.<ref>{{cite press release |url=https://www.virginamerica.com/cms/about-our-airline/press/2011/Virgin-America-Confirms-Order-for-60-New-Aircraft.html |title=Virgin America Confirms Order for 60 New Aircraft |publisher=Virginamerica.com |accessdate=14 December 2013}}</ref>  In January 2011 [[IndiGo]] reached a tentative agreement with Airbus to order 150 A320neo aircraft along with 30 more A320s.<ref>{{cite web |url=http://www.flightglobal.com/news/articles/indigos-potential-a320neo-order-heats-up-engine-competition-351745/ |title= IndiGo's potential A320neo order heats up engine competition |author = Ranson, Lori |work=Flightglobal |date= 11 January 2011 |accessdate=7 July 2013}}</ref>
+
+At the 2011 [[Paris Air Show]], Airbus announced [[List of Airbus A320 orders|firm orders]] from [[GECAS]], [[Scandinavian Airlines System]], [[TransAsia Airways]], [[LAN Airlines]] and [[GoAir]]<ref name="new A320NEO orders">[http://event.airbus.com/airshows/bourget2011/ Airbus secures 80 orders for A320NEO]. Airbus official website.</ref> along with major orders from Indian low-cost carrier [[IndiGo]] for 150 aircraft<ref>{{cite web|author = Yeo, Ghim-Lay|url=http://www.flightglobal.com/news/articles/paris-indigo-firms-a320-mou-358660/|title=PARIS: IndiGo firms A320 MOU|date=22 June 2011|work=Flightglobal|accessdate=7 July 2013}}</ref> and Malaysian low-cost carrier [[AirAsia]] for 200 A320neo, the largest commercial aviation order at the time.<ref>[http://www.washingtonpost.com/business/airbus-gets-biggest-plan-order-ever-from-air-asia-for-200-a320neo-aircraft/2011/06/23/AGzV43gH_story.html "Airbus gets biggest plane order ever to handily outpace Boeing in race to industry's top spot"]{{dead link|date=August 2013}}. Washington Post, 23 June 2011.</ref> In total the A320neo received a combined 667 commitments worth US$60.9 billion.<ref>{{cite web|url=http://event.airbus.com/airshows/bourget2011/news/news-detail/article/airbus-with-new-order-record-at-paris-air-show-2011.html |title=Airbus With New Order Record At Paris Air Show 2011|publisher=Airbus |date=23 June 2011 |accessdate=17 May 2012}}</ref> [[American Airlines]] placed an order 130 A320neo airliners on 20 July 2011. By the end of 2011, Airbus had received 1,196 firm orders for the A320neo family making it the fastest selling commercial aircraft in history.<ref name="airbus1">{{cite web|url = http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/airbus-wins-211-orders-and-commitments-worth-us205-billion/|title = Airbus wins 211 orders and commitments worth US$20.5 billion|publisher = Airbus|date = 16 November 2011|accessdate = 31 December 2011}}</ref>  On 15 March 2013, it was reported that Turkish Airlines had placed a firm order for 82 A320 aircraft with 35 options; the firm order has 25 A321, four A320neo, and 53 A321neo airliners.<ref>{{cite web|author =Kingsley-Jones, Max|url=http://www.flightglobal.com/news/articles/turkish-unveils-huge-a320-family-order-including-57-neos-383499/|title=Turkish unveils huge A320 family order, including 57 Neos|work=Flightglobal|date=15 March 2013|accessdate=4 July 2013}}</ref>
+
+== Design ==
+[[File:iberia a320-200 planform ec-hyc arp.jpg|thumb|An [[Iberia Airlines|Iberia]] A320 at takeoff]]
+
+The Airbus A320 family are [[Narrow-body aircraft|narrow-body (single-aisle) aircraft]] with a retractable tricycle [[landing gear]] and are powered by two wing pylon-mounted [[turbofan engine]]s.  The Airbus A320 family is the only narrow-body aircraft from Airbus.
+
+=== Airframe ===
+[[File:Spirit Airlines NK-319.jpg|thumb|left|A [[Spirit Airlines|Spirit]] A320 being refueled and loaded with luggage]]
+
+The Airbus A320 family are low-wing [[cantilever]] [[monoplane]]s with a conventional [[Empennage|tail unit]] with a single [[vertical stabilizer]] and [[rudder]]. Wing swept back at 25 degrees, optimised for maximum operating [[Mach number]] 0.82.<ref name=" A320 specifications"/> Compared to other airliners of the same class, the A320 features a wider single-aisle cabin of {{convert|3.95|m|in}}<ref name="A320 specifications"/> outside diameter, compared to {{convert|148|in|m}} of the [[Boeing 737|737]] and {{convert|131.6|in|m}} of the [[Boeing 717|717]], and larger overhead bins. In addition, the aircraft has a cargo hold equipped with large doors to assist in expedient loading and unloading of goods.{{citation needed|date=March 2011}}
+
+The Airbus A320 is the first narrow body airliner to have a significant amount of its structure made from [[composite material]]. Its [[Empennage|tail assembly]] made almost entirely of such material by CASA,<ref name="N&W p.42">{{harvnb|Norris|Wagner|1999|p=42}}</ref> who also builds the elevators, main landing gear doors, and rear fuselage parts.<ref name="N&W p.42"/>
+
+=== Flight deck and avionics ===
+The A320 was the first civil airliner to include a full digital [[fly-by-wire]] flight control system.  Its design also included a full [[glass cockpit]] rather than the hybrid versions found in previous airliners.  Digital [[head-up display]]s are available.<ref>[https://www1.online.thalesgroup.com/col/Air_Transport/fiche_bfe/d_huds.html DIGITAL HEAD-UP DISPLAY SYSTEM] Thales {{dead link|date=June 2016|bot=medic}}{{cbignore|bot=medic}}</ref>
+
+[[File:Airbus-319-cockpit.jpg|thumb|The Airbus A320 family was the first commercial airliner to feature a full [[glass cockpit]] and digital [[fly-by-wire]] flight control system. The only analogue instruments are the [[Radio direction finder#Radio-magnetic indicator (RMI)|RMI]] (backup [[Attitude indicator|ADI]] on earlier models, replaced by digital [[Integrated Standby Instrument System|ISIS]] on later models) and brake pressure indicator.]]
+The A320's [[Cockpit|flight deck]] is equipped with [[Electronic Flight Instrument System]] (EFIS) with side-stick controllers. At the time of the aircraft's introduction, the behaviour of the fly-by-wire system (equipped with full [[flight envelope protection]]) was a new experience for many pilots. The A320 features an [[Electronic Centralised Aircraft Monitor]] (ECAM) which gives the flight crew information about all the systems of the aircraft. With the exception of the very earliest A320s, most can be upgraded to the latest avionics standards, keeping the aircraft advanced even after two decades in service.{{citation needed|date=March 2011}}
+
+Early A320 planes used the [[Intel 80186]] and [[Motorola 68010]],<ref>Section 4.2 "Failure detection and redundancy" of Briere D. and Traverse, P. (1993) "[http://personales.upv.es/juaruiga/teaching/TFC/Material/Trabajos/AIRBUS.PDF Airbus A320/A330/A340 Electrical Flight Controls: A Family of Fault-Tolerant Systems]" Proc. FTCS, pp. 616–623.</ref> in 1988 [[Intel 80286]] family CPUs. The flight management computer contained six CPUs, running in three logical pairs, with 2.5 megabytes of memory.<ref>{{cite web|author =Sedbon, Gilbert|url=http://www.flightglobal.com/pdfarchive/view/1988/1988%20-%200368.html|title=Keeping the Complex Simple|work=Flight International|date=13 February 1988|pages=44–45|accessdate=4 July 2013}}</ref>
+
+Newer{{When|date=April 2009}} Airbus feature LCD (liquid crystal display) units in the flight deck of its A318, A319, A320, and A321 flight decks instead of the original CRT ([[cathode ray tube]]) displays. These include the main displays and the backup [[artificial horizon]], which was an analog display prior to this.
+
+=== Engines ===
+Three suppliers provide [[turbofan]] engines for the A320 series: [[CFM International]] with its [[CFM International CFM56|CFM56]], [[International Aero Engines]], offering the [[International Aero Engines V2500|V2500]] and [[Pratt & Whitney]] whose [[Pratt & Whitney PW6000|PW6000]] engines are only available for the A318 variant.<ref>{{cite web|title=P&W Main Website |url=http://www.pw.utc.com/products/commercial/pw6000.asp |deadurl=yes |archiveurl=https://web.archive.org/20120609072558/http://www.pw.utc.com:80/products/commercial/pw6000.asp |archivedate=9 June 2012 }}</ref>
+
+== Operational history ==
+[[File:Airbus A319 left wing during the landing. S7 Airlines, Moscow-Pavlodar. May 2009.JPG|thumb|A319 left wing with spoilers deployed during landing. [[S7 Airlines]], Moscow-Pavlodar.]]
+The [[Joint Aviation Authorities]] (JAA) issued the [[type certificate]] for the A320 on 26 February 1988. After entering the market in March 1988 with Air France and Ansett, the former Australian domestic airline,<!-- It first entered commercial service with Air France on 18 April 1988. --> Airbus then expanded the A320 family rapidly, launching the 185-seat A321 in 1989 and first delivered it in 1994; launching the 124-seat A319 in 1993 and delivering it in 1996; and launching the 107-seat A318 in 1999 with first deliveries in 2003.<ref>[[Aviation Week & Space Technology]], 29 October 2007, p. 63</ref>
+
+=== Competition ===
+The A320 family was developed to compete with the [[Boeing 737|737]] Classics (−300/-400/-500) and the McDonnell Douglas MD-80/90 series, and has since faced challenges from the [[Boeing 737 Next Generation]] (−600/-700/-800/-900) and the [[Boeing 717|717]] during its two decades in service. As of 2010, as well as the [[Boeing 737|737]], the A320 family faces competition from [[Embraer]]'s [[Embraer E-Jets|E-195]] (to the A318), and the [[Bombardier CSeries|CSeries]] being developed by [[Bombardier Aerospace|Bombardier]]<ref>{{Cite news|url=http://www.nytimes.com/2008/07/14/business/worldbusiness/14air.html|title=A New Bombardier Jet Draws Only Tepid Demand|work=New York Times |date=14 July 2008|accessdate=4 April 2010|first=Micheline|last=Maynard}}</ref> to the A318/A319.
+
+Airbus has delivered 6,700 A320 series aircraft since their certification/first delivery in early 1988, with another 5,439 on firm order (as of 31 August 2015).<ref name="Airbus_Orders"/> In comparison, Boeing has shipped 8,674 737s since late 1967, with 7,168 of those deliveries since March 1988,<ref name=Boeing_O-D>{{cite web |url=http://active.boeing.com/commercial/orders/index.cfm?content=userdefinedselection.cfm&pageid=m15527 |title= Orders and Deliveries search page |publisher=Boeing |date=31 August 2015 |accessdate=2 October 2015}}</ref> and has a further 4,269 on firm order (as of 31 August 2015).<ref name=O_D_737>{{cite web |url=http://active.boeing.com/commercial/orders/displaystandardreport.cfm?&optReportType=AllModels&cboAllModel=737 |title= 737 Model Summary |publisher=Boeing |date= August 2015 |accessdate=2 October 2015}}</ref>
+
+{{Line chart
+| color_background = white
+| width = 800
+| height = 200
+| padding_left = 40
+| padding_right = 15
+| padding_top = 10
+| padding_bottom = 20
+| number_of_series = 2
+| number_of_x-values = 35
+| label_x1 = 1988  | label_x2 = 1989  | label_x3 = 1990  | label_x4 = 1991  | label_x5 = 1992
+| label_x6 = 1993  | label_x7 = 1994  | label_x8 = 1995  | label_x9 = 1996  | label_x10 = 1997
+| label_x11 = 1998 | label_x12 = 1999 | label_x13 = 2000 | label_x14 = 2001 | label_x15 = 2002
+| label_x16 = 2003 | label_x17 = 2004 | label_x18 = 2005 | label_x19 = 2006 | label_x20 = 2007
+| label_x21 = 2008 | label_x22 = 2009 | label_x23 = 2010 | label_x24 = 2011 | label_x25 = 2012
+| label_x26 = 2013 | label_x27 = 2014 | label_x28 = 2014 | label_x29 = 2015
+
+| y_max = 600
+| scale = yes
+| interval_primary_scale = 100
+| interval_secondary_scale = 20
+| color_series_1 = green
+| color_series_2 = blue
+| S01V01 =  16 | S01V02 =  58 | S01V03 =  58 | S01V04 = 119 | S01V05 = 111
+| S01V06 =  71 | S01V07 =  64 | S01V08 =  56 | S01V09 =  72 | S01V10 = 127
+| S01V11 = 168 | S01V12 = 222 | S01V13 = 241 | S01V14 = 257 | S01V15 = 236
+| S01V16 = 233 | S01V17 = 233 | S01V18 = 289 | S01V19 = 339 | S01V20 = 367
+| S01V21 = 386 | S01V22 = 402 | S01V23 = 401 | S01V24 = 421 | S01V25 = 455
+| S01V26 = 493 | S01V27 = 490 | S01V28 = 491 | S01V29
+| S02V01 = 168 | S02V02 = 146 | S02V03 = 174 | S02V04 = 215 | S02V05 = 218
+| S02V06 = 152 | S02V07 = 121 | S02V08 =  89 | S02V09 =  76 | S02V10 = 135
+| S02V11 = 281 | S02V12 = 320 | S02V13 = 281 | S02V14 = 299 | S02V15 = 223
+| S02V16 = 173 | S02V17 = 202 | S02V18 = 212 | S02V19 = 302 | S02V20 = 330
+| S02V21 = 290 | S02V22 = 372 | S02V23 = 376 | S02V24 = 372 | S02V25 = 415
+| S02V26 = 440 | S02V27 = 485 | S02V28 = 495 | S02V29 = 67982
+| points = yes
+}}
+* {{legend|green|[[Airbus A320 family#Orders and deliveries|Airbus A320 family deliveries]]<ref name="Airbus_Orders"/><ref name="Airbus_Hist_OD">{{cite web |url=http://www.airbus.com/fileadmin/media_gallery/files/reports_results_reviews/Summary_Historial_Orders_Deliveries_1974-2009.xls |archiveurl=https://web.archive.org/web/20101223223239/http://www.airbus.com/fileadmin/media_gallery/files/reports_results_reviews/Summary_Historial_Orders_Deliveries_1974-2009.xls |archivedate=23 December 2010 |title =  Historical Orders and Deliveries 1974–2009 |work=[[Airbus|Airbus S.A.S.]] |date=January 2010 |format=Microsoft Excel |accessdate=10 December 2012}}</ref>}}
+* {{legend|blue|[[Boeing 737#Total production|Boeing 737 series deliveries]]<ref name="Boeing_Hist_Deliveries">{{cite web |url=http://active.boeing.com/commercial/orders/displaystandardreport.cfm?&optReportType=HistAnnDel |title= Historical Deliveries |publisher=Boeing |date= November 2012 |accessdate=10 December 2012}}</ref>}}
+
+=== Replacement airliner ===
+Airbus was studying a future replacement for the A320 series, tentatively dubbed ''[[Airbus NSR|NSR]]'', for "New Short-Range aircraft".<ref name="fi_737rs_nsr">{{Cite news|last= Norris|first= Guy|title = The 737 Story: Smoke and mirrors obscure 737 and Airbus A320 replacement studies|publisher=''[[Flight International]] ''| date = 7 February 2006|url = http://www.flightglobal.com/news/articles/the-737-story-smoke-and-mirrors-obscure-737-and-airbus-a320-replacement-204506/}}</ref> The follow-on aircraft to replace the A320 was named ''A3XX''. Airbus North America President Barry Eccleston states that the earliest the aircraft could be available is 2017.<ref>A3XX Isn't Coming Soon, ''Aviation Week and Space Technology'', 5 November 2007, p. 20</ref> In January 2010, [[John Leahy (executive)|John Leahy]], Airbus's chief operating officer – customers, stated that any all new single-aisle aircraft is unlikely to be constructed before 2024/2025.<ref>{{cite web |url = http://www.flightglobal.com/articles/2010/01/14/337136/airbus-sees-lifespan-of-at-least-10-years-for-re-engined.html |title = Airbus sees lifespan of at least 10 years for re-engined A320 |work=Flight International |date = 14 January 2010}}</ref>
+
+== Variants ==
+{{For|the Airbus A320neo or New Engine Option variants|Airbus A320neo family#Variants}}
+
+{| class="wikitable" style="float:right;"
+|+Airbus A320 variants
+|-
+![[International Civil Aviation Organization|ICAO]] code<ref name=ICAOcode>{{cite web |url=http://www.icao.int/anb/ais/8643/8643_List2.cfm |title=ICAO Document 8643 |work=[[International Civil Aviation Organization]] |accessdate=22 February 2011}}</ref>!!Model(s)
+|-
+|A318 ||A318
+|-
+|A319 ||A319
+|-
+|A320 ||A320
+|-
+|A321 ||A321
+|}
+<!-- The variants are listed in development order -->
+
+===Overview===
+The baseline A320 has given rise to a family of aircraft which share a common design but with passenger capacity ranges from 100, on the A318,<ref name="A318 specifications"/> to 220, on the A321.<ref name="A321 specifications"/> They compete with the [[Boeing 737|737]], [[Boeing 757|757]], and [[Boeing 717|717]]. Because the four variants share the same flight deck, all have the same pilot [[type rating]]. Today all variants are available as [[Airbus Corporate Jets|corporate jets]]. [[American Airlines]] is the world's largest airline operator of the A320 family of aircraft with 331 airframes in service as of April 2015.<ref name="Airbus_Orders"/>
+
+Technically, the name "A320" only refers to the original mid-sized aircraft, but it is often informally used to indicate any of the A318/A319/A320/A321 family. All variants are able to be [[ETOPS/LROPS|ETOPS]] (Extended-range Twin-engine Operational Performance Standards) certified for [[ETOPS#ETOPS extensions|180 minutes]] since 2004 ([[European Aviation Safety Agency|EASA]]) and 2006 ([[Federal Aviation Administration|FAA]]).<ref>[http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/airbus-a320-family-approved-for-180-minute-etops-by-the-faa/ Airbus A320 Family approved for 180 minute ETOPS by the FAA] Airbus</ref>  With launch of the new Airbus A320neo project, the previous members of the Airbus A320 family received the "current engine option" or "CEO" name.
+
+=== A320 ===
+[[File:Airfrance.a320-200.f-glgm.arp.jpg|thumb|[[Air France]] was the launch customer of the Airbus A320]]
+
+The A320 series has two variants, the ''A320-100'' and ''A320-200''. Only 21 A320-100s were produced;<ref name="N&W p.50"/> these aircraft, the first to be manufactured, were only delivered to [[Air Inter]] (later acquired by [[Air France]]) and [[British Airways]] (as a result of an order from [[British Caledonian Airways]] made prior to its acquisition by British Airways).  Compared to the A320-100, the primary changes on A320-200 are [[Wingtip device#Wingtip fence|wingtip fences]] and increased fuel capacity for increased range. [[Indian Airlines]] used its first 31 A320-200s with double-bogie main [[landing gear]] for airfields with poor runway condition which a single-bogie main gear could not manage. <!--Five of the last A320-100 aircraft, operated by British Airways, were disposed of at the end of 2007{{Citation needed|date=March 2011}}. The final A320-100, operated by Air France was retired in 2010.--> Typical range with 150 passengers for the A320-200 is about 3,300 nmi (6,150&nbsp;km). It is powered by two [[CFM International|CFMI]] [[CFM International CFM56|CFM56-5s]] or [[IAE V2500]]s with thrust ratings between {{Convert|113|to|120|kN|lbf|sigfig=3|abbr=on}}.  The lowest speed an A320 can fly is approximately {{nowrap|207 km/h}}<!-- 112 knots -->.<ref>TV channel: National Geographics. Program: Air Crash Investigation [[List of Mayday episodes#Season 9 (2009)|s9p3]]. ~30 min in.</ref>
+
+A total of 4,242 of the A320ceo model have been delivered, with 519 remaining on order as of 31 May 2016.<ref name=AirbusOrd&Del/>  The direct Boeing competitor is the [[737-800]].
+
+=== A321 ===
+[[File:Airbus A321 - myAustrian (1).jpg|thumb|left|An [[Austrian Airlines]] Airbus A321]]
+
+The Airbus A321 is a stretched first derivative of the standard A320.  The variant was launched in 1988,<ref name="N&W p.50"/> when the A320 began operations.  Compared with the A320, the A321's major change is the stretched fuselage, which is lengthened by {{Convert|6.94|m|ftin}}; the A321 is the largest of the A320 family.<ref name="A320 specifications"/><ref name="A321 specifications"/> This is achieved by adding a {{Convert|4.27|m|ftin|abbr=on|adj=on}} front plug immediately forward of wing, and a {{Convert|2.67|m|ftin|abbr=on|adj=on}} rear plug.<ref>{{harvnb|Gunston|2009|pp=213–214}}</ref> To maintain performance, double-slotted flaps were included, in addition to increasing the wing area by {{Convert|4|m2|sqft|abbr=on}}, to {{Convert|128|m2|sqft|abbr=on}}.<ref name="A321 described"/> Other minor modifications were made to accommodate the A321-100's {{Convert|9,600|kg|lb|sigfig=3|abbr=on}} increase in maximum takeoff weight to {{Convert|83,000|kg|lb|sigfig=3|abbr=on}}.<ref name="N&W p.51"/>  The maiden flight of the first of two prototypes came on 11 March 1993.<ref name="Eden p.25"/>  The A321-100 entered service in January 1994 with Lufthansa.
+
+The basic A321-100 features a reduction in range compared to the A320 as extra fuel tankage was not added to the initial design to compensate for the extra weight. Consequently, Airbus launched the heavier and longer range A321-200 development in 1995 which has a full-passenger transcontinental US range. This is achieved through higher thrust engines (V2533-A5 or CFM56-5B3), minor structural strengthening, and an increase in fuel capacity with the installation of one or two optional {{Convert|2,990|L|USgal|adj=on|abbr=on}} tanks in the rear underfloor hold.<ref>{{harvnb|Gunston|2009|pp=214–215}}</ref> The additional fuel tankage increases the total capacity of this model to {{Convert|30,030|L|USgal|adj=on|abbr=on}}. These modifications also increased the maximum takeoff weight of the A321-200 to {{Convert|93,000|kg|lb|sigfig=3|abbr=on}}. This variant first flew in December 1996, and entered service with [[Monarch Airlines]] in April 1997. Its direct competitors include the [[Boeing 757|757–200]] and the [[Boeing 737|737-900/900ER]].
+
+Airbus announced the development of a longer range version named A321neoLR that will be available in 2019. It is positioned to replace the [[Boeing 757|757–200]] in transatlantic and similar markets where the range and payload of the [[Boeing 737|737–900]] is insufficient to replace the [[Boeing 757|757–200]].<ref>{{cite web |url=http://leehamnews.com/2014/10/21/exclusive-airbus-launches-a321neolr-long-range-to-replace-757-200w/ |title=Exclusive: Airbus launches "A321neoLR" long range to replace 757-200W |date=n.d. |work=Leeham News and Comment |accessdate=26 December 2014}}</ref> The new A321LR will have 206 seats; Business Class will offer 16 seats with 36" pitch and Economy will offer 190 seats at a 30-inch pitch. Airbus claims the maximum range at full payload of 4,000 nautical miles will exceed the range of Boeing's winglet-equipped [[Boeing 757|757–200]] while burning less fuel per passenger. The A321LR will be equipped with three auxiliary fuel tanks including one at centerline. Boeing has not stated how it will replace the [[Boeing 757|757]],<ref>Flottau, Jens, and Guy Norris, Filling the gap, Aviation Week & Space Technology, 15 January – 1 February 2015, p.24</ref> but is not working on a "[[Boeing 757|757]] MAX", or a longer range 737-9 MAX.<ref>[http://aviationweek.com/commercial-aviation/boeing-sees-no-business-case-757-max Boeing Sees No Business Case For 757 MAX] Aviation Week</ref><ref>[http://www.todayonline.com/business/exclusive-boeing-says-it-has-no-plans-long-range-737-max Exclusive: Boeing says it has no plans for long-range 737 MAX] Today</ref>
+
+A total of 1,284 of the A321ceo model have been delivered, with 400 remaining on order as of 31 May 2016.<ref name=AirbusOrd&Del/>
+
+=== A319 ===
+[[File:Lufthansa.a319-100.d-aili.arp.jpg|thumb|A [[Lufthansa]] Airbus A319]]
+
+The A319 is a shortened, minimum-change version of the A320. Also known as the A320M-7, it is {{Convert|3.73|m|ftin}} shorter than the A320;<ref name="A320 specifications"/><ref name="Meeting demand"/><ref name="A319 specifications"/> four frames fore of the wing and three frames aft of the wing were removed. The reduced seating reduces the emergency exits to six.  With virtually the same fuel capacity as the A320-200, and fewer passengers, the range with 124 passengers in a two-class configuration extends to {{Convert|6,650|km|nmi|abbr=on}}, or {{Convert|6,850|km|nmi|abbr=on}} with the "Sharklets".<ref name="A319 specifications"/> Four propulsion options available on the A319 are the {{Convert|23,040|lbf|kN|adj=on}} V2522-A5 and {{Convert|24,800|lbf|kN|adj=on}} V2527M-A5 from IAE, or the {{Convert|22,000|lbf|kN|adj=on}} CFM56-5B/A and {{Convert|27,000|lbf|kN|adj=on}} CFM56-5B7.<ref name="Gunston 2009 216"/> Although identical to those of the A320, these engines are derated because of the A319's lower MTOW.
+
+The A319 was developed at the request of [[Steven F. Udvar-Házy|Steven Udvar-Hazy]], the former president and CEO of [[ILFC]] according to ''[[The New York Times]]''.<ref>{{Cite news |url=http://www.nytimes.com/2007/05/10/business/10flyboy.html?pagewanted=2&_r=1 |title=The Real Owner of All Those Planes |accessdate=4 March 2011 |author =Wayne, Leslie |date=10 May 2007 |work=The New York Times |page=2}}</ref> The A319's launch customer, in fact, was ILFC, which had placed an order for six A319s by 1993.<ref name="N&W p.54" /> Anticipating further orders by Swissair and Alitalia, Airbus decided to launch the programme on 10 June 1993.  Final assembly of the first A319 began on 23 March 1995<ref name="Eden pp.26-27">{{harvnb|Eden|2008|pp=26–27}}</ref> and it was first introduced with Lufthansa in July 1996. The direct [[Boeing]] competitor is the [[Boeing 737-700]].
+
+A total of 1,455 of the A319ceo model have been delivered, with 17 remaining on order as of 31 May 2016.<ref name=AirbusOrd&Del/>
+
+==== A319CJ {{anchor|A319LR}} ====
+The A319CJ (rebranded ACJ319) is the corporate jet version of the A319. It incorporates removable extra fuel tanks (up to 6 Additional Center Tanks) which are installed in the cargo compartment, and an increased service ceiling of {{convert|12500|m|abbr=on}}.<ref name="a319cjceiling">{{cite web|url=http://stagev4.airbus.com/en/aircraftfamilies/executive_aviation/acj_family/ |title=Aircraft Families – Airbus Executive and Private Aviation – ACJ Family |publisher=Stagev4.airbus.com |date= |accessdate=9 July 2012 |deadurl=yes |archiveurl=https://web.archive.org/20081203105457/http://stagev4.airbus.com/en/aircraftfamilies/executive_aviation/acj_family |archivedate=3 December 2008 }}</ref> Range with eight passengers' payload and auxiliary fuel tanks (ACTs) is up to 6,000 nautical miles (11,100&nbsp;km).<ref>[http://www.airbus.com/fileadmin/media_gallery/files/tech_data/jetFamily/media_object_file_ACJ_Specifications.pdf ACJ Specifications], airbus.com</ref><ref>"ACJ Analysis" Business & Commercial Aviation Magazine&nbsp;– July 2002, Page 44</ref> Upon resale, the aircraft can be reconfigured as a standard A319 by removing its extra tanks and corporate cabin outfit, thus maximising its resale value. It was formerly also known as the ACJ, or [[Airbus Corporate Jets|Airbus Corporate Jet]], while starting with 2014 it has the marketing designation ACJ319.
+
+[[File:MJF-AC1 E01.JPG|thumb|ACJ319 operated by the Austrian operator MJET]]
+The aircraft seats up to 39 passengers, but may be outfitted by the customers into any configuration. Tyrolean Jet Service Mfg. GmbH & CO KG, [[MJET]] and [[Reliance Industries]] are among its users. The A319CJ competes with other ultralarge-cabin corporate jets such as the Boeing [[Boeing 737#737-700|737–700]]-based [[Boeing Business Jet]] (BBJ) and [[Embraer]] [[Lineage 1000]], as well as with large-cabin and ultralong-range [[Gulfstream G650]], [[Gulfstream G550]] and [[Bombardier Aerospace|Bombardier]]'s [[Global 6000]]. It is powered by the same engine types as the A320. The A319CJ was used by the ''[[Escadron de transport, d'entrainement et de calibration|Escadron de Transport, d'Entraînement et de Calibration]]'' which is in charge of transportation for France's officials and also by the Flugbereitschaft of the [[German Air Force]] for transportation of Germany's officials. An ACJ serves as a presidential or official aircraft of [[Armenia]],<ref>{{cite web|url=http://www.airliners.net/photo/Armenia-Government/Airbus-A319-132-CJ/1702856/&sid=10ab84d6e153604fd2aae14b30e94974 |title=– Government of Armenia A319CJ |publisher=Airliners.net |date=11 April 2010 |accessdate=9 July 2012}}</ref> [[Azerbaijan]], [[Brazil]], [[Bulgaria]], [[Czech Republic]], [[Germany]], [[Italy]],<ref>{{cite web|url=http://www.aeronautica.difesa.it/Mezzi/velivoliDotazione/Pagine/A-319CJ.aspx|title=Il portale dell'Aeronautica Militare – Airbus A319CJ|publisher=|accessdate=26 December 2014}}</ref> [[Malaysia]], [[Thailand]], [[Turkey]], [[Ukraine]], and [[Venezuela]].
+
+=== A318 ===
+{{Main|Airbus A318}}
+[[File:Avianca Airbus A318 Ramirez.jpg|thumb|left|[[Avianca]] A318]]
+
+The Airbus A318 is the smallest member of the Airbus A320 family. The A318 carries up to 132 passengers and has a maximum range of 3,100 nmi (5,700&nbsp;km; 3,600&nbsp;mi). The aircraft entered service in July 2003 with Frontier Airlines, and shares a common type rating with all other Airbus A320 family variants, allowing existing A320 family pilots to fly the aircraft without the need for further training. It is the largest commercial aircraft certified by the European Aviation Safety Agency for steep approach operations, allowing flights at airports such as [[London City Airport]]. Relative to other Airbus A320 family variants, the A318 has sold in only small numbers with total orders for only 80 aircraft placed {{asof|2015|10|31|lc=on}}.
+
+=== Freighter ===
+A programme to convert A320 and A321 aircraft into freighters was set up by Airbus Freighter Conversion GmbH. Airframes would be converted by [[EADS EFW]] in [[Dresden]], Germany, and [[Zhukovsky (city)|Zhukovsky]], Russia. The launch customer [[Cerberus Capital Management|AerCap]] signed a firm contract on 16 July 2008 to convert 30 of AerCap's passenger A320/A321s into A320/A321P2F (passenger to freighter). However, on 3 June 2011, Airbus announced all partners would end the passenger to freighter programme, citing high demand for used airframes for passenger service.<ref>[http://www.airbus.com/presscentre/pressreleases/press-release-detail/detail/strong-demand-for-used-airbus-a320-aircraft-drives-joint-decision-to-stop-freighter-conversion-progr/ "Strong demand for used Airbus A320 aircraft drives joint decision to stop freighter conversion programme"]. airbus.com</ref>
+
+On 17 June 2015, [[ST Aerospace]], signed agreements with Airbus and [[EADS EFW]] for a collaboration to launch the A320/A321 passenger-to-freighter (P2F) conversion programme.<ref>{{cite web |url=https://www.staero.aero/downloads/2015/ST%20Aerospace,%20Airbus%20and%20EFW%20to%20launch%20A320%20and%20A321P2F%20conversion%20programme.pdf |title=ST Aerospace, Airbus and EFW to launch A320 and A321P2F conversion programme |publisher=ST Aerospace |date=17 June 2015 |accessdate=18 June 2015}}</ref>
+
+== Operators ==
+{{main|List of Airbus A320 operators}}
+[[File:DSC 3881-VT-IFE (10386641986).jpg|thumb|[[IndiGo]] has ordered 400 A320neo aircraft]]
+
+As of 31 May 2016, 6,750 Airbus A320-family aircraft (all variants, excluding the A320neo family) remained in commercial service with over 250 airline operators. This includes 69 A318, 1,439 A319ceo, 3,985 A320ceo, and 1,267 A321ceo aircraft.<ref name=AirbusOrd&Del/> [[Air France]], [[Avianca]], and [[British Airways]] are the only operators to operate all four variants of the A320.
+
+== Orders and deliveries ==
+{{See also|List of Airbus A320 orders}}
+
+{| class="wikitable" style="text-align:right; font-size:96%;"
+|-
+! !!colspan="2"|Orders!!colspan="28"|Deliveries
+|-
+!Type!!Total!!Backlog!!Total!!2016!!2015!!2014!!2013!!2012!!2011!!2010!!2009!!2008
+|-
+!A318
+|80||||80||||1||||1||2||2||2||6||13
+|-
+!A319
+|1,472||17||1,455||2||24||34||38||38||47||51||88||98
+|-
+!A320
+|4,761||519||4,242||110||282||306||352||332||306||297||221||209
+|- 
+!A321
+|1,684||400||1,284||73||184||150||102||83||66||51||87||66
+|-
+!Total
+|7,997||936||7,061||185||491||490||493||455||421||401||402||386
+|}
+
+{| class="wikitable" style="text-align:right; font-size:96%;"
+|-
+! !! colspan="28"|Deliveries
+|-
+!Type!!2007!!2006!!2005!!2004!!2003!!2002!!2001!!2000!!1999!!1998!!1997!!1996!!1995!!1994!!1993!!1992!!1991!!1990!!1989!!1988
+|-
+!A318
+|17||8||9||10||9|| || || || || || || || || || || || || || ||
+|-
+!A319
+|105||137||142||87||72||85||89||112||88||53||47||18|| || || || || || || ||
+|-
+!A320
+|194||164||121||101||119||116||119||101||101||80||58||38||34||48||71||111||119||58||58||16
+|-
+!A321
+|51||30||17||35||33||35||49||28||33||35||22||16||22||16|| || || || || ||
+|-
+!Total
+|367||339||289||233||233||236||257||241||222||168||127||72||56||64||71||111||119||58||58||16
+|}
+<small>''Data through end of May 2016.''</small><ref name="Airbus_Orders">{{Cite web |url=http://www.airbus.com/company/market/orders-deliveries/?eID=maglisting_push&tx_maglisting_pi1%5BdocID%5D=108613 |title = Airbus Orders and Deliveries |work=Airbus |date= 31 May 2016 |format= |accessdate=07 June 2016}} [http://www.airbus.com/company/market/orders-deliveries/?eID=maglisting_push&tx_maglisting_pi1%5BdocID%5D=88409 spreadsheet with details]</ref><ref name="Airbus_Hist_OD">{{cite web |url=http://www.airbus.com/fileadmin/media_gallery/files/reports_results_reviews/Summary_Historial_Orders_Deliveries_1974-2009.xls |archiveurl=http://web.archive.org/web/20101223223239/http://www.airbus.com/fileadmin/media_gallery/files/reports_results_reviews/Summary_Historial_Orders_Deliveries_1974-2009.xls |archivedate=23 December 2010 |title=  Historical Orders and Deliveries 1974–2009 |work=Airbus |date=January 2010 |format=Microsoft Excel |accessdate=10 December 2012}}</ref>
+
+== Accidents and incidents ==
+{{Main|Accidents and incidents involving the Airbus A320 family}}
+
+For the entire A320 family, 91 [[aviation accidents and incidents]] have occurred, including 35 [[hull loss|hull-loss]] accidents with a total of 1,392 fatalities as of May 2016.<ref>[http://aviation-safety.net/database/dblist.php?Type=022 Airbus A320 occurrences]. Aviation Safety, 27 September 2015.</ref><ref>[http://aviation-safety.net/database/dblist.php?field=typecode&var=022%&cat=%1&sorteer=datekey&page=1 Airbus A320 hull-loss occurrences]. Aviation Safety, 27 September 2015.</ref><ref>[http://aviation-safety.net/database/type/type-stat.php?type=022 Airbus A320 statistics]. Aviation Safety, 27 September 2015.</ref><ref>[http://www.ntsb.gov/aviationquery/index.aspx NTSB Accident Database search on A320]. NTSB. Retrieved 28 September 2015.</ref><ref>{{cite web |url= http://www.jacdec.de/statistics/types/Types.htm |title= JACDEC's Airliner Safety Statistics: Aircraft |publisher=[[JACDEC]] |date= 17 May 2007}}</ref> Fifty incidents of [[glass cockpit]] blackout had occurred as of 2012.<ref name="planeandpilotmag.com">{{cite web|author =Katz, Peter|url=http://www.planeandpilotmag.com/pilot-talk/ntsb-debriefer/glass-cockpit-blackout.html|title=Glass-Cockpit Blackout|work=Plane & Pilot|date=21 October 2008|accessdate=14 April 2012}}</ref><ref name="NTSB safety recommendation A08-53">[http://www.ntsb.gov/doclib/recletters/2008/A08_53_55.pdf NTSB Safety Recommendation A-08-53 through −55]. NTSB, 22 July 2008. Retrieved on 14 April 2012.</ref><ref name="aaib">[http://www.aaib.gov.uk/sites/aaib/publications/formal_reports/2_2008_g_euob.cfm Air Accidents Investigation: 2/2008 G-EUOB]. Aaib.gov.uk, 22 October 2005. Retrieved on 12 January 2011.</ref>  Through 2013, the Airbus A320 family has experienced 0.14 fatal hull-loss accidents for every million takeoffs, and 0.24 total hull-loss accidents for every million takeoffs; this is one of the smallest fatality rates of any family of jets included in the study.<ref>{{cite web|title=Statistical Summary of Commercial Jet Airplane Accidents|url=http://www.boeing.com/news/techissues/pdf/statsum.pdf|publisher=Boeing|accessdate=25 March 2015|pages=19|date=2013}}</ref>
+
+==Specifications==
+{| class="wikitable" style="text-align:center; font-size:96%;"
+|+ '''Airbus A320 family'''
+|-
+! !!A318-100 !!A319-100 / A319LR / A319CJ !!A320-200 !!A321-200
+|-
+! Cockpit crew
+| colspan="4" style="text-align:center;"| Two
+|-
+! [[Seating capacity]]
+| 136 (FAA,<ref name="FAA-Data">{{cite web |url= http://www.airweb.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/3aae56d38be6d65586257fab00649fdd/$FILE/A28NM_Rev_22.pdf |title= Type Certificate Data Sheet |date= May 6, 2016 |publisher= FAA}}</ref> EASA<ref name=cert>{{cite web |url= https://www.easa.europa.eu/system/files/dfu/TCDS_EASA%20A%20064_%20Airbus_%20A318_A319_A320_A321_Iss_21.pdf |title= Type Certificate Data Sheet |publisher= EASA |date= 31 May 2016}}</ref>) <br />132<ref name="A318 specifications" />(1-class, maximum) <br />117 (1-class, typical) <br />107 (2-class, typical)
+| 160 (EASA),<ref name=cert/> 150 (FAA)<ref name="FAA-Data"/> <br />156<ref name="A319 specifications" /> (1-class, maximum) <br />134 (1-class, typical) <br />124 (2-class, typical)
+| 195 (EASA),<ref name=cert/> 190 (FAA)<ref name="FAA-Data"/> <br />186<ref>{{cite press release |url= http://mediacentre.easyjet.com/stories/9835 |title= easyJet takes delivery of new, more efficient 186 seat A320 |publisher= Easyjet |date= 31 May 2016}}</ref> (1-class, maximum) <br />164 (1-class, typical) <br />150 (2-class, typical)
+| 230 (EASA,<ref name=cert/> FAA<ref name="FAA-Data"/>) <br />236<ref name="A321 specifications" /> (1-class, maximum, certification) <br />199 (1-class, typical) <br />185 (2-class, typical)
+|-
+! Seat Pitch
+| {{convert|29|in|cm|abbr=on}} & {{convert|30|in|cm|abbr=on}} (1-class, maximum) <br />{{convert|32|in|cm|abbr=on}} (1-class, typical) <br />{{convert|38|in|cm|abbr=on}} & {{convert|32|in|cm|abbr=on}} (2-class, typical)
+| {{convert|28|in|cm|abbr=on}} & {{convert|30|in|cm|abbr=on}} (1-class, maximum) <br />{{convert|32|in|cm|abbr=on}} (1-class, typical) <br />{{convert|36|in|cm|abbr=on}} & {{convert|32|in|cm|abbr=on}} (2-class, typical)
+| colspan="2" | {{convert|28|in|cm|abbr=on}} & {{convert|29|in|cm|abbr=on}} (1-class, maximum) <br />{{convert|32|in|cm|abbr=on}} (1-class, typical) <br />{{convert|36|in|cm|abbr=on}} & {{convert|32|in|cm|abbr=on}} (2-class, typical)
+|-
+! Cargo capacity
+| {{convert|21.20|m3|cuft|abbr=on}}
+| {{convert|27.70|m3|cuft|abbr=on}} <br /> 4× LD3-45
+| {{convert|37.40|m3|cuft|abbr=on}} <br /> 7× LD3-45
+| {{convert|51.70|m3|cuft|abbr=on}} <br /> 10× LD3-45
+|-
+! Length
+| {{convert|31.44|m|ftin|abbr=on}}
+| {{convert|33.84|m|ftin|abbr=on}}
+| {{convert|37.57|m|ftin|abbr=on}}
+| {{convert|44.51|m|ftin|abbr=on}}
+|-
+! Wheelbase
+| {{convert|10.25|m|ftin|abbr=on}}
+| {{convert|11.04|m|ftin|abbr=on}}
+| {{convert|12.64|m|ftin|abbr=on}}
+| {{convert|16.91|m|ftin|abbr=on}}
+|-
+! Track
+| colspan="4"| {{convert|7.59|m|ftin|abbr=on}}
+|-
+! Wingspan
+| colspan="4"| {{convert|34.10|m|ftin|abbr=on}} ({{convert|35.8|m|ftin|abbr=on}} with [[Sharklet (wingtip device)|Sharklets]])
+|-
+! Wing area
+| colspan="3"| {{convert|122.6|m2|sqft|abbr=on}}
+| {{convert|128|m2|sqft|abbr=on}}
+|-
+! Wing sweepback
+| colspan="4"| 25 degrees
+|-
+! Tail height
+| {{convert|12.56|m|ftin|abbr=on}}
+| colspan=3| {{convert|11.76|m|ftin|abbr=on}}
+|-
+! Cabin width
+| colspan="4"| {{convert|3.70|m|ftin|abbr=on}}
+|-
+! Fuselage width
+| colspan="4"| {{convert|3.95|m|ftin|abbr=on}}
+|-
+! Fuselage height
+| colspan="4"| {{convert|4.14|m|ftin|abbr=on}}
+|-
+! [[Operating empty weight]] (OEW)
+| {{convert|39500|kg|lb|abbr=on}}
+| {{convert|40800|kg|lb|abbr=on}}
+| {{convert|42600|kg|lb|abbr=on}}
+| {{convert|48500|kg|lb|abbr=on}}
+|-
+! [[Maximum zero-fuel weight]] (MZFW)
+| {{convert|54500|kg|lb|abbr=on}}
+| {{convert|58500|kg|lb|abbr=on}}
+| {{convert|62500|kg|lb|abbr=on}}
+| {{convert|73800|kg|lb|abbr=on}}
+|-
+! [[Maximum landing weight]] (MLW)
+| {{convert|57.5|t|lb|abbr=on}}
+| {{convert|62.5|t|lb|abbr=on}}
+| {{convert|66|t|lb|abbr=on}}
+| {{convert|77.8|t|lb|abbr=on}}
+|-
+! [[Maximum takeoff weight]] (MTOW)
+| {{convert|68|t|lb|abbr=on}}
+| {{convert|75.5|t|lb|abbr=on}}
+| {{convert|78|t|lb|abbr=on}}
+| {{convert|93.5|t|lb|abbr=on}}
+|-
+! Cruising speed
+| colspan="4"|[[Mach number|Mach]] 0.78 (828&nbsp;km/h/511&nbsp;mph at 11,000&nbsp;m/36,000&nbsp;ft)
+|-
+! Maximum speed
+| colspan="4"|Mach 0.82 (871&nbsp;km/h/537&nbsp;mph at 11,000&nbsp;m/36,000&nbsp;ft)
+|-
+! Maximum range, fully loaded
+| {{convert|3100|nmi|abbr=on}},<ref name="range1">With 107 passengers and baggage</ref><br />'''CJ:''' {{convert|4200|nmi|abbr=on|lk=in}}
+| {{convert|3600|nmi|abbr=on}},<ref name="range2">With 124 passengers and baggage</ref><br />{{convert|3700|nmi|abbr=on}}<ref name="range2" /> with Sharklets <br /> '''LR:''' {{convert|5600|nmi|abbr=on|lk=in}}<ref name="range2" /> <br /> '''CJ:''' {{convert|6000|nmi|abbr=on|lk=in}}
+| {{convert|3100|nmi|abbr=on}},<ref name="range3">With 150 passengers and baggage</ref><br/>{{convert|3300|nmi|abbr=on}}<ref name="range3" /> with Sharklets<br /> '''CJ:''' {{convert|4300|nmi|abbr=on|lk=in}}
+| {{convert|3000|nmi|abbr=on}},<ref name="range4">With 185 passengers and baggage</ref><br />{{convert|3200|nmi|abbr=on}}<ref name="range4" /> with Sharklets
+|-
+! Takeoff distance at MTOW <br>(sea level, [[International standard atmosphere|ISA]])
+| {{convert|1828|m|ft|abbr=on}}
+| {{convert|2164|m|ft|abbr=on}}
+| {{convert|2090|m|ft|abbr=on}}
+| {{convert|2560|m|ft|abbr=on}}
+|-
+! Maximum [[Jet fuel|fuel]] capacity
+| {{convert|24210|L|abbr=on}}
+| colspan="2"| {{convert|24210|L|abbr=on}} standard <br />{{convert|30190|L|abbr=on}} optional
+| {{convert|24050|L|abbr=on}} standard <br />{{convert|30030|L|abbr=on}} optional
+|-
+! Service ceiling
+| colspan="4"| {{convert|12000|m|abbr=on}} <br />'''A319 CJ and A321:''' {{convert|12500|m|abbr=on}}
+|-
+! rowspan=2|Engines (×2)
+| colspan="4"|[[CFM International CFM56#CFM56-5 series|CFM International CFM56-5 series]]
+|-
+| [[Pratt & Whitney PW6000|Pratt & Whitney PW6000 series]]
+| colspan="3"|[[IAE V2500|IAE V2500 series]]
+|-
+! rowspan=2|Fan diameter
+| colspan="4"| {{convert|68.3|in|m|abbr=on}} <small>(CFM56-5)</small>
+|-
+| {{convert|56.5|in|m|abbr=on}} <small>(PW6000)</small>
+| colspan="3"| {{convert|63.5|in|m|abbr=on}} <small>(V2500)</small>
+|-
+! Thrust (×2)
+| {{convert|96|-|106|kN|abbr=on}}
+| {{convert|98|-|120|kN|abbr=on}}
+| {{convert|111|-|120|kN|abbr=on}}
+| {{convert|133|-|147|kN|abbr=on}}
+|}
+Source: Airbus,<ref name="A320 specifications">{{cite web |url=http://www.airbus.com/aircraftfamilies/passengeraircraft/a320family/a320/specifications/ |title=Specifications Airbus A320 |accessdate=13 February 2012 |work=Airbus}}</ref><ref name="A321 specifications">{{cite web |url=http://www.airbus.com/aircraftfamilies/passengeraircraft/a320family/a321/specifications/ |title=Specifications Airbus A321 |accessdate=13 February 2012 |work=Airbus}}</ref><ref name="A319 specifications">{{cite web |url=http://www.airbus.com/aircraftfamilies/passengeraircraft/a320family/a319/specifications/ |title=Specifications Airbus A319 |accessdate=13 February 2012 |work=Airbus}}</ref><ref name="A318 specifications">{{cite web |url=http://www.airbus.com/aircraftfamilies/passengeraircraft/a320family/a318/specifications/ |title=Specifications Airbus A318 |accessdate=13 February 2012 |work=Airbus}}</ref><ref name="a319cjceiling" /><ref>{{cite web |url=http://www.airbus.com/support/maintenance-engineering/technical-data/aircraft-characteristics/|title= Airbus Aircraft Characteristics |work=Airbus |date = June 2011|accessdate=7 June 2011| archiveurl= http://web.archive.org/web/20110527173929/http://www.airbus.com/support/maintenance-engineering/technical-data/aircraft-characteristics/| archivedate= 27 May 2011 | deadurl= no}}</ref> ''Airliners.net'',<ref>{{cite web |url=http://www.airliners.net/aircraft-data/stats.main?id=21 |title=The Airbus A318 |accessdate=26 February 2011 |publisher=Airliners.net}}</ref><ref>{{cite web |url=http://www.airliners.net/aircraft-data/stats.main?id=22 |title=The Airbus A319 |accessdate=26 February 2011 |publisher=Airliners.net}}</ref><ref>{{cite web |url=http://www.airliners.net/aircraft-data/stats.main?id=23 |title=The Airbus A320 |accessdate=26 February 2011 |publisher=Airliners.net}}</ref><ref>{{cite web |url=http://www.airliners.net/aircraft-data/stats.main?id=24 |title=The Airbus A321 |accessdate=26 February 2011 |publisher=Airliners.net}}</ref> Pratt & Whitney<ref>{{cite web|url=http://www.pw.utc.com/Products/Commercial/PW6000 |title=PW6000 |accessdate=26 February 2011 |publisher=Pratt & Whitney |deadurl=yes |archiveurl=https://web.archive.org/20100515180453/http://www.pw.utc.com:80/Products/Commercial/PW6000 |archivedate=15 May 2010 }}</ref><ref>{{cite web |url=http://www.pw.utc.com/V2500_Engine |title=V2500 Engine |accessdate=21 February 2016 |publisher=Pratt & Whitney}}</ref>
+
+=== Engines ===
+{| class="wikitable sortable" style="text-align: center;"
+|-
+! Aircraft Model !! Certification Date !! Engines<ref>{{cite web|url=http://easa.europa.eu/certification/type-certificates/docs/aircraft/EASA-TCDS-A.064_AIRBUS_A318,_A319,_A320,_A321_Single_Aisle-10-21122012.pdf |title=EASA TYPE-CERTIFICATE DATA SHEET Airbus A318, A319, A320, A321 Single Aisle |work=EASA |date=21 December 2012 |format=PDF |accessdate=1 January 2013 |deadurl=yes |archiveurl=https://web.archive.org/20130514121210/http://easa.europa.eu/certification/type-certificates/docs/aircraft/EASA-TCDS-A.064_AIRBUS_A318,_A319,_A320,_A321_Single_Aisle-10-21122012.pdf |archivedate=14 May 2013 }}</ref>
+|-
+| A318-111 || 23 May 2003 || [[CFM International CFM56|CFM56-5B8/P]]
+|-
+| A318-112 || 23 May 2003 || [[CFM International CFM56|CFM56-5B9/P]]
+|-
+| A318-121 || 21 December 2005 || [[Pratt & Whitney PW6000|PW6122A]]
+|-
+| A318-122 || 21 December 2005 || [[Pratt & Whitney PW6000|PW6124A]]
+|-
+| A319-111 || 10 April 1996 || [[CFM International CFM56|CFM56-5B5 or 5B5/P]]
+|-
+| A319-112 || 10 April 1996 || [[CFM International CFM56|CFM56-5B6 or 5B6/P or 5B6/2P]]
+|-
+| A319-113 || 31 May 1996 || [[CFM International CFM56|CFM56-5A4 or 5A4/F]]
+|-
+| A319-114 || 31 May 1996 || [[CFM International CFM56|CFM56-5A5 or 5A5/F]]
+|-
+| A319-115 || 30 July 1999 || [[CFM International CFM56|CFM56-5B7 or 5B7/P]]
+|-
+| A319-131 || 18 December 1996 || [[International Aero Engines V2500|IAE Model V2522-A5]]
+|-
+| A319-132 || 18 December 1996 || [[International Aero Engines V2500|IAE Model V2524-A5]]
+|-
+| A319-133 || 30 July 1999 || [[International Aero Engines V2500|IAE Model V2527M-A5]]
+|-
+| A320-111 || 26 February 1988 || [[CFM International CFM56|CFM56-5A1 or 5A1/F]]
+|-
+| A320-211 || 8 November 1988 || [[CFM International CFM56|CFM56-5A1 or 5A1/F]]
+|-
+| A320-212 || 20 November 1990 || [[CFM International CFM56|CFM56-5A3]]
+|-
+| A320-214 || 10 March 1995 || [[CFM International CFM56|CFM56-5B4 or 5B4/P or 5B4/2P]]
+|-
+| A320-215 || 22 June 2006 || [[CFM International CFM56|CFM56-5B5]]
+|-
+| A320-216 || 14 June 2006 || [[CFM International CFM56|CFM56-5B6]]
+|-
+| A320-231 || 20 April 1989 || [[International Aero Engines V2500|IAE Model V2500-A1]]
+|-
+| A320-232 || 28 September 1993 || [[International Aero Engines V2500|IAE Model V2527-A5]]
+|-
+| A320-233 || 12 June 1996 || [[International Aero Engines V2500|IAE Model V2527E-A5]]
+|-
+| A321-111 || 27 May 1995 || [[CFM International CFM56|CFM56-5B1 or 5B1/P or 5B1/2P]]
+|-
+| A321-112 || 15 February 1995 || [[CFM International CFM56|CFM56-5B2 or 5B2/P]]
+|-
+| A321-131 || 17 December 1993 || [[International Aero Engines V2500|IAE Model V2530-A5]]
+|-
+| A321-211 || 20 March 1997 || [[CFM International CFM56|CFM56-5B3 or 5B3/P or 5B3/2P]]
+|-
+| A321-212 || 31 August 2001 || [[CFM International CFM56|CFM56-5B1 or 5B1/P or 5B1/2P]]
+|-
+| A321-213 || 31 August 2001 || [[CFM International CFM56|CFM56-5B2 or 5B2/P]]
+|-
+| A321-231 || 20 March 1997 || [[International Aero Engines V2500|IAE Model V2533-A5]]
+|-
+| A321-232 || 31 August 2001 || [[International Aero Engines V2500|IAE Model V2530-A5]]
+|}
+
+== See also ==
+{{Portal|Aviation}}
+{{aircontent
+|see also=
+* [[Competition between Airbus and Boeing]]
+|related=
+* [[Airbus A320neo family]]
+|similar aircraft=
+* [[Boeing 717]]
+* [[Boeing 737 Classic]]
+* [[Boeing 737 Next Generation]]
+* [[Boeing 757]]
+* [[Bombardier CSeries]]
+* [[Comac C919]]
+* [[Embraer E-Jet family|Embraer 195]]
+* [[Irkut MS-21]]
+* [[McDonnell Douglas MD-90]]
+* [[Tupolev Tu-204]]
+|lists=
+* [[List of jet airliners]]
+* [[List of aircraft]]
+* [[List of airlines]]
+}}
+
+== Notes ==
+{{notelist}}
+
+== References ==
+{{Reflist|30em}}
+
+;Bibliography
+* {{Cite book|last=Aris|first=Stephen|title=Close to the Sun|location=London, UK|publisher=Aurum Press Ltd|year=2002|isbn=1-85410-830-1|ref={{harvid|Aris|2002}}}}
+* {{cite book|last=Eden|first=Paul E. (general editor)|title=Civil Aircraft Today|publisher=Amber Books, 2008|location=London|isbn=978-1-905704-86-6|ref={{harvid|Eden|2008}}}}
+* {{Cite book|last=Gunston|first=Bill|authorlink=Bill Gunston|title=Airbus: The Complete Story|year=2009|location=Sparkford, Yeovil, Somerset, UK |publisher=Haynes Publishing|isbn=978-1-84425-585-6|ref={{harvid|Gunston|2009}}}}
+* {{Cite book|last1=Laming|first1=Tim and Robert Hewson|title=Airbus A320|location=|publisher=Zenith Imprint|year=2000|url=http://books.google.com/?id=wiwFHh4sd_0C&printsec=frontcover&dq=Airbus+A320#v=onepage&q&f=false|isbn=0-7603-0902-7|ref={{harvid|Laming|Hewson|2000}}}}
+* {{Cite book|last1=Norris|first1=Guy and Mark Wagner|title=Airbus A340 and A330|location=St. Paul, Minnesota|publisher=MBI Publishing|year=2001|isbn=0-7603-0889-6|ref={{harvid|Norris|Wagner|2001}}}}
+* {{Cite book|last1=Norris|first1=Guy and Mark Wagner|title=Airbus|location=St. Paul, Minnesota|publisher=MBI Publishing|year=1999|isbn=0-7603-0677-X|ref={{harvid|Norris|Wagner|1999}}}}
+* {{Cite book|last=Payne|first=Richard|title=Stuck on the Drawing Board: Unbuilt British Commercial Aircraft Since 1945|location= London, UK| publisher=The History Press Ltd|year=2004|isbn=0-7524-3172-2|ref={{harvid|Payne|2004}}}}
+* {{Cite book|last=Reed|first=Arthur|title=Airbus: Europe's High Flyer|location= Zürich, Switzerland| publisher=Norden Publishing House|year=1992|isbn=3-907150-10-4|ref={{harvid|Reed|1992}}}}
+* {{cite book|last=Wensveen|first=J.G.|title=Air Transportation: A Management Perspective|url=http://books.google.com/?id=Ej8Qslt1nfsC&pg=PA65&dq=Airbus+A330#v=onepage&q=Airbus%20A330&f=false|location= Burlington, Vermont|publisher=Ashgate Publishing, 2007|isbn=978-0-7546-7171-8 |ref={{harvid|Wensveen|2007}}|date=1 January 2007}}
+
+== External links ==
+{{Commons category|Airbus A320 family}}
+* [http://www.airbus.com/aircraftfamilies/passengeraircraft/a320family/ Official Airbus website of the A320 aircraft family]
+
+{{Airbus aircraft}}
+{{Airbus A3xx timeline}}
+{{Italian military aircraft}}
+{{Use dmy dates|date=February 2016}}
+
+{{DEFAULTSORT:Airbus A320 Family}}
+[[Category:Airbus aircraft|A320]]
+[[Category:International airliners 1980–1989]]
+[[Category:Twinjets]]
+[[Category:1988 introductions]]
+[[Category:Airbus A320 family| ]]

@@ -1,0 +1,14 @@
+'''Detektor''' (von lat.: ''detector'' ‚Offenbarer‘) steht für:
+* synonym für [[Sensor]]
+* einen Detektor für den Radioempfang, siehe [[Detektorempfänger]]
+* in der Physik einen [[Strahlungsdetektor]] oder [[Teilchendetektor]]
+* den [[Metalldetektor]] zum Auffinden von Metallen
+* den [[Lügendetektor]] zum Messen körperlicher Merkmale bei Befragungen
+* den [[Fledermausdetektor]] zur Hörbarmachung der Ultraschalllaute von Fledermäusen
+* ein [[Messgerät]] bei [[Chromatographie|chromatographischen]] [[Trennverfahren (Verfahrenstechnik)|Trennverfahren]], z.&nbsp;B. der [[Flammenionisationsdetektor]] in der [[Gaschromatographie]] und der [[Brechungsindexdetektor]] in der [[HPLC]]
+* das Schülermagazin der [[jDPG|jungen Deutschen Physikalischen Gesellschaft]]
+
+'''Siehe auch:'''
+{{Wiktionary|Detektor}}
+
+{{Begriffsklärung}}

@@ -1,0 +1,97 @@
+{| class="wikitable float-right" style="width: 260px; "
+! colspan="2" bgcolor="#FFCCCC" | Japanisches Meer
+|-
+| colspan="2" | [[Datei:Sea of Japan Map.png|thumb|center|250px|Karte mit der Lage des Japanischen Meeres]]
+|-
+! colspan="2" align=center | [[Japanische Sprache|Japanischer]] Name
+|-
+| [[Kanji]]
+| {{lang|ja-Hani|日本海}}
+|-
+| [[Hepburn-System|Hepburn]]
+| Nihonkai
+|-
+| [[Übersetzung (Sprache)|Übersetzung]]
+| Japanisches Meer
+|-
+! colspan="2" align=center | [[Koreanische Sprache|Nordkoreanischer]] Name
+|-
+| [[Hangeul]]
+| {{lang|ko-Hang|조선동해}}
+|-
+| [[Hanja]]
+| {{lang|ko-Hani|朝鮮東海}}
+|-
+| [[McCune-Reischauer]]
+| Chosŏn Tonghae
+|-
+| [[Übersetzung (Sprache)|Übersetzung]]
+| Koreanisches Ostmeer
+|-
+! colspan="2" align=center | [[Russland|Russischer]] Name
+|-
+| [[Kyrillisch]]
+| Япо́нское мо́ре
+|-
+| [[Transkription (Schreibung)|Transkription]]
+| Japonskoje More
+|-
+| [[Übersetzung (Sprache)|Übersetzung]]
+| Japanisches Meer
+|-
+! colspan="2" align=center | [[Koreanische Sprache|Südkoreanischer]] Name
+|-
+| [[Hangeul]]
+| {{lang|ko-Hang|동해}}
+|-
+| [[Hanja]]
+| {{lang|ko-Hani|東海}}
+|-
+| [[Revidierte Romanisierung|Revidiert]]
+| Donghae
+|-
+| [[Übersetzung (Sprache)|Übersetzung]]
+| Ostmeer
+|-
+| colspan="2" | [[Datei:Japan sea map German.png|thumb|center|250px|Karte des Japanischen Meeres]]
+|}
+Das '''Japanische Meer''' ist ein [[Randmeer]] des [[Pazifischer Ozean|Pazifischen Ozeans]] in [[Ostasien]] ([[Nordwestlicher Pazifikraum]]).
+
+== Geographie ==
+Es ist südlich und östlich durch die [[Japan]]ischen Inseln, nördlich durch die Insel [[Sachalin]] und westlich durch das Festland von [[Nordkorea]], [[Russland]] und [[Südkorea]] begrenzt. 
+Mit dem Pazifik verbunden ist das Japanische Meer durch die [[Koreastraße]] im Süden, die [[Tsugaru-Straße]] zwischen den japanischen Inseln [[Honshū]] und [[Hokkaidō]] und die [[La-Pérouse-Straße]] zwischen den Inseln [[Hokkaidō]] und [[Sachalin]] sowie mit dem [[Ochotskisches Meer|Ochotskischen Meer]] durch den [[Tatarensund]] in Norden.
+
+== Daten ==
+Das Japanische Meer hat eine Fläche von rund 978.000&nbsp;km² bei einer durchschnittlichen Tiefe von 1.752 Meter und einer maximalen Tiefe von 4.049 Meter<ref>Donald G. Groves und Lee M. Hunt: The Ocean World Encyclopedia. McGraw-Hill 1980, Seite 187: Artikel "Japan Sea"</ref>. Es kann in drei Becken unterteilt werden: Das nördliche ''Japanbecken'' bildet den tiefsten Bereich, das ''Yamatobecken'' liegt im Südosten und das ''Tsushimabecken'' im Südwesten. Im Yamatobecken ist das Wasser am seichtesten. Dort liegt der Boden nur bei etwa 285 Meter unter Meeresniveau.<ref>Meyer Lexikon -SW-, elektronische Ausgabe für Office-Bibliothek, Meyers Lexikonverlag, ; Stichwort: "Japanisches Meer"</ref> Die Küsten der östlichen Inseln sind weit und relativ flach, hingegen sind die Festlandküsten, vor allem im Westen entlang der Küste von Korea, steil, rau und steinig. 
+
+Das Japanische Meer, obwohl selbst eher kälter als der Pazifik auf der anderen Seite der Inseln, trägt maßgeblich zum milden Klima in [[Japan]] bei. Die [[Fischerei]] ist ein bedeutender Wirtschaftsfaktor für die [[Anrainer]]staaten; Ein unter anderem daraus resultierender Konflikt, der die Fanggebiete betrifft, führte zu einem Streit über den Besitz der [[Liancourt-Felsen]], die von Japan und [[Südkorea]] beansprucht und seit 1950 von Südkorea kontrolliert werden.
+
+Im Japanischen Meer gibt es auch Vorkommen von Mineralien, die abgebaut werden, aber vor allem ist das Meer eine wichtige Schifffahrtsroute. Hier liegen unter anderen die Inseln Liancourt-Felsen, [[Oki-Inseln]], [[Okushiri (Insel)|Okushiri]], [[Rebun (Insel)|Rebun]], [[Rishiri (Insel)|Rishiri]], [[Sado (Insel)|Sado]], [[Tsushima (Insel)|Tsushima]] und [[Ulleungdo]].
+
+== Namen und Namensstreit ==
+''Hauptartikel:'' [[Namensstreit um das Japanische Meer]]
+
+In den lokalen Sprachen der Anrainerstaaten wird das Meer in [[Japan]] und [[Russland]] ''Japanisches Meer'', in [[Nordkorea]] ''Koreanisches Ostmeer'' und in [[Südkorea]] ''Ostmeer'' genannt. Der internationale Name des Gewässers ist zwischen den Ländern umstritten. Die Regierungen von Nord- und insbesondere Südkorea setzen sich dafür ein, dass der Name „Koreanisches Ostmeer“ bzw. „Ostmeer“ statt des Namens „Japanisches Meer“ verwendet oder zumindest als gleichwertig behandelt wird. Dieser Vorschlag wird bisher von Japan abgelehnt. Andere Staaten sowie internationale Institutionen haben bisher keine Stellung bezogen, verwenden aber weiter die Bezeichnung „Japanisches Meer“. In manchen westlichen Atlanten und anderen, nicht-offiziellen Publikationen wird die Bezeichnung „Ostmeer“ parallel verwendet.
+
+== Siehe auch ==
+* [[Ochotskisches Meer]]
+* [[Ostchinesisches Meer]]
+* [[Backarc-Becken]]
+
+== Einzelnachweise ==
+<references/>
+
+== Weblinks ==
+{{Commonscat|Sea of Japan|Japanisches Meer}}
+* [http://www.japan-infos.de/?s=japanisches+meer Bilder vom japanischen Meer] Fotos vom Nihonkai (Shimane-ken)
+
+{{Coordinate |NS=39/34/55/N |EW=134/34/11/E |type=waterbody|region=XP|dim=1000000}}
+
+{{Normdaten|TYP=g|GND=4309633-5}} 
+
+[[Kategorie:Japanisches Meer| ]]
+[[Kategorie:Meer (Pazifischer Ozean)]]
+[[Kategorie:Geographie (Japan)]]
+[[Kategorie:Geographie (Nordkorea)]]
+[[Kategorie:Geographie (Südkorea)]]
+[[Kategorie:Geographie (Russland)]]

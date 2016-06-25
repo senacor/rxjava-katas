@@ -1,0 +1,145 @@
+Der Begriff '''linearer Operator''' wurde in der [[Funktionalanalysis]] (einem Teilgebiet der Mathematik) eingeführt und ist synonym zum Begriff der [[lineare Abbildung|linearen Abbildung]]. Eine lineare Abbildung ist eine [[Homomorphismus|strukturerhaltende Abbildung]] zwischen [[Vektorraum|Vektorräumen]] über einem gemeinsamen [[Körper (Algebra)|Körper]]. Werden Vektorräume über dem Körper der reellen oder komplexen Zahlen betrachtet und sind diese mit einer [[Topologischer Raum|Topologie]] versehen ([[lokalkonvexer Raum|lokalkonvexe Räume]], [[normierter Raum|normierte Räume]], [[Banachraum|Banachräume]]), so spricht man vorzugsweise von linearen Operatoren. 
+
+Im Gegensatz zu endlichdimensionalen Räumen, wo lineare Operatoren stets ''beschränkt'' sind,
+tauchen bei unendlichdimensionalen Räumen auch ''unbeschränkte'' lineare Operatoren auf.
+
+== Definition ==
+=== Linearer Operator ===
+Es seien <math>X</math> und <math>Y</math> reelle oder komplexe Vektorräume. Eine Abbildung <math>T</math> von <math>X</math> nach <math>Y</math> heißt linearer Operator, wenn für alle <math>x, y \in X</math> und <math>\lambda \in \R</math> (bzw. <math>\lambda \in \mathbb C</math>) die folgenden Bedingungen gelten:
+
+#<math>T</math> ist homogen: <math>T (\lambda x) = \lambda T(x)</math>
+#<math>T</math> ist additiv: <math>T (x + y) = T(x) + T(y)</math>.
+
+=== Antilinearer Operator ===
+
+Seien <math>X</math> und <math>Y</math> komplexe Vektorräume. Ein Operator <math>T</math> von <math>X</math> in <math>Y</math> heißt antilinearer Operator, wenn für alle <math>x,y \in X</math> und <math>\lambda \in \mathbb C</math> die folgenden Bedingungen gelten:
+#<math>T</math> ist antihomogen: <math>T (\lambda x) = \overline{\lambda}T(x)</math>
+#<math>T</math> ist additiv: <math>T (x + y) = T(x) + T(y)</math>.
+
+== Beispiele ==
+=== Lineare Operatoren ===
+* Es sei <math>A</math> eine reelle <math>n \times m</math>-Matrix. Dann ist die lineare Abbildung <math>A\colon x \mapsto Ax</math> ein linearer Operator von <math>\R^m</math> in <math>\R^n</math>.
+
+* Die Menge der linearen Operatoren zwischen zwei fixierten Vektorräumen wird durch die Definition der Addition <math>(S+T)(x) := S(x) + T(x)</math> und [[Skalarmultiplikation]] <math>(\lambda S)(x) := \lambda S(x)</math> selbst zu einem Vektorraum.
+
+* Der [[Differentialrechnung|Ableitungsoperator]] <math>D\colon C^1 \to C</math>, der einer Funktion ihre Ableitung zuordnet <math>f \mapsto D f = f'</math>, ist ein linearer Operator.
+
+* Seien <math>a < b</math> zwei reelle Zahlen. Der Operator <math>\textstyle f \mapsto \int_a^b f(x) \mathrm{d}x</math>, der einer integrierbaren Funktion eine reelle Zahl zuordnet, ist linear.
+
+* Jedes lineare [[Funktional]] auf einem Vektorraum ist ein linearer Operator.
+
+=== Antilinearer Operator ===
+* Ist <math>(H, \langle \cdot,\cdot\rangle_H)</math> ein komplexer [[Hilbertraum]] und <math>H\,'</math> sein [[Dualraum]], so gibt es nach dem [[Darstellungssatz von Fréchet-Riesz]] zu jedem <math>f\in H\,'</math> genau ein <math>y_f\in H</math>, so dass <math>f(x)=\langle x,y_f\rangle_H</math> für alle <math>x\in H</math> gilt. Die Abbildung <math>H\,'\rightarrow H, f\mapsto y_f</math> ist antilinear. Diese liegt darin begründet, dass ein komplexes Skalarprodukt <math>\langle \cdot,\cdot\rangle</math> in der zweiten Variablen antilinear ist.
+
+== Bedeutung und Anwendungen ==
+
+Die Bedeutung linearer Operatoren besteht darin, dass sie die lineare Struktur des unterliegenden Raumes respektieren, d.h. sie sind [[Homomorphismus|Homomorphismen]] zwischen Vektorräumen.
+
+Anwendungen linearer Operatoren sind:
+
+* Die Beschreibung von [[Koordinatentransformation]]en im dreidimensionalen Euklidischen Raum (Spiegelung, Drehung, Streckung) und der [[Lorentztransformation]] in der vierdimensionalen Raumzeit durch Matrizen.
+
+* Die Darstellung von [[Observable]]n in der [[Quantenmechanik]] und die Beschreibung der Dynamik eines quantenmechanischen Systems durch seinen [[Hamilton-Operator]] <math>H</math> in der [[Schrödingergleichung]]. 
+
+* Die Entwicklung von Lösungstheorien für Differential- und Integralgleichungen, siehe [[Sobolew-Raum]] und [[Distribution (Mathematik)|Distribution]].
+
+* In der Vierpoltheorie ([[Elektrotechnik]]) werden die Beziehungen zwischen den Eingangsgrößen (Stromstärke und Spannung) und den Ausgangsgrößen (Stromstärke und Spannung) als wechselseitig voneinander linear abhängig betrachtet. Die Abhängigkeiten können durch 2x2-Matrizen beschrieben werden.
+
+== {{Anker|Beschränkter Operator}} Beschränkte lineare Operatoren ==
+=== Definitionen ===
+
+Seien <math>V</math> und <math>W</math> zwei [[Normierter Raum|normierte Vektorräume]] und <math>A\colon V\to W</math> ein linearer Operator. Die ''[[Operatornorm]]'' von <math>A</math> ist definiert durch:
+:<math> \|A\| := \sup_{x \in V, \; x \neq 0} \frac{\|Ax\|_W}{\|x\|_V} = \sup_{\|x\|_V = 1} \|Ax\|_W </math>.
+Ist die Operatornorm endlich, so heißt  der Operator beschränkt, andernfalls unbeschränkt.
+
+Die Menge aller beschränkten linearen Operatoren vom normierten Raum <math>V</math> in den normierten Raum <math>W</math> nennt man <math>\mathfrak{L}(V,W)</math>. Mit der Operatornorm ist dieser selbst ein normierter Vektorraum. (sogar ein [[Banachraum]], falls <math>W</math> [[Vollständiger Raum|vollständig]] ist<ref>[[Dirk Werner (Mathematiker)|Dirk Werner]]: ''Funktionalanalysis''. 7., korrigierte und erweiterte Auflage. Springer, 2011. ISBN 978-3-642-21016-7. Satz II.1.4</ref>) Falls <math>V</math> mit <math>W</math> identisch ist, wird auch abkürzend <math>\mathfrak{L}(V)</math> geschrieben. Die beschränkten linearen Operatoren lassen sich wie folgt charakterisieren:
+
+Ist <math>T</math> ein linearer Operator von <math>V</math> nach <math>W</math>, dann sind die folgenden Aussagen äquivalent:
+
+# <math>T</math> ist beschränkt, d.h. in <math>\mathfrak{L}(V,W)</math> enthalten.
+# <math>T</math> ist [[Stetigkeit|stetig]] in jedem Punkt von <math>V</math>.
+# <math>T</math> ist stetig in einem Punkt von <math>V</math>.
+
+=== Beispiele beschränkter linearer Operatoren ===
+
+* <math>I_V \in \mathfrak{L}(V)</math> mit <math>\|I_V\| = 1</math>, wobei <math>I_V</math> der identische Operator auf <math>V</math> ist.
+
+* <math>P \in \mathfrak{L}(H)</math> mit <math>\|P\| = 1</math>, wobei <math>P\ne0</math> eine [[Orthogonalprojektion|orthogonale Projektion]] auf dem [[Hilbertraum]] <math>H</math> ist.
+
+* <math>(n_k) \in \mathfrak{L}(l_p)</math> mit <math>\|(n_k)\| = \max_k |n_k|</math>, wobei die Folge <math>(n_k)</math> beschränkt ist und als Diagonaloperator auf dem [[Folgenraum]] <math>l_p</math> mit <math>1 \leq p \leq \infty</math> interpretiert wird.
+
+* Der [[Shiftoperator]] <math>S \in \mathfrak{L}(l_p)</math> ist beschränkt mit <math>\|S\| = 1</math>, wobei <math>S ((x_1, x_2, x_3, \dotsc)) := (0, x_1, x_2, x_3, \dotsc)</math> auf dem Folgenraum <math>l_p</math> mit <math>1 \leq p \leq \infty</math> definiert ist.
+
+* Es sei <math>K</math> eine [[Kompakter Raum|kompakte Menge]] und <math>\mathfrak{C}(K)</math> der [[Banachraum]] der stetigen Funktionen auf <math>K</math> mit der [[Supremumsnorm]]. Weiter sei <math>f \in \mathfrak{C}(K)</math> und der lineare Operator <math>T_f \colon \mathfrak{C}(K) \rightarrow \mathfrak{C}(K)</math> ist definiert durch <math>T_f (g) (k) := (fg) (k)</math> für <math>k \in K</math>. Dann ist <math>T_f \in \mathfrak{L} ( \mathfrak{C}(K) )</math> und <math>\|T_f\| = \|f\|_{\infty}</math>.
+
+* Es sei <math>\lbrack X, \mathfrak{B}, \mu \rbrack</math> ein [[Maßraum]] und <math>L_p = L_p(X, \mathfrak{B}, \mu)</math> der [[Lp-Raum|''L<sup>p</sup>''-Raum]] der Äquivalenzklassen der in <math>p</math>-ter Potenz integrierbaren [[Messbare Funktion|messbaren Funktionen]] auf <math>X</math> mit der [[Norm (Mathematik)#Lp-Normen|''L<sup>p</sup>''-Norm]] für <math>1 \leq p \leq \infty</math>. Weiter sei <math>f \in L_{\infty}</math> und der lineare Operator <math>T_f \colon L_p \to L_p</math> definiert durch <math>T_f (g) (x) := (fg) (x)</math> für <math>x \in X</math>. Dann ist <math>T_f \in \mathfrak{L} (L_p)</math> und <math>\|T_f\| = \|f\|_{\infty}</math>.
+
+=== Anwendungen ===
+
+* [[Spektraltheorie]]
+* [[Funktionalkalkül]], d.h. für eine beschränkte, reelle bzw. komplexwertige messbare Funktion <math>f</math> und einen beschränkten linearen Operator <math>T</math> kann <math>f(T)</math> definiert werden.
+
+== Unbeschränkte lineare Operatoren ==
+
+Bei der Betrachtung unbeschränkter linearer Operatoren lässt man oft auch Operatoren zu, deren Definitionsbereich (''Domäne'') lediglich ein Unterraum des betrachteten Raumes ist, spricht man etwa von unbeschränkten linearen Operatoren auf Hilberträumen, so lässt man als Definitionsbereich auch einen [[Prähilbertraum]] als Teilraum eines Hilbertraums zu, präziser spricht man dann von ''dicht definierten'' unbeschränkten linearen Operatoren (s.&nbsp;u.). Der Operator wird als [[partielle Abbildung]] aufgefasst.
+
+Ein Operator heißt ''dicht definiert'', wenn seine Domäne eine dichte Teilmenge des Ausgangsraumes ist. Das Interesse an unbeschränkten Operatoren ist durch die Untersuchung von [[Differentialoperator]]en und deren [[Eigenwert]]spektrum und Observablenalgebren begründet. 
+
+Eine große Klasse unbeschränkter linearer Operatoren bilden die [[abgeschlossener Operator|abgeschlossenen Operatoren]]. Das sind Operatoren <math>A \colon V \rightarrow W</math>, deren Graph 
+<math>\Gamma (A) := \{ (\phi , A \phi) : \phi \in D  \}</math>
+in der [[Produkttopologie]] von <math>V \times W</math> abgeschlossen ist.  Für abgeschlossene Operatoren kann z. B. das [[Spektrum (Operatortheorie)|Spektrum]] definiert werden.   
+
+Die Theorie der unbeschränkten Operatoren wurde von [[John von Neumann]] 1929 begründet. Im Jahr 1932 unabhängig von von Neumann entwickelte [[Marshall Harvey Stone]] die Theorie der unbeschränkten Operatoren.<ref>Dirk Werner: ''Funktionalanalysis''. 7., korrigierte und erweiterte Auflage. Springer, 2011. ISBN 978-3-642-21016-7. Kapitel VII.6</ref>
+
+=== Beispiel ===
+
+Betrachte den Differentialoperator<math> A f := f'\,</math> auf dem Banachraum <math>C[a, b]</math>  der stetigen Funktion auf dem Intervall <math>[a, b]</math>. Wählt man als Definitionsbereich <math>\mathcal{D}(A)</math> die einmal stetig differenzierbaren Funktionen <math>\mathcal{D}(A):=C^{1}[a, b]</math>, dann ist ''A'' ein abgeschlossener Operator, der nicht beschränkt ist. 
+
+=== Anwendungen ===
+
+* Differential- und Multiplikationsoperatoren sind i. a. unbeschränkt.
+
+* Die Darstellung von Observablen der Quantenmechanik erfordert unbeschränkte lineare Operatoren, da die den Observablen zugeordneten Operatoren i. a. unbeschränkt sind.
+
+== Konvergenzbegriffe/Topologien auf Operatorräumen ==
+{{Hauptartikel|Operatortopologie}}
+Ist der zugrundeliegende Vektorraum endlichdimensional mit Dimension <math>n</math>, so ist <math>L(V)</math> ein Vektorraum der Dimension <math>n^2</math>. In diesem Fall sind alle [[Norm (Mathematik)|Normen]] [[Äquivalente Normen|äquivalent]], das heißt, sie liefern den gleichen Konvergenzbegriff und die gleiche [[Topologischer Raum|Topologie]].
+
+Im Unendlichdimensionalen gibt es dagegen verschiedene nicht-äquivalente Topologien. Seien nun <math>E</math> und <math>F</math> Banachräume und <math>(T_i)_{i \in I}</math> eine Folge (oder auch ein [[Netz (Topologie)|Netz]]) in <math>L(E,F)</math>.
+
+=== Normtopologie ===
+<math>T_i</math> konvergiert in der [[Normtopologie]] gegen <math>T</math> genau dann wenn:
+:<math>\lim_i \|T-T_i\| = 0</math>
+
+Die Normtopologie ist die Topologie, die durch die offenen Kugeln [[Basis (Topologie)|erzeugt]] wird.
+
+=== Starke Operatortopologie ===
+<math>T_i</math> konvergiert in der ''starken Operatortopologie'' (kurz ''stop'') gegen <math>T</math> genau dann wenn es punktweise konvergiert:
+:<math>\lim_i T_i x = Tx \quad \forall x \in E</math>
+oder anders ausgedrückt:
+:<math>0=\lim_i \| T_i x - Tx \| = \lim_i \|(T_i-T)x\| \quad \forall x \in E</math>
+
+Die zugehörige Topologie ist die [[Initialtopologie]], die durch die Menge von linearen Abbildungen 
+:<math>\left\lbrace\left. \begin{matrix} L(E,F) & \to & F \\ T & \mapsto & Tx \end{matrix} \,\right|\, x \in E \right\rbrace</math> 
+erzeugt wird. Dies ist die kleinste Topologie, in der all diese Abbildungen stetig sind. <math>L(E,F)</math> mit der starken Operatortopologie ist also ein [[lokalkonvexer Raum]].
+
+Alternativ ausgedrückt: Die starke Operatortopologie ist die [[Produkttopologie]] aller Funktionen von <math>E</math> nach <math>F</math> eingeschränkt auf die (evtl. beschränkten) linearen Operatoren.
+
+=== Schwache Operatortopologie ===
+<math>T_i</math> konvergiert in der ''schwachen Operatortopologie'' gegen <math>T</math> genau dann wenn:
+:<math>\lim_i \varphi(T_i x) = \varphi(Tx) \quad \forall x \in E, \varphi \in F^*</math>
+oder anders ausgedrückt:
+:<math>\lim_i | \varphi(T_i x - Tx) | = 0 \quad \forall x \in E, \varphi \in F^*</math>
+(Hierbei bezeichnet <math>F^*</math> den stetigen [[Dualraum]] von F)
+
+Die zugehörige Topologie ist die [[Initialtopologie]], die durch die Menge von linearen Funktionalen
+:<math>\left\lbrace \left. \begin{matrix} L(E,F) & \to & \mathbb{C} \\ T & \mapsto & \varphi(Tx) \end{matrix} \,\right| x \in E, \varphi \in F^* \right\rbrace</math> 
+erzeugt wird. Dies ist die kleinste Topologie, in der all diese Funktionale stetig sind. <math>L(E,F)</math> mit der schwachen Operatortopologie ist also ebenfalls ein [[lokalkonvexer Raum]].
+
+== Literatur ==
+* Hans Wilhelm Alt: ''Lineare Funktionalanalysis : eine anwendungsorientierte Einführung''. 5. Auflage. Springer-Verlag, 2006, ISBN 3-540-34186-2
+
+== Einzelnachweise ==
+<references />
+
+[[Kategorie:Funktionalanalysis]]

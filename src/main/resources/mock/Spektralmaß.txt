@@ -1,0 +1,178 @@
+In der [[Mathematik]], insbesondere in der [[Funktionalanalysis]] ist ein '''Spektralmaß''' eine Abbildung, die gewissen Teilmengen einer fest gewählten Menge [[Orthogonalprojektion|orthogonale Projektionen]] eines [[Hilbertraum]]s zuordnet. Spektralmaße werden verwendet, um Ergebnisse in der [[Spektraltheorie]] linearer Operatoren zu formulieren, wie z. B. den [[Spektralsatz]] für normale Operatoren. Daneben wird der Begriff, jedoch mit anderer Bedeutung, in der [[Stochastik]] verwendet.
+
+== Definition ==
+
+Es seien <math>(X,\mathcal{A})</math> ein [[Messraum (Mathematik)|Messraum]], <math>H</math> ein reeller bzw. komplexer [[Hilbertraum]], <math>L(H)</math> der Banachraum der stetigen [[Linearer Operator|linearen Operatoren]] auf <math>H</math> und <math>P(H)</math> die Menge der orthogonalen [[Projektion (lineare Algebra)|Projektoren]] von <math>H</math>. Ein Spektralmaß für das [[Tupel|Tripel]] <math>(X,\mathcal{A},H)</math> ist eine Abbildung <math>E\colon\mathcal{A}\rightarrow L(H)</math> mit den folgenden Eigenschaften:
+# Es gilt <math>E\left(X\right)=I</math>. Dabei ist <math>I\colon H\rightarrow H</math> die Identität auf <math>H</math>.
+# Für jedes <math>\Omega\in\mathcal{A}</math> ist <math>E(\Omega)\in P(H)</math>, d. h. <math>E</math> ist Projektor-wertig.
+# Für alle <math>x,y\in H</math> ist <math>E_{x,y}\colon\mathcal{A}\rightarrow\mathbb{K}</math> mit <math>E_{x,y}(\Omega)=\langle E(\Omega)x,y\rangle</math> ein [[Signiertes Maß|komplexes bzw. signiertes Maß]] auf <math>\mathcal{A}</math>.
+
+Das [[Tupel|Quadrupel]] <math>(X,\mathcal{A},H,E)</math> heißt ein ''Spektralmaßraum''.
+
+Häufig wird die auf diese Weise definierte Abbildung <math>E</math> auch als Zerlegung der Einheit <math>I</math> (engl.: ''resolution of identity'') bezeichnet. Auch ist es üblich von einem ''Projektor-wertigen Maß'' (engl.: ''projection-valued measure'', häufig kurz PVM) zu sprechen.
+
+Ist <math>X</math> ein [[Topologischer Raum|topologischer Raum]], <math>\mathcal{O}</math> seine Topologie und <math>\mathcal{B}(X)</math> seine [[Borelsche σ-Algebra|Borelalgebra]], so heißt ein Spektralmaß <math>E</math>, dem der Borelsche Messraum <math>(X,\mathcal{B}(X))</math> zugrunde liegt, ein ''Borelsches Spektralmaß''. Ist speziell <math>X=\mathbb{R}</math> bzw. <math>X=\mathbb{C}</math>, so heißt das Borelsche Spektralmaß ein reelles bzw. komplexes Spektralmaß. Der Träger eines Borelschen Spektralmaßes ist als
+
+:<math>\mathrm{supp}(E)=X\setminus\bigcup\{O\in\mathcal{O}\,|\,E(O)=0\}</math>
+
+definiert. Dies ist das Komplement der größten offenen Teilmenge <math>G</math> von <math>X</math>, für die <math>E(G)=0</math> ist.
+
+== Eigenschaften ==
+
+Es sei <math>E</math> ein Spektralmaß für das Datum <math>(X,\mathcal{A},H)</math>. Dann gelten die folgenden Aussagen:
+* <math>E(\varnothing)=0</math>
+* Modularität: Es gilt <math>E(\Omega_1\cup \Omega_2)+E(\Omega_1\cap \Omega_2)=E(\Omega_1)+E(\Omega_2)</math> für alle <math>\Omega_1,\Omega_2\in\mathcal{A}</math>.
+* Multiplikativität: Es gilt <math>E(\Omega_1\cap \Omega_2)=E(\Omega_1)\,E(\Omega_2)</math> für alle <math>\Omega_1,\Omega_2\in\mathcal{A}</math>. Insbesondere kommutieren die Projektoren <math>E(\Omega_1)</math> und <math>E(\Omega_2)</math> miteinander und das Bild von <math>E(\Omega_1)</math> ist senkrecht zum Bild von <math>E(\Omega_2)</math>, wenn <math>\Omega_1\cap\Omega_2=\varnothing</math> gilt.
+
+Insbesondere ist jedes Spektralmaß ein endlich additives [[vektorielles Maß]].
+
+Setzt man <math>E_x:=E_{x,x}</math> für <math>x\in H</math>, so gilt für alle <math>x,y\in H</math> aufgrund der [[Polarisationsidentität]]
+
+:<math>E_{x,y}=\frac{1}{4}\sum_{n=0}^3i^n E_{x+i^ny}</math>
+
+im komplexen Fall bzw.
+
+:<math>E_{x,y}=\text{Re}\bigg(\frac{1}{4}\sum_{n=0}^3i^n E_{x+i^ny}\bigg)</math>
+
+im reellen Fall. Insbesondere sind die Maße <math>E_{x,y}</math> bekannt, wenn die Maße <math>E_x</math> bekannt sind, so dass man häufig nur mit diesen arbeitet.
+
+== Äquivalente Definition ==
+
+Häufig findet man die folgende Charakterisierung von Spektralmaßen in der Literatur als Definition. Eine Abbildung <math>E\colon\mathcal{A}\rightarrow L(H)</math> ist genau dann ein Spektralmaß, wenn
+# <math>E\left(X\right)=I</math> gilt,
+# <math>E</math> projektorwertig ist und
+# für jede Folge <math>(\Omega_i)_{i\in\mathbb{N}}</math> von <math>\mathcal{A}</math>-messbaren, paarweise disjunkten Mengen
+
+:::<math>E\bigg(\biguplus_{i\in\mathbb{N}}\Omega_i\bigg)=\sum_{i=1}^{\infty}E(\Omega_i)</math>
+
+::im Sinne der [[starke Operatortopologie|starken Operatortopologie]] gilt. Diese Eigenschaft wird gelegentlich als punktweise <math>\sigma</math>-Additivität bezeichnet.
+
+Die Bezeichnung Zerlegung der Einheit für <math>E</math> lässt sich nun wie folgt erklären. Ist <math>(\Omega_i)_{i\in\mathbb{N}}</math> eine [[Abzählbare Menge|abzählbare]] [[Partition (Mengenlehre)|Zerlegung]] von <math>X</math> in <math>\mathcal{A}</math>-messbare Mengen, so gilt
+:<math>\mathrm{id}_H=E(X)=E\bigg(\biguplus_{i\in\mathbb{N}}\Omega_i\bigg)=\sum_{i=1}^{\infty}E(\Omega_i)</math>
+bzw.
+:<math>H=\bigoplus_{i=1}^{\infty} (E(\Omega_i)(H)),</math>
+wobei <math>\bigoplus</math> die [[orthogonale Summe]] im Sinne von Hilberträumen der Familie <math>\{E(\Omega_i)(H)\,|\,i\in\mathbb{N}\}</math> von abgeschlossenen Unterräumen ist. Dies entspricht der Tatsache, dass die Eigenräume eines normalen Operators des <math>\mathbb{C}^n</math> eine orthogonale Summenzerlegung von <math>\mathbb{C}^n</math> bilden.
+
+== Beispiele ==
+
+Es sei <math>A\colon\mathbb{C}^n\rightarrow\mathbb{C}^n</math> ein normaler linearer Operator. Dann ist das [[Spektrum (Operatortheorie)|Spektrum]] von <math>A</math> nicht leer und besteht aus den [[Eigenwert]]en von <math>A</math>. Die [[Eigenraum|Eigenräume]] zu den paarweise verschiedenen Eigenwerten von <math>A</math> stehen senkrecht aufeinander und besitzen <math>\mathbb{C}^n</math> als (innere) direkte Summe. Dies ist äquivalent dazu, dass
+
+:<math>\mathrm{id}_{\mathbb{C}^n}=\sum_{\lambda\in\sigma(A)}P_{\lambda}</math>
+
+gilt. Dabei ist <math>P_{\lambda}</math> die orthogonale Projektion von <math>\mathbb{C}^n</math> auf den Eigenraum von <math>A</math> zum Eigenwert <math>\lambda</math>. Aus dieser Darstellung von <math>\operatorname{id}_{\mathbb{C}^n}</math> erhält man die
+
+:<math>A=\sum_{\lambda\in\sigma(A)}\lambda\,P_{\lambda}</math>
+
+„Spektralauflösung“ von <math>A.</math> Das Spektralmaß von <math>A</math> ist
+
+:<math>E(\Omega)=\sum_{\lambda\in\sigma(A)\cap\Omega}P_{\lambda}</math>.
+
+Ist <math>A</math> ein beliebiger [[normaler Operator]], so kann das Spektrum von <math>A</math> kontinuierlich sein oder sich in einem Punkt häufen und man ersetzt obige Summe durch einen kontinuierlichen Summationsbegriff, nämlich durch ein (operatorwertiges) Integral.
+
+* Jeder [[normaler Operator|normale Operator]] <math>A</math> eines Hilbertraumes bestimmt ein Spektralmaß. Nach dem [[Spektralsatz]] für normale Operatoren ist der Operator <math>A</math> eindeutig durch dieses Spektralmaß beschrieben.
+
+* Es sei [[Lp-Raum|L<sup>2</sup>[0,1]]] der Hilbertraum der im [[Lebesgue-Integral|Lebesgueschen Sinne]] quadrat-summierbaren Funktionen auf dem Einheitsintervall <math>[0,1]</math> und <math>\mathcal{B}[0,1]</math> die Borelalgebra von <math>[0,1]</math>. Für eine [[Wesentliches Supremum|wesentlich beschränkte]] Funktion <math>f</math> auf <math>[0,1]</math> bezeichne <math>M_f</math> den durch Multiplikation mit <math>f</math> induzierten Operator auf <math>L^2[0,1]</math>. Bezeichnet <math>\chi_\Omega</math> die [[Charakteristische Funktion (Mathematik)|charakteristische Funktion]] für eine Borelmenge <math>\Omega</math> des Einheitsintervalls und setzt man <math>E(\Omega):=M_{\chi_{\Omega}}</math>, so wird hierdurch ein Spektralmaß <math>E</math> für das Tupel <math>([0,1],\mathcal{B}([0,1]),L^2[0,1])</math> definiert. Dieses ist das Spektralmaß des Multiplikationsoperators <math>M_{id}</math>.
+
+== Integration bezüglich eines Spektralmaßes ==
+
+Es sei <math>\left(X,A,H,E\right)</math> ein Spektralmaßraum. Mithilfe der zu <math>E</math> assoziierten komplexen Maße <math>E_{x,y}</math> kann man für gewisse <math>\mathcal{A}</math>-[[Messbare Funktion|messbare]] Funktionen <math>f\colon X\rightarrow\mathbb{C}</math> einen (in der Regel unbeschränkten) linearen ''Operator''
+
+:<math>\int_X f\,dE</math>
+
+des Hilbertraumes <math>H</math> erklären. Dieser ''Operator'' wird als ''Spektralintegral'' von <math>f</math> und der Prozess, durch den er aus <math>f</math> entsteht, als Integration von <math>f</math> bzgl. des Spektralmaßes <math>E</math> bezeichnet.
+
+== Spektralmaß eines normalen Operators ==
+
+Es seien <math>H</math> ein Hilbertraum und <math>A\in L(H)</math> ein normaler Operator mit [[Spektrum (Operatortheorie)|Spektrum]] <math>\sigma\left(A\right)</math>. Dann erklärt man wie folgt ein Spektralmaß <math>E\colon\mathcal{B}(\sigma(A))\rightarrow L(H)</math> auf der [[Borelsche σ-Algebra|Borelalgebra]] <math>\mathcal{B}(\sigma(A))</math> von <math>\sigma\left(A\right)</math>. Es sei
+<math>\pi_A\colon\mathcal{M}_{\infty}(\sigma(A))\rightarrow L(H)</math> der [[Beschränkter Borel-Funktionalkalkül|Funktionalkalkül der beschränkten Borelfunktionen]] von <math>A</math>. Da <math>\pi_A</math> ein [[Morphismus]] von <math>C^*</math>-Algebren ist, ist für jede [[Borelsche σ-Algebra|Borelmenge]] <math>\Omega</math> des Spektrums von <math>A</math> durch <math>E\left(\Omega\right):=\pi_A(\chi_{\Omega})</math> eine orthogonale Projektion von <math>H</math> gegeben. Man kann zeigen, dass <math>E\colon\mathcal{B}(\sigma(A))\rightarrow L(H)</math> ein Spektralmaß ist, das Spektralmaß des normalen Operators <math>A</math>. Der [[Spektralsatz]] für normale Operatoren besagt nun, dass
+
+:<math>A=\int_{\sigma(A)}\lambda\,dE(\lambda)=\int_{\sigma(A)}id_{\sigma(A)}\,dE</math>
+
+gilt. Dabei steht auf der rechten Seite dieser Gleichung das Spektralintegral der beschränkten Borelfunktion <math>id_{\sigma\left(A\right)}</math> bzgl. des Spektralmaßes <math>E</math>.
+
+== Spektralschar ==
+{{Anker|Spektralschar}}
+=== Definition der Spektralschar ===
+
+Eine Familie <math>\{E_{\lambda}\,|\,\lambda\in\mathbb{\R}\}</math> von orthogonalen Projektoren <math>E_{\lambda}\colon H\rightarrow H</math> heißt eine ''Spektralfamilie'' oder ''Spektralschar'', wenn die folgenden Bedingungen erfüllt sind:
+* <math>\lim_{\lambda\rightarrow -\infty}E_{\lambda}=0</math>.
+* <math>\lim_{\lambda\rightarrow +\infty}E_{\lambda}=id_H</math>.
+* Die Familie <math>E</math> ist ''rechtsseitig stetig'', in dem Sinne dass <math>\lim_{\lambda\rightarrow \mu+}E_{\lambda}=E_{\mu}</math> gilt.
+* Die Familie <math>E</math> ist ''monoton wachsend'': Gilt <math>\lambda\leq\mu</math>, so gilt <math>E_{\lambda}\leq E_{\mu}</math>. Diese Bedingung ist äquivalent zu der folgenden Bedingung: Für alle <math>\lambda,\mu\in\mathbb{R}</math> gilt <math>E_{\lambda}E_{\mu}=E_{\mu}E_{\lambda}=E_{min\{\lambda,\mu\}}</math>.
+Dabei sind alle auftretenden [[Grenzwert (Folge)|Limiten]] im Sinne der [[starke Operatortopologie|starken Operatortopologie]], also punktweise zu betrachten.
+
+=== Beziehung zum Spektralmaß ===
+Der Begriff der Spektralfamilie ging historisch dem Begriff des Spektralmaßes voraus und wurde von [[John von Neumann]] unter der Bezeichnung Zerlegung der Einheit eingeführt. Der Zusammenhang zwischen beiden Begriffen ist wie folgt gegeben: Zu jedem ''reellen'' Spektralmaß <math>E</math> gehört genau eine Spektralschar <math>\{E_{\lambda}\,|\,\lambda\in\mathbb{\R}\}</math> und umgekehrt. Dabei bestimmen sich das Spektralmaß <math>E</math> und die Spektralschar <math>\{E_{\lambda}\,|\,\lambda\in\mathbb{\R}\}</math> gegenseitig durch die Beziehung
+
+:<math>E_{\lambda}=E((-\infty,\lambda])\quad,\quad\lambda\in\mathbb{R}.</math>
+
+Der Träger der Spektralschar <math>\{E_{\lambda}\,|\,\lambda\in\mathbb{\R}\}</math> ist
+die Menge
+
+:<math>\overline{\{\lambda\in\mathbb{R}\,|\,E_{\lambda}\neq 0, E_{\lambda}\neq I\}} .</math> 
+
+Mithilfe einer Spektralschar, deren Träger [[kompakter Raum|kompakt]] ist, kann man in Anlehnung an das [[Stieltjesintegral|Stieltjes-Integrals]] für eine stetige Funktionen <math>f\colon\mathbb{R}\rightarrow\mathbb{R}</math> einen, als
+
+:<math>\int_{-\infty}^{+\infty}f(\lambda)\,dE_{\lambda}</math>
+
+notierten, Operator definieren. Dieser ist eindeutig dadurch bestimmt, dass er die Beziehung
+
+:<math>\left\langle\bigg(\int_{-\infty}^{+\infty}f(\lambda)\,dE_{\lambda}\bigg)x,y\right\rangle=\int_{-\infty}^{+\infty}f(\lambda)\,d\langle E_{\lambda}x,y\rangle\quad,\quad x,y\in H</math>
+
+erfüllt, wobei nun rechter Hand ein herkömmliches [[Stieltjesintegral|Stieltjes-Integral]] steht.
+Es gilt dann
+
+:<math>\int_{-\infty}^{+\infty}f(\lambda)\,dE_{\lambda}=\int_{\mathbb{R}}f(\lambda)\,dE(\lambda)</math>,
+
+wenn <math>E</math> das zu
+<math>\{E_{\lambda}\,|\,\lambda\in\mathbb{\R}\}</math> gehörige Spektralmaß bezeichnet.
+
+== Spektralmaß eines beschränkten selbstadjungierten Operators ==
+
+Die Spektralschar eines beschränkten selbstadjungierten Operators hat kompakten Träger in <math>[m,M]</math>, wobei
+
+: <math>m=\inf_{||x||=1}\langle Ax,x\rangle</math>
+
+bzw.
+
+: <math>M=\sup_{||x||=1}\langle Ax,x\rangle</math>
+
+sei. <math>E_{\lambda}</math> wird manchmal als Spektralprojektion bezeichnet. Man stellt sich das Bild dieser orthogonalen Projektion als eine Art verallgemeinerten Eigenraum vor.
+
+== Spektralmaß unbeschränkter selbstadjungierter Operatoren (Quantenmechanik) ==
+
+Die messbaren Größen der [[Quantenmechanik]] entsprechen (fast ausschließlich unbeschränkten, dicht definierten) [[Wesentlich selbstadjungierter Operator|wesentlich selbstadjungierten Hilbertraum-Operatoren]] auf [[Separabler Raum|separablen]] Hilberträumen („Observablen“, → [[Mathematische Struktur der Quantenmechanik]]), und zwar mit einer Spektralzerlegung in drei Teile, im Einklang mit den obigen Aussagen:
+
+# Der erste Anteil ist das Punktspektrum (das Spektrum ist abzählbar; die Physiker bezeichnen es irreführenderweise als „diskret“). Hier hat man es mit ''Summen'' zu tun.
+# Der zweite Anteil ist das absolut-kontinuierliche Spektrum (das Spektrum ist kontinuierlich-überabzählbar; die Physiker nennen es einfach „kontinuierlich“). An die Stelle von Summen treten hier ''gewöhnliche Integrale''.
+# Sehr selten kommt ein singulär-kontinuierlicher Spektralanteil hinzu (das Spektrum ist eine Cantormenge). Hier muss man mit ''[[Stieltjesintegral|Stieltjes-Integralen]]'' arbeiten (erzeugt durch nicht-differenzierbare monoton-wachsende Funktionen).
+
+Alle Observablen zeigen eine solche Aufteilung und besitzen übliche Spektralmaße und übliche Spektralprojektionen. Die oben genannte Kompaktheit des Spektrums gilt aber nicht.
+
+Die Aufteilung in drei Teile ergibt insgesamt, bei Gewichtung mit den Quadraten aus den Beiträgen der Eigenfunktionen bzw. der verallgemeinerten Eigenfunktionen, genau den Wert 1, im Einklang mit der Wahrscheinlichkeitsinterpretation der Quantenmechanik.
+
+Im Fall eines reinen Punktspektrums entsprechen die Spektraleigenschaften dem Postulat von der ''Vollständigkeit der Eigenfunktionen (Entwicklungssatz)''. Im Falle eines zusätzlichen absolut-kontinuierlichen Spektralanteils arbeiten die Physiker, wie erwähnt, mit sog. ''verallgemeinerten Eigenfunktionen''
+und ''Wellenpaketen'' (der Zusammenhang mit dem Spektralmaß ergibt sich aus der [[Distribution (Mathematik)|Distributionstheorie]] über sog. [[Israel Gelfand|Gelfandsche Raumtripel]]). 
+Ein singulär-kontinuierlicher Spektralanteil wird gewöhnlich überhaupt nicht diskutiert, außer z. B. in Kristallen mit speziellen „inkommensurablen“ Magnetfeldern. Näheres in einschlägigen Lehrbüchern der Quantenmechanik und der Maßtheorie reeller Funktionen.
+
+== Literatur ==
+* [[John B. Conway]]: ''A Course in Functional Analysis'' (= ''Graduate Texts in Mathematics.'' Bd. 96). 2. Auflage. Springer, New York u. a. 1990, ISBN 0-387-97245-5.
+<!-- :<small>Arbeitet mit Spektralmaßen (obige Alternativ-Definition).</small> -->
+
+* [[Paul Halmos|Paul R. Halmos]]: ''Introduction to Hilbert space and the theory of spectral multiplicity.'' Chelsea Publishing Company, New York NY 1951.
+* [[Harro Heuser]]: ''Funktionalanalysis. Theorie und Anwendung.'' 4., durchgesehene Auflage. B. G. Teubner, Wiesbaden 2006, ISBN 3-8351-0026-2.
+<!-- :<small>Arbeitet mit Spektralscharen und [[Stieltjes-Integral]].</small> -->
+* [[Josef-Maria Jauch]]: ''Foundations of quantum mechanics.'' Addison-Wesley, Reading MA u. a. 1968.
+* Uwe Krey, Anthony Owen: ''Basic Theoretical Physics. A Concise Overview.'' Springer, Berlin u. a. 2007, ISBN 978-3-540-36804-5, speziell: Part III. 
+* Reinhold Meise, Dietmar Vogt: ''Einführung in die Funktionalanalysis'' (= ''Vieweg-Studium.'' Bd. 62). Vieweg, Wiesbaden u. a. 1992, ISBN 3-528-07262-8.
+<!-- :<small>Arbeiten mit Spektralmaßen. Spektralscharen werden später ebenfalls eingeführt. </small> -->
+* [[John von Neumann]]: ''Allgemeine Eigenwerttheorie Hermitescher Funktionaloperatoren.'' In: ''[[Mathematische Annalen]].'' Bd. 102, Nr. 1, 1930, S. 49–131, {{doi|10.1007/BF01782338}}.
+<!-- :<small>Richtungsweisender Artikel: Während Hilbert noch mit Spektralformen arbeitet, wird hier erstmals der Begriff der Zerlegung der Einheit eingeführt. </small> -->
+* [[Eduard Prugovečki]]: ''Quantum Mechanics in Hilbert Space.'' 2nd edition, Dover edition, unabridged republication. Dover Publications, Mineola NY 2006, ISBN 0-486-45327-8.
+* [[Dirk Werner (Mathematiker)|Dirk Werner]]: ''Funktionalanalysis.'' 5., erweiterte Auflage. Springer, Berlin u. a. 2005, ISBN 3-540-21381-3.
+<!-- :<small>Arbeitet mit Spektralmaßen (obige Alternativ-Definition) und erklärt Spektralscharen im historischen Kontext. </small> -->
+
+{{SORTIERUNG:Spektralmass}}
+[[Kategorie:Funktionalanalysis]]
+[[Kategorie:Maß (Mathematik)]]
+[[Kategorie:Stochastik]]

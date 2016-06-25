@@ -1,0 +1,113 @@
+{{Dieser Artikel|behandelt den Ostteil Asiens. Zur fiktiven Supermacht Ostasien in Orwells Roman [[1984 (Roman)#Die drei Supermächte|1984]] siehe dort.}}
+'''Ostasien''' ist eine Subregion im Osten [[Asien]]s. Seine Grenzen gegenüber den benachbarten Großräumen werden unterschiedlich gezogen.
+{| class="wikitable" style="width: 310px; float: right; margin: 2mm"
+|-
+! style="text-align: center; background: #ccccff" colspan="2" | Ostasien
+|-
+| colspan="2" | [[Datei:East Asia topographic map.png|310px|Topografische Karte von Ostasien]]<br /><center>Ostasien</center>
+|-
+! style="text-align: center; background: #ccccff" colspan="2" | [[Chinesische Sprache|Chinesische Bezeichnung]]
+|-
+| [[Langzeichen]]
+| {{zh|kurz=|c=東亞}}
+|-
+| [[Kurzzeichen]]
+| 东亚
+|-
+| [[Pinyin|Pinyin (Mandarin)]]
+| Dōngyà
+|-
+| [[Jyutping|Jyutping (Kantonesisch)]]
+| dung1 aa3
+|-
+! style="text-align: center; background: #ccccff" colspan="2" | [[Japanische Sprache|Japanische Bezeichnung]]
+|-
+| [[Kanji]]
+| {{lang|ja|東アジア（東亜細亜） oder 東亜}}
+|-
+| [[Japanische_Schrift#Kana|Kana]]
+| ひがしアジア oder とうあ
+|-
+| [[Japanische_Schrift#R.C5.8Dmaji|Rōmaji]]
+| Higashi Ajia oder Tōa
+|-
+! style="text-align: center; background: #ccccff" colspan="2" | [[Koreanische Sprache|Koreanische Bezeichnung]]
+|--
+| [[Hangeul]]
+| 동아시아 oder 동아
+|-
+| [[Hanja]]
+| 東아시아 oder 東亞
+|-
+| [[Revidierte Romanisierung]]
+| Dong Asia oder Dong A
+|-
+! style="text-align: center; background: #ccccff" colspan="2" | [[Vietnamesische Sprache|Vietnamesische Bezeichnung]]
+|-
+| [[Vietnamesische Schrift|Quốc Ngữ]]
+| Đông Á oder Á Đông
+|-
+| [[Vietnamesische Schrift#Chữ Nho und Hán Tự|Hán tự]]
+| 東亞 oder 亞東
+|}
+
+== Großes Modell und kleines Modell ==
+[[File:East Asia (orthographic projection).svg|mini|Ostasien (im engeren Sinne)]]
+Die geografische Abgrenzung Ostasiens ist umstritten. Das „kleine“ Modell zählt hierzu denjenigen Teil Asiens, der unter dem Einfluss des außertropischen [[Monsun]]s steht. Hierzu gehören die heutigen Staaten [[Volksrepublik China]] (mit [[Hongkong]] und [[Macau]], aber gelegentlich ohne [[Xinjiang]], [[Innere Mongolei]] und [[Autonomes Gebiet Tibet|Tibet]]), [[Republik China (Taiwan)|Taiwan]], [[Japan]], [[Nordkorea]] und [[Südkorea]]. [[Vietnam]] wird geographisch zu [[Südostasien]] gerechnet, gehört jedoch kulturell zu Ostasien.
+
+Das von [[Carl Ritter]] entwickelte „große“ Modell unterscheidet zwischen [[Nordostasien]] unter Einschluss der [[Mongolei]] und des pazifischen Küstengebiets Russlands östlich des [[Amur]] sowie [[Südostasien]].
+
+Im Allgemeinen wird der Begriff heute auf das „kleine“ Modell bezogen, das sich auch kulturhistorisch als derjenige Teil Asiens definieren lässt, der von der chinesischen Kultur (v.a. [[chinesische Schriftzeichen]], [[Daoismus]], [[Konfuzianismus]], [[Buddhismus]] der [[Mahayana]]-Richtung, [[Essstäbchen]]) geprägt wurde.
+
+Die zahlenmäßig größten Völker Ostasiens sind [[Han-Chinesen]] (vgl. [[Völker Chinas]]), [[Japaner]], [[Koreaner]] und [[Vietnamesen]].
+
+== Nordostasien als weit gefasster Begriff ==
+
+[[Nordostasien]] umfasst im weiteren Sinn ''[[Nordasien]] und Ostasien'', also den gesamten asiatischen Teil [[Russland]]s (Sibirien und Ferner Osten) und die [[Mongolei]] sowie [[China]], [[Japan]], [[Nordkorea]] und [[Südkorea]].
+
+''Im engeren Sinn'' ist nur das „eigentliche“ nördliche Ostasien gemeint: China (gelegentlich nur nördlich der [[Chinesische Mauer|Chinesischen Mauer]]), Japan, Korea, sowie der [[Ferner Osten (Föderationskreis)|fernöstliche Teil Russlands]].
+
+== In der Politik ==
+Am Ostasiengipfel (East Asia Summit, EAS) sind neben den ostasiatischen auch die südostasiatischen Staaten sowie Indien, Australien und die USA beteiligt.
+
+Die Ostasiatische Gemeinschaft (englisch: East Asian Community; EAC) ist ein geplanter Handelsblock, der die [[ASEAN-Freihandelszone]] oder den Ostasiengipfel (East Asia Summit, EAS) mit einschließt.
+
+[[Hans-Peter Bartels]] lenkt den Blick auf acht große Konflikte in Ostasien, die den Weltfrieden bedrohen.<ref>Hans-Peter Bartels: ''Schaut über den Ozean!'' [[Marineforum]] 2-2015, [[Editorial]].</ref>
+
+== Im Sport ==
+An den [[Ostasienspiele]]n nehmen derzeit folgende Staaten und Territorien teil:
+
+* {{CHN}}
+* {{GUM}}
+* {{HKG}}
+* {{JPN}}
+* {{PRK}}
+* {{KOR}}
+* {{CN-92}}
+* {{MNG}}
+* {{TPE}} (Republik China, Taiwan)
+
+== Russische Statthalterschaft ==
+[[Datei:LocationEastAsia.PNG|mini|Ostasien-Konzeptionen]]
+Ostasien wurde auch eine [[Russland|russische]] [[Statthalter]]schaft genannt, die zwischen 1903 und 1905 bestand und [[Russische Sprache|russisch]] ''Dalni Wostok'', d.&nbsp;h. Ferner Osten, hieß. Sie bestand aus dem [[Generalgouvernement]] [[Amur]], dem [[Pachtgebiet Kwantung]] und der restlichen [[Mandschurei]].
+
+== Siehe auch ==
+* [[Ferner Osten]]
+* [[CrossAsia]]
+* [[Umweltsituation in Ostasien]]
+
+== Weblinks ==
+{{Commonscat|Eastern Asia|Ostasien}}
+{{Wiktionary}}
+* {{GIGAGEO|RI03}}
+* [https://www.youtube.com/user/MichaelRogge/videos YT-Kanal mit vielen alten Filmen aus der Region]
+
+== Einzelnachweise ==
+<references />
+
+{{Navigationsleiste Regionen Asiens}}
+
+{{Normdaten|TYP=g|GND=4075727-4|VIAF=242096683}}
+
+[[Kategorie:Ostasien| ]]
+[[Kategorie:Region in Asien]]

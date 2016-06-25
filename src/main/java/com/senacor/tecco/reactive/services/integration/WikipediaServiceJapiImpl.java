@@ -13,7 +13,7 @@ public class WikipediaServiceJapiImpl implements WikipediaServiceJapi {
     private final Mediawiki wiki;
 
     public WikipediaServiceJapiImpl() {
-        this("http://de.wikipedia.org");
+        this("https://de.wikipedia.org");
     }
 
     public WikipediaServiceJapiImpl(String url) {

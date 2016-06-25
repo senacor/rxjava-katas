@@ -1,0 +1,52 @@
+Der '''Ortsoperator''' gehört in der [[Quantenmechanik]] zur Ortsmessung von [[Teilchen]]. 
+
+Der physikalische [[Quantenmechanischer Zustand|Zustand]] <math>\Psi</math> eines Teilchens ist in der Quantenmechanik mathematisch gegeben durch den zugehörigen Vektor eines [[Hilbertraum]]es&nbsp;'''H'''. Dieser Zustand wird folglich in der [[Bra-Ket-Notation]] durch den [[Vektor]] <math>|\Psi \rangle</math> beschrieben. Die [[Observable]]n werden durch [[selbstadjungiert]]e [[Operator (Mathematik)|Operator]]en auf&nbsp;'''H''' dargestellt.
+
+Speziell ist der Ortsoperator die Zusammenfassung der drei Observablen <math>\hat{\mathbf{x}} = (\hat{x}_1,\hat{x}_2,\hat{x}_3)</math>, so dass
+
+:<math>E(\hat{x}_j) = {\langle \hat{x}_j\,\Psi,\Psi \rangle}_\mathrm{H} \ ,\quad j = 1,2,3</math>
+
+der Mittelwert ([[Erwartungswert]]) der Messergebnisse der j-ten Ortskoordinate des Teilchens im Zustand <math>\Psi</math> ist. 
+
+== Definition und Eigenschaften ==
+* Die drei Ortsoperatoren sind selbstadjungierte Operatoren <math>\hat{x}_j</math>, die mit den ebenfalls selbstadjungierten [[Impulsoperator]]en <math>\hat{p}_k</math> die folgenden [[kanonische Vertauschungsrelationen|kanonischen Vertauschungsrelationen]] erfüllen:
+
+::<math> [\hat{x}_j,\hat{p}_k]=\mathrm i\,\hbar\,\delta_{jk}\ ,\quad
+[\hat{x}_j,\hat{x}_k]= 0 = [\hat{p}_j,\hat{p}_k]\ ,\quad j,k\in \{1,2,3\}</math>
+
+* Daraus folgt, dass die drei Ortskoordinaten gemeinsam messbar sind und dass ihr [[Spektrum (Operatortheorie)|Spektrum]] (Bereich der möglichen ''Messwerte'') aus dem gesamten Raum  <math>\mathbb{R}^3</math> besteht. Die möglichen Orte sind also nicht quantisiert, sondern [[Kontinuierliches Spektrum|kontinuierlich]].
+
+=== Ortsdarstellung ===
+Die Ortsdarstellung ist durch die Spektraldarstellung des Ortsoperators definiert. Der Hilbertraum <math>H = L^2(\R^3;\C)</math> ist der Raum der [[quadratintegrierbar]]en [[komplexe Funktion|komplexen Funktionen]] des Ortsraums <math>\R^3</math>, jeder Zustand <math>\Psi</math> ist durch eine Orts[[wellenfunktion]] <math>\psi(\mathbf{x})</math> gegeben. 
+
+Die Ortsoperatoren <math>\hat{\mathbf{x}} = (\hat{x}_1,\hat{x}_2,\hat{x}_3)</math> sind die ''Multiplikationsoperatoren'' mit den Koordinatenfunktionen, d.&nbsp;h. der Ortsoperator <math>\hat{x}_j</math> wirkt auf Ortswellenfunktionen <math>\psi(\mathbf{x})</math> durch die Multiplikation der Wellenfunktion mit der Koordinatenfunktion <math>x_j</math>
+
+::<math>(\hat{x}_j \, \psi)(\mathbf{x})= x_j \cdot \psi(\mathbf{x})</math>
+
+Dieser Operator <math>\hat{x}_j</math> ist als [[Selbstadjungierter_Operator#Multiplikationsoperator|Multiplikationsoperator]]
+ein [[dicht definierter Operator]] und [[Abgeschlossener Operator|abgeschlossen]].
+Er ist auf dem Unterraum <math>D=\{\psi \in H \, | \, x\cdot\psi \in H \}</math> definiert, der in H dicht liegt.
+
+Der Erwartungswert ist
+
+::<math>E(\hat{x}_j) = {\langle \hat{x}_j\,\Psi,\Psi \rangle}_{L^2} =
+\int_{\R^3} x_j\,\psi(\mathbf{x})\,\overline{\psi(\mathbf{x})} \, \mathrm{d} x = \int_{\R^3} x_j \, |\psi(\mathbf{x})|^2 \mathrm{d} x</math>
+
+Der [[Impulsoperator]] wirkt auf Ortswellenfunktionen (bei geeigneter Wahl der [[Welle #Phase|Phasen]]) als [[Differentialoperator]]:
+
+::<math>\bigl(\hat{p}_k\psi \bigr)(\mathbf x)= -\mathrm i \, \hbar \, \frac{\partial}{\partial x_k} \psi (\mathbf x)</math>
+
+=== Impulsdarstellung ===
+In der Impulsdarstellung wirkt der Impulsoperator multiplikativ auf Impulswellenfunktionen <math>\tilde{\psi}(\mathbf{p})</math>
+
+::<math>(\hat{p}_k \, \tilde{\psi})(\mathbf{p}) = p_k \cdot \tilde{\psi}(\mathbf{p})</math>
+
+:und der Ortsoperator als Differentialoperator:
+
+::<math>(\hat{x}_j \, \tilde{\psi})(\mathbf{p}) = \mathrm i \, \hbar \, \frac{\partial}{\partial p_j} \tilde{\psi}(\mathbf{p})</math>
+
+== Literatur ==
+* {{Literatur|Autor=Jochen Pade|Titel=Quantenmechanik zu Fuß 1|Verlag=Springer|Ort=Berlin, Heidelberg|Jahr=2012|Seiten=|DOI=10.1007/978-3-642-25227-3|ISBN=978-3-642-25226-6}}
+
+[[Kategorie:Quantenmechanik]]
+[[Kategorie:Quantenchemie]]

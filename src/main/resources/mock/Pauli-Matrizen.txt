@@ -1,0 +1,327 @@
+Die '''Pauli-Matrizen''' <math>\sigma _1, \sigma _2, \sigma _3</math> (nach [[Wolfgang Pauli]]) sind spezielle [[Komplexe Zahl|komplexe]] [[Hermitesche Matrix|hermitesche]] 2×2-[[Matrix (Mathematik)|Matrizen]]. Zusammen mit der 2×2-[[Einheitsmatrix]], die in diesem Zusammenhang mit <math>\sigma _0</math> bezeichnet wird, bilden sie sowohl eine [[Basis (Vektorraum)|Basis]] des 4-dimensionalen reellen [[Vektorraum]]s aller komplexen hermiteschen 2×2-Matrizen als auch eine Basis des 4-dimensionalen komplexen Vektorraums aller komplexen 2×2-Matrizen.
+
+Sie wurden von [[Wolfgang Pauli]] 1927 zur Beschreibung des Spins eingeführt<ref>Wolfgang Pauli „Zur Quantenmechanik des magnetischen Elektrons“, Zeitschrift für Physik, Bd.43, 1927, S. 601</ref>, waren in der Mathematik aber auch schon vorher bekannt.
+
+== Definition ==
+Die Pauli-Matrizen lauten ursprünglich:
+:<math>
+\sigma_1 =
+\begin{pmatrix}
+0 & 1\\
+1 & 0
+\end{pmatrix},\quad
+
+\sigma_2 =
+\begin{pmatrix}
+0 & -\mathrm{i}\\
+\mathrm{i} & 0
+\end{pmatrix},\quad
+
+\sigma_3 =
+\begin{pmatrix}
+1 & 0\\
+0 & -1
+\end{pmatrix}.
+</math>
+Hierbei bezeichnet <math>\mathrm{i}</math> die [[imaginäre Einheit]]. Die Matrizen wurden ursprünglich in der Quantenmechanik eingeführt, um die grundlegenden Kommutationsregeln der Komponenten des Spin-Operators zu erfüllen (siehe unten).  Häufig wird, besonders in der relativistischen Quantenmechanik, noch die Einheitsmatrix als ''nullte'' Paulimatrix dazugenommen:
+:<math>
+\sigma_0 =
+\begin{pmatrix}
+1 & 0\\
+0 & 1
+\end{pmatrix}.
+</math>
+
+== Multiplikation ==
+Für die Multiplikation einer Pauli-Matrix mit einer anderen Pauli-Matrix ergibt sich aus den Rechenregeln der [[Matrixmultiplikation]] folgende Übersicht:
+{| class="wikitable" align="center" style="text-align:center;"
+! style="background-color:#E1E5FF" | <math>\cdot</math>
+! style="background-color:#E1E5FF" | <math>\sigma_0</math>
+! style="background-color:#E1E5FF" | <math>\sigma_1</math>
+! style="background-color:#E1E5FF" | <math>\sigma_2</math>
+! style="background-color:#E1E5FF" | <math>\sigma_3</math>
+|-
+! style="background-color:#E1E5FF" |  <math>\sigma_0</math>
+| <math>\sigma_0</math> || <math>\sigma_1</math> || <math>\sigma_2</math> || <math>\sigma_3</math>
+|-
+! style="background-color:#E1E5FF" | <math>\sigma_1</math>
+| <math>\sigma_1</math> || <math>\sigma_0</math> || <math>\mathrm{i}\,\sigma_3</math> || <math>-\mathrm{i}\,\sigma_2</math>
+|-
+! style="background-color:#E1E5FF" |  <math>\sigma_2</math>
+| <math>\sigma_2</math> || <math>-\mathrm{i}\,\sigma_3</math> || <math>\sigma_0</math> || <math>\mathrm{i}\,\sigma_1</math>
+|-
+! style="background-color:#E1E5FF" | <math>\sigma_3</math>
+| <math>\sigma_3</math> || <math>\mathrm{i}\,\sigma_2</math> || <math>-\mathrm{i}\,\sigma_1</math> || <math>\sigma_0</math>
+|-
+|}
+Das Produkt <math>\sigma_i\cdot \sigma_j</math> findet sich in der mit <math>\sigma_i</math> gekennzeichneten Zeile und der mit <math>\sigma_j</math> gekennzeichneten Spalte, zum Beispiel <math>\sigma_2\cdot \sigma_1 = -\mathrm{i}\,\sigma_3</math>.
+
+Damit ist klar, dass die Menge <math>\{\mathrm{i}^k\,\sigma_j\,|\, j,k = 0,1,2,3\}</math> mit der Matrixmultiplikation als Verknüpfung eine Gruppe mit 16 Elementen bildet.
+
+== Dekomposition von Matrizen ==
+Gegeben sei eine komplexe 2&times;2-Matrix <math>\mathbf{A}</math> mit den Elementen <math>\left\{ a_{ij}\ |\ i,j \in \left\{ 0,1 \right\}, a_{ij} \in \mathbb{C} \right\}</math>. Dann lassen sich komplexe Zahlen <math>\left\{ z_i\ |\ i \in \left\{ 0,1,2,3 \right\}, z_i \in \mathbb{C} \right\}</math> finden, für die gilt: 
+{|
+|-
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math>\mathbf{A}</math>
+| colspan="4" | <math>= \begin{pmatrix} a_{00} & a_{01} \\ a_{10} & a_{11} \end{pmatrix} 
+= 
+\begin{pmatrix}
+z_{0}+z_{3} & z_{1}-\mathrm{i}\,z_{2} \\
+z_{1}+\mathrm{i}\,z_{2} & z_{0}-z_{3} \\
+\end{pmatrix} </math>
+|-
+| || <math>=z_0\,\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} </math>
+|| <math>+\, z_1\,\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} </math>
+|| <math>+\, z_2\,\begin{pmatrix} 0 & -\mathrm{i} \\ \mathrm{i} & 0 \end{pmatrix} </math>
+|| <math>+\, z_3\,\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}</math>
+|-
+| || <math>=z_0\;\;\sigma_0 </math>
+|| <math>+\, z_1\;\;\sigma_1 </math>
+|| <math>+\, z_2\;\;\sigma_2 </math>
+|| <math>+\, z_3\;\;\sigma_3 \; .</math>
+|}
+
+Es gelten die Umrechnungen: 
+:<math>a_{00} = z_0 + z_3,\quad a_{01} = z_1 - \mathrm{i}\,z_2,\quad a_{10} = z_1 + \mathrm{i}\,z_2,\quad a_{11} = z_0-z_3,</math>
+bzw.:
+:<math>
+z_0 = \frac{a_{00} + a_{11}}{2},\quad 
+z_1 = \frac{a_{01} + a_{10}}{2},\quad 
+z_2 = \mathrm{i}\frac{a_{01} - a_{10}}{2},\quad 
+z_3 = \frac{a_{00} - a_{11}}{2}.
+</math>
+
+Eine komplexe 2&times;2-Matrix kann also als [[Linearkombination]] der <math>\sigma_i</math> geschrieben werden, und diese Darstellung ist eindeutig. M.&nbsp;a.&nbsp;W.: die Pauli-Matrizen bilden eine [[Basis (Vektorraum)|Basis]] des <math>\C</math>-Vektorraums (und [[Matrizenring]]s) <math>\C^{2\times 2}</math>, und diese Basis ist eine [[Orthogonalsystem|orthogonal]]e unter dem [[Frobenius-Skalarprodukt]], welch letzteres <math>\C^{2\times 2}</math> zu einem [[Hilbertraum]] macht.
+
+Die Umrechnungen definieren einen [[Ring (Algebra)|Ring]][[isomorphismus]]
+: <math>\C^{2\times 2} \to \C^{4}</math>
+mit der üblichen [[Vektor#Addition und Subtraktion|Vektoraddition]], der üblichen <math>\C</math>-[[Skalarmultiplikation]] und der Vektor-Multiplikation
+{|
+|-
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math>(x_0,x_1,x_2,x_3)\star (y_0,y_1,y_2,y_3) := (</math>
+|| <math>x_0 y_0 + \, x_1 y_1 + \, x_2 y_2 + \, x_3 y_3,</math>
+|-
+| || <math>x_0 y_1 + \, x_1 y_0 + \mathrm{i} x_2 y_3 - \mathrm{i} x_3 y_2,</math>
+|-
+| || <math>x_0 y_2 - \mathrm{i} x_1 y_3 + \, x_2 y_0 + \mathrm{i} x_3 y_1,</math>
+|-
+| || <math>x_0 y_3 + \mathrm{i} x_1 y_2 - \mathrm{i} x_2 y_1 + \, x_3 y_0 \, )</math>
+|}
+in <math>\C^4.</math> Zwei Vektoren sind genau dann miteinander vertauschbar, wenn
+:<math>\begin{align}
+    & x_2 y_3 - x_3 y_2 = \begin{vmatrix} x_2 & x_3 \\ y_2 & y_3 \end{vmatrix} = 0 \\
+    & x_3 y_1 - x_1 y_3 = \begin{vmatrix} x_3 & x_1 \\ y_3 & y_1 \end{vmatrix} = 0 \\
+    & x_1 y_2 - x_2 y_1 = \begin{vmatrix} x_1 & x_2 \\ y_1 & y_2 \end{vmatrix} = 0 , 
+\end{align}</math>
+wenn also die Vektorteile <math>(x_1,x_2,x_3)</math> und <math>(y_1,y_2,y_3)</math> [[Lineare Unabhängigkeit|<math>\C</math>-linear voneinander abhängen]].
+
+Die [[inverse Matrix]] von <math>\mathbf{A}=z_0\,\sigma_0 + z_1\,\sigma_1 + z_2\,\sigma_2 + z_3\,\sigma_3</math> berechnet sich im Fall von <math>z_0^2 - z_1^2 - z_2^2 - z_3^2 \ne 0</math> hieraus zu
+:<math>\mathbf{A}^{-1} = \frac{z_0\,\sigma_0 - z_1\,\sigma_1 - z_2\,\sigma_2 - z_3\,\sigma_3}{z_0^2 - z_1^2 - z_2^2 - z_3^2}.</math>
+
+=== Hermitesche 2&times;2-Matrizen ===
+Die Teilmenge der hermiteschen 2&times;2-Matrizen, also der Matrizen <math>\mathbf{A}</math> mit
+:<math>\mathbf{A} = \overline{\mathbf{A}}^{\mathrm T},</math>
+ist ein <math>\R</math>-Untervektorraum, für den die Pauli-Matrizen ebenfalls eine Basis bilden, die Koeffizienten <math>z_i</math> sind aber reell. Anders gesagt: es gibt bei hermiteschen 2&times;2-Matrizen vier (reelle) freie Parameter, da <math>a_{00}</math> und <math>a_{11}</math> reell sind und <math>a_{01} = \overline{a_{10}}</math>.
+
+Das Produkt zweier hermitescher Matrizen ist hermitesch, wenn sie kommutieren. Der Untervektorraum ist also kein (Unter)ring.
+
+=== Isomorphie zu den Quaternionen ===
+[[Ring (Algebra)|(Unter)ring]] ist aber ein anderer Untervektorraum von <math>\C^4</math>, der sich durch Koeffizienten <math>z_0\in\R,</math> <math>z_1\in \mathrm i\R,</math> <math>z_2\in \mathrm i\R,</math> <math>z_3\in \mathrm i\R</math> von <math>(\sigma_0, \sigma_1, \sigma_2, \sigma_3)</math> aufspannen lässt. Er ist ebenfalls mit der <math>\R</math>-Skalarmultiplikation verträglich und zusätzlich hinsichtlich der Multiplikation <math>\star</math> abgeschlossen. Dieser <math>\R</math>-Untervektorraum ist [[isomorph]] zu den [[Quaternionen#Komplexe Matrizen|Quaternionen]] <math>\mathbb H</math>.
+
+Als Basis für reelle Koeffizienten kann man die mit der imaginären Einheit multiplizierten Pauli-Matrizen zusammen mit der Einheitsmatrix nehmen, also die Menge <math>\{\sigma_0, \mathrm i \sigma_1, \mathrm i \sigma_2, \mathrm i \sigma_3\}</math>, mit der isomorphen Zuordnung:
+:<math>
+1 \mapsto \sigma_0, \quad
+i_{\mathbb H} \mapsto - \mathrm i \sigma_1, \quad
+j_{\mathbb H} \mapsto - \mathrm i \sigma_2, \quad
+k_{\mathbb H} \mapsto - \mathrm i \sigma_3,
+</math>
+mit <math>i_{\mathbb H},j_{\mathbb H},k_{\mathbb H}</math> als den bekannten Einheitsquaternionen. Vor diese Zuordnung lässt sich jeder der 24 [[Quaternionengruppe#Automorphismen|Automorphismen der Quaternionengruppe <big>Q</big><sub>8</sub>]] schalten. So kann auch ein Isomorphismus „in umgekehrter Ordnung“ gebaut werden:<ref>Mikio Nakahara: ''Geometry, topology, and physics'', CRC Press, 2003, Seiten xxii ff ([http://books.google.com/books?id=cH-XQB0Ex5wC&pg=PR22 Google Books]).</ref>
+:<math>
+1 \mapsto \sigma_0, \quad
+i_{\mathbb H} \mapsto +\mathrm i \sigma_3, \quad
+j_{\mathbb H} \mapsto +\mathrm i \sigma_2, \quad
+k_{\mathbb H} \mapsto +\mathrm i \sigma_1.
+</math>
+
+== Anwendung ==
+In der Quantenphysik, in der [[Observable]]n hermitesche Operatoren bzw. Matrizen entsprechen, wird der  [[Drehimpulsoperator]] <math>\hat S_i ,\ i\in\{1,2,3\}</math> von [[Spin]]-½-Zuständen, beispielsweise bei [[Elektron]]en, durch die Paulimatrizen dargestellt:
+
+:<math>\hat S_i \doteq \tfrac{\hbar}{2} \sigma _i</math>,
+wobei <math>\doteq</math> „wird dargestellt durch“ bedeutet.
+
+In der relativistischen Quantenmechanik, wo man entsprechend dem relativistischen Vierervektor Formalismus vier Raum-Zeit bzw. Energie-Impuls Variablen hat, tritt die Einheitsmatrix gleichberechtigt zu den drei Pauli-Matrizen (als „nullte“ Pauli-Matrix) und es wird mit ihrer Hilfe die [[Dirac-Gleichung]] mit den [[Dirac-Matrizen]] aufgebaut.
+
+Direkt tauchen die Pauli-Matrizen in der [[Pauli-Gleichung]] zur quantenmechanischen Beschreibung von Teilchen mit Spin im Magnetfeld auf, die sich aus der nichtrelativistischen Reduktion der Diracgleichung ergibt, und in der Beschreibung von [[Majorana-Fermion]]en (Majorana-Gleichung).
+
+== Darstellung ==
+Die Pauli-Matrizen können neben der Darstellung als Matrizen mit Hilfe der [[Dirac-Notation]] dargestellt werden: Dabei können für die Linearkombination entweder die Standard-Basisvektoren oder die Eigenvektoren der Pauli-Matrizen verwendet werden.
+
+{| class="wikitable"
+|-
+! Pauli-Matrix
+! Matrix
+! Linearkombination (Standard-Basisvektoren)
+! Linearkombination (Eigenvektoren)
+|-
+| <math>\sigma_1=\sigma_x</math>
+| <math>\begin{pmatrix}0 & 1\\1 & 0 \end{pmatrix}</math>
+| <math>|0\rangle\langle1|+|1\rangle\langle0|</math>
+| <math>|+\rangle\langle+|\,-\,|-\rangle\langle-|</math>
+|-
+| <math>\sigma_2=\sigma_y</math>
+| <math>\begin{pmatrix}0 & -\mathrm i\\\mathrm i & 0 \end{pmatrix}</math>
+| <math>\mathrm i \left( |1\rangle\langle0| - |0\rangle\langle1| \right)</math>
+| <math>|\phi^+\rangle\langle\phi^+|-|\phi^-\rangle\langle\phi^-|</math>
+|-
+| <math>\sigma_3=\sigma_z</math>
+| <math>\begin{pmatrix}1 & 0\\0 & -1 \end{pmatrix}</math>
+| <math>|0\rangle\langle0|-|1\rangle\langle1|</math>
+| <math>|0\rangle\langle0|-|1\rangle\langle1|</math>
+|}
+
+Die verwendeten Vektoren sind wie folgt definiert, wobei die verwendeten Kets durch Vektoren des <math>\C ^2</math> dargestellt werden, was durch „<math>\doteq</math>“ gekennzeichnet ist:
+:<math>\begin{align}
+|0\rangle&=|s_z+\rangle \doteq \begin{pmatrix}1\\0\end{pmatrix} ,&
+|1\rangle&=|s_z-\rangle \doteq \begin{pmatrix}0\\1\end{pmatrix} ,\\[0.5em]
+|+\rangle& \doteq \frac{1}{\sqrt2}\begin{pmatrix}1\\1\end{pmatrix},&
+|-\rangle& \doteq \frac{1}{\sqrt2}\begin{pmatrix}1\\-1\end{pmatrix},\\[0.5em]
+|\phi^+\rangle& \doteq \frac{1}{\sqrt2}\begin{pmatrix}1\\\mathrm i\end{pmatrix},&
+|\phi^-\rangle& \doteq \frac{1}{\sqrt2}\begin{pmatrix}1\\-\mathrm i\end{pmatrix}
+\end{align}
+</math>
+
+== Eigenschaften ==
+Die Pauli-Matrizen sind [[Hermitesche Matrix|hermitesch]] und [[unitäre Matrix|unitär]]. Daraus folgt mit dem durch <math>\sigma_0:=
+\begin{pmatrix}
+1 & 0\\
+0 & 1
+\end{pmatrix}</math> definierten vierten Basiselement
+:<math>\sigma_1^2 = \sigma_2^2 = \sigma_3^2 = \sigma_0^2 = \sigma_0.</math>
+
+Die [[Determinante]]n und [[Spur (Mathematik)|Spuren]] der Pauli-Matrizen sind
+:<math>\begin{matrix}
+\det \sigma_i &=& -1 & \\[1ex]
+\operatorname{tr} \sigma_i &=& 0 & \quad \mbox{für}\ i = 1, 2, 3.
+\end{matrix}</math>
+
+Aus Obigem folgt, dass jede Pauli-Matrix <math>\mathbf{\sigma}_i</math> die [[Eigenwert]]e +1 und -1  besitzt.
+
+Des Weiteren:
+:<math>\sigma_1 \, \sigma_2 \, \sigma_3 = \mathrm i \, \sigma_0</math>
+
+Die Pauli-Matrizen erfüllen die algebraische Relation
+:<math>\sigma_i \, \sigma_j  = \delta_{ij}\sigma_0 + \mathrm i\, \sum_{k=1}^3 \epsilon_{ijk}\; \sigma_k \quad \mbox{für}\ i,j = 1, 2, 3\,</math>
+(<math>\epsilon_{ijk}</math> ist das [[Levi-Civita-Symbol]]), also insbesondere bis auf einen Faktor 2 dieselben Relationen wie die Drehimpulsalgebra
+:<math>[\sigma_i\,,\sigma_j] = \sigma_i \, \sigma_j - \sigma_j \, \sigma_i = 2\, \mathrm i\, \sum_{k=1}^3 \epsilon_{ijk}\; \sigma_k \quad \mbox{für}\ i,j = 1, 2, 3.</math>
+und die [[Clifford-Algebra|Clifford]]- oder Dirac-Algebra <math>\mathrm{Cl}(0,3,\mathbb R)</math>
+:<math>\{\sigma_i\,,\sigma_j\} = \sigma_i \, \sigma_j + \sigma_j \, \sigma_i  = 2\, \delta_{ij}\sigma_0 \quad \mbox{für}\ i,j = 1, 2, 3.</math>
+
+Die Pauli-Matrizen gehören zum Spezialfall <math>l=1/2</math> von Drehimpulsoperatoren, die auf Basisvektoren <math>\Lambda_{m}</math> eines Drehimpuls-<math>l</math>-Multipletts mit Quantenzahlen <math>m</math> in Maßsystemen mit <math>\hbar=1</math> folgendermaßen wirken:
+:<math>L_3 \Lambda_{m}=m \Lambda_{m}\,,\ m\in\{-l,-l+1,\dots ,l\}\,,</math>
+:<math>L_+ \Lambda_{m}=\sqrt{(l-m)(l+m+1)}\, \Lambda_{m+1}\,,</math>
+:<math>L_- \Lambda_{m}=\sqrt{(l+m)(l-m+1)}\, \Lambda_{m-1}\,.</math>
+Dabei ist <math>2l+1</math> eine [[natürliche Zahl]] und für <math>m</math> treten die <math>2l+1</math> verschiedenen Quantenzahlen <math>m=-l,-l+1,\dots ,l</math> auf.
+Für <math>l=1/2</math> wirken die Drehimpulsoperatoren auf die Komponenten von Linearkombinationen der beiden Basisvektoren <math>\Lambda_{1/2}</math>
+und <math>\Lambda_{-1/2}</math> demnach durch Multiplikation mit den folgenden Matrizen
+:<math>L_3 = \frac{1}{2}\begin{pmatrix}1 & 0\\ 0& -1 \end{pmatrix}\,,
+L_+ = \begin{pmatrix}0 & 1 \\ 0 & 0 \end{pmatrix}\,,
+L_- = \begin{pmatrix} 0& 0\\ 1 & 0 \end{pmatrix}\,.</math>
+Mit <math>L_1=\frac{1}{2}(L_++L_-)</math> und <math>L_2=\frac{1}{2\mathrm i}(L_+-L_-)</math>
+ergibt sich dann, dass die Drehimpulsoperatoren auf die Komponenten von Spin-1/2-Zuständen durch Multiplikation mit den halben Pauli-Matrizen wirken.
+
+== Zugeordnete Drehgruppe, Zusammenhang mit Spin-1/2-Systemen ==
+
+Die lineare Hülle der mit <math>\mathrm i</math> multiplizierten<ref>Durch die Multiplikation mit <math>\pm\mathrm i</math> entstehen aus ''hermiteschen'' Matrizen ''schiefhermitesche'' Matrizen. Eine Darstellung mit Hilfe von [[Hermitescher Operator|Hermiteschen Operatoren]] und [[Hermitesche Matrix|Matrizen]] wird von Physikern bevorzugt, weil in der Quantenmechanik messbare Größen (sog. [[Observable]]n) stets durch Hermitesche Operatoren beschrieben werden.</ref>  Pauli-Matrizen <math>\mathrm i\,\sigma_1,\,\mathrm i\,\sigma_2,\,\mathrm i\,\sigma_3</math> ist mit der üblichen [[Matrizenmultiplikation]] eine [[Lie-Algebra]]. Aufgrund der mit <math>\vec n \cdot \vec{\sigma} \,= n_1 \sigma_1 + n_2 \sigma_2 + n_3 \sigma_3</math> für jeden Einheitsvektor <math>\vec n\in\mathbb R^3</math> geltenden Identität<ref name="MTW">[[Charles Misner]], [[Kip Thorne|Kip S. Thorne]], [[John Archibald Wheeler|John. A. Wheeler]]: ''Gravitation''. S. 1142, W. H. Freeman, San Francisco 1973, ISBN 0-7167-0344-0</ref>
+:<math>\exp\Bigl(\!\!-\mathrm i\,\tfrac{\alpha}{2} \; \vec n \cdot \vec{\sigma} \Bigr)
+= \sigma_0\,\cos\tfrac{\alpha}{2} - \mathrm{i}\, (\vec n \cdot \vec{\sigma})\, \sin\tfrac{\alpha}{2}</math>
+sind diese drei Matrizen die Generatoren der [[Spezielle unitäre Gruppe|komplexen Drehgruppe <big>SU(2)</big>]].
+
+Der Faktor 1/2 in der obigen Gleichung ist zwar mathematisch verzichtbar. Die Gleichung wird jedoch in der physikalischen Anwendung häufig in genau dieser Form benötigt. Denn (wie in der Einleitung erwähnt) stellen in der Quantenphysik die Matrizen <math>S_i = \tfrac{\hbar}{2} \sigma _i</math> die Operatoren für die Spinkomponenten eines [[Spin#Spinoperator und Basiszustände für Spin 1/2|Spin-1/2-Systems]] (beispielsweise eines [[Elektron]]s) dar. Andererseits beschreibt die durch den Exponentialausdruck gegebene Matrix die Veränderung des Spinzustands  bei einer räumlichen Drehung. <math>\alpha</math> ist dabei der Drehwinkel, <math>\vec n </math> die Drehachse. Für <math>\alpha = 2\pi</math> ergibt sich <math>\exp\bigl(\!\!-\mathrm i\,\pi \; \vec n \cdot \vec{\sigma} \bigr) = -\sigma_0</math>; d.&nbsp;h. der Zustandsvektor eines Spin-1/2-Systems wird durch Drehung um den Winkel <math>2\pi</math> in sein Negatives und erst durch Drehung um den Winkel <math>4\pi</math> wieder in sich selbst übergeführt („[[Spinor]]drehungen“).
+
+== Eigenvektoren ==
+
+Die Matrix <math>\sigma_3</math> hat die [[Eigenvektor]]en
+
+:<math> \chi_{31} = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad
+       \chi_{32} = \begin{pmatrix} 0 \\ 1 \end{pmatrix} </math>
+
+wie man leicht erkennen kann:
+
+:<math> \sigma_3 \chi_{31} = \begin{pmatrix} 1 & 0\\0 & -1 \end{pmatrix} \begin{pmatrix} 1 \\ 0 \end{pmatrix}
+                          = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad
+       \sigma_3 \chi_{32} = \begin{pmatrix} 1 & 0\\0 & -1 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \end{pmatrix}
+                          = \begin{pmatrix} 0 \\ -1 \end{pmatrix}
+                          = -1 \begin{pmatrix} 0 \\ 1 \end{pmatrix} </math>
+
+entsprechend den Eigenwerten <math>\pm 1</math>. Die Eigenvektoren von <math>\sigma_1</math> sind
+
+:<math> \chi_{11} = \begin{pmatrix} 1 \\ 1 \end{pmatrix}, \quad
+       \chi_{12} = \begin{pmatrix} 1 \\ -1 \end{pmatrix}: </math>
+
+:<math> \sigma_1 \chi_{11} = \begin{pmatrix} 0 & 1\\1 & 0 \end{pmatrix} \begin{pmatrix} 1 \\ 1 \end{pmatrix}
+                          = \begin{pmatrix} 1 \\ 1 \end{pmatrix}, \quad
+       \sigma_1 \chi_{12} = \begin{pmatrix} 0 & 1\\1 & 0 \end{pmatrix} \begin{pmatrix} 1 \\ -1 \end{pmatrix}
+                         = \begin{pmatrix} -1 \\ 1 \end{pmatrix}
+                         = -1 \begin{pmatrix} 1 \\ -1 \end{pmatrix} </math>
+
+und die Eigenvektoren von <math>\sigma_2</math>
+
+:<math> \chi_{21} = \begin{pmatrix} 1 \\ \mathrm i \end{pmatrix}, \quad
+       \chi_{22} = \begin{pmatrix} \mathrm i \\ 1 \end{pmatrix}: </math>
+
+:<math> \sigma_2 \chi_{21} = \begin{pmatrix} 0 & - \mathrm i\\ \mathrm i & 0 \end{pmatrix} \begin{pmatrix} 1 \\ \mathrm i \end{pmatrix}
+                          = \begin{pmatrix} 1 \\ \mathrm i \end{pmatrix}, \quad
+       \sigma_2 \chi_{22} = \begin{pmatrix} 0 & - \mathrm i\\ \mathrm i & 0 \end{pmatrix} \begin{pmatrix} \mathrm i \\ 1 \end{pmatrix}
+                         = \begin{pmatrix} - \mathrm i \\ -1 \end{pmatrix}
+                         = -1 \begin{pmatrix} \mathrm i \\ 1 \end{pmatrix} </math>
+
+== Kronecker-Produkt von Pauli-Matrizen ==
+In der Mathematik können mit Hilfe des [[Tensorprodukt]]s (Kronecker-Produkts) von Pauli-Matrizen (mit Einheitsmatrix) die Darstellungen der höheren [[Clifford-Algebra|Clifford-Algebren]] über den reellen Zahlen aufgebaut werden.
+
+Pauli-Matrizen können zur Darstellung von Hamilton-Operatoren und zur Näherung der [[Exponentialfunktion]] solcher Operatoren verwendet werden.
+Sind <math> \sigma_0 , \sigma_1 , \sigma_2 , \sigma_3 </math> die vier Pauli-Matrizen, so kann man mit Hilfe des [[Kronecker-Produkt]] höherdimensionale Matrizen erzeugen.
+:<math> p := \sigma_{\mu_{1}} \otimes \sigma_{\mu_{2}} \otimes ... \otimes \sigma_{\mu_{n}} \quad ; \quad \mu_{1},\mu_{2},...,\mu_{n} \in \{0,1,2,3\} \quad ; \quad n \in \N </math><br />
+Eigenschaften der Pauli-Matrizen vererben sich auf diese Matrizen.
+Sind <math> p_1</math> und <math> p_2 </math> zwei Kronecker Produkte von Pauli-Matrizen, so gilt:
+* <math> p_1 , p_2 </math> sind <math> 2^n \times 2^n </math> Matrizen
+* <math> p_1^2 = p_2^2 = 1 \qquad </math> (Die <math> 2^n \times 2^n </math> Einheitsmatrix)
+* <math> p_1 p_2 = p_2 p_1 </math> oder <math> p_1 p_2 = - p_2 p_1 \qquad </math> ([[Kommutativgesetz|Kommutativität]])
+* <math>\operatorname{Spur} \sigma_{\mu_1} \otimes \sigma_{\mu_2} \otimes ... \otimes \sigma_{\mu_n} = 2^{n} \delta_{\mu_1,0} \delta_{\mu_2,0} ... \delta_{\mu_n,0} </math>
+* Die Kronecker-Produkte von Pauli-Matrizen sind linear unabhängig und bilden eine Basis im Vektorraum der <math> 2^n \times 2^n </math>-Matrizen. Hamilton-Operatoren <math> H </math> vieler physikalischer Modelle lassen sich aufgrund der Basiseigenschaft als Summe solcher Matrizen ausdrücken ([[Linearkombination]]). Insbesondere lassen sich Erzeuger und Vernichter von [[Fermion]]en, die endlich viele Zustände einnehmen können, einfach durch sie ausdrücken.
+:<math> H = \sum_{k=0}^{N} h_{k} p_{k} \quad</math> mit <math>\quad N \in \N , h_{k} \in \R , p_{k} </math> ist Kronecker-Produkt von Pauli-Matrizen. 
+
+Beispiele für derartige Modelle sind [[Hubbard-Modell]], [[Heisenberg-Modell (Quantenmechanik)]] und [[Anderson-Modell]].
+
+Das Kronecker-Produkt von Pauli-Matrizen tritt bei der Beschreibung von Spin-1/2-Systemen auf, die aus mehreren Teilsystemen aufgebaut sind. Der Zusammenhang ist dadurch gegeben, dass das Tensorprodukt zweier Operatoren in der zugehörigen Matrixdarstellung gerade durch das Kronecker-Produkt der Matrizen gegeben ist (siehe [[Kronecker-Produkt#Zusammenhang mit Tensorprodukten]]). 
+
+=== Näherung der Exponentialfunktion des Hamilton-Operators ===
+Häufig interessiert man sich für die Exponentialfunktion des Hamilton-Operators.
+:<math> \exp\{-\beta H\} = \sum_{l=0}^{\infty} \frac{(-\beta)^l}{l!} \biggl( \sum_{k=0}^{N} h_{k} p_{k} \biggr)^l \quad \text{mit} \quad \beta \in \R </math>
+Aufgrund der Kommutativität kann man in einem Produkt die Matrizen beliebig anordnen.
+Ist <math> \pi </math> eine [[Permutation]], so ist:
+:<math> p_{\pi_{1}} p_{\pi_{2}} ... p_{\pi_{n}} = a p_{1} p_{2} ... p_{n} \quad \text{mit} \quad n \in \N , a \in \{1,-1\} </math><br />
+Deshalb existieren rationale Zahlen <math> E_{k_{1}k_{2}...k_{N}} </math> mit:
+:<math>
+\exp\{-\beta H\} = \sum_{k_{1}=0}^{\infty} \sum_{k_{2}=0}^{\infty} ... \sum_{k_{N}=0}^{\infty} E_{k_{1}k_{2}...k_{N}} (-\beta h_{1})^{k_{1}} (-\beta h_{2})^{k_{2}}...(-\beta h_{N})^{k_{N}} p_{1}^{k_{1}} p_{2}^{k_{2}} ... p_{N}^{k_{N}}
+</math>
+Diese rationalen Zahlen sind, von Ausnahmen abgesehen, schwer zu berechnen.
+
+Eine erste Näherung ergibt sich, indem man nur Summanden berücksichtigt, die aus kommutierenden Matrizen bestehen.
+:<math> E_{k_{1}k_{2}...k_{N}} = 0 </math> falls ein Paar <math> 1 \le a,b \le N </math> mit <math> p_{a} p_{b} = - p_{b} p_{a} </math> und <math> k_{a},k_{b} > 0 </math> existiert
+:<math> E_{k_{1}k_{2}...k_{N}} = \frac{1}{k_{1}!} \frac{1}{k_{2}!} ... \frac{1}{k_{N}!} </math> sonst <br />
+Die Näherung lässt sich weiter verbessern, indem man Paare, Tripel, … von nicht kommutierenden Matrizen berücksichtigt.
+
+== Literatur ==
+* Willi-Hans Steeb: ''Kronecker Product of Matrices and Applications''. B.I. Wissenschaftsverlag, Mannheim 1991, ISBN 3-411-14811-X.
+== Siehe auch ==
+* [[Gell-Mann-Matrizen]]
+
+== Weblinks ==
+* {{MathWorld|title=Pauli Matrices|urlname=PauliMatrices}}
+
+== Einzelnachweise und Kommentare ==
+<references />
+
+{{SORTIERUNG:PauliMatrizen}}
+[[Kategorie:Darstellungstheorie]]
+[[Kategorie:Quantenphysik]]

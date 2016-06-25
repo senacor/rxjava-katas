@@ -1,0 +1,227 @@
+'''Kumulanten''' sind in der [[Wahrscheinlichkeitstheorie]] und [[Statistik]] Kenngrößen der [[Wahrscheinlichkeitsverteilung|Verteilung]] einer [[Zufallsvariable]]n, die in Bezug auf die Summenbildung von [[Stochastisch unabhängige Zufallsvariablen|stochastisch unabhängigen]] Zufallsvariablen einfachen Rechengesetzen genügen. Die [[Folge (Mathematik)|Folge]] der Kumulanten beginnt mit dem [[Erwartungswert]] und der [[Varianz (Stochastik)|Varianz]].
+
+== Definition ==
+
+Ist <math> M_X(t)  </math> die [[momenterzeugende Funktion]] der Zufallsvariablen <math>X</math>, d.h. es ist
+:<math>M_X(t)=E(e^{tX})\,</math>, 
+
+so heißt die Funktion
+:<math> g_X(t)=\ln M_X(t)= \ln E(e^{tX})</math>
+
+''' Kumulantenerzeugende Funktion '''. Die <math>n</math>-te '''Kumulante''' <math>\kappa_n</math> der Verteilung von <math> X </math> ist dann definiert durch
+:<math>\kappa_n=\frac{\partial^n}{\partial t^n} g_X(t)\bigg|_{t=0}</math>.
+
+Alternativ lassen sich Kumulanten auch durch die [[Charakteristische Funktion (Stochastik)|charakteristische Funktion]] <math> G_X(t) </math> einer Zufallsvariablen <math>X</math> definieren.
+
+Die <math>n</math>-te Kumulante <math>\kappa_n</math> ist dann definiert durch
+
+:<math>\kappa_n=\frac{1}{i^n}\frac{\partial^n}{\partial t^n}\ln G_X(t)\bigg|_{t=0}</math>
+
+== Eigenschaften ==
+
+=== Verschiebungs-Invarianz ===
+
+Die Kumulanten werden auch als Semiinvarianten der Dichtefunktion <math>p(x)</math> bezeichnet, da sie sich, mit Ausnahme von <math>\kappa_1</math>, bei einer Verschiebung des [[Erwartungswert]]es nicht ändern. Sei <math>X</math> eine Zufallsvariable, dann gilt für eine beliebige Konstante <math>c\in \mathbb R</math>:
+
+:<math>\kappa_1(X + c) = \kappa_1(X) + c\,</math>
+:<math>\kappa_n(X + c) = \kappa_n(X) ~ \text{ mit } ~ n \ge 2\,</math>
+
+=== Homogenität ===
+
+Die <math>n</math>-te Kumulante ist [[Homogene Funktion|homogen]] vom Grad <math>n</math>, sei <math>c</math> eine beliebige Konstante, dann gilt: 
+
+:<math>\kappa_n(cX)=c^n\kappa_n(X)\,</math>
+
+=== Additivität ===
+
+Seien <math>X_1</math> und <math>X_2</math> [[Stochastisch unabhängige Zufallsvariablen|stochastisch unabhängige]] Zufallsvariablen, dann gilt für <math>Y=X_1+X_2</math>
+
+:<math>\kappa_{n}(Y)=\kappa_{n}(X_1)+\kappa_{n}(X_2)\,</math>
+
+Für unabhängige Zufallsvariablen ist die charakteristische Funktion ein Produkt <math>G_{Y}(k)=G_{X_{1}}(k)\cdot G_{X_{2}}(k)</math> und somit der Logarithmus eine Summe:
+
+:<math>\ln G_{Y}(k)=\ln G_{X_{1}}(k)+\ln G_{X_{2}}(k)=\sum_{n=1}^{\infty}\frac{(\mathrm{i}k)^{n}}{n!}\left[\kappa_{n}(X_{1})+\kappa_{n}(X_{2})\right]=\sum_{n=1}^{\infty}\frac{(\mathrm{i}k)^{n}}{n!}\kappa_{n}(Y)</math>
+
+Für die Summe <math>Y=\sum_{i=1}^{N}X_i</math> aus <math>N</math> stochastisch unabhängigen Zufallsvariablen <math>X_1, X_2, \dotsc, X_N</math> gilt: 
+
+:<math>\kappa_{n}(Y)=\sum_{i=1}^{N}\kappa_{n}(X_i)\,</math>
+
+=== Besonderheit der Gauß-Verteilung ===
+
+Für eine [[Gauß-Verteilung]] ist die charakteristische Funktion gleich <math>G(k)=\exp(\mathrm i m k-\sigma^2 k^2/2)</math> und somit die Kumulanten:
+
+:<math>\kappa_{1}=m\ ;\quad\kappa_{2}=\sigma^{2}\ ;\quad\kappa_{n\geq 3}=0</math>
+
+Alle Kumulanten größer als 2. Ordnung verschwinden. Diese Eigenschaft charakterisiert die Gauß-Verteilung.
+
+Man kann zeigen, dass
+
+* entweder alle Kumulanten außer den ersten beiden verschwinden
+* oder unendlich viele nichtverschwindende Kumulanten existieren.
+
+Anders ausgedrückt: Die Kumulanten generierende Funktion <math>\ln G(k)</math> kann kein endliches Polynom von Grad größer 2 sein.
+
+== Kumulanten und Momente ==
+
+=== Kumulanten als Funktion der Momente ===
+
+Bezeichne <math>m_n</math> das n-te [[Moment (Stochastik)|Moment]] einer Zufallsvariablen X. Durch <math>G(k)</math> lässt sich <math>m_n</math> darstellen als
+
+:<math>m_n=\frac{1}{i^n}\frac{\partial^n}{\partial k^n}G(k)\bigg|_{k=0}</math>
+
+Folglich lassen sich die Kumulanten durch die Momente <math>m_n</math> bzw. folgendermaßen ausdrücken: 
+
+:<math>\kappa_1=m_1\,</math> 
+
+:<math>\kappa_2=m_2-m_1^2\,</math>
+
+:<math>\kappa_{3}=m_{3}-3m_{2}m_{1}+2m_{1}^{3}\,</math>
+
+:<math>\kappa_{4}=m_{4}-4m_{3}m_{1}-3m_{2}^{2}+12m_{2}m_{1}^{2}-6m_{1}^{4}\,</math>
+
+:<math>\kappa_{5}=m_{5}+5m_{1}(6m_{2}^{2}-m_{4})-10m_{3}m_{2}+20m_{3}m_{1}^{2}-60m_{2}m_{1}^{3}+24m_{1}^{5}\,</math>
+
+Im Allgemeinen lässt sich die Abhängigkeit der Kumulanten von den Momenten durch folgende Rekursionsformel beschreiben:
+
+:<math>\kappa_{n}=m_{n}-\sum_{k=1}^{n-1}{n-1 \choose k-1}\kappa_{k}m_{n-k}</math>
+
+Alternativ lässt sich aus der [[Formel von Faà di Bruno]] die k-te Kumulante mittels der [[Bell-Polynom]]e <math> B_{n,k} </math> und der Momente <math> m_1, \dots, m_n </math> darstellen als
+:<math> \kappa_n=\sum_{k=1}^n(k-1)!(-1)^{k+1}B_{n,k}(m_1, \dots, m_{n-k+1}) </math>.
+
+Mit den zentralen Momenten <math>\mu_n</math> sind die Formeln meist kürzer: 
+:<math>\kappa_1=m_1\,</math>
+:<math>\kappa_2=\mu_2\,</math>
+:<math>\kappa_3=\mu_3\,</math>
+:<math>\kappa_4=\mu_4-3\mu_2^2\,</math>
+:<math>\kappa_5=\mu_5-10\mu_3\mu_2\,</math>
+:<math>\kappa_6=\mu_6-15\mu_4\mu_2-10\mu_3^2+30\mu_2^3\,</math>
+
+Von besonderer Bedeutung sind die ersten beiden Kumulanten: <math>\kappa_1</math> ist der Erwartungswert <math>m_1=E(X)</math> und <math>\kappa_2</math> ist die [[Varianz (Stochastik)|Varianz]] <math>\mu_2=V(X)</math>. Ab der vierten Ordnung stimmen Kumulante und zentrales Moment nicht mehr überein.
+
+=== Herleitung der ersten Kumulanten ===
+
+Man entwickelt <math>\ln G(k)</math> um <math>G(k)=1</math>
+
+:<math>\ln G(k)=\sum_{n=1}^{\infty}(-1)^{n+1}\frac{(G(k)-1)^{n}}{n}=(G(k)-1)-\frac{(G(k)-1)^{2}}{2}+\frac{(G(k)-1)^{3}}{3}\mp\dotsb</math>
+
+und setzt die Reihendarstellung von <math>G(k)</math>
+
+:<math>G(k)=\sum_{n=0}^{\infty}\frac{(\mathrm{i}k)^{n}}{n!}m_n=1+\mathrm{i}km_{1}+\frac{(ik)^{2}}{2}m_{2}+\frac{(ik)^{3}}{6}m_{3}+\dotsb</math>
+
+in obige Entwicklung ein
+
+:<math>\begin{align}
+\ln G(k)= & \left[\mathrm{i}km_{1}+\frac{(ik)^{2}}{2}m_{2}+\frac{(ik)^{3}}{6}m_{3}+\dotsb\right]\\
+ & -\frac{1}{2}\left[\mathrm{i}km_{1}+\frac{(ik)^{2}}{2}m_{2}+\dotsb\right]^{2}\\
+ & +\frac{1}{3}\left[\mathrm{i}km_{1}+\frac{(ik)^{2}}{2}m_{2}+\dotsb\right]^{3}\mp\dotsb\\
+= & \left[\mathrm{i}km_{1}+\frac{(ik)^{2}}{2}m_{2}+\frac{(ik)^{3}}{6}m_{3}+\dotsb\right]\\
+ & -\frac{1}{2}\left[(\mathrm{i}k)^{2}m^{2}_{1}+2\frac{(ik)^{3}}{2}m_{1}m_{2}+\frac{(ik)^{4}}{4}m^{2}_{2}+\dotsb\right]\\
+ & +\frac{1}{3}\left[(\mathrm{i}k)^{3}m^{3}_{1}+2\frac{(ik)^{4}}{2}m^{2}_{1}m_{2}+2\frac{(ik)^{5}}{4}m_{1}m^{2}_{2}+\frac{(ik)^{6}}{8}m^{3}_{2}+\dotsb\right]\mp\dotsb\end{align}</math>
+
+Sortiert man noch nach Potenzen von <math>k</math>, so erhält man die Kumulanten:
+
+:<math>\ln G(k)=\mathrm{i}k\underbrace{\left[m_{1}\right]}_{\kappa_{1}}+\frac{(ik)^{2}}{2}\underbrace{\left[m_{2}-m^{2}_{1}\right]}_{\kappa_{2}}+\frac{(ik)^{3}}{6}\underbrace{\left[m_{3}-3m_{1}m_{2}+2m^{3}_{1}\right]}_{\kappa_{3}}+\dotsb</math>
+
+=== Momente als Funktion der Kumulanten ===
+
+Das <math>n</math>-te Moment ist ein Polynom <math>n</math>-ten Grades der ersten <math>n</math> Kumulanten. Hier die ersten sechs Momente:
+
+:<math>m_1=\kappa_1\,</math>
+:<math>m_2=\kappa_2+\kappa_1^2\,</math>
+:<math>m_3=\kappa_3+3\kappa_2\kappa_1+\kappa_1^3\,</math>
+:<math>m_4=\kappa_4+4\kappa_3\kappa_1+3\kappa_2^2+6\kappa_2\kappa_1^2+\kappa_1^4\,</math>
+:<math>m_5=\kappa_5+5\kappa_4\kappa_1+10\kappa_3\kappa_2+10\kappa_3\kappa_1^2+15\kappa_2^2\kappa_1+10\kappa_2\kappa_1^3+\kappa_1^5\,</math>
+:<math>m_6=\kappa_6+6\kappa_5\kappa_1+15\kappa_4\kappa_2+15\kappa_4\kappa_1^2+10\kappa_3^2+60\kappa_3\kappa_2\kappa_1+20\kappa_3\kappa_1^3+15\kappa_2^3+45\kappa_2^2\kappa_1^2+15\kappa_2\kappa_1^4+\kappa_1^6.\,</math>
+
+Die Koeffizienten entsprechen genau denjenigen in der [[Formel von Faà di Bruno]]. Allgemeiner, ist das n-te Moment genau das nte [[Bell-Polynom|vollständige Bell-Polynom]] <math> B_n </math>, ausgewertet an den Stellen <math> \kappa_1, \dots, \kappa_n </math>:
+:<math>m_n=B_n(\kappa_1, \dots, \kappa_n) </math>.
+
+Um die zentralen Momente als Funktion der Kumulanten auszudrücken, vernachlässige in obigen Polynomen für die Momente alle Terme, bei denen <math>\kappa_1</math> als Faktor auftaucht.
+
+:<math>\mu_1=0\,</math>
+:<math>\mu_2=\kappa_2\,</math>
+:<math>\mu_3=\kappa_3\,</math>
+:<math>\mu_4=\kappa_4+3\kappa_2^2\,</math>
+:<math>\mu_5=\kappa_5+10\kappa_3\kappa_2\,</math>
+:<math>\mu_6=\kappa_6+15\kappa_4\kappa_2+10\kappa_3^2+15\kappa_2^3.\,</math>
+
+== Folgerungen ==
+
+Gegeben seien die identisch verteilten und stochastisch unabhängigen Zufallsvariablen <math>X_1, X_2, \dotsc, X_N</math>.
+
+=== Zentraler Grenzwertsatz ===
+
+Für die Zufallsvariable
+
+:<math>Y=\frac{1}{\sqrt{N}}(X_{1}+X_{2}+\dotsb+X_{N})\,</math>
+
+ergeben sich unter Ausnutzung der Eigenschaften Homogenität und Additivität folgende Kumulanten:
+
+:<math>\kappa_{n}(Y)=\frac{1}{\sqrt{N}^{n}} \sum_{i=1}^{N} \kappa_{n}(X_i) \approx \mathcal{O}(N^{1-n/2})\,</math>
+
+Die Ordnung ergibt sich, da die Summe über die Einzelkumulanten <math>\sum_{i=1}^{N}\kappa_{n}</math> von der Ordnung <math>\mathcal{O}(N)</math> ist. Hier die Ordnungen der ersten Kumulanten:
+
+:<math>\kappa_{1}(Y)=\mathcal{O}(N^{1/2})\ ,\quad\kappa_{2}(Y)=\mathcal{O}(N^{0})\ ,\quad\kappa_{3}(Y)=\mathcal{O}(N^{-1/2})\ ,\quad\kappa_{4}(Y)=\mathcal{O}(N^{-1})</math>
+
+Für <math>n\geq 3</math> ist die Ordnung <math>N</math> hoch einem negativen Exponenten und somit gilt im Grenzwert unendlich vieler Zufallsvariablen: 
+
+:<math>\lim_{N\to\infty}\kappa_{n}(Y)=0\quad\text{mit}\quad n\geq3</math>
+
+D. h. es bleiben nur die beiden ersten Kumulanten bzw. die beiden ersten Momente übrig. Die einzige Verteilung, die nur die erste und zweite Kumulante besitzt, ist die Gauß-Verteilung. Damit wird plausibel, dass die Summe beliebiger Zufallsvariablen geteilt durch die Wurzel der Anzahl gegen die Gauß-Verteilung konvergiert; dies ist der [[Zentraler Grenzwertsatz|Zentrale Grenzwertsatz]]. Um diese Plausibilitätsbetrachtung zu einem Beweis zu vervollständigen, bedarf es der Verwendung allgemeiner Gesetzmäßigkeiten von [[Charakteristische Funktion (Stochastik)|charakteristischen Funktionen]]. Die Gauß-Verteilung nimmt also eine besondere Stellung unter allen Verteilungen ein. Wirken bei einem Experiment viele stochastisch unabhängige Einflüsse, so kann man die Gesamtheit der Einflüsse durch eine Gaußsche Zufallsvariable darstellen.
+
+Als einfachen Spezialfall betrachte alle Zufallsvariablen als identisch <math>X_i=X</math> mit Mittelwert 0, Varianz <math>\sigma^2</math> und beliebigen höheren Momenten.
+
+:<math>\kappa_{1}(Y)=\frac{1}{\sqrt{N}}\sum_{i=1}^{N}0=0\ ,\quad\kappa_{2}(Y)=\frac{1}{N}\sum_{i=1}^{N}\sigma^{2}=\sigma^{2}\ ,\quad\kappa_{3}(Y)=\frac{1}{\sqrt{N}^3}\sum_{i=1}^{N}\kappa_{3}(X) =\frac{\kappa_{3}(X)}{\sqrt{N}} \underset{N\to\infty}{\longrightarrow}0</math>
+
+Für die Zufallsvariable <math>Z</math>
+
+:<math>Z:=Y-E(Y)=\frac{1}{\sqrt{N}}(X_{1}-E(X_{1})+X_{2}-E(X_{2})+\dotsb+X_{N}-E(X_{N}))\,</math>
+
+kann man gegenüber <math>Y</math> die Verschiebungsinvarianz der Kumulanten der Ordnung größer gleich 2 ausnutzen. Der einzige Unterschied zur Zufallsvariablen <math>Y</math> ist, dass Erwartungswert von <math>Z</math> Null ist, auch dann wenn die Erwartungswerte der <math>X_i</math> nicht verschwinden.
+
+:<math>\begin{align}
+\kappa_{1}(Z) & =\frac{1}{\sqrt{N}}\sum_{i=1}^{N}\underbrace{\kappa_{1}(X_{i}-E(X_{i}))}_{E(X_{i})-E(X_{i})}=0\\
+\kappa_{2}(Z) & =\frac{1}{N}\sum_{i=1}^{N}\kappa_{2}(X_{i}-E(X_{i}))=\frac{1}{N}\sum_{i=1}^{N}\kappa_{2}(X_{i})=\kappa_{2}(Y)=\frac{1}{N}\sum_{i=1}^{N}\sigma_{i}^{2}\overset{\text{ Spezialfall }}{\underset{\sigma_{i}=\sigma,\,\forall i}{=}}\sigma^{2}\\
+\kappa_{3}(Z) & =\frac{1}{\sqrt{N}^{3}}\sum_{i=1}^{N}\kappa_{3}(X_{i}-E(X_{i}))=\frac{1}{\sqrt{N}^{3}}\sum_{i=1}^{N}\kappa_{3}(X_{i})=\kappa_{3}(Y)\underset{N\to\infty}{\longrightarrow}0\end{align}
+</math>
+
+=== Gesetz der großen Zahlen ===
+
+Für die Zufallsvariable
+
+:<math>Y=\frac{1}{N}(X_{1}+X_{2}+\dotsb+X_{N})\,</math>
+
+ergeben sich unter Ausnutzung der Eigenschaften Homogenität und Additivität folgende Kumulanten:
+
+:<math>\kappa_{n}(Y)=\frac{1}{N^{n}} \sum_{i=1}^{N} \kappa_{n}(X_i) \approx \mathcal{O}(N^{1-n})\,</math>
+
+Die Ordnung ergibt sich, da die Summe über die Einzelkumulanten <math>\sum_{i=1}^{N}\kappa_{n}</math> von der Ordnung <math>\mathcal{O}(N)</math> ist. Hier die Ordnungen der ersten Kumulanten:
+
+:<math>\kappa_{1}(Y)=\mathcal{O}(N^{0})\ ,\quad\kappa_{2}(Y)=\mathcal{O}(N^{-1})\ ,\quad\kappa_{3}(Y)=\mathcal{O}(N^{-2})\ ,\quad\kappa_{4}(Y)=\mathcal{O}(N^{-3})</math>
+
+Für <math>n\geq 2</math> ist die Ordnung <math>N</math> hoch einem negativen Exponenten und somit gilt im Grenzwert unendlich vieler Zufallsvariablen: 
+
+:<math>\lim_{N\to\infty}\kappa_{n}(Y)=0\quad\text{mit}\quad n\geq2</math>
+
+D. h. es bleibt nur die erste Kumulante bzw. das erste Moment übrig. Mit wachsendem <math>N</math> erhält man eine Gauß-Verteilung um den Mittelwert 
+:<math>\kappa_{1}(Y)=\frac{1}{N} \sum_{i=1}^{N} \kappa_{1}(X_i)</math>, 
+wobei die Breite von der Ordnung <math>N^{-1}</math> ist, und im Grenzfall <math>N\to\infty</math> einen scharfen ([[Delta-Funktion|Delta]]-förmigen) Peak bei <math>\kappa_1</math>.
+
+Als einfachen Spezialfall betrachte alle Zufallsvariablen als identisch <math>X_i=X</math> mit Mittelwert <math>\mu</math>, Varianz <math>\sigma^2</math> und beliebigen höheren Momenten.
+
+:<math>\kappa_{1}(Y)=\frac{1}{N}\sum_{i=1}^{N}m=m\ ,\quad\kappa_{2}(Y)=\frac{1}{N^{2}}\sum_{i=1}^{N}\sigma^{2}=\frac{\sigma^{2}}{N}\underset{N\to\infty}{\longrightarrow}0\ ,\quad\kappa_{3}(Y)=\frac{1}{N^{3}}\sum_{i=1}^{N}\kappa_{3}(X)=\frac{\kappa_{3}(X)}{N^{2}}\underset{N\to\infty}{\longrightarrow}0</math>
+
+Somit ist <math>Y</math> eine Zufallsvariable mit demselben Mittelwert wie <math>X</math> (man nennt <math>Y</math> erwartungstreuer Schätzer für den Mittelwert von <math>X</math>). Die für wachsende <math>N</math> immer schmaler werdende Breite der Gauß-Verteilung (Standardabweichung um Mittelwert) beträgt <math>\sigma_Y=\sigma_X/\sqrt{N}</math>.
+
+== Geschichte ==
+Kumulanten und ihre Eigenschaften wurden erstmals 1889 von dem dänischen Mathematiker [[Thorvald Nicolai Thiele]] in einem in dänischer Sprache erschienenen Buch beschrieben.<ref>Thorvald Nicolai Thiele: ''Forelæsninger over almindelig Iagttagelseslære: Sandsynlighedsregning og mindste Kvadraters Methode'', Kopenhagen 1889.</ref> Obwohl dieses Buch im gleichen Jahr im [[Jahrbuch über die Fortschritte der Mathematik]] ausführlich referiert wurde,<ref>[http://www.emis.de/cgi-bin/jfmen/MATH/JFM/quick.html?first=1&maxdocs=20&type=html&an=JFM%2021.0210.01&format=complete Jahrbuch über die Fortschritte der Mathematik JFM 21.0210.01].</ref> blieben die Ergebnisse zunächst weitgehend unbeachtet, so dass [[Felix Hausdorff]] noch 1901 diese Kenngrößen in einer Arbeit als (von ihm) „neueingeführt“ bezeichnete.<ref>Felix Hausdorff: ''Gesammelte Werke, Band V: Astronomie, Optik und Wahrscheinlichkeitstheorie''. 2006, ISBN 978-3-540-30624-5, S. 544, 577.</ref>
+
+== Literatur ==
+* [[Jörg Bewersdorff]]: ''Statistik – wie und warum sie funktioniert. Ein mathematisches Lesebuch''. Vieweg+Teubner Verlag 2011, ISBN 978-3834817532, {{doi|10.1007/978-3-8348-8264-6}}, S. 68-70.
+* Crispin W. Gardiner: ''Stochastic methods : a handbook for the natural and social sciences''. Springer, 2009. ISBN 978-3-540-70712-7, S. 33-35.
+* M. Abramowitz, I. A. Stegun: ''Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables''. Dover, 1965. ISBN 978-0-486-61272-0
+
+== Einzelnachweise ==
+<references />
+
+[[Kategorie:Stochastik]]

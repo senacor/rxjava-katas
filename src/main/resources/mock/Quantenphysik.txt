@@ -1,0 +1,298 @@
+Der Begriff '''Quantenphysik''' fasst alle [[Phänomen]]e und Effekte zusammen, die darauf beruhen, dass bestimmte [[physikalische Größe|Größen]] nicht jeden beliebigen Wert annehmen können, sondern nur festgelegte [[diskret]]e Werte (siehe [[Quantelung]]). Dazu gehören auch der [[Welle-Teilchen-Dualismus]], die [[Determinismus|Nichtdeterminiertheit]] von physikalischen Vorgängen und deren unvermeidliche Beeinflussung durch die Beobachtung. Quantenphysik umfasst alle [[Theorie]]n, [[Modell]]e und Konzepte, die auf die [[Quantenhypothese]] von [[Max Planck]] zurückgehen. Plancks Hypothese war um 1900 notwendig geworden, weil die [[klassische Physik]] z.&nbsp;B. bei der Beschreibung des [[Licht]]s oder des Aufbaus der [[Materie (Physik)|Materie]] an ihre Grenzen gestoßen war.
+ 
+Die Quantenphysik ist neben der [[Relativitätstheorie]] der zweite Grundpfeiler der modernen Physik. Besonders deutlich zeigen sich die Unterschiede zwischen der Quantenphysik und der klassischen Physik im mikroskopisch Kleinen (z.&nbsp;B. Aufbau der [[Atom]]e und [[Molekül]]e) oder in besonders „reinen“ Systemen (z.&nbsp;B. [[Supraleitung]] und [[Laser]]strahlung). Aber auch ganz alltägliche Dinge wie die chemischen oder physikalischen Eigenschaften verschiedener Stoffe ([[Farbe]], [[Ferromagnetismus]], [[elektrische Leitfähigkeit]] usw.) lassen sich nur quantenphysikalisch verstehen. 
+
+Insbesondere gehören aber auch zwei Teilbereiche der [[Physik#Theoretische Physik|theoretischen Physik]] zur Quantenphysik: Die [[Quantenmechanik]] und die [[Quantenfeldtheorie]]. Erstere beschreibt das Verhalten von [[Quantenobjekt]]en unter dem Einfluss von [[Feld (Physik)|Feld]]ern. Letztere behandelt zusätzlich die Felder als Quantenobjekte. Die Vorhersagen beider Theorien stimmen außerordentlich gut mit den Ergebnissen von Experimenten überein. Ihre einzige bekannte Schwäche besteht darin, dass sie sich nach dem gegenwärtigen Stand des Wissens nicht mit der – ebenfalls gut bestätigten – [[Allgemeine Relativitätstheorie|allgemeinen Relativitätstheorie]] vereinbaren lassen.
+
+== Theorien der Quantenphysik ==
+=== Frühe Quantentheorien ===
+
+Schon vor Entwicklung der Quantenmechanik gab es Entdeckungen, die zwar die Quantisierung bestimmter Größen [[Postulat|postulieren]] und manchmal auch mit der Welle-Teilchen-Dualität begründen, jedoch keine tieferen Einsichten in die zugrundeliegenden Mechanismen erlauben. Insbesondere lieferten diese Theorien keine Vorhersagen, die über ihren entsprechenden Gegenstand hinausgingen. Im [[Englische Sprache|englischen Sprachgebrauch]] werden diese Vorläufer der Quantenmechanik als ''old quantum theory'' bezeichnet. 
+
+Im Jahr 1900 entwickelte Max Planck eine Formel zur Beschreibung der gemessenen [[Frequenz]]verteilung der von einem [[Schwarzkörper]] emittierten Strahlung, das [[Plancksches Strahlungsgesetz|plancksche Strahlungsgesetz]], wobei er von der Annahme ausging, dass der schwarze Körper aus [[Oszillator]]en mit diskreten [[Energieniveau]]s besteht.<ref name="Planck1900">M. Planck: „''Zur Theorie des Gesetzes der Energieverteilung im Normalspektrum''“, Verhandlungen der Deutschen physikalischen Gesellschaft 2(1900) Nr. 17, S. 237–245, Berlin (vorgetragen am 14. Dezember 1900)</ref> Planck betrachtete diese Quantelung der [[Energie]] also als Eigenschaft der Materie und nicht des Lichtes selbst. Das Licht war nur insofern betroffen, als Licht in seinem Modell immer nur in bestimmten Portionen Energie mit Materie austauschen konnte, weil in der Materie nur bestimmte Energieniveaus möglich seien. Dabei fand er zwischen der Energieportion <math>\Delta E</math> und der Frequenz <math>\nu</math> des Lichts den Zusammenhang <math>\Delta E = h \nu</math>.
+
+[[Albert Einstein]] erweiterte diese Konzepte und schlug im Jahr 1905 eine Quantisierung der Energie des Lichtes selbst vor, um den [[Photoelektrischer Effekt|photoelektrischen Effekt]] zu erklären.<ref name="Einstein1905">A. Einstein: „''Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt''“, Annalen der Physik 17 (1905), S. 132–148. ([http://www.zbp.univie.ac.at/meldungen/2005-01-31/02/einstein1.pdf PDF])</ref> Der photoelektrische Effekt besteht darin, dass Licht bestimmter Farben [[Elektron]]en aus [[Metalle|Metalloberflächen]] herauslösen kann. Dabei kann der Lichtstrahl an jedes einzelne Elektron nur einen immer gleichen Energiebetrag abgeben, der zudem proportional ist zur Frequenz, also einer Eigenschaft des Lichtes. Daraus schloss Einstein, dass die Energieniveaus nicht nur innerhalb der Materie gequantelt sind, sondern dass das Licht ebenfalls nur aus bestimmten Energieportionen besteht, den ''[[Photon|Lichtquanten]]''. Dieses Konzept ist mit einer reinen Wellennatur des Lichtes nicht vereinbar. Es musste also angenommen werden, dass das Licht weder eine klassische Welle noch ein klassischer Teilchenstrom ist, sondern sich mal so, mal so verhält.
+
+1913 verwendete [[Niels Bohr]] das Konzept gequantelter Energieniveaus, um die [[Spektrallinie]]n des [[Wasserstoffatom]]s zu erklären. Das nach ihm benannte [[Bohrsches Atommodell|bohrsche Atommodell]] geht davon aus, dass das Elektron im Wasserstoffatom mit einer bestimmten Energie um den [[Atomkern|Kern]] kreist. Das Elektron wird hierbei noch als klassisches [[Teilchen]] betrachtet, mit der einzigen Einschränkung, dass es nur bestimmte Energien haben kann und, wenn es mit einer solchen Energie um den Kern kreist, entgegen der [[Elektrodynamik|klassischen Elektrodynamik]] keine elektromagnetische Welle erzeugt, also auch keine Energie abstrahlt. Eine experimentelle Bestätigung der von Bohr verwendeten Annahmen gelang im [[Franck-Hertz-Versuch]] 1914. Das bohrsche Atommodell wurde noch um einige Konzepte wie elliptische Bahnen des Elektrons erweitert, insbesondere von [[Arnold Sommerfeld]], um auch die Spektren anderer Atome erklären zu können. Dieses Ziel wurde jedoch nicht zufriedenstellend erreicht. Außerdem konnte Bohr keine Begründung für seine [[Postulat]]e geben außer der, dass das [[Rydberg-Formel|Wasserstoffspektrum]] damit erklärbar war; zu tieferer Einsicht führte sein Modell nicht. 
+
+Im Jahr 1924 veröffentlichte [[Louis-Victor de Broglie|Louis de Broglie]] seine Theorie der [[Materiewelle]]n, wonach jegliche Materie einen Wellencharakter aufweisen kann und umgekehrt Wellen auch einen Teilchencharakter aufweisen können.<ref name="deBroglie1924">L. de Broglie: ''„Recherches sur la théorie des Quanta“'', Doktorarbeit. Engl. Übersetzung (übers. A.F. Kracklauer): Ann. de Phys., 10e serie, t. III, (1925)</ref> Mit Hilfe seiner Theorie konnten der photoelektrische Effekt und das bohrsche Atommodell auf einen gemeinsamen Ursprung zurückgeführt werden. Die Umlaufbahnen des Elektrons um den Atomkern wurden als [[Stehende Welle|stehende Materiewellen]] aufgefasst. Die berechnete Wellenlänge des Elektrons und die Längen der Umlaufbahnen nach dem bohrschen Modell stimmten gut mit diesem Konzept überein. Eine Erklärung der anderen Atomspektren war jedoch weiterhin nicht möglich.
+
+De Broglies Theorie wurde drei Jahre später in zwei unabhängigen Experimenten bestätigt, welche die [[Beugung (Physik)|Beugung]] von Elektronen nachwiesen. Der [[Vereinigtes Königreich|britische]] Physiker [[George Paget Thomson]] leitete einen [[Elektronenstrahl]] durch einen dünnen Metallfilm und beobachtete die von de Broglie vorhergesagten [[Interferenz (Physik)|Interferenzmuster]].<ref name="Thomson1927">G. P. Thomson: „''The Diffraction of Cathode Rays by Thin Films of Platinum.''“ Nature 120 (1927), 802</ref> Bereits 1921 hatte ein ähnliches Experiment von [[Clinton Davisson]] und [[Charles Kunsman]] in den [[Bell Labs]] bei einem an [[Nickel]] reflektierten Elektronenstrahl Beugungsmuster gezeigt, die aber noch nicht als Interferenz gedeutet wurden.<ref>C. Davisson, C.H. Kunsman: ''THE SCATTERING OF ELECTRONS BY NICKEL'' In: ''Science'' Bd. 54 S. 1104</ref> Davisson und sein Assistent [[Lester Germer]] wiederholten das Experiment 1927 und erklärten die beobachteten klaren Beugungsmuster mit Hilfe der Wellentheorie de Broglies.<ref name="Davisson_Germer1927">C. Davisson and L. H. Germer: ''Diffraction of Electrons by a Crystal of Nickel'' In: ''Phys. Rev.''. 30, Nr. 6, 1927 {{DOI|10.1103/PhysRev.30.705}}</ref>
+
+=== Quantenmechanik ===
+
+{{Hauptartikel|Quantenmechanik}}
+
+Die moderne Quantenmechanik fand ihren Beginn im Jahr 1925 mit der Formulierung der [[Matrizenmechanik]] durch [[Werner Heisenberg]], [[Max Born]] und [[Pascual Jordan]].<ref name="Heisenberg1925a">W. Heisenberg: „''Über quantentheoretische Umdeutung kinematischer und mechanischer Beziehungen''“ Zeitschrift für Physik 33 (1925), S. 879–893.</ref><ref name="Born_Jordan1926">M. Born, P. Jordan: „''Zur Quantenmechanik''“, Zeitschrift für Physik 34 (1925), 858</ref><ref name="Born_Heisenberg_Jordan_1926">M. Born, W. Heisenberg, P. Jordan: „''Zur Quantenmechanik II''“, Zeitschrift für Physik 35 (1926), 557</ref> Wenige Monate später entwickelte [[Erwin Schrödinger]] über einen völlig anderen Ansatz – ausgehend von De Broglies Theorie der Materiewellen – die [[Schrödingergleichung|Wellenmechanik]] und die Schrödingergleichung.<ref name="Schroedinger1926">E. Schrödinger: „''Quantisierung als Eigenwertproblem I''“, Annalen der Physik 79 (1926), 361–376. E. Schrödinger: „''Quantisierung als Eigenwertproblem II''“, Annalen der Physik 79 (1926), 489–527. E. Schrödinger: „''Quantisierung als Eigenwertproblem III''“, Annalen der Physik 80 (1926), 734–756. E. Schrödinger: „''Quantisierung als Eigenwertproblem IV''“, Annalen der Physik 81 (1926), 109–139</ref> Kurz darauf konnte Schrödinger nachweisen, dass sein Ansatz der Matrizenmechanik äquivalent ist.<ref name="Schroedinger1926a">E. Schrödinger: „''Über das Verhältnis der Heisenberg-Born-Jordanschen Quantenmechanik zu der meinen''“, Annalen der Physik 79 (1926), 734–756.</ref>
+
+Die neuen Ansätze von Schrödinger und Heisenberg enthalten eine neue Sicht auf beobachtbare physikalische Größen, sogenannte ''[[Observable]]''. Diese waren zuvor als Größen betrachtet worden, die in jedem Zustand eines Systems bestimmte Zahlenwerte besitzen, wie zum Beispiel (für ein Teilchen in einer [[Dimension]]) der jeweilige Ort oder [[Impuls]]. Dagegen versuchten Heisenberg und Schrödinger den Observablenbegriff derart zu erweitern, dass er mit der [[Doppelspaltexperiment|Beugung am Doppelspalt]] verträglich würde. Wird dabei nämlich für jedes Teilchen durch eine zusätzliche [[Messung]] festgestellt, durch welchen der Spalte es fliegt, erhält man kein Doppelspaltinterferenzmuster, sondern zwei Einzelspaltmuster. Am Ende dieser Messung ist also der Zustand des beobachteten Teilchens ein anderer als vorher. Observable werden daher formal als Funktionen aufgefasst, die einen Zustand in einen anderen Zustand überführen. Des Weiteren muss jedes Teilchen "irgendwie" durch beide Spalte fliegen, damit man überhaupt ein Interferenzmuster erklären kann. Dem Zustand (jedes einzelnen(!) Teilchens) während des Fluges muss man also beide Möglichkeiten zuschreiben, wobei sich bei Beobachtung genau eine realisiert. Das hatte zur Folge, dass der Zustand eines Teilchens nicht mehr durch eindeutige Größenwerte wie Ort und Impuls bestimmt sein kann, sondern von den Observablen und ihren Größenwerten getrennt werden muss. Bei einem Messprozess wird der Zustand in einen der sogenannten Eigenzustände der Observablen umgewandelt, dem nun ein eindeutiger reeller [[Messwert]] zugeordnet ist. Dies Konzept des [[Zustand (Quantenmechanik)|quantenmechanischen Zustandes]] ist also mit dem Konzept der (mathematisch genauen) [[Trajektorie (Physik)|Bahnkurve]] in der älteren Quantentheorie nicht vereinbar. Mathematisch wird ein quantenmechanischer Zustand durch eine [[Wellenfunktion]] oder (weniger anschaulich) durch einen [[Zustandsvektor]] wiedergegeben.
+
+Eine Folge dieses neuartigen Observablenbegriffs ist, dass es formal nicht möglich ist, zwei beliebige Observable ohne Angabe einer Reihenfolge auf einen Zustand wirken zu lassen. Wenn es bei zwei Messprozessen auf ihre Reihenfolge nicht ankommt (z.&nbsp;B. Messung von x- und y-Koordinate), heißen sie vertauschbar. Andernfalls (z.&nbsp;B. Messung von x-Koordinate und x-Impuls) muss ihre Reihenfolge festgelegt werden, und in genau diesen Fällen verändert die zweite Messung den durch die erste Messung erzeugten Zustand ein weiteres Mal. Daher würde auch eine anschließende Wiederholung der ersten Messung nun ein anderes Ergebnis haben. Es ist also möglich, dass zwei Observable, wenn sie in unterschiedlicher Reihenfolge auf einen Zustand wirken, unterschiedliche Endzustände liefern können. Wenn bei zwei Observablen die Reihenfolge der Messung entscheidend ist, weil die Endzustände sonst verschieden sind, führt dies zu einer sogenannten [[Heisenbergsche Unschärferelation|Unschärferelation]]. Für Ort und Impuls wurde diese erstmals von Heisenberg im Jahr 1927 beschrieben. Diese Relationen versuchen, die [[Streuung (Statistik)|Streuung]] der Messwerte bei Vertauschen der Observablen, und damit die Unterschiedlichkeit der Endzustände quantitativ zu beschreiben.
+
+1927 wurde die [[Kopenhagener Deutung|Kopenhagener Interpretation]] von Bohr und Heisenberg formuliert, die auch als orthodoxe Interpretation der Quantenmechanik bezeichnet wird. Sie stützte sich auf den Vorschlag von Max Born, das [[Betragsquadrat]] der Wellenfunktion, die den Zustand eines Systems beschreibt, als [[Bornsche Wahrscheinlichkeitsinterpretation|Wahrscheinlichkeitsdichte]] aufzufassen. Die Kopenhagener Deutung ist bis heute die Interpretation der Quantenmechanik, die von den meisten Physikern vertreten wird, obwohl es inzwischen zahlreiche andere Interpretationen gibt.
+
+In den Jahren ab ca. 1927 vereinigte [[Paul Dirac]] die Quantenmechanik mit der [[Spezielle Relativitätstheorie|speziellen Relativitätstheorie]]. Er führte auch erstmals die Verwendung der [[Operator (Mathematik)|Operator]]-Theorie inklusive der [[Bra-Ket]]-Notation ein und beschrieb diesen mathematischen Kalkül 1930 in einer [[Monografie]].<ref name="Dirac1930">P. A. M. Dirac: ''„Principles of Quantum Mechanics“'', Oxford University Press, 1958, 4th. ed, ISBN 0-19-851208-2</ref>
+Zur gleichen Zeit formulierte [[John von Neumann]] die strenge mathematische Basis für die Quantenmechanik, wie z.&nbsp;B. die Theorie [[Linearer Operator|linearer Operatoren]] auf [[Hilbertraum|Hilberträumen]], die er 1932 in einer Monografie beschrieb.<ref name="vonNeumann1955">John von Neumann: ''„Mathematische Grundlagen der Quantenmechanik“'', Springer Berlin, 1996, 2. Auflage. Engl. (autorisierte) Ausg. (übers. R. T Beyer): ''„Mathematical Foundations of Quantum Mechanics“'', Princeton Univ. Press, 1955 (dort p. 28 sqq.)</ref>
+Die Verwendung des Ausdrucks „Quantenphysik“ ist erstmals 1929 in Max Plancks Vortrag ''Das Weltbild der neuen Physik'' dokumentiert.<ref name="Planck1929">M. Planck, ''Das Weltbild der neuen Physik'', Monatshefte für Mathematik, Springer, Wien, Bd. 36 (1929), S. 387–410. [http://books.google.de/books?id=ZylWAAAAMAAJ&dq=Das+Weltbild+der+neuen+Physik&q=Quantenphysik#search_anchor Auszug google books]</ref>
+Die in dieser Aufbauphase formulierten Ergebnisse haben bis heute Bestand und werden allgemein zur Beschreibung quantenmechanischer Aufgabenstellungen verwendet.
+
+=== Quantenfeldtheorie ===
+
+{{Hauptartikel|Quantenfeldtheorie}}
+
+Ab 1927 wurde versucht, die Quantenmechanik nicht nur auf [[Teilchen|Partikel]], sondern auch auf [[Feld (Physik)|Felder]] anzuwenden, woraus die Quantenfeldtheorien entstanden. Die ersten Ergebnisse auf diesem Gebiet wurden durch Paul Dirac, [[Wolfgang Pauli]], [[Victor Weisskopf]] und [[Pascual Jordan]] erzielt. Um Wellen, Teilchen und Felder einheitlich beschreiben zu können, werden sie als Quantenfelder, ähnliche Objekte wie Observable, aufgefasst. Sie müssen jedoch nicht die Eigenschaft der [[Reelle Zahl|Reellwertigkeit]] erfüllen. Das bedeutet, dass die Quantenfelder nicht unbedingt messbare Größen darstellen. Es ergab sich jedoch das Problem, dass die Berechnung komplizierter [[Streuung (Physik)|Streuprozesse]] von Quantenfeldern unendliche Ergebnisse lieferte. Die alleinige Berechnung der einfachen Prozesse liefert jedoch oft Ergebnisse, die stark von den Messwerten abwichen.
+
+Erst Ende der 1940er Jahre konnte das Problem der Unendlichkeiten mit der [[Renormierung]] umgangen werden. Dies ermöglichte die Formulierung der [[Quantenelektrodynamik]] durch [[Richard Feynman]], [[Freeman Dyson]], [[Julian Schwinger]] und [[Shinichirō Tomonaga]]. Die Quantenelektrodynamik beschreibt [[Elektron]]en, [[Positron]]en und das [[Elektromagnetisches Feld|elektromagnetische Feld]] erstmals in einer durchgängigen Weise, und die von ihr vorhergesagten Messergebnisse konnten sehr genau bestätigt werden.<ref>Richard Feynman: ''QED. Die seltsame Theorie des Lichts und der Materie'' 1987, ISBN 3-492-21562-9&nbsp;– Eine leicht verständliche Einführung in die Quantenelektrodynamik</ref> Die hier entwickelten Konzepte und Methoden wurden als Vorbild für weitere, später entwickelte Quantenfeldtheorien verwendet.
+
+Die Theorie der [[Quantenchromodynamik]] wurde Anfang der 1960er Jahre ausgearbeitet. Die heute bekannte Form der Theorie wurde 1975 durch [[David Politzer]], [[David Gross]] und [[Frank Wilczek]] formuliert. Aufbauend auf den wegweisenden Arbeiten von [[Julian Seymour Schwinger]], [[Peter Higgs]], [[Jeffrey Goldstone]] und [[Sheldon Glashow]] konnten [[Steven Weinberg]] und [[Abdus Salam]] unabhängig voneinander zeigen, wie die schwache Kernkraft und die Quantenelektrodynamik zu der Theorie der [[Elektroschwache Wechselwirkung|elektroschwachen Wechselwirkung]] zusammengeführt werden können.
+
+Bis heute ist die Quantenfeldtheorie ein aktives Forschungsgebiet, das sehr viele neuartige Methoden entwickelt hat. Sie ist die Grundlage aller Versuche, eine [[Weltformel|vereinheitlichte Theorie aller Grundkräfte]] zu formulieren. Insbesondere bauen [[Supersymmetrie]], [[Stringtheorie]], [[Schleifenquantengravitation]] und [[Twistor-Theorie]] maßgeblich auf den Methoden und Konzepten der Quantenfeldtheorie auf.
+
+== Überblick über die Forschungsgeschichte ==
+
+Die folgende Liste erhebt keinen Anspruch auf Vollständigkeit. 
+
+{|class="wikitable"
+!Entdeckung<ref>Für Quellenangaben und weitere Informationen bitte die jeweils verlinkten Hauptartikel aufrufen.</ref>
+!Entdecker
+!Entdeckungsjahr
+!Anmerkungen
+|-
+|class="hintergrundfarbe6"|[[Linienspektrum|Linienspektren]], [[Spektrometrie]]
+|[[Robert Wilhelm Bunsen|Bunsen]], [[Gustav Robert Kirchhoff|Kirchhoff]]
+|1860
+|
+|-
+|class="hintergrundfarbe6"|[[Photoeffekt]]
+|[[Wilhelm Hallwachs|Hallwachs]]
+|1886
+|
+|-
+|class="hintergrundfarbe6"|[[Rydberg-Formel]]
+|[[Johannes Rydberg|Rydberg]]
+|1888
+|Empirische Formel für das Wasserstoffspektrum, die erst durch das bohrsche Atommodell theoretisch untermauert werden konnte.
+|-
+|class="hintergrundfarbe6"|[[Feldemission]] von Elektronen
+|[[Robert Williams Wood|Wood]]
+|1897
+|Erste Beobachtung des [[Tunneleffekt]]s, der allerdings erst viel später verstanden wurde.
+|-
+|class="hintergrundfarbe7"|[[Plancksches Strahlungsgesetz]]
+|[[Max Planck|Planck]]
+|1900
+|Erste Anwendung der Quantenhypothese; „Geburtsstunde“ der Quantenphysik.
+|-
+|class="hintergrundfarbe7"|[[Photon]]en
+|[[Einstein]]
+|1905
+|Strahlung ist gequantelt.
+|-
+|class="hintergrundfarbe6"|[[Supraleitung]]
+|[[Heike Kamerlingh Onnes|Kamerlingh Onnes]]
+|1911
+|
+|-
+|class="hintergrundfarbe6"|[[Franck-Hertz-Versuch]]
+|[[James Franck|Franck]], [[Gustav Hertz|Hertz]]
+|1911–1914
+|In Atomen gibt es diskrete Energieniveaus.
+|-
+|class="hintergrundfarbe7"|[[Bohrsches Atommodell]]
+|[[Niels Bohr|Bohr]]
+|1913
+|Erstes quantenphysikalisches Atommodell; 1916 von [[Arnold Sommerfeld|Sommerfeld]] verfeinert ([[bohr-sommerfeldsches Atommodell]]), inzwischen jedoch überholt.
+|-
+|class="hintergrundfarbe6"|[[Compton-Effekt]]
+|[[Arthur Compton|Compton]]
+|1922
+|Photonen haben einen Impuls.
+|-
+|class="hintergrundfarbe6"|[[Stern-Gerlach-Experiment]]
+|[[Otto Stern (Physiker)|Stern]], [[Walther Gerlach|Gerlach]]
+|1922
+|Der Drehimpuls ist gequantelt.
+|-
+|class="hintergrundfarbe7"|[[Materiewelle]]n
+|[[Louis de Broglie|de Broglie]]
+|1924
+|Begründung des Welle-Teilchen-Dualismus
+|-
+|class="hintergrundfarbe7"|[[Matrizenmechanik]]
+|[[Werner Heisenberg|Heisenberg]]
+|1925
+|Erste strenge Formulierung der Quantenmechanik
+|-
+|class="hintergrundfarbe7"|[[Spin]] von Elektronen
+|[[Samuel Goudsmit|Goudsmit]],[[George Uhlenbeck|Uhlenbeck]], [[Wolfgang Pauli|Pauli]]
+|1925
+|
+|-
+|class="hintergrundfarbe7"|[[Wellenmechanik]]
+|[[Erwin Schrödinger|Schrödinger]]
+|1926
+|Mathematisch äquivalent zur Matrizenmechanik
+|-
+|class="hintergrundfarbe7"|Lösung des [[Wasserstoffproblem]]s
+|Pauli, |[[Erwin Schrödinger|Schrödinger]]
+|1926
+|Energieniveaus und [[Atomorbital|Orbitale]] der Elektronen im Wasserstoffatom
+|-
+|class="hintergrundfarbe7"|[[Fermi-Dirac-Statistik]]
+|[[Enrico Fermi|Fermi]], [[Paul Dirac|Dirac]]
+|1926
+|Theorie des [[Fermion]]en-Gases und damit Grundlage für die [[Festkörperphysik]], insbesondere bei [[Halbleiter]]n.
+|-
+|class="hintergrundfarbe7"|[[Unschärferelation]]
+|[[Werner Heisenberg|Heisenberg]]
+|1927
+|Ort und Impuls sind nicht zugleich beliebig genau bestimmt.
+|-
+|class="hintergrundfarbe6"|[[Davisson-Germer-Experiment]]
+|[[Clinton Davisson|Davisson]], [[Lester Germer|Germer]]
+|1927
+|Experimentelle Bestätigung der von de Broglie postulierten Materiewellen.
+|-
+|class="hintergrundfarbe7"|[[Dirac-Gleichung|Relativistische Quantenmechanik]]
+|[[Oskar Klein|Klein]], [[Walter Gordon (Physiker)|Gordon]], Dirac
+|1926–1928
+|
+|-
+|class="hintergrundfarbe7"|[[Tunneleffekt]]
+|[[George Gamow|Gamow]], [[Friedrich Hund|Hund]] <ref>[http://www.deutschlandfunk.de/die-quantentheorie-erklaert-das-sonnenfeuer-friedrich-hund.732.de.html?dram:article_id=344009 Friedrich Hund, der Tunneleffekt und das Leuchten der Sterne] auf Deutschlandfunk gesendet am 4. Februar 2016</ref> und andere
+|1926–1928
+|Theoretische Erklärung für den Alpha-Zerfall und die Feldemission
+|-
+|class="hintergrundfarbe6"|[[Kernspinresonanz]]
+|[[Isidor Rabi|Rabi]]
+|1936
+|
+|-
+|class="hintergrundfarbe6"|[[Suprafluidität]]
+|[[Pjotr Leonidowitsch Kapiza|Kapiza]] et al.
+|1938
+|
+|-
+|class="hintergrundfarbe8"|[[Transistor]]
+|[[William B. Shockley|Shockley]], [[Walter Brattain|Brattain]], [[John Bardeen|Bardeen]]
+|1945
+|„Geburtsstunde“ der Mikroelektronik
+|-
+|class="hintergrundfarbe7"|[[Quantenelektrodynamik]]
+|[[Feynman]], [[Tomonaga]], [[Julian Schwinger|Schwinger]]
+|1947
+|
+|-
+|class="hintergrundfarbe8"|[[Solarzelle]] aus Halbleiter
+|[[Bell Laboratories]]
+|1954
+|
+|-
+|class="hintergrundfarbe6"|[[Neutrino]]
+|[[Clyde Cowan|Cowan]], [[Frederick Reines|Reines]]
+|1956
+|1930 von Pauli vorhergesagt.
+|-
+|class="hintergrundfarbe7"|[[BCS-Theorie]]
+|[[John Bardeen|Bardeen]], [[Leon Cooper|Cooper]], [[Schrieffer]]
+|1957
+|Quantenphysikalische Begründung der Supraleitung
+|-
+|class="hintergrundfarbe8"|[[Laser]]
+|[[Maiman]]
+|1960
+|
+|-
+|class="hintergrundfarbe7"|[[Quark (Physik)|Quarks]]
+|[[Gell-Mann]]
+|1961
+|
+|-
+|class="hintergrundfarbe7"|[[Bellsche Ungleichung]]
+|[[John Stewart Bell|Bell]]
+|1964
+|Es gibt keine verborgenen Parameter, die das Verhalten eines quantenphysikalischen Systems bestimmen.
+|-
+|-
+|class="hintergrundfarbe7"|[[Elektroschwache Wechselwirkung]]
+|[[Glashow]], [[Abdus Salam|Salam]], [[Steven Weinberg|Weinberg]]
+|1967
+|Vereinigung der [[Elektromagnetische Wechselwirkung|elektromagnetischen]] und der [[Schwache Wechselwirkung|schwachen Wechselwirkung]] 
+|-
+|class="hintergrundfarbe8"|[[CCD-Sensor]]
+|[[Willard Boyle|Boyle]], [[George E. Smith|Smith]]
+|1969
+|Grundbaustein für die Digitalkamera
+|-
+|class="hintergrundfarbe8"|[[Mikroprozessor]]
+|[[Texas Instruments]], [[Intel]]
+|1970–1971
+|
+|-
+|class="hintergrundfarbe7"|[[Quantenchromodynamik]]
+|Gell-Mann u. a.
+|1972
+|Theorie der [[Starke Wechselwirkung|starken Wechselwirkung]], wesentlicher Bestandteil des [[Standardmodell]]s
+|-
+|class="hintergrundfarbe8"|[[Magnetresonanztomographie]]
+|[[Peter Mansfield|Mansfield]], [[Lauterbur]]
+|1973
+|Nutzung der [[Kernspinresonanz]] für ein bildgebendes Verfahren in der Medizin
+|-
+|class="hintergrundfarbe8"|[[Rastertunnelmikroskop]]
+|[[Gerd Binnig]], [[Heinrich Rohrer|Rohrer]]
+|1981
+|
+|-
+|class="hintergrundfarbe6"|[[Quanten-Hall-Effekt]]
+|[[Klaus von Klitzing|von Klitzing]]
+|1985
+|
+|-
+|class="hintergrundfarbe8"|[[Flash-Speicher]]
+|[[SanDisk]]
+|1994
+|Anwendung des Tunneleffekts in Speichermedien
+|-
+|class="hintergrundfarbe6"|[[Bose-Einstein-Kondensat]]
+|[[Eric Cornell|Cornell]], [[Wolfgang Ketterle|Ketterle]], [[Carl Wieman|Wieman]]
+|1995
+|1924 von Albert Einstein vorhergesagter vierter Aggregatszustand
+|-
+|class="hintergrundfarbe6"|[[Quantenteleportation]]
+|[[Anton Zeilinger|Zeilinger]]
+|1997
+|1935 hielten Einstein, Podolski und Rosen diesen Effekt der [[Quantenverschränkung]] für [[EPR-Effekt|paradox]].
+|}
+
+{|
+|-
+!Legende:&nbsp;&nbsp;
+|class="hintergrundfarbe6"|Experimentalphysik
+|class="hintergrundfarbe7"|Theoretische Physik
+|class="hintergrundfarbe8"|Technische Anwendung
+|}
+
+== Literatur ==
+* Marcelo Alonso, Edward J. Finn: ''Quantenphysik und Statistische Physik''. 5., unveränderte Auflage. München: Oldenbourg Wissenschaftsverlag 2012, ISBN 978-3-486-71340-4
+* Stephen Gasiorowicz: ''Quantenphysik''. 9. Auflage 2005. ISBN 978-3-486-27489-9
+* [[Silvia Arroyo Camejo]]: ''Skurrile Quantenwelt''. 3. Auflage 2011. ISBN 978-3-596-17489-8
+* [[Anton Zeilinger]]: ''Einsteins Spuk''. 2007, Goldmann. ISBN 978-3-442-15435-7
+* [[Claus Kiefer]]: ''Quantentheorie''. 2. Auflage 2012, Fischer Kompakt. ISBN 978-3-596-19035-5
+* [[Thomas Walther]], [[Herbert Walther (Physiker)|Herbert Walther]]: ''Was ist Licht?'' 3. Auflage 2010, C.H. Beck. ISBN 978-3-406-44722-8.
+
+== Weblinks ==
+{{Wiktionary|Quantenphysik}}
+{{Commonscat|Quantum physics|Quantenphysik}}
+* [http://www.lectures4you.de/fachbereiche.php?Fachgebiet=Physik&Fachbereich=Quantenphysik Beispiele frei zugänglicher Lehrangebote zur Quantenphysik im Internet]
+*[http://www.clifford.at/noa/noa_2005_10_07_quantenmechanik.mp3 Sendung von SWR 2 Impuls über Quantenmechanik] (47,9 MB, die eigentliche Sendung beginnt erst nach ca. 2 Minuten; MP3)
+* [http://www.QuantumLab.de Experimente zur Quantenphysik: Verschränkung von Quanten, Quantenzufall, Quantenkryptographie]
+* [http://www.amphilsoc.org/guides/ahqp/index.htm Sources for History of Quantum Physics] [[American Philosophical Society]]
+* [http://dieumsnh.qfb.umich.mx/archivoshistoricosmq/ Archivos históricos de la mecánica quántica] (umfangreiche Sammlung historischer Texte zur Quantenmechanik)
+
+== Einzelnachweise ==
+<references/>
+
+{{Normdaten|TYP=s|GND=4266670-3}}
+
+[[Kategorie:Quantenphysik| ]]

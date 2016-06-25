@@ -1,0 +1,11 @@
+Als '''Zeitentwicklung''' bezeichnet man die Zustandsänderung eines meist [[Physikalisches System|physikalischen Systems]], die durch das Fortschreiten der [[Zeit]] bewirkt wird.
+Die mathematische Beschreibung der zeitlichen Entwicklung wird meist mit Hilfe von [[Differentialgleichung]]en beschrieben, sogenannten [[Bewegungsgleichung]]en. In der [[Klassische Mechanik|klassischen Mechanik]] sind dies beispielsweise die [[Hamiltonsche Mechanik|Hamiltongleichungen]] oder zwei der vier [[Maxwellsche Gleichungen|Maxwellschen Gleichungen]], in der [[Quantenmechanik]] ist es die zeitabhängige [[Schrödingergleichung]]. Die Zeit muss hierbei keine [[stetig]]e Größe sein, sondern kann auch [[Diskretheit|diskret]] oder [[Endlichkeit|endlich]] sein.
+
+Der Begriff der Zeitentwicklung lässt sich auch auf nicht-physikalische [[System]]e anwenden, für die sich der Begriff eines Zustands, in dem sie sich befinden, wohldefinieren lässt ([[zustandsbehaftet]]e Systeme). Ein Beispiel für ein solches System mit einer diskreten Zeit ist eine [[Turingmaschine]], bei der der Gesamtzustand durch den Status der Kontrolleinheit und der Bänder sowie die Position des Schreib-Lese-Kopfes gegeben ist. Die Zeitentwicklung wird hierbei bestimmt durch das Programm.
+
+Zustandsbehaftete Systeme lassen sich oft sowohl durch ihren Zustand als auch durch die Werte der [[Observable]]n beschreiben. In solchen Systemen kann sich die Zeitentwicklung auch auf Änderungen der Observablenwerte beziehen. Dies trifft insbesondere auf die Quantenmechanik zu, bei der das [[Quantenmechanik#Deterministische Zeitentwicklung|Schrödingerbild]] und das [[Quantenmechanik#Deterministische Zeitentwicklung|Heisenbergbild]] (fast) äquivalente Beschreibungen der Zeitentwicklung sind.
+
+== Siehe auch ==
+*[[Zeitentwicklungsoperator]]
+
+[[Kategorie:Theorie dynamischer Systeme]]

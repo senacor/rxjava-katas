@@ -1,0 +1,77 @@
+{{Infobox Physikalische Einheit
+| Name             = Elektronenvolt
+| Einheitenzeichen = <math>\mathrm{eV}</math>
+| PhysGröße        = [[Energie]]
+| Formelzeichen    = <math>E</math>
+| Dimension        = <math>\mathsf{M\;L^2\;T^{-2} }</math>
+| System           = mitSI
+| SI               = <math>\mathrm{1 \, eV = 1{,}602\,176\,6208 \cdot 10^{-19} \; \frac{kg \, m^2}{s^2} }</math>
+| CGS              =
+| BenanntNach      = [[Elektron]], [[Alessandro Volta]]
+| AbgeleitetVon    = [[Volt]], [[Elementarladung]]
+| SieheAuch        =
+}}
+Das '''Elektronenvolt''', auch '''Elektronvolt''', ist eine Einheit der [[Energie]], die in der [[Atomphysik|Atom]]-, [[Kernphysik|Kern]]- und [[Teilchenphysik]] häufig benutzt wird. Ihr [[Einheitenzeichen]] ist&nbsp;eV.
+
+Ein Elektronenvolt ist die Energiemenge, um welche die [[kinetische Energie]] eines [[Elektron]]s zunimmt, wenn es eine [[Beschleunigungsspannung]] von 1&nbsp;[[Volt]] durchläuft. In der [[Internationales Einheitensystem|SI]]-Einheit [[Joule]] ausgedrückt ist sein Wert gemäß der [[Committee on Data for Science and Technology|CODATA]]-Empfehlung:<ref name="CODATAtevj">{{internetquelle |url=http://physics.nist.gov/cgi-bin/cuu/Value?tevj |hrsg=National Institute of Standards and Technology |titel=CODATA Recommended Values |zugriff=25.&nbsp;Juli 2015}} Wert für ein Elektronvolt, veröffentlicht durch das amerikanische National Institute of Standards and Technology mit CODATA als Datenquelle</ref>
+
+:<math>1\,\mathrm{eV} = 1{,}602\,176\,6208(98) \cdot 10^{-19}\,\mathrm{J} \,.</math>
+
+Die eingeklammerten Ziffern geben die Unsicherheit in den letzten Stellen des Wertes als [[CODATA#Standardunsicherheiten_von_CODATA-Werten|geschätzte Standardabweichung]] des angegebenen Zahlenwertes vom tatsächlichen Wert an. Diese beträgt somit 9,8&nbsp;·&nbsp;10<sup>−28</sup> J.
+
+Das Elektronenvolt gehört zwar nicht wie das Joule zum Internationalen Einheitensystem, ist aber zum Gebrauch mit ihm zugelassen<ref>{{Literatur |Titel=Das Internationale Einheitensystem (SI) | TitelErg=Deutsche Übersetzung der BIPM-Broschüre „Le Système international d‘unités/The International System of Units (8e edition, 2006)“ | Sammelwerk=PTB-Mitteilungen | Band=117 | Nummer=2 | Jahr=2007 | Übersetzer=Cecile Charvieux | Online=[http://www.ptb.de/cms/fileadmin/internet/publikationen/DasInternationaleEinheitensystem.pdf Online Version (PDF-Datei, 1,4&nbsp;MB)]}}</ref> und eine [[Gesetzliche Einheit|gesetzliche Maßeinheit]].<ref>aufgrund der [[Richtlinie 80/181/EWG|EU-Richtlinie 80/181/EWG]] in den Staaten der EU bzw. dem [http://www.admin.ch/ch/d/sr/941_20/ Bundesgesetz über das Messwesen] in der Schweiz</ref>
+
+== Benennung ==
+Die Einheit wird in der deutschsprachigen Fachliteratur weit überwiegend als „Elektronenvolt“ bezeichnet, also mit dem Morphem „en“ zwischen „Elektron“ und „volt“. Andererseits sieht die  ''Ausführungsverordnung zum Gesetz über die Einheiten im Messwesen und die Zeitbestimmung'' vom 13. Dezember 1985 die Form „Elektronvolt“ vor.<ref>[http://bundesrecht.juris.de/bundesrecht/einhv/gesamt.pdf PDF]</ref>
+
+Die [[DIN-Norm]] 1301-1 „Einheiten – Einheitennamen, Einheitenzeichen“ vom Oktober 2010 empfiehlt die Form „Elektronvolt“.<ref>''DIN 1301 Einheiten.'' Teil 1: Einheitennamen, Einheitenzeichen. Oktober 2010, S. 8.</ref> In der Norm DIN 66030 „Informationstechnik – Darstellung von Einheitennamen in Systemen mit beschränktem Schriftzeichenvorrat“ vom Mai 2002 wird dagegen die Form „Elektronenvolt“ verwendet.<ref>''DIN 66030 Informationstechnik – Darstellung von Einheitennamen in Systemen mit beschränktem Schriftzeichenvorrat.''  Mai 2002, S. 5, Tabelle 1.</ref>
+
+== Verwendung als Einheit für die Energie ==
+Das Elektronenvolt wird als „handliche“ Einheit der Energie in der [[Atomphysik]] und verwandten Fachgebieten wie der experimentellen [[Kernphysik|Kern-]] und [[Elementarteilchenphysik]] verwendet. Beispielsweise wird die [[kinetische Energie]], auf die ein Teilchen in einem [[Teilchenbeschleuniger]] gebracht wird, stets in Elektronenvolt angegeben. Handlich ist das deshalb, weil sich die Änderung der kinetischen Energie <math>\Delta E_{\text{kin}}</math> jedes im [[Elektrisches Feld|elektrischen Feld]] beschleunigten Teilchens aus seiner Ladung <math>Q</math> und der durchlaufenen [[Elektrische Spannung|Spannung]] <math>U</math> als <math>\Delta E_{\text{kin}} = U Q</math> berechnen lässt und unabhängig von anderen Einflüssen ist: Die [[Masse (Physik)|Masse]] des Teilchens, die Länge des Weges oder der genaue Verlauf der [[Elektrische Feldstärke|Feldstärke]] spielen keine Rolle.
+
+Der Betrag der [[Elektrische Ladung|Ladung]] eines freien, beobachtbaren Teilchens ist immer die [[Elementarladung]] <math>e</math> oder ein ganzzahliges Vielfaches davon. Anstatt die Elementarladung einzusetzen und die Energie in [[Joule]] anzugeben, kann man daher die aus einer elektrischen Beschleunigung resultierende Änderung der kinetischen Energie direkt in der Einheit&nbsp;eV angeben. Dabei gilt die Formel <math>\Delta E_{\text{kin}} = e \,U</math> nur für einfach geladene Teilchen wie Elektronen, Protonen und einfach geladene Ionen; bei <math>Z</math>-fach geladenen Teilchen gilt entsprechend <math>\Delta E_{\text{kin}} = Z e\, U</math>. So ändert sich beispielsweise die kinetische Energie eines [[Proton]]s beim Durchfliegen einer Potentialdifferenz von 100&nbsp;V um 100&nbsp;eV, die Energie eines zweifach geladenen Heliumkerns ändert sich um 200&nbsp;eV. Die kinetische Energie eines positiv geladenen Teilchens nimmt um den genannten Betrag zu, wenn die durchlaufene Spannung so gepolt ist, dass das elektrische Potential auf dem Weg des Teilchens abnimmt (umgangssprachlich: „Wenn sich das Teilchen von Plus nach Minus bewegt“), sonst nimmt sie ab. Für negativ geladene Teilchen gilt dasselbe mit umgekehrten Vorzeichen (siehe z.&nbsp;B. [[Photoeffekt#Gegenfeldmethode|Gegenfeldmethode beim Photoeffekt]]).
+
+== Verwendung als Einheit für die Masse in der Teilchenphysik ==
+Das Elektronenvolt kann auch als Einheit der [[Masse (Physik)|Masse]] von Teilchen verwendet werden. Die Umrechnung von Masse in Energie geschieht gemäß der [[Masse-Energie-Äquivalenz|Äquivalenz von Masse und Energie]]. Diese Energie wird ''Ruheenergie'' genannt.
+
+:<math>E = m c^2 \quad \Leftrightarrow \quad m = \dfrac{E}{c^2}</math>,
+
+wobei
+* <math>E</math> für die Energie
+* <math>m</math> für die Masse und
+* <math>c</math> für die [[Lichtgeschwindigkeit]] steht.
+
+Die entsprechende Masseneinheit ist also <math>\mathrm{eV}/c^2</math>. Die Umrechnung in Kilogramm ist
+:<math> 1 \,\mathrm{eV} /c^2 \approx 1{,}783 \cdot 10^{-36}\,\mathrm{kg}</math>.
+Beispielsweise beträgt die Masse eines Elektrons 9,11 · 10<sup>−31</sup> kg = 511 keV/c².
+
+In der Teilchenphysik wird oft ein System [[Natürliche Einheiten|„natürlicher“ Einheiten]] verwendet. Dabei wird <math>c = 1</math> gesetzt. Damit hat die Masse eines Teilchens die gleiche Einheit wie seine kinetische Energie. Beide werden dann üblicherweise in Elektronenvolt angegeben.
+
+== Dezimale Vielfache ==
+Gebräuchliche [[Vorsätze für Maßeinheiten|dezimale Vielfache]] des Elektronenvolt sind:
+* '''meV''' (Millielektronenvolt). Beispiel: ein [[freies Teilchen]] hat bei [[Raumtemperatur]] eine [[thermische Energie]] von knapp 40&nbsp;meV
+* '''keV''' (Kiloelektronenvolt). Beispiel: ein [[Photon]] der [[Röntgenstrahlung]] hat etwa 1–250&nbsp;keV
+* '''MeV''' (Megaelektronenvolt). Beispiel: die [[Ruheenergie]] eines Elektrons ist etwa 0,511&nbsp;MeV
+* '''GeV''' (Gigaelektronenvolt). Beispiel: die Ruheenergie eines [[Proton]]s ist etwa 0,94&nbsp;GeV
+* '''TeV''' (Teraelektronenvolt). Beispiel: Protonen im [[Large Hadron Collider|LHC]] haben eine maximale [[Kinetische Energie #Kinetische Energie in der relativistischen Mechanik|kinetische Energie]] von 6,5&nbsp;TeV, eine Kollision zweier Protonen hat also eine Energie von 13&nbsp;TeV.<ref>{{Internetquelle|url=http://home.web.cern.ch/about/updates/2015/05/first-images-collisions-13-tev |titel=First images of collisions at 13 TeV|sprache=en|datum=2015-05-21|zugriff=2015-05-21}}</ref>
+
+== Weitere Beispiele und Bemerkungen ==
+* Ein typisches [[Molekül]] in der [[Erdatmosphäre]] hat eine Bewegungsenergie ([[thermische Energie]]) von etwa 0,03&nbsp;eV.
+* Ein [[Photon]] roten [[Licht]]es der Wellenlänge 620&nbsp;nm hat eine Energie von 2&nbsp;eV.
+* Die bei der Spaltung eines Uran-Atomkerns freigesetzten [[Kernspaltung#Spaltfragmente|Spaltfragmente]] haben eine kinetische Energie von zusammen etwa 167&nbsp;MeV.
+
+Die kinetische Energie von schnell bewegten schwereren [[Atomkern]]en ([[Schwerion]]en) gibt man häufig ''pro [[Nukleon]]'' an. Als Einheit wird dann AGeV geschrieben, wobei A für die [[Massenzahl]] steht. Jeder Kern mit 1&nbsp;AGeV besitzt die gleiche Geschwindigkeit. Analog gibt es je nach Energieskala das&nbsp;ATeV und das&nbsp;AMeV.
+
+Im [[LHC]] am [[CERN]] ist geplant, Protonen mit einer Energie von 6,5&nbsp;TeV und [[Blei]]<nowiki />kerne mit 574&nbsp;TeV miteinander kollidieren zu lassen, bei den Protonen wurde dieser Wert bereits erreicht. Die Energie eines einzelnen Kerns mit ca. 1&nbsp;µJ bzw. 90&nbsp;µJ ist dabei immer noch sehr gering. Berücksichtigt man aber die große Anzahl der Teilchen (1,15&nbsp;·&nbsp;10<sup>11</sup> Protonen pro [[Teilchenpaket]], im Ring des LHC befinden sich bis zu 2808 Teilchenpakete pro Richtung<ref>[http://ab-div.web.cern.ch/ab-div/publications/LHC-DesignReport.html LHC Design Report]</ref>), erhält man als Gesamtenergie der im Ring befindlichen Protonen 720&nbsp;MJ, dies entspricht grob der kinetischen Energie eines startenden großen Flugzeugs.
+
+== Umrechnung in Joule pro Mol ==
+In der [[Chemie]] wird oft nicht die Energie pro Teilchen, sondern pro [[Mol]] (mit der Einheit J/mol) angegeben, die man durch Multiplikation der Energie des einzelnen Teilchens mit der [[Avogadro-Konstante]] <math>N_\mathrm{A}</math> erhält, zum Beispiel:
+
+:<math>1\,\mathrm{eV} \cdot N_\mathrm{A} = 96\,485\,\mathrm{J/mol}=F \cdot 1 \,\mathrm V,</math>
+
+wobei <math>F</math> die [[Faraday-Konstante]] ist.
+
+== Einzelnachweise ==
+<references />
+
+[[Kategorie:Energieeinheit]]

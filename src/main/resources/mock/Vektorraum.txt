@@ -1,0 +1,215 @@
+[[Datei:Vector-addition-and-scaling.svg|thumb|right|Vektoraddition und Multiplikation mit [[Skalar (Mathematik)|Skalaren]]: Ein Vektor '''v''' (blau) wird zu einem anderen Vektor '''w''' addiert (rot, unten). Oben wird '''w''' um einen Faktor 2 gestreckt, das Ergebnis ist die Summe {{nowrap|'''v''' + 2·'''w'''}}.]]
+Ein '''Vektorraum''' oder '''linearer Raum''' ist eine [[algebraische Struktur]], die in vielen [[Teilgebiete der Mathematik|Teilgebieten]] der [[Mathematik]] verwendet wird. Vektorräume bilden den zentralen Untersuchungsgegenstand der [[Lineare Algebra|linearen Algebra]]. Die Elemente eines Vektorraums heißen ''Vektoren''. Sie können addiert oder mit [[Skalar (Mathematik)|Skalaren]] (Zahlen) multipliziert werden, das Ergebnis ist wieder ein Vektor desselben Vektorraums. Entstanden ist der Begriff, indem diese Eigenschaften ausgehend von [[Vektor]]en des [[Euklidischer Raum|euklidischen Raumes]] abstrahiert wurden, sodass sie dann auf abstraktere Objekte wie [[Funktion (Mathematik)|Funktionen]] oder [[Matrix (Mathematik)|Matrizen]] übertragbar sind.
+
+Die Skalare, mit denen man einen Vektor multiplizieren kann, stammen aus einem [[Körper (Algebra)|Körper]]. Deswegen ist ein Vektorraum immer ein Vektorraum ''über'' einem bestimmten Körper. Sehr oft handelt es sich dabei um den Körper <math>\R</math> der [[Reelle Zahl|reellen Zahlen]] oder den Körper <math>\C</math> der [[komplexe Zahl|komplexen Zahlen]]. Man spricht dann von einem reellen bzw. einem komplexen Vektorraum.
+
+Eine [[Basis (Vektorraum)|Basis]] eines Vektorraums ist eine Menge von Vektoren, die es erlaubt, jeden Vektor durch eindeutige [[Koordinate]]n darzustellen. Die Anzahl der Basisvektoren in einer Basis wird [[Dimension (Mathematik)|Dimension]] des Vektorraums genannt. Sie ist unabhängig von der Wahl der Basis und kann auch unendlich sein. Die strukturellen Eigenschaften eines Vektorraums sind eindeutig durch den Körper, über dem er definiert ist, und seine Dimension bestimmt.
+
+Eine Basis ermöglicht es, Rechnungen mit Vektoren über deren Koordinaten statt mit den Vektoren selbst auszuführen, was manche Anwendungen erleichtert.
+
+== Definition ==
+
+Es seien <math>V</math> eine Menge, <math>(K, +, \cdot)</math> ein [[Körper (Algebra)|Körper]], <math>\oplus\colon V \times V \to V</math> eine [[Zweistellige Verknüpfung#Innere zweistellige Verknüpfung|innere zweistellige Verknüpfung]], genannt Vektoraddition, und <math>\odot\colon K \times V \to V</math> eine [[Zweistellige Verknüpfung#Äußere zweistellige Verknüpfungen erster Art|äußere zweistellige Verknüpfung]], genannt [[Skalarmultiplikation]]. Man nennt dann <math>(V, \oplus, \odot)</math> einen ''Vektorraum über dem Körper <math>K</math>'' oder kurz ''<math>K</math>-Vektorraum'', wenn für die Vektoraddition die Eigenschaften
+
+: V1: <math>u \oplus (v \oplus w) = (u \oplus v ) \oplus w</math> ([[Assoziativgesetz]])
+: V2: Existenz eines [[Neutrales Element|neutralen Elements]] <math>0_V \in V</math> mit <math>v \oplus 0_V = 0_V \oplus v = v</math>
+: V3: Existenz eines zu <math>v \in V</math> [[Inverses Element|inversen Elements]] <math>-v \in V</math> mit <math>v \oplus (-v) = (-v) \oplus v = 0_V</math>
+: V4: <math> v \oplus u = u \oplus v</math> ([[Kommutativgesetz]])
+
+und weiter für die Skalarmultiplikation die Eigenschaften
+
+: S1: <math>\alpha \odot (u \oplus v) = (\alpha \odot u) \oplus (\alpha \odot v)</math> 
+: S2: <math>(\alpha + \beta) \odot v = (\alpha \odot v) \oplus (\beta \odot v)</math>
+: S3: <math>(\alpha \cdot \beta) \odot v = \alpha \odot (\beta \odot v)</math>
+: S4: Neutralität des [[Einselement]]s <math>1 \in K</math>, also <math> 1 \odot v = v</math>
+
+für alle <math>u, v, w \in V</math> und <math>\alpha, \beta \in K</math> erfüllt sind.
+
+'''Anmerkungen'''
+
+* Die Axiome V1, V2 und V3 der Vektoraddition besagen, dass <math>(V, \oplus)</math> eine [[Gruppe (Mathematik)|Gruppe]] bildet, und Axiom V4, dass diese [[Abelsche Gruppe|abelsch]] ist. Ihr neutrales Element <math>0_V</math> heißt [[Nullvektor]].
+* Ein Körper <math>(K, +, \cdot)</math> ist eine abelsche Gruppe <math>(K, +)</math> mit neutralem Element (Nullelement) <math>0_K \in K</math> und einer zweiten inneren zweistelligen Verknüpfung <math>\cdot,</math> sodass auch <math>(K\setminus\{0_K\}, \cdot)</math> eine abelsche Gruppe ist und die [[Distributivgesetz|Distributivgesetze]] gelten. Wichtige Beispiele für Körper sind die [[Reelle Zahl|reellen Zahlen]] <math>\R</math> und die [[Komplexe Zahl|komplexen Zahlen]] <math>\C</math>.
+* Die Axiome S1 und S2 der Skalarmultiplikation werden ebenfalls als Distributivgesetze bezeichnet, Axiom S3 auch als [[Assoziativgesetz]].<ref>H. Grauert, H. C. Grunert: ''Lineare Algebra und Analytische Geometrie'', ISBN 3-486-24739-5.</ref><ref>H.-J. Kowalski, G. O. Michler: ''Lineare Algebra''.</ref> Dabei ist jedoch zu beachten, dass bei Axiom S2 die Pluszeichen zwei verschiedene Additionen (links die in <math>K</math> und rechts jene in <math>V</math>) bezeichnen und dass bei Axiom S3 die Skalarmultiplikation assoziativ mit der Multiplikation in <math>K</math> ist.
+* Die Axiome S1 und S2 garantieren für die Skalarmultiplikation die [[Verträglichkeit (Mathematik)|Linksverträglichkeit]] mit der Vektoraddition und die Rechtsverträglichkeit mit der Körper- und der Vektoraddition. Axiome S3 und S4 stellen zudem sicher, dass die multiplikative Gruppe <math>(K\setminus\{0_K\}, \cdot)</math> des Körpers auf <math>V</math> [[Gruppenoperation|operiert]].
+* In diesem Artikel werden im Folgenden, wie in der Mathematik üblich, sowohl die Addition im Körper <math>K</math> als auch die Addition im Vektorraum <math>V</math> mit demselben Zeichen <math>+</math> bezeichnet, obwohl es sich um unterschiedliche Verknüpfungen handelt. Für <math>u \oplus (-v)</math> wird <math>u - v</math> geschrieben. Genauso werden sowohl die Multiplikation im Körper als auch die skalare Multiplikation zwischen Körperelement und Vektorraumelement mit <math>\cdot</math> bezeichnet. Bei beiden Multiplikationen ist es auch üblich, den Malpunkt wegzulassen. In der Praxis besteht keine Gefahr, die beiden Additionen oder die beiden Multiplikationen zu verwechseln. Die Verwendung der gleichen Symbole macht die Vektorraumaxiome besonders suggestiv. Zum Beispiel schreibt sich Axiom S1 als <math>\alpha \cdot (u + v) = \alpha \cdot u + \alpha \cdot v</math> und Axiom S3 als <math>(\alpha \cdot \beta) \cdot v = \alpha \cdot (\beta \cdot v)</math>.
+
+== Erste Eigenschaften ==
+Für alle <math>\alpha \in K</math> und <math>v,w\in V</math> gelten folgende Aussagen:
+*<math>(-\alpha) \cdot v = - (\alpha \cdot v) = \alpha \cdot (-v)</math>.
+*<math>\alpha \cdot v = 0_V \quad\Leftrightarrow\quad \alpha =0_K \text{ oder } v =0_V</math>.
+*Die Gleichung <math>v+x =w</math> ist für alle <math>v,w \in V</math> eindeutig lösbar; die Lösung ist <math>x = w + (-v)</math>.
+
+== Beispiele ==
+
+=== Euklidische Ebene ===
+
+Ein anschaulicher Vektorraum ist die zweidimensionale [[Euklidischer Raum|Euklidische Ebene]] <math>\mathbb R^2</math> (in rechtwinkligen [[Kartesisches Koordinatensystem|kartesischen Koordinatensystemen]]) mit den Pfeilklassen (Verschiebungen oder Translationen) als Vektoren und den reellen Zahlen als Skalaren.
+:<math>\vec v = ( 2 , 3 )</math> ist die Verschiebung um 2 Einheiten nach rechts und 3 Einheiten nach oben,
+:<math>\vec w = ( 3 ,-5 )</math> die Verschiebung um 3 Einheiten nach rechts und 5 Einheiten nach unten.
+Die Summe zweier Verschiebungen ist wieder eine Verschiebung, und zwar diejenige Verschiebung, die man erhält, indem man die beiden Verschiebungen nacheinander ausführt:
+:<math>\vec v + \vec w = ( 5 ,-2 )</math>, d.&nbsp;h. die Verschiebung um 5 Einheiten nach rechts und 2 Einheiten nach unten.
+
+Der Nullvektor <math>\vec 0 = ( 0 , 0 ) </math> entspricht der Verschiebung, die alle Punkte an ihrem Platz belässt, d. h. der identischen Abbildung. 
+
+Durch die Streckung der Verschiebung <math>\vec v</math> mit einem Skalar <math>a = 3</math> aus der Menge der reellen Zahlen erhalten wir das Dreifache der Verschiebung: 
+:<math>a \cdot \vec v = 3 \cdot ( 2 , 3 ) = ( 6 , 9 )</math>.
+
+Alles zu diesem Beispiel gesagte gilt auch in der reellen [[Affiner Raum|affinen Ebene]].
+
+=== Koordinatenraum ===
+{{Hauptartikel|Koordinatenraum}}
+Ist <math>K</math> ein Körper und <math>n</math> eine natürliche Zahl, so bildet das <math>n</math>-fache [[kartesisches Produkt|kartesische Produkt]] 
+:<math>K^n = \{ (v_1, \dots, v_n) \mid v_1, \dots, v_n \in K \}, </math> 
+die Menge aller <math>n</math>-[[Tupel]] mit Einträgen in <math>K</math>, einen Vektorraum über <math>K</math>.  
+Die Addition und die skalare Multiplikation werden komponentenweise definiert; für
+<math> u = (u_1, u_2, \dots, u_n),  v = (v_1, v_2, \dots, v_n) \in K^n</math>, <math>\alpha \in K</math> setzt man:
+:<math> u + v = (u_1, u_2, \dots, u_n) + (v_1, v_2, \dots, v_n) = (u_1 + v_1, u_2 + v_2, \dots, u_n + v_n)</math>
+und
+:<math>\alpha \cdot v  = \alpha \cdot (v_1, v_2, \dots, v_n) = (\alpha \, v_1, \alpha \, v_2, \dots, \alpha \, v_n).</math>
+Häufig werden die <math>n</math>-Tupel auch als [[Spaltenvektor]]en notiert, das heißt ihre Einträge werden untereinander geschrieben.
+Die Vektorräume <math>K^n</math> bilden gewissermaßen die Standardbeispiele für endlichdimensionale Vektorräume. Jeder <math>n</math>-dimensionale <math>K</math>-Vektorraum ist isomorph zum Vektorraum <math>K^n</math>. Mit Hilfe einer Basis kann jedes Element eines Vektorraums eindeutig durch ein Element des <math>K^n</math> als Koordinatentupel dargestellt werden.
+
+=== Funktionenräume ===
+==== Grundsätzliches und Definition ====
+{{Hauptartikel|Funktionenraum}}
+Ist <math>K</math> ein Körper, <math>V</math> ein <math>K</math>-Vektorraum und <math>A</math> eine beliebige Menge, so kann auf der Menge <math>F(A,V)</math> aller [[Funktion (Mathematik)|Funktionen]] <math>f \colon A \to V</math> eine Addition und eine skalare Multiplikation punktweise definiert werden:
+Für <math>f, g \in F(A,V)</math> und <math>\alpha \in K</math> sind die Funktionen <math>f + g \in F(A,V)</math> und <math>\alpha \cdot f \in F(A,V)</math> definiert durch 
+:<math>(f + g) (x) = f(x) + g(x)</math> für alle <math>x \in A</math> und
+:<math>(\alpha \cdot f) (x) = \alpha \cdot f(x)</math> für alle <math>x \in A</math>.
+Mit dieser Addition und skalaren Multiplikation ist <math>F(A,V)</math> ein <math>K</math>-Vektorraum. 
+Insbesondere gilt dies für <math>F(A,K)</math>, wenn also als Zielraum der Körper <math>K</math> selbst gewählt wird. 
+Weitere Beispiele für Vektorräume erhält man als [[Untervektorraum|Untervektorräume]] dieser Funktionenräume.
+
+In vielen Anwendungen ist <math>K = \R</math>, der Körper der reellen Zahlen, oder <math>K = \C</math>, der Körper der komplexen Zahlen, und <math>A</math> ist eine Teilmenge von <math>\R</math>, <math>\R^n</math>, <math>\C</math> oder <math>\C^n</math>. 
+Beispiele sind etwa der Vektorraum aller Funktionen von <math>\R</math> nach <math>\R</math> und die Unterräume <math>C^0(\R,\R)</math> aller [[stetige Funktion|stetigen Funktionen]] und <math>C^k(\R,\R)</math> aller <math>k</math>-mal [[glatte Funktion|stetig differenzierbaren Funktionen]] von <math>\R</math> nach <math>\R</math>.
+
+==== Raum der linearen Funktionen ====
+
+Ein einfaches Beispiel für einen Funktionenraum ist der zweidimensionale Raum der reellen [[lineare Funktion|linearen Funktionen]], das heißt der Funktionen der Form
+:<math>f\colon\R\to\R,\;x\mapsto a x + b</math>
+mit reellen Zahlen <math>a</math> und <math>b</math>. Dies sind diejenigen Funktionen, deren Graph eine Gerade ist. Die Menge dieser Funktionen ist ein Untervektorraum des Raums aller reellen Funktionen, denn die Summe zweier linearer Funktionen ist wieder linear, und ein Vielfaches einer linearen Funktion ist auch eine lineare Funktion.
+
+Zum Beispiel ist die Summe der beiden linearen Funktionen <math>f</math> und <math>g</math> mit
+:<math> f(x) = 2x + 3</math>, <math>g(x) = 3x - 5 </math>,
+die Funktion <math>f + g</math> mit
+:<math> (f + g)(x) = f(x) + g(x) = 2x + 3 + 3x - 5 = (2+3)x + (3-5) = 5x - 2 </math>.
+Das 3-fache der linearen Funktion <math>f</math> ist die lineare Funktion <math>3f</math> mit
+:<math> (3f)(x) = 3 \cdot f(x) = 3 \cdot (2x + 3) = (3 \cdot 2)x + (3 \cdot 3) = 6x + 9 </math>.
+
+=== Polynomräume ===
+
+Die Menge <math>K[X]</math> der [[Polynomring|Polynome]] mit Koeffizienten aus einem Körper <math>K</math> bildet, mit der üblichen Addition und der üblichen Multiplikation mit einem Körperelement, einen unendlichdimensionalen Vektorraum. Die Menge der [[Monom]]e <math>\{1,\ x,\ x^2,\ x^3,\ x^4, \dots \}</math> ist eine [[Basis_(Vektorraum)|Basis]] dieses Vektorraums. Die Menge der Polynome, deren [[Grad (Polynom)|Grad]] durch ein <math>n \in \mathbb N</math> nach oben beschränkt ist, bildet einen Untervektorraum der Dimension <math>n+1</math>. Beispielsweise bildet die Menge aller Polynome vom Grad kleiner gleich 4, also aller Polynome der Form
+:<math>ax^4 + b x^3 + c x^2 + d x + e </math>,
+einen 5-dimensionalen Vektorraum mit der Basis <math>\{1,\ x,\ x^2,\ x^3,\ x^4\}</math>. 
+
+Bei unendlichen Körpern <math>K</math> kann man die (abstrakten) Polynome mit den zugehörigen [[Polynomfunktion]]en identifizieren. Bei dieser Betrachtungsweise entsprechen die Polynomräume Unterräumen des Raums aller Funktionen von <math>K</math> nach <math>K</math>. Zum Beispiel entspricht der Raum aller reellen Polynome vom Grad <math>\le 1</math> dem Raum der linearen Funktionen.
+
+=== Körpererweiterungen ===
+Ist <math>L</math> ein Oberkörper von <math>K</math>, so ist <math>L</math> mit seiner Addition und der eingeschränkten Multiplikation <math>K\times L\rightarrow L</math> als skalare Multiplikation ein <math>K</math>-Vektorraum. Die dazu nachzuweisenden Regeln ergeben sich unmittelbar aus den Körperaxiomen für <math>L</math>. Diese Beobachtung spielt eine wichtige Rolle in der [[Körpertheorie]].
+
+Beispielsweise ist <math>\C</math> auf diese Weise ein zweidimensionaler <math>\R</math>-Vektorraum; eine Basis ist <math>\{1, \mathrm i\}</math>. Ebenso ist <math>\R</math> ein unendlichdimensionaler <math>\mathbb Q</math>-Vektorraum, bei dem eine Basis jedoch nicht konkret angegeben werden kann.
+
+== Lineare Abbildungen ==
+{{Hauptartikel|Lineare Abbildung}}
+Lineare Abbildungen sind die [[Funktion (Mathematik)|Funktion]]en zwischen zwei Vektorräumen, die die Struktur des Vektorraums erhalten. Sie sind die [[Homomorphismus|Homomorphismen]] zwischen Vektorräumen im Sinne der [[Universelle Algebra|universellen Algebra]]. Eine Funktion <math>f\colon U\to V</math> zwischen zwei Vektorräumen <math>U</math> und <math>V</math> über demselben Körper <math>K</math> heißt genau dann ''linear'', wenn für alle <math>a,b\in U</math> und alle <math>\lambda\in K</math>
+*<math>f(a+b)=f(a)+f(b)</math>
+*<math>f(\lambda a)=\lambda f(a)</math>
+erfüllt sind. Das heißt <math>f</math> ist kompatibel mit den Strukturen, die den Vektorraum konstituieren: der Addition und der Skalarmultiplikation. Zwei Vektorräume heißen ''[[isomorph]]'', wenn es eine lineare Abbildung zwischen ihnen gibt, die [[bijektiv]] ist, also eine [[Umkehrfunktion]] besitzt. Diese Umkehrfunktion ist dann automatisch ebenfalls linear. Isomorphe Vektorräume unterscheiden sich nicht bezüglich ihrer Struktur als Vektorraum.
+
+== Basis eines Vektorraums ==
+{{Hauptartikel|Vektorraumbasis}}
+
+Für endlich viele <math>v_1,\dotsc, v_n\in V</math> und <math>\alpha_1,\dotsc,\alpha_n\in K</math> bezeichnet man die Summe
+
+:<math>s=\alpha_1v_1+\dotsb+\alpha_nv_n=\sum_{i=1}^n\alpha_iv_i</math>
+
+als [[Linearkombination]] der Vektoren <math>v_1,\dotsc, v_n</math>. Dabei ist <math>s</math> selbst wieder ein Vektor aus dem Vektorraum <math>V</math>.
+
+Ist <math>S</math> eine Teilmenge von <math>V</math>, so wird die Menge aller Linearkombinationen von Vektoren aus <math>S</math> die [[lineare Hülle]] von <math>S</math> genannt. Sie ist ein Untervektorraum von <math>V</math>, und zwar der kleinste Untervektorraum, der <math>S</math> enthält.
+
+Eine Teilmenge <math>S</math> eines Vektorraums <math>V</math> heißt linear abhängig, wenn sich der Nullvektor auf nicht-triviale Weise als eine Linearkombination von Vektoren <math>v_1,\dotsc, v_n \in S</math> ausdrücken lässt. „Nicht-trivial“ bedeutet, dass mindestens ein Skalar (ein Koeffizient der Linearkombination) von null verschieden ist. Andernfalls heißt <math>S</math> [[Lineare Unabhängigkeit|linear unabhängig]].
+
+Eine Teilmenge <math>B</math> eines Vektorraums <math>V</math> ist eine [[Basis (Vektorraum)|Basis]] von <math>V</math>, wenn <math>B</math> linear unabhängig ist und die lineare Hülle von <math>B</math> der ganze Vektorraum ist.
+
+Unter Voraussetzung des [[Auswahlaxiom]]s lässt sich mittels des [[Lemma von Zorn|Lemmas von Zorn]] beweisen, dass jeder Vektorraum eine Basis hat (er ist ''[[Freier Modul|frei]]''), wobei diese Aussage im Rahmen von [[Zermelo Fraenkel]] äquivalent zum Auswahlaxiom ist.<ref>Andreas Blass, ''Axiomatic set theory'' in ''Contemporary Mathematics volume 31'', 1984 Kapitel ''Existence of bases implies the axiom of choice'', S. 31–33</ref> Dies hat weitreichende Konsequenzen für die Struktur eines jeden Vektorraums: Zunächst einmal lässt sich zeigen, dass je zwei Basen eines Vektorraums dieselbe [[Kardinalität (Mathematik)|Kardinalität]] haben, sodass die Kardinalität einer beliebigen Basis eines Vektorraums eine eindeutige [[Kardinalzahl (Mathematik)|Kardinalzahl]] ist, die man als ''[[Dimension (Mathematik)|Dimension]]'' des Vektorraums bezeichnet. Zwei Vektorräume über demselben Körper sind nun genau dann [[Isomorphismus|isomorph]], wenn sie dieselbe Dimension haben, denn aufgrund der Gleichmächtigkeit zweier Basen von zwei Vektorräumen existiert eine [[Bijektion]] zwischen ihnen. Diese lässt sich zu einer bijektiven linearen Abbildung, also einem Isomorphismus der beiden Vektorräume, fortsetzen. Ebenso lässt sich zeigen, dass beliebige lineare Abbildungen durch die Bilder von Elementen einer Basis festgelegt sind. Dies ermöglicht die Darstellung jedweder linearer Abbildungen zwischen endlichdimensionalen Vektorräumen als Matrix. Dies lässt sich auf unendlichdimensionale Vektorräume übertragen, wobei jedoch sichergestellt werden muss, dass jede verallgemeinerte „Spalte“ nur endlich viele von Null verschiedene Einträge enthält, damit jeder Basisvektor auf eine Linearkombinationen von Basisvektoren im Zielraum abgebildet wird.
+
+Mittels des Basisbegriffs hat sich das Problem, ein ''[[Skelett (Kategorientheorie)|Skelett]]'' in der [[Kategorientheorie|Kategorie]] aller Vektorräume über einem gegebenen Körper zu finden, darauf reduziert, ein Skelett in der Kategorie der Mengen zu finden, das durch die Klasse der [[Kardinalzahl (Mathematik)|Kardinalzahlen]] gegeben ist. Ein jeder <math>d</math>-dimensionale Vektorraum lässt sich auch als die <math>d</math>-fache [[direkte Summe]] des zugrunde liegenden Körpers auffassen. Die direkten Summen eines Körpers bilden also ein Skelett der Kategorie der Vektorräume über ihm.
+
+Die Linearfaktoren der Darstellung eines Vektors in den Basisvektoren heißen [[Koordinate]]n des Vektors bezüglich der Basis und sind Elemente des zugrunde liegenden Körpers. Erst durch Einführung einer Basis werden jedem Vektor seine Koordinaten bezüglich der gewählten Basis zugeordnet. Dadurch wird das Rechnen erleichtert, insbesondere wenn man statt Vektoren in „abstrakten“ Vektorräumen ihre zugeordneten „anschaulichen“ Koordinatenvektoren verwenden kann.
+
+== Untervektorraum ==
+{{Hauptartikel|Untervektorraum}}
+
+Ein ''Untervektorraum'' (auch ''linearer [[Unterraum]]'') ist eine Teilmenge eines Vektorraums, die selbst wieder ein Vektorraum über demselben Körper ist. Dabei werden die Vektorraumoperationen auf den Untervektorraum vererbt. Ist <math>V</math> ein Vektorraum über einem Körper <math>K</math>, so bildet eine Teilmenge <math>U\subseteq V</math> genau dann einen Untervektorraum, wenn die folgenden Bedingungen erfüllt sind:<ref>{{BibISBN|9783834817242 | Seite=88}}</ref>
+* <math>U \neq \emptyset</math>
+* für alle <math>u,v \in U</math> gilt <math>u + v \in U</math>
+* für alle <math>v \in U</math> und <math>\alpha \in K</math> gilt <math>\alpha \, v \in U</math>
+
+Die Menge <math>U</math> muss also [[Abgeschlossenheit (algebraische Struktur)|abgeschlossen]] bezüglich der Vektoraddition und der Skalarmultiplikation sein. Jeder Vektorraum enthält zwei triviale Untervektorräume, nämlich zum einen sich selbst, zum anderen den [[Nullvektorraum]] <math>\{0\}</math>, der nur aus dem [[Nullvektor]] besteht. Jeder Unterraum ist [[Bild (Mathematik)|Bild]] eines anderen Vektorraums unter einer linearen Abbildung in den Raum und [[Kern (Mathematik)|Kern]] einer linearen Abbildung in einen anderen Vektorraum. Aus einem Vektorraum und einem Untervektorraum kann man durch Bildung von [[Äquivalenzklasse]]n einen weiteren Vektorraum, den ''Quotientenraum'' oder ''[[Faktorraum]]'', bilden, was maßgeblich mit der Eigenschaft eines Unterraums zusammenhängt, ein Kern zu sein, siehe auch [[Homomorphiesatz]].
+
+== Verknüpfung von Vektorräumen ==
+Zwei oder mehrere Vektorräume können auf verschiedene Weisen miteinander verknüpft werden, sodass ein neuer Vektorraum entsteht.
+
+=== Direkte Summe ===
+{{Hauptartikel|Direkte Summe}}
+
+Die direkte Summe zweier Vektorräume <math>V,W</math> über dem gleichen Körper besteht aus allen [[geordnetes Paar|geordneten Paaren]] von Vektoren, von denen die erste Komponente aus dem ersten Raum und die zweite Komponente aus dem zweiten Raum stammt:
+
+:<math>V \oplus W = \left\{\left(v,w\right)\mid v \in V, w \in W\right\}</math>
+
+Auf dieser Menge von Paaren wird dann die Vektoraddition und die Skalarmultiplikation komponentenweise definiert, wodurch wiederum ein Vektorraum entsteht. Die Dimension von <math>V \oplus W</math> ist dann gleich der Summe der Dimensionen von <math>V</math> und <math>W</math>. Häufig werden die Elemente von <math>V \oplus W</math> statt als Paar <math>(v,w)</math> auch als Summe <math>v+w</math> geschrieben. Die direkte Summe kann auch auf die Summe endlich vieler und sogar unendlich vieler Vektorräume verallgemeinert werden, wobei im letzteren Fall nur endlich viele Komponenten ungleich dem Nullvektor sein dürfen.
+
+=== Direktes Produkt ===
+{{Hauptartikel|Direktes Produkt}}
+
+Das direkte Produkt zweier Vektorräume <math>V,W</math> über dem gleichen Körper besteht, wie die direkte Summe, aus allen geordneten Paaren von Vektoren der Form
+
+:<math>V \times W = \left\{\left(v,w\right)\mid v \in V, w \in W\right\}</math>.
+
+Die Vektoraddition und die Skalarmultiplikation werden wieder komponentenweise definiert und die Dimension von <math>V \times W</math> ist wieder gleich der Summe der Dimensionen von <math>V</math> und <math>W</math>. Bei dem direkten Produkt unendlich vieler Vektorräume dürfen jedoch auch unendlich viele Komponenten ungleich dem Nullvektor sein, wodurch es sich in diesem Fall von der direkten Summe unterscheidet.
+         
+=== Tensorprodukt ===
+{{Hauptartikel|Tensorprodukt}}
+
+Das Tensorprodukt zweier Vektorräume <math>V,W</math> über dem gleichen Körper wird durch
+
+:<math>V \otimes W</math>
+    
+notiert. Die Elemente des Tensorproduktraums haben dabei die [[Bilineare Abbildung|bilineare]] Darstellung
+    
+:<math>\sum_{i \in I} \sum_{j \in J} a_{ij} (v_i \otimes w_j)</math>,
+
+wobei <math>a_{ij}</math> Skalare sind, <math>(v_i)_{i \in I}</math> eine Basis von <math>V</math> ist und <math>(w_j)_{j \in J}</math> eine Basis von <math>W</math> ist. Ist <math>V</math> oder <math>W</math> unendlichdimensional dürfen hierbei wieder nur endlich viele Summanden ungleich null sein. Die Dimension von <math>V \otimes W</math> ist dann gleich dem Produkt der Dimensionen von <math>V</math> und <math>W</math>. Auch das Tensorprodukt kann auf mehrere Vektorräume verallgemeinert werden.
+
+== Vektorräume mit zusätzlicher Struktur ==
+In vielen Anwendungsbereichen in der Mathematik, etwa der [[Geometrie]] oder [[Analysis]], ist die Struktur eines Vektorraums nicht hinreichend, etwa erlauben Vektorräume an sich keine [[Grenzwert (Folge)|Grenzwert]]prozesse, und man betrachtet daher Vektorräume mit bestimmten zusätzlich auf ihnen definierten Strukturen, die mit der Vektorraumstruktur in gewissen Sinnen kompatibel sind. Beispiele:
+;Euklidischer Vektorraum: Als [[euklidischer Vektorraum]] wird (meist) ein reeller Vektorraum  mit [[Skalarprodukt]] bezeichnet. Er ist ein Spezialfall eines [[Prähilbertraum]]s (siehe dort für abweichende Nomenklatur).
+;Normierter Raum: Ein [[normierter Raum]] ist ein Vektorraum, in dem Vektoren eine Länge ([[Norm (Mathematik)|Norm]]) besitzen. Diese ist eine nichtnegative reelle Zahl und erfüllt die [[Dreiecksungleichung]]. 
+;Prähilbertraum: Ein [[Prähilbertraum]] ist ein reeller oder komplexer Vektorraum, auf dem ein inneres Produkt ([[Skalarprodukt]] bzw. positiv definite [[hermitesche Form]]) definiert ist. In einem solchen Raum kann man Begriffe wie Länge und Winkel definieren.
+;Topologischer Vektorraum: Ein [[topologischer Vektorraum]] über einem [[topologischer Körper|topologischen Körper]] <math>K</math> ist ein [[topologischer Raum]] <math>V</math> mit einer kompatiblen <math>K</math>-Vektorraumstruktur, d. h. die Vektorraumoperationen <math>{+}\colon V\times V\to V</math> und <math>{\cdot}\;\colon K\times V\to V</math> sind [[Stetigkeit (Topologie)|stetig]].
+;Unitärer Vektorraum: Als unitärer Vektorraum wird (meist) ein komplexer Vektorraum mit positiv definiter hermitescher Form ("Skalarprodukt") bezeichnet. Er ist ein Spezialfall des [[Prähilbertraum]]s.
+
+Bei all diesen Beispielen handelt es sich um topologische Vektorräume. In topologischen Vektorräumen sind die analytischen Konzepte der [[Grenzwert (Folge)|Konvergenz]], der [[gleichmäßige Konvergenz|gleichmäßigen Konvergenz]] und der [[vollständiger Raum|Vollständigkeit]] anwendbar. Ein vollständiger normierter Vektorraum heißt [[Banachraum]], ein vollständiger Prähilbertraum heißt [[Hilbertraum]].
+
+== Verallgemeinerungen ==
+
+* Wenn man an Stelle eines Körpers <math>K</math> einen kommutativen [[Ring (Algebra)|Ring]] zugrunde legt, erhält man einen [[Modul (Mathematik)|Modul]]. Moduln<!--sic!--> sind eine gemeinsame Verallgemeinerung der Begriffe [[abelsche Gruppe]] (für den Ring der [[ganze Zahl|ganzen Zahlen]]) und Vektorraum (für Körper).
+
+* Einige Autoren verzichten in der Definition von Körpern auf das Kommutativgesetz der Multiplikation und nennen Moduln<!--sic!--> über [[Schiefkörper]]n ebenfalls Vektorräume. Folgt man dieser Vorgehensweise, so müssen <math>K</math>-Linksvektorräume und <math>K</math>-Rechtsvektorräume unterschieden werden, wenn der Schiefkörper nicht kommutativ ist. Die oben gegebene Definition des Vektorraums ergibt dabei einen <math>K</math>-Linksvektorraum, da die Skalare im Produkt auf der linken Seite stehen. <math>K</math>-Rechtsvektorräume werden analog mit der spiegelbildlich erklärten Skalarmultiplikation definiert. Viele fundamentale Ergebnisse gelten völlig analog auch für Vektorräume über Schiefkörpern, etwa die Existenz einer Basis.
+
+* Wenn man an Stelle eines Körpers <math>K</math> einen [[Halbkörper]] zugrunde legt, erhält man einen [[Halbvektorraum]].
+
+* Eine andere Verallgemeinerung von Vektorräumen sind [[Vektorbündel]]; sie bestehen aus je einem Vektorraum für jeden Punkt eines [[Topologischer Raum|topologischen]] Basisraums.
+
+== Literatur ==
+* Gerd Fischer: ''Lineare Algebra''. Vieweg-Verlag, ISBN 3-528-03217-0.
+
+== Einzelnachweise ==
+<references />
+
+== Weblinks ==
+* {{Wikibooks|Mathe für Nicht-Freaks: Vektorraum}}
+* [http://lp.uni-goettingen.de/get/text/813 Vektorraumtheorie] (E-Learning-Angebot mit Übungsaufgaben)
+
+[[Kategorie:Vektorraum|!]]
+[[Kategorie:Lineare Algebra]]

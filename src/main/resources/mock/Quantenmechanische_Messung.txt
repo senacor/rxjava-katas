@@ -1,0 +1,167 @@
+Bei jedem [[Messung|Messprozess]] gibt es eine '''physikalische Wechselwirkung''' zwischen gewissen Eigenschaften des Messobjektes (z.&nbsp;B. Ort, Impuls, magn. Moment) und dem Zustand (der „Zeigerstellung“) der Messapparatur.
+
+Bei einem Messprozess auf makroskopischer Ebene kann jeder physikalischen Größe, die gemessen werden soll, nach der Wechselwirkung von Objekt und Apparatur eine Zeigerstellung zugeordnet werden. Bei einer Wiederholung der Messung unter denselben Bedingungen stellt sich (etwa) dasselbe Ergebnis ein. 
+
+Bei einem Messprozess in mikroskopischen Dimensionen hingegen kann es vorkommen, dass wiederholte Messungen unter exakt denselben Bedingungen zu beliebig verschiedenen Messergebnissen führen. Diese Abweichungen lassen sich nicht durch die Ungenauigkeit des Messapparates begründen, sondern sind durch den statistischen Charakter der Quantenmechanik verursacht. Die Analyse des Messprozesses in mikroskopischen Dimensionen wird mitunter als '''quantenmechanischer Messprozess''' bezeichnet.   
+
+== Präparation und Messung in der Quantenmechanik ==
+
+Die theoretische Deutung eines Messprozesses im Rahmen der Quantenmechanik erfordert gemäß Heisenberg drei Schritte<ref>W. Heisenberg: ''Physik und Philosophie.'' Hirzel, Stuttgart 1959.</ref>:
+
+* Es wird eine [[Grundgesamtheit]] von Teilchen erzeugt, welche durch eine [[Wellenfunktion]] ''&psi;'' repräsentiert wird (Präparation). 
+* Es findet eine [[Zeitentwicklungsoperator|zeitliche Entwicklung]] des physikalischen Systems, bestehend aus Messobjekt und Messapparat, statt (Wechselwirkung).
+* Nach der Zeitentwicklung wird das Messergebnis bestimmt (Registrierung). 
+
+Besonders [[Willis E. Lamb|Lamb]]<ref>W.E. Lamb, ''An Operational Interpretation of nonrelativistic Quantum Mechanics'', Physics Today 22 (1969) Heft 4, 23–28.</ref> verweist in diesem Zusammenhang auf eine eindeutige Klärung, worin der erste Schritt des Prozesses genau bestehen soll, also die Fixierung der äußeren Bedingungen, durch welche die Ausgangssituation des beobachteten Systems vor der Messung definiert wird, z.&nbsp;B. dass sich die Teilchen zu Beginn in einem bestimmten Raumbereich befinden oder ein bestimmtes magnetisches Moment besitzen.
+
+Hingegen ist das Ergebnis einer einzelnen Messung eine reelle Zahl oder eine Eigenschaft der betrachteten Messgröße. Bei Wiederholungen der Messung erhält man nicht dasselbe Ergebnis wie zuvor, sondern bestenfalls eine Werte-Statistik für die fragliche Messgröße. Bei vorgegebener Präparation kann die ''Wahrscheinlichkeit''&nbsp; für das Ergebnis einer Messung im Rahmen der Quantenmechanik aus der zeitlichen Entwicklung der Wellenfunktion im Messapparat vorhergesagt werden. 
+
+Es war [[John_von_Neumann#Arbeiten_zur_Quantenmechanik|John von Neumann]], der dieses Konzept 1932 als erster ausführlich in seinem mathematischen Lehrbuch zur Quantenmechanik formalisierte.<ref name="Neumann"> J. v. Neumann, ''Mathematische Grundlagen der Quantenmechanik'', Springer (1932, 1968, 1996).</ref>. Von Neumanns Ziel dabei war es, sowohl das Messobjekt (genannt ''System'') also auch den Messapparat inklusive deren Wechselwirkung im Rahmen der Quantenmechanik zu beschreiben. Dieses Konzept wird in der Literatur häufig als '''von Neumann Messprozess''' bezeichnet.
+
+==Von Neumann-Messprozess==
+
+In der [[Quantenmechanik]] werden die beobachtbaren Größen (z.&nbsp;B. Ort, Impuls, Spin oder Energie) eines physikalischen Systems durch die [[Eigenwert|Eigenwerte]] von [[Hermitescher_Operator|hermiteschen Operatoren]] dargestellt. Die Hermitezität der Operatoren gewährleistet dabei, dass alle Messgrößen stets reelle Zahlen sind. Die möglichen Eigenwerte der Operatoren können einerseits diskrete Werte annehmen, man spricht dann von einem sogenannten [[Punktspektrum#Unbeschr.C3.A4nkte_Operatoren.3B_Spektralzerlegung|Punktspektrum]], oder die Eigenwerte entsprechen einem Kontinuum von reellen Zahlen, dem sogenannten [[Spektrum_(Operatortheorie)#Das_stetige_Spektrum|stetigen Spektrum]]. 
+
+=== Präparation ===
+
+Bei der Präparation wird der quantenmechanische [[Zustand_(Quantenmechanik)|Zustand]] des Systems vor der Messung spezifiziert. Diese Spezifikation wird formal in dem der physikalischen Größe zugeordneten abstrakten [[Hilbertraum]] vorgenommen. Ist <math>\hat{Q}</math> der hermitesche Operator der betrachteten physikalischen Größe und <math>q_n</math> das dazugehörige Punktspektrum von Eigenwerten, so bilden die (normierten) [[Eigenvektor|Eigenvektoren]] <math>\{|\phi_n\rangle\}</math> des Operators [[Basis (Vektorraum)|Basisvektoren]] des so definierten Hilbertraumes <math>{\mathcal H}_Q</math>. Jeder beliebige Zustand <math>|\psi\rangle</math> dieses Hilbertraumes kann eindeutig in dieser Basis dargestellt werden
+
+:<math>|\psi\rangle=\sum_n\,c_n\,|\phi_n\rangle,</math>
+
+wobei <math>c_n=\langle \phi_n|\psi\rangle</math> die Komponenten des Zustandsvektors sind.  Für solche Zustände ist die Wahrscheinlichkeit dafür, einen der möglichen Messwerte <math>q_n</math> zu erhalten, durch das Absolutquadrat der Komponenten des Zustandsvektors gegeben (Born'sches Postulat). Für physikalische Systeme mit einem stetigen Eigenwertspektrum ist die Vorgehensweise ähnlich, aber mathematisch anspruchsvoller.
+
+=== Messung ===
+
+In Analogie zu der betrachteten Messgröße beschreibt von Neumann auch die (makroskopische) Messapparatur durch Basisvektoren <math>\{|M_n\rangle\}</math> in einem entsprechenden Hilbertraum <math>{\mathcal H}_M</math>. Der Sinn des Messgerätes ist es, den Zustand des beobachteten Systems nach der Wechselwirkung im Messgerät anzuzeigen. Die „Zeigerstellungen“ <math>n</math> des Messgerätes werden dabei durch den Zustand <math>{|M_n\rangle}</math> angezeigt, falls das System vor der Wechselwirkung im Zustand <math>{|\phi_n\rangle}</math> war. Zu Beginn der Messung wird definiert, dass das Messgerät in einem Zustand <math>{|M_0\rangle}</math> sei, dem Zustand der anzeigt, dass noch nicht gemessen wurde. Die Wechselwirkung von System und Messgerät ergibt gemäß der [[Zeitentwicklungsoperator|Schrödinger-Zeitentwicklung]] nach der Zeit t das folgende Schema:
+
+:<math>\underbrace{|\phi_n\rangle|M_0\rangle}_\text{Anfangszustand}\;\xrightarrow[]{\quad t \quad}\quad \underbrace{|\phi_n\rangle|M_n\rangle}_\text{Endzustand},</math>  
+
+wobei das Produkt dem sogenannten [[Tensorprodukt]] der beiden Zustände des Gesamtsystems entspricht. Dieses Produkt kann man vereinfacht als [[Konjunktion_(Logik)|UND-Verknüpfung]] verstehen. Gemäß diesem Schema ergibt sich eine eindeutige Zuordnung von möglichen Zuständen des Systems und den möglichen Zeigerstellungen des Messgerätes. Da dieses Schema den Zustand <math>|\phi_n\rangle</math> des beobachteten Systems vor und nach der Wechselwirkung im Messgerät nicht beeinflusst, wird es als '''ideale Messung''' bezeichnet.
+
+==== Messung an Zustandsgemischen ====
+{{Siehe auch|Dichteoperator}}
+Für Systeme, die durch einen [[Dichteoperator]] <math>\hat \rho</math> beschrieben werden, ist die Wahrscheinlichkeit den Eigenwert <math>a</math> des Operators <math>A</math> zu messen gegeben durch:
+:<math>p_a = \sum_i\left\langle a_i\right|\hat  {\rho} \left|a_i\right\rangle=\mbox{Tr}(\hat {\mathbb{P}}_a \hat {\rho}),</math>.
+Das System befindet sich direkt im Anschluss an die Messung im Zustand <math>\frac{\hat{\mathbb{P}}_a \hat{\rho} \hat{\mathbb{P}}_a}{\operatorname{Tr}(\hat{\mathbb{P}}_a \hat{\rho} \hat{\mathbb{P}}_a)}</math>.
+
+=== Das Messproblem ===
+
+Die zeitliche Entwicklung der Wechselwirkung zwischen einem Messobjekt und dem Messgerät kann einen Endzustand des Gesamtsystems ergeben, der zunächst keiner eindeutigen Zeigerstellung des Messgerätes entspricht. Andererseits werden am Messgerät in der Praxis aber eindeutige Messergebnisse abgelesen. Die Frage danach, auf welche Weise in diesem Prozess die Entscheidung für die Anzeige des Gerätes geschieht, ist als '''Messproblem''' bekannt.<ref name="Neumann"/> Das Messproblem wird im Folgenden anhand eines Beispiels erläutert:
+
+Ein Messobjekt sei zu Beginn im Eigenzustand <math>|\phi_1\rangle</math>. Das Messgerät sei am Anfang in Initialzustand <math>|M_0\rangle</math>. Nachdem das Objekt die Wechselwirkung mit dem Messgerät nach der Zeit t durchlaufen hat befindet sich das Gerät in dem Zustand <math>|M_1\rangle</math>. Schematisch lässt sich dieser Vorgang folgendermaßen darstellen
+
+:<math>|\phi_1\rangle|M_0\rangle\;\xrightarrow[]{\quad t\quad}\;|\phi_1\rangle|M_1\rangle.</math>
+
+Analog ist die Situation, wenn das Objekt am Anfang im Zustand <math>|\phi_2\rangle</math> vorliegt. In diesem Fall ergibt die Wechselwirkung mit dem Messgerät das folgende Schema
+
+:<math>|\phi_2\rangle|M_0\rangle\;\xrightarrow[]{\quad t\quad}\;|\phi_2\rangle|M_2\rangle.</math>
+
+Ist nun der Anfangszustand, der gemessen werden soll, kein Eigenzustand der zu messenden Observablen, sondern eine Überlagerung von verschiedenen Eigenzuständen [[Superposition (Physik)|(Superposition)]], dann wird der Prozess der Messung komplizierter. 
+
+Ist beispielsweise das Messobjekt am Anfang im Zustand <math>c_1|\phi_1\rangle+c_2|\phi_2\rangle</math>, so kann durch die Wechselwirkung mit dem Messgerät auch eine Superposition von Zuständen des Messgerätes resultieren, d.&nbsp;h. schematisch ergibt sich das Bild  
+
+:<math>(c_1|\phi_1\rangle+c_2|\phi_2\rangle)|M_0\rangle\;\xrightarrow[]{\quad t\quad}\;c_1|\phi_1\rangle|M_1\rangle+c_2|\phi_2\rangle|M_2\rangle.</math>
+
+In diesem Fall lässt sich der Zustand nach der Wechselwirkung nicht mehr als Produkt darstellen. Die Superposition der Zustände des Systems wurden durch die zeitliche Wechselwirkung auf die makroskopischen Zustände des Messgerätes übertragen. Der Endzustand entspricht also einer Superposition von System und Messgerät und es ist dann nicht mehr offensichtlich, welcher Zeigerstellung der Endzustand des Systems entsprechen soll (vgl. [[Schrödingers Katze]]). Lediglich ''nach'' der Registrierung am Ende kann eine eindeutige Aussage gemacht werden, ob entweder <math>|M_1\rangle</math> oder <math>|M_2\rangle</math> vorliegt. Nach der Born'schen Regel treten diese beiden Alternativen jeweils mit den Wahrscheinlichkeiten <math>{|c_1|^2}</math> bzw. <math>{|c_2|^2}</math> auf. Dabei bleibt aber zunächst ungeklärt, wie der Übergang von der Superposition zum Eigenzustand, d.h. schematisch
+
+:<math>c_1|\phi_1\rangle|M_1\rangle+c_2|\phi_2\rangle|M_2\rangle\;\xrightarrow[]{\quad\text{Reduktion}\quad}\;|\phi_n\rangle|M_n\rangle,</math>
+
+physikalisch begründet werden kann. Von Neumann argumentiert in diesem Zusammenhang mit einer Reduktion des quantenmechanischen Zustandes (Messung 1. Art), was mitunter als [[Kollaps_der_Wellenfunktion|Kollaps der Wellenfunktion]] bezeichnet wird. In diesem Zusammenhang weist von Neumann im Besonderen darauf hin (vgl. Kap.&nbsp;5)<ref name="Neumann"/>, dass die Reduktion der Wellenfunktion ''unstetig'' und ''augenblicklich'' in der Zeit stattfindet und somit nicht im Rahmen der von Schrödinger vorgeschlagenen linearen Zeitentwicklung beschrieben werden kann.
+
+== Spinmessungen ==
+
+Bei der Messung des [[Magnetisches_Moment#Das_magnetische_Moment_von_Teilchen_und_Kernen|magnetischen Spinmomentes]] werden in einer Quelle [[Spin]]-1/2 Teilchen präpariert, die sich nach Austritt in y-Richtung durch ein inhomogenes Magnetfeld <math>B_z</math> bewegen, welches in z-Richtung orientiert ist ([[Stern-Gerlach-Experiment]]). Das magnetische Moment der Teilchen wird darin während einer kurzen Zeit in Wechselwirkung mit dem Magnetfeld sein, welches eine von der Richtung des Spins abhängige Kraft auf die Teilchen bewirkt. Diese Kraft führt dazu, dass Teilchen im Zustand Spin-„up“ in positiver z-Richtung und Teilchen im Zustand Spin-„down“ in negativer z-Richtung abgelenkt werden. Die so abgelenkten Teilchen werden am Ende von Detektoren auf der z-Achse registriert. 
+
+Die Kopplung von System und Messgerät im von Neumann-Messprozess wird hier also durch das Produkt von Spin und dem magnetischen Feld des Messgerätes ausgelöst. Der für die Wechselwirkung relevante Teil des Hamiltonoperators ist <math>\hat{H}_{int}=\mu_B\,\hat{\sigma}_z \hat{B}_z</math>. Als Zeigerzustände können dabei die örtlichen Auslenkungen in die obere oder untere z-Halbebene dienen, z.&nbsp;B. „+1“ für Teilchen oberhalb und „-1“ für Teilchen unterhalb des Koordinatenursprungs. Schematisch ergibt sich damit
+
+:<math>|z\pm\rangle|M_0\rangle\;\xrightarrow[]{\quad t \quad}\quad e^{-i\hat{H}_{int}t}|z\pm\rangle|M_0\rangle=|z\pm\rangle\, e^{\mp i\mu_B\hat{B}_z t}|M_0\rangle=:|z\pm\rangle|M_{\pm1}(t)\rangle.</math>   
+
+wobei <math>|z\pm\rangle</math> die Eigenvektoren des Spins in z-Richtung sind. Für gewisse Zwecke ist es manchmal sinnvoll den Spin auch in Richtung eines beliebig vorgegebenen Einheitsvektors  <math>\mathbf{a}</math> zu messen. Dazu wird die Stern-Gerlach-Apparatur dann in diese Richtung orientiert. Die eigentliche Spinmessung wird dann mit Hilfe des [[Vektor]]s <math>\mathbf{\sigma}=(\sigma_x,\sigma_y,\sigma_z)</math> der [[Pauli-Matrizen]] ermöglicht. Der dazugehörige Operator ist durch das [[Skalarprodukt]] von <math>\mathbf{a}</math> mit dem Spin-Vektor gegeben
+
+:<math>\hat{\mathbf{a}}=\mathbf{a}\cdot\mathbf{\sigma}\,.</math>  
+
+Das zu diesem Operator gehörige [[Eigenwertgleichung|Eigenwertproblem]] ist
+
+:<math>\hat{\mathbf{a}}|\mathbf{a}\pm\rangle=\pm1|\mathbf{a}\pm\rangle,</math>
+
+d.&nbsp;h., die Eigenwerte des Operators sind <math>m=\pm 1</math> und repräsentieren die beiden Spinrichtungen „up“ und „down“ bzw. die Zeigervariablen bezüglich der Orientierung des Vektors <math>\mathbf{a}</math>. Mit Hilfe dieser [[Eigenvektoren]] lässt sich der folgende Spin-Projektor konstruieren 
+
+:<math>\hat{E}_\sigma(\mathbf{a}m)=|\mathbf{a}m\rangle\langle \mathbf{a}m|\,.</math>
+
+Wie jeder Projektor hat dieser Operator gemäß Definition die Eigenwerte „1“ und „0“. Letztere werden in der [[Quantenlogik]] manchmal als „Ja/Nein“-Aussagen interpretiert.
+
+=== Wahrscheinlichkeiten bei Spinmessungen ===
+
+Betrachtet man eine Gesamtheit von Teilchen die ausschließlich in Richtung des Vektors <math>\mathbf{a}</math> orientiert sind, so werden die so präparierten Objekte durch den Zustand <math>|\mathbf{a}m\rangle</math> dargestellt. Wird an diesem Zustand nun eine Spin-Messung in Richtung eines Vektors <math>\mathbf{b}</math> vorgenommen, dann ist die bedingte Wahrscheinlichkeit dafür, ein Teilchen mit einer Spin-Orientierung in dieser Richtung zu registrieren gleich
+
+:<math>P_\sigma(\mathbf{b}n|\mathbf{a}m)=|\langle\mathbf{b}n|\mathbf{a}m\rangle|^2\,.</math>
+
+Um diesen Ausdruck auszuwerten beschränkt man sich häufig auf Richtungsvektoren <math>\mathbf{a}</math> und <math>\mathbf{b},</math> die beide in der x-z-Ebene des Ortsraumes liegen und deren Orientierung in beiden Fällen auf die z-Achse bezogen wird. Man bezeichnet die entsprechenden Winkel mit <math>\,\theta_a</math> und <math>\theta_b\,.</math>. Für die Wahrscheinlichkeit von Messungen mit den angegebenen Orientierungen vereinfacht sich die vorige Gleichung zu
+
+:<math>P_\sigma(\theta_b|\theta_a)=\frac{1}{2}\,\left[1+\cos(\theta_b-\theta_a)\right]\,.</math>
+
+Häufig wird diese Formel auch in einer äquivalenten Form angegeben
+
+:<math>P_\sigma(\theta_b|\theta_a)=\cos^2\left(\frac{\theta_b-\theta_a}{2}\right)</math>.
+
+Diese Formel für die bedingte Wahrscheinlichkeit spielt u.&nbsp;a. eine wichtige Rolle im Zusammenhang mit der [[Bellsche Ungleichung|Bell’schen Ungleichung]] und der Herleitung des [[Quanten-Zeno-Effekt]]es.
+
+=== Spin-Messungen an zusammengesetzten Systemen ===
+
+Von der klassischen Physik her ist man gewohnt, dass ''zusammengesetzte Systeme'' in Teilsysteme oder Untersysteme zerlegt werden können. In der Quantenmechanik zeigt sich, dass zusammengesetzte Systeme darüber hinaus völlig andere und überraschende ganzheitliche Eigenschaften aufweisen können. Sie treten auf, wenn sich zusammengesetzte Quantensysteme in [[Quantenverschränkung|verschränkten]] Zuständen befinden.
+
+Es können z.&nbsp;B. Quantensysteme präpariert werden, bei denen man an zwei verschiedenen Orten bei Messungen jeweils ein Photon registriert. Analoge Systeme gibt es auch für Elektronen. Zwei solche Teilchen werden als nicht unterscheidbar angesehen. Unterscheidbar sind hingegen die Orte der Objekte, an denen bei einer Messung z.&nbsp;B. eine Photonenpolarisation gemessen wird.
+
+Formal kann man z.&nbsp;B. zwei unabhängige Quantensysteme S<sub>1</sub> und S<sub>2</sub> betrachten, die jeweils durch die Spin-Zustände <math>\scriptstyle \left|\uparrow\right\rangle_1</math> und <math>\scriptstyle \left|\downarrow\right\rangle_2</math> dargestellt werden. Die Pfeile werden in der Literatur häufig verwendet, wenn die jeweiligen Spins in z-Richtung („up“ bzw. „down“) präpariert sind. Das Produkt 
+
+:<math>\left|\uparrow\downarrow\right\rangle=\left|\uparrow\right\rangle_1\cdot\left|\downarrow\right\rangle_2</math>
+
+definiert ein aus den beiden Teilsystemen gebildetes Gesamtsystem, d.&nbsp;h. einen ''Produktzustand'' der Teilchen. In diesem speziellen Fall faktorisiert die Zweiteilchenwellenfunktion und es handelt sich um unabhängige Teilsysteme, da keine Abhängigkeit zwischen den Systemen nachgewiesen werden kann. 
+
+Eine [[Quantenverschränkung|Verschränkung]] der Teilsysteme ergibt sich u.&nbsp;a. für den sog. Singulettzustand, der im Rahmen des EPR-Gedankenexperimentes eine zentrale Rolle spielt.<ref>„Verschränkt“ wäre auch der analoge „Triplett“-Zustand, der sich vom Singulettzustand durch ein Plus anstelle des Minus-Zeichens unterscheidet.</ref> Die formale Darstellung dieses Zustandes ist 
+
+:<math>\left|\phi\right\rangle=\frac{1}{\sqrt{2}}\,\Big[\,\left|\uparrow\downarrow\right\rangle-\left|\downarrow\uparrow\right\rangle\Big]</math>.
+
+Dieser Zustand lässt sich nicht als ein Produkt der zwei Einteilchenzustände darstellen. Eine Messung der einzelnen Spins der beiden Teilchen in z-Richtung ergibt mit Wahrscheinlichkeit 1 entgegengesetzte [[Vorzeichen (Zahl)|Vorzeichen]] und ist unabhängig von der Reihenfolge mit welcher die Messungen an den beiden Komponenten durchgeführt werden. Die Festlegung auf die Orientierung in z-Richtung ist keine Beschränkung der Allgemeinheit, da dieser Zustand die Eigenschaft der Rotationsinvarianz besitzt.
+
+Im Rahmen des [[EPR-Effekt#Quantentheoretische_Grundlagen_des_EPR-Experiments|EPR-Experimentes]] werden  für zwei fest vorgegebene Richtungsvektoren '''a''' und '''b''', Spinmessungen an den beiden Komponenten 1 und 2 des Singulettzustandes durchgeführt. Dabei kann man nach der ''bedingten Wahrscheinlichkeit'' fragen, bei Teilchen 2 einen Spin <math>n\,(=\pm1)</math>  in b-Richtung zu erhalten, wenn die Messung an Teilchen 1 das Ergebnis <math>m\,(=\pm1)</math> in a-Richtung ergeben hat:
+
+:<math>P_{\sigma\sigma'}(\mathbf{b}n|\mathbf{a}m;\phi)=\frac{||\hat E_{\sigma'}(\mathbf{b}n)\otimes\hat E_{\sigma}(\mathbf{a}m)\phi||^2}{||\hat E_\sigma(\mathbf{a}m)\otimes\mathbf{1}\phi||^2}</math>.
+
+Das Tensorprodukt der Operatoren macht deutlich, dass der jeweils links in diesem Produkt vorkommende Operator nur auf die erste Komponente des Singulettzustandes angewendet wird, während der jeweils rechts stehende Operator nur auf die zweite Komponente des Singulattzustandes angewendet werden soll. 
+Der Nenner ist gleich der Wahrscheinlichkeit <math>\scriptstyle P_{\sigma}(\mathbf{a}m;\phi)</math>, bei einer Spinmessung am Teilchen 1 in '''a'''-Richtung den Wert <math>m</math> zu erhalten. Man beachte dabei, dass diese Wahrscheinlichkeit immer gleich 1/2 ist unabhängig davon, in welche Richtung '''a''' bei der Messung hat. Der '''1'''-Operator im Nenner bedeutet, dass die zweite Komponente des Singulettzustandes bei der Erwartungswertbildung unverändert bleibt. 
+
+Nach den Regeln der Spin-Algebra ergibt sich für die bedingte Wahrscheinlichkeit das formal einfache Ergebnis
+
+:<math>P_{\sigma,\sigma'}(n|m;\theta_a,\theta_b)=\frac{1}{2}\left[1-n\,m\,\cos(\theta_b-\theta_a)\right]</math>,
+
+wobei <math>m</math> und <math>n</math> jeweils die Werte +1 („up“) oder −1 („down“) haben kann. Diese Wahrscheinlichkeit ist invariant gegenüber der Vertauschung der Winkel und der beiden Spins. 
+
+Die ''Verbundwahrscheinlichkeit'' der beiden Ereignisse ist gleich dem Produkt aus der bedingten Wahrscheinlichkeit und der Randwahrscheinlichkeit, d.&nbsp;h. 
+
+:<math>P_{\sigma,\sigma'}(m,n|\theta_a,\theta_b)=P_{\sigma,\sigma'}(n|m;\theta_a,\theta_b)\cdot P_{\sigma}(m|\theta_a)</math>.
+
+Damit lässt sich die Korrelation <math>\scriptstyle \text{E}\left[\mathbf{a},\mathbf{b}\right]</math> der beiden Spin-Operatoren durch gewöhnliche Erwartungswertbildung über die Zufallsvariablen der beiden Spin-Parameter berechnen:
+
+:<math>\text{E}\left[\mathbf{a},\mathbf{b}\right]:=\langle\phi|\hat{\mathbf{a}}\,\otimes\,\hat{\mathbf{b}}|\phi\rangle=\sum_{m,n=\pm 1}\,n\,m\,P_{\sigma,\sigma'}(m,n|\theta_a,\theta_b)=-\cos(\theta_b-\theta_a)=-\,\mathbf{a}\cdot\mathbf{b},</math>
+
+wobei der letzte Term das gewöhnliche [[Skalarprodukt]] der beiden Richtungsvektoren darstellt. Der spezielle Fall gleicher Orientierungen der beiden Messrichtungen '''a''' und '''b''' entspricht einer Winkeldifferenz von 0°. In diesem Fall ist die Korrelation gleich −1. Bilden hingegen die Messorientierungen einen relativen Winkel von 90°, d.&nbsp;h. sie sind orthogonal zueinander ausgerichtet, dann ergibt die obige Formel eine verschwindende Korrelation von 0.
+
+== Einzelnachweise ==
+
+<references/>
+
+== Literatur ==
+
+* John v. Neumann, ''Mathematische Grundlagen der Quantenmechanik'', [Nachdr. der Ausg.] Berlin, Springer, 1932. – Berlin; Heidelberg; New York: Springer, 1996.
+* Jürgen Audretsch, ''Verschränkte Systeme'', ISBN 352740452X, 2005, insbesondere auch zur Messung an verschränkten Systemen, selektive Messung und nicht-selektive Messung [http://www.wiley-vch.de/books/sample/352740452X_c01.pdf Kapitel 7]
+
+== Siehe auch == 
+* [[Quantenmechanik]]
+* [[quantenmechanischer Zustand]]
+* [[Quantentomographie]]
+* [[Spektralmaß]]
+* [[Unschärferelation]]
+
+[[Kategorie:Quantenmechanik]] 
+[[Kategorie:Optische Messtechnik]]

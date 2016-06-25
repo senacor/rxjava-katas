@@ -1,0 +1,204 @@
+{{DISPLAYTITLE:''L''<sup>''p''</sup>-Raum}}
+Die '''<math>L^p</math>-Räume''', auch '''Lebesgue-Räume''', sind in der [[Mathematik]] spezielle [[Vektorraum|Räume]], die aus allen '''''p''-fach integrierbaren Funktionen''' bestehen. Das '''L''' in der Bezeichnung geht auf den französischen Mathematiker [[Henri Léon Lebesgue]] zurück, da diese Räume über das [[Lebesgue-Integral]] definiert werden. Im Fall [[Banachraum]]-wertiger Funktionen (wie im Folgenden für allgemeines <math>E</math> dargestellt) bezeichnet man sie auch als '''Bochner-Lebesgue-Räume'''.<ref>''Bochner-Integral.'' In: Guido Walz (Red.): ''Lexikon der Mathematik.'' Band 3: ''Inp bis Mon.'' Spektrum Akademischer Verlag, Mannheim u. a. 2001, ISBN 3-8274-0435-5.</ref> Das ''p'' in der Bezeichnung ist ein reeller Parameter: Für jede Zahl <math>0 < p \le \infty</math> ist ein <math>L^p</math>-Raum definiert. Die Konvergenz in diesen Räumen wird als [[Konvergenz im p-ten Mittel]] bezeichnet.
+
+== Definition ==
+=== ℒ<sup>''p''</sup> mit Halbnorm ===
+Sei <math>(\Omega, \mathcal A, \mu)</math> ein [[Maßraum]], <math>\mathbb{K} \in \{\R,\C\}</math> und <math>0 < p < \infty</math>. Dann ist die folgende Menge ein [[Vektorraum]]:
+:<math>
+\mathcal{L}^p(\Omega, \mathcal A, \mu) := \left\{ f\colon \Omega \to \mathbb{K}: f\, {\rm ist\ messbar}\,, \int_\Omega |f(x)|^p \,{\rm d}\mu(x) < \infty \right\} \,.
+</math> 
+Die durch
+:<math>\begin{matrix} \|\cdot\|_{{\mathcal L}^p}:&{\mathcal L}^p&\to& \R\\
+&f &\mapsto& \displaystyle \left(\int_\Omega |f(x)|^p\,{\rm d}\mu(x)\right)^{1/p}\end{matrix}</math>
+gegebene Abbildung ist für alle <math>p \geq 1</math> eine [[Halbnorm]] auf <math>\mathcal{L}^p</math>. Die [[Dreiecksungleichung]] für diese Halbnorm wird [[Minkowski-Ungleichung]] genannt und kann mit Hilfe der [[Hölder-Ungleichung]] bewiesen werden.
+
+Genau dann ist <math>\|\cdot\|_{{\mathcal L}^p}</math> eine Norm auf <math>\mathcal{L}^p</math>, wenn die leere Menge die einzige [[Nullmenge]] in <math>\mathcal{A}</math> ist. Gibt es nämlich eine Nullmenge <math>N\neq\emptyset</math>, so ist die [[charakteristische Funktion (Mathematik)|charakteristische Funktion]] <math>1_N</math> ungleich der [[Nullfunktion]], aber es gilt <math>\|1_N\|_{{\mathcal L}^p}=0</math>.
+
+=== ''L''<sup>p</sup> mit Norm ===
+Um auch im Fall einer Halbnorm <math>\|\cdot\|_{{\mathcal L}^p}</math> zu einem [[Normierter Raum|normierten Raum]] zu kommen, identifiziert man Funktionen miteinander, wenn sie [[fast überall]] gleich sind. Formal bedeutet das: Man betrachtet den (von <math>p \geq 1</math> unabhängigen) [[Untervektorraum]]
+:<math>\mathcal{N} := \{f\in\mathcal{L}^p \mid \|f\|_{{\mathcal L}^p}=0\} = \{f\in\mathcal{L}^p \mid f=0 ~ \mu\mbox{-fast überall}\}</math> 
+und definiert den Raum <math>L^p</math> als den [[Faktorraum]] <math>\mathcal{L}^p/\mathcal{N}</math>. Zwei Elemente von <math>[f], [g]\in L^p</math> sind also genau dann gleich, wenn <math>f - g \in \mathcal{N}</math> gilt, also wenn <math>f</math> und <math>g</math> fast überall gleich sind.
+
+Der Vektorraum <math>L^p</math> ist durch <math>\|[f]\|_{L^p}:=\|f\|_{{\mathcal L}^p}</math> normiert. Die Normdefinition hängt nicht von dem Repräsentanten aus <math>[f]</math> ab, das heißt, für Funktionen <math>f_1,f_2\in[f]</math> in der gleichen Äquivalenzklasse gilt <math>\|f_1\|_{\mathcal{L}^p}=\|f_2\|_{\mathcal{L}^p}</math>. Das begründet sich damit, dass das Lebesgue-Integral invariant gegenüber Änderungen des Integranden auf Nullmengen ist.
+
+Der normierte Vektorraum <math>L^p</math> ist [[vollständiger Raum|vollständig]] und damit ein [[Banachraum]], die Norm <math>\| \cdot \|_{L^p}</math> wird [[Norm (Mathematik)#Lp-Normen|''L<sup>p</sup>''-Norm]] genannt.
+
+Auch wenn man von sogenannten <math>L^p</math>-Funktionen spricht, handelt es sich dabei um die gesamte Äquivalenzklasse einer klassischen Funktion. Allerdings liegen im Falle des Lebesgue-Maßes auf dem <math>\mathbb{R}^n</math> zwei verschiedene stetige Funktionen nie in der gleichen [[Äquivalenzklasse]], so dass der <math>L^p</math>-Begriff eine natürliche Erweiterung des Begriffs stetiger Funktionen darstellt.
+
+=== Sonderfall ''p'' = ∞ ===
+Auch für <math>p=\infty</math> kann man mithilfe des [[Wesentliches Supremum|wesentlichen Supremum]] (in Zeichen: <math>\operatorname{ess\,sup}</math>) einen <math>L^p</math>-Raum definieren, den Raum der wesentlich beschränkten Funktionen. Hierfür gibt es verschiedene Möglichkeiten, die aber für [[Maß (Mathematik)|σ-endliche]] [[Maßraum|Maßräume]] alle zusammenfallen. Am verbreitetsten ist:
+:<math>\mathcal{L}^\infty(\Omega, \mathcal A, \mu) := \left\{ f \colon \Omega \to \mathbb{K}: f\, {\rm ist\,messbar }\,, \|f\|_{{\mathcal L}^\infty} < \infty \right\}</math>;
+dabei ist
+:<math> \|f\|_{\mathcal{L}^\infty} := \operatorname*{ess\,sup}_{x\in\Omega}|f(x)| \; \biggl( = \inf_{\scriptstyle N\in\mathcal{A}\atop\scriptstyle\mu(N)=0}\sup_{x\in\Omega\setminus N}|f(x)| \biggr).</math>
+Betrachtet man analog zu oben <math>L^\infty:=\mathcal{L}^\infty/\mathcal{N}</math>, erhält man wieder einen Banachraum.
+
+== Beispiele ==
+=== Lebesgue-Räume bezüglich des Lebesgue-Maßes ===
+Ein sehr wichtiges Beispiel von <math>L^p</math>-Räumen ist durch einen Maßraum <math>\Omega\subset\R^n</math> gegeben, <math>\mathcal{A}</math> ist dann die [[borelsche σ-Algebra]] <math>\mathcal{B}(\Omega)</math>, und <math>\mu</math> das [[Lebesgue-Maß]] <math>\lambda</math>. In diesem Zusammenhang wird die kürzere Notation <math>L^p(\Omega):=L^p(\Omega,\mathcal{B}(\Omega),\lambda)</math> benutzt.
+
+=== Der Folgenraum ℓ<sup>''p''</sup> ===
+{{Hauptartikel|Folgenraum}}
+
+Betrachtet man den [[Maßraum]] <math>(\N, \mathcal A, \mu)</math>, wobei hier also <math>\Omega</math> als die Menge <math>\N</math> der [[Natürliche Zahl|natürlichen Zahlen]], <math>\mathcal A = \mathcal{P}(\N)</math> deren [[Potenzmenge]] und <math>\mu</math> als das [[Zählmaß (Maßtheorie)|Zählmaß]] gewählt wurde, dann besteht der Raum <math>L^p(\N, \mathcal A, \mu)</math> aus allen [[Folge (Mathematik)|Folgen]] <math>(x_n)_{n \in \N} \in \mathbb{K}^\N</math> mit 
+:<math>\sum_{n=1}^\infty |x_n|^p < \infty</math>
+für <math>0 < p<\infty</math> bzw.
+:<math>\sup_{n\in\N}|x_n| < \infty</math>
+für <math>p=\infty</math>.
+
+Dieser Raum wird mit <math>\ell^p</math> bezeichnet. Die Grenzfälle <math>\ell^1</math> und <math>\ell^\infty</math> sind der Raum der absolut summierbaren Zahlenfolgen und der Raum der beschränkten Zahlenfolgen. Für alle <math>0< p\leq q\leq\infty</math> gilt <math>\ell^p\subseteq\ell^q</math>.
+
+=== Allgemeiner ℓ<sup>''p''</sup>-Raum ===
+Völlig analog kann man zu einer beliebigen Indexmenge <math>I</math> den Maßraum mit dem Zählmaß betrachten. In diesem Fall nennt man den <math>L^p</math>-Raum <math>\ell^p(I)</math>, es gilt
+:<math>\ell^p(I)=\left\{(x_i)_{i\in I} \in \mathbb{K}^I;\, \sum_{i\in I} |x_i|^p < \infty \right\}\,</math>,
+wobei die Konvergenz der Summe implizieren möge, dass nur abzählbar viele Summanden ungleich null sind (''siehe auch [[unbedingte Konvergenz]]'').
+
+=== Sobolev-Räume quadratintegrierbarer Funktionen ===
+Wählt man <math>\Omega = \R^n</math>, <math>\mathcal{A} = \mathcal{B}\left(\R^n\right)</math> als die [[borelsche σ-Algebra]] und <math>\mu = \left(1 + \left\|\xi\right\|^2\right)^{\frac{s}{2}} \lambda</math>, wobei <math>s\in\R</math> und <math>\lambda</math> das <math>n</math>-dimensionale [[Borel-Lebesgue-Maß]] ist, dann erhält man den Maßraum <math>\left(\R^n,\mathcal{B}\left(\R^n\right),\left(1 + \left\|\xi\right\|^2\right)^{\frac{s}{2}} \lambda\right)</math>. Der Lebesgue-Raum <math>L^2\left(\R^n,\mathcal{B}\left(\R^n\right),\left(1 + \left\|\xi\right\|^2\right)^{\frac{s}{2}} \lambda\right)</math> der bezüglich dieses Maßes quadratintegrierbaren Funktionen ist ein echter Unterraum des Raums <math>\mathcal{S}'</math> der [[Temperierte Distribution|temperierten Distributionen]]. Er wird unter der [[Fourier-Transformation]] <math>\mathcal{F}</math> bijektiv auf den Raum [[Sobolev-Raum#Sobolev-Raum reellwertiger Ordnung|<math>H^s\left(\R^n\right)</math> der quadratintegierbaren Sobolev-Funktionen]] zur Differentiationsordnung <math>s</math>, ebenfalls ein echter Unterraum von <math>\mathcal{S}'</math>, abgebildet. Dabei überführt die Fourier-Transformation die entsprechenden Normen ineinander:
+:<math>\left\|\mathcal{F}\left(f\right)\right\|_{H^s\left(\R^n\right)} = \left\|f\right\|_{L^2\left(\R^n,\mathcal{B}\left(\R^n\right),\left(1 + \left\|\xi\right\|^2\right)^{\frac{s}{2}} \lambda\right)}</math>
+Für <math>s \ge 0</math> sind obige Räume dichte Teilräume von <math>L^2\left(\R^n,\mathcal{B}\left(\R^n\right),\lambda\right)</math>, sodass man in diesem Fall auch die Fourier-Transformation auf <math>L^2\left(\R^n,\mathcal{B}\left(\R^n\right),\lambda\right)</math> statt auf <math>\mathcal{S}'</math> betrachten kann.
+
+== Wichtige Eigenschaften ==
+=== Vollständigkeit ===
+Nach dem [[Satz von Fischer-Riesz]] sind die <math>L^p</math>-Räume vollständig für alle <math>1\le p \le \infty</math>, also [[Banachraum|Banachräume]].
+
+=== Einbettungen ===
+Ist <math>\mu</math> ein endliches Maß, gilt also <math>\mu(\Omega)<\infty</math>, so gilt <math>L^q\subseteq L^p\;</math> für <math>1\leq p \leq q</math> (folgt aus der [[Ungleichung vom arithmetischen und geometrischen Mittel#Ungleichung der verallgemeinerten Mittel|Ungleichung der verallgemeinerten Mittelwerte]]) 
+
+Für allgemeine Maße gilt für <math>1<p\leq q\leq r\leq\infty</math> stets <math>\mathcal{L}^q\supseteq\mathcal{L}^p\cap\mathcal{L}^r</math>. Dies wird auch als ''konvexe'' oder ''Hölder-Interpolation'' bezeichnet.
+
+=== Dichtheit und Separabilität ===
+Sei <math>\left(\Omega, \mathcal{A}\right)</math> ein [[Separable σ-Algebra|separabler Messraum]], <math>\mu</math> ein Maß auf <math>\left(\Omega, \mathcal{A}\right)</math> und <math>1 \le p < \infty </math>, dann ist <math>L^p\left(\Omega, \mathcal{A}, \mu\right)</math> [[Separabler Raum|separabel]].<ref>[[Haïm Brezis]]: ''Functional Analysis, Sobolev Spaces and Partial Differential Equations.'' Springer New York, New York NY 2010, ISBN 978-0-387-70913-0, Theorem 4.13.</ref> Der Raum <math>L^\infty\left(\Omega\right)</math> ist hingegen im Allgemeinen nicht separabel.
+
+Sei <math>\Omega \subset \R^n</math> [[Offene Menge|offen]]. Für <math> 1 \leq p < \infty</math> liegt der [[Testfunktionenraum]] <math>C_c^\infty(\Omega)</math> [[Dichte Teilmenge|dicht]] in <math>L^p(\Omega)</math>.<ref>[[Dirk Werner (Mathematiker)|Dirk Werner]]: ''Funktionalanalysis.'' 6., korrigierte Auflage. Springer, Berlin u. a. 2007, ISBN 978-3-540-72533-6, Lemma V.1.10.</ref>
+
+=== Kompaktheit ===
+Der [[Satz von Kolmogorow-Riesz]] beschreibt [[präkompakt]]e bzw. [[Kompakter Raum|kompakte Mengen]] in L<sup>p</sup>-Räumen.
+
+=== Dualräume und Reflexivität === 
+{{Hauptartikel|Dualität von Lp-Räumen}}
+Für <math>1 < p < \infty</math> sind die [[Dualraum|Dualräume]] der <math>L^p</math>-Räume wieder Lebesgue-Räume. Konkret gilt
+:<math>L^p(\Omega,\mathcal A,\mu)' \cong L^q(\Omega, \mathcal A, \mu),</math>
+
+worin <math>q</math> durch <math>\tfrac{1}{p}+\tfrac{1}{q} =1 </math> definiert ist, außerdem ist der kanonische, [[Isometrie|isometrische]] [[Isomorphismus]]
+:<math>L^q(\Omega, \mathcal A, \mu)\to L^p(\Omega,\mathcal A, \mu)'</math>
+
+gegeben durch
+:<math>f \mapsto \left(g \mapsto \int_\Omega g(\omega)\,f(\omega)\, {\rm d} \mu(\omega)\right).</math>
+
+Daraus folgt, dass für <math>1< p < \infty</math> die <math>L^p</math>-Räume [[Reflexiver Raum|reflexiv]] sind.
+
+Für <math>p=1</math> ist <math>L^1(\Omega, \mathcal A, \mu)'</math> zu <math>L^\infty(\Omega, \mathcal A, \mu)</math> isomorph (der Isomorphismus analog zu oben), falls <math>(\Omega, \mathcal A, \mu)</math> [[Maßtheorie#Eigenschaften|σ-endlich]] oder allgemeiner [[Lokalisierbarer Maßraum|lokalisierbar]] ist. Ist <math>(\Omega, \mathcal A, \mu)</math> nicht <math>\sigma</math>-endlich, so lässt sich <math>L^1(\Omega, \mathcal A, \mu)'</math> (wieder unter demselben Isomorphismus) als der Banachraum der [[Lokale Messbarkeit|lokal messbaren]] lokal im Wesentlichen beschränkten Funktionen darstellen.
+
+Die Räume <math>L^1</math> und <math>L^\infty</math> sind nicht reflexiv.
+
+== Der Hilbertraum ''L''<sup>2</sup> ==
+=== Definition ===
+
+Der Raum <math>L^2</math> hat eine besondere Rolle unter den <math>L^p</math>-Räumen. Dieser lässt sich nämlich als einziger mit einem kanonischen [[Skalarprodukt]] versehen und wird somit zu einem [[Hilbertraum]]. Sei dazu wie oben <math>(\Omega, \mathcal A, \mu)</math> ein Maßraum, <math>(H, \langle\cdot,\cdot\rangle_H)</math> ein Hilbertraum (häufig <math>\mathbb C</math> mit dem Skalarprodukt <math>\langle w,z\rangle = \overline wz</math>) und 
+:<math>f\, ,g\in L^2(\Omega, \mathcal{A}, \mu;H)</math>. 
+
+Dann definiert
+:<math>\langle f,g\rangle_{L^2(\Omega,\mathcal A, \mu; H)}:=\int_\Omega \langle f(x),g(x)\rangle_H\, {\rm d}\mu(x)</math>
+ein Skalarprodukt auf <math>L^2</math>. Die von diesem Skalarprodukt [[Skalarproduktnorm|induzierte Norm]] ist die oben definierte <math>L^2</math>-Norm
+:<math> \|f\|^2_{L^2(\Omega,\mathcal A, \mu; H)} = \int_\Omega \| f(x)\|_H^2 {\rm d}\mu(x) = \int_\Omega \langle f(x),f(x)\rangle_H\, {\rm d}\mu(x).</math>
+Da diese Funktionen der Norm nach zum Quadrat integrierbar sind, werden die <math>L^2</math>-Funktionen auch ''quadratintegrierbare Funktionen'' genannt.
+
+=== Beispiel ===
+Die Funktion <math>f \colon [1,\infty[ \to \R</math>, welche durch <math>\textstyle x \mapsto \frac{1}{x}</math> definiert ist, ist eine <math>L^2</math>-Funktion mit <math>L^2</math>-Norm:
+:<math>
+\left(\int_1^\infty \left| \frac{1}{x} \right|^2 \mathrm{d} x \right)^{1/2}= \left(\int_1^\infty x^{-2} \mathrm{d} x \right)^{1/2} = \left(\lim_{b\to\infty} \left[ \frac{x^{-1}}{-1} \right]_1^b \right)^{1/2}= \left(\lim_{b\to\infty} -\frac{1}{b} +1 \right)^{1/2}=  1<\infty
+</math>
+Die Funktion ist aber keine <math>L^1</math>-Funktion, weil
+:<math>
+\int_1^\infty \left| \frac{1}{x} \right|^1 \mathrm{d} x = \int_1^\infty \frac{1}{x} \,\mathrm{d} x = 
+\lim_{b\to\infty} \left[ \ln(x) \right]_1^b = \lim_{b\to\infty} \ln(b) =  \infty.
+</math>
+Andere Beispiele für <math>L^2</math>-Funktionen sind die [[Schwartz-Raum|Schwartz-Funktionen]].
+
+=== Erweiterter Hilbertraum ===
+Wie weiter oben schon erwähnt, sind die <math>L^p</math>-Räume vollständig. Also ist der Raum <math>L^2</math> mit dem Skalarprodukt wirklich ein Hilbertraum. Der [[Schwartz-Raum|Raum der Schwartz-Funktionen]] <math>\mathcal{S}(\R^n)</math> und der [[Testfunktion|Raum der glatten Funktionen mit kompaktem Träger]] (ein Teilraum des Schwartz-Raums) <math>\mathcal{D}(\R^n)</math> liegen [[Dichte Teilmenge|dicht]] in <math>L^2(\R^n).</math> Daher erhält man die Inklusionen 
+:<math>\mathcal{S}(\R^n) \subset L^2(\R^n) \hookrightarrow \mathcal{S}'(\R^n)</math>
+und
+:<math>\mathcal{D}(\R^n) \subset L^2(\R^n) \hookrightarrow \mathcal{D}'(\R^n).</math>
+Dabei wird mit <math>'</math> der entsprechende [[Dualraum|topologische Dualraum]] bezeichnet, insbesondere heißt <math>\mathcal{D}'(\R^n)</math> Raum der [[Distribution (Mathematik)|Distributionen]] und <math>\mathcal{S}'(\R^n)</math> Raum der [[Temperierte Distribution|temperierten Distributionen]]. Die Paare 
+:<math>(\mathcal{S}(\R^n), L^2(\R^n))</math> und <math>(\mathcal{D}(\R^n), L^2(\R^n))</math> 
+
+sind Beispiele für [[Erweiterter Hilbertraum|erweiterte Hilberträume]].
+
+== Bochner-Lebesgue-Räume ==
+Die Bochner-Lebesgue-Räume sind eine Verallgemeinerung der bisher betrachteten Lebesgue-Räume. Sie umfassen im Gegensatz zu den Lebesgue-Räumen banachraumwertige Funktionen.
+
+=== Definition ===
+Sei <math>(E,\|{\cdot}\|)</math> ein [[Banachraum]] und <math>(\Omega, \mathcal A, \mu)</math> ein [[Maßraum]]. Für <math>0 < p < \infty</math> definiert man
+:<math>\mathcal{L}^p(\Omega, \mathcal A, \mu; E, \|\cdot\|) := \left\{ f\colon \Omega \to E: f\, {\rm ist\ messbar}\,, \int_\Omega \|f(x)\|^p \,{\rm d}\mu(x) < \infty \right\}</math>,
+wobei sich „messbar“ auf die [[borelsche σ-Algebra#Die borelsche σ-Algebra auf einem metrischen Raum|borelsche σ-Algebra]] der [[Normtopologie]] von <math>E</math> bezieht. Die Abbildung
+:<math> \|f\|_{{\mathcal L}^p} := \left(\int_\Omega \|f(x)\|^p\,{\rm d}\mu(x)\right)^{1/p}</math>
+ist ebenfalls eine [[Halbnorm]] auf <math>\mathcal{L}^p</math>, wenn <math>1\le p</math> gilt. Die Bochner-Lebesgue-Räume <math>L^p(\Omega, \mathcal A, \mu; E, \|\cdot\|) </math> sind nun genauso wie die Lebesgue-Räume als Faktorraum definiert.
+
+=== Eigenschaften ===
+Für die Bochner-Lebesgue-Räume gelten ebenfalls die Aussagen, die unter [[#Wichtige Eigenschaften|Eigenschaften]] aufgeführt sind. Nur bei den Dualräumen gibt es einen Unterschied. Für alle <math>1 < p < \infty</math> gilt nämlich
+:<math>L^p(\Omega,\mathcal A,\mu; E)' \cong L^q(\Omega, \mathcal A, \mu; E'),</math>
+wobei <math>q</math> durch <math>\tfrac{1}{p}+\tfrac{1}{q} =1 </math> definiert ist und <math>E'</math> den Dualraum von <math>E</math> bezeichnet. Entsprechend sind Bochner-Lebesgue-Räume nur dann reflexiv, wenn der Banachraum <math>E</math> reflexiv ist.<ref>Joseph Diestel, John J. Uhl: ''Vector measures'' (= ''Mathematical Surveys and Monographs.'' Bd. 15). American Mathematical Society, Providence RI 1977, ISBN 0-8218-1515-6, Seiten 98, 82.</ref>
+
+=== Beispiel: Zufallsvariable ===
+In der [[Stochastik]] betrachtet man <math>L^p</math>-Räume, die mit einem [[Wahrscheinlichkeitsmaß]] <math>P</math> ausgestattet sind. Unter einer [[Zufallsvariable]] versteht man dann eine messbare Funktion <math>X\colon\Omega\rightarrow E</math>. Weiter ist der [[Erwartungswert]] für [[Quasiintegrierbare Zufallsvariable|quasiintegrierbare]] <math>X</math> als
+:<math>E(X):=\int_\Omega X {\rm d}P\in E</math>
+definiert. Zufallsvariablen, die <math>L^1</math>-Funktionen sind, besitzen also einen endlichen Erwartungswert. Des Weiteren sind Zufallsvariablen genau dann in <math>L^2</math>, wenn man ihnen eine [[Varianz (Stochastik)|Varianz]] zuweisen kann. Da das für praktische Anwendungen häufig gefordert ist, sind <math>L^p</math>-Räume gerade in der Stochastik wichtig.
+
+== Den Lebesgue-Räumen verwandte Räume ==
+Oftmals betrachtet man auch <math>L^p</math>-Funktionen für <math>p < 1.</math> Außerdem werden in der Funktionalanalysis die Sobolev-Räume und die Hardy-Räume untersucht, welche man als Spezialfälle der <math>L^p</math>-Räume verstehen kann und in der [[Differentialgeometrie]] gibt es auf Mannigfaltigkeiten eine Verallgemeinerung der <math>L^p</math>-Räume.
+
+=== ''L<sup>p</sup>'' für ''p'' < 1 ===
+[[Datei:Astroid.svg|miniatur|Ein Kreis bzgl. [[p-Norm#Fall p < 1|(2/3)-Quasinorm]] in zwei Dimensionen, d.&nbsp;h. in <math>L^{\frac{2}{3}}\left(\left\{0,1\right\},\mathcal{P}\left(\left\{0,1\right\}\right),\mu\right)</math>, mit <math>\mu</math> Zählmaß, ist eine [[Astroide]]. Die Kreisscheibe ist nicht [[konvexe Menge|konvex]].]]
+
+Es gibt auch die Verallgemeinerung der <math>L^p</math>-Räume <math>L^p\left(X,\mathcal{A},\mu\right)</math> bzw.  <math>L^p\left(X,\mathcal{A},\mu;E\right)</math> für <math>0 < p < 1</math>. Diese sind allerdings keine Banachräume mehr, weil die entsprechende Definition keine Norm liefert. Immerhin sind diese Räume [[Vollständiger Raum|vollständige]] [[topologischer Vektorraum|topologische Vektorräume]]<ref name="Elstrodt">{{Literatur | Autor=[[Jürgen Elstrodt]] | Titel=Maß- und Integrationstheorie | Verlag=Springer Verlag | Ort=Berlin, Heidelberg | Auflage=6. | Jahr=2009 | ISBN=978-3-540-89727-9 | Kapitel=Kapitel 6 | Seiten=223–225, 229–234, 263, 268}}</ref><ref>{{Literatur | Autor=Herbert Amann, [[Joachim Escher (Mathematiker)|Joachim Escher]] | Titel=Analysis. ''Band 3'' | Verlag=Birkhäuser Verlag | Auflage = 2. | Ort=Basel u. a. | Jahr=2008 | ISBN=978-3-7643-8883-6 | Kapitel=Kapitel X: Integrationstheorie, Aufgabe 13 | Seiten=131}}</ref> mit der [[Quasinorm]]
+:<math>N_p\,:\,L^p\left(X,\mathcal{A},\mu\right)\,\rightarrow\,\R\;, \qquad N_p\left(f\right) := \left( \int_X \left\| f \right\|^p \mathrm{d}\mu \right)^{\frac{1}{p}}</math>
+bzw. der [[Pseudonorm]] oder [[Fréchet-Metrik]]
+:<math>\varrho_p\,:\,L^p\left(X,\mathcal{A},\mu\right)\,\rightarrow\,\R\;, \qquad \varrho_p\left(f\right) := \left(N_p\left(f\right)\right)^p = \int_X \left\| f \right\|^p \mathrm{d}\mu</math>
+oder der [[Translationsinvarianz|translationsinvarianten]] [[Metrischer Raum|Metrik]]
+:<math>d_p\,:\,L^p\left(X,\mathcal{A},\mu\right)\times L^p\left(X,\mathcal{A},\mu\right)\,\rightarrow\,\R\;, \qquad d_p\left(f,g\right) := \varrho_p\left(f-g\right) = \int_X \left\| f - g \right\|^p \mathrm{d}\mu\;.</math>
+Für die Quasinorm wird die [[Dreiecksungleichung]] abgeschwächt, die [[positive Homogenität]] bleibt erhalten:
+:<math>
+N_p\left(f+g\right) \le 2^{\frac{1}{p}-1}\,\left(N_p\left(f\right) + N_p\left(g\right)\right)\;,\qquad
+N_p\left(\lambda\,f\right) = \left|\lambda\right|\,N_p\left(f\right)\;.
+</math>
+Für die Fréchet-Metrik wird hingegen die positive Homogenität abgeschwächt, die Dreiecksungleichung bleibt erhalten:
+:<math>
+\varrho_p\left(f+g\right) \le \varrho_p\left(f\right) + \varrho_p\left(g\right)\;,\qquad
+\varrho_p\left(\lambda\,f\right) = \left|\lambda\right|^p\,\varrho_p\left(f\right) \stackrel{\left|\lambda\right|\le 1}{\le} \left|\lambda\right|\,\varrho_p\left(f\right)\;,\qquad \varrho_p\left(-f\right) = \varrho_p\left(f\right)\;.
+</math>
+
+Diese Räume sind im Allgemeinen nicht [[lokalkonvexer Raum|lokalkonvex]], der [[Satz von Hahn-Banach]] also im Allgemeinen nicht anwendbar, sodass es möglicherweise „sehr wenige“ lineare stetige Funktionale gibt. Insbesondere ist nicht gesichert, dass die [[schwache Topologie]] auf <math>L^p\left(X,\mathcal{A},\mu\right)</math> Punkte [[Trennungseigenschaft|trennen]] kann. Ein derartiges Beispiel liefert <math>L^p([0,1])</math> mit <math>\left(L^p\left(\left[0,1\right]\right)\right)'=\left\{0\right\}</math><ref name="Elstrodt" /><ref>{{Literatur | Autor=[[Walter Rudin]] | Titel=Functional Analysis | Verlag=McGraw-Hill | Auflage = 2. | Ort=New York | Jahr=1991 | ISBN=0-07-054236-8 | Seiten=36–37}}</ref><ref>{{Literatur | Autor=[[Hans Wilhelm Alt]] | Titel=Lineare Funktionalanalysis. Eine anwendungsorientierte Einführung | Verlag=Springer-Verlag | Auflage = 6. | Ort=Berlin, Heidelberg | Jahr=2012 | ISBN=978-3-642-22260-3 | Kapitel=Kapitel 2. Teilmengen von Funktionenräumen, U2.11 | Seiten=140}}</ref>.
+
+{{Siehe auch|Dualität von Lp-Räumen#Der Fall 0 < p < 1|titel1=Abschnitt „Der Fall 0 < p < 1“ in Dualität von Lp-Räumen}}
+
+=== Raum der lokal integrierbaren Funktionen ===
+{{Hauptartikel|Lokal integrierbare Funktion}}
+
+Eine lokal integrierbare Funktion ist eine messbare Funktion, die nicht notwendigerweise auf ihrem kompletten Definitionsbereich integrierbar sein muss, jedoch muss sie für jedes [[Kompakter_Raum|Kompaktum]], das im Definitionsbereich enthalten ist, integrierbar sein. Sei also <math>\Omega \subset \R^n</math> offen. Dann heißt eine Funktion <math>f</math> lokal integrierbar, falls für jedes Kompaktum <math>K \subset \Omega</math> das [[Lebesgue-Integral]]
+
+:<math>p_K\left(f\right) := \int_K |f(x)| \mathrm{d} x < \infty</math>
+
+endlich ist. Die Menge dieser Funktionen wird mit <math>\mathcal{L}^1_{\operatorname{loc}}(\Omega)</math> bezeichnet. Analog zu den <math>\mathcal{L}^p</math>-Räumen bildet man auch hier Äquivalenzklassen von Funktionen, die sich nur auf einer Nullmenge unterscheiden, und erhält dann den Raum <math>L^1_{\operatorname{loc}}(\Omega)</math> als Faktorraum. Mit der Familie aller Halbnormen <math>p_K</math> (für kompakte Mengen <math>K \subset \Omega</math>) wird dieser zu einem  [[Hausdorff-Raum|hausdorffschen]], [[lokalkonvexer Raum|lokalkonvexen]] und [[Vollständiger Raum#Uniforme_R.C3.A4ume|vollständigen]] [[Topologischer Vektorraum|topologischen Vektorraum]]; durch Auswahl abzählbar vieler Kompakta, die <math>\Omega</math> geeignet approximieren, sogar ein [[Fréchet-Raum]]. Dieser Raum kann als Raum der [[Reguläre Distribution|regulären Distributionen]] verstanden werden und lässt sich daher stetig in den Raum der [[Distribution (Mathematik)|Distributionen]] einbetten. Analog zu <math>L^1_{\operatorname{loc}}(\Omega)</math> lassen sich auch die Räume <math>L^p_{\operatorname{loc}}(\Omega)</math> der lokal p-integrierbaren Funktionen definieren.
+
+=== Sobolev-Räume ===
+{{Hauptartikel|Sobolev-Raum}}
+
+Neben den schon angeführten Sobolev-Räumen mit quadratintegierbaren Funktionen, gibt es noch weitere Sobolev-Räume. Diese werden mithilfe der [[schwache Ableitung|schwachen Ableitungen]] definiert und umfassen p-integrierbare Funktionen. Verwendet werden diese Räume insbesondere zur Untersuchung von [[Partielle Differentialgleichung|partiellen Differentialgleichungen]].
+
+=== Hardy-Räume ===
+{{Hauptartikel|Hardy-Raum}}
+Untersucht man statt den messbaren Funktionen nur die [[holomorphe Funktion|holomorphen]] beziehungsweise die [[harmonische Funktion|harmonischen]] Funktionen auf Integrierbarkeit, so werden die entsprechenden <math>L^p</math>-Räume Hardy-Räume genannt.
+
+=== Lebesgue-Räume auf Mannigfaltigkeiten ===
+Auf einer abstrakten differenzierbaren [[Mannigfaltigkeit]], die nicht in einen euklidischen Raum eingebettet ist, existiert zwar kein kanonisches Maß und somit kann man keine <math>L^p</math>-Funktionen definieren. Es ist aber trotzdem möglich, ein Analogon zum <math>L^p</math>-Raum zu definieren, indem man statt Funktionen auf der Mannigfaltigkeit sogenannte 1-Dichten untersucht. Weitere Informationen sind im Artikel [[Dichtebündel]] zu finden.
+
+== Quellen ==
+* Herbert Amann, [[Joachim Escher (Mathematiker)|Joachim Escher]]: ''Analysis.'' Band 3. Birkhäuser, Basel u. a. 2001, ISBN 3-7643-6613-3.
+
+== Einzelnachweise ==
+<references />
+
+[[Kategorie:Normierter Raum]]
+[[Kategorie:Funktionalanalysis]]
+[[Kategorie:Maßtheorie]]

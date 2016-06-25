@@ -1,0 +1,207 @@
+Die '''Mathematik''' ({{grS|μαθηματική τέχνη}} ''mathēmatikē téchnē'' ‚die Kunst des [[Lernen]]s‘, ‚zum Lernen gehörig‘) ist eine [[Wissenschaft]], welche aus der Untersuchung von [[Geometrische Figur|geometrischen Figuren]] und dem [[Rechnen]] mit [[Zahl]]en entstand. Für ''Mathematik'' gibt es keine allgemein anerkannte [[Definition]]; heute wird sie üblicherweise als eine Wissenschaft beschrieben, die durch ''[[Logik|logische]]'' Definitionen selbstgeschaffene [[Abstraktion|abstrakte]] [[Mathematische Struktur|Strukturen]] mittels der ''Logik'' auf ihre Eigenschaften und [[Muster]] untersucht.
+
+[[Datei:Egyptian A'h-mosè or Rhind Papyrus (1065x1330).png|miniatur|Der ägyptische [[Papyrus Rhind]]]]
+
+== Geschichte ==
+{{Hauptartikel|Geschichte der Mathematik}}
+Die Mathematik ist eine der ältesten Wissenschaften. Ihre erste Blüte erlebte sie noch vor der [[Antike]] in [[Mesopotamien]], [[Indien]] und [[China]]. Später in der Antike in Griechenland und im [[Hellenismus]], von dort datiert die Orientierung an der Aufgabenstellung des „rein logischen Beweisens“ und die erste [[Axiomatisierung]], nämlich die [[euklidische Geometrie]]. Im Mittelalter überlebte sie unabhängig voneinander im frühen Humanismus der Universitäten und in der arabischen Welt.
+
+In der frühen [[Neuzeit]] führte [[François Viète]] Variablen ein und [[René Descartes]] eröffnete durch die Verwendung von [[Koordinate]]n einen rechnerischen Zugang zur Geometrie. Die Beschreibung von Tangenten und die Bestimmung von Flächeninhalten („Quadratur“) führte zur [[Infinitesimalrechnung]] von [[Gottfried Wilhelm Leibniz]] und [[Isaac Newton]]. [[Klassische Mechanik|Newtons Mechanik]] und sein [[Gravitationsgesetz]] waren auch in den folgenden Jahrhunderten eine Quelle richtungweisender '''mathematischer''' Probleme wie das des [[Dreikörperproblem]]s.
+
+Ein anderes Leitproblem der frühen Neuzeit war das Lösen zunehmend komplizierter werdender algebraischer Gleichungen. Zu seiner Behandlung entwickelten [[Niels Henrik Abel]] und [[Évariste Galois]] den Begriff der [[Gruppe (Mathematik)|Gruppe]], der Beziehungen zwischen Symmetrien eines Objektes beschreibt. Als weitere Vertiefung dieser Untersuchungen können die neuere [[Algebra]] und insbesondere die [[algebraische Geometrie]] angesehen werden.
+
+Eine damals neue Idee im Briefwechsel zwischen [[Blaise Pascal]] und [[Pierre de Fermat]] im Jahr 1654 führte zur Lösung eines alten Problems, für das es schon andere, allerdings umstrittene Lösungsvorschläge gab. Der Briefwechsel wird als Geburt der klassischen Wahrscheinlichkeitsrechnung angesehen. Die neuen Ideen und Verfahren eroberten viele Bereiche. Aber über Jahrhunderte hinweg kam es zur Aufspaltung der klassischen Wahrscheinlichkeitstheorie in separate Schulen. Versuche, den Begriff „Wahrscheinlichkeit“ explizit zu definieren, gelangen nur für Spezialfälle. Erst das Erscheinen von [[Andrei Kolmogorow]]s Lehrbuch ''Grundbegriffe der Wahrscheinlichkeitsrechnung'' im Jahr 1933 schloss die Entwicklung der Fundamente moderner Wahrscheinlichkeitstheorie ab, siehe dazu auch 
+"[[Geschichte der Wahrscheinlichkeitsrechnung]]".
+
+Im Laufe des 19. Jahrhunderts fand die Infinitesimalrechnung durch die Arbeiten von [[Augustin-Louis Cauchy]] und [[Karl Weierstraß]] ihre heutige [[Mathematische Strenge|strenge Form]]. Die von [[Georg Cantor]] gegen Ende des 19. Jahrhunderts entwickelte [[Mengenlehre]] ist aus der heutigen Mathematik ebenfalls nicht mehr wegzudenken, auch wenn sie durch die Paradoxien des naiven Mengenbegriffs zunächst deutlich machte, auf welch unsicherem Fundament die Mathematik vorher stand.
+
+Die Entwicklung der ersten Hälfte des 20. Jahrhunderts stand unter dem Einfluss von [[David Hilbert]]s [[Hilbertsche Probleme|Liste von 23 mathematischen Problemen]]. Eines der Probleme war der Versuch einer vollständigen Axiomatisierung der Mathematik; gleichzeitig gab es starke Bemühungen zur Abstraktion, also des Versuches, Objekte auf ihre wesentlichen Eigenschaften zu reduzieren. So entwickelte [[Emmy Noether]] die Grundlagen der modernen Algebra, [[Felix Hausdorff]] die allgemeine [[Topologie (Mathematik)|Topologie]] als die Untersuchung [[Topologischer Raum|topologischer Räume]], [[Stefan Banach]] den wohl wichtigsten Begriff der [[Funktionalanalysis]], den nach ihm benannten [[Banachraum]]. Eine noch höhere Abstraktionsebene, einen gemeinsamen Rahmen für die Betrachtung ähnlicher Konstruktionen aus verschiedenen Bereichen der Mathematik, schuf schließlich die Einführung der [[Kategorientheorie]] durch [[Samuel Eilenberg]] und [[Saunders Mac Lane]].
+
+== Inhalte und Methodik ==
+=== Inhalte und Teilgebiete ===
+{{Hauptartikel|Teilgebiete der Mathematik}}
+Die folgende Aufzählung gibt einen ersten chronologischen Überblick über die Breite mathematischer Themen:
+* das Rechnen mit [[Zahl]]en ([[Arithmetik]]&nbsp;– [[Altertum]]),
+* die Untersuchung von Figuren ([[Geometrie]]&nbsp;– [[Altertum#Die Hohe Bronzezeit|Altertum]], [[Euklid]]),
+* das Auflösen von [[Gleichung]]en ([[Algebra]]&nbsp;– [[Altertum#Die Hohe Bronzezeit|Altertum]], [[Mittelalter]] und [[Renaissance]], [[Nicolo Tartaglia|Tartaglia]]),
+* die Untersuchung der korrekten Schlussfolgerungen ([[Logik]]&nbsp;– [[Aristoteles]]) (teilweise nur zur Philosophie, oft aber auch zur Mathematik gezählt)
+* Untersuchungen zur [[Teilbarkeit]] ([[Zahlentheorie]]&nbsp;– Euklid, [[Diophant von Alexandrien|Diophant]], [[Fermat]], [[Leonhard Euler|Euler]], [[Carl Friedrich Gauß|Gauß]], [[Bernhard Riemann|Riemann]]),
+* das rechnerische Erfassen räumlicher Beziehungen ([[Analytische Geometrie]]&nbsp;– [[René Descartes|Descartes]], 17. Jahrhundert),
+* das Rechnen mit Wahrscheinlichkeiten ([[Wahrscheinlichkeitstheorie]]&nbsp;– [[Blaise Pascal|Pascal]], [[Jakob I. Bernoulli|Jakob Bernoulli]], [[Pierre-Simon Laplace|Laplace]], 17.–[[19. Jahrhundert]]),
+* die Untersuchung von Funktionen, insbesondere deren Wachstum, Krümmung, des Verhaltens im Unendlichen und der Flächeninhalte unter den Kurven ([[Analysis]]&nbsp;– [[Isaac Newton|Newton]], [[Gottfried Wilhelm Leibniz|Leibniz]], Ende des 17. Jahrhunderts),
+* die Beschreibung [[Feld (Physik)|physikalischer Felder]] ([[Differentialgleichung]]en, [[partielle Differentialgleichung]]en, [[Vektoranalysis]]&nbsp;– [[Leonhard Euler|Euler]], die [[Bernoulli]]s, [[Pierre-Simon Laplace|Laplace]], Gauß, [[Siméon Denis Poisson|Poisson]], [[Jean Baptiste Joseph Fourier|Fourier]], [[George Green|Green]], [[George Gabriel Stokes|Stokes]], [[David Hilbert|Hilbert]], 18.–19. Jahrhundert),
+* die Perfektionierung der Analysis durch die Einbeziehung [[Komplexe Zahlen|komplexer Zahlen]] ([[Funktionentheorie]]&nbsp;– Gauß, [[Augustin-Louis Cauchy|Cauchy]], [[Karl Weierstraß|Weierstraß]], 19. Jahrhundert),
+* die Geometrie gekrümmter Flächen und Räume ([[Differentialgeometrie]]&nbsp;– Gauß, Riemann, [[Tullio Levi-Civita|Levi-Civita]], 19. Jahrhundert),
+* das systematische Studium von Symmetrien ([[Gruppentheorie]]&nbsp;– [[Évariste Galois|Galois]], [[Niels Henrik Abel|Abel]], [[Felix Klein|Klein]], [[Sophus Lie|Lie]], 19. Jahrhundert),
+* die Aufklärung von Paradoxien des Unendlichen ([[Mengenlehre]] und [[mathematische Logik]]&nbsp;– [[Georg Cantor|Cantor]], [[Gottlob Frege|Frege]], [[Bertrand Russell|Russell]], [[Ernst Zermelo|Zermelo]], [[Abraham Adolf Fraenkel|Fraenkel]], Anfang des 20. Jahrhunderts),
+* die stetige Verformung geometrischer Körper ([[Topologie (Mathematik)|Topologie]]&nbsp;– Cantor, [[Henri Poincaré|Poincaré]], [[Maurice Fréchet|Fréchet]], [[Felix Hausdorff|Hausdorff]], [[Kazimierz Kuratowski|Kuratowski]], Anfang des 20. Jahrhunderts),
+* die Untersuchung von Strukturen und Theorien ([[Universelle Algebra]], [[Kategorientheorie]]),
+* die Erhebung und Auswertung von Daten ([[Mathematische Statistik]]).
+
+Etwas abseits steht in dieser Aufzählung die [[Numerische Mathematik]], die für konkrete kontinuierliche Probleme aus vielen der oben genannten Bereiche [[Algorithmus|Algorithmen]] zur Lösung bereitstellt und diese untersucht.
+
+Unterschieden werden ferner die '''reine Mathematik''', auch als '''theoretische Mathematik''' bezeichnet, die sich nicht mit außermathematischen Anwendungen befasst, und die ''[[angewandte Mathematik]]'' wie zum Beispiel [[Versicherungsmathematik]] und [[Kryptologie]]. Die Übergänge der eben genannten Gebiete sind fließend.
+
+=== Fortschreiten durch Problemlösen ===
+[[Datei:Newton-Principia-Mathematica 1-500x700.jpg|miniatur|[[Isaac Newton]]: Principia Mathematica ([[Frontispiz]])]]
+
+Kennzeichnend für die Mathematik ist weiterhin die Weise, wie sie durch das Bearbeiten von „eigentlich zu schweren“ Problemen voranschreitet.
+
+Sobald ein [[Grundschule|Grundschüler]] das [[Addition|Addieren]] natürlicher Zahlen gelernt hat, ist er in der Lage, folgende Frage zu verstehen und durch Probieren zu beantworten: ''„Welche Zahl muss man zu 3 addieren, um 5 zu erhalten?“'' Die systematische Lösung solcher Aufgaben aber erfordert die Einführung eines neuen Konzepts: der Subtraktion. Die Frage lässt sich dann umformulieren zu: ''„Was ist 5 minus 3?“'' Sobald aber die [[Subtraktion]] definiert ist, kann man auch die Frage stellen: ''„Was ist 3 minus 5?“,'' die auf eine negative Zahl und damit bereits über die Grundschulmathematik hinaus führt.
+
+Ebenso wie in diesem elementaren Beispiel beim individuellen Erlernen ist die Mathematik auch in ihrer Geschichte fortgeschritten: auf jedem erreichten Stand ist es möglich, wohldefinierte Aufgaben zu stellen, zu deren Lösung weitaus anspruchsvollere Mittel nötig sind. Oft sind zwischen der Formulierung eines Problems und seiner Lösung viele Jahrhunderte vergangen und ist mit der Problemlösung schließlich ein völlig neues Teilgebiet begründet worden: so konnten mit der [[Infinitesimalrechnung]] im 17. Jahrhundert Probleme gelöst werden, die seit der Antike offen waren.
+
+Auch eine negative Antwort, der Beweis der Unlösbarkeit eines Problems, kann die Mathematik voranbringen: so ist aus gescheiterten Versuchen zur Auflösung algebraischer Gleichungen die Gruppentheorie entstanden.
+
+=== Axiomatische Formulierung und Sprache ===
+[[Datei:Title page of Sir Henry Billingsley's first English version of Euclid's Elements, 1570 (560x900).jpg|miniatur|links|Sir Henry Billingsleys erste englische Ausgabe der „Elemente“ von [[Euklid]] (1570)]]
+
+Seit dem Ende des 19. Jahrhunderts, vereinzelt schon seit der [[Antike]], wird die Mathematik in Form von [[Theorie]]n präsentiert, die mit Aussagen beginnen, welche als wahr angesehen werden; daraus werden dann weitere wahre Aussagen hergeleitet. Diese Herleitung geschieht dabei nach genau festgelegten [[Schlussregel]]n. Die Aussagen, mit denen die Theorie anfängt, nennt man ''[[Axiom]]e'', die daraus hergeleiteten nennt man ''[[Satz (Mathematik)|Sätze]]''. Die Herleitung selbst ist ein ''[[Beweis (Mathematik)|Beweis]]'' des Satzes. In der Praxis spielen noch [[Definition]]en eine Rolle, durch sie werden mathematische Begriffe durch Rückführung auf grundlegendere eingeführt und präzisiert. Aufgrund dieses Aufbaus der mathematischen Theorien bezeichnet man sie als ''axiomatische Theorien''.
+
+Üblicherweise verlangt man dabei von Axiomen einer Theorie, dass diese widerspruchsfrei sind, also dass nicht gleichzeitig ein Satz und die Negation dieses Satzes wahr sind. Diese Widerspruchsfreiheit selbst lässt sich aber im Allgemeinen nicht innerhalb einer mathematischen Theorie beweisen (dies ist abhängig von den verwendeten Axiomen). Das hat zur Folge, dass etwa die Widerspruchsfreiheit der [[Zermelo-Fraenkel-Mengenlehre]], die fundamental für die moderne Mathematik ist, nicht ohne Zuhilfenahme weiterer Annahmen beweisbar ist.
+
+Die von diesen Theorien behandelten Gegenstände sind abstrakte mathematische Strukturen, die ebenfalls durch Axiome definiert werden. Während in den anderen [[Wissenschaft]]en die behandelten Gegenstände vorgegeben sind und danach die Methoden zur Untersuchung dieser Gegenstände geschaffen werden, ist bei der Mathematik umgekehrt die Methode vorgegeben und die damit untersuchbaren Gegenstände werden erst danach erschaffen. In dieser Weise nimmt und nahm die Mathematik immer eine Sonderstellung unter den Wissenschaften ein.
+
+Die Weiterentwicklung der Mathematik geschah und geschieht dagegen oft durch Sammlungen von Sätzen, Beweisen und Definitionen, die nicht axiomatisch strukturiert sind, sondern vor allem durch die Intuition und Erfahrung der beteiligten Mathematiker geprägt sind. Die Umwandlung in eine axiomatische Theorie erfolgt erst später, wenn weitere Mathematiker sich mit den dann nicht mehr ganz so neuen Ideen beschäftigen.
+
+[[Kurt Gödel]] zeigte um 1930 den nach ihm benannten [[Gödelscher Unvollständigkeitssatz|Unvollständigkeitssatz]], der besagt, dass es in jedem [[Axiomensystem]] klassischer Logik, das erlaubt, gewisse Aussagen über natürliche Zahlen zu beweisen, entweder Aussagen gibt, die ebenso wenig wie ihre Negation beweisbar sind, oder aber das System selbst widersprüchlich ist.
+
+Mathematik benutzt zur Beschreibung von Sachverhalten eine sehr kompakte Sprache, die auf Fachbegriffen und vor allem Formeln beruht. Eine Darstellung der in den Formeln benutzten Zeichen findet sich in der [[Liste mathematischer Symbole]]. Eine Besonderheit der '''mathematischen Fachsprache''' besteht in der Bildung von aus Mathematikernamen abgeleiteten [[Adjektiv]]en wie [[Pythagoras|pythagoreisch]], euklidisch, [[Leonhard Euler|eulersch]], [[Niels Henrik Abel|abelsch]], [[Emmy Noether|noethersch]] und [[Emil Artin|artinsch]].
+
+=== Anwendungsgebiete ===
+[[Datei:Ars Conjectandi of Jakob Bernoulli, 1713 (1160x1130).png|miniatur|links|[[Jakob I. Bernoulli|Jakob Bernoulli]]: ''Ars Conjectandi'' (1713)]]
+
+Die Mathematik ist in allen Wissenschaften anwendbar, die ausreichend [[Formalisierung|formalisiert]] sind. Daraus ergibt sich ein enges Wechselspiel mit Anwendungen in empirischen Wissenschaften. Über viele Jahrhunderte hinweg hat die Mathematik Anregungen aus der [[Astronomie]], der [[Geodäsie]], der [[Physik]] und der [[Ökonomie]] aufgenommen und umgekehrt die Grundlagen für den Fortschritt dieser Fächer bereitgestellt. Beispielsweise hat Newton die [[Infinitesimalrechnung]] entwickelt, um das physikalische Konzept „Kraft gleich Impulsänderung“ mathematisch zu fassen. Fourier hat beim Studium der [[Wellengleichung]] die Grundlage für den modernen [[Funktion (Mathematik)|Funktionsbegriff]] gelegt und Gauß hat im Rahmen seiner Beschäftigung mit Astronomie und Landvermessung die [[Methode der kleinsten Quadrate]] entwickelt und das Lösen von linearen Gleichungssystemen systematisiert. Aus der anfänglichen Untersuchung von Glücksspielen ist die heute allgegenwärtige Statistik hervorgegangen.
+
+Umgekehrt haben Mathematiker zuweilen Theorien entwickelt, die erst später überraschende praktische Anwendungen gefunden haben. So ist zum Beispiel die schon im 16. Jahrhundert entstandene Theorie der [[Komplexe Zahl|komplexen Zahlen]] zur mathematischen Darstellung des [[Elektromagnetismus]] inzwischen unerlässlich geworden. Ein weiteres Beispiel ist der [[tensor]]ielle [[Differentialform]]en&shy;kalkül, den [[Albert Einstein|Einstein]] für die mathematische Formulierung der [[Allgemeine Relativitätstheorie|allgemeinen Relativitätstheorie]] verwendet hatte. Des Weiteren galt die Beschäftigung mit der [[Zahlentheorie]] lange Zeit als intellektuelle Spielerei ohne praktischen Nutzen, ohne sie wären heute allerdings die moderne [[Kryptographie]] und ihre vielfältigen Anwendungen im Internet nicht denkbar.
+{{Siehe auch|Angewandte Mathematik}}
+
+== Verhältnis zu anderen Wissenschaften ==
+=== Kategorisierung der Mathematik ===
+[[Datei:Gregor Reisch, Margarita Philosophica, 1508 (1230x1615).png|miniatur|links|[[Gregor Reisch]], Margarita Philosophica (1508)]]
+
+Über die Frage, zu welcher Kategorie der Wissenschaften die Mathematik gehört, wird seit langer Zeit kontrovers diskutiert.
+
+Viele mathematische Fragestellungen und Begriffe sind durch die Natur betreffende Fragen motiviert, beispielsweise aus der [[Physik]] oder den [[Ingenieurwissenschaft]]en, und die Mathematik wird als Hilfswissenschaft in nahezu allen Naturwissenschaften herangezogen. Jedoch ist sie selbst keine [[Naturwissenschaft]] im eigentlichen Sinne, da ihre Aussagen nicht von Experimenten oder Beobachtungen abhängen. Dennoch wird in der neueren [[Philosophie der Mathematik]] davon ausgegangen, dass auch die Methodik der Mathematik immer mehr derjenigen der Naturwissenschaft entspricht. Im Anschluss an [[Imre Lakatos]] wird eine „Renaissance des Empirismus“ vermutet, wonach auch Mathematiker Hypothesen aufstellen und für diese Bestätigungen suchen.
+
+Die Mathematik hat methodische und inhaltliche Gemeinsamkeiten mit der [[Philosophie]]; beispielsweise ist die [[Logik]] ein Überschneidungsbereich der beiden Wissenschaften. Damit könnte man die Mathematik zu den [[Geisteswissenschaft]]en rechnen,<ref>{{Literatur|Autor=[[Helmut Hasse]]|Titel=Mathematik als Geisteswissenschaft und Denkmittel der exakten Naturwissenschaften|Sammelwerk=Studium generale|Band=Bd. 6|Jahr=1953|Seiten=392–398|Online=[http://www.ub.uni-heidelberg.de/helios/fachinfo/www/math/htmg/Hasse/StudGen.htm online]}}</ref> aber auch die Einordnung der Philosophie ist umstritten.
+
+Auch aus diesen Gründen kategorisieren einige die Mathematik – neben anderen Disziplinen wie der [[Informatik]] – als [[Strukturwissenschaft]] bzw. [[Formalwissenschaft]].
+
+An deutschen [[Universität]]en gehört die Mathematik meistens zur selben [[Fakultät (Hochschule)|Fakultät]] wie die Naturwissenschaften, und so wird Mathematikern nach der [[Promotion (Doktor)|Promotion]] in der Regel der [[Akademischer Grad|akademische Grad]] eines Dr.&nbsp;rer.&nbsp;nat. (Doktor der Naturwissenschaft) verliehen. Im Gegensatz dazu erreicht im englischen Sprachraum der Hochschulabsolvent die Titel „Bachelor of Arts“ bzw. „Master of Arts“, welche eigentlich an Geisteswissenschaftler vergeben werden.
+
+=== Sonderrolle unter den Wissenschaften ===
+[[Datei:Galileo Galilei, Discorsi e Dimostrazioni Matematiche Intorno a Due Nuove Scienze, 1638 (1400x1400).png|miniatur|[[Galileo Galilei]]: Discorsi e Dimostrazioni Matematiche Intorno a Due Nuove Scienze (1638)]]
+
+Eine Sonderrolle unter den Wissenschaften nimmt die Mathematik bezüglich der Gültigkeit ihrer Erkenntnisse und der [[Mathematische Strenge|Strenge]] ihrer Methoden ein. Während beispielsweise alle naturwissenschaftlichen Erkenntnisse durch neue Experimente [[Falsifizierbarkeit|falsifiziert]] werden können und daher prinzipiell vorläufig sind, werden mathematische Aussagen durch reine Gedankenoperationen auseinander hervorgebracht oder aufeinander zurückgeführt und brauchen nicht [[Empirie|empirisch]] überprüfbar zu sein. Dafür muss aber für mathematische Erkenntnisse ein streng logischer [[Beweis (Mathematik)|Beweis]] gefunden werden, bevor sie als [[Satz (Mathematik)|mathematischer Satz]] anerkannt werden. In diesem Sinn sind mathematische Sätze prinzipiell endgültige und allgemeingültige Wahrheiten, sodass die Mathematik als ''die'' exakte Wissenschaft betrachtet werden kann. Gerade diese Exaktheit ist für viele Menschen das Faszinierende an der Mathematik. So sagte David Hilbert auf dem [[Internationaler Mathematikerkongress|Internationalen Mathematiker-Kongress]] 1900 in Paris:
+
+{{Zitat|Wir erörtern noch kurz, welche berechtigten allgemeinen Forderungen an die Lösung eines mathematischen Problems zu stellen sind: ich meine vor allem die, daß es gelingt, die Richtigkeit der Antwort durch eine endliche Anzahl von Schlüssen darzutun, und zwar auf Grund einer endlichen Anzahl von Voraussetzungen, welche in der Problemstellung liegen und die jedesmal genau zu formulieren sind. Diese Forderung der logischen Deduktion mittels einer endlichen Anzahl von Schlüssen ist nichts anderes als die Forderung der Strenge in der Beweisführung. In der Tat, die Forderung der Strenge, die in der Mathematik bekanntlich von sprichwörtlicher Bedeutung geworden ist, entspricht einem allgemeinen philosophischen Bedürfnis unseres Verstandes, und andererseits kommt durch ihre Erfüllung allein erst der gedankliche Inhalt und die Fruchtbarkeit des Problems zur vollen Geltung. Ein neues Problem, zumal, wenn es aus der äußeren Erscheinungswelt stammt, ist wie ein junges Reis, welches nur gedeiht und Früchte trägt, wenn es auf den alten Stamm, den sicheren Besitzstand unseres mathematischen Wissens, sorgfältig und nach den strengen Kunstregeln des Gärtners aufgepfropft wird.|ref=<ref name="Hilbert1900">David Hilbert. ''[http://www.mathematik.uni-bielefeld.de/~kersten/hilbert/rede.html Mathematische Probleme]''. Vortrag, gehalten auf dem internationalen Mathematiker-Kongreß zu Paris 1900.</ref>}}
+
+[[Joseph Weizenbaum]] vom [[Massachusetts Institute of Technology]] bezeichnete die Mathematik als die Mutter aller Wissenschaften.
+
+{{Zitat|Ich behaupte aber, daß in jeder besonderen Naturlehre nur so viel eigentliche Wissenschaft angetroffen werden könne, als darin Mathematik anzutreffen ist.|Immanuel Kant|[[Metaphysische Anfangsgründe der Naturwissenschaft]], A VIII – (1786)}}
+
+Die Mathematik ist daher auch eine kumulative Wissenschaft. Man kennt heute über 2000 mathematische Fachzeitschriften. Dies birgt jedoch auch eine Gefahr: durch neuere mathematische Gebiete geraten ältere Gebiete in den Hintergrund. Neben sehr allgemeinen Aussagen gibt es auch sehr spezielle Aussagen, für die keine echte Verallgemeinerung bekannt ist. [[Donald E. Knuth]] schreibt dazu im Vorwort seines Buches ''Concrete Mathematics:''
+
+{{Zitat-en|The course title ‘Concrete Mathematics’ was originally intended as an antidote to ‘Abstract Mathematics’, since concrete classical results were rapidly being swept out of the modern mathematical curriculum by a new wave of abstract ideas popularly called the ‘New Math’. Abstract mathematics is a wonderful subject, and there’s nothing wrong with it: It’s beautiful, general and useful. But its adherents had become deluded that the rest of mathematics was inferior and no longer worthy of attention. The goal of generalization had become so fashionable that a generation of mathematicians had become unable to relish beauty in the particular, to enjoy the challenge of solving quantitative problems, or to appreciate the value of technique. Abstract mathematics was becoming inbred and losing touch with reality; mathematical education needed a concrete counterweight in order to restore a healthy balance.|Übersetzung=Der Veranstaltungstitel ‚Konkrete Mathematik‘ war ursprünglich als Gegenpol zur ‚Abstrakten Mathematik‘ gedacht, denn konkrete, klassische Errungenschaften wurden von einer neuen Welle abstrakter Vorstellungen&nbsp;– gemeinhin ‚New Math‘ (‚neue Mathematik‘) genannt&nbsp;– in rasantem Tempo aus den Lehrplänen gespült. Abstrakte Mathematik ist eine wunderbare Sache, an der nichts auszusetzen ist: Sie ist schön, allgemeingültig und nützlich. Aber ihre Anhänger gelangten zu der irrigen Ansicht, dass die übrige Mathematik minderwertig und nicht mehr beachtenswert sei. Das Ziel der Verallgemeinerung kam dermaßen in Mode, dass eine ganze Generation von Mathematikern nicht mehr im Stande war, Schönheit im Speziellen zu erkennen, die Lösung von quantitativen Problemen als Herausforderung zu begreifen oder den Wert mathematischer Techniken zu schätzen. Die abstrakte Mathematik drehte sich nur noch um sich selbst und verlor den Kontakt zur Realität; in der mathematischen Ausbildung war ein konkretes Gegengewicht notwendig, um wieder ein stabiles Gleichgewicht herzustellen.}}
+
+Es kommt somit der älteren mathematischen Literatur eine besondere Bedeutung zu.
+
+Der Mathematiker Claus Peter Ortlieb kritisiert die – seiner Ansicht nach – zu wenig reflektierte Anwendung der modernen Mathematik:
+
+{{Zitat|Man muss sich bewusst machen, dass die Erfassung der Welt durch Mathematik Grenzen hat. Die Annahme, sie funktioniere allein nach mathematischen Gesetzen, führt dazu, dass man nur noch nach diesen Gesetzen Ausschau hält. Natürlich werde ich sie in den Naturwissenschaften auch finden, doch ich muss mir im Klaren darüber sein, dass ich die Welt durch eine Brille hindurch betrachte, die von vornherein große Teile ausblendet. […] Die mathematische Methode ist längst von Wissenschaftlern fast aller Disziplinen übernommen worden und wird in allen möglichen Bereichen angewandt, wo sie eigentlich nichts zu suchen hat. […] Bedenklich sind Zahlen immer dann, wenn sie zu Normierungen führen, obwohl niemand mehr nachvollziehen kann, wie die Zahlen zustande gekommen sind.|ref=<ref>Oliver Link: [http://www.brandeins.de/archiv/2011/rechnen/die-welt-laesst-sich-nicht-berechnen/ ''Die Welt lässt sich nicht berechnen''.] Interview mit Claus Peter Ortlieb, [[brand eins]] 11/2011, abgerufen am 1. Januar 2012.</ref>}}
+
+== Mathematik in der Gesellschaft ==
+[[Datei:Wissenschaftsjahr 2008.svg|miniatur|Logo zum Jahr der Mathematik]]
+Das vom [[Bundesministerium für Bildung und Forschung]] (BMBF) seit dem Jahr 2000 jährlich ausgerichtete [[Wissenschaftsjahr]] war 2008 das ''[[Jahr der Mathematik]]''.
+
+=== Mathematik als Schulfach ===
+{{Hauptartikel|Mathematikunterricht}}
+Mathematik spielt in der Schule eine wichtige Rolle als [[Pflichtfach]]. [[Mathematikdidaktik]] ist die Wissenschaft, die sich mit dem Lehren und Lernen von Mathematik beschäftigt. In der Unter- und Mittelstufe geht es nicht nur um das Erlernen von Rechenfertigkeiten. In der Oberstufe werden dann Differential- und Integralrechnung sowie Analytische Geometrie/Lineare Algebra eingeführt und dazu Stochastik weitergeführt.
+
+=== Mathematik als Studienfach und Beruf ===
+{{Hauptartikel|Mathematikstudium}}
+Menschen, die sich beruflich mit der Entwicklung und der Anwendung der Mathematik beschäftigen, nennt man [[Mathematiker]].
+
+Neben dem Mathematikstudium auf [[Diplom]], in dem man seine Schwerpunkte auf reine und/oder angewandte Mathematik setzen kann, sind in neuerer Zeit vermehrt interdisziplinäre Studiengänge wie [[Technomathematik]], [[Wirtschaftsmathematik]], [[Computermathematik]] oder [[Theoretische Biologie|Biomathematik]] eingerichtet worden. Ferner ist das [[Lehramt]] an weiterführenden [[Schule]]n und [[Hochschule]]n ein wichtiger mathematischer Berufszweig. An deutschen Universitäten wird jetzt auch das Diplom auf [[Bachelor]]/[[Master]]-Studiengänge umgestellt. Eine gewisse Anzahl an [[Semesterwochenstunde]]n müssen auch angehende [[Informatiker]], [[Chemiker]], [[Biologe]]n, [[Physiker]], [[Geologe]]n und [[Ingenieur]]e belegen.
+
+Die häufigsten Arbeitgeber für Diplom-Mathematiker sind [[Versicherung (Kollektiv)|Versicherungen]], [[Kreditinstitut|Banken]] und [[Unternehmensberatung]]en, insbesondere im Bereich mathematischer Finanzmodelle und Consulting, aber auch im IT-Bereich. Darüber hinaus werden Mathematiker in fast allen Branchen eingesetzt.
+
+== Mathematische Museen und Sammlungen ==
+Mathematik ist eine der ältesten Wissenschaften und auch eine experimentelle Wissenschaft. Diese beiden Aspekte lassen sich durch [[Museen]] und historische Sammlungen sehr gut verdeutlichen.
+
+Die älteste Einrichtung dieser Art in Deutschland ist der 1728 gegründete [[Mathematisch-Physikalischer Salon|Mathematisch-Physikalische Salon]] in Dresden. Das [[Arithmeum]] in Bonn am dortigen Institut für diskrete Mathematik geht in die 1970er Jahre zurück und beruht auf der Sammlung von Rechengeräten des Mathematikers [[Bernhard Korte]]. Das [[Heinz Nixdorf MuseumsForum]] (Abkürzung „HNF“) in Paderborn ist das größte deutsche Museum zur Entwicklung der Rechentechnik (insbesondere des Computers), und das [[Mathematikum]] in Gießen wurde 2002 von [[Albrecht Beutelspacher]] gegründet und wird von ihm laufend weiterentwickelt. Im [[Museumsquartier]] in Wien befindet sich das von [[Rudolf Taschner]] geleitete [[Math.space]], welches die Mathematik im Kontext zu Kultur und Zivilisation zeigt.
+
+Darüber hinaus sind zahlreiche Spezialsammlungen an Universitäten untergebracht, aber auch in umfassenderen Sammlungen wie zum Beispiel im [[Deutsches Museum|Deutschen Museum]] in München oder im [[Deutsches Technikmuseum Berlin|Museum für Technikgeschichte in Berlin]] (Rechner von [[Konrad Zuse]] entwickelt und gebaut).
+
+== Aphorismen über Mathematik und Mathematiker ==
+Folgende [[Aphorismen]] bekannter Persönlichkeiten sind zu finden:<ref>{{Literatur|Autor=[[Lothar Schmidt (Politikwissenschaftler)|Lothar Schmidt]]|Titel=Aphorismen von A-Z. Das große Handbuch geflügelter Definitionen|Verlag=Drei Lilien Verlag|Ort=Wiesbaden|Jahr=1980|ISBN=|Seiten=288-289}} (Prof. Dr. jur. Lothar Schmidt ist [[Diplom-Volkswirt]] und lehrte [[Politologie]] an der [[Johann Wolfgang Goethe-Universität Frankfurt am Main]].)</ref>
+* [[Albert Einstein]]: ''Die Mathematik handelt ausschließlich von den Beziehungen der Begriffe zueinander ohne Rücksicht auf deren Bezug zur Erfahrung.''
+* [[Galileo Galilei]]: ''Mathematik ist das Alphabet, mit dessen Hilfe Gott das Universum beschrieben hat.''
+* [[Godfrey Harold Hardy]]: ''Der Mathematiker ist ein Hersteller von Schemata.''
+* [[Johann Wolfgang von Goethe]]: ''Die Mathematiker sind eine Art Franzosen: Redet man zu ihnen, so übersetzen sie es in ihre Sprache, und dann ist es alsobald ganz etwas anderes.''
+* [[Novalis]]: ''Die ganze Mathematik ist eigentlich eine Gleichung im Großen für die anderen Wissenschaften.''
+* [[Friedrich Nietzsche]]: ''Wir wollen die Feinheit und Strenge der Mathematik in alle Wissenschaften hineintreiben, soweit dies nur irgend möglich ist; nicht im Glauben, daß wir auf diesem Wege die Dinge erkennen werden, sondern um damit unsere menschliche Relation zu den Dingen festzustellen. Die Mathematik ist nur das Mittel der allgemeinen und letzten Menschenkenntnis.''
+* [[Bertrand Russell]]: ''Mathematik ist die Wissenschaft, bei der man nicht weiß, wovon man spricht, noch ob das, was man sagt, wahr ist.''
+* [[Friedrich Schlegel]]: ''Die Mathematik ist gleichsam eine sinnliche Logik, sie verhält sich zur Philosophie wie die materiellen Künste, Musik und Plastik, zur Poesie.''
+* [[James Joseph Sylvester]]: ''Mathematik ist die Musik der Vernunft.''
+* [[Ludwig Wittgenstein]]: ''Die Mathematik ist eine Methode der Logik.''
+
+== Siehe auch ==
+{{Portal|Mathematik}}
+
+== Literatur ==
+* [[Richard Courant]], Herbert Robbins: ''Was ist Mathematik?'' Springer-Verlag, Berlin/Heidelberg 2000, ISBN 3-540-63777-X.
+* Georg Glaeser: ''Der Mathematische Werkzeugkasten.'' Elsevier&nbsp;– Spektrum Akademischer Verlag, München, Heidelberg 2004, ISBN 3-8274-1485-7.
+* [[Timothy Gowers]]: ''Mathematik'', deutsche Erstausgabe, aus dem Englischen übersetzt von Jürgen Schröder, Reclam Verlag, Stuttgart 2011, ISBN 978-3-15-018706-7.
+* Hans Kaiser, Wilfried Nöbauer: ''Geschichte der Mathematik.'' 2. Auflage. Oldenbourg, München 1999, ISBN 3-486-11595-2.
+* [[Mario Livio]]: ''Ist Gott ein Mathematiker? Warum das Buch der Natur in der Sprache der Mathematik geschrieben ist.'' C. H. Beck Verlag, München 2010, ISBN 978-3-406-60595-6.
+
+== Weblinks ==
+{{Commonscat|Mathematics|Mathematik}}
+{{Wikibooks|Regal:Mathematik}}
+{{Wikibooks|Mathematik|Lehrbuch der Mathematik}}
+{{Wikibooks|Mathe für Nicht-Freaks: Was ist Mathematik?}}
+{{Wikiquote}}
+{{Wikisource}}
+{{Wiktionary}}
+
+; Portale und Wissensdatenbanken
+* {{dmoz|World/Deutsch/Wissenschaft/Mathematik/|Mathematik}}
+* [http://www.madipedia.de/ MadiPedia (Gesellschaft für Didaktik der Mathematik)]
+* [http://www.mathe-online.at/mathint.html Mathe-Online.at] – mathematische Hintergründe und Lexikon
+* [http://www.matheplanet.com/ Matheplanet.com]
+* [http://www.mathepedia.de/Mathematik.aspx Mathepedia.de]
+* [http://www.mathematik.de/ Mathematik.de] – Portal der DMV zur Mathematik mit vielfältigen Inhalten
+* [http://math.space.or.at/ math.space] – im Museumsquartier in Wien gegründet von [[Rudolf Taschner]]
+* [http://www.wolframalpha.com/ Wolframalpha], Formeln und Aufgaben online lösen
+* [http://mathworld.wolfram.com/ Mathworld.Wolfram.com] – umfangreiche Mathematikquelle, engl.
+* [http://www.emis.de/ZMATH/ Zentralblatt für Mathematik: MATH-Datenbank]
+
+; Schulmathematik
+* [http://www.in-mathe-einfach-besser.de/index.html ''Sammlung professioneller Lernvideos für den Einsatz im Mathematikunterricht am Gymnasium unter Einsatz Neuer Medien und Technologien] (z.B. [[GeoGebra]])''
+* [http://www.mathe1.de/ Mathe1.de] – Schulwissen der Klassen 1–11
+* [[commons:File:Mathematik Zusammenfassung 1x1m Beta.pdf|Mathematik Zusammenfassung (der Schulmathematik)]] – Überblick über viele Themen der Mathematik in Form eines 1&nbsp;m × 1&nbsp;m Koordinatensystems (PDF)
+* [[zum:Mathematik|Mathematik im ZUM-Wiki.de]]&nbsp;– Mathematik für Lehrer
+* [http://thema-mathematik.at/ thema-mathematik.at] – Mathematikwissen der AHS Oberstufe (Klassen 9 – 12)
+
+; Software
+* [http://www.mathe112.de/ Mathe üben] – interaktive Webseite
+* [http://www.geogebra.org/cms/de/ GeoGebra] – [[GeoGebra]] ist ein Open-Source-Projekt.
+
+; Geschichtliches
+* ''Ethnomathematik'' (''[http://www.spektrumverlag.de/artikel/856963 Spektrum der Wissenschaft]'' – Sonderheft 2/2006)
+* [http://www.math.uni-hamburg.de/home/blunck/frauen ''„Frauen in der Geschichte der Mathematik“''] (Vorlesungsfolien Prof. Blunck, Universität Hamburg)
+* [http://www.people.iup.edu/gsstoudt/history/images/images.html Images of Some Famous Mathematical Works] (Bilder berühmter mathematischer Werke)
+* [http://www.chessbox.de/home/Mathematik.html Mathematik auf Sumerischer Basis]
+* [http://www.w-volk.de/museum/exposi.htm Zeugnisse über Mathematiker]
+
+== Einzelnachweise ==
+<references />
+
+{{Lesenswert|15. Juli 2005|7718346}}
+
+{{Normdaten|TYP=s|GND=4037944-9}}
+
+[[Kategorie:Mathematik| ]]
+[[Kategorie:Wissenschaftliches Fachgebiet]]

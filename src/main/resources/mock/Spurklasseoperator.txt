@@ -1,0 +1,160 @@
+Die '''Spurklasse-Operatoren''' werden in der [[Mathematik|mathematischen]] Disziplin der [[Funktionalanalysis]] untersucht. Sie bilden eine wichtige Klasse von linearen Operatoren auf unendlichdimensionalen Räumen. Bei ihnen bleiben im Gegensatz zu allgemeinen Operatoren einige Eigenschaften aus dem endlichdimensionalen Fall erhalten, das betrifft insbesondere ihre Darstellung als Summe eindimensionaler Operatoren.
+In wichtigen Fällen überträgt sich der aus der [[Lineare Algebra|linearen Algebra]] bekannte Begriff der [[Spur (Mathematik)|Spur]] auf diese Operatoren, was zu ihrem Namen geführt hat. In der [[Quantenmechanik]] treten die Spurklasse-Operatoren als [[Dichtematrix]] auf.
+
+[[Alexander Grothendieck]] stieß bei seiner Untersuchung des [[Satz vom Kern|Satzes vom Kern]] aus der [[Distribution (Mathematik)|Distributionentheorie]] ebenfalls auf Operatoren der hier behandelten Art und nannte sie ''nukleare Operatoren'' (lat. nucleus = Kern). Dies führte dann zum Begriff des [[Nuklearer Raum|nuklearen Raums]].
+
+Dieser Artikel behandelt die nuklearen Operatoren zunächst auf [[Hilbertraum|Hilberträumen]], dann allgemeiner auf [[Banachraum|Banachräumen]] und schließlich auf [[Lokalkonvexer Raum|lokalkonvexen Räumen]].
+
+== Motivation ==
+Sei <math>E</math> ein [[Vektorraum]] über dem Körper der reellen oder komplexen Zahlen. Ein eindimensionaler Operator <math>A:E\rightarrow E</math> ist ein Operator der Form <math>A(x):=f(x)\cdot y</math> mit <math>y\in E</math> und <math>f\in E'</math>, wobei <math>E'</math> den [[Dualraum]] von <math>E</math> bezeichnet. In der [[Lineare Algebra|linearen Algebra]], d.&nbsp;h. im Fall <math>E={\mathbb K}^n</math>, kann jede lineare Abbildung <math>A:E\rightarrow E</math> als [[Matrix (Mathematik)|Matrix]] <math>(a_{i,j})_{i,j}</math> bzgl. einer [[Basis (Vektorraum)|Basis]] <math>e_1,\ldots e_n</math> dargestellt werden.
+Für <math>x\in {\mathbb K}^n</math> gilt dann
+
+<math>Ax = (a_{i,j})_{i,j} \cdot \begin{pmatrix}x_1 \\ \vdots \\ x_n \end{pmatrix} = \sum_{i=1}^n (a_{i,1},\ldots,a_{i,n}) \cdot \begin{pmatrix}x_1 \\ \vdots \\ x_n \end{pmatrix} \cdot e_i</math>.
+
+''A'' ist also eine Summe eindimensionaler Operatoren. Um das auf unendlichdimensionale Räume übertragen zu können, muss man unendliche Summen eindimensionaler Operatoren bilden und daher Vorkehrungen für deren Konvergenz treffen. Das führt zu folgender Definition:
+
+== Definition ==
+Seien <math>E</math> und <math>F</math> zwei normierte Vektorräume. Ein Operator <math>A : E \rightarrow F</math> heißt ''nuklear'', falls es Folgen <math>(a_n)_n</math> in <math>F</math> und <math>(f_n)_n</math> in <math>E\,'</math> gibt mit
+:<math>\sum_{n=1}^\infty \|a_n\|\cdot\|f_n\| < \infty</math>
+und
+:<math>A(x) = \sum_{n=1}^\infty f_n(x)a_n</math>
+für alle <math>x\in E</math>. Eine solche Formel für <math>A</math> heißt eine ''nukleare Darstellung'' von <math>A</math>. Diese ist jedoch nicht eindeutig.
+
+Die ''nukleare Norm'' oder ''Spurnorm'' eines nuklearen Operators ist definiert als
+:<math>\|A\|_1 = \inf \sum_{n=1}^\infty \|a_n\|\|f_n\|,</math>
+wobei das Infimum über die Folgen <math>(a_n)_n</math> in <math>F</math> und <math>(f_n)_n</math> in <math>E\,'</math> gebildet wird, welche eine nukleare Darstellung von <math>A</math> ergeben.
+
+== Beispiele ==
+* Sei <math>(a_n)_n \in \ell^1</math> und sei <math>A:\ell^p\rightarrow \ell^p</math> definiert durch <math>(x_n)_n\mapsto (a_nx_n)_n</math>. Dann ist <math>A</math> nuklear mit <math>\|A\|_1 \le \sum_n |a_n|</math>. Im Hilbertraumfall <math>p=2</math> gilt Gleichheit.
+* Sei <math>k:[0,1]\times [0,1] \rightarrow {\mathbb C}</math> stetig, <math>A:L^\infty[0,1]\rightarrow L^\infty[0,1]</math> sei definiert durch <math>(Af)(t) := \int_0^1 k(t,s)f(s)\mathrm{d}s</math>. Dann ist <math>A</math> nuklear mit <math>\|A\|_1 \le \int_0^1 \sup_t |k(t,s)| \mathrm{d}s</math>.
+* Sei <math>A:\ell^2\rightarrow \ell^2</math> definiert durch <math>(x_n)_n\mapsto (\frac{1}{n}x_n)_n</math>. Dann ist <math>A</math> ein [[kompakter Operator]], der nicht nuklear ist.
+
+== Einfache Eigenschaften ==
+
+Sei <math>N(E,F)</math> die Menge aller nuklearen Operatoren <math>E\to F</math>. Ist <math>F</math> [[Vollständiger Raum|vollständig]], so ist <math>N(E,F)</math> mit der nuklearen Norm ein Banachraum. Die Operatoren <math>E\to F</math> mit endlichdimensionalem Bild liegen dicht in <math>N(E,F)</math> und jeder nukleare Operator ist [[Kompakter Operator|kompakt]].
+
+Die nuklearen Operatoren haben die sogenannte ''Ideal-Eigenschaft'': Seien <math>E,\,F,\,G</math> und <math>H</math> normierte Räume,  <math>A:E\to F</math> sei nuklear und <math>B:G\to E</math> sowie  <math>C:F\to H</math> seien stetige lineare Operatoren. Dann ist auch  <math>CAB:G\to H</math> nuklear und es ist  <math>\|CAB\|_1 \le \|C\| \|A\|_1 \|B\|</math>, wobei <math>\|\cdot\|</math> die [[Operatornorm]] sei. Es gilt stets <math>\|\cdot\| \le \|\cdot\|_1</math>
+
+Speziell ist  <math>N(E) := N(E,E)</math> ein [[Ideal (Ringtheorie)|Ideal]] in der Algebra <math>B(E)</math> der stetigen linearen Operatoren auf <math>E</math>, und <math>N(E)</math> mit der nuklearen Norm ist eine [[Banachalgebra]].
+
+== Nukleare Operatoren auf Hilberträumen ==
+
+Im Hilbertraum <math>E=F=H</math> sind die Verhältnisse besonders einfach. In diesen Räumen sind die nuklearen Operatoren 1946 erstmals durch [[Robert Schatten]] und [[John von Neumann]] untersucht worden.
+
+Jedes <math>f_n\in H'</math> ist nach dem [[Satz von Fréchet-Riesz]] von der Form <math>f_n(x) = \langle x,y_n\rangle</math> mit einem <math>y_n\in H</math>. Eine nukleare Darstellung eines Operators <math>A:H\rightarrow H</math> hat daher die Gestalt
+:<math>A(x) = \sum_{n=1}^\infty \langle x, y_n\rangle x_n</math>
+
+mit <math>x_n, y_n \in H</math> und
+:<math>\sum_{n=1}^\infty \|x_n\|\|y_n\| < \infty.</math>
+
+Ist <math>(e_m)_m</math> eine beliebige [[Orthonormalbasis]] von <math>H</math>, so konvergiert für jedes <math>A\in N(H)</math>
+
+:<math>\sum_m \langle Ae_m,e_m\rangle = \sum_n \langle x_n,y_n\rangle </math>,
+
+wobei die linke Summe als Limes des [[Netz (Topologie)|Netzes]] aller endlichen Teilsummen in <math>\C</math> zu lesen ist (d.&nbsp;h. als [[unbedingte Konvergenz]]). Diese Zahl ist daher unabhängig von der Wahl der Orthonormalbasis und auch unabhängig von der Wahl der nuklearen Darstellung, sie wird die Spur von <math>A</math> genannt und mit <math>\mathrm{Sp}(A)</math> bezeichnet. Wegen des englischen Wortes ''trace'' für Spur findet man auch häufig die Bezeichnung <math>tr(A)</math>.
+
+Ist <math>A\in N(H)</math> [[Selbstadjungierter Operator|selbstadjungiert]] und ist <math>(\lambda_n)_n</math> die Folge der mit Vielfachheiten gezählten [[Eigenwert]]e von <math>A</math>, so gilt <math>\textstyle \|A\|_1 = \sum_n |\lambda_n|</math> und <math>\textstyle \mathrm{Sp}(A) = \sum_n \lambda_n</math>. Für allgemeines <math>A\in N(H)</math> ist die Eigenwertfolge <math>(\lambda_n)_n</math> absolut summierbar und es ist
+<math>\textstyle \sum_n |\lambda_n| \le \|A\|_1</math>.
+
+Als weitere Charakterisierung kann man zeigen, dass ein Operator <math>A\in B(H)</math> genau dann nuklear ist, wenn er das Produkt zweier [[Hilbert-Schmidt-Operator]]en ist.
+
+<math>N(H)</math> spielt eine zentrale Rolle in der Dualitätstheorie von [[Operatoralgebra|Operatoralgebren]]. Es bezeichne <math>K(H)</math> die Algebra der [[Kompakter Operator|kompakten linearen Operatoren]] auf <math>H</math>. Jedes <math>A\in N(H)</math> definiert durch <math>\phi_A(T) := \mathrm{Sp}(AT) </math> ein stetiges, lineares Funktional auf <math>K(H)</math>. Man kann zeigen, dass <math>N(H) \rightarrow K(H)\,'</math>, <math>A\mapsto \phi_A</math> ein isometrischer Isomorphismus ist, wobei <math>N(H)</math> mit der nuklearen Norm und <math>K(H)</math> mit der Operatornorm versehen sei. In diesem Sinne gilt also <math>K(H)\,'\cong N(H)</math>.
+Genauso definiert jedes <math>T\in B(H)</math> durch die Formel <math>\psi_T(A) := \mathrm{Sp}(AT)</math> ein stetiges lineares Funktional auf <math>N(H)</math> und man kann wieder zeigen, dass <math>B(H) \rightarrow N(H)\,'</math>, <math>T\mapsto \psi_T</math> ein isometrischer Isomorphismus ist, wenn man <math>N(H)</math> mit der nuklearen Norm und <math>B(H)</math> mit der Operatornorm versieht. In diesem Sinne gilt also <math>N(H)\,'\cong B(H)</math>.
+Insbesondere ist also <math>K(H)\,'' \cong B(H)</math>, das heißt die Räume <math>K(H), N(H)</math> und <math>B(H)</math> sind bei unendlichdimensionalem Hilbertraum nicht [[Reflexiver Raum|reflexiv]].
+
+== Eine Analogie zu Folgenräumen ==
+Die folgende Aufstellung enthält eine Analogie zwischen [[Folgenraum|Folgenräumen]] komplexer Zahlen und [[Operatoralgebra|Operatoralgebren]] auf einem Hilbertraum.
+Im Sinne dieser Analogie kann man die nuklearen Operatoren als eine nicht-kommutative Version der <math>\ell^1</math>-Folgen betrachten, sie ist zumindest eine Merkhilfe.
+
+{| class="wikitable"
+|-
+!width="50%"| Folgenraum
+! Operatoralgebra
+|-
+| <math>c_{00}</math> = Raum der endlichen Folgen || <math>F(H)</math> = Algebra der Operatoren endlichen Ranges
+|-
+| <math>c_0</math> = Raum der Nullfolgen || <math>K(H)</math> = Algebra der kompakten Operatoren
+|-
+| <math>\ell^1</math> = Raum der absolut summierbaren Folgen || <math>N(H)</math> = Algebra der nuklearen Operatoren
+|-
+| <math>\ell^2</math> = Raum der quadratisch summierbaren Folgen || <math>HS(H)</math> = Algebra der [[Hilbert-Schmidt-Operator]]en
+|-
+| <math>\ell^p</math> = Raum der <math>p</math>-fach summierbaren Folgen, <math>1<p<\infty </math> || <math>{\mathcal S}_p(H)</math> = <math>p</math>-[[Schatten-Klasse]]
+|-
+| <math>\ell^\infty</math> = Raum der beschränkten Folgen || <math>B(H)</math> = Algebra aller beschränkten Operatoren
+|-
+| <math>c_{00} \subset \ell^1 \subset c_0 \subset \ell^\infty</math>|| <math>F(H) \subset N(H) \subset K(H) \subset B(H)</math>
+|-
+| <math>c_{00}</math> liegt dicht in <math>c_0</math> bzgl. der Supremumsnorm <math>\|\cdot\|_\infty</math>. || <math>F(H)</math> liegt dicht in <math>K(H)</math> bzgl. der Operatornorm.
+|-
+| <math>c_{00}</math> liegt dicht in <math>\ell^1</math> bzgl. der Norm <math>\|\cdot\|_1</math>. || <math>F(H)</math> liegt dicht in <math>N(H)</math> bzgl. der nuklearen Norm.
+|-
+| <math>\ell^1</math> liegt dicht in <math>c_0</math> bzgl. der Supremumsnorm. || <math>N(H)</math> liegt dicht in <math>K(H)</math> bzgl. der Operatornorm.
+|-
+| <math>c_{00}</math> ist ein Ideal in <math>c_0</math>, <math>\ell^1</math> und in <math>\ell^\infty</math>. || <math>F(H)</math> ist ein Ideal in <math>K(H)</math>, <math>N(H)</math> und in <math>B(H)</math>.
+|-
+| <math>\ell^1</math> ist ein Ideal in <math>c_0</math> und in <math>\ell^\infty</math>. || <math>N(H)</math> ist ein Ideal in <math>K(H)</math> und in <math>B(H)</math>.
+|-
+| <math>c_0</math> ist ein Ideal in <math>\ell^\infty</math>. || <math>K(H)</math> ist ein Ideal in <math>B(H)</math>.
+|-
+| <math>(a_n)_n \mapsto \sum_{n=1}^\infty a_n</math> ist ein stetiges linearen Funktional auf <math>\ell^1</math>. || Die Spur ist ein stetiges lineares Funktional auf <math>N(H)</math>.
+|-
+| <math>(c_0, \|\cdot\|_\infty)' \cong (\ell^1, \|\cdot\|_1)</math>. || <math>(K(H),\|\cdot\|)' \cong (N(H), \|\cdot\|_1)</math>.
+|-
+| <math>(\ell^1, \|\cdot\|_1)' \cong (\ell^\infty, \|\cdot\|_\infty)</math>. || <math>(N(H), \|\cdot\|_1)' \cong (B(H),\|\cdot\|) </math>.
+|-
+| Eine Folge aus <math>\ell^\infty</math> ist genau dann aus <math>\ell^1</math>, wenn sie das Produkt zweier <math>\ell^2</math>-Folgen ist. || Ein stetiger linearer Operator ist genau dann nuklear, wenn er das Produkt zweier Hilbert-Schmidt-Operatoren ist.
+|}
+
+== Nukleare Operatoren auf Banachräumen ==
+
+Die Untersuchung nuklearer Operatoren auf Banachräumen begann 1951 mit einer Arbeit von [[A. F. Ruston]].
+Wegen der hier fehlenden Orthonormalbasen sind die Verhältnisse nicht so einfach wie im Hilbertraum-Fall, zudem sind deutlich andere Methoden erforderlich.
+
+Während im Hilbertraum-Fall die Eigenwertfolge eines nuklearen Operators nach obigen Ausführungen absolut summierbar ist, kann man im Banachraum-Fall nur folgende schwächere Aussage beweisen:
+
+Ist <math>E</math> ein Banachraum und ist <math>(\lambda_n)_n</math> die Eigenwertfolge eines nuklearen Operators <math>A\in N(E)</math>, so gilt <math>(\lambda_n)_n \in \ell^2</math> und <math>\|(\lambda_n)_n\|_2 \le \|A\|_1</math>.
+
+Dieses Ergebnis kann man nicht verbessern; [[R. J. Kaiser]] und [[James Ronald Retherford]] haben zu vorgegebener <math>\ell^2</math>-Folge einen nuklearen Operator aus <math>N(\ell^1\oplus \ell^\infty)</math> mit dieser Eigenwertfolge angegeben. Nach einem Satz von Johnson, König, Maurray und Retherford ist ein Banachraum genau dann isomorph zu einem Hilbertraum, wenn die Eigenwertfolge eines jeden nuklearen Operators aus <math>\ell^1</math> ist.
+
+Die Spur eines nuklearen Operators lässt sich nicht für alle Banachräume definieren. Ist eine nukleare Darstellung <math>\textstyle A(x) = \sum_{n=1}^\infty f_n(x)x_n</math> eines Operator aus <math>A\in N(E)</math> gegeben, so legt der Hilbertraum-Fall die Definition <math>\textstyle \mathrm{Sp}(A) = \sum_{n=1}^\infty f_n(x_n)</math> nahe. Diese Zahl erweist sich genau dann wohldefiniert, das heißt als unabhängig von der gewählten nuklearen Darstellung, wenn der Banachraum die [[Approximationseigenschaft]] hat.
+
+Die im Hilbertraum-Fall vorliegende Dualität verallgemeinert sich wie folgt auf Banachräume <math>E</math> mit Approximationseigenschaft. Jedes <math>T\in B(E,E'')</math> definiert ein stetiges, lineares Funktional <math>\psi_T</math> auf <math>N(E)</math>, wobei <math>\textstyle \psi_T(A) = \sum_{n=1}^\infty (T(x_n))(f_n)</math> wenn <math>\textstyle A(x) = \sum_{n=1}^\infty  f_n(x)x_n</math> eine nukleare Darstellung von <math>A</math> ist. Die Approximationseigenschaft sichert die Wohldefiniertheit, d.&nbsp;h. die Unabhängigkeit von der Wahl der nuklearen Darstellung. Man kann zeigen, dass <math>B(E,E'') \rightarrow N(E)\,', T\mapsto \psi_T</math> ein isometrischer Isomorphismus ist, wenn man <math>N(E)</math> mit der nuklearen Norm und <math>B(E,E'')</math> mit der Operatornorm versieht. In diesem Sinne ist <math>N(E)' \cong B(E,E'')</math>. Ist daher <math>E</math> zusätzlich [[Reflexiver Raum|reflexiv]], so hat man <math>N(E)' \cong B(E)</math> wie im Hilbertraum-Fall.
+
+== Nukleare Operatoren auf lokalkonvexen Räumen ==
+
+Alexander Grothendieck hat 1951 mit der Untersuchung nuklearer Operatoren zwischen lokalkonvexen Räumen begonnen.
+Da man auf lokalkonvexen Räumen keine Norm zur Verfügung hat, muss die Definition wie folgt formuliert werden: Ein linearer Operator <math>A:E\rightarrow F</math> heißt nuklear, falls es eine Darstellung der Art
+
+<math>A(x) = \sum_{n=1}^\infty \lambda_n f_n(x) y_n</math>
+
+gibt, wobei
+* <math>(\lambda_n)_n \in \ell^1</math>,
+* <math>(f_n)_n</math> eine gleichstetige Folge im [[Dualraum|starken Dualraum]] <math>E\,'</math> ist (d.&nbsp;h. es gibt eine stetige [[Halbnorm]] <math>p</math> auf <math>E</math> mit <math>|f_n(x)| \le p(x)</math> für alle <math>x\in E</math>),
+* <math>(y_n)_n</math> eine [[Beschränktheit|beschränkte]] Folge in <math>F</math> ist.
+
+Da die geforderte Gleichstetigkeit im Banachraum-Fall der Beschränktheit gleichkommt, führt die hier gegebene Definition im Banachraum-Fall auf denselben Begriff des nuklearen Operators wie er oben definiert wurde.
+
+Die Ideal-Eigenschaft verallgemeinert sich auf lokalkonvexe Räume: Ist <math>A:E\rightarrow F</math> nuklear und sind <math>B:G\rightarrow E</math> und <math>C:F\rightarrow H</math> stetige, lineare Operatoren zwischen lokalkonvexen Räumen, so ist auch <math>CAB:G\rightarrow H</math> nuklear. Nukleare Operatoren <math>A:E\rightarrow F</math> sind stetig und, falls <math>F</math> [[Vollständiger Raum|vollständig]] ist, sogar kompakt.
+Man kann zeigen, dass es zu jedem nuklearen Operator <math>A:E\rightarrow F</math> einen weiteren nuklearen Operator <math>\tilde{A}:G\rightarrow H</math> zwischen normierten Räumen und stetige lineare Operatoren <math>B:E\rightarrow G, C:H\rightarrow F</math> gibt mit <math>A = C\tilde{A} B</math>. Damit kann man das Studium der nuklearen Operatoren zwischen lokalkonvexen Räumen auf den normierten Fall zurückführen.
+
+In der lokalkonvexen Theorie spielen die nuklearen Operatoren eine wichtige Rolle im Zusammenhang mit [[Nuklearer Raum|nuklearen Räumen]].
+
+== Anwendung in der statistischen Physik ==
+Das physikalische Gebiet der [[Statistische Physik|Statistischen Physik]] beruht auf der zentralen Annahme, dass die Spur jeder mit der Exponentialfunktion des sog. [[Hamilton-Operator]]s (Energieoperator) <math>\mathcal H</math> bei der Temperatur <math>T</math> gewichteten Messgröße ([[Observable]]) <math>\hat A</math> der [[Quantenstatistik]] existiert, und zwar obwohl der Hamiltonoperator selbst keineswegs zur Spurklasse gehört und in der Regel auch für den (nur selbstadjungierten!) Operator <math>\hat A</math> dasselbe zutrifft. Für den thermischen Erwartungswert <math>\langle \hat A\rangle_T</math> der betrachteten Messgröße gilt trotzdem aufgrund dieser Annahme die Beziehung
+:<math>\langle \hat A\rangle_T=\mathrm{Sp} \{e^{-\frac {\mathcal H}{T}}\,\hat A\}\,.</math><br /><br />
+Anders gesagt: die eingeklammerten Ausdrücke befassen sich i.&nbsp;W.<!-- sagt uns: „im Wesentlichen“ oder was? --> mit nuklearen Räumen und den darin definierten Operatoren bzw. Messgrößen.
+
+== Literatur ==
+* [[Robert Schatten|R. Schatten]], [[John von Neumann|J. v. Neumann]]: ''The Cross Space of Linear Transformations II''. In: ''Ann. of Math.'', 47, 1946, S. 608-630
+* A.F. Ruston: ''On the Fredholm theory of integral equations for operators belonging to the trace class of a general Banach space''. In: ''Proc. London Math. Soc.'', 2, 53, 1951, S. 109-124
+* A. Grothendieck: ''Sur une notion de produit tensoriel topologique d’espaces vectoriels topologiques, et une classe remarquable d’espaces vectoriels liée à cette notion''. In: ''C. R. Acad. Sci. Paris'', vol. 233, 1951, S. 1556-1558
+* A. Pietsch: ''Nukleare lokalkonvexe Räume''. Akademie-Verlag, (1965)
+* A. Pietsch: ''Eigenvalues and s-Numbers''. In: ''Cambridge Studies in Advanced Mathematics'', 1987
+* R. J. Kaiser, J. R. Retherford: ''Preassigning eigenvalues and zeros of nuclear operators''. In: ''Studia Math.'', 81, 1985, S. 127-133
+* K. Floret, J. Wloka: ''Einführung in die Theorie der lokalkonvexen Räume''. In: ''Lecture Notes in Mathematics'', 56, S. 1968
+* H. H. Schaefer: ''Topological Vector Spaces''. Springer, 1971
+* R. Meise, D. Vogt: ''Einführung in die Funktionalanalysis''. Vieweg, 1992
+* [[Dirk Werner (Mathematiker)|Dirk Werner]]: ''Funktionalanalysis''. 2. Auflage. Springer, Berlin / Heidelberg / New York 1997, ISBN 3-540-61904-6
+
+[[Kategorie:Funktionalanalysis]]

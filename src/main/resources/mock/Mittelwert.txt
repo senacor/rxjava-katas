@@ -1,0 +1,360 @@
+{{Begriffsklärungshinweis}} 
+Ein '''Mittelwert''' (kurz auch nur ''Mittel'') ist eine nach einer bestimmten [[Algorithmus|Rechenvorschrift]] aus zwei oder mehreren Zahlen ermittelte weitere Zahl. Sie liegt  zwischen den vorgegebenen Zahlen. Einige von beliebig viel berechenbaren  Mittelwerten sind das [[Arithmetisches Mittel|Arithmetische]], das [[Geometrisches Mittel|Geometrische]] und das [[Quadratisches Mittel|Quadratische Mittel]].
+
+Mittelwerte werden am häufigsten in der [[Statistik]] angewendet, wobei mit ''Mittel'' oder ''Durchschnitt''
+meistens das arithmetische Mittel gemeint ist. Außerdem wird hier oft der erst künftig existierende [[Erwartungswert]] bereits als Mittelwert bezeichnet.
+
+== Definitionen der bekanntesten und wichtigsten Mittelwerte ==
+Im Folgenden seien <math>x_1, \dotsc, x_n</math> gegebene [[reelle Zahl]]en, in der Statistik etwa [[Messwert]]e, deren Mittelwert berechnet werden soll.
+
+{| class="wikitable"
+|- class="hintergrundfarbe5"
+! Mittelwert !! Definition<ref>F. Ferschl: ''Deskriptive Statistik.'' 3. Auflage. Physica-Verlag Würzburg, ISBN 3-7908-0336-7. Seiten 48-74</ref>
+|-
+| [[Modus (Statistik)]] || Ausprägung mit höchster Häufigkeit
+|-
+| [[Median]] (Statistik)|| Für die [[Ordnungsstatistik|sortierten]] Werte <math>x_{(1)}, \dotsc, x_{(n)}</math> 
+<math>\bar{x}_\mathrm{med} =\begin{cases}
+ x_{\left(\frac{n+1}{2}\right)}, & n\text{ ungerade,}\\
+ \frac 12\left(x_{\left({\frac n2}\right)} + x_{\left({\frac n2+1}\right)}\right), & n \text{ gerade.}
+\end{cases}
+</math>
+|-
+| [[Arithmetisches Mittel]] || <math> \bar{x}_{\mathrm{arithm}} = \frac{1}{n} \sum_{i=1}^n{x_i} = \frac{x_1 + x_2 + \dotsb + x_n}{n}</math>
+|-
+| [[Geometrisches Mittel]] || <math> \bar{x}_\mathrm{geom} = \sqrt[n]{\prod_{i=1}^n{x_i}} = \sqrt[n]{x_1 x_2 \dotsm x_n} </math>
+|-
+| [[Harmonisches Mittel]] || <math> \bar{x}_\mathrm{harm} = \frac{n}{\sum\limits_{i=1}^n \frac{1}{x_i}} = \frac{n}{\frac{1}{x_1} + \frac{1}{x_2} + \dotsb + \frac{1}{x_n}}</math>
+|-
+| [[Quadratisches Mittel]] || <math> \bar{x}_\mathrm{quadr} = \sqrt{\frac{1}{n}\sum_{i=1}^n{x_i^2}} = \sqrt {{x_1^2 + x_2^2 + \dotsb + x_n^2} \over n}
+</math>
+|-
+| [[Kubisches Mittel]] || <math> \bar{x}_\mathrm{kubisch} = \sqrt[3]{\frac{1}{n}\sum_{i=1}^n{x_i^3}} = \sqrt[3]{\frac{x_1^3 + x_2^3 + \dotsb + x_n^3}{n}}
+</math>
+|}
+
+== Beispiele für die Verwendung unterschiedlicher Mittelwerte ==
+{| class="wikitable float-right"
+|- class="hintergrundfarbe5"
+! Merkmalsträger <math>x</math> !! Wert
+|-
+| <math>x_{(1)}</math> || 2 (A)
+|-
+| <math>x_{(2)}</math> || 2 (A)
+|-
+| <math>x_{(3)}</math> || 2 (A)
+|-
+| <math>x_{(4)}</math> || 3 (B)
+|-
+| <math>x_{(5)}</math> || 3 (B)
+|-
+| <math>x_{(6)}</math> || 4 (C)
+|-
+| <math>x_{(7)}</math> || 5 (D)
+|}
+
+[[Datei:Beispiel mittelwert diagramm.svg|miniatur|Säulendiagramm zu den Beispielen]]
+
+Im Folgenden soll beispielhaft an den sieben rechts angegebenen Ausprägungen gezeigt werden, wo welche Definition des Mittelwerts sinnvoll ist.
+
+Der ''Modus'' ist bereits in der [[Nominalskala]] sinnvoll, in der einzelne Merkmale nicht geordnet werden können. Sind etwa von sieben befragten Personen drei katholisch (A), zwei evangelisch (B), einer muslimisch (C) und einer Hindu (D), so liegt der Modus bei <math>A</math>, denn dies kommt am häufigsten vor.
+
+Für den ''Median'' ist eine [[Ordinalskala]] Voraussetzung, in der die Merkmale geordnet werden können. Auf die Frage nach der Qualität des Essens eines Restaurants antworten beispielsweise drei Kunden mit „sehr gut“ (A), zwei mit „gut“ (B) sowie je einer mit „mittel“ und „schlecht“ (C bzw. D). Nach Ordnen der Daten wie in der Liste rechts erkennt man, dass die mittlere Beobachtung bei <math>x_{(4)}</math> liegt. Der Median ist also <math>B</math>.
+
+Das ''arithmetische Mittel'' wird beispielsweise zum Berechnen der Durchschnittsgeschwindigkeit genutzt: Läuft eine Schildkröte erst eine Stunde lang drei Meter pro Stunde, dann drei Stunden lang je zwei Meter und beschleunigt für jeweils eine Stunde nochmals auf drei, vier und fünf Meter pro Stunde, so ergibt sich als arithmetisches Mittel bei einer Strecke von 21&nbsp;Metern in 7&nbsp;Stunden:
+
+: <math> \begin{align}
+
+\bar{x}_{\mathrm{arithm}} & = \frac17 \sum\limits_{i=1}^7 {x_i}\\
+ & =\frac{(3+2+2+2+3+4+5)\,\mathrm{m}}{7\,\mathrm{h}} = \frac{21\,\mathrm{m}}{7\,\mathrm{h}}=3\,\mathrm{\frac mh}.
+\end{align}</math>
+
+Auch das ''harmonische Mittel'' kann zur Berechnung einer durchschnittlichen Geschwindigkeit sinnvoll sein, wenn nicht über gleiche Zeiten, sondern über gleiche Strecken gemessen wird: Die Schildkröte laufe den 1. Meter mit 3 Metern pro Stunde, weitere 3&nbsp;m mit jeweils 2&nbsp;m/h und beschleunigt auf den letzten 3 Metern nochmals auf jeweils 3, 4 und 5&nbsp;m/h. Die Durchschnittsgeschwindigkeit ergibt sich bei einer Strecke von 7&nbsp;Metern in <math>\tfrac{157}{60}</math>&nbsp;Stunden:
+
+: <math> \begin{align}
+
+\bar{x}_{\mathrm{harm}} & =\frac7{\sum\limits_{i=1}^7 \frac1{x_i}}\\
+ & = \frac{7\,\mathrm m}{\left(\frac13 + \frac12 + \frac12 + \frac12 + \frac13 + \frac14 + \frac15\right)\,\mathrm h} =\frac{7\,\mathrm m}{\frac{157}{60}\,\mathrm h} \approx 2{,}68\,\mathrm{\frac mh}.
+\end{align}</math>
+
+Mit dem ''geometrischen Mittel'' errechnet man den mittleren Wachstumsfaktor. Eine Bakterienkultur wachse beispielsweise am ersten Tag auf das Fünffache, am zweiten auf das Vierfache, dann zweimal auf das Dreifache und die letzten drei Tage verdoppelt sie sich täglich. Der Bestand nach dem siebten Tag errechnet sich also durch <math>\text{Anfangsbestand} \cdot 5 \cdot 4 \cdot 3 \cdot 3 \cdot 2 \cdot 2 \cdot 2 = \text{Endbestand}.</math>
+Alternativ kann mit dem geometrischen Mittel der Endbestand ermittelt werden, denn
+
+: <math> \bar{x}_\mathrm{geom} = \sqrt[7]{5 \cdot 4 \cdot 3 \cdot 3 \cdot 2 \cdot 2 \cdot 2} = \sqrt[7]{1440} \approx 2{,}83</math>
+
+und somit ist
+
+: <math>\text{Anfangsbestand} \cdot (\bar{x}_\mathrm{geom})^7 = \text{Endbestand}.</math>
+
+Ein tägliches Wachstum der Bakterienkultur um das 2,83-Fache hätte also nach sieben Tagen zum selben Ergebnis geführt.
+
+== Geschichte ==
+In der Mathematik treten Mittelwerte, insbesondere die drei klassischen Mittelwerte (arithmetisches, geometrisches und harmonisches Mittel), bereits in der Antike auf. [[Pappos]] von Alexandria kennzeichnet 10 verschiedene Mittelwerte m von 2 Zahlen <math>a</math> und <math>b</math> (<math>a<b</math>) durch spezielle Werte des Streckenverhältnisses <math>(b-m):(m-a)</math>. Auch die Ungleichung zwischen harmonischem, geometrischem und arithmetischem Mittel ist in der Antike bereits bekannt und geometrisch interpretiert. Im 19. und 20. Jahrhundert spielen Mittelwerte in der Analysis eine spezielle Rolle, dort im Wesentlichen im Zusammenhang mit berühmten Ungleichungen und wichtigen Funktionseigenschaften wie Konvexität ([[Hölder-Ungleichung]], [[Minkowski-Ungleichung]], [[Jensensche Ungleichung]] usw.). Dabei wurden die klassischen Mittelwerte in mehreren Schritten verallgemeinert, zunächst zu den ''Potenzmittelwerten'' (siehe Abschnitt [[#Hölder-Mittel|Hölder-Mittel]] unten) und diese wiederum zu den ''[[Quasi-arithmetisches Mittel|quasi-arithmetischen Mittelwerten]]''. Die klassische Ungleichung zwischen harmonischem, geometrischem und arithmetischem Mittel geht dabei über in allgemeinere Ungleichungen zwischen Potenzmittelwerten bzw. quasi-arithmetischen Mittelwerten.
+
+== Gemeinsame Definition der drei klassischen Mittelwerte ==
+Die Idee, die den drei klassischen Mittelwerten zugrunde liegt, lässt sich auf folgende Weise allgemein formulieren:
+
+Beim ''arithmetischen'' Mittel sucht man die Zahl <math>m</math>, für die
+
+:<math>m + m + \dotsb + m = n \cdot m = x_1 + x_2 + \dotsb + x_n</math>
+
+gilt, wobei sich die Summe links über <math>n</math> Summanden erstreckt. Das arithmetische Mittel mittelt also bzgl. der arithmetischen Verknüpfung „Summe“. Anschaulich bestimmt man mit dem arithmetischen Mittel aus Stäben verschiedener Länge einen mit einer durchschnittlichen oder mittleren Länge.
+
+Beim ''geometrischen'' Mittel sucht man die Zahl <math>m</math>, für die
+:<math>m \cdot m \dotsm m = m^n= x_1 \cdot x_2 \dotsm x_n</math>
+gilt, wobei sich das Produkt links über <math>n</math> Faktoren erstreckt. Das geometrische Mittel mittelt also bzgl. der arithmetischen Verknüpfung „Produkt“.
+
+Das ''harmonische'' Mittel <math>m</math> löst die Gleichung
+
+:<math> \frac 1m + \frac 1m + \dotsb + \frac 1m = \frac nm = \frac 1{x_1} + \frac 1{x_2} + \dotsb + \frac 1{x_n}</math>
+
+== Zusammenhänge ==
+Der Kehrwert des harmonischen Mittels ist gleich dem arithmetischen Mittel der Kehrwerte der Zahlen.
+
+Für <math>n=2</math> hängen die Mittelwerte untereinander in folgender Weise zusammen:
+
+:<math>x_\mathrm{harm}=\frac{x_\mathrm{geom}^2}{x_\mathrm{arithm}}</math>
+
+oder nach dem geometrischen Mittel aufgelöst
+
+:<math>x_\text{geom} = \sqrt{ x_\text{arithm} \cdot x_\text{harm} }.</math>
+
+=== Ungleichung der Mittelwerte ===
+{{Hauptartikel|Ungleichung vom arithmetischen und geometrischen Mittel|titel1=Ungleichung der Mittelwerte}}
+
+Die ''Ungleichung von arithmetischen und geometrischen Mittel'' vergleicht die Werte des arithmetischen und geometrischen Mittels zweier gegebener Zahlen: Es gilt für positive Variable stets
+
+:<math>\min(x_1,\dotsc,x_n)\le\bar x_{\text{geom}}\le\bar x_{\text{arithm}}\le\max(x_1,\dotsc,x_n).</math>
+
+Die Ungleichung lässt sich auch auf weitere Mittelwerte ausdehnen, z.&nbsp;B. (für positive Variable)
+
+:<math>\min(x_1,\dotsc,x_n)\le\bar x_{\text{harm}}\le\bar x_{\text{geom}}\le\bar x_{\text{arithm}}\le\max(x_1,\dotsc,x_n).</math>
+
+Für zwei (positive) Variablen gibt es auch eine grafische Veranschaulichung:
+
+: [[Datei:Mittelwerte Ungleichung Dreieck.png|thumb|center|upright=2.0|geometrischer Beweis der Ungleichung für Mittelwerte zweier Variablen]]
+
+Das geometrische Mittel folgt direkt aus dem [[Satzgruppe des Pythagoras#Höhensatz des Euklid|euklidischen Höhensatz]] und das harmonische Mittel aus dem [[Satzgruppe des Pythagoras#Kathetensatz des Euklid|euklidischen Kathetensatz]] mit der Beziehung
+
+:<math>\bar{x}_\text{geom}^2 = \bar{x}_\text{harm} \cdot \bar{x}_\text{arithm}.</math>
+
+== Weitere Mittelwerte und ähnliche Funktionen ==
+=== Gewichtete Mittel ===
+Die ''gewichteten'' oder auch ''gewogenen Mittelwerte'' entstehen, wenn man den einzelnen Werten unterschiedliche Gewichte zuordnet, mit denen sie in das Gesamtmittel einfließen; zum Beispiel wenn bei einer Prüfung mündliche und schriftliche Leistung unterschiedlich stark in die Gesamtnote einfließen.
+
+Die genauen Definitionen finden sich hier:
+* [[Arithmetisches Mittel #Gewichtetes arithmetisches Mittel|gewichtetes arithmetisches Mittel]]
+* [[Geometrisches Mittel #Eigenschaften|gewichtetes geometrisches Mittel]]
+* [[Harmonisches Mittel #Gewichtetes harmonisches Mittel|gewichtetes harmonisches Mittel]]
+
+=== Logarithmischer Mittelwert ===
+Der [[Logarithmisches Mittel|logarithmische Mittelwert]] <math> \bar{x}_{a,b,\ln} </math> zwischen <math>x_a</math> und <math>x_b</math> ist definiert als:
+
+:<math>\bar{x}_{a,b,\ln} = \frac{x_b - x_a}{\ln (\frac{x_b}{x_a})} = \frac{x_b - x_a}{\ln(x_b)- \ln(x_a)}.</math>
+
+Für <math>x_a\neq x_b </math> liegt der logarithmische Mittelwert zwischen dem geometrischen und dem arithmetischen Mittelwert.
+
+=== Winsorisiertes oder gestutztes Mittel ===
+Kann man davon ausgehen, dass die Daten durch „[[Ausreißer]]“, das heißt einige wenige zu hohe oder zu niedrige Werte, kontaminiert sind, so kann man die Daten entweder durch Stutzen oder durch „Winsorisieren“ (benannt nach [[Charles P. Winsor]]) bereinigen und den gestutzten <math>\bar{x}_{g\alpha}</math> (engl. ''truncated mean'') oder winsorisierten Mittelwert <math>\bar{x}_{w\alpha}</math> (engl. ''Winsorized mean'') berechnen. In beiden Fällen [[Rangfolge|sortiert]] man die Beobachtungswerte zuerst nach aufsteigender Größe. Beim Stutzen schneidet man sodann eine gleiche Anzahl von Werten am Anfang und am Ende der Folge ab und berechnet von den übrig bleibenden Werten den Mittelwert. Hingegen werden beim „Winsorisieren“ die Ausreißer am Anfang und Ende der Folge durch den nächstgrößeren (bzw. -kleineren) Wert der restlichen Daten ersetzt.
+
+'''Beispiel:''' Hat man 10 aufsteigend sortierte, reelle Zahlen <math>x_1, \ldots, x_{10}</math>, so ist das 10 %-gestutzte Mittel gleich
+
+: <math>\bar{x}_{g0,1}=\frac{x_2 + x_3 + x_4 + x_5 + x_6 + x_7 + x_8 + x_9}{8}.</math>
+
+Indes ist der 10-%-winsorisierte Mittelwert gleich
+
+: <math>\bar{x}_{w0,1}=\frac{x_2 + x_2 + x_3 + x_4 + x_5 + x_6 + x_7 + x_8 + x_9 + x_9}{10}.</math>
+
+D.&nbsp;h. das gestutzte Mittel liegt zwischen dem arithmetischen Mittel (keine Stutzung) und dem Median (maximale Stutzung). Üblicherweise wird ein 20 % gestutztes Mittel verwendet, d.&nbsp;h. 40 % der Daten bleiben unberücksichtigt für die Mittelwertberechnung. Die Prozentzahl richtet sich im wesentlich nach der Zahl der vermuteten Ausreißer in den Daten; für Bedingungen für eine Stutzung von weniger als 20 % sei auf die Literatur verwiesen.
+<ref>{{Literatur
+ |Autor = R.K. Kowalchuk, H.J. Keselman, R.R. Wilcox, J. Algina
+ |Titel = Multiple comparison procedures, trimmed means and transformed statistics
+ |Sammelwerk = Journal of Modern Applied Statistical Methods
+ |Band = 5
+ |Jahr = 2006
+ |Seiten = 44-65
+}}</ref><ref>{{Literatur
+ |Autor = R.R. Wilcox, H.J. Keselman
+ |Titel = Power analysis when comparing trimmed means
+ |Sammelwerk = Journal of Modern Applied Statistical Methods
+ |Band = 1
+ |Jahr = 2001
+ |Seiten = 24-31
+}}</ref>
+
+=== Quartilsmittel ===
+Das Quartilsmittel ist definiert als der Mittelwert des 1. und 3. [[Quartil]]s:
+
+:<math>\bar{x}_q = \frac{\tilde x_{0{,}25} + \tilde x_{0{,}75}}{2}.</math>
+
+Hierbei bezeichnet <math>\tilde x_{0{,}25}</math> das 25 %-[[Quantil]] (1. Quartil) und entsprechend <math>\tilde x_{0{,}75}</math> das 75 %-Quantil (3. Quartil) der Messwerte.
+
+Das Quartilsmittel ist [[Robuste Schätzverfahren|robuster]] als das arithmetische Mittel, aber weniger robust als der [[Median]].
+
+=== Mitte der kürzesten Hälfte ===
+Sei <math>[a, b[</math> das kürzeste Intervall unter allen Intervallen mit <math>F(b) - F(a) \ge \frac{1}{2}</math>, so ist <math>\frac{b - a}{2}</math> dessen Mitte (middle of the shortest half). Bei unimodalen symmetrischen Verteilungen konvergiert dieser Wert gegen das arithmetische Mittel.<ref>{{Literatur
+ |Autor = L. Davies
+ |Titel = Data Features
+ |Sammelwerk = Statistica Neerlandica
+ |Band = 49
+ |Jahr = 1995
+ |Seiten = 185-245
+}}</ref>
+
+=== Gastwirth-Cohen-Mittel ===
+
+Das Gastwirth-Cohen-Mittel nutzt drei Quantile der Daten: das <math>\alpha</math> Quantil und das <math>1-\alpha</math> Quantil jeweils mit Gewicht <math>\lambda</math> sowie den Median mit Gewicht <math>1-2\lambda</math>:
+
+:<math>\bar{x}_{gc} =\lambda\tilde x_{\alpha}+ (1-2\lambda) \tilde x_{0{,}5} + \lambda \tilde x_{1-\alpha}</math>
+
+mit <math>0\leq \alpha \leq 0{,}5</math> und <math>0\leq \lambda \leq 0{,}5</math>. 
+
+Spezialfälle sind
+
+* das Quartilsmittel mit <math>\alpha = 0{,}25</math>, <math>\lambda=0{,}5</math> und
+* das Trimean mit <math>\alpha=0{,}25</math>, <math>\lambda=0{,}25</math>.
+
+=== Bereichsmittel ===
+Das Bereichsmittel ist definiert als der Mittelwert des größten und kleinsten Beobachtungswerts:
+
+:<math>\bar{x}_b =\frac{\min_i x_i + \max_i x_i}{2}.</math>
+
+oder
+
+:<math>|{\min_i x_i - \bar{x}_b}| = |{\max_i x_i - \bar{x}_b}|</math>
+
+=== Das „a-Mittel“ ===
+Für einen gegebenen reellen Vektor <math>a=(a_1,\dots,a_n)</math> mit <math>\sum_{i=1}^n a_i = 1</math> wird der Ausdruck
+
+:<math>[a] = \frac{1}{n!} \sum_\sigma x_{\sigma(1)}^{a_1}\cdots x_{\sigma(n)}^{a_n},</math>
+
+wobei über alle [[Permutation]]en <math>\sigma</math> von <math>\{ 1, \ldots, n\}</math> summiert wird, als „<math>a</math>-Mittel“ [<math>a</math>] der nichtnegativen reellen Zahlen <math>x_1, \ldots, x_n</math> bezeichnet.
+
+Für den Fall <math>a = (1, 0, \dots,0)</math>, ergibt das genau das arithmetische Mittel der Zahlen <math>x_1, \ldots, x_n</math>; für den Fall <math>a=\left(\tfrac 1 n, \dots, \tfrac 1 n\right)</math> ergibt sich genau das geometrische Mittel.
+
+Für die <math>a</math>-Mittel gilt die [[Muirhead-Ungleichung]].
+
+'''Beispiel:''' Sei <math>a=\left(\tfrac 1 2,\tfrac 1 3,\tfrac 1 6\right)</math> und
+
+: <math>x_1=4,\,x_2=5,\,x_3=6,</math> dann gilt <math>\tfrac 1 2+\tfrac 1 3+\tfrac 1 6 = 1</math> und die Menge der Permutationen (in Kurzschreibweise) von <math>\{1,2,3\}</math> ist
+: <math>S_3 = \{1\,2\,3, 1\,3\,2, 2\,1\,3, 2\,3\,1, 3\,1\,2, 3\,2\,1\}.</math>
+
+Damit ergibt sich
+
+:<math>\begin{align}
+
+{[a]} & = \frac{1}{3!}\left(x_1^{\frac 1 2}x_2^{\frac 1 3}x_3^{\frac 1 6}+x_1^{\frac 1 2}x_3^{\frac 1 3}x_2^{\frac 1 6}+x_2^{\frac 1 2}x_1^{\frac 1 3}x_3^{\frac 1 6}+x_2^{\frac 1 2}x_3^{\frac 1 3}x_1^{\frac 1 6}+x_3^{\frac 1 2}x_1^{\frac 1 3}x_2^{\frac 1 6}+x_3^{\frac 1 2}x_2^{\frac 1 3}x_1^{\frac 1 6}\right)\\
+ & = \frac 1 6\left(4^{\frac 1 2}{\cdot}5^{\frac 1 3}{\cdot}6^{\frac 1 6}+4^{\frac 1 2}{\cdot}6^{\frac 1 3}{\cdot}5^{\frac 1 6}+5^{\frac 1 2}{\cdot}4^{\frac 1 3}{\cdot}6^{\frac 1 6}+5^{\frac 1 2}{\cdot}6^{\frac 1 3}{\cdot}4^{\frac 1 6}+6^{\frac 1 2}{\cdot}4^{\frac 1 3}{\cdot}5^{\frac 1 6}+6^{\frac 1 2}{\cdot}5^{\frac 1 3}{\cdot}4^{\frac 1 6}\right)\\
+ & \approx 4{,}94.
+\end{align}</math>
+
+=== Gleitende Durchschnitte ===
+{{Hauptartikel|Gleitender Mittelwert}}
+
+[[Gleitender Mittelwert|Gleitende Durchschnitte]] werden in der dynamischen Analyse von [[Messwert]]en angewandt. Sie sind außerdem ein gängiges Mittel der technischen Analyse in der [[Finanzmathematik]]. Mit gleitenden Durchschnitten kann das [[Stochastik|stochastische]] [[Rauschen (Physik)|Rauschen]] aus zeitlich voranschreitenden [[Signal]]en herausgefiltert werden. Häufig handelt es sich dabei um [[Filter mit endlicher Impulsantwort|FIR-Filter]]. Jedoch muss beachtet werden, dass die meisten gleitenden Durchschnitte dem echten Signal hinterherlaufen. Für vorausschauende Filter siehe z.&nbsp;B. [[Kalman-Filter]].
+
+Gleitende Durchschnitte benötigen normalerweise eine unabhängige Variable, die die Größe der nachlaufenden [[Stichprobe]] bezeichnet, bzw. das Gewicht des vorangehenden Wertes für die exponentiellen gleitenden Durchschnitte.
+
+Gängige gleitende Durchschnitte sind:
+* arithmetische gleitende Durchschnitte (''Simple Moving Average'' – SMA),
+* [[Exponentielle Glättung|exponentiell gleitende Durchschnitte]] (''Exponential Moving Average'' – EMA),
+* doppelt exponentiell gleitende Durchschnitte (''Double EMA'', DEMA),
+* dreifach, <math>n</math>-fach exponentiell gleitende Durchschnitte (''Triple EMA'' – TEMA),
+* linear gewichtete gleitende Durchschnitte (linear abfallende Gewichtung),
+* quadratisch gewichtete gleitende Durchschnitte und
+* weitere Gewichtungen: Sinus, Triangular,&nbsp;…
+
+In der Finanzliteratur können außerdem sogenannte adaptive gleitende Durchschnitte gefunden werden, die sich automatisch einer sich ändernden Umgebung (andere [[Volatilität]]/[[Streuung (Statistik)|Streuung]] etc.) anpassen:
+
+* ''Kaufmann’s Adaptive Moving Average'' (KAMA) sowie
+* ''Variable Index Dynamic Average'' (VIDYA).
+
+Für die Anwendung von gleitenden Durchschnitten siehe auch [[Chartanalyse#Gleitende Durchschnitte|Gleitende Durchschnitte (Chartanalyse)]] und [[ARMA-Modell#MA-Modell|MA-Modell]].
+
+=== Sonstige Mittelwerte ===
+Sonstige Mittelwerte, die in einem eigenen Artikel beschrieben werden, sind der [[Modus (Statistik)|Modus]] (eigentlich kein Mittelwert, sondern der häufigste Wert) und der [[Median]], der robust gegenüber extremen Abweichungen, sogenannten [[Ausreißer]]n, ist.
+
+Außerdem lassen sich Mittelwerte kombinieren; so entsteht etwa das [[Arithmetisch-geometrisches Mittel|arithmetisch-geometrische Mittel]], das zwischen dem arithmetischen und geometrischen Mittel liegt.
+
+== Verallgemeinerte Mittelwerte ==
+
+Es gibt eine Reihe weiterer Funktionen, mit denen sich die bekannten und weitere Mittelwerte erzeugen lassen.
+
+=== Hölder-Mittel ===
+{{Hauptartikel|Hölder-Mittel}}
+
+Für [[positive Zahl]]en <math>x_i</math> definiert man den [[Hölder-Mittel|<math>k</math>-Potenzmittelwert]], auch ''Hölder-Mittel'' ({{enS|''<math>k</math>-th power mean''}}) als
+
+:<math>\bar{x}(k) = \sqrt[k]{\frac{1}{n}\sum_{i=1}^n{x_i^k}}.</math>
+
+Für <math>k</math> = 0 ist der Wert durch [[Stetigkeit#Stetige Ergänzbarkeit|stetige Ergänzung]] definiert: 
+
+:<math>\bar{x}(0) = \lim_{k\to 0}\bar{x}(k).</math>  
+
+Man beachte, dass sowohl Notation als auch Bezeichnung uneinheitlich sind.
+
+Für <math>k</math> = −1, 0, 1, 2 und 3 ergeben sich daraus etwa das harmonische, das geometrische, das arithmetische, das quadratische und das kubische Mittel. Für <math>k</math> → -∞ ergibt sich das Minimum, für <math>k</math> → +∞ das Maximum der Zahlen.
+
+Außerdem gilt bei festen Zahlen <math>x_i</math>: Je größer <math>k</math> ist, desto größer ist <math>\bar{x}(k)</math>; daraus folgt dann die verallgemeinerte Ungleichung der Mittelwerte
+
+:<math>\min(x_1,\ldots,x_n)\le\bar x_{\mathrm{harm}}\le\bar x_{\mathrm{geom}}\le\bar x_{\mathrm{arithm}}\le\bar x_{\mathrm{quadr}}\le\bar x_{\mathrm{kubisch}}\le\max(x_1,\ldots,x_n).</math>
+
+=== Lehmer-Mittel ===
+Das [[Lehmer-Mittel]]<ref>{{MathWorld|LehmerMean|Lehmer Mean}}</ref> ist ein anderer verallgemeinerter Mittelwert; zur Stufe <math>p</math> ist es definiert durch
+
+:<math>L_p(a_1,a_2,\ldots,a_n) = \frac{\sum_{k=1}^n a_k^p}{\sum_{k=1}^n a_k^{p-1}}.</math>
+
+Es hat die Spezialfälle
+
+* <math>\lim_{p\to-\infty} L_p(a_1,\ldots,a_n) = \min(a_1,\ldots,a_n);</math>
+* <math>L_0(a_1,\ldots,a_n)</math> ist das harmonische Mittel;
+* <math>L_{1/2}(a_1,a_2)</math> ist das geometrische Mittel von <math>a_1</math> und <math>a_2</math>;
+* <math>L_1(a_1,\ldots,a_n)</math> ist das arithmetische Mittel;
+* <math>\lim_{p\to\infty} L_p(a_1,\ldots,a_n)=\max(a_1,\ldots,a_n).</math>
+
+=== Stolarsky-Mittel ===
+Das [[Stolarsky-Mittel]] zweier Zahlen <math>a,c</math> ist definiert durch
+
+:<math>S_p(a,c) = \left(\frac{a^p-c^p}{p(a-c)}\right)^{1/p-1}.</math>
+
+=== Integraldarstellung nach Chen ===
+Die Funktion
+
+:<math>f(t) = \frac{\int_a^b x^{t+1}\,\mathrm{d}x}{\int_a^b x^t\,\mathrm{d}x}</math>
+
+ergibt für verschiedene Argumente <math>t \in \mathbb{R}</math> die bekannten Mittelwerte von <math>a</math> und <math>b</math>:<ref name="cheng05">H. Chen: Means Generated by an Integral. In: Mathematics Magazine, Vol. 78, Nr. 5 (Dez. 2005), S. 397-399.</ref>
+
+* <math>f(-3) = \frac{2 a b}{a + b}</math> ist das harmonische Mittel
+* <math>f\left( -\frac{3}{2}\right) = \sqrt{a b}</math> ist das geometrische Mittel
+* <math>f(0) = \frac {a+b}{2}</math> ist das arithmetische Mittel
+
+Aus der Stetigkeit und Monotonie der so definierten Funktion <math>f</math> folgt die Mittelwertungleichung
+
+:<math>\underbrace{\frac{2 a b}{a + b}}_{\text{harm. } = f(-3)} \leq \underbrace{\sqrt{a b}}_{\text{geom. } = f\left( -\frac{3}{2}\right)} \leq \underbrace{\frac{b - a}{\ln b - \ln a}}_{\text{log. } = f(-1)} \leq \underbrace{\frac{a + \sqrt{a b} + b}{3}}_{\text{heron. } = f\left(-\frac{1}{2}\right)} \leq \underbrace{\frac{a + b}{2}}_{\text{arithm. } = f(0)}</math>
+
+== Mittelwert einer Funktion ==
+Das arithmetische Mittel einer stetigen Funktion <math>f(x)</math> in einem geschlossenen Intervall <math>[a,b]</math> ist
+
+: <math>\lim_{N \to \infty} \frac{\sum_{i=0}^N f(x_i)}{N}=\frac1{b-a}\int\limits_a^b f(x)\mathrm dx</math>, wobei <math>N=\frac{b-a}{\Delta x}</math> die Zahl der Stützstellen ist.
+
+Das quadratische Mittel einer stetigen Funktion ist
+
+: <math>\sqrt{\frac1{b-a}\int\limits_a^b f(x)^2\mathrm dx}.</math>
+
+Diese finden in der Technik erhebliche Beachtung, siehe [[Gleichwert]] und [[Effektivwert]].
+
+== Literatur ==
+* F. Ferschl: ''Deskriptive Statistik''. 3. Auflage. Physica-Verlag Würzburg, ISBN 3-7908-0336-7.
+* P.&nbsp;S. Bullen: ''Handbook of Means and Their Inequalities''. Kluwer Acad. Pub. 2003, ISBN 1-4020-1522-4 (umfassende Diskussion von Mittelwerten und der mit ihnen verbundenen Ungleichungen).
+* G.&nbsp;H. Hardy, J.&nbsp;E. Littlewood, G. Polya: ''Inequalities''. Cambridge Univ. Press 1964.
+* E. Beckenbach, R. Bellman: ''Inequalities''. Springer, Berlin 1961.
+
+== Weblinks ==
+{{Wiktionary|Durchschnittswert}}
+{{Wiktionary|Mittelwert}}
+* [http://www.scholarpedia.org/article/Averaging Averaging auf Scholarpedia] (englisch)
+
+== Einzelnachweise ==
+<references />
+
+[[Kategorie:Mittelwert|!]]
