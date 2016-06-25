@@ -10,9 +10,10 @@ import org.junit.Test;
 public class Kata1CreateObservable {
 
     @Test
-    public void erzeugeEinObservable() throws Exception {
+    public void createAnObservable() throws Exception {
         final String articleName = "Observable";
         // Create an observable from getArticle
+
 
     }
 
