@@ -1,6 +1,6 @@
 package com.senacor.tecco.reactive;
 
-import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
@@ -12,32 +12,26 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
  */
 public class WaitMonitor {
 
-    private final LinkedBlockingQueue<Boolean> queue = new LinkedBlockingQueue<>();
+    private final CountDownLatch countDownLatch;
     private final long creationTimeStamp = System.currentTimeMillis();
     private Long durationToCompleteInMs = null;
     private boolean complete = false;
-    private int expectedCompletes = 1;
 
     public WaitMonitor(int expectedCompletes) {
-        this.expectedCompletes = expectedCompletes;
+        this.countDownLatch = new CountDownLatch(expectedCompletes);
     }
 
     public WaitMonitor() {
+        this(1);
     }
 
     /**
      * Call this Method in your async code when the async execution has finished
      */
-    public void complete() {
-        try {
-            queue.put(true);
-            synchronized (this){
-                complete = true;
-                durationToCompleteInMs = System.currentTimeMillis() - creationTimeStamp;
-            }
-        } catch (InterruptedException e) {
-            throw new IllegalStateException(e);
-        }
+    public synchronized void complete() {
+        countDownLatch.countDown();
+        complete = true;
+        durationToCompleteInMs = System.currentTimeMillis() - creationTimeStamp;
     }
 
     /**
@@ -48,9 +42,7 @@ public class WaitMonitor {
      */
     public void waitFor(long timeout, TimeUnit unit) {
         try {
-            for (int i=0; i<expectedCompletes; i++) {
-                queue.poll(timeout, unit);
-            }
+            countDownLatch.await(timeout, unit);
             synchronized (this) {
                 print("runtime to complete: %s ms", durationToCompleteInMs == null ? "-" : durationToCompleteInMs);
             }
