@@ -1,6 +1,7 @@
 package com.senacor.tecco.reactive.katas.vertx;
 
 import com.senacor.tecco.reactive.ReactiveUtil;
+import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.vertx.core.DeploymentOptions;
 import io.vertx.rxjava.core.Vertx;
 import io.vertx.test.core.VertxTestBase;
@@ -31,6 +32,7 @@ public class WikiVerticleRxTest extends VertxTestBase {
         waitUntil(() -> vertxRx.deploymentIDs().size() == 1);
         System.out.println("deployed verticles:" + vertx.deploymentIDs());
 
+        vertx.eventBus().registerDefaultCodec(ParsedPage.class, new ParsedPageCodec());
         vertxRx.eventBus().<String>sendObservable("fetchArticle", "42")
                 .subscribe(res -> {
                     ReactiveUtil.print(res.body());
