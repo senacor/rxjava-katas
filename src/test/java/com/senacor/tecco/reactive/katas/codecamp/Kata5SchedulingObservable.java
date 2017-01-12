@@ -1,5 +1,7 @@
 package com.senacor.tecco.reactive.katas.codecamp;
 
+import com.senacor.tecco.reactive.services.CountService;
+import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
 
@@ -11,6 +13,8 @@ import java.util.concurrent.TimeUnit;
 public class Kata5SchedulingObservable {
 
     private final WikiService wikiService = new WikiService();
+    private final RatingService ratingService = new RatingService();
+    private final CountService countService = new CountService();
 
     @Test
     public void schedulingObservable() throws Exception {
