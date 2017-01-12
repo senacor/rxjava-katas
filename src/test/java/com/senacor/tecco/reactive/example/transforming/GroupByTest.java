@@ -2,7 +2,7 @@ package com.senacor.tecco.reactive.example.transforming;
 
 import org.junit.Test;
 import rx.Observable;
-import rx.Subscription;
+import rx.observers.TestSubscriber;
 
 import java.util.concurrent.TimeUnit;
 
@@ -14,17 +14,19 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 public class GroupByTest {
     @Test
     public void testGroupBy() throws Exception {
-        Subscription subscription = Observable.interval(100, TimeUnit.MILLISECONDS)
+        TestSubscriber testSubscriber = TestSubscriber.create();
+
+        Observable.interval(100, TimeUnit.MILLISECONDS)
+                .take(10)
                 .groupBy(index -> index % 2 == 0 ? "gerade" : "ungerade")
-                .subscribe(next -> {
-                            print("next: %s", next);
-                            next.subscribe(next2 -> print("key=" + next.getKey() + " value=" + next2));
-                        },
-                        Throwable::printStackTrace,
-                        () -> print("complete!"));
+                .doOnNext(next -> {
+                    print("next: %s", next);
+                    next.subscribe(next2 -> print("key=" + next.getKey() + " value=" + next2));
+                })
+                .doOnCompleted(() -> print("complete!"))
+                .doOnError(Throwable::printStackTrace)
+                .subscribe(testSubscriber);
 
-        Thread.sleep(2000);
-        subscription.unsubscribe();
-
+        testSubscriber.awaitTerminalEventAndUnsubscribeOnTimeout(2, TimeUnit.SECONDS);
     }
 }

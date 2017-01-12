@@ -65,7 +65,7 @@ public class WikiVerticleTest extends VertxTestBase {
                 ParsedPage parsedPage = parsed.result().body();
                 assertThat(parsedPage, notNullValue());
                 vertx.eventBus().<Integer>send("countWords", parsedPage, resCount -> {
-                    assertThat(resCount.result().body(), is(12804));
+                    assertThat(resCount.result().body(), is(205));
                     testComplete();
                 });
             });
@@ -88,7 +88,7 @@ public class WikiVerticleTest extends VertxTestBase {
                 ParsedPage parsedPage = parsed.result().body();
                 assertThat(parsedPage, notNullValue());
                 vertx.eventBus().<Integer>send("rate", parsedPage, resRate -> {
-                    assertThat(resRate.result().body(), is(2));
+                    assertThat(resRate.result().body(), is(5));
                     testComplete();
                 });
             });

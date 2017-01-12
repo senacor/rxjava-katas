@@ -140,7 +140,7 @@ public class ServicesTest {
                         }
                 );
 
-        monitor.waitFor(5, TimeUnit.SECONDS);
+        monitor.waitFor(10, TimeUnit.SECONDS);
         subscription.unsubscribe();
         Assert.assertTrue(monitor.isComplete());
     }
@@ -158,7 +158,7 @@ public class ServicesTest {
                         monitor::complete
                 );
 
-        monitor.waitFor(5, TimeUnit.SECONDS);
+        monitor.waitFor(10, TimeUnit.SECONDS);
         subscription.unsubscribe();
         Assert.assertTrue(monitor.isComplete());
     }
