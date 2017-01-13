@@ -22,7 +22,7 @@ public class Kata5SchedulingObservable {
         // 2. take only the first 20 articles
         // 3. load and parse the article
         // 4. use the ratingService.rateObservable() and #countWordsObervable() to combine both as JSON
-        //    and print the JSON to the console. Beispiel {"rating": 3, "wordCount": 452}
+        //    and print the JSON to the console. Example {"rating": 3, "wordCount": 452}
         // 5. measure the runtime
         // 6. add a scheduler to a specific position in the observable chain to reduce the execution time
 
