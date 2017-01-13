@@ -14,9 +14,7 @@ public class Kata1CreateObservable {
     @Test
     public void createAnObservable() throws Exception {
         final String articleName = "Observable";
-        // Create an observable from getArticle
-
-        rx.Observable<String> article = rx.Observable.create(subscriber -> {
+        rx.Observable.create(subscriber -> {
             try {
                 if (!subscriber.isUnsubscribed()) {
                     subscriber.onNext(getArticle(articleName).getText());
@@ -26,13 +24,12 @@ public class Kata1CreateObservable {
             } catch (Exception e) {
                 subscriber.onError(e);
             }
-        });
-
-        article.subscribe(System.out::println);
+        })
+                .subscribe(System.out::println);
 
     }
 
-    public Article getArticle(String name) {
+    private Article getArticle(String name) {
         return new WikipediaServiceMediaWikiBot().getArticle(name);
     }
 }

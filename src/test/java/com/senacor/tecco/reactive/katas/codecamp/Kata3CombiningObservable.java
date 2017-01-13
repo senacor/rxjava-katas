@@ -3,7 +3,9 @@ package com.senacor.tecco.reactive.katas.codecamp;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
+import io.vertx.core.json.Json;
 import org.junit.Test;
+import rx.Observable;
 
 /**
  * @author Andreas Keefer
@@ -16,11 +18,15 @@ public class Kata3CombiningObservable {
 
     @Test
     public void combiningObservable() throws Exception {
-        // 1. fetch and parse Wikiarticle
-        // 2. use ratingService.rateObservable() and countService.countWordsObervable(). Combine both information as JSON
-        //    and print the JSON to the console. Example {"articleName": "Superman", "rating": 3, "wordCount": 452}
+        String articleName = "Flugzeug";
 
-        // wikiService.fetchArticleObservable()
+        wikiService.fetchArticleObservable(articleName)
+                .map(wikiService::parseMediaWikiText)
+                .flatMap(parsedPage ->
+                        Observable.zip(ratingService.rateObservable(parsedPage),
+                            countService.countWordsObervable(parsedPage),
+                            (rating, counts) -> "{\"aricleName\": \"" + articleName + "\", \"rating\": " + rating + ", \"wordCount\": " + counts + "}"))
+                .subscribe(System.out::println);
     }
 
 }
