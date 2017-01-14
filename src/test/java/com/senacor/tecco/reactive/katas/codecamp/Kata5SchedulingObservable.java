@@ -1,9 +1,15 @@
 package com.senacor.tecco.reactive.katas.codecamp;
 
+import com.google.common.util.concurrent.AbstractScheduledService;
+import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
+import rx.Observable;
+import rx.Scheduler;
+import rx.observers.TestSubscriber;
+import rx.schedulers.Schedulers;
 
 import java.util.concurrent.TimeUnit;
 
@@ -26,7 +32,21 @@ public class Kata5SchedulingObservable {
         // 5. measure the runtime
         // 6. add a scheduler to a specific position in the observable chain to reduce the execution time
 
-        wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS);
+        TestSubscriber test = TestSubscriber.create();
+        wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
+                .limit(20)
+                .flatMap(article -> wikiService.fetchArticleObservable(article)
+                        .subscribeOn(Schedulers.io()))
+                .map(wikiService::parseMediaWikiText)
+                .flatMap(parsedPage ->
+                        Observable.zip(ratingService.rateObservable(parsedPage),
+                                countService.countWordsObervable(parsedPage),
+                                (rating, counts) -> "{\"rating\": " + rating + ", \"wordCount\": " + counts + "}")
+                                .subscribeOn(Schedulers.computation()))
+                .doOnNext(System.out::println)
+                .subscribe(test);
+
+        test.awaitTerminalEvent();
     }
 
 }
