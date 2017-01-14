@@ -1,5 +1,6 @@
 package com.senacor.tecco.reactive.katas.introduction;
 
+import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.Watch;
 import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Rule;
@@ -24,6 +25,13 @@ public class Kata2FetchArticleObservable {
         // 1) create an observable that emits the plane type
         // 2) use the fetch article method to transform the plane type to an Article
         // 3) subscribe to the observable and print the article content
+        
+        Observable<Article> obs = Observable.from(planeTypes)
+        		.map(plane -> fetchArticle(plane));
+
+        obs.subscribe(ReactiveUtil::print,
+                Throwable::printStackTrace,
+                () -> print("complete!"));
 
     }
 
