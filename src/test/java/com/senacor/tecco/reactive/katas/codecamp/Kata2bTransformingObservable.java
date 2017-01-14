@@ -18,7 +18,13 @@ public class Kata2bTransformingObservable {
         // 2. transform the result with the WikiService#parseMediaWikiText to an object structure
         // 3. print the word count of the article to the console (ParsedPage.getText()). Use CountService.
 
-        // wikiService.fetchArticleObservable()
+        wikiService.fetchArticleObservable("Boeing 777")
+            .map(article -> wikiService.parseMediaWikiText(article))
+            .flatMap(page -> countService.countWordsObervable(page))
+            .subscribe(
+                n -> System.out.println("Count: " + n),
+                err -> System.err.println("Error: " + err.getMessage()),
+                () -> System.out.println("Done")
+            );
     }
-
 }

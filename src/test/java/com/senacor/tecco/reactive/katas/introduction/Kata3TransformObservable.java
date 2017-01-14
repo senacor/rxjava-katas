@@ -20,6 +20,10 @@ public class Kata3TransformObservable {
         // 3) use the parsePlaneInfo method to transform the article to an planeInfo object
         // 4) subscribe to the observable and print the plane information
 
+        Observable.from(planeTypes)
+            .flatMap(this::fetchArticle)
+            .map(this::parsePlaneInfo)
+            .subscribe(System.out::println);
     }
 
     /**

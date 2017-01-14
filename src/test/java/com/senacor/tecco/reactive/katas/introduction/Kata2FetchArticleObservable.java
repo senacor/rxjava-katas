@@ -24,7 +24,9 @@ public class Kata2FetchArticleObservable {
         // 1) create an observable that emits the plane type
         // 2) use the fetch article method to transform the plane type to an Article
         // 3) subscribe to the observable and print the article content
-
+        Observable.from(planeTypes)
+            .map(this::fetchArticle)
+            .subscribe(n -> System.out.println(n.content));
     }
 
     /**

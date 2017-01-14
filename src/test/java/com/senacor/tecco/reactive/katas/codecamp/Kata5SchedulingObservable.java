@@ -1,10 +1,19 @@
 package com.senacor.tecco.reactive.katas.codecamp;
 
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
+import com.senacor.tecco.reactive.ReactiveUtil;
+import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
+import io.vertx.core.json.JsonObject;
 import org.junit.Test;
+import rx.Observable;
+import rx.Scheduler;
+import rx.Subscription;
+import rx.schedulers.Schedulers;
 
+import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -26,7 +35,32 @@ public class Kata5SchedulingObservable {
         // 5. measure the runtime
         // 6. add a scheduler to a specific position in the observable chain to reduce the execution time
 
-        wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS);
-    }
+        WaitMonitor waitMonitor = new WaitMonitor();
 
+        Scheduler sch = ReactiveUtil.newScheduler(8, "exercise5");
+
+        Subscription sub = wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
+            .take(20)
+            .flatMap(name -> wikiService.fetchArticleObservable(name).subscribeOn(Schedulers.io()))
+            .map(article -> wikiService.parseMediaWikiText(article))
+            .flatMap(text -> {
+
+                Observable<Integer> rating = ratingService.rateObservable(text).subscribeOn(sch);
+                Observable<Integer> counter = countService.countWordsObervable(text).subscribeOn(sch);
+
+                return Observable.zip(counter, rating, (s1, s2) -> new JsonObject().put("rating", s1).put("wordCount", s2));
+            })
+            .subscribeOn(sch)
+            .subscribe(
+                n -> System.out.println("Article: " + n.encodePrettily()),
+                err -> System.err.println("Error: " + err.getMessage()),
+                () ->  {
+                    waitMonitor.complete();
+                    System.out.println("Done");
+                }
+            );
+
+        waitMonitor.waitFor(15, TimeUnit.SECONDS);
+        sub.unsubscribe();
+    }
 }
