@@ -2,6 +2,7 @@ package com.senacor.tecco.reactive.katas.codecamp;
 
 import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
+import rx.Observable;
 
 /**
  * @author Andreas Keefer
@@ -17,6 +18,10 @@ public class Kata2aTransformingObservable {
         // 3. print the text of the wikipedia article to the console (ParsedPage.getText())
 
         // wikiService.fetchArticleObservable()
+        final String articleName = "Flugzeug";
+        Observable<String> article = wikiService.fetchArticleObservable(articleName);
+        article.map(wikiService::parseMediaWikiText)
+                .subscribe(parsedPage -> System.out.println(parsedPage.getText()));
     }
 
 }
