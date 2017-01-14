@@ -207,7 +207,7 @@ public class WikiService {
     public Observable<String> wikiArticleBeingReadObservable(final long interval, final TimeUnit unit) {
         final Random randomGenerator = new Random(8L);
         PublishSubject<String> publishSubject = PublishSubject.create();
-        Observable.interval(interval, unit)
+              Observable.interval(interval, unit)
                 .map(time -> {
                     String article = WIKI_ARTICLES.get(randomGenerator.nextInt(WIKI_ARTICLES.size()));
                     print("wikiArticleBeingReadObservable=%s", article);

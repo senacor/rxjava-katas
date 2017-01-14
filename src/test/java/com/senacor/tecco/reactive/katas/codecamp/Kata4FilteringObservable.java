@@ -14,10 +14,18 @@ public class Kata4FilteringObservable {
 
     @Test
     public void filterObservable() throws Exception {
-        // 1. Use WikiService#wikiArticleBeingReadObservable that delivers a stream of WikiArticle names being read
-        // 2. Filter the names so that only articles with at least 15 characters long names are accepted and print everything to the console
 
-        wikiService.wikiArticleBeingReadObservable(500, TimeUnit.MILLISECONDS);
+        // 1. Use WikiService#wikiArticleBeingReadObservable that delivers a stream of WikiArticle names being read
+        wikiService.wikiArticleBeingReadObservable(500, TimeUnit.MILLISECONDS)
+        // 2. Filter the names so that only articles with at least 15 characters long names are accepted and print everything to the console
+                .filter(x -> x.length() >= 15)
+                .subscribe(
+                        x -> System.out.println(x),
+                        Throwable::printStackTrace,
+                        () -> System.out.println("Done")
+                );
+
+        Thread.sleep(10000);
     }
 
     @Test

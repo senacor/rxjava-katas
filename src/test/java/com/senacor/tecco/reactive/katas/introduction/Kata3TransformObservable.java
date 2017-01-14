@@ -16,9 +16,17 @@ public class Kata3TransformObservable {
         String[] planeTypes = {"Boeing 777", "Boeing 747", "Boeing 737", "Airbus A330", "Airbus A320 family"};
 
         // 1) create an observable that emits the plane type
+        Observable.from(planeTypes)
         // 2) use the fetchArticleObservable method to transform the plane type to an Article
+            .flatMap(this::fetchArticle)
         // 3) use the parsePlaneInfo method to transform the article to an planeInfo object
+            .map(this::parsePlaneInfo)
         // 4) subscribe to the observable and print the plane information
+            .subscribe(
+                    x -> System.out.println("Number build: " + x.numberBuild),
+                    Throwable::printStackTrace,
+                    () -> System.out.println("done")
+            );
 
     }
 

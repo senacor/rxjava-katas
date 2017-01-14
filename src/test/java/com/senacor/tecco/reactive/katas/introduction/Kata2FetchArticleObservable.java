@@ -22,8 +22,15 @@ public class Kata2FetchArticleObservable {
         String[] planeTypes = {"Boeing 777", "Boeing 747", "Boeing 737", "Airbus A330", "Airbus A320 family"};
 
         // 1) create an observable that emits the plane type
+        Observable.from(planeTypes)
         // 2) use the fetch article method to transform the plane type to an Article
+            .map(this::fetchArticle)
         // 3) subscribe to the observable and print the article content
+            .subscribe(
+              x -> System.out.println("Fetched"),
+              Throwable::printStackTrace,
+                    () -> System.out.println("Done")
+            );
 
     }
 
