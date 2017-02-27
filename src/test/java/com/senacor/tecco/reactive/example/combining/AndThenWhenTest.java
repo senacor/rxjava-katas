@@ -8,7 +8,7 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
  * @author Andreas
- *         TODO: update to RxJava 2.0 posible ?!?
+ *         TODO (ak) 2.0 upgrade: upgrade to RxJava 2.0 posible ?!?
  */
 public class AndThenWhenTest {
     @Test

@@ -5,7 +5,6 @@ import io.reactivex.Observable;
 import io.reactivex.disposables.Disposable;
 import org.junit.Test;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -14,6 +13,7 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
  * @author Andreas Keefer
+ * @version 2.0
  */
 public class JoinTest {
     @Test
@@ -39,6 +39,13 @@ public class JoinTest {
     }
 
     @Test
+    // TODO (ak) 2.0 upgrade: result should be:
+    /*
+RxComputationThreadPool-1: next: first 0 -> [second 21, second 22, second 23, second 24]
+RxComputationThreadPool-1: next: first 1 -> [second 38, second 39, second 40, second 41, second 42]
+RxComputationThreadPool-1: next: first 2 -> [second 58, second 59, second 60, second 61, second 62]
+RxComputationThreadPool-1: next: first 3 -> [second 78, second 79, second 80, second 81, second 82]
+     */
     public void testGroupJoin() throws Exception {
         final WaitMonitor monitor = new WaitMonitor();
         Observable<String> stream1 = Observable.interval(200, TimeUnit.MILLISECONDS)

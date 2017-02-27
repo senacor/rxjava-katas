@@ -1,9 +1,9 @@
 package com.senacor.tecco.reactive.example.combining;
 
 import com.senacor.tecco.reactive.WaitMonitor;
+import io.reactivex.Observable;
+import io.reactivex.disposables.Disposable;
 import org.junit.Test;
-import rx.Observable;
-import rx.Subscription;
 
 import java.util.concurrent.TimeUnit;
 
@@ -11,6 +11,7 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
  * @author Andreas Keefer
+ * @version 2.0
  */
 public class ZipTest {
 
@@ -25,13 +26,13 @@ public class ZipTest {
                 .take(2, TimeUnit.SECONDS)
                 .map(value -> "second " + value);
 
-        Subscription subscription = Observable.zip(stream1, stream2, (s1, s2) -> "{" + s1 + " + " + s2 + "}")
+        Disposable subscription = Observable.zip(stream1, stream2, (s1, s2) -> "{" + s1 + " + " + s2 + "}")
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         monitor::complete);
 
         monitor.waitFor(2500, TimeUnit.MILLISECONDS);
-        subscription.unsubscribe();
+        subscription.dispose();
     }
 
     @Test
@@ -45,13 +46,13 @@ public class ZipTest {
                 .take(2, TimeUnit.SECONDS)
                 .map(value -> "second " + value);
 
-        Subscription subscription = stream1.zipWith(stream2, (s1, s2) -> "{" + s1 + " + " + s2 + "}")
+        Disposable subscription = stream1.zipWith(stream2, (s1, s2) -> "{" + s1 + " + " + s2 + "}")
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         monitor::complete);
 
         monitor.waitFor(2500, TimeUnit.MILLISECONDS);
-        subscription.unsubscribe();
+        subscription.dispose();
     }
 
 }
