@@ -4,10 +4,10 @@ import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.Watch;
 import com.senacor.tecco.reactive.services.WikiService;
+import io.reactivex.Observable;
+import io.reactivex.schedulers.Schedulers;
 import org.junit.Rule;
 import org.junit.Test;
-import rx.Observable;
-import rx.schedulers.Schedulers;
 
 import java.util.concurrent.TimeUnit;
 
@@ -34,7 +34,7 @@ public class Kata3TransformObservable {
         // 4) subscribe to the observable and print the plane information
 
 
-        Observable.from(planeTypes)
+        Observable.fromArray(planeTypes)
             .flatMap(planeType -> fetchArticle(planeType))
             .map(article -> parsePlaneInfo(article))
             .subscribe(planeInfo -> print("next: %s", planeInfo),

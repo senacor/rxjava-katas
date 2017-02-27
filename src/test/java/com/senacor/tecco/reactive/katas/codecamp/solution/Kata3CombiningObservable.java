@@ -5,14 +5,13 @@ import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
+import io.reactivex.Observable;
+import io.reactivex.observables.ConnectableObservable;
 import org.junit.Test;
-import rx.Observable;
-import rx.observables.ConnectableObservable;
 
 import java.util.concurrent.TimeUnit;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
-import static rx.Observable.zip;
 
 /**
  * @author Andreas Keefer
@@ -37,7 +36,7 @@ public class Kata3CombiningObservable {
                 .flatMap(parsedPage -> {
                     Observable<Integer> rating = ratingService.rateObservable(parsedPage);
                     Observable<Integer> wordCount = countService.countWordsObervable(parsedPage);
-                    return zip(rating, wordCount, (r, wc) -> String.format(
+                    return rating.zipWith(wordCount, (r, wc) -> String.format(
                             "{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
                             wikiArticle, r, wc));
                 })
@@ -90,12 +89,12 @@ public class Kata3CombiningObservable {
         Observable<Integer> wordCountObservable = parsedPageObservable.flatMap(countService::countWordsObervable);
         parsedPageObservable.connect();
 
-        zip(ratingObservable, wordCountObservable, (r, wc) -> String.format(
-                            "{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
-                            wikiArticle, r, wc))
-            .subscribe(next -> print("next: %s", next),
-                    Throwable::printStackTrace,
-                    () -> waitMonitor.complete());
+        ratingObservable.zipWith(wordCountObservable, (r, wc) -> String.format(
+                "{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
+                wikiArticle, r, wc))
+                .subscribe(next -> print("next: %s", next),
+                        Throwable::printStackTrace,
+                        () -> waitMonitor.complete());
 
         waitMonitor.waitFor(10, TimeUnit.SECONDS);
     }

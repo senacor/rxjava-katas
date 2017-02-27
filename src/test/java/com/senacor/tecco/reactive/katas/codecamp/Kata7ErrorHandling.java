@@ -1,8 +1,8 @@
 package com.senacor.tecco.reactive.katas.codecamp;
 
 import com.senacor.tecco.reactive.services.WikiService;
+import io.reactivex.Observable;
 import org.junit.Test;
-import rx.Observable;
 
 import java.util.Random;
 

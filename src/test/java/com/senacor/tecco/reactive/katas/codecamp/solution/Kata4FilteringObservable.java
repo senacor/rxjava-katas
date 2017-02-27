@@ -2,8 +2,8 @@ package com.senacor.tecco.reactive.katas.codecamp.solution;
 
 import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.services.WikiService;
+import io.reactivex.disposables.Disposable;
 import org.junit.Test;
-import rx.Subscription;
 
 import java.util.concurrent.TimeUnit;
 
@@ -23,7 +23,7 @@ public class Kata4FilteringObservable {
 
         final WaitMonitor monitor = new WaitMonitor();
 
-        Subscription subscription = wikiService.wikiArticleBeingReadObservable(500, TimeUnit.MILLISECONDS)
+        Disposable subscription = wikiService.wikiArticleBeingReadObservable(500, TimeUnit.MILLISECONDS)
                 .filter(name -> name.length() >= 15)
                 .subscribe(next -> print("PASS THROUGH: %s", next),
                         Throwable::printStackTrace,
@@ -33,7 +33,7 @@ public class Kata4FilteringObservable {
                         });
 
         monitor.waitFor(10, TimeUnit.SECONDS);
-        subscription.unsubscribe();
+        subscription.dispose();
     }
 
     @Test
@@ -44,7 +44,7 @@ public class Kata4FilteringObservable {
 
         final WaitMonitor monitor = new WaitMonitor();
 
-        Subscription subscription = wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS)
+        Disposable subscription = wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS)
                 .sample(500, TimeUnit.MILLISECONDS)
                 .subscribe(next -> print("PASS THROUGH: %s", next),
                         Throwable::printStackTrace,
@@ -54,6 +54,6 @@ public class Kata4FilteringObservable {
                         });
 
         monitor.waitFor(5, TimeUnit.SECONDS);
-        subscription.unsubscribe();
+        subscription.dispose();
     }
 }
