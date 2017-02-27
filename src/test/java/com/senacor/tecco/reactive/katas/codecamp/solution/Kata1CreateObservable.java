@@ -1,13 +1,14 @@
 package com.senacor.tecco.reactive.katas.codecamp.solution;
 
-import com.senacor.tecco.reactive.services.integration.WikipediaServiceMediaWikiBot;
 import com.senacor.tecco.reactive.ReactiveUtil;
+import com.senacor.tecco.reactive.services.integration.WikipediaServiceMediaWikiBot;
+import io.reactivex.Observable;
 import net.sourceforge.jwbf.core.contentRep.Article;
 import org.junit.Test;
-import rx.Observable;
 
 /**
  * @author Andreas Keefer
+ * @version 2.0
  */
 public class Kata1CreateObservable {
 
@@ -19,7 +20,7 @@ public class Kata1CreateObservable {
         Observable.<Article>create(subscriber -> {
             try {
                 subscriber.onNext(getArticle(articleName));
-                subscriber.onCompleted();
+                subscriber.onComplete();
             } catch (Exception e) {
                 subscriber.onError(e);
             }
@@ -34,12 +35,10 @@ public class Kata1CreateObservable {
         // Erzeuge aus getArticle ein Observable
 
         Observable.defer(() -> Observable.just(getArticle(articleName)))
-                .subscribe((toPrint) -> {
-                    ReactiveUtil.print(toPrint.getText());
-                });
+                .subscribe((toPrint) -> ReactiveUtil.print(toPrint.getText()));
     }
 
-    public Article getArticle(String name) {
+    private Article getArticle(String name) {
         return new WikipediaServiceMediaWikiBot().getArticle(name);
     }
 }

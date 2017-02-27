@@ -2,14 +2,15 @@ package com.senacor.tecco.reactive.example.combining;
 
 import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.WaitMonitor;
+import io.reactivex.Observable;
+import io.reactivex.disposables.Disposable;
 import org.junit.Test;
-import rx.Observable;
-import rx.Subscription;
 
 import java.util.concurrent.TimeUnit;
 
 /**
  * @author Andreas Keefer
+ * @version 2.0
  */
 public class CombineLatestTest {
     @Test
@@ -19,12 +20,12 @@ public class CombineLatestTest {
                 .take(8);
         Observable<Long> stream2 = Observable.interval(300, TimeUnit.MILLISECONDS)
                 .take(8);
-        Subscription subscription = Observable.combineLatest(stream1, stream2, (s1, s2) -> "stream1=" + s1 + " stream2=" + s2)
+        Disposable subscription = Observable.combineLatest(stream1, stream2, (s1, s2) -> "stream1=" + s1 + " stream2=" + s2)
                 .subscribe(next -> ReactiveUtil.print("next: %s", next),
                         Throwable::printStackTrace,
                         monitor::complete);
 
         monitor.waitFor(5000, TimeUnit.MILLISECONDS);
-        subscription.unsubscribe();
+        subscription.dispose();
     }
 }

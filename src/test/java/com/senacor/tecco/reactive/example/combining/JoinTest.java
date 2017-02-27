@@ -1,9 +1,9 @@
 package com.senacor.tecco.reactive.example.combining;
 
 import com.senacor.tecco.reactive.WaitMonitor;
+import io.reactivex.Observable;
+import io.reactivex.disposables.Disposable;
 import org.junit.Test;
-import rx.Observable;
-import rx.Subscription;
 
 import java.util.Collections;
 import java.util.List;
@@ -26,7 +26,7 @@ public class JoinTest {
                 .take(80)
                 .map(value -> "second " + value);
 
-        Subscription subscription = stream1.join(stream2,
+        Disposable subscription = stream1.join(stream2,
                 s1 -> Observable.timer(30, TimeUnit.MILLISECONDS),
                 s2 -> Observable.timer(5, TimeUnit.MILLISECONDS),
                 (s1, s2) -> s1 + " -> " + s2)
@@ -35,7 +35,7 @@ public class JoinTest {
                         monitor::complete);
 
         monitor.waitFor(2000, TimeUnit.MILLISECONDS);
-        subscription.unsubscribe();
+        subscription.dispose();
     }
 
     @Test
@@ -48,11 +48,11 @@ public class JoinTest {
                 .take(110)
                 .map(value -> "second " + value);
 
-        Subscription subscription = stream1.groupJoin(stream2,
+        Disposable subscription = stream1.groupJoin(stream2,
                 s1 -> Observable.timer(50, TimeUnit.MILLISECONDS),
                 s2 -> Observable.timer(5, TimeUnit.MILLISECONDS),
                 (s1, s2) -> {
-                    List<String> groupS2 = s2.toList().toBlocking().firstOrDefault(Collections.emptyList());
+                    List<String> groupS2 = s2.toList().blockingGet();
                     return s1 + " -> " + groupS2;
                 })
                 .subscribe(next -> print("next: %s", next),
@@ -63,6 +63,6 @@ public class JoinTest {
                         });
 
         monitor.waitFor(2000, TimeUnit.MILLISECONDS);
-        subscription.unsubscribe();
+        subscription.dispose();
     }
 }

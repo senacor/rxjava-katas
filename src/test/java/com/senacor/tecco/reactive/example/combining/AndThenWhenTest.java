@@ -7,7 +7,8 @@ import rx.observables.JoinObservable;
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
- * @author Andreas Keefer
+ * @author Andreas
+ *         TODO: update to RxJava 2.0 posible ?!?
  */
 public class AndThenWhenTest {
     @Test
