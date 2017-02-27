@@ -1,9 +1,9 @@
 package com.senacor.tecco.reactive.example.error;
 
 import com.senacor.tecco.reactive.WaitMonitor;
+import io.reactivex.disposables.Disposable;
 import org.junit.Test;
-import rx.Observable;
-import rx.Subscription;
+import io.reactivex.Observable;
 
 import java.util.concurrent.TimeUnit;
 
@@ -11,6 +11,7 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
  * @author Andreas Keefer
+ * @version 2.0
  */
 public class RetryTest {
     @Test
@@ -26,14 +27,14 @@ public class RetryTest {
         Observable<String> stream3 = Observable.timer(1000, TimeUnit.MILLISECONDS)
                 .map(value -> "3rd " + value);
 
-        Subscription subscription = Observable.merge(stream1, stream2, stream3)
+        Disposable subscription = Observable.merge(stream1, stream2, stream3)
                 .retry(1)
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         monitor::complete);
 
         monitor.waitFor(1500, TimeUnit.MILLISECONDS);
-        subscription.unsubscribe();
+        subscription.dispose();
     }
 
     @Test
@@ -49,7 +50,7 @@ public class RetryTest {
         Observable<String> stream3 = Observable.timer(1000, TimeUnit.MILLISECONDS)
                 .map(value -> "3rd " + value);
 
-        Subscription subscription = Observable.merge(stream1, stream2, stream3)
+        Disposable subscription = Observable.merge(stream1, stream2, stream3)
                 .retryWhen(attempts -> attempts.zipWith(Observable.range(1, 2), (n, i) -> i)
                         .flatMap(i -> {
                             print("randomDelay retry by " + i + " second(s)");
@@ -60,6 +61,6 @@ public class RetryTest {
                         monitor::complete);
 
         monitor.waitFor(10000, TimeUnit.MILLISECONDS);
-        subscription.unsubscribe();
+        subscription.dispose();
     }
 }
