@@ -1,9 +1,8 @@
 package com.senacor.tecco.reactive.katas.vertx.solution;
 
-import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
-import io.vertx.rxjava.core.AbstractVerticle;
-import io.vertx.rxjava.core.eventbus.Message;
-import rx.Observable;
+import com.senacor.tecco.reactive.vertx.RxVertx;
+import io.reactivex.Observable;
+import io.vertx.core.AbstractVerticle;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
@@ -17,15 +16,12 @@ public class HttpVerticle extends AbstractVerticle {
         vertx.createHttpServer().requestHandler(event -> {
             String articleName = event.getParam("articleName");
             print("articleName=%s", articleName);
-            vertx.eventBus().<String>sendObservable("fetchArticle", articleName)
-                    .flatMap(article -> vertx.eventBus().<ParsedPage>sendObservable("parseMediaWikiText", article.body()))
-                    .map(Message::body)
+            RxVertx.<String>send(vertx, "fetchArticle", articleName)
+                    .flatMap(article -> RxVertx.send(vertx, "parseMediaWikiText", article))
                     .flatMap(parsedPage -> {
-                        Observable<Integer> countWords = vertx.eventBus().<Integer>sendObservable("countWords", parsedPage)
-                                .map(Message::body);
-                        Observable<Integer> rate = vertx.eventBus().<Integer>sendObservable("rate", parsedPage)
-                                .map(Message::body);
-                        return Observable.zip(countWords, rate, (count, rateing) -> "count=" + count + " rate=" + rateing);
+                        Observable<Integer> countWords = RxVertx.send(vertx, "countWords", parsedPage);
+                        Observable<Integer> rate = RxVertx.send(vertx, "rate", parsedPage);
+                        return Observable.zip(countWords, rate, (count, rating) -> "count=" + count + " rate=" + rating);
                     })
                     .subscribe(res -> {
                         print(res);
