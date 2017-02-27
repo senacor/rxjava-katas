@@ -30,10 +30,8 @@ public class Kata2TransformingObservable {
                 .flatMapIterable(parsedPage -> Arrays.asList(StringUtils.split(parsedPage.getText(), " ")))
                 //.flatMap(parsedPage -> Observable.from(StringUtils.split(parsedPage.getText(), " ")))
                 .filter(word -> word.startsWith("a"))
-                .count()
                 .subscribe(next -> print("next: %s", next),
-                        Throwable::printStackTrace,
-                        () -> print("complete!"));
+                        Throwable::printStackTrace);
     }
 
 
