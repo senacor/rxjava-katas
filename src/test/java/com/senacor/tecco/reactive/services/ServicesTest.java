@@ -2,12 +2,12 @@ package com.senacor.tecco.reactive.services;
 
 import com.senacor.tecco.reactive.WaitMonitor;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
+import io.reactivex.Observable;
+import io.reactivex.Scheduler;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
 import org.junit.Assert;
 import org.junit.Test;
-import rx.Observable;
-import rx.Scheduler;
-import rx.Subscription;
-import rx.schedulers.Schedulers;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -27,14 +27,14 @@ public class ServicesTest {
 
     @Test
     public void testFetchArticle() throws Exception {
-        String article = wikiService.fetchArticleObservable("42").toBlocking().first();
+        String article = wikiService.fetchArticleObservable("42").blockingFirst();
         System.out.println(article);
         assertNotNull(article);
     }
 
     @Test
     public void testParseMediaWikiText() throws Exception {
-        ParsedPage parsedPage = wikiService.parseMediaWikiTextObservable("== Weblinks ==").toBlocking().first();
+        ParsedPage parsedPage = wikiService.parseMediaWikiTextObservable("== Weblinks ==").blockingFirst();
         assertNotNull(parsedPage);
         assertEquals(1, parsedPage.getSections().size());
         assertEquals("Weblinks", parsedPage.getSections().iterator().next().getText());
@@ -51,14 +51,14 @@ public class ServicesTest {
     }
 
     private ParsedPage getParseMediaWikiTextWithLink() throws Exception {
-        ParsedPage parsedPage = wikiService.parseMediaWikiTextObservable("== Weblinks ==\n [[42]]").toBlocking().first();
+        ParsedPage parsedPage = wikiService.parseMediaWikiTextObservable("== Weblinks ==\n [[42]]").blockingFirst();
         return parsedPage;
     }
 
     @Test
     public void testWikiArticleBeingReadObservable() throws Exception {
         final WaitMonitor monitor = new WaitMonitor();
-        Subscription subscription = wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS)
+        Disposable Disposable = wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS)
                 .subscribe(article -> {
                             print(article);
                             assertNotNull(article);
@@ -67,7 +67,7 @@ public class ServicesTest {
                         }, monitor::complete
                 );
         monitor.waitFor(1, TimeUnit.SECONDS);
-        subscription.unsubscribe();
+        Disposable.dispose();
     }
 
     @Test
@@ -75,7 +75,7 @@ public class ServicesTest {
 
         final WaitMonitor monitor = new WaitMonitor();
         final Scheduler scheduler = Schedulers.from(Executors.newFixedThreadPool(5));
-        Subscription subscription = wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
+        Disposable Disposable = wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
                 .sample(200, TimeUnit.MILLISECONDS)
                 .doOnNext(name -> print("=> working with " + name))
                 .flatMap((wikiArticle) -> wikiService.fetchArticleObservable(wikiArticle)
@@ -102,34 +102,34 @@ public class ServicesTest {
                         }, monitor::complete
                 );
         monitor.waitFor(5, TimeUnit.SECONDS);
-        subscription.unsubscribe();
+        Disposable.dispose();
     }
 
     @Test
     public void testRate() throws Exception {
         ParsedPage parsedPage = getParseMediaWikiTextWithLink();
-        Integer rating = ratingService.rateObservable(parsedPage).toBlocking().first();
+        Integer rating = ratingService.rateObservable(parsedPage).blockingFirst();
         assertEquals(5, rating.intValue());
 
-        parsedPage = wikiService.parseMediaWikiTextObservable("== Weblinks ==\n[[42]] [[42]]").toBlocking().first();
-        rating = ratingService.rateObservable(parsedPage).toBlocking().first();
+        parsedPage = wikiService.parseMediaWikiTextObservable("== Weblinks ==\n[[42]] [[42]]").blockingFirst();
+        rating = ratingService.rateObservable(parsedPage).blockingFirst();
         assertEquals(5, rating.intValue());
 
-        parsedPage = wikiService.parseMediaWikiTextObservable("== Weblinks ==").toBlocking().first();
-        rating = ratingService.rateObservable(parsedPage).toBlocking().first();
+        parsedPage = wikiService.parseMediaWikiTextObservable("== Weblinks ==").blockingFirst();
+        rating = ratingService.rateObservable(parsedPage).blockingFirst();
         assertEquals(0, rating.intValue());
     }
 
     @Test
     public void testCountWords() throws Exception {
         ParsedPage parsedPage = getParseMediaWikiTextWithLink();
-        Assert.assertEquals(Integer.valueOf(2), countService.countWordsObervable(parsedPage).toBlocking().first());
+        Assert.assertEquals(Integer.valueOf(2), countService.countWordsObervable(parsedPage).blockingFirst());
     }
 
     @Test
     public void testWikiArticleBeingReadObservableWithRandomErrors() throws Exception {
         final WaitMonitor monitor = new WaitMonitor();
-        Subscription subscription = wikiService.wikiArticleBeingReadObservableWithRandomErrors()
+        Disposable Disposable = wikiService.wikiArticleBeingReadObservableWithRandomErrors()
                 .subscribe(articleName -> {
                             print(articleName);
                             assertNotNull(articleName);
@@ -141,14 +141,14 @@ public class ServicesTest {
                 );
 
         monitor.waitFor(10, TimeUnit.SECONDS);
-        subscription.unsubscribe();
+        Disposable.dispose();
         Assert.assertTrue(monitor.isComplete());
     }
 
     @Test
     public void testWikiArticleBeingReadObservableBurst() throws Exception {
         final WaitMonitor monitor = new WaitMonitor();
-        Subscription subscription = wikiService.wikiArticleBeingReadObservableBurst()
+        Disposable Disposable = wikiService.wikiArticleBeingReadObservableBurst()
                 .take(2, TimeUnit.SECONDS)
                 .subscribe(articleName -> {
                             print(articleName);
@@ -159,7 +159,7 @@ public class ServicesTest {
                 );
 
         monitor.waitFor(10, TimeUnit.SECONDS);
-        subscription.unsubscribe();
+        Disposable.dispose();
         Assert.assertTrue(monitor.isComplete());
     }
 }
