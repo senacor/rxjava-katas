@@ -6,10 +6,11 @@ import com.senacor.tecco.reactive.services.integration.WikipediaServiceJapi;
 import com.senacor.tecco.reactive.services.integration.WikipediaServiceJapiImpl;
 import com.senacor.tecco.reactive.services.integration.WikipediaServiceJapiMock;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
+import io.reactivex.Observable;
+import io.reactivex.functions.Action;
+import io.reactivex.processors.PublishProcessor;
+import io.reactivex.subjects.PublishSubject;
 import org.apache.commons.lang3.StringUtils;
-import rx.Observable;
-import rx.functions.Action1;
-import rx.subjects.PublishSubject;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -87,7 +88,7 @@ public class WikiService {
                 .doOnNext(record(wikiArticle));
     }
 
-    private Action1<String> record(String wikiArticle) {
+    private io.reactivex.functions.Consumer<String> record(String wikiArticle) {
         return article -> {
             if (record && StringUtils.isNotBlank(article)) {
                 try {
@@ -116,7 +117,7 @@ public class WikiService {
                         subscriber.onError(error);
                     } else {
                         subscriber.onNext(result);
-                        subscriber.onCompleted();
+                        subscriber.onComplete();
                     }
                 }));
     }

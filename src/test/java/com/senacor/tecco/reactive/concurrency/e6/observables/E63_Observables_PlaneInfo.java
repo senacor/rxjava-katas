@@ -6,11 +6,11 @@ import com.senacor.tecco.reactive.concurrency.Summary;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
+import io.reactivex.Observable;
 import org.junit.Rule;
 import org.junit.Test;
-import rx.Observable;
 
-public class E63_Observables_PlaneInfo  extends PlaneArticleBaseTest {
+public class E63_Observables_PlaneInfo extends PlaneArticleBaseTest {
 
     private final CountService countService = new CountService();
     private final RatingService ratingService = new RatingService();

@@ -1,7 +1,7 @@
 package com.senacor.tecco.reactive.services;
 
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
-import rx.Observable;
+import io.reactivex.Observable;
 
 import java.util.StringTokenizer;
 import java.util.concurrent.CompletableFuture;
@@ -23,7 +23,7 @@ public class CountService {
                 return;
             }
             subscriber.onNext(countWords(parsedPage));
-            subscriber.onCompleted();
+            subscriber.onComplete();
         });
     }
 

@@ -1,12 +1,10 @@
 package com.senacor.tecco.reactive.services.integration;
 
 import com.senacor.tecco.reactive.ReactiveUtil;
-import de.tudarmstadt.ukp.wikipedia.parser.Link;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
-import de.tudarmstadt.ukp.wikipedia.parser.Section;
 import de.tudarmstadt.ukp.wikipedia.parser.mediawiki.MediaWikiParser;
 import de.tudarmstadt.ukp.wikipedia.parser.mediawiki.MediaWikiParserFactory;
-import rx.Observable;
+import io.reactivex.Observable;
 
 /**
  * @author Andreas Keefer
@@ -30,7 +28,7 @@ public class MediaWikiTextParser {
         return Observable.create(subscriber -> {
             try {
                 subscriber.onNext(parse(mediaWikiText));
-                subscriber.onCompleted();
+                subscriber.onComplete();
             } catch (RuntimeException e) {
                 subscriber.onError(e);
             }
