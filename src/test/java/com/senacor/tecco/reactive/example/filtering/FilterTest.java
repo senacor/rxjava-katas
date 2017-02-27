@@ -1,12 +1,13 @@
 package com.senacor.tecco.reactive.example.filtering;
 
 import org.junit.Test;
-import rx.Observable;
+import io.reactivex.Observable;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
  * @author Andreas Keefer
+ * @version 2.0
  */
 public class FilterTest {
 

@@ -12,6 +12,7 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
  * @author Andreas Keefer
+ * @version 2.0
  */
 public class DebounceTest {
 
@@ -30,7 +31,7 @@ public class DebounceTest {
     /**
      * This is an artificial source to demonstrate an infinite stream that bursts intermittently
      */
-    public static Observable<Integer> intermittentBursts() {
+    private static Observable<Integer> intermittentBursts() {
         return Observable.create((Subscriber<? super Integer> s) -> {
             while (!s.isUnsubscribed()) {
                 // burst some number of items

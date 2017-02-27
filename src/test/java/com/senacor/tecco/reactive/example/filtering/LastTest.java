@@ -1,27 +1,19 @@
 package com.senacor.tecco.reactive.example.filtering;
 
 import org.junit.Test;
-import rx.Observable;
+import io.reactivex.Observable;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
  * @author Andreas Keefer
+ * @version 2.0
  */
 public class LastTest {
     @Test
     public void testLast() throws Exception {
         Observable.just(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-                .last()
-                .subscribe(next -> print("next: %s", next),
-                        Throwable::printStackTrace,
-                        () -> print("complete!"));
-    }
-
-    @Test
-    public void testLastWithCondition() throws Exception {
-        Observable.just(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-                .last(value -> value % 2 != 0)
+                .lastElement()
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         () -> print("complete!"));
@@ -30,9 +22,8 @@ public class LastTest {
     @Test
     public void testLastOrDefault() throws Exception {
         Observable.empty()
-                .lastOrDefault(99)
+                .last(99)
                 .subscribe(next -> print("next: %s", next),
-                        Throwable::printStackTrace,
-                        () -> print("complete!"));
+                        Throwable::printStackTrace);
     }
 }
