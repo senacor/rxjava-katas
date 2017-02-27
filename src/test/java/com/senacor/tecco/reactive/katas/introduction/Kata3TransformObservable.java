@@ -2,8 +2,8 @@ package com.senacor.tecco.reactive.katas.introduction;
 
 import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.services.WikiService;
+import io.reactivex.Observable;
 import org.junit.Test;
-import rx.Observable;
 
 /**
  * @author Dr. Michael Menzel

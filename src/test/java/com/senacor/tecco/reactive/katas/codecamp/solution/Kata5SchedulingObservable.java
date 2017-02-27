@@ -6,11 +6,11 @@ import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.PersistService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
+import io.reactivex.Observable;
+import io.reactivex.Scheduler;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
 import org.junit.Test;
-import rx.Observable;
-import rx.Scheduler;
-import rx.Subscription;
-import rx.schedulers.Schedulers;
 
 import java.util.concurrent.TimeUnit;
 
@@ -40,7 +40,7 @@ public class Kata5SchedulingObservable {
 
         Scheduler fiveThreads = ReactiveUtil.newScheduler(5, "my-scheduler");
 
-        Subscription subscription = wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
+        Disposable subscription = wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
                 .take(20)
                 .flatMap(name -> wikiService.fetchArticleObservable(name).subscribeOn(Schedulers.io()))
                 .flatMap(wikiService::parseMediaWikiTextObservable)
@@ -57,7 +57,7 @@ public class Kata5SchedulingObservable {
                         });
 
         monitor.waitFor(22, TimeUnit.SECONDS);
-        subscription.unsubscribe();
+        subscription.dispose();
     }
 
 }

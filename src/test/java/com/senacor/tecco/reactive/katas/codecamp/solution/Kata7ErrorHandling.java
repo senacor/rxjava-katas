@@ -2,10 +2,10 @@ package com.senacor.tecco.reactive.katas.codecamp.solution;
 
 import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.services.WikiService;
+import io.reactivex.Observable;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Function;
 import org.junit.Test;
-import rx.Observable;
-import rx.Subscription;
-import rx.functions.Func1;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -32,7 +32,7 @@ public class Kata7ErrorHandling {
 
         final WaitMonitor monitor = new WaitMonitor();
         final String articleName = "42";
-        Subscription subscription = fetchArticleObservableWithRandomErrors(articleName)
+        Disposable subscription = fetchArticleObservableWithRandomErrors(articleName)
                 // delayed retry
                 .retryWhen(retryWithDelay(3))
                 // default on error
@@ -46,14 +46,14 @@ public class Kata7ErrorHandling {
                         });
 
         monitor.waitFor(20, TimeUnit.SECONDS);
-        subscription.unsubscribe();
+        subscription.dispose();
     }
 
     @Test
     public void errorsWithDefaultTest() throws Exception {
         final WaitMonitor monitor = new WaitMonitor();
         final String articleName = "42";
-        Subscription subscription = Observable.<String>error(new IllegalStateException("timeout"))
+        Disposable subscription = Observable.<String>error(new IllegalStateException("timeout"))
                 // delayed retry
                 .retryWhen(retryWithDelay(3))
                 // default on error
@@ -67,7 +67,7 @@ public class Kata7ErrorHandling {
                         });
 
         monitor.waitFor(20, TimeUnit.SECONDS);
-        subscription.unsubscribe();
+        subscription.dispose();
     }
 
     private String getCachedArticle(String articleName) {
@@ -75,7 +75,7 @@ public class Kata7ErrorHandling {
         return "{{Dieser Artikel|behandelt das Jahr 42}} ";
     }
 
-    private Func1<Observable<? extends Throwable>, Observable<?>> retryWithDelay(final int maxRetries) {
+    private Function<Observable<? extends Throwable>, Observable<?>> retryWithDelay(final int maxRetries) {
         return attempts -> attempts.zipWith(Observable.range(1, maxRetries + 1), ErrorWithRetryCount::new)
                 .flatMap(
                         countAndError -> {

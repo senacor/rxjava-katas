@@ -4,8 +4,8 @@ import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.services.PersistService;
 import com.senacor.tecco.reactive.services.WikiService;
+import io.reactivex.disposables.Disposable;
 import org.junit.Test;
-import rx.Subscription;
 
 import java.util.concurrent.TimeUnit;
 
@@ -28,7 +28,7 @@ public class Kata8Batch {
 
         final WaitMonitor monitor = new WaitMonitor();
 
-        Subscription subscribe = wikiService.wikiArticleBeingReadObservableBurst()
+        Disposable subscribe = wikiService.wikiArticleBeingReadObservableBurst()
                 .take(2, TimeUnit.SECONDS)
                 .doOnNext(ReactiveUtil::print)
                 .map(persistService::save)
@@ -41,7 +41,7 @@ public class Kata8Batch {
                         });
 
         monitor.waitFor(10000, TimeUnit.MILLISECONDS);
-        subscribe.unsubscribe();
+        subscribe.dispose();
     }
 
 
@@ -53,7 +53,7 @@ public class Kata8Batch {
 
         final WaitMonitor monitor = new WaitMonitor();
 
-        Subscription subscribe = wikiService.wikiArticleBeingReadObservableBurst()
+        Disposable subscribe = wikiService.wikiArticleBeingReadObservableBurst()
                 .take(2, TimeUnit.SECONDS)
                 .doOnNext(ReactiveUtil::print)
                 .buffer(500, TimeUnit.MILLISECONDS)
@@ -67,6 +67,6 @@ public class Kata8Batch {
                         });
 
         monitor.waitFor(10000, TimeUnit.MILLISECONDS);
-        subscribe.unsubscribe();
+        subscribe.dispose();
     }
 }

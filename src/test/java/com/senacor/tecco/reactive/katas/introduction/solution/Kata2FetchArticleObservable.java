@@ -2,8 +2,8 @@ package com.senacor.tecco.reactive.katas.introduction.solution;
 
 import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.services.WikiService;
+import io.reactivex.Observable;
 import org.junit.Test;
-import rx.Observable;
 
 import java.util.concurrent.TimeUnit;
 
@@ -26,7 +26,7 @@ public class Kata2FetchArticleObservable {
         // 2) use the fetch article method to transform the plane type to an Article
         // 3) subscribe to the observable and print the article content
 
-        Observable.from(planeTypes)
+        Observable.fromArray(planeTypes)
                 .flatMap(planeType -> fetchArticle(planeType))
                 .subscribe(article -> print("next: %s", article.content),
                         Throwable::printStackTrace,
@@ -38,6 +38,7 @@ public class Kata2FetchArticleObservable {
 
     /**
      * fetches an article from the wikipedia
+     *
      * @param articleName name of the wikipedia article
      * @return an article
      */
@@ -46,7 +47,7 @@ public class Kata2FetchArticleObservable {
                 map((article) -> new Article(articleName, article));
     }
 
-    class Article{
+    class Article {
         public String name;
         public String content;
 

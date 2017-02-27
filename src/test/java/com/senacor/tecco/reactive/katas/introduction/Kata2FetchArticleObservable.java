@@ -4,9 +4,6 @@ import com.senacor.tecco.reactive.Watch;
 import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Rule;
 import org.junit.Test;
-import rx.Observable;
-
-import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
  * @author Dr. Michael Menzel
