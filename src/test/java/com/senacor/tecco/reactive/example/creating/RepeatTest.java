@@ -1,27 +1,30 @@
 package com.senacor.tecco.reactive.example.creating;
 
+import io.reactivex.Observable;
+import io.reactivex.Scheduler;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
 import org.junit.Test;
-import rx.Observable;
-import rx.Subscription;
-import rx.schedulers.Schedulers;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
  * @author Andreas Keefer
+ * @version 2.0
  */
 public class RepeatTest {
 
     @Test
     public void testRepeat() throws Exception {
-        Subscription subscription = Observable.just("foo", "bar", "foobar")
-                .repeat(Schedulers.computation())
+        Disposable subscription = Observable.just("foo", "bar", "foobar")
+                .repeat()
+                .subscribeOn(Schedulers.computation())
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         () -> print("complete!"));
 
         Thread.sleep(1000);
-        subscription.unsubscribe();
+        subscription.dispose();
     }
 
     @Test

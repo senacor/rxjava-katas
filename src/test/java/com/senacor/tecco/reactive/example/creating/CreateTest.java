@@ -1,13 +1,13 @@
 package com.senacor.tecco.reactive.example.creating;
 
+import io.reactivex.Observable;
 import org.junit.Test;
-import rx.Observable;
-import rx.Subscription;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
  * @author Dr. Michael Menzel
+ * @version 2.0
  */
 public class CreateTest {
 
@@ -20,7 +20,7 @@ public class CreateTest {
                 subscriber.onNext("second");
                 subscriber.onNext("3rd");
                 subscriber.onNext("...");
-                subscriber.onCompleted();
+                subscriber.onComplete();
             } catch (Exception e) {
                 subscriber.onError(e);
             }
@@ -35,7 +35,7 @@ public class CreateTest {
         Observable<String> obs=Observable.create(subscriber -> {
             try {
                 subscriber.onNext(getValue());
-                subscriber.onCompleted();
+                subscriber.onComplete();
             } catch (Exception e) {
                 subscriber.onError(e);
             }

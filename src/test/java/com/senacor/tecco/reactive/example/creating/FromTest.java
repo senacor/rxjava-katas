@@ -1,9 +1,9 @@
 package com.senacor.tecco.reactive.example.creating;
 
 import com.google.common.util.concurrent.Futures;
+import io.reactivex.Observable;
+import io.reactivex.schedulers.Schedulers;
 import org.junit.Test;
-import rx.Observable;
-import rx.schedulers.Schedulers;
 
 import java.util.Arrays;
 import java.util.concurrent.*;
@@ -12,13 +12,14 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
  * @author Andreas Keefer
+ * @version 2.0
  */
 public class FromTest {
 
     @Test
     public void testFromArray() throws Exception {
         String[] array = {"1", "2"};
-        Observable.from(array)
+        Observable.fromArray(array)
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         () -> print("complete!"));
@@ -27,7 +28,7 @@ public class FromTest {
     @Test
     public void testFromIterable() throws Exception {
         Iterable<String> iterable = Arrays.asList("1", "2");
-        Observable.from(iterable)
+        Observable.fromIterable(iterable)
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         () -> print("complete!"));
@@ -36,7 +37,7 @@ public class FromTest {
     @Test
     public void testFromFutureAlreadyDone() throws Exception {
         Future<String> future = Futures.immediateFuture("immediateFuture");
-        Observable.from(future)
+        Observable.fromFuture(future)
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         () -> print("complete!"));
@@ -45,7 +46,7 @@ public class FromTest {
     @Test
     public void testFromFutureCancelled() throws Exception {
         Future<String> future = Futures.immediateCancelledFuture();
-        Observable.from(future, 1, TimeUnit.SECONDS)
+        Observable.fromFuture(future, 1, TimeUnit.SECONDS)
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         () -> print("complete!"));
@@ -80,7 +81,7 @@ public class FromTest {
                 return queue.poll(timeout, unit);
             }
         };
-        Observable.from(future, 5, TimeUnit.SECONDS)
+        Observable.fromFuture(future, 5, TimeUnit.SECONDS)
                 .subscribeOn(Schedulers.computation())
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
@@ -120,7 +121,7 @@ public class FromTest {
             }
         };
 
-        Observable.from(future, Schedulers.io())
+        Observable.fromFuture(future, Schedulers.io())
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         () -> print("complete!"));
