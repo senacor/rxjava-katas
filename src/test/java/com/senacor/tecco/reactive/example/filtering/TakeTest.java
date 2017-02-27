@@ -9,6 +9,7 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
  * @author Andreas Keefer
+ * @version 2.0
  */
 public class TakeTest {
     @Test

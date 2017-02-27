@@ -1,16 +1,17 @@
 package com.senacor.tecco.reactive.example.transforming;
 
 import com.senacor.tecco.reactive.ReactiveUtil;
+import io.reactivex.Observable;
 import org.junit.Test;
-import rx.Observable;
 
 /**
  * @author Andreas Keefer
+ * @version 2.0
  */
 public class MapTest {
 
     @Test
-    public void testMain() throws Exception {
+    public void testMap() throws Exception {
         create().map(vorname -> "vorname=" + vorname)
                 .subscribe(ReactiveUtil::print);
     }

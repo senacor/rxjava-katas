@@ -1,10 +1,9 @@
 package com.senacor.tecco.reactive.example;
 
 import com.senacor.tecco.reactive.WaitMonitor;
-import org.junit.Ignore;
+import io.reactivex.Observable;
+import io.reactivex.schedulers.Schedulers;
 import org.junit.Test;
-import rx.Observable;
-import rx.schedulers.Schedulers;
 
 import java.util.concurrent.TimeUnit;
 
@@ -14,6 +13,7 @@ import static org.junit.Assert.assertTrue;
 
 /**
  * @author Andreas Keefer
+ * @version 2.0
  */
 public class WaitMonitorTest {
 
@@ -24,7 +24,7 @@ public class WaitMonitorTest {
         assertFalse(monitor.isComplete());
     }
 
-    @Ignore()
+    @Test
     public void testWaitFor() throws Exception {
         final WaitMonitor monitor = new WaitMonitor();
         Observable.just("test")
