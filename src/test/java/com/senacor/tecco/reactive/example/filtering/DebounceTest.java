@@ -1,10 +1,10 @@
 package com.senacor.tecco.reactive.example.filtering;
 
+import io.reactivex.ObservableEmitter;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
 import org.junit.Test;
-import rx.Observable;
-import rx.Subscriber;
-import rx.Subscription;
-import rx.schedulers.Schedulers;
+import io.reactivex.Observable;
 
 import java.util.concurrent.TimeUnit;
 
@@ -18,22 +18,22 @@ public class DebounceTest {
 
     @Test
     public void testDebounce() throws Exception {
-        Subscription subscription = intermittentBursts()
+        Disposable subscription = intermittentBursts()
                 .debounce(10, TimeUnit.MILLISECONDS)
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         () -> print("complete!"));
 
         Thread.sleep(3000);
-        subscription.unsubscribe();
+        subscription.dispose();
     }
 
     /**
      * This is an artificial source to demonstrate an infinite stream that bursts intermittently
      */
     private static Observable<Integer> intermittentBursts() {
-        return Observable.create((Subscriber<? super Integer> s) -> {
-            while (!s.isUnsubscribed()) {
+        return Observable.create((ObservableEmitter<Integer> s) -> {
+            while (!s.isDisposed()) {
                 // burst some number of items
                 for (int i = 0; i < Math.random() * 20; i++) {
                     s.onNext(i);
