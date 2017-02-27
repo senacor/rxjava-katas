@@ -1,6 +1,6 @@
 package com.senacor.tecco.reactive.services.integration;
 
-import rx.Observable;
+import io.reactivex.Observable;
 
 /**
  * Created by mmenzel on 25.01.2016.

@@ -1,7 +1,7 @@
 package com.senacor.tecco.reactive.services.integration;
 
 import com.bitplan.mediawiki.japi.Mediawiki;
-import rx.Observable;
+import io.reactivex.Observable;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.getThreadId;
 
@@ -46,7 +46,7 @@ public class WikipediaServiceJapiImpl implements WikipediaServiceJapi {
         return Observable.create(subscriber -> {
             try {
                 subscriber.onNext(getArticle(wikiArticle));
-                subscriber.onCompleted();
+                subscriber.onComplete();
             } catch (RuntimeException e) {
                 subscriber.onError(e);
             }

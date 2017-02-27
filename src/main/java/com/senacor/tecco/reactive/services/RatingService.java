@@ -1,7 +1,7 @@
 package com.senacor.tecco.reactive.services;
 
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
-import rx.Observable;
+import io.reactivex.Observable;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -32,7 +32,7 @@ public class RatingService {
             if (0 == linksCount) {
                 // 0 sterne
                 subscriber.onNext(0);
-                subscriber.onCompleted();
+                subscriber.onComplete();
                 return;
             }
 
@@ -43,7 +43,7 @@ public class RatingService {
             System.out.println(String.format("%srate: articleSize=%s linksCount=%s percent=%s runtime=%sms",
                     getThreadId(), articleSize, linksCount, percent, System.currentTimeMillis() - start));
             subscriber.onNext(rating);
-            subscriber.onCompleted();
+            subscriber.onComplete();
         });
     }
 

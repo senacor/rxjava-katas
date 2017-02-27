@@ -1,9 +1,9 @@
 package com.senacor.tecco.reactive.services.integration;
 
+import io.reactivex.Observable;
 import net.sourceforge.jwbf.core.actions.HttpActionClient;
 import net.sourceforge.jwbf.core.contentRep.Article;
 import net.sourceforge.jwbf.mediawiki.bots.MediaWikiBot;
-import rx.Observable;
 
 import java.util.concurrent.TimeUnit;
 
@@ -26,7 +26,7 @@ public class WikipediaServiceMediaWikiBot {
         return Observable.create(subscriber -> {
             try {
                 subscriber.onNext(getArticle(wikiArticle));
-                subscriber.onCompleted();
+                subscriber.onComplete();
             } catch (RuntimeException e) {
                 subscriber.onError(e);
             }

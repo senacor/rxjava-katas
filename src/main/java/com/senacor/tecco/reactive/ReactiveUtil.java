@@ -1,12 +1,11 @@
 package com.senacor.tecco.reactive;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
+import io.reactivex.Observable;
+import io.reactivex.Scheduler;
+import io.reactivex.schedulers.Schedulers;
 import org.apache.commons.lang.math.RandomUtils;
 import org.apache.commons.lang3.ArrayUtils;
-import rx.Observable;
-import rx.Scheduler;
-import rx.Subscriber;
-import rx.schedulers.Schedulers;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
@@ -35,9 +34,8 @@ public class ReactiveUtil {
     }
 
     public static Observable<Integer> burstSource() {
-        return Observable.create((
-                Subscriber<? super Integer> s) -> {
-            while (!s.isUnsubscribed()) {
+        return Observable.<Integer>create(s -> {
+            while (!s.isDisposed()) {
                 // burst some number of items
                 for (int i = 0; i < Math.random() * 20; i++) {
                     s.onNext(i);
@@ -62,7 +60,7 @@ public class ReactiveUtil {
     }
 
     public static String findValue(String text, String key) {
-        Pattern pattern = Pattern.compile(key+" ?= ?([\\d,]*)");
+        Pattern pattern = Pattern.compile(key + " ?= ?([\\d,]*)");
         Matcher matcher = pattern.matcher(text);
         if (matcher.find()) {
             return matcher.group(1);
