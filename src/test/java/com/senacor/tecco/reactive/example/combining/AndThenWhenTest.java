@@ -1,14 +1,14 @@
 package com.senacor.tecco.reactive.example.combining;
 
+import hu.akarnokd.rxjava2.joins.JoinObservable;
+import io.reactivex.Observable;
 import org.junit.Test;
-import rx.Observable;
-import rx.observables.JoinObservable;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
  * @author Andreas
- *         TODO (ak) 2.0 upgrade: upgrade to RxJava 2.0 posible ?!?
+ * @version 2.0
  */
 public class AndThenWhenTest {
     @Test
@@ -22,7 +22,6 @@ public class AndThenWhenTest {
                         .then((i1, i2) -> i1 + i2)
         )
                 .toObservable()
-                .toBlocking()
                 .forEach(next -> print("next: %s", next));
     }
 }
