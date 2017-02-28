@@ -30,11 +30,11 @@ public class WikipediaServiceJapiMock extends WikipediaServiceJapiImpl {
     protected String getPageContent(String name) throws Exception {
         Thread.sleep(1000);
         String result = readArticle(name);
-        if (result != null) {
-            return result;
-        } else {
-            return readArticle("Boeing 777");
+        if(result == null)
+        {
+            throw new IllegalArgumentException("no page found with name: " + name);
         }
+        return result;
     }
 
     public String readArticle(String name) {
