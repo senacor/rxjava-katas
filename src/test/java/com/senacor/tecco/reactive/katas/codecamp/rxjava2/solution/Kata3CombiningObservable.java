@@ -5,7 +5,9 @@ import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
+import io.reactivex.Flowable;
 import io.reactivex.Observable;
+import io.reactivex.flowables.ConnectableFlowable;
 import io.reactivex.observables.ConnectableObservable;
 import org.junit.Test;
 
@@ -31,47 +33,21 @@ public class Kata3CombiningObservable {
         WaitMonitor waitMonitor = new WaitMonitor();
 
         final String wikiArticle = "Bilbilis";
-        wikiService.fetchArticleObservable(wikiArticle)
-                .flatMap(wikiService::parseMediaWikiTextObservable)
-                .flatMap(parsedPage -> {
-                    Observable<Integer> rating = ratingService.rateObservable(parsedPage);
-                    Observable<Integer> wordCount = countService.countWordsObervable(parsedPage);
-                    return rating.zipWith(wordCount, (r, wc) -> String.format(
-                            "{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
-                            wikiArticle, r, wc));
-                })
-                .subscribe(next -> print("next: %s", next),
-                        Throwable::printStackTrace,
-                        waitMonitor::complete);
+        Observable<ParsedPage> pages = wikiService.fetchArticleObservable(wikiArticle)
+                                                  .flatMap(wikiService::parseMediaWikiTextObservable);
+
+        Observable<Integer> rating = pages.flatMap(ratingService::rateObservable);
+        Observable<Integer> wordCount = pages.flatMap(countService::countWordsObservable);
+
+        rating.zipWith(wordCount, (r, wc) -> String.format(
+                "{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
+                wikiArticle, r, wc))
+              .subscribe(next -> print("next: %s", next),
+                      Throwable::printStackTrace,
+                      waitMonitor::complete);
 
         waitMonitor.waitFor(10, TimeUnit.SECONDS);
     }
-
-    @Test
-    public void combiningObservableOption2_zipWith() throws Exception {
-        // 1. fetch and parse Wikiarticle
-        // 2. use ratingService.rateObservable() and #countWordsObervable(). Combine both information as JSON
-        //    and print the JSON to the console. Example {"articleName": "Superman", "rating": 3, "wordCount": 452}
-
-        WaitMonitor waitMonitor = new WaitMonitor();
-
-        final String wikiArticle = "Bilbilis";
-        wikiService.fetchArticleObservable(wikiArticle)
-                .flatMap(wikiService::parseMediaWikiTextObservable)
-                .flatMap(parsedPage -> {
-                    Observable<Integer> rating = ratingService.rateObservable(parsedPage);
-                    Observable<Integer> wordCount = countService.countWordsObervable(parsedPage);
-                    return rating.zipWith(wordCount, (r, wc) -> String.format(
-                            "{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
-                            wikiArticle, r, wc));
-                })
-                .subscribe(next -> print("next: %s", next),
-                        Throwable::printStackTrace,
-                        waitMonitor::complete);
-
-        waitMonitor.waitFor(10, TimeUnit.SECONDS);
-    }
-
 
     @Test
     public void combiningObservablePublish() throws Exception {
@@ -83,18 +59,19 @@ public class Kata3CombiningObservable {
 
         final String wikiArticle = "Bilbilis";
         ConnectableObservable<ParsedPage> parsedPageObservable = wikiService.fetchArticleObservable(wikiArticle)
-                .flatMap(wikiService::parseMediaWikiTextObservable).publish();
+                                                                            .flatMap(wikiService::parseMediaWikiTextObservable)
+                                                                            .publish();
 
-        Observable<Integer> ratingObservable = parsedPageObservable.flatMap(ratingService::rateObservable);
-        Observable<Integer> wordCountObservable = parsedPageObservable.flatMap(countService::countWordsObervable);
+        Observable<Integer> rating = parsedPageObservable.flatMap(ratingService::rateObservable);
+        Observable<Integer> wordCount = parsedPageObservable.flatMap(countService::countWordsObservable);
         parsedPageObservable.connect();
 
-        ratingObservable.zipWith(wordCountObservable, (r, wc) -> String.format(
+        rating.zipWith(wordCount, (r, wc) -> String.format(
                 "{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
                 wikiArticle, r, wc))
-                .subscribe(next -> print("next: %s", next),
-                        Throwable::printStackTrace,
-                        () -> waitMonitor.complete());
+              .subscribe(next -> print("next: %s", next),
+                      Throwable::printStackTrace,
+                      () -> waitMonitor.complete());
 
         waitMonitor.waitFor(10, TimeUnit.SECONDS);
     }

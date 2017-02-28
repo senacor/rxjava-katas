@@ -20,61 +20,44 @@ public class E63_Observables_PlaneInfo extends PlaneArticleBaseTest {
 
     @Test
     public void thatPlaneInfoIsCombinedWithObservables_notPerfectYet() throws Exception {
+        getMetrixs("Boeing 777").subscribe(pageMetrix -> Summary
+                .print("777", pageMetrix.words, pageMetrix.rating, pageMetrix.numberBuild)
+        );
 
-
-        fetchArticle("Boeing 777")
-                .flatMap(article -> {
-                    Observable<ParsedPage> parsedPageObservable = parsePage(article);
-                    return parsedPageObservable.flatMap(page -> {
-                        Observable<Integer> countObservable = countWords(page);
-                        Observable<Integer> rateObservable = rateArticles(page);
-                        String numberBuild = parseBuildCount(article);
-                        return Observable.zip(countObservable, rateObservable, (words, rating) -> new PageMetrix(words, rating, numberBuild));
-                    });
-                })
-                .subscribe(pageMetrix -> Summary.print("777", pageMetrix.words, pageMetrix.rating, pageMetrix.numberBuild));
-
-        fetchArticle("Boeing 747")
-                .flatMap(article -> {
-                    Observable<ParsedPage> parsedPageObservable = parsePage(article);
-                    return parsedPageObservable.flatMap(page -> {
-                        Observable<Integer> countObservable = countWords(page);
-                        Observable<Integer> rateObservable = rateArticles(page);
-                        String numberBuild = parseBuildCount(article);
-                        return Observable.zip(countObservable, rateObservable, (words, rating) -> new PageMetrix(words, rating, numberBuild));
-                    });
-                })
-                .subscribe(pageMetrix -> Summary.print("747", pageMetrix.words, pageMetrix.rating, pageMetrix.numberBuild));
+        getMetrixs("Boeing 747").subscribe(pageMetrix -> Summary
+                .print("747", pageMetrix.words, pageMetrix.rating, pageMetrix.numberBuild)
+        );
     }
 
-    // fetches an article from Wikipedia
-    private Observable<String> fetchArticle(String articleName) {
-        return wikiService.fetchArticleObservable(articleName);
+    private Observable<PageMetrix> getMetrixs(String planeName) {
+        Observable<String> article = wikiService.fetchArticleObservable(planeName);
+        Observable<ParsedPage> parsedPage = article.flatMap(wikiService::parseMediaWikiTextObservable);
+
+        Observable<Integer> ratings = parsedPage.flatMap(ratingService::rateObservable);
+        Observable<Integer> wordCount = parsedPage.flatMap(countService::countWordsObservable);
+        Observable<String> buildCount = article.map(this::parseBuildCount);
+
+        return ratings.zipWith(wordCount, RatingWordCount::new).zipWith(buildCount, PageMetrix::new);
     }
 
-    private Observable<ParsedPage> parsePage(String article777) {
-        return wikiService.parseMediaWikiTextObservable(article777);
+    private static class RatingWordCount {
+        final Integer rating, wordCount;
+
+        RatingWordCount(Integer rating, Integer wordCount) {
+            this.rating = rating;
+            this.wordCount = wordCount;
+        }
     }
 
-    private Observable<Integer> countWords(ParsedPage parsedPage) {
-        return countService.countWordsObervable(parsedPage);
-    }
-
-    private Observable<Integer> rateArticles(ParsedPage parsedPage) {
-        return ratingService.rateObservable(parsedPage);
-    }
-
-    private final static class PageMetrix {
+    private static class PageMetrix {
         private final int words;
         private final int rating;
         private final String numberBuild;
 
-        private PageMetrix(int words, int rating, String numberBuild) {
-            this.words = words;
-            this.rating = rating;
+        private PageMetrix(RatingWordCount rwc, String numberBuild) {
+            this.words = rwc.wordCount;
+            this.rating = rwc.rating;
             this.numberBuild = numberBuild;
         }
-
     }
-
 }
