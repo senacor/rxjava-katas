@@ -5,24 +5,17 @@ import com.senacor.tecco.reactive.services.integration.MediaWikiTextParser;
 import com.senacor.tecco.reactive.services.integration.WikipediaServiceJapi;
 import com.senacor.tecco.reactive.services.integration.WikipediaServiceJapiImpl;
 import com.senacor.tecco.reactive.services.integration.WikipediaServiceJapiMock;
-import com.sun.tools.javac.comp.Flow;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.BackpressureStrategy;
-import io.reactivex.Flowable;
 import io.reactivex.Observable;
-import io.reactivex.processors.PublishProcessor;
 import io.reactivex.subjects.PublishSubject;
 import org.apache.commons.lang3.StringUtils;
-import org.reactivestreams.Publisher;
-import reactor.core.publisher.DirectProcessor;
 import reactor.core.publisher.Flux;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.time.Duration;
-import java.time.temporal.ChronoUnit;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -83,20 +76,19 @@ public class WikiService {
 
     /**
      * @param wikiArticle name of the article to be fetched
-     * @return fetches a wiki article as a media wiki formated string
+     * @return fetches a wiki article as a media wiki formatted string
      */
     public Flux<String> fetchArticleFlux(final String wikiArticle) {
         return Flux.just(wikiArticle)
                    .map(this::fetchArticle)
                    .onErrorResumeWith(t -> Flux.empty())
-//                .onErrorReturn(throwable -> {
-//                    print("ERROR: %s", throwable.getClass());
-//                    print("try mock ...");
-//                    return new WikipediaServiceJapiMock().readArticle(wikiArticle);
-//                })
                    .doOnNext(record(wikiArticle));
     }
 
+    /**
+     * @param wikiArticle name of the article to be fetched
+     * @return fetches a wiki article as a media wiki formatted string
+     */
     public Observable<String> fetchArticleObservable(final String wikiArticle) {
         return Observable.fromPublisher(fetchArticleFlux(wikiArticle));
     }
@@ -121,7 +113,7 @@ public class WikiService {
 
     /**
      * @param wikiArticle name of the article to be fetched
-     * @return fetches a wiki article as a media wiki formated string
+     * @return fetches a wiki article as a media wiki formatted string
      */
     public String fetchArticle(final String wikiArticle) {
         return wikiServiceJapi.getArticle(wikiArticle);
@@ -129,7 +121,7 @@ public class WikiService {
 
     /**
      * @param wikiArticle name of the article to be fetched
-     * @return fetches a wiki article as a media wiki formated string
+     * @return fetches a wiki article as a media wiki formatted string
      */
     public void fetchArticleCallback(final String wikiArticle, Consumer<String> articleConsumer, Consumer<Exception> exceptionConsumer) {
         try {
@@ -142,7 +134,7 @@ public class WikiService {
 
     /**
      * @param wikiArticle name of the article to be fetched
-     * @return fetches a wiki article as a media wiki formated string
+     * @return fetches a wiki article as a media wiki formatted string
      */
     public Future<String> fetchArticleFuture(final String wikiArticle) {
         return pool.submit(() -> wikiServiceJapi.getArticle(wikiArticle));
@@ -150,7 +142,7 @@ public class WikiService {
 
     /**
      * @param wikiArticle name of the article to be fetched
-     * @return fetches a wiki article as a media wiki formated string
+     * @return fetches a wiki article as a media wiki formatted string
      */
     public CompletableFuture<String> fetchArticleCompletableFuture(final String wikiArticle) {
         return CompletableFuture.supplyAsync(() -> wikiServiceJapi.getArticle(wikiArticle), pool);
@@ -159,7 +151,7 @@ public class WikiService {
     //---------------------------------------------------------------------------------
 
     /**
-     * @param mediaWikiText Media Wiki formated text
+     * @param mediaWikiText Media Wiki formatted text
      * @return parsed text in structured form
      */
     public Flux<ParsedPage> parseMediaWikiTextFlux(String mediaWikiText) {
@@ -171,7 +163,7 @@ public class WikiService {
     }
 
     /**
-     * @param mediaWikiText Media Wiki formated text
+     * @param mediaWikiText Media Wiki formatted text
      * @return parsed text in structured form
      */
     public ParsedPage parseMediaWikiText(String mediaWikiText) {
@@ -197,6 +189,15 @@ public class WikiService {
             "Mathematik", "Median", "Kumulante", "Indikatorfunktion", "Zufallsvariable", "Mittelwert",
             "Quantenphysik", "Komplexe_Zahl", "Biologie", "Wirtschaft", "Chemie", "Technik", "Physik");
 
+
+    /**
+     * Erzeugt "ArticleBeingRead"-Events in der angegebenen Frequenz, also als Stream
+     *
+     * @param interval interval size in time units (see below)
+     * @param unit     time units to use for the interval size
+     * @return Wiki Artikel, der gerade gelesen wird.
+     * ATTENTION, this is a HOT observable, which emits the Items without a subscription
+     */
     public Flux<String> wikiArticleBeingReadFlux(final long interval, final TimeUnit unit) {
         return Flux.from(wikiArticleBeingReadObservable(interval, unit).toFlowable(BackpressureStrategy.LATEST));
     }
@@ -206,8 +207,8 @@ public class WikiService {
      *
      * @param interval interval size in time units (see below)
      * @param unit     time units to use for the interval size
-     * @return Wiki Aritikel, der gerade gelesen wird.
-     * ATTETION, this is a HOT observable, which emits the Items without a subscription
+     * @return Wiki Artikel, der gerade gelesen wird.
+     * ATTENTION, this is a HOT observable, which emits the Items without a subscription
      */
     public Observable<String> wikiArticleBeingReadObservable(final long interval, final TimeUnit unit) {
         final Random randomGenerator = new Random(8L);

@@ -14,16 +14,31 @@ import io.vertx.ext.reactivestreams.ReactiveWriteStream;
  */
 public class RxVertx {
 
-    public static Flowable<String> fromVertex(Vertx vertx, String adress) {
+    /**
+     * creates a observable of some address
+     * @param vertx
+     * @param address the address which should be consumed
+     * @return
+     */
+    public static Flowable<String> fromVertex(Vertx vertx, String address) {
         ReactiveWriteStream<String> writeStream = ReactiveWriteStream.writeStream(vertx);
-        ReadStream<String> fetchArticle = vertx.eventBus().<String>consumer("fetchArticle").bodyStream();
+        ReadStream<String> fetchArticle = vertx.eventBus().<String>consumer(address).bodyStream();
         Pump.pump(fetchArticle, writeStream).start();
         return Flowable.fromPublisher(writeStream);
     }
 
-    public static <E> Observable<E> send(Vertx vertx, String adress, Object msg) {
+    /**
+     * Sends a message on the Vertx eventbus and provieds a Obersvable of the reply.
+     * @param vertx
+     * @param address the address to send the message to
+     * @param msg the message to send
+     * @param <E> the expected type of the reply
+     * @return
+     */
+    public static <E> Observable<E> send(Vertx vertx, String address, Object msg) {
         PublishSubject<E> subject = PublishSubject.create();
-        vertx.eventBus().<E>send(adress, msg, event -> {
+        Observable<E> cachedReply = subject.cache();
+        vertx.eventBus().<E>send(address, msg, event -> {
             if (event.succeeded()) {
                 subject.onNext(event.result().body());
             } else {
@@ -31,6 +46,6 @@ public class RxVertx {
             }
             subject.onComplete();
         });
-        return subject;
+        return cachedReply;
     }
 }
