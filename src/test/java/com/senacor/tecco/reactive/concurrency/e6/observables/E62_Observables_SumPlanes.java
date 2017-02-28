@@ -27,14 +27,14 @@ public class E62_Observables_SumPlanes extends PlaneArticleBaseTest {
         String[] planeTypes = {"Boeing 777", "Boeing 747", "Boeing 737", "Airbus A330"};
 
         Observable.fromArray(planeTypes)
-                .flatMap(this::fetchArticle)
-                .map(this::parsePlaneInfo)
-                .reduce(this::reducePlaneInfo)
-                .subscribe((planeInfo) -> {
-                            Summary.printCounter(planeInfo.typeName, planeInfo.numberBuild);
-                        },
-                        exceptionConsumer,
-                        monitor::complete);
+                  .flatMap(this::fetchArticle)
+                  .map(this::parsePlaneInfo)
+                  .reduce(this::reducePlaneInfo)
+                  .subscribe((planeInfo) -> {
+                              Summary.printCounter(planeInfo.typeName, planeInfo.numberBuild);
+                          },
+                          exceptionConsumer,
+                          monitor::complete);
 
         monitor.waitFor(10000, TimeUnit.MILLISECONDS);
     }
@@ -42,7 +42,7 @@ public class E62_Observables_SumPlanes extends PlaneArticleBaseTest {
     // fetches an article from the wikipedia
     Observable<Article> fetchArticle(String articleName) {
         return wikiService.fetchArticleObservable(articleName)
-                .map((article) -> new Article(articleName, article));
+                          .map((article) -> new Article(articleName, article));
     }
 
     // Extracts plane-related information from an wikipedia article

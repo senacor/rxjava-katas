@@ -24,14 +24,14 @@ public class Kata2TransformingObservable {
         // 3. print the text of the wikipedia article to the console (ParsedPage.getText())
 
         wikiService.fetchArticleObservable("Bilbilis")
-                //.doOnNext(debug -> print("fetchArticleObservable res: %s", debug))
-                .flatMap(wikiService::parseMediaWikiTextObservable)
-                //.doOnNext(debug -> print("parseMediaWikiTextObservable res: %s", debug))
-                .flatMapIterable(parsedPage -> Arrays.asList(StringUtils.split(parsedPage.getText(), " ")))
-                //.flatMap(parsedPage -> Observable.from(StringUtils.split(parsedPage.getText(), " ")))
-                .filter(word -> word.startsWith("a"))
-                .subscribe(next -> print("next: %s", next),
-                        Throwable::printStackTrace);
+                   //.doOnNext(debug -> print("fetchArticleObservable res: %s", debug))
+                   .flatMap(wikiService::parseMediaWikiTextObservable)
+                   //.doOnNext(debug -> print("parseMediaWikiTextObservable res: %s", debug))
+                   .flatMapIterable(parsedPage -> Arrays.asList(StringUtils.split(parsedPage.getText(), " ")))
+                   //.flatMap(parsedPage -> Observable.from(StringUtils.split(parsedPage.getText(), " ")))
+                   .filter(word -> word.startsWith("a"))
+                   .subscribe(next -> print("next: %s", next),
+                           Throwable::printStackTrace);
     }
 
 

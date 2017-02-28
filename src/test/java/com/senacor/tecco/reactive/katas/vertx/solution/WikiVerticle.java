@@ -24,21 +24,22 @@ public class WikiVerticle extends AbstractVerticle {
     public void start() throws Exception {
         vertx.eventBus().registerDefaultCodec(ParsedPage.class, new ParsedPageCodec());
 
-        vertx.eventBus().<String>consumer("fetchArticle").handler(msg -> {
-            wikiService.fetchArticleObservable(msg.body())
-                    .subscribe(msg::reply);
-        });
-        vertx.eventBus().<String>consumer("parseMediaWikiText").handler(msg -> {
-            wikiService.parseMediaWikiTextObservable(msg.body())
-                    .subscribe(msg::reply);
-        });
-        vertx.eventBus().<ParsedPage>consumer("rate").handler(msg -> {
-            ratingService.rateObservable(msg.body())
-                    .subscribe(msg::reply);
-        });
-        vertx.eventBus().<ParsedPage>consumer("countWords").handler(msg -> {
-            countService.countWordsObervable(msg.body())
-                    .subscribe(msg::reply);
-        });
+        vertx.eventBus().<String>consumer("fetchArticle")
+                .handler(msg -> wikiService.fetchArticleObservable(msg.body())
+                                           .subscribe(msg::reply)
+                );
+
+        vertx.eventBus().<String>consumer("parseMediaWikiText")
+                .handler(msg -> wikiService.parseMediaWikiTextObservable(msg.body())
+                                           .subscribe(msg::reply)
+                );
+        vertx.eventBus().<ParsedPage>consumer("rate")
+                .handler(msg -> ratingService.rateObservable(msg.body())
+                                             .subscribe(msg::reply)
+                );
+        vertx.eventBus().<ParsedPage>consumer("countWords")
+                .handler(msg -> countService.countWordsObservable(msg.body())
+                                            .subscribe(msg::reply)
+                );
     }
 }

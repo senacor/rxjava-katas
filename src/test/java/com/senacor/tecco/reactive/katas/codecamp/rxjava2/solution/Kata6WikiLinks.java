@@ -51,16 +51,16 @@ public class Kata6WikiLinks {
 
     private Observable<WikiLink> getLinks(final String wikiArticle) {
         //print("getLinks fuer Artikel: %s", wikiArticle);
-        return wikiService.fetchArticleObservable((wikiArticle))
-                .subscribeOn(scheduler)
-                .flatMap((mediaWikiText) -> wikiService.parseMediaWikiTextObservable(mediaWikiText)
-                        .subscribeOn(Schedulers.computation()))
-                .filter(parsedPage -> parsedPage != null)
-                .flatMapIterable(ParsedPage::getSections)
-                .flatMapIterable(section -> section.getLinks(Link.type.INTERNAL))
-                .map(link -> new WikiLink(wikiArticle, link.getTarget()))
-                .distinct()
-                .doOnNext(wikiLink -> print(wikiLink));
+        return wikiService.fetchArticleObservable(wikiArticle)
+                          .subscribeOn(scheduler)
+                          .flatMap((mediaWikiText) -> wikiService.parseMediaWikiTextObservable(mediaWikiText)
+                                                                 .subscribeOn(Schedulers.computation()))
+                          .filter(parsedPage -> parsedPage != null)
+                          .flatMapIterable(ParsedPage::getSections)
+                          .flatMapIterable(section -> section.getLinks(Link.type.INTERNAL))
+                          .map(link -> new WikiLink(wikiArticle, link.getTarget()))
+                          .distinct()
+                          .doOnNext(wikiLink -> print(wikiLink));
     }
 
     private static class WikiLink {
@@ -102,7 +102,7 @@ public class Kata6WikiLinks {
             }
             final WikiLink other = (WikiLink) obj;
             return Objects.equals(this.sourceArticle, other.sourceArticle)
-                    && Objects.equals(this.targetArticle, other.targetArticle);
+                   && Objects.equals(this.targetArticle, other.targetArticle);
         }
     }
 }

@@ -3,6 +3,7 @@ package com.senacor.tecco.reactive.katas.codecamp.rxjava2.solution;
 import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.services.WikiService;
 import io.reactivex.Observable;
+import io.reactivex.ObservableSource;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Function;
 import org.junit.Test;
@@ -75,16 +76,18 @@ public class Kata7ErrorHandling {
         return "{{Dieser Artikel|behandelt das Jahr 42}} ";
     }
 
-    private Function<Observable<? extends Throwable>, Observable<?>> retryWithDelay(final int maxRetries) {
+    private Function<? super Observable<Throwable>, ? extends ObservableSource<?>> retryWithDelay(final int maxRetries) {
         return attempts -> attempts.zipWith(Observable.range(1, maxRetries + 1), ErrorWithRetryCount::new)
-                .flatMap(
-                        countAndError -> {
-                            if (countAndError.getRetryCount() > maxRetries) {
-                                return Observable.error(countAndError.getThrowable());
-                            }
-                            print("randomDelay retry by %s second(s)", countAndError.getRetryCount());
-                            return Observable.timer((long) countAndError.getRetryCount(), TimeUnit.SECONDS);
-                        });
+                                   .flatMap(
+                                           countAndError -> {
+                                               if (countAndError.getRetryCount() > maxRetries) {
+                                                   return Observable.error(countAndError.getThrowable());
+                                               }
+                                               print("randomDelay retry by %s second(s)", countAndError
+                                                       .getRetryCount());
+                                               return Observable
+                                                       .timer((long) countAndError.getRetryCount(), TimeUnit.SECONDS);
+                                           });
     }
 
     private static class ErrorWithRetryCount {
@@ -107,11 +110,12 @@ public class Kata7ErrorHandling {
 
     private Observable<String> fetchArticleObservableWithRandomErrors(String articleName) {
         final Random randomGenerator = new Random();
-        return wikiService.fetchArticleObservable(articleName).map(article -> {
-            if (randomGenerator.nextInt() % 2 == 0) {
-                throw new IllegalStateException("timeout");
-            }
-            return article;
-        });
+        return wikiService.fetchArticleObservable(articleName)
+                          .map(article -> {
+                              if (randomGenerator.nextInt() % 2 == 0) {
+                                  throw new IllegalStateException("timeout");
+                              }
+                              return article;
+                          });
     }
 }

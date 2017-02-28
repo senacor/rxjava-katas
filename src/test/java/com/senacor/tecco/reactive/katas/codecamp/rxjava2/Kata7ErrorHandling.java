@@ -28,11 +28,12 @@ public class Kata7ErrorHandling {
 
     private Observable<String> fetchArticleObservableWithRandomErrors(String articleName) {
         final Random randomGenerator = new Random(12L);
-        return wikiService.fetchArticleObservable(articleName).map(article -> {
-            if (randomGenerator.nextInt() % 2 == 0) {
-                throw new IllegalStateException("timeout");
-            }
-            return article;
-        });
+        return wikiService.fetchArticleObservable(articleName)
+                          .map(article -> {
+                              if (randomGenerator.nextInt() % 2 == 0) {
+                                  throw new IllegalStateException("timeout");
+                              }
+                              return article;
+                          });
     }
 }

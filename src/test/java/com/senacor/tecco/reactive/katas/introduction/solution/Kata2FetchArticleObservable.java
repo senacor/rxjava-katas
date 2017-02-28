@@ -27,10 +27,10 @@ public class Kata2FetchArticleObservable {
         // 3) subscribe to the observable and print the article content
 
         Observable.fromArray(planeTypes)
-                .flatMap(planeType -> fetchArticle(planeType))
-                .subscribe(article -> print("next: %s", article.content),
-                        Throwable::printStackTrace,
-                        monitor::complete);
+                  .flatMap(planeType -> fetchArticle(planeType))
+                  .subscribe(article -> print("next: %s", article.content),
+                          Throwable::printStackTrace,
+                          monitor::complete);
 
         monitor.waitFor(10, TimeUnit.SECONDS);
     }
@@ -43,8 +43,8 @@ public class Kata2FetchArticleObservable {
      * @return an article
      */
     Observable<Article> fetchArticle(String articleName) {
-        return wikiService.fetchArticleObservable(articleName).
-                map((article) -> new Article(articleName, article));
+        return wikiService.fetchArticleObservable(articleName)
+                          .map((article) -> new Article(articleName, article));
     }
 
     class Article {
