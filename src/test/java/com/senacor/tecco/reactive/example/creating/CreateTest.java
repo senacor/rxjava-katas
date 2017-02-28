@@ -25,14 +25,14 @@ public class CreateTest {
                 subscriber.onError(e);
             }
         })
-        .subscribe(next -> print("next: %s", next),
+                .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         () -> print("complete!"));
     }
 
     @Test
     public void testCreateWithFunction() throws Exception {
-        Observable<String> obs=Observable.create(subscriber -> {
+        Observable<String> obs = Observable.create(subscriber -> {
             try {
                 subscriber.onNext(getValue());
                 subscriber.onComplete();

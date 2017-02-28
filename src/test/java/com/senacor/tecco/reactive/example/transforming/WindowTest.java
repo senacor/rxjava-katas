@@ -1,8 +1,8 @@
 package com.senacor.tecco.reactive.example.transforming;
 
+import io.reactivex.Observable;
 import io.reactivex.disposables.Disposable;
 import org.junit.Test;
-import io.reactivex.Observable;
 
 import java.util.concurrent.TimeUnit;
 

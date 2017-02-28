@@ -1,7 +1,7 @@
 package com.senacor.tecco.reactive.example.filtering;
 
-import org.junit.Test;
 import io.reactivex.Observable;
+import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
 

@@ -1,7 +1,7 @@
 package com.senacor.tecco.reactive.example.creating;
 
-import org.junit.Test;
 import io.reactivex.Observable;
+import org.junit.Test;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 

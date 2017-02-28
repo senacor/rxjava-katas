@@ -1,10 +1,10 @@
 package com.senacor.tecco.reactive.example.filtering;
 
+import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 import org.junit.Test;
-import io.reactivex.Observable;
 
 import java.util.concurrent.TimeUnit;
 

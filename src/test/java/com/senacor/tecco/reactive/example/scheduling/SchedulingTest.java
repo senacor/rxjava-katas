@@ -15,8 +15,8 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 /**
  * @author Andreas Keefer
- * @see http://reactivex.io/documentation/scheduler.html
  * @version 2.0
+ * @see http://reactivex.io/documentation/scheduler.html
  */
 public class SchedulingTest {
 

@@ -1,7 +1,6 @@
 package com.senacor.tecco.reactive.example.creating;
 
 import io.reactivex.Observable;
-import io.reactivex.Scheduler;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 import org.junit.Test;

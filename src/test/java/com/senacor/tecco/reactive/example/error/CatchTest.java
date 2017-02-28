@@ -2,9 +2,9 @@ package com.senacor.tecco.reactive.example.error;
 
 import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.WaitMonitor;
+import io.reactivex.Observable;
 import io.reactivex.disposables.Disposable;
 import org.junit.Test;
-import io.reactivex.Observable;
 
 import java.util.concurrent.TimeUnit;
 
