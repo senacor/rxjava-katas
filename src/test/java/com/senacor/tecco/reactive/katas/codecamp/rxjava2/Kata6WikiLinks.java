@@ -1,4 +1,4 @@
-package com.senacor.tecco.reactive.katas.codecamp;
+package com.senacor.tecco.reactive.katas.codecamp.rxjava2;
 
 import org.junit.Test;
 

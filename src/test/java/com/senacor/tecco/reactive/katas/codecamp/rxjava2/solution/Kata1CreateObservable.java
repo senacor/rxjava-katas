@@ -1,4 +1,4 @@
-package com.senacor.tecco.reactive.katas.codecamp.solution;
+package com.senacor.tecco.reactive.katas.codecamp.rxjava2.solution;
 
 import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.services.integration.WikipediaServiceMediaWikiBot;
