@@ -7,6 +7,7 @@ import com.senacor.tecco.reactive.services.integration.WikipediaServiceJapiImpl;
 import com.senacor.tecco.reactive.services.integration.WikipediaServiceJapiMock;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.BackpressureStrategy;
+import io.reactivex.Flowable;
 import io.reactivex.Observable;
 import io.reactivex.subjects.PublishSubject;
 import org.apache.commons.lang3.StringUtils;
@@ -44,16 +45,18 @@ public class WikiService {
     private final ExecutorService pool = Executors.newFixedThreadPool(4);
 
     public WikiService() {
-        this(false);
+        this(false, 1000, false);
     }
 
     /**
-     * @param record when true, the results from fetchArticleObservable will be recorded for use in MOCKMODE;
+     * @param mockMode          when true, the Articles are fetched from a local file instead from Wikipedia.
+     * @param mockDelayInMillis the delay, if mockMode=true
+     * @param record            when true, the results from fetchArticleObservable will be recorded for use in MOCKMODE;
      */
-    public WikiService(boolean record) {
-        if (MOCKMODE) {
+    public WikiService(boolean mockMode, long mockDelayInMillis, boolean record) {
+        if (MOCKMODE || mockMode) {
             this.record = false;
-            wikiServiceJapi = new WikipediaServiceJapiMock();
+            wikiServiceJapi = new WikipediaServiceJapiMock(mockDelayInMillis);
         } else {
             this.record = record || RECORD;
             wikiServiceJapi = new WikipediaServiceJapiImpl();
@@ -80,9 +83,13 @@ public class WikiService {
      */
     public Flux<String> fetchArticleFlux(final String wikiArticle) {
         return Flux.just(wikiArticle)
-                   .map(this::fetchArticle)
-                   .onErrorResumeWith(t -> Flux.empty())
-                   .doOnNext(record(wikiArticle));
+                .map(this::fetchArticle)
+                .onErrorResumeWith(t -> Flux.empty())
+                .doOnNext(record(wikiArticle));
+    }
+
+    public Flowable<String> fetchArticleFlowable(final String wikiArticle) {
+        return Flowable.fromPublisher(fetchArticleFlux(wikiArticle));
     }
 
     /**
@@ -234,11 +241,11 @@ public class WikiService {
         final Random randomGenerator = new Random(4L);
         PublishSubject<String> publishSubject = PublishSubject.create();
         ReactiveUtil.burstSource()
-                    .map(ignore -> {
-                        String article = WIKI_ARTICLES.get(randomGenerator.nextInt(WIKI_ARTICLES.size()));
-                        System.out.println(getThreadId() + "wikiArticleBeingReadObservable=" + article);
-                        return article;
-                    }).subscribe(publishSubject);
+                .map(ignore -> {
+                    String article = WIKI_ARTICLES.get(randomGenerator.nextInt(WIKI_ARTICLES.size()));
+                    System.out.println(getThreadId() + "wikiArticleBeingReadObservable=" + article);
+                    return article;
+                }).subscribe(publishSubject);
         return publishSubject;
     }
 

@@ -1,16 +1,8 @@
 package com.senacor.tecco.reactive.services.integration;
 
-import com.senacor.tecco.reactive.ReactiveUtil;
-
-import java.io.IOException;
-import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.Random;
-import java.util.concurrent.ConcurrentHashMap;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
@@ -19,19 +11,25 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
  */
 public class WikipediaServiceJapiMock extends WikipediaServiceJapiImpl {
 
+    private final long delayInMillis;
+
     public WikipediaServiceJapiMock() {
+        this(1000L);
     }
 
     public WikipediaServiceJapiMock(String url) {
         this();
     }
 
+    public WikipediaServiceJapiMock(long delayInMillis) {
+        this.delayInMillis = delayInMillis;
+    }
+
     @Override
     protected String getPageContent(String name) throws Exception {
-        Thread.sleep(1000);
+        Thread.sleep(delayInMillis);
         String result = readArticle(name);
-        if(result == null)
-        {
+        if (result == null) {
             throw new IllegalArgumentException("no page found with name: " + name);
         }
         return result;
