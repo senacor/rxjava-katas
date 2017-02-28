@@ -64,7 +64,7 @@ public class SchedulingTest {
 
         Disposable subscription = Observable.range(1, 10)
                 .doOnNext(integer -> print("before getData: %s", integer))
-                .flatMap(integet -> SchedulingTest.getDataSync(integet)
+                .flatMap(integer -> SchedulingTest.getDataSync(integer)
                         .subscribeOn(Schedulers.io()))
                 .doOnNext(integer -> print("after getData: %s", integer))
                 .subscribe(next -> print("next: %s", next),
