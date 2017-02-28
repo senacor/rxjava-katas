@@ -1,7 +1,10 @@
 package com.senacor.tecco.reactive.services;
 
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
+import io.reactivex.Flowable;
 import io.reactivex.Observable;
+import org.reactivestreams.Publisher;
+import reactor.core.publisher.Flux;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -18,33 +21,11 @@ public class RatingService {
     private final ExecutorService pool = Executors.newFixedThreadPool(4);
 
     public Observable<Integer> rateObservable(final ParsedPage parsedPage) {
-        return Observable.create(subscriber -> {
-            if (null == parsedPage) {
-                subscriber.onError(new IllegalStateException("parsedPage must not be null"));
-                return;
-            }
-            long start = System.currentTimeMillis();
-            int articleSize = parsedPage.getText().length();
-            int linksCount = parsedPage.getLinks().size();
+        return Observable.just(parsedPage).map(this::rate);
+    }
 
-            fixedDelay(30);
-
-            if (0 == linksCount) {
-                // 0 sterne
-                subscriber.onNext(0);
-                subscriber.onComplete();
-                return;
-            }
-
-            final BigDecimal percent = determinePercent(articleSize, linksCount);
-
-            final int rating = determineRating(percent);
-
-            System.out.println(String.format("%srate: articleSize=%s linksCount=%s percent=%s runtime=%sms",
-                    getThreadId(), articleSize, linksCount, percent, System.currentTimeMillis() - start));
-            subscriber.onNext(rating);
-            subscriber.onComplete();
-        });
+    public Flux<Integer> rateFlux(final ParsedPage parsedPage) {
+        return Flux.just(parsedPage).map(this::rate);
     }
 
     public Future<Integer> rateFuture(ParsedPage parsedPage) {
@@ -52,7 +33,7 @@ public class RatingService {
     }
 
     public CompletableFuture<Integer> rateCompletableFuture(ParsedPage parsedPage) {
-        return CompletableFuture.supplyAsync(()-> rate(parsedPage), pool);
+        return CompletableFuture.supplyAsync(() -> rate(parsedPage), pool);
     }
 
     public int rate(final ParsedPage parsedPage) {

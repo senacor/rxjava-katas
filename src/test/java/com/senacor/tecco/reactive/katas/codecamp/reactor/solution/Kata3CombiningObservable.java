@@ -1,0 +1,107 @@
+package com.senacor.tecco.reactive.katas.codecamp.reactor.solution;
+
+import com.senacor.tecco.reactive.WaitMonitor;
+import com.senacor.tecco.reactive.services.CountService;
+import com.senacor.tecco.reactive.services.RatingService;
+import com.senacor.tecco.reactive.services.WikiService;
+import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
+import org.junit.Test;
+import reactor.core.publisher.ConnectableFlux;
+import reactor.core.publisher.Flux;
+
+import java.util.concurrent.TimeUnit;
+
+import static com.senacor.tecco.reactive.ReactiveUtil.print;
+
+/**
+ * @author Andreas Keefer
+ */
+public class Kata3CombiningObservable {
+
+    private final WikiService wikiService = new WikiService();
+    private final RatingService ratingService = new RatingService();
+    private final CountService countService = new CountService();
+
+    @Test
+    public void combiningObservable() throws Exception {
+        // 1. fetch and parse Wikiarticle
+        // 2. use ratingService.rateObservable() and #countWordsObervable(). Combine both information as JSON
+        //    and print the JSON to the console. Example {"articleName": "Superman", "rating": 3, "wordCount": 452}
+
+        WaitMonitor waitMonitor = new WaitMonitor();
+
+        final String wikiArticle = "Bilbilis";
+        wikiService.fetchArticleFlux(wikiArticle)
+                   .flatMap(wikiService::parseMediaWikiTextFlux)
+                   .flatMap(parsedPage -> {
+                       Flux<ParsedPage> p = Flux.just(parsedPage);
+                       Flux<Integer> rating = p.flatMap(ratingService::rateFlux);
+                       Flux<Integer> wordCount = p.flatMap(countService::countWordsFlux);
+
+                       return rating.zipWith(wordCount,
+                               (r, wc) -> String.format("{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
+                                       wikiArticle, r, wc)
+                       );
+                   })
+                   .subscribe(next -> print("next: %s", next),
+                           Throwable::printStackTrace,
+                           waitMonitor::complete);
+
+        waitMonitor.waitFor(10, TimeUnit.SECONDS);
+    }
+
+
+    @Test
+    public void combiningObservablePublish() throws Exception {
+        // 1. fetch and parse Wikiarticle
+        // 2. use ratingService.rateObservable() and #countWordsObervable(). Combine both information as JSON
+        //    and print the JSON to the console. Example {"articleName": "Superman", "rating": 3, "wordCount": 452}
+
+        WaitMonitor waitMonitor = new WaitMonitor();
+
+        final String wikiArticle = "Bilbilis";
+        ConnectableFlux<ParsedPage> connectableFlux = wikiService.fetchArticleFlux(wikiArticle)
+                                                                 .flatMap(wikiService::parseMediaWikiTextFlux)
+                                                                 .publish();
+
+        Flux<Integer> ratingObservable = connectableFlux.flatMap(ratingService::rateFlux);
+        Flux<Integer> wordCountObservable = connectableFlux.flatMap(countService::countWordsFlux);
+        connectableFlux.connect();
+
+        ratingObservable.zipWith(wordCountObservable, (r, wc) -> String.format(
+                "{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
+                wikiArticle, r, wc))
+                        .subscribe(next -> print("next: %s", next),
+                                Throwable::printStackTrace,
+                                () -> waitMonitor.complete());
+
+        waitMonitor.waitFor(10, TimeUnit.SECONDS);
+    }
+
+
+    @Test
+    public void combiningObservablePublish2() throws Exception {
+        // 1. fetch and parse Wikiarticle
+        // 2. use ratingService.rateObservable() and #countWordsObervable(). Combine both information as JSON
+        //    and print the JSON to the console. Example {"articleName": "Superman", "rating": 3, "wordCount": 452}
+
+        WaitMonitor waitMonitor = new WaitMonitor();
+
+        final String wikiArticle = "Bilbilis";
+        Flux<ParsedPage> pages = wikiService.fetchArticleFlux(wikiArticle)
+                                            .flatMap(wikiService::parseMediaWikiTextFlux);
+
+        Flux<Integer> ratingObservable = pages.flatMap(ratingService::rateFlux);
+        Flux<Integer> wordCountObservable = pages.flatMap(countService::countWordsFlux);
+
+        ratingObservable.zipWith(wordCountObservable, (r, wc) -> String.format(
+                "{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
+                wikiArticle, r, wc))
+                        .subscribe(next -> print("next: %s", next),
+                                Throwable::printStackTrace,
+                                () -> waitMonitor.complete());
+
+        waitMonitor.waitFor(10, TimeUnit.SECONDS);
+    }
+
+}

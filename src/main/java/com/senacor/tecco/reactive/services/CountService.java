@@ -2,6 +2,7 @@ package com.senacor.tecco.reactive.services;
 
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.Observable;
+import reactor.core.publisher.Flux;
 
 import java.util.StringTokenizer;
 import java.util.concurrent.CompletableFuture;
@@ -16,15 +17,12 @@ public class CountService {
 
     private final ExecutorService pool = Executors.newFixedThreadPool(4);
 
-    public Observable<Integer> countWordsObervable(final ParsedPage parsedPage) {
-        return Observable.create(subscriber -> {
-            if (null == parsedPage) {
-                subscriber.onError(new IllegalStateException("parsedPage must not be null"));
-                return;
-            }
-            subscriber.onNext(countWords(parsedPage));
-            subscriber.onComplete();
-        });
+    public Observable<Integer> countWordsObservable(final ParsedPage parsedPage) {
+        return Observable.just(parsedPage).map(this::countWords);
+    }
+
+    public Flux<Integer> countWordsFlux(final ParsedPage parsedPage) {
+        return Flux.just(parsedPage).map(this::countWords);
     }
 
     public Future<Integer> countWordsFuture(final ParsedPage parsedPage) {
