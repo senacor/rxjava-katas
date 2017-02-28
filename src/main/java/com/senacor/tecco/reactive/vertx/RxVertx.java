@@ -10,6 +10,7 @@ import io.vertx.ext.reactivestreams.ReactiveWriteStream;
 
 /**
  * Created by dheinrich on 27/02/2017.
+ * TODO (ak) umstellen auf native unterstuetzung von RxJava2 in Vert.x ab voraussichtl. 3.4.0
  */
 public class RxVertx {
 
