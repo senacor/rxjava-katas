@@ -4,6 +4,7 @@ RxJava
 ### getting started / DOKU
 
 - http://reactivex.io/documentation/operators.html
+- https://github.com/ReactiveX/RxJava/wiki
 - http://rxmarbles.com/
 
 ### RxJava 2 update
