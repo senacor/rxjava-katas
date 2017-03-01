@@ -47,10 +47,10 @@ Reactor (3.0.5.RELEASE) vs. RxJava 2 (2.0.6)
 - **Java**:
 <br>- Reactor requires Java 8
 <br>- RxJava requires Java 6
-- **dependencies**:
+- **Dependencies**:
 <br>- Reactor has reactive-streams, jsr305 (optional) and slf4j-api (optional) as dependencies
 <br>- RxJava has only reactive-streams as a dependency
-- **footprint** (without dependencies):
+- **Footprint** (without dependencies):
 <br>- Reactor: 1,1 MB
 <br>- RxJava: 2.1 MB
 - **Debugging**:
@@ -67,11 +67,13 @@ Reactor (3.0.5.RELEASE) vs. RxJava 2 (2.0.6)
 <br>- RxJava 2's Doku is not jet updated in total from 1.x to 2.x, but 1.x Doku is great.
 - **Testing**:
 <br> both have more or less equal testing support
-- **operators**:
-<br> no relevant difference
-- **performance** (https://github.com/akarnokd/akarnokd-misc/issues/2):
+- **Operators**:
+<br> no relevant difference, both have all you need. Nice is that both have nearly the same signatures, so migration is quite simple and straight foreword. 
+- **Performance** (https://github.com/akarnokd/akarnokd-misc/issues/2):
 <br>- Reactor is generally 10-50% better in a Java 8 environment due to more inlined nature and even fewer allocations than RxJava 2
 <br>- RxJava 2.x is generally better in terms of performance and memory utilization than 1.x; most lower performing components can be optimized further
+- **Interoperability**:
+<br> both use the reactive-streams API and it's no problem to mix both libraries, e.g use a Flowable in an Reactor operation and vice versa, convert between Flowable and Flux or use an `Subscriber` Impl from the other library.
 - **...**:
 <br>- Reactor
 <br>- RxJava
