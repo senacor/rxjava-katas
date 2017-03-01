@@ -14,16 +14,13 @@ public class MediaWikiTextParser {
     private final MediaWikiParser parser = pf.createParser();
 
     public ParsedPage parse(String mediaWikiText) {
-        final long start = System.currentTimeMillis();
+        //final long start = System.currentTimeMillis();
         ParsedPage res = parser.parse(mediaWikiText);
         if (res == null) {
             throw new IllegalArgumentException("text not parseable: \"" + mediaWikiText + '"');
         }
 
-        System.out.println(ReactiveUtil.getThreadId() + "profiling parse("
-                           //+ res.getName()
-                           //+ mediaWikiText
-                           + "): " + (System.currentTimeMillis() - start) + "ms");
+        //ReactiveUtil.print("profiling parse(): " + (System.currentTimeMillis() - start) + "ms");
         return res;
     }
 }

@@ -22,8 +22,9 @@ import static org.junit.Assert.assertNotNull;
 public class ServicesTest {
 
     private final WikiService wikiService = new WikiService("en");
-    private final CountService countService = new CountService();
-    private final RatingService ratingService = new RatingService();
+    private final CountService countService = CountServiceImpl.create();
+    private final RatingService ratingService = RatingServiceImpl.create();
+    ;
 
     @Test
     public void testFetchArticle() throws Exception {
@@ -57,13 +58,13 @@ public class ServicesTest {
     public void testWikiArticleBeingReadObservable() throws Exception {
         final WaitMonitor monitor = new WaitMonitor();
         Disposable Disposable = wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS)
-                                           .subscribe(article -> {
-                                                       print(article);
-                                                       assertNotNull(article);
-                                                   },
-                                                   error -> {
-                                                   }, monitor::complete
-                                           );
+                .subscribe(article -> {
+                            print(article);
+                            assertNotNull(article);
+                        },
+                        error -> {
+                        }, monitor::complete
+                );
         monitor.waitFor(1, TimeUnit.SECONDS);
         Disposable.dispose();
     }
@@ -74,36 +75,36 @@ public class ServicesTest {
         final WaitMonitor monitor = new WaitMonitor();
         final Scheduler scheduler = Schedulers.from(Executors.newFixedThreadPool(5));
         Disposable Disposable = wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
-                                           .sample(200, TimeUnit.MILLISECONDS)
-                                           .doOnNext(name -> print("=> working with " + name))
-                                           .flatMap((wikiArticle) -> wikiService
-                                                   .fetchArticleObservable(wikiArticle)
-                                                   .subscribeOn(scheduler)
-                                                   .zipWith(Observable
-                                                           .just(wikiArticle), (text, name) -> new String[]{name, text}))
-                                           .flatMap(array -> wikiService
-                                                   .parseMediaWikiTextObservable(array[1])
-                                                   .subscribeOn(Schedulers.computation())
-                                                   .zipWith(Observable
-                                                           .just(array[0]), (parsedPage, name) -> new Object[]{name, parsedPage}))
-                                           .flatMap(array -> {
-                                               final String articleName = (String) array[0];
-                                               final ParsedPage parsedPage = (ParsedPage) array[1];
-                                               return Observable.zip(ratingService.rateObservable(parsedPage)
-                                                                                  .subscribeOn(scheduler)
-                                                       , countService.countWordsObservable(parsedPage)
-                                                                     .subscribeOn(scheduler)
-                                                       , (rating, wordCount) -> String
-                                                               .format("{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
-                                                                       articleName, rating, wordCount));
-                                           })
-                                           .subscribe(analizedArticle -> {
-                                                       print(analizedArticle);
-                                                       assertNotNull(analizedArticle);
-                                                   },
-                                                   error -> {
-                                                   }, monitor::complete
-                                           );
+                .sample(200, TimeUnit.MILLISECONDS)
+                .doOnNext(name -> print("=> working with " + name))
+                .flatMap((wikiArticle) -> wikiService
+                        .fetchArticleObservable(wikiArticle)
+                        .subscribeOn(scheduler)
+                        .zipWith(Observable
+                                .just(wikiArticle), (text, name) -> new String[]{name, text}))
+                .flatMap(array -> wikiService
+                        .parseMediaWikiTextObservable(array[1])
+                        .subscribeOn(Schedulers.computation())
+                        .zipWith(Observable
+                                .just(array[0]), (parsedPage, name) -> new Object[]{name, parsedPage}))
+                .flatMap(array -> {
+                    final String articleName = (String) array[0];
+                    final ParsedPage parsedPage = (ParsedPage) array[1];
+                    return Observable.zip(ratingService.rateObservable(parsedPage)
+                                    .subscribeOn(scheduler)
+                            , countService.countWordsObservable(parsedPage)
+                                    .subscribeOn(scheduler)
+                            , (rating, wordCount) -> String
+                                    .format("{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
+                                            articleName, rating, wordCount));
+                })
+                .subscribe(analizedArticle -> {
+                            print(analizedArticle);
+                            assertNotNull(analizedArticle);
+                        },
+                        error -> {
+                        }, monitor::complete
+                );
         monitor.waitFor(5, TimeUnit.SECONDS);
         Disposable.dispose();
     }
@@ -133,15 +134,15 @@ public class ServicesTest {
     public void testWikiArticleBeingReadObservableWithRandomErrors() throws Exception {
         final WaitMonitor monitor = new WaitMonitor();
         Disposable Disposable = wikiService.wikiArticleBeingReadObservableWithRandomErrors()
-                                           .subscribe(articleName -> {
-                                                       print(articleName);
-                                                       assertNotNull(articleName);
-                                                   },
-                                                   error -> {
-                                                       error.printStackTrace();
-                                                       monitor.complete();
-                                                   }
-                                           );
+                .subscribe(articleName -> {
+                            print(articleName);
+                            assertNotNull(articleName);
+                        },
+                        error -> {
+                            error.printStackTrace();
+                            monitor.complete();
+                        }
+                );
 
         monitor.waitFor(10, TimeUnit.SECONDS);
         Disposable.dispose();
@@ -152,14 +153,14 @@ public class ServicesTest {
     public void testWikiArticleBeingReadObservableBurst() throws Exception {
         final WaitMonitor monitor = new WaitMonitor();
         Disposable Disposable = wikiService.wikiArticleBeingReadObservableBurst()
-                                           .take(2, TimeUnit.SECONDS)
-                                           .subscribe(articleName -> {
-                                                       print(articleName);
-                                                       assertNotNull(articleName);
-                                                   },
-                                                   Throwable::printStackTrace,
-                                                   monitor::complete
-                                           );
+                .take(2, TimeUnit.SECONDS)
+                .subscribe(articleName -> {
+                            print(articleName);
+                            assertNotNull(articleName);
+                        },
+                        Throwable::printStackTrace,
+                        monitor::complete
+                );
 
         monitor.waitFor(10, TimeUnit.SECONDS);
         Disposable.dispose();

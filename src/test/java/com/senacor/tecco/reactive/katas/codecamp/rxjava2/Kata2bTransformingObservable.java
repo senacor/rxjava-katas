@@ -1,6 +1,7 @@
 package com.senacor.tecco.reactive.katas.codecamp.rxjava2;
 
 import com.senacor.tecco.reactive.services.CountService;
+import com.senacor.tecco.reactive.services.CountServiceImpl;
 import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
 
@@ -10,7 +11,7 @@ import org.junit.Test;
 public class Kata2bTransformingObservable {
 
     private WikiService wikiService = new WikiService();
-    private CountService countService = new CountService();
+    private CountService countService = CountServiceImpl.create();
 
     @Test
     public void transformingObservable() throws Exception {

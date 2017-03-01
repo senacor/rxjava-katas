@@ -3,6 +3,7 @@ package com.senacor.tecco.reactive.katas.codecamp.rxjava2.solution;
 import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.services.PersistService;
+import com.senacor.tecco.reactive.services.PersistServiceImpl;
 import com.senacor.tecco.reactive.services.WikiService;
 import io.reactivex.disposables.Disposable;
 import org.junit.Test;
@@ -17,7 +18,7 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 public class Kata8Batch {
 
     private final WikiService wikiService = new WikiService();
-    private final PersistService persistService = new PersistService();
+    private final PersistService persistService = PersistServiceImpl.create();
 
     @Test
     public void withoutBatch() throws Exception {

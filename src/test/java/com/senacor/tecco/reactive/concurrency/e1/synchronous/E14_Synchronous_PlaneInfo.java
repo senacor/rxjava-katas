@@ -3,9 +3,7 @@ package com.senacor.tecco.reactive.concurrency.e1.synchronous;
 import com.senacor.tecco.reactive.Watch;
 import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
-import com.senacor.tecco.reactive.services.CountService;
-import com.senacor.tecco.reactive.services.RatingService;
-import com.senacor.tecco.reactive.services.WikiService;
+import com.senacor.tecco.reactive.services.*;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Rule;
 import org.junit.Test;
@@ -13,8 +11,8 @@ import org.junit.Test;
 public class E14_Synchronous_PlaneInfo extends PlaneArticleBaseTest {
 
     private final WikiService wikiService = new WikiService("en");
-    private final CountService countService = new CountService();
-    private final RatingService ratingService = new RatingService();
+    private final CountService countService = CountServiceImpl.create();
+    private final RatingService ratingService = RatingServiceImpl.create();
 
     @Rule
     public final Watch watch = new Watch();

@@ -1,6 +1,7 @@
 package com.senacor.tecco.reactive.katas.codecamp.reactor;
 
 import com.senacor.tecco.reactive.services.PersistService;
+import com.senacor.tecco.reactive.services.PersistServiceImpl;
 import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
 
@@ -10,7 +11,7 @@ import org.junit.Test;
 public class Kata8Batch {
 
     private final WikiService wikiService = new WikiService();
-    private final PersistService persistService = new PersistService();
+    private final PersistService persistService = PersistServiceImpl.create();
 
     /**
      * 1. use {@link WikiService#wikiArticleBeingReadFluxBurst()} that returns a stream of wiki article being read

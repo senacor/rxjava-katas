@@ -1,10 +1,7 @@
 package com.senacor.tecco.reactive.katas.codecamp.reactor.solution;
 
 import com.senacor.tecco.reactive.WaitMonitor;
-import com.senacor.tecco.reactive.services.CountService;
-import com.senacor.tecco.reactive.services.PersistService;
-import com.senacor.tecco.reactive.services.RatingService;
-import com.senacor.tecco.reactive.services.WikiService;
+import com.senacor.tecco.reactive.services.*;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;
 import reactor.core.Disposable;
@@ -23,8 +20,9 @@ import static reactor.core.scheduler.Schedulers.elastic;
 public class Kata5SchedulingObservable {
 
     private final WikiService wikiService = new WikiService();
-    private final RatingService ratingService = new RatingService();
-    private final CountService countService = new CountService();
+    private final RatingService ratingService = RatingServiceImpl.create();
+    private final PersistService persistService = PersistServiceImpl.create();
+    private final CountService countService = CountServiceImpl.create();
 
     /**
      * 1. use the {@link WikiService#wikiArticleBeingReadFlux(long, TimeUnit)} to create a stream of

@@ -3,7 +3,9 @@ package com.senacor.tecco.reactive.concurrency.e2.callback;
 import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
 import com.senacor.tecco.reactive.services.CountService;
+import com.senacor.tecco.reactive.services.CountServiceImpl;
 import com.senacor.tecco.reactive.services.RatingService;
+import com.senacor.tecco.reactive.services.RatingServiceImpl;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;
 
@@ -18,8 +20,8 @@ import java.util.function.Consumer;
  */
 public class E24_Callback_PlaneInfo extends PlaneArticleBaseTest {
 
-    private final CountService countService = new CountService();
-    private final RatingService ratingService = new RatingService();
+    private final CountService countService = CountServiceImpl.create();
+    private final RatingService ratingService = RatingServiceImpl.create();
 
     // error handler function
     Consumer<Exception> exceptionConsumer = (e)->{e.printStackTrace();};

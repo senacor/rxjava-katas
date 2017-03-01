@@ -4,7 +4,9 @@ import com.senacor.tecco.reactive.Watch;
 import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
 import com.senacor.tecco.reactive.services.CountService;
+import com.senacor.tecco.reactive.services.CountServiceImpl;
 import com.senacor.tecco.reactive.services.RatingService;
+import com.senacor.tecco.reactive.services.RatingServiceImpl;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.Observable;
 import org.junit.Rule;
@@ -12,8 +14,8 @@ import org.junit.Test;
 
 public class E63_Observables_PlaneInfo extends PlaneArticleBaseTest {
 
-    private final CountService countService = new CountService();
-    private final RatingService ratingService = new RatingService();
+    private final CountService countService = CountServiceImpl.create();
+    private final RatingService ratingService = RatingServiceImpl.create();
 
     @Rule
     public final Watch watch = new Watch();

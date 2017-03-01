@@ -2,10 +2,7 @@ package com.senacor.tecco.reactive.katas.codecamp.rxjava2.solution;
 
 import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.WaitMonitor;
-import com.senacor.tecco.reactive.services.CountService;
-import com.senacor.tecco.reactive.services.PersistService;
-import com.senacor.tecco.reactive.services.RatingService;
-import com.senacor.tecco.reactive.services.WikiService;
+import com.senacor.tecco.reactive.services.*;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.Observable;
 import io.reactivex.Scheduler;
@@ -23,9 +20,9 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 public class Kata5SchedulingObservable {
 
     private final WikiService wikiService = new WikiService();
-    private final RatingService ratingService = new RatingService();
-    private final PersistService persistService = new PersistService();
-    private final CountService countService = new CountService();
+    private final RatingService ratingService = RatingServiceImpl.create();
+    private final PersistService persistService = PersistServiceImpl.create();
+    private final CountService countService = CountServiceImpl.create();
 
     @Test
     public void schedulingObservable() throws Exception {

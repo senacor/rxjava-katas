@@ -3,7 +3,9 @@ package com.senacor.tecco.reactive.concurrency.e3.future;
 import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
 import com.senacor.tecco.reactive.services.CountService;
+import com.senacor.tecco.reactive.services.CountServiceImpl;
 import com.senacor.tecco.reactive.services.RatingService;
+import com.senacor.tecco.reactive.services.RatingServiceImpl;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;
 
@@ -11,8 +13,8 @@ import java.util.concurrent.Future;
 
 public class E33_Future_PlaneInfo extends PlaneArticleBaseTest {
 
-    private final CountService countService = new CountService();
-    private final RatingService ratingService = new RatingService();
+    private final CountService countService = CountServiceImpl.create();
+    private final RatingService ratingService = RatingServiceImpl.create();
 
     @Test
     public void thatPlaneInfoIsCombinedWithFutures() throws Exception {

@@ -61,8 +61,8 @@ Reactor (3.0.5.RELEASE) vs. RxJava 2 (2.0.6)
 <br>- Reactor is a bit smaller and has no "legacy" stuff like RxJava.
 <br>- RxJava 2 is a bit more complex, regarding RxJava 1.x
 - "**Datatypes**":
-<br>- Reactor has just Mono(0-1) and Flux (0..n)
-<br>- RxJava has Single (1), Maybe (0-1), Completable (0), Observable (0-n, no backpressure) and Flowable (0-n, backpressure)
+<br>- Reactor has just `Mono`(0-1) and `Flux` (0..n)
+<br>- RxJava has `Single` (1), `Maybe` (0-1), `Completable` (0), `Observable` (0-n, no backpressure) and `Flowable` (0-n, backpressure)
 - **Doku** (March 2017)
 <br>- Reactor has a good, solid Doku with some TODO's/missing pats for some advanced Features 
 <br>- RxJava 2's Doku is not jet updated in total from 1.x to 2.x, but 1.x Doku is great.

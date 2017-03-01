@@ -1,8 +1,6 @@
 package com.senacor.tecco.reactive.katas.codecamp.reactor;
 
-import com.senacor.tecco.reactive.services.CountService;
-import com.senacor.tecco.reactive.services.RatingService;
-import com.senacor.tecco.reactive.services.WikiService;
+import com.senacor.tecco.reactive.services.*;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;
 
@@ -12,8 +10,8 @@ import org.junit.Test;
 public class Kata3CombiningObservable {
 
     private WikiService wikiService = new WikiService();
-    private CountService countService = new CountService();
-    private RatingService ratingService = new RatingService();
+    private CountService countService = CountServiceImpl.create();
+    private RatingService ratingService = RatingServiceImpl.create();
 
     /**
      * 1. fetch and parse a wiki article

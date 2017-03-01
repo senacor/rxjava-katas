@@ -1,6 +1,7 @@
 package com.senacor.tecco.reactive.katas.codecamp.reactor.solution;
 
 import com.senacor.tecco.reactive.services.CountService;
+import com.senacor.tecco.reactive.services.CountServiceImpl;
 import com.senacor.tecco.reactive.services.WikiService;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.apache.commons.lang3.StringUtils;
@@ -17,6 +18,7 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 public class Kata2TransformingObservable {
 
     private final WikiService wikiService = new WikiService();
+    private final CountService countService = CountServiceImpl.create();
 
     /**
      * 1. Use the {@link WikiService#fetchArticleObservable} and fetch an arbitrary wikipedia article
