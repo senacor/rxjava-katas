@@ -1,4 +1,4 @@
-package com.senacor.tecco.reactive.katas.codecamp.rxjava2;
+package com.senacor.tecco.reactive.katas.codecamp.reactor;
 
 import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.services.WikiService;

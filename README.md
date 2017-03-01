@@ -1,4 +1,4 @@
-rxjava-katas
+RxJava
 ============
 
 ### getting started / DOKU
@@ -31,3 +31,11 @@ Conceptually, it is a union of `Single` and `Completable` providing the means to
 - Reactive-Streams compliance (https://github.com/ReactiveX/RxJava/wiki/What's-different-in-2.0#reactive-streams-compliance):
 - Runtime hooks (https://github.com/ReactiveX/RxJava/wiki/What's-different-in-2.0#runtime-hooks): 
 Hooks can now be changed at runtime. In 1.x you get an Exception if you change an hook in `RxJavaPlugins`
+
+
+reactor
+=======
+
+### getting started / DOKU
+
+- http://projectreactor.io/docs
