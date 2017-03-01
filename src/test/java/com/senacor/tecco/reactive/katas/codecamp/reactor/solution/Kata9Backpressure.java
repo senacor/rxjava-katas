@@ -2,20 +2,21 @@ package com.senacor.tecco.reactive.katas.codecamp.reactor.solution;
 
 import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.services.WikiService;
-import io.reactivex.plugins.RxJavaPlugins;
-import io.reactivex.subscribers.DisposableSubscriber;
 import org.apache.commons.lang3.StringUtils;
 import org.reactivestreams.Subscription;
+import reactor.core.Exceptions;
 import reactor.core.publisher.BaseSubscriber;
 import reactor.core.publisher.Flux;
+import reactor.core.scheduler.Scheduler;
+import reactor.core.scheduler.Schedulers;
 
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.io.InputStreamReader;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
+import static java.lang.ClassLoader.getSystemResourceAsStream;
 import static java.util.concurrent.TimeUnit.SECONDS;
-import static reactor.core.scheduler.Schedulers.elastic;
 
 /**
  * @author Andreas Keefer
@@ -23,6 +24,7 @@ import static reactor.core.scheduler.Schedulers.elastic;
 public class Kata9Backpressure {
 
     private final WikiService wikiService = new WikiService(true, 1, false);
+    private final Scheduler io = Schedulers.elastic();
 
     /**
      * run this with -Xmx64m
@@ -39,16 +41,15 @@ public class Kata9Backpressure {
         WaitMonitor monitor = new WaitMonitor();
         //String fileName = "articles.100.txt";
         //String fileName = "articles.1000.txt";
-        String fileName = "articles.10000.txt";
-        //String fileName = "articles.100000.txt";
+//        String fileName = "articles.10000.txt";
+        String fileName = "articles.100000.txt";
         //String fileName = "articles.1000000.txt";
 
         final BaseSubscriber<String> subscriber;
         readWikiArticlesFromFile(fileName)
                 .doOnNext(next -> print("reading article: %s", next))
-                .flatMap(article -> wikiService.fetchArticleFlux(article)
-                        .subscribeOn(elastic()))
-                .subscribeOn(elastic())
+                .flatMap(article -> wikiService.fetchArticleFlux(article).subscribeOn(io))
+                .subscribeOn(io)
                 .subscribe(subscriber = new BaseSubscriber<String>() {
                     @Override
                     protected void hookOnSubscribe(Subscription subscription) {
@@ -85,8 +86,8 @@ public class Kata9Backpressure {
      */
     private Flux<String> readWikiArticlesFromFile(String fileName) {
         return Flux.generate(
-                () -> Files.newBufferedReader(Paths.get(ClassLoader.getSystemResource(fileName).toURI()))
-                , (bufferedReader, emitter) -> {
+                () -> new BufferedReader(new InputStreamReader(getSystemResourceAsStream(fileName))),
+                (bufferedReader, emitter) -> {
                     try {
                         String line = bufferedReader.readLine();
                         if (line == null) {
@@ -98,8 +99,8 @@ public class Kata9Backpressure {
                         emitter.error(ex);
                     }
                     return bufferedReader;
-                }
-                , bufferedReader -> {
+                },
+                bufferedReader -> {
                     try {
                         bufferedReader.close();
                     } catch (IOException ex) {

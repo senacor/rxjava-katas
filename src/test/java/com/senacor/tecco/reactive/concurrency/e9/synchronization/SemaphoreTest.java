@@ -11,19 +11,9 @@ public class SemaphoreTest {
 
     public static void main(String args[]) {
         final SemaphoreTest test = new SemaphoreTest();
-        new Thread(){
-            @Override
-            public void run(){
-                test.mutualExclusion();
-            }
-        }.start();
+        new Thread(() -> test.mutualExclusion()).start();
 
-        new Thread(){
-            @Override
-            public void run(){
-                test.mutualExclusion();
-            }
-        }.start();
+        new Thread(() -> test.mutualExclusion()).start();
 
     }
 

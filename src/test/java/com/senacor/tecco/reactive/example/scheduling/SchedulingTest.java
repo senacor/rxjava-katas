@@ -16,7 +16,8 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 /**
  * @author Andreas Keefer
  * @version 2.0
- * @see http://reactivex.io/documentation/scheduler.html
+ *
+ * @see <a href="http://reactivex.io/documentation/scheduler.html">reactive.io</a>
  */
 public class SchedulingTest {
 
@@ -96,11 +97,6 @@ public class SchedulingTest {
 
         monitor.waitFor(5000, TimeUnit.MILLISECONDS);
         subscription.dispose();
-    }
-
-    static Observable<Integer> getDataAsync(int i) {
-        return getDataSync(i)
-                .subscribeOn(Schedulers.io());
     }
 
     static Observable<Integer> getDataSync(final int i) {

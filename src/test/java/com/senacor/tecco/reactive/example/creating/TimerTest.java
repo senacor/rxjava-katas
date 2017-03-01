@@ -19,12 +19,12 @@ public class TimerTest {
         final WaitMonitor monitor = new WaitMonitor();
         System.out.println(getThreadId() + "start...");
         Observable.timer(2, TimeUnit.SECONDS)
-                .map(ignore -> "deleyed ...")
+                .map(ignore -> "delayed ...")
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         monitor::complete
                 );
-        print("observable subscribeed...");
+        print("observable subscribed...");
         monitor.waitFor(3, TimeUnit.SECONDS);
     }
 }

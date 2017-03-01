@@ -5,6 +5,11 @@ import com.senacor.tecco.reactive.Watch;
 import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Rule;
 
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.joining;
+
 /**
  * Created by mmenzel on 27.01.2016.
  */
@@ -40,12 +45,7 @@ public class PlaneArticleBaseTest {
      * @return
      */
     public String formatPlanes(String[] planes) {
-        String result = planes[0];
-
-        for(int i= 1; i < planes.length; i++) {
-            result += " and " + planes[i];
-        }
-        return result;
+        return Stream.of(planes).collect(joining(" and "));
     }
 
 }

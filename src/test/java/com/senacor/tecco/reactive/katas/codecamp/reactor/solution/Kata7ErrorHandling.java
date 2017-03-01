@@ -2,6 +2,7 @@ package com.senacor.tecco.reactive.katas.codecamp.reactor.solution;
 
 import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.services.WikiService;
+import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;
 import org.reactivestreams.Publisher;
 import reactor.core.Disposable;
@@ -23,20 +24,20 @@ public class Kata7ErrorHandling {
 
     private final WikiService wikiService = new WikiService();
 
+    /**
+     * 1. use {@link Kata7ErrorHandling#fetchArticleFluxWithRandomErrors(String)} which randomly has a Timeout (ERROR).
+     * 2. handle error: use retries with increasing delays
+     * 3. if retries fail, use a default.
+     * 4. parse article with {@link WikiService#parseMediaWikiText(String)}
+     * 5. print {@link ParsedPage#getText()} to the console
+     *
+     * HINT: To test your retry/default behavior you can use {@link Flux#error(Throwable)}
+     */
     @Test
     public void errors() throws Exception {
-        // 1. use fetchArticleObservableWithRandomErrors which randomly has a Timeout (ERROR).
-        // 2. handle error: use retries with increasing delays
-        // 3. if retries fail, use a default.
-        // 4. parse article with wikiService.parseMediaWikiText
-        // 5. print parsedPage.getText to the console
-        //
-        // HINT: To test your retry/default behavior you can use Observable.error()
-
-
         final WaitMonitor monitor = new WaitMonitor();
         final String articleName = "42";
-        Disposable subscription = fetchArticleObservableWithRandomErrors(articleName)
+        Disposable subscription = fetchArticleFluxWithRandomErrors(articleName)
                 // delayed retry
                 .retryWhen(retryWithDelay(3))
                 // default on error
@@ -112,7 +113,7 @@ public class Kata7ErrorHandling {
         }
     }
 
-    private Flux<String> fetchArticleObservableWithRandomErrors(String articleName) {
+    private Flux<String> fetchArticleFluxWithRandomErrors(String articleName) {
         final Random randomGenerator = new Random();
         return wikiService.fetchArticleFlux(articleName)
                           .map(article -> {

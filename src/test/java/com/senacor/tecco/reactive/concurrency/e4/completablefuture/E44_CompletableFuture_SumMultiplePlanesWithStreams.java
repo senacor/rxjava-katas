@@ -27,7 +27,7 @@ public class E44_CompletableFuture_SumMultiplePlanesWithStreams extends PlaneArt
                 .map(plane -> fetchArticle(plane)
                     .thenApply(this::parseBuildCountInt))
                 //collect all build counts
-                .collect(Collectors.<CompletableFuture<Integer>>toList());
+                .collect(Collectors.toList());
 
         //wait for fulfillment of all futures
         int sumBuildCount = CompletableFuture.allOf(futures.toArray(new CompletableFuture[futures.size()]))

@@ -33,7 +33,7 @@ public class Kata2FetchArticleObservable {
         return new Article(articleName, wikiService.fetchArticle(articleName));
     }
 
-    class Article{
+    static class Article{
         public String name;
         public String content;
 

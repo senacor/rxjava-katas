@@ -25,6 +25,7 @@ import java.util.function.Consumer;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.getThreadId;
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
+import static io.reactivex.BackpressureStrategy.MISSING;
 
 /**
  * @author Andreas Keefer
@@ -105,11 +106,11 @@ public class WikiService {
             if (record && StringUtils.isNotBlank(article)) {
                 try {
                     Path path = Paths.get("./src/main/resources/mock/" + wikiArticle + ".txt");
-                    if (!path.toFile().exists()) {
+                    if (path.toFile().exists()) {
+                        print("RECORDING: mock data for Article '%s' already exists: %s", wikiArticle, path);
+                    } else {
                         print("RECORDING: writing Article '%s' to %s", wikiArticle, path);
                         Files.write(path, article.getBytes());
-                    } else {
-                        print("RECORDING: mock data for Article '%s' already exists: %s", wikiArticle, path);
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -206,7 +207,7 @@ public class WikiService {
      * ATTENTION, this is a HOT observable, which emits the Items without a subscription
      */
     public Flux<String> wikiArticleBeingReadFlux(final long interval, final TimeUnit unit) {
-        return Flux.from(wikiArticleBeingReadObservable(interval, unit).toFlowable(BackpressureStrategy.LATEST));
+        return Flux.from(wikiArticleBeingReadObservable(interval, unit).toFlowable(MISSING));
     }
 
     /**
@@ -228,6 +229,17 @@ public class WikiService {
                 }).subscribe(publishSubject);
 
         return publishSubject;
+    }
+
+    /**
+     * Erzeugt "ArticleBeingRead"-Events, also als Stream.
+     * - Es gibt immer wieder Bursts, dann kommen sehr viele Elemente in sehr kurzer Zeit
+     *
+     * @return Wiki Artikel, der gerade gelesen wird
+     * ATTENTION, this is a HOT observable, which emits the Items without a subscription
+     */
+    public Flux<String> wikiArticleBeingReadFluxBurst() {
+        return Flux.from(wikiArticleBeingReadObservableBurst().toFlowable(MISSING));
     }
 
     /**

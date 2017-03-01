@@ -86,7 +86,7 @@ public class Kata7ErrorHandling {
                                                print("randomDelay retry by %s second(s)", countAndError
                                                        .getRetryCount());
                                                return Observable
-                                                       .timer((long) countAndError.getRetryCount(), TimeUnit.SECONDS);
+                                                       .timer(countAndError.getRetryCount(), TimeUnit.SECONDS);
                                            });
     }
 

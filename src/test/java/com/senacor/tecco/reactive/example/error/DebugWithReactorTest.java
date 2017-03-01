@@ -125,7 +125,7 @@ public class DebugWithReactorTest {
     }
 
     /**
-     * The produced stack trace looks similar to the one from onlyErrorPositionIsShown.
+     * The produced stack trace looks similar to the one from @{onlyErrorPositionIsShown}.
      * There are two things which are added.
      * <ul>
      * <li>

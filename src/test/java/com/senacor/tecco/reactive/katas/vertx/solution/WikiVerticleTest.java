@@ -126,7 +126,7 @@ public class WikiVerticleTest extends VertxTestBase {
         ReactiveUtil.print(countAndRate);
     }
 
-    class CountAndRate{
+    static class CountAndRate{
         private Integer count;
         private Integer rate;
 

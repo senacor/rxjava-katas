@@ -1,9 +1,7 @@
 package com.senacor.tecco.reactive.concurrency.e1.synchronous;
 
-import com.senacor.tecco.reactive.Watch;
 import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
-import org.junit.Rule;
 import org.junit.Test;
 
 /**

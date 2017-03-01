@@ -47,7 +47,7 @@ public class Kata2FetchArticleObservable {
                           .map((article) -> new Article(articleName, article));
     }
 
-    class Article {
+    static class Article {
         public String name;
         public String content;
 

@@ -68,7 +68,7 @@ public class Kata3TransformObservable {
         return new PlaneInfo(article.name, ReactiveUtil.findValue(article.content, "number built"));
     }
 
-    class Article{
+    static class Article{
         public String name;
         public String content;
 
@@ -78,7 +78,7 @@ public class Kata3TransformObservable {
         }
     }
 
-    class PlaneInfo{
+    static class PlaneInfo{
         public String typeName;
         public String numberBuild;
 

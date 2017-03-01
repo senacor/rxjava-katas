@@ -32,8 +32,8 @@ public class E51_Streams_Introduction extends PlaneArticleBaseTest {
         String[] numbers = {"1", "2", "3"};
 
         List<String> resultList = Arrays.stream(numbers)
-                .map(number -> "Item" + number)
-                .collect(Collectors.<String>toList());
+                .map(number -> "Item " + number)
+                .collect(Collectors.toList());
 
         resultList.forEach(System.out::println);
     }

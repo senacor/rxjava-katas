@@ -1,6 +1,5 @@
 package com.senacor.tecco.reactive.concurrency.e5.streams;
 
-import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
 import com.senacor.tecco.reactive.concurrency.model.Article;

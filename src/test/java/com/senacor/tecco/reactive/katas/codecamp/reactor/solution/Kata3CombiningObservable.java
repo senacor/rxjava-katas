@@ -22,12 +22,14 @@ public class Kata3CombiningObservable {
     private final RatingService ratingService = new RatingService();
     private final CountService countService = new CountService();
 
+    /**
+     * 1. fetch and parse a wiki article
+     * 2. use {@link RatingService#rateFlux(ParsedPage)} and {@link CountService#countWordsFlux(ParsedPage)}.
+     * Combine both information as JSON and print the JSON to the console.
+     * Example {"articleName": "Superman", "rating": 3, "wordCount": 452}
+     */
     @Test
     public void combiningObservable() throws Exception {
-        // 1. fetch and parse Wikiarticle
-        // 2. use ratingService.rateObservable() and #countWordsObervable(). Combine both information as JSON
-        //    and print the JSON to the console. Example {"articleName": "Superman", "rating": 3, "wordCount": 452}
-
         WaitMonitor waitMonitor = new WaitMonitor();
 
         final String wikiArticle = "Bilbilis";
@@ -50,13 +52,8 @@ public class Kata3CombiningObservable {
         waitMonitor.waitFor(10, TimeUnit.SECONDS);
     }
 
-
     @Test
     public void combiningObservablePublish() throws Exception {
-        // 1. fetch and parse Wikiarticle
-        // 2. use ratingService.rateObservable() and #countWordsObervable(). Combine both information as JSON
-        //    and print the JSON to the console. Example {"articleName": "Superman", "rating": 3, "wordCount": 452}
-
         WaitMonitor waitMonitor = new WaitMonitor();
 
         final String wikiArticle = "Bilbilis";
@@ -78,13 +75,8 @@ public class Kata3CombiningObservable {
         waitMonitor.waitFor(10, TimeUnit.SECONDS);
     }
 
-
     @Test
     public void combiningObservablePublish2() throws Exception {
-        // 1. fetch and parse Wikiarticle
-        // 2. use ratingService.rateObservable() and #countWordsObervable(). Combine both information as JSON
-        //    and print the JSON to the console. Example {"articleName": "Superman", "rating": 3, "wordCount": 452}
-
         WaitMonitor waitMonitor = new WaitMonitor();
 
         final String wikiArticle = "Bilbilis";
@@ -103,5 +95,4 @@ public class Kata3CombiningObservable {
 
         waitMonitor.waitFor(10, TimeUnit.SECONDS);
     }
-
 }

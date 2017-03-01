@@ -2,17 +2,16 @@ package com.senacor.tecco.reactive.katas.codecamp.reactor;
 
 import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.services.WikiService;
-import io.reactivex.Observable;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.plugins.RxJavaPlugins;
-import io.reactivex.schedulers.Schedulers;
 import org.apache.commons.lang3.StringUtils;
+import reactor.core.Disposable;
+import reactor.core.publisher.Flux;
+import reactor.core.scheduler.Scheduler;
+import reactor.core.scheduler.Schedulers;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.net.URISyntaxException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 import static java.util.concurrent.TimeUnit.SECONDS;
@@ -23,15 +22,12 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 public class Kata9Backpressure {
 
     private final WikiService wikiService = new WikiService(true, 1, false);
+    private final Scheduler io = Schedulers.elastic();
 
     /**
      * run this with -Xmx64m
      */
     public static void main(String[] args) throws Exception {
-        RxJavaPlugins.setErrorHandler(error -> {
-            error.printStackTrace();
-            System.exit(1);
-        });
         new Kata9Backpressure().backpressure();
     }
 
@@ -43,21 +39,17 @@ public class Kata9Backpressure {
         WaitMonitor monitor = new WaitMonitor();
         //String fileName = "articles.100.txt";
         //String fileName = "articles.1000.txt";
-        String fileName = "articles.10000.txt";
-        //String fileName = "articles.100000.txt";
-        //String fileName = "articles.1000000.txt";
+//        String fileName = "articles.10000.txt";
+        String fileName = "articles.100000.txt";
+//        String fileName = "articles.1000000.txt";
 
         Disposable subscriber = readWikiArticlesFromFile(fileName)
-                .doOnNext(next -> print("reading article: %s", next))
-                .flatMap(article -> wikiService.fetchArticleObservable(article)
-                        .subscribeOn(Schedulers.io()))
-                .subscribeOn(Schedulers.io())
+                .flatMap(article -> wikiService.fetchArticleFlux(article).subscribeOn(io))
+                .subscribeOn(io)
+//                .log()
                 .subscribe(this::write,
                         Throwable::printStackTrace,
-                        () -> {
-                            print("complete!");
-                            monitor.complete();
-                        });
+                        monitor::complete);
 
         monitor.waitFor(120, SECONDS);
         subscriber.dispose();
@@ -69,30 +61,18 @@ public class Kata9Backpressure {
      * @param fileName File name (e.g. "articles.100.txt")
      * @return stream of Article names from File (line-by-line)
      */
-    private Observable<String> readWikiArticlesFromFile(String fileName) {
-        return Observable.create(emitter -> {
-            BufferedReader bufferedReader;
-            try {
-                bufferedReader = Files.newBufferedReader(Paths.get(ClassLoader.getSystemResource(fileName).toURI()));
-            } catch (IOException | URISyntaxException e) {
-                emitter.onError(e);
-                return;
-            }
-            try {
+    private Flux<String> readWikiArticlesFromFile(String fileName) {
+        return Flux.create(emitter -> {
+            InputStream file = ClassLoader.getSystemResourceAsStream(fileName);
+            try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(file))) {
                 String line = bufferedReader.readLine();
-                while (line != null && !emitter.isDisposed()) {
-                    emitter.onNext(line);
+                while (line != null && !emitter.isCancelled()) {
+                    emitter.next(line);
                     line = bufferedReader.readLine();
                 }
-                emitter.onComplete();
+                emitter.complete();
             } catch (IOException ex) {
-                emitter.onError(ex);
-            } finally {
-                try {
-                    bufferedReader.close();
-                } catch (IOException ex) {
-                    ex.printStackTrace();
-                }
+                emitter.error(ex);
             }
         });
     }

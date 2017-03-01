@@ -1,11 +1,14 @@
 package com.senacor.tecco.reactive.katas.codecamp.reactor;
 
+import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
 
 /**
  * @author Andreas Keefer
  */
 public class Kata6WikiLinks {
+
+    private final WikiService wikiService = new WikiService();
 
     @Test
     public void linksObservable() throws Exception {
@@ -15,7 +18,6 @@ public class Kata6WikiLinks {
         // 3. if that works: add a recursion that loads the articles for the links and print all links contained in the article
         // 4. measure the performance and optimize the performance with scheduler
         // 5. do not print a combination <Start_Artikel> -> <Link/Artikel_Name> twice
-        //wikiService.fetchArticleObservable(...);
+        wikiService.fetchArticleFlux("Observable");
     }
-
 }

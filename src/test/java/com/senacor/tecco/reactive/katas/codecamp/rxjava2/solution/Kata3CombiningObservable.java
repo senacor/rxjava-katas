@@ -5,9 +5,7 @@ import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
-import io.reactivex.Flowable;
 import io.reactivex.Observable;
-import io.reactivex.flowables.ConnectableFlowable;
 import io.reactivex.observables.ConnectableObservable;
 import org.junit.Test;
 

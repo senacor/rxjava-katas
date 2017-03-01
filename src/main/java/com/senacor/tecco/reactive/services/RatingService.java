@@ -1,9 +1,7 @@
 package com.senacor.tecco.reactive.services;
 
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
-import io.reactivex.Flowable;
 import io.reactivex.Observable;
-import org.reactivestreams.Publisher;
 import reactor.core.publisher.Flux;
 
 import java.math.BigDecimal;

@@ -15,7 +15,7 @@ public class Kata1CreateObservable {
     public static final String ARTICLE_NAME = "Observable";
 
     @Test
-    public void erzeugeEinObservable() throws Exception {
+    public void createAnObservable() throws Exception {
         Mono.<Article>create(sink -> {
             try {
                 sink.success(getArticle(ARTICLE_NAME));
@@ -28,7 +28,7 @@ public class Kata1CreateObservable {
     }
 
     @Test
-    public void erzeugeEinObservable2() throws Exception {
+    public void createAnObservable2() throws Exception {
         Mono.just(ARTICLE_NAME)
                 .map(this::getArticle)
                 .map(Article::getText)

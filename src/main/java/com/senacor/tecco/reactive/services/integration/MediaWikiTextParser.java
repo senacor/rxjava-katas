@@ -4,11 +4,6 @@ import com.senacor.tecco.reactive.ReactiveUtil;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import de.tudarmstadt.ukp.wikipedia.parser.mediawiki.MediaWikiParser;
 import de.tudarmstadt.ukp.wikipedia.parser.mediawiki.MediaWikiParserFactory;
-import io.reactivex.Flowable;
-import io.reactivex.Observable;
-
-import java.text.ParseException;
-import java.util.Optional;
 
 /**
  * @author Andreas Keefer
@@ -22,7 +17,7 @@ public class MediaWikiTextParser {
         final long start = System.currentTimeMillis();
         ParsedPage res = parser.parse(mediaWikiText);
         if (res == null) {
-            throw new IllegalArgumentException("text not parseable: \"" + mediaWikiText + "\"");
+            throw new IllegalArgumentException("text not parseable: \"" + mediaWikiText + '"');
         }
 
         System.out.println(ReactiveUtil.getThreadId() + "profiling parse("

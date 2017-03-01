@@ -26,7 +26,7 @@ public class ZipTest {
                 .take(2, TimeUnit.SECONDS)
                 .map(value -> "second " + value);
 
-        Disposable subscription = Observable.zip(stream1, stream2, (s1, s2) -> "{" + s1 + " + " + s2 + "}")
+        Disposable subscription = Observable.zip(stream1, stream2, (s1, s2) -> '{' + s1 + " + " + s2 + '}')
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         monitor::complete);
@@ -46,7 +46,7 @@ public class ZipTest {
                 .take(2, TimeUnit.SECONDS)
                 .map(value -> "second " + value);
 
-        Disposable subscription = stream1.zipWith(stream2, (s1, s2) -> "{" + s1 + " + " + s2 + "}")
+        Disposable subscription = stream1.zipWith(stream2, (s1, s2) -> '{' + s1 + " + " + s2 + '}')
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         monitor::complete);

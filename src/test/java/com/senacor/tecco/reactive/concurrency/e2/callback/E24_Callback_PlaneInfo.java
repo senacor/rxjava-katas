@@ -77,7 +77,7 @@ public class E24_Callback_PlaneInfo extends PlaneArticleBaseTest {
         return ratingService.rate(parsedPage);
     }
 
-    class PlaneArticleInfo{
+    static class PlaneArticleInfo{
         public String typeName;
         public String planeBuildCount;
         public int wordCound;

@@ -1,12 +1,7 @@
 package com.senacor.tecco.reactive.concurrency.e3.future;
 
-import com.senacor.tecco.reactive.Watch;
 import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
-import com.senacor.tecco.reactive.services.CountService;
-import com.senacor.tecco.reactive.services.RatingService;
-import com.senacor.tecco.reactive.services.WikiService;
-import org.junit.Rule;
 import org.junit.Test;
 
 import java.util.concurrent.Future;
