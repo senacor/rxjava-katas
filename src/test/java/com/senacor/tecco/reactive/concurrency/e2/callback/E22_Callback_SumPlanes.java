@@ -13,10 +13,12 @@ import java.util.function.Consumer;
  *
  * @author Dr. Michael Menzel, Sencaor Technologies AG
  */
-public class E22_Callback_SumPlanes extends PlaneArticleBaseTest{
+public class E22_Callback_SumPlanes extends PlaneArticleBaseTest {
 
     // error handler function
-    Consumer<Exception> exceptionConsumer = (e)->{e.printStackTrace();};
+    Consumer<Exception> exceptionConsumer = (e) -> {
+        e.printStackTrace();
+    };
 
     @Test
     public void thatPlaneBuildCountIsSummedUpWithCallback() throws Exception {
@@ -34,7 +36,7 @@ public class E22_Callback_SumPlanes extends PlaneArticleBaseTest{
             }, exceptionConsumer);
         }, exceptionConsumer);
 
-        monitor.waitFor(3000,TimeUnit.MILLISECONDS);
+        monitor.waitFor(3000, TimeUnit.MILLISECONDS);
     }
 
     // fetches an article from Wikipedia

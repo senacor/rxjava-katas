@@ -3,7 +3,7 @@ package com.senacor.tecco.reactive.concurrency.model;
 /**
  * Created by mmenzel on 27.01.2016.
  */
-public class PlaneInfo{
+public class PlaneInfo {
     public String typeName;
     public int numberBuild;
 
@@ -17,7 +17,7 @@ public class PlaneInfo{
         this.numberBuild = numberBuild;
     }
 
-    public void appendTypeName(String name){
+    public void appendTypeName(String name) {
         this.typeName += name;
     }
 

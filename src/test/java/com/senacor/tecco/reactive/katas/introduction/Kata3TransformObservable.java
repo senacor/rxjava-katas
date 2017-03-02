@@ -30,7 +30,7 @@ public class Kata3TransformObservable {
      */
     Observable<Article> fetchArticle(String articleName) {
         return wikiService.fetchArticleObservable(articleName)
-                          .map((article) -> new Article(articleName, article));
+                .map((article) -> new Article(articleName, article));
     }
 
     /**
@@ -65,9 +65,9 @@ public class Kata3TransformObservable {
         @Override
         public String toString() {
             return "PlaneInfo{" +
-                   "typeName='" + typeName + '\'' +
-                   ", numberBuild='" + numberBuild + '\'' +
-                   '}';
+                    "typeName='" + typeName + '\'' +
+                    ", numberBuild='" + numberBuild + '\'' +
+                    '}';
         }
     }
 

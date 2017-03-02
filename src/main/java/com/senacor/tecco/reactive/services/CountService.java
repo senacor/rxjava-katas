@@ -1,6 +1,7 @@
 package com.senacor.tecco.reactive.services;
 
-import com.senacor.tecco.reactive.util.*;
+import com.senacor.tecco.reactive.util.DelayFunction;
+import com.senacor.tecco.reactive.util.FlakinessFunction;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.Observable;
 import reactor.core.publisher.Flux;
@@ -27,11 +28,8 @@ public interface CountService {
     }
 
     static CountService create(DelayFunction delayFunction,
-                                      FlakinessFunction flakinessFunction) {
-        return StopWatchProxy.newJdkProxy(
-                DelayProxy.newJdkProxy(
-                        FlakyProxy.newJdkProxy(new CountServiceImpl(), flakinessFunction)
-                        , delayFunction));
+                               FlakinessFunction flakinessFunction) {
+        return new CountServiceImpl(flakinessFunction, delayFunction);
     }
 
     Observable<Integer> countWordsObservable(ParsedPage parsedPage);

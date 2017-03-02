@@ -24,13 +24,13 @@ public class Kata4FilteringObservable {
         final WaitMonitor monitor = new WaitMonitor();
 
         Disposable subscription = wikiService.wikiArticleBeingReadObservable(500, TimeUnit.MILLISECONDS)
-                                             .filter(name -> name.length() >= 15)
-                                             .subscribe(next -> print("PASS THROUGH: %s", next),
-                                                     Throwable::printStackTrace,
-                                                     () -> {
-                                                         print("complete!");
-                                                         monitor.complete();
-                                                     });
+                .filter(name -> name.length() >= 15)
+                .subscribe(next -> print("PASS THROUGH: %s", next),
+                        Throwable::printStackTrace,
+                        () -> {
+                            print("complete!");
+                            monitor.complete();
+                        });
 
         monitor.waitFor(10, TimeUnit.SECONDS);
         subscription.dispose();
@@ -45,13 +45,13 @@ public class Kata4FilteringObservable {
         final WaitMonitor monitor = new WaitMonitor();
 
         Disposable subscription = wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS)
-                                             .sample(500, TimeUnit.MILLISECONDS)
-                                             .subscribe(next -> print("PASS THROUGH: %s", next),
-                                                     Throwable::printStackTrace,
-                                                     () -> {
-                                                         print("complete!");
-                                                         monitor.complete();
-                                                     });
+                .sample(500, TimeUnit.MILLISECONDS)
+                .subscribe(next -> print("PASS THROUGH: %s", next),
+                        Throwable::printStackTrace,
+                        () -> {
+                            print("complete!");
+                            monitor.complete();
+                        });
 
         monitor.waitFor(5, TimeUnit.SECONDS);
         subscription.dispose();

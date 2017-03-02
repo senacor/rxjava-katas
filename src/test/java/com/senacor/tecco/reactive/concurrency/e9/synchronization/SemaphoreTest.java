@@ -19,7 +19,7 @@ public class SemaphoreTest {
 
     private void mutualExclusion() {
         try {
-           binary.acquire();
+            binary.acquire();
 
             //mutual exclusive region
             System.out.println(Thread.currentThread().getName() + " inside mutual exclusive region");

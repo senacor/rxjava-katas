@@ -20,9 +20,9 @@ public class E51_Streams_Introduction extends PlaneArticleBaseTest {
         int[] numbers = {1, 2, 3};
 
         Arrays.stream(numbers)
-                .map(number -> number *10)
+                .map(number -> number * 10)
                 .forEach(number -> {
-                    System.out.printf("Item %d \n",number);
+                    System.out.printf("Item %d \n", number);
                 });
     }
 

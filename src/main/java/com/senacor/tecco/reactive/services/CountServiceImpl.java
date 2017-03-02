@@ -1,25 +1,28 @@
 package com.senacor.tecco.reactive.services;
 
+import com.senacor.tecco.reactive.services.integration.CounterBackend;
+import com.senacor.tecco.reactive.services.integration.CounterBackendImpl;
 import com.senacor.tecco.reactive.util.*;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.Observable;
-import org.apache.commons.lang3.Validate;
 import reactor.core.publisher.Flux;
 
-import java.util.StringTokenizer;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-import static com.senacor.tecco.reactive.ReactiveUtil.print;
-
 public class CountServiceImpl implements CountService {
 
-    CountServiceImpl() {
-    }
-
+    private final CounterBackend counterBackend;
     private final ExecutorService pool = Executors.newFixedThreadPool(4);
+
+    CountServiceImpl(FlakinessFunction flakinessFunction, DelayFunction delayFunction) {
+        this.counterBackend = StopWatchProxy.newJdkProxy(
+                DelayProxy.newJdkProxy(
+                        FlakyProxy.newJdkProxy(new CounterBackendImpl(), flakinessFunction)
+                        , delayFunction));
+    }
 
     @Override
     public Observable<Integer> countWordsObservable(final ParsedPage parsedPage) {
@@ -44,10 +47,6 @@ public class CountServiceImpl implements CountService {
 
     @Override
     public int countWords(final ParsedPage parsedPage) {
-        Validate.notNull(parsedPage, "parsedPage must not be null");
-        String text = parsedPage.getText();
-        int wordCount = new StringTokenizer(text, " ").countTokens();
-        print("countWords: %s", wordCount);
-        return wordCount;
+        return counterBackend.countWords(parsedPage);
     }
 }

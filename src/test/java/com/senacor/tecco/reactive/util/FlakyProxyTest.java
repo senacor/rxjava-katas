@@ -46,14 +46,14 @@ public class FlakyProxyTest {
     @Test
     public void failCountDown() throws Exception {
         DummyService target = new DummyServiceImpl();
-        DummyService dummyService = FlakyProxy.newJdkProxy(target, FlakinessFunction.failCountDown(3));
-        dummyService.countWords(parsedPage);
-        dummyService.countWords(parsedPage);
+        DummyService dummyService = FlakyProxy.newJdkProxy(target, FlakinessFunction.failCountDown(1));
         try {
             dummyService.countWords(parsedPage);
             fail("UncheckedIOException expected");
         } catch (UncheckedIOException e) {
             assertThat(e.getCause(), instanceOf(IOException.class));
         }
+        dummyService.countWords(parsedPage);
+        dummyService.countWords(parsedPage);
     }
 }

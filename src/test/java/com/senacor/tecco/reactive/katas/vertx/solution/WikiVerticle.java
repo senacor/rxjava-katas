@@ -1,7 +1,9 @@
 package com.senacor.tecco.reactive.katas.vertx.solution;
 
 import com.senacor.tecco.reactive.katas.vertx.ParsedPageCodec;
-import com.senacor.tecco.reactive.services.*;
+import com.senacor.tecco.reactive.services.CountService;
+import com.senacor.tecco.reactive.services.RatingService;
+import com.senacor.tecco.reactive.services.WikiService;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.logging.Logger;

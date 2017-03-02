@@ -3,9 +3,7 @@ package com.senacor.tecco.reactive.concurrency.e2.callback;
 import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
 import com.senacor.tecco.reactive.services.CountService;
-import com.senacor.tecco.reactive.services.CountServiceImpl;
 import com.senacor.tecco.reactive.services.RatingService;
-import com.senacor.tecco.reactive.services.RatingServiceImpl;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;
 
@@ -24,7 +22,9 @@ public class E24_Callback_PlaneInfo extends PlaneArticleBaseTest {
     private final RatingService ratingService = RatingService.create();
 
     // error handler function
-    Consumer<Exception> exceptionConsumer = (e)->{e.printStackTrace();};
+    Consumer<Exception> exceptionConsumer = (e) -> {
+        e.printStackTrace();
+    };
 
     @Test
     public void thatPlaneInfosAreCombineWithCallback() throws Exception {
@@ -79,7 +79,7 @@ public class E24_Callback_PlaneInfo extends PlaneArticleBaseTest {
         return ratingService.rate(parsedPage);
     }
 
-    static class PlaneArticleInfo{
+    static class PlaneArticleInfo {
         public String typeName;
         public String planeBuildCount;
         public int wordCound;

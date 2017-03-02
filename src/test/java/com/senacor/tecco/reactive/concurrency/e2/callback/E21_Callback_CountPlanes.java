@@ -16,7 +16,9 @@ import java.util.function.Consumer;
 public class E21_Callback_CountPlanes extends PlaneArticleBaseTest {
 
     // error handler function
-    Consumer<Exception> exceptionConsumer = (e)->{e.printStackTrace();};
+    Consumer<Exception> exceptionConsumer = (e) -> {
+        e.printStackTrace();
+    };
 
     @Test
     public void thatPlaneBuildCountIsFetchedWithCallback() throws Exception {
@@ -42,7 +44,7 @@ public class E21_Callback_CountPlanes extends PlaneArticleBaseTest {
             monitor.complete();
         }, exceptionConsumer);
 
-        monitor.waitFor(3000,TimeUnit.MILLISECONDS);
+        monitor.waitFor(3000, TimeUnit.MILLISECONDS);
     }
 
     // fetches an article from Wikipedia

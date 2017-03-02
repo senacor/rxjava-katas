@@ -26,6 +26,7 @@ public class Kata2FetchArticleObservable {
 
     /**
      * fetches an article from the wikipedia
+     *
      * @param articleName name of the wikipedia article
      * @return an article
      */
@@ -33,7 +34,7 @@ public class Kata2FetchArticleObservable {
         return new Article(articleName, wikiService.fetchArticle(articleName));
     }
 
-    static class Article{
+    static class Article {
         public String name;
         public String content;
 

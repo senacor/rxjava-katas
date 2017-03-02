@@ -2,8 +2,6 @@ package com.senacor.tecco.reactive.services.integration;
 
 import com.bitplan.mediawiki.japi.Mediawiki;
 
-import static com.senacor.tecco.reactive.ReactiveUtil.getThreadId;
-
 /**
  * @author Andreas Keefer
  */
@@ -24,23 +22,20 @@ public class WikipediaServiceJapiImpl implements WikipediaServiceJapi {
     }
 
     protected String getPageContent(String name) throws Exception {
-        String pageContent = wiki.getPageContent(name);
-        if (pageContent == null) {
-            throw new IllegalArgumentException("no page found with name: " + name);
-        }
-        return pageContent;
+        return wiki.getPageContent(name);
     }
 
     @Override
     public String getArticle(String name) {
+        String pageContent;
         try {
-            final long start = System.currentTimeMillis();
-            String res = getPageContent(name);
-            System.out.println(getThreadId() +
-                               "profiling getArticle(" + name + "): " + (System.currentTimeMillis() - start) + "ms");
-            return res;
+            pageContent = getPageContent(name);
         } catch (Exception e) {
             throw new IllegalStateException(e);
         }
+        if (pageContent == null) {
+            throw new ArticleNotFoundException("no page found with name: " + name);
+        }
+        return pageContent;
     }
 }

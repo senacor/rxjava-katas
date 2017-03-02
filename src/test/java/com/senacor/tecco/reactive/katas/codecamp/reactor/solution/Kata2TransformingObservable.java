@@ -1,12 +1,9 @@
 package com.senacor.tecco.reactive.katas.codecamp.reactor.solution;
 
 import com.senacor.tecco.reactive.services.CountService;
-import com.senacor.tecco.reactive.services.CountServiceImpl;
 import com.senacor.tecco.reactive.services.WikiService;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
-import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
-import reactor.core.publisher.Flux;
 
 import java.util.Arrays;
 
@@ -29,10 +26,10 @@ public class Kata2TransformingObservable {
     public void transformingObservable() throws Exception {
         wikiService.fetchArticleFlux("Bilbilis")
 //                   .log()
-                   .flatMap(wikiService::parseMediaWikiTextFlux)
+                .flatMap(wikiService::parseMediaWikiTextFlux)
 //                   .log()
-                   .flatMapIterable(parsedPage -> Arrays.asList(parsedPage.getText().split(" ")))
-                   .filter(word -> word.startsWith("a"))
-                   .subscribe(next -> print("next: %s", next), Throwable::printStackTrace);
+                .flatMapIterable(parsedPage -> Arrays.asList(parsedPage.getText().split(" ")))
+                .filter(word -> word.startsWith("a"))
+                .subscribe(next -> print("next: %s", next), Throwable::printStackTrace);
     }
 }

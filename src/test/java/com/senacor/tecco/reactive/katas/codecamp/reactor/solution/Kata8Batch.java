@@ -3,7 +3,6 @@ package com.senacor.tecco.reactive.katas.codecamp.reactor.solution;
 import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.services.PersistService;
-import com.senacor.tecco.reactive.services.PersistServiceImpl;
 import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
 import reactor.core.Disposable;
@@ -34,16 +33,16 @@ public class Kata8Batch {
         final WaitMonitor monitor = new WaitMonitor();
 
         Disposable subscribe = wikiService.wikiArticleBeingReadFluxBurst()
-                                          .take(Duration.of(2, SECONDS))
-                                          .doOnNext(ReactiveUtil::print)
-                                          .map(persistService::save)
-                                          .reduce((l, r) -> l + r)
-                                          .subscribe(next -> print("save runtime (SUM): %s ms", next),
-                                                  Throwable::printStackTrace,
-                                                  () -> {
-                                                      print("complete!");
-                                                      monitor.complete();
-                                                  });
+                .take(Duration.of(2, SECONDS))
+                .doOnNext(ReactiveUtil::print)
+                .map(persistService::save)
+                .reduce((l, r) -> l + r)
+                .subscribe(next -> print("save runtime (SUM): %s ms", next),
+                        Throwable::printStackTrace,
+                        () -> {
+                            print("complete!");
+                            monitor.complete();
+                        });
 
         monitor.waitFor(10, TimeUnit.SECONDS);
         subscribe.dispose();
@@ -59,17 +58,17 @@ public class Kata8Batch {
         final WaitMonitor monitor = new WaitMonitor();
 
         Disposable subscribe = wikiService.wikiArticleBeingReadFluxBurst()
-                                          .take(Duration.of(2, SECONDS))
-                                          .doOnNext(ReactiveUtil::print)
-                                          .buffer(Duration.of(500, MILLIS))
-                                          .map(persistService::save)
-                                          .reduce((l, r) -> l + r)
-                                          .subscribe(next -> print("save runtime (SUM): %s ms", next),
-                                                  Throwable::printStackTrace,
-                                                  () -> {
-                                                      print("complete!");
-                                                      monitor.complete();
-                                                  });
+                .take(Duration.of(2, SECONDS))
+                .doOnNext(ReactiveUtil::print)
+                .buffer(Duration.of(500, MILLIS))
+                .map(persistService::save)
+                .reduce((l, r) -> l + r)
+                .subscribe(next -> print("save runtime (SUM): %s ms", next),
+                        Throwable::printStackTrace,
+                        () -> {
+                            print("complete!");
+                            monitor.complete();
+                        });
 
         monitor.waitFor(10, TimeUnit.SECONDS);
         subscribe.dispose();

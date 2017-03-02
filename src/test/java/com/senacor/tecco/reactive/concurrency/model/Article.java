@@ -3,7 +3,7 @@ package com.senacor.tecco.reactive.concurrency.model;
 /**
  * Created by mmenzel on 27.01.2016.
  */
-public class Article{
+public class Article {
     public String name;
     public String content;
 

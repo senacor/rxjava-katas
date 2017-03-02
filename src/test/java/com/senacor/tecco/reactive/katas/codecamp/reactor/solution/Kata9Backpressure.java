@@ -6,7 +6,6 @@ import com.senacor.tecco.reactive.util.DelayFunction;
 import com.senacor.tecco.reactive.util.FlakinessFunction;
 import org.apache.commons.lang3.StringUtils;
 import org.reactivestreams.Subscription;
-import reactor.core.Exceptions;
 import reactor.core.publisher.BaseSubscriber;
 import reactor.core.publisher.Flux;
 import reactor.core.scheduler.Scheduler;

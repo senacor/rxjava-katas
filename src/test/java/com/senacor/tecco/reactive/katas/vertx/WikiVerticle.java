@@ -1,7 +1,6 @@
 package com.senacor.tecco.reactive.katas.vertx;
 
 import com.senacor.tecco.reactive.services.WikiService;
-import com.senacor.tecco.reactive.services.WikiServiceImpl;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.logging.Logger;
 import io.vertx.core.logging.LoggerFactory;
@@ -19,7 +18,7 @@ public class WikiVerticle extends AbstractVerticle {
     public void start() throws Exception {
         vertx.eventBus().<String>consumer("fetchArticle").handler(msg ->
                 wikiService.fetchArticleObservable(msg.body())
-                           .subscribe(msg::reply)
+                        .subscribe(msg::reply)
         );
     }
 }

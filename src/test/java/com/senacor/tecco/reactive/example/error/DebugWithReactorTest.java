@@ -46,7 +46,7 @@ public class DebugWithReactorTest {
     private Flux<Integer> queryProductValues(String teamName, int factor, int max) {
         int maxHalf = max / 2;
         return Flux.range(random.nextInt(maxHalf), random.nextInt(maxHalf) + maxHalf)
-                   .map(i -> i / factor);
+                .map(i -> i / factor);
     }
 
     private Flux<String> queryTeam(String teamName) {
@@ -55,18 +55,18 @@ public class DebugWithReactorTest {
 
     private Mono<String> queryTeamReport(String teamName) {
         return queryTeam(teamName).collectList()
-                                  .flatMap(team -> queryProductValues(teamName, team.size(), 100)
-                                          .reduce((a, b) -> a + b)
-                                          .map(sum -> "The team members:\n" +
-                                                      team.stream().collect(joining(", ")) +
-                                                      "\nproduced per member:\n" + sum + '\n')
-                                  ).single();
+                .flatMap(team -> queryProductValues(teamName, team.size(), 100)
+                        .reduce((a, b) -> a + b)
+                        .map(sum -> "The team members:\n" +
+                                team.stream().collect(joining(", ")) +
+                                "\nproduced per member:\n" + sum + '\n')
+                ).single();
     }
 
     private Mono<String> querySalesReport() {
         return queryProductValues("*", 1, 8).map(i -> "product with value: " + i)
-                                            .reduce((a, b) -> a + '\n' + b)
-                                            .map(r -> "Produced:\n" + r + '\n');
+                .reduce((a, b) -> a + '\n' + b)
+                .map(r -> "Produced:\n" + r + '\n');
     }
 
     private Flux<String> reportsStream() {

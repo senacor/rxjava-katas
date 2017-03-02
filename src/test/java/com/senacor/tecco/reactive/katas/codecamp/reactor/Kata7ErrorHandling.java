@@ -2,7 +2,6 @@ package com.senacor.tecco.reactive.katas.codecamp.reactor;
 
 import com.senacor.tecco.reactive.services.WikiService;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
-import io.reactivex.Observable;
 import org.junit.Test;
 import reactor.core.publisher.Flux;
 
@@ -21,7 +20,7 @@ public class Kata7ErrorHandling {
      * 3. if retries fail, use a default.
      * 4. parse article with {@link WikiService#parseMediaWikiText(String)}
      * 5. print {@link ParsedPage#getText()} to the console
-     *
+     * <p>
      * HINT: To test your retry/default behavior you can use {@link Flux#error(Throwable)}
      */
     @Test
@@ -33,11 +32,11 @@ public class Kata7ErrorHandling {
     private Flux<String> fetchArticleFluxWithRandomErrors(String articleName) {
         final Random randomGenerator = new Random(12L);
         return wikiService.fetchArticleFlux(articleName)
-                          .map(article -> {
-                              if (randomGenerator.nextInt() % 2 == 0) {
-                                  throw new IllegalStateException("timeout");
-                              }
-                              return article;
-                          });
+                .map(article -> {
+                    if (randomGenerator.nextInt() % 2 == 0) {
+                        throw new IllegalStateException("timeout");
+                    }
+                    return article;
+                });
     }
 }

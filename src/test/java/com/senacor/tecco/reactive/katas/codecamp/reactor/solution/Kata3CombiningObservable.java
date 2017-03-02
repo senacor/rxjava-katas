@@ -1,7 +1,9 @@
 package com.senacor.tecco.reactive.katas.codecamp.reactor.solution;
 
 import com.senacor.tecco.reactive.WaitMonitor;
-import com.senacor.tecco.reactive.services.*;
+import com.senacor.tecco.reactive.services.CountService;
+import com.senacor.tecco.reactive.services.RatingService;
+import com.senacor.tecco.reactive.services.WikiService;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;
 import reactor.core.publisher.ConnectableFlux;
@@ -32,20 +34,20 @@ public class Kata3CombiningObservable {
 
         final String wikiArticle = "Bilbilis";
         wikiService.fetchArticleFlux(wikiArticle)
-                   .flatMap(wikiService::parseMediaWikiTextFlux)
-                   .flatMap(parsedPage -> {
-                       Flux<ParsedPage> p = Flux.just(parsedPage);
-                       Flux<Integer> rating = p.flatMap(ratingService::rateFlux);
-                       Flux<Integer> wordCount = p.flatMap(countService::countWordsFlux);
+                .flatMap(wikiService::parseMediaWikiTextFlux)
+                .flatMap(parsedPage -> {
+                    Flux<ParsedPage> p = Flux.just(parsedPage);
+                    Flux<Integer> rating = p.flatMap(ratingService::rateFlux);
+                    Flux<Integer> wordCount = p.flatMap(countService::countWordsFlux);
 
-                       return rating.zipWith(wordCount,
-                               (r, wc) -> String.format("{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
-                                       wikiArticle, r, wc)
-                       );
-                   })
-                   .subscribe(next -> print("next: %s", next),
-                           Throwable::printStackTrace,
-                           waitMonitor::complete);
+                    return rating.zipWith(wordCount,
+                            (r, wc) -> String.format("{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
+                                    wikiArticle, r, wc)
+                    );
+                })
+                .subscribe(next -> print("next: %s", next),
+                        Throwable::printStackTrace,
+                        waitMonitor::complete);
 
         waitMonitor.waitFor(10, TimeUnit.SECONDS);
     }
@@ -56,8 +58,8 @@ public class Kata3CombiningObservable {
 
         final String wikiArticle = "Bilbilis";
         ConnectableFlux<ParsedPage> connectableFlux = wikiService.fetchArticleFlux(wikiArticle)
-                                                                 .flatMap(wikiService::parseMediaWikiTextFlux)
-                                                                 .publish();
+                .flatMap(wikiService::parseMediaWikiTextFlux)
+                .publish();
 
         Flux<Integer> ratingObservable = connectableFlux.flatMap(ratingService::rateFlux);
         Flux<Integer> wordCountObservable = connectableFlux.flatMap(countService::countWordsFlux);
@@ -66,9 +68,9 @@ public class Kata3CombiningObservable {
         ratingObservable.zipWith(wordCountObservable, (r, wc) -> String.format(
                 "{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
                 wikiArticle, r, wc))
-                        .subscribe(next -> print("next: %s", next),
-                                Throwable::printStackTrace,
-                                () -> waitMonitor.complete());
+                .subscribe(next -> print("next: %s", next),
+                        Throwable::printStackTrace,
+                        () -> waitMonitor.complete());
 
         waitMonitor.waitFor(10, TimeUnit.SECONDS);
     }
@@ -79,7 +81,7 @@ public class Kata3CombiningObservable {
 
         final String wikiArticle = "Bilbilis";
         Flux<ParsedPage> pages = wikiService.fetchArticleFlux(wikiArticle)
-                                            .flatMap(wikiService::parseMediaWikiTextFlux);
+                .flatMap(wikiService::parseMediaWikiTextFlux);
 
         Flux<Integer> ratingObservable = pages.flatMap(ratingService::rateFlux);
         Flux<Integer> wordCountObservable = pages.flatMap(countService::countWordsFlux);
@@ -87,9 +89,9 @@ public class Kata3CombiningObservable {
         ratingObservable.zipWith(wordCountObservable, (r, wc) -> String.format(
                 "{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
                 wikiArticle, r, wc))
-                        .subscribe(next -> print("next: %s", next),
-                                Throwable::printStackTrace,
-                                () -> waitMonitor.complete());
+                .subscribe(next -> print("next: %s", next),
+                        Throwable::printStackTrace,
+                        () -> waitMonitor.complete());
 
         waitMonitor.waitFor(10, TimeUnit.SECONDS);
     }

@@ -2,7 +2,6 @@ package com.senacor.tecco.reactive.katas.codecamp.rxjava2.solution;
 
 import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.services.WikiService;
-import com.senacor.tecco.reactive.services.WikiServiceImpl;
 import com.senacor.tecco.reactive.util.DelayFunction;
 import com.senacor.tecco.reactive.util.FlakinessFunction;
 import io.reactivex.Flowable;

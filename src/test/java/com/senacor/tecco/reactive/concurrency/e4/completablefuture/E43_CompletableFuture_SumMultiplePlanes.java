@@ -16,27 +16,27 @@ public class E43_CompletableFuture_SumMultiplePlanes extends PlaneArticleBaseTes
     @Test
     public void thatPlaneBuildCountIsSummedUpWithCompletableFuture() throws Exception {
 
-        String[] planes = {"Boeing 777","Boeing 747"};
+        String[] planes = {"Boeing 777", "Boeing 747"};
 
         //create List of CompletableFutures for build count
         CompletableFuture<Integer>[] futures = new CompletableFuture[planes.length];
 
-        for(int i= 0; i < planes.length; i++) {
+        for (int i = 0; i < planes.length; i++) {
             futures[i] = fetchArticle(planes[i])
                     .thenApply(this::parseBuildCountInt);
         }
 
         //wait for fulfillment of all futures
         int sumBuildCount = CompletableFuture.allOf(futures)
-            .thenApply((v) -> {
-                //collect all results and sum up
-                int sum = 0;
-                for(CompletableFuture<Integer> future: futures){
-                    sum += future.join();
-                }
-                return(sum);
-            })
-            .get();
+                .thenApply((v) -> {
+                    //collect all results and sum up
+                    int sum = 0;
+                    for (CompletableFuture<Integer> future : futures) {
+                        sum += future.join();
+                    }
+                    return (sum);
+                })
+                .get();
 
         Summary.printCounter(formatPlanes(planes), sumBuildCount);
     }

@@ -16,13 +16,13 @@ public class E13_Synchronous_SumMultiplePlanes extends PlaneArticleBaseTest {
     @Test
     public void thatPlaneBuildCountIsSummedUpSynchronously() throws Exception {
 
-        String[] planes = {"Boeing 777","Boeing 747"};
+        String[] planes = {"Boeing 777", "Boeing 747"};
         int buildCountSum = 0;
 
-        for(String plane : planes){
+        for (String plane : planes) {
 
             //get article
-            String article  = fetchArticle(plane);
+            String article = fetchArticle(plane);
 
             //extract number of built planes and calculate sum
             buildCountSum += parseBuildCountInt(article);

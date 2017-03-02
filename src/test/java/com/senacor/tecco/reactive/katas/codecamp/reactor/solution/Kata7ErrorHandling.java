@@ -30,7 +30,7 @@ public class Kata7ErrorHandling {
      * 3. if retries fail, use a default.
      * 4. parse article with {@link WikiService#parseMediaWikiText(String)}
      * 5. print {@link ParsedPage#getText()} to the console
-     *
+     * <p>
      * HINT: To test your retry/default behavior you can use {@link Flux#error(Throwable)}
      */
     @Test
@@ -82,17 +82,17 @@ public class Kata7ErrorHandling {
 
     private Function<Flux<Throwable>, ? extends Publisher<?>> retryWithDelay(final int maxRetries) {
         return attempts -> attempts.zipWith(Flux.range(1, maxRetries + 1), ErrorWithRetryCount::new)
-                                   .flatMap(
-                                           countAndError -> {
-                                               if (countAndError.getRetryCount() > maxRetries) {
-                                                   throw Exceptions.propagate(countAndError.getThrowable());
-                                               }
-                                               print("randomDelay retry by %s second(s)", countAndError
-                                                       .getRetryCount());
-                                               Duration d = Duration
-                                                       .of(countAndError.getRetryCount(), ChronoUnit.SECONDS);
-                                               return Flux.interval(d).take(1);
-                                           });
+                .flatMap(
+                        countAndError -> {
+                            if (countAndError.getRetryCount() > maxRetries) {
+                                throw Exceptions.propagate(countAndError.getThrowable());
+                            }
+                            print("randomDelay retry by %s second(s)", countAndError
+                                    .getRetryCount());
+                            Duration d = Duration
+                                    .of(countAndError.getRetryCount(), ChronoUnit.SECONDS);
+                            return Flux.interval(d).take(1);
+                        });
     }
 
     private static class ErrorWithRetryCount {
@@ -116,11 +116,11 @@ public class Kata7ErrorHandling {
     private Flux<String> fetchArticleFluxWithRandomErrors(String articleName) {
         final Random randomGenerator = new Random();
         return wikiService.fetchArticleFlux(articleName)
-                          .map(article -> {
-                              if (randomGenerator.nextInt() % 2 == 0) {
-                                  throw new IllegalStateException("timeout");
-                              }
-                              return article;
-                          });
+                .map(article -> {
+                    if (randomGenerator.nextInt() % 2 == 0) {
+                        throw new IllegalStateException("timeout");
+                    }
+                    return article;
+                });
     }
 }

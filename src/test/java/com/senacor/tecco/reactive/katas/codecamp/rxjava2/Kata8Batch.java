@@ -1,9 +1,7 @@
 package com.senacor.tecco.reactive.katas.codecamp.rxjava2;
 
 import com.senacor.tecco.reactive.services.PersistService;
-import com.senacor.tecco.reactive.services.PersistServiceImpl;
 import com.senacor.tecco.reactive.services.WikiService;
-import com.senacor.tecco.reactive.services.WikiServiceImpl;
 import org.junit.Test;
 
 /**

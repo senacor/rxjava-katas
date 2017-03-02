@@ -49,12 +49,12 @@ public class Kata5SchedulingObservable {
         Flux<Integer> wordCount = pages.flatMap(countService::countWordsFlux).subscribeOn(fiveThreads);
 
         Disposable subscribtion = ratings.zipWith(wordCount)
-                                         .subscribe(next -> print("next: %s", next),
-                                                 Throwable::printStackTrace,
-                                                 () -> {
-                                                     print("complete!");
-                                                     monitor.complete();
-                                                 });
+                .subscribe(next -> print("next: %s", next),
+                        Throwable::printStackTrace,
+                        () -> {
+                            print("complete!");
+                            monitor.complete();
+                        });
 
         monitor.waitFor(22, TimeUnit.SECONDS);
         subscribtion.dispose();

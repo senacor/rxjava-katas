@@ -52,14 +52,14 @@ public class Kata6WikiLinks {
     private Flux<WikiLink> getLinks(final String wikiArticle) {
         //print("getLinks fuer Artikel: %s", wikiArticle);
         return wikiService.fetchArticleFlux(wikiArticle)
-                          .subscribeOn(ioScheduler)
-                          .flatMap((mediaWikiText) -> Flux.from(wikiService.parseMediaWikiTextFlux(mediaWikiText))
-                                                          .subscribeOn(computation))
-                          .flatMapIterable(ParsedPage::getSections)
-                          .flatMapIterable(section -> section.getLinks(Link.type.INTERNAL))
-                          .map(link -> new WikiLink(wikiArticle, link.getTarget()))
-                          .distinct()
-                          .doOnNext(wikiLink -> print(wikiLink));
+                .subscribeOn(ioScheduler)
+                .flatMap((mediaWikiText) -> Flux.from(wikiService.parseMediaWikiTextFlux(mediaWikiText))
+                        .subscribeOn(computation))
+                .flatMapIterable(ParsedPage::getSections)
+                .flatMapIterable(section -> section.getLinks(Link.type.INTERNAL))
+                .map(link -> new WikiLink(wikiArticle, link.getTarget()))
+                .distinct()
+                .doOnNext(wikiLink -> print(wikiLink));
     }
 
     private static class WikiLink {
@@ -101,7 +101,7 @@ public class Kata6WikiLinks {
             }
             final WikiLink other = (WikiLink) obj;
             return Objects.equals(this.sourceArticle, other.sourceArticle)
-                   && Objects.equals(this.targetArticle, other.targetArticle);
+                    && Objects.equals(this.targetArticle, other.targetArticle);
         }
     }
 }

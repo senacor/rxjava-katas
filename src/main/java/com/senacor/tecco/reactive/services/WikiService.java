@@ -1,6 +1,7 @@
 package com.senacor.tecco.reactive.services;
 
-import com.senacor.tecco.reactive.util.*;
+import com.senacor.tecco.reactive.util.DelayFunction;
+import com.senacor.tecco.reactive.util.FlakinessFunction;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.Flowable;
 import io.reactivex.Observable;
@@ -17,19 +18,23 @@ import java.util.function.Consumer;
 public interface WikiService {
 
     static WikiService create() {
-        return create(DelayFunction.staticDelay(1000), FlakinessFunction.noFlakiness(), false, "de");
+        return create(DelayFunction.withNoDelay(), FlakinessFunction.noFlakiness(), false, "de");
     }
 
     static WikiService create(String language) {
-        return create(DelayFunction.staticDelay(1000), FlakinessFunction.noFlakiness(), false, language);
+        return create(DelayFunction.withNoDelay(), FlakinessFunction.noFlakiness(), false, language);
     }
 
     static WikiService create(DelayFunction delayFunction) {
-        return create(delayFunction, FlakinessFunction.noFlakiness(), false, "de");
+        return create(delayFunction, FlakinessFunction.noFlakiness(), true, "de");
     }
 
     static WikiService create(FlakinessFunction flakinessFunction) {
-        return create(DelayFunction.staticDelay(1000), flakinessFunction, false, "de");
+        return create(DelayFunction.withNoDelay(), flakinessFunction, false, "de");
+    }
+
+    static WikiService create(DelayFunction delayFunction, FlakinessFunction flakinessFunction) {
+        return create(delayFunction, flakinessFunction, true, "de");
     }
 
     /**
@@ -43,10 +48,8 @@ public interface WikiService {
                               FlakinessFunction flakinessFunction,
                               boolean mockMode,
                               String language) {
-        return StopWatchProxy.newJdkProxy(
-                DelayProxy.newJdkProxy(
-                        FlakyProxy.newJdkProxy(new WikiServiceImpl(mockMode, language), flakinessFunction)
-                        , delayFunction));
+        return new WikiServiceImpl(delayFunction,
+                flakinessFunction, mockMode, language);
     }
 
     /**

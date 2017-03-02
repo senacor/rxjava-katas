@@ -1,36 +1,29 @@
 package com.senacor.tecco.reactive.services;
 
+import com.senacor.tecco.reactive.services.integration.BlackHoleDatabase;
+import com.senacor.tecco.reactive.services.integration.BlackHoleDatabaseImpl;
 import com.senacor.tecco.reactive.util.*;
-
-import static com.senacor.tecco.reactive.ReactiveUtil.fixedDelay;
-import static com.senacor.tecco.reactive.ReactiveUtil.print;
 
 public class PersistServiceImpl implements PersistService {
 
-    PersistServiceImpl() {
+    private final BlackHoleDatabase database;
+
+    PersistServiceImpl(FlakinessFunction flakinessFunction, DelayFunction delayFunction) {
+        database = StopWatchProxy.newJdkProxy(
+                DelayProxy.newJdkProxy(
+                        FlakyProxy.newJdkProxy(new BlackHoleDatabaseImpl(), flakinessFunction)
+                        , delayFunction));
     }
 
-    /**
-     * @param wikiArticle article
-     * @return runtime
-     */
     @Override
     public long save(String wikiArticle) {
-        print("save(%s)", wikiArticle);
-        int delay = 10;
-        fixedDelay(delay);
-        return delay;
+        return database.save(wikiArticle);
     }
 
-    /**
-     * @param wikiArticle article
-     * @return runtime
-     */
     @Override
     public long save(Iterable<String> wikiArticle) {
-        print("save(%s)", wikiArticle);
-        int delay = 15;
-        fixedDelay(delay);
-        return delay;
+        return database.save(wikiArticle);
     }
+
+
 }

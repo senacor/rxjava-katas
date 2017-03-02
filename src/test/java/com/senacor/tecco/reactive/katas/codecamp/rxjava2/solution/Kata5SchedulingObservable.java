@@ -2,7 +2,10 @@ package com.senacor.tecco.reactive.katas.codecamp.rxjava2.solution;
 
 import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.WaitMonitor;
-import com.senacor.tecco.reactive.services.*;
+import com.senacor.tecco.reactive.services.CountService;
+import com.senacor.tecco.reactive.services.PersistService;
+import com.senacor.tecco.reactive.services.RatingService;
+import com.senacor.tecco.reactive.services.WikiService;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.Observable;
 import io.reactivex.Scheduler;
@@ -39,11 +42,11 @@ public class Kata5SchedulingObservable {
         Scheduler fiveThreads = ReactiveUtil.newScheduler(5, "my-scheduler");
 
         Observable<ParsedPage> pages = wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
-                                                  .take(20)
-                                                  .flatMap(name -> Observable.just(name)
-                                                                             .flatMap(wikiService::fetchArticleObservable)
-                                                                             .subscribeOn(Schedulers.io()))
-                                                  .flatMap(wikiService::parseMediaWikiTextObservable);
+                .take(20)
+                .flatMap(name -> Observable.just(name)
+                        .flatMap(wikiService::fetchArticleObservable)
+                        .subscribeOn(Schedulers.io()))
+                .flatMap(wikiService::parseMediaWikiTextObservable);
 
         Observable<Integer> ratings = pages.flatMap(ratingService::rateObservable);
         Observable<Integer> wordCount = pages.flatMap(countService::countWordsObservable);
@@ -52,13 +55,13 @@ public class Kata5SchedulingObservable {
                 "{\"rating\": %s, \"wordCount\": %s}",
                 r, wc)
         )
-                                         .subscribeOn(fiveThreads)
-                                         .subscribe(next -> print("next: %s", next),
-                                                 Throwable::printStackTrace,
-                                                 () -> {
-                                                     print("complete!");
-                                                     monitor.complete();
-                                                 });
+                .subscribeOn(fiveThreads)
+                .subscribe(next -> print("next: %s", next),
+                        Throwable::printStackTrace,
+                        () -> {
+                            print("complete!");
+                            monitor.complete();
+                        });
 
         monitor.waitFor(22, TimeUnit.SECONDS);
         subscription.dispose();

@@ -41,4 +41,4 @@ public class WikiVerticleRxTest extends VertxTestBase {
         await(5, TimeUnit.SECONDS);
     }
 
-    }
+}

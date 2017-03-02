@@ -23,7 +23,7 @@ public class E52_Streams_CountPlanes extends PlaneArticleBaseTest {
         Arrays.stream(planeTypes)
                 .map(planeType -> fetchArticle(planeType))
                 .map(article -> parsePlaneInfo(article))
-                .forEach((planeInfo)-> {
+                .forEach((planeInfo) -> {
                     Summary.printCounter(planeInfo.typeName, planeInfo.numberBuild);
                 });
     }
@@ -34,7 +34,7 @@ public class E52_Streams_CountPlanes extends PlaneArticleBaseTest {
     }
 
     // Extracts plane-related information from an wikipedia article
-    PlaneInfo parsePlaneInfo(Article article){
+    PlaneInfo parsePlaneInfo(Article article) {
         return new PlaneInfo(article.name, parseBuildCountInt(article.content));
     }
 

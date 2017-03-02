@@ -5,7 +5,6 @@ import com.senacor.tecco.reactive.Watch;
 import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Rule;
 
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.joining;
@@ -22,20 +21,22 @@ public class PlaneArticleBaseTest {
 
     /**
      * extracts the number of planes built from an wikipedia article about a specific plane type
+     *
      * @param article article about plane type
      * @return number of planes built
      */
     public int parseBuildCountInt(String article) {
         String buildCount = ReactiveUtil.findValue(article, "number built");
-        return Integer.parseInt(buildCount.replaceAll(",",""));
+        return Integer.parseInt(buildCount.replaceAll(",", ""));
     }
 
     /**
      * extracts the number of planes built from an wikipedia article about a specific plane type
+     *
      * @param article article about plane type
      * @return number of planes built
      */
-    public String parseBuildCount(String article){
+    public String parseBuildCount(String article) {
         return ReactiveUtil.findValue(article, "number built");
     }
 

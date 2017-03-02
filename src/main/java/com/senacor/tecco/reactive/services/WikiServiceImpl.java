@@ -49,21 +49,28 @@ public class WikiServiceImpl implements WikiService {
      * @param mockMode when true, the Articles are fetched from a local file instead from Wikipedia.
      * @param language (de|en)
      */
-    WikiServiceImpl(boolean mockMode, String language) {
+    WikiServiceImpl(DelayFunction delayFunction,
+                    FlakinessFunction flakinessFunction,
+                    boolean mockMode,
+                    String language) {
+        WikipediaServiceJapi backend;
         if (MOCKMODE || mockMode) {
             this.record = false;
-            wikiServiceJapi = new WikipediaServiceJapiMock();
+            backend = new WikipediaServiceJapiMock();
         } else {
             this.record = RECORD;
-            wikiServiceJapi = new WikipediaServiceJapiImpl("https://" + language + ".wikipedia.org");
+            backend = new WikipediaServiceJapiImpl("https://" + language + ".wikipedia.org");
         }
+        this.wikiServiceJapi = StopWatchProxy.newJdkProxy(
+                DelayProxy.newJdkProxy(
+                        FlakyProxy.newJdkProxy(backend, flakinessFunction)
+                        , delayFunction));
     }
 
     @Override
     public Flux<String> fetchArticleFlux(final String wikiArticle) {
         return Flux.just(wikiArticle)
                 .map(this::fetchArticle)
-                .onErrorResumeWith(t -> Flux.empty())
                 .doOnNext(record(wikiArticle));
     }
 

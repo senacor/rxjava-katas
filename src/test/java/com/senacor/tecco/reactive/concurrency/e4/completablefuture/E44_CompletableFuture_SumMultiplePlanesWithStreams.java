@@ -25,15 +25,15 @@ public class E44_CompletableFuture_SumMultiplePlanesWithStreams extends PlaneArt
 
         //create List of CompletableFutures for build count
         List<CompletableFuture<Integer>> futures = Arrays.stream(planes)
-                                                         //fetch article future for plane and chain future with build count parser
-                                                         .map(plane -> fetchArticle(plane)
-                                                                 .thenApply(this::parseBuildCountInt))
-                                                         //collect all build counts
-                                                         .collect(Collectors.toList());
+                //fetch article future for plane and chain future with build count parser
+                .map(plane -> fetchArticle(plane)
+                        .thenApply(this::parseBuildCountInt))
+                //collect all build counts
+                .collect(Collectors.toList());
 
         CompletableFuture<Integer> sumBuildCount = futures.stream()
-                                                          .reduce((a, b) -> a.thenCombine(b, Integer::sum))
-                                                          .get();
+                .reduce((a, b) -> a.thenCombine(b, Integer::sum))
+                .get();
 
         sumBuildCount.thenAccept(sum -> Summary.printCounter(formatPlanes(planes), sum)).get(30, SECONDS);
     }

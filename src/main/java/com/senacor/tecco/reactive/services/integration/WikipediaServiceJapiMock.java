@@ -16,14 +16,6 @@ public class WikipediaServiceJapiMock extends WikipediaServiceJapiImpl {
 
     @Override
     protected String getPageContent(String name) throws Exception {
-        String result = readArticle(name);
-        if (result == null) {
-            throw new IllegalArgumentException("no page found with name: " + name);
-        }
-        return result;
-    }
-
-    private String readArticle(String name) {
         try {
             Path path = Paths.get(ClassLoader.getSystemResource("mock/" + name + ".txt").toURI());
             return new String(Files.readAllBytes(path));

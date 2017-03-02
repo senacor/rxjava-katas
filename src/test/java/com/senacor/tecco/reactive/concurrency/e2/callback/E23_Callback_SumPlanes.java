@@ -17,7 +17,9 @@ import java.util.function.Consumer;
 public class E23_Callback_SumPlanes extends PlaneArticleBaseTest {
 
     // error handler function
-    Consumer<Exception> exceptionConsumer = (e)->{e.printStackTrace();};
+    Consumer<Exception> exceptionConsumer = (e) -> {
+        e.printStackTrace();
+    };
 
     @Test
     public void thatPlaneBuildCountIsSummedUpWithCallback() throws Exception {
@@ -50,7 +52,7 @@ public class E23_Callback_SumPlanes extends PlaneArticleBaseTest {
             monitor.complete();
         }, exceptionConsumer);
 
-        monitor.waitFor(3000,TimeUnit.MILLISECONDS);
+        monitor.waitFor(3000, TimeUnit.MILLISECONDS);
     }
 
     // fetches an article from Wikipedia

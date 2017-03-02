@@ -16,6 +16,7 @@ public class RxVertx {
 
     /**
      * creates a observable of some address
+     *
      * @param vertx
      * @param address the address which should be consumed
      * @return
@@ -29,10 +30,11 @@ public class RxVertx {
 
     /**
      * Sends a message on the Vertx eventbus and provieds a Obersvable of the reply.
+     *
      * @param vertx
      * @param address the address to send the message to
-     * @param msg the message to send
-     * @param <E> the expected type of the reply
+     * @param msg     the message to send
+     * @param <E>     the expected type of the reply
      * @return
      */
     public static <E> Observable<E> send(Vertx vertx, String address, Object msg) {

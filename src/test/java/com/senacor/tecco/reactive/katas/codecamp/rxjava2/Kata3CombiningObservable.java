@@ -1,6 +1,8 @@
 package com.senacor.tecco.reactive.katas.codecamp.rxjava2;
 
-import com.senacor.tecco.reactive.services.*;
+import com.senacor.tecco.reactive.services.CountService;
+import com.senacor.tecco.reactive.services.RatingService;
+import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
 
 /**

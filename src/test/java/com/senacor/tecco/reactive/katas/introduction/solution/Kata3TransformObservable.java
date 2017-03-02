@@ -35,17 +35,18 @@ public class Kata3TransformObservable {
 
 
         Observable.fromArray(planeTypes)
-            .flatMap(planeType -> fetchArticle(planeType))
-            .map(article -> parsePlaneInfo(article))
-            .subscribe(planeInfo -> print("next: %s", planeInfo),
-                Throwable::printStackTrace,
-                monitor::complete);
+                .flatMap(planeType -> fetchArticle(planeType))
+                .map(article -> parsePlaneInfo(article))
+                .subscribe(planeInfo -> print("next: %s", planeInfo),
+                        Throwable::printStackTrace,
+                        monitor::complete);
 
         monitor.waitFor(10, TimeUnit.SECONDS);
     }
 
     /**
      * fetches an article from the wikipedia
+     *
      * @param articleName name of the wikipedia article
      * @return an article
      */
@@ -61,14 +62,15 @@ public class Kata3TransformObservable {
 
     /**
      * Extracts plane-related information from an wikipedia article
+     *
      * @param article wikipedia article
      * @return plane information
      */
-    PlaneInfo parsePlaneInfo(Article article){
+    PlaneInfo parsePlaneInfo(Article article) {
         return new PlaneInfo(article.name, ReactiveUtil.findValue(article.content, "number built"));
     }
 
-    static class Article{
+    static class Article {
         public String name;
         public String content;
 
@@ -78,7 +80,7 @@ public class Kata3TransformObservable {
         }
     }
 
-    static class PlaneInfo{
+    static class PlaneInfo {
         public String typeName;
         public String numberBuild;
 
