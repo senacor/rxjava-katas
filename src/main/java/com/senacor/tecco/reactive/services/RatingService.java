@@ -1,44 +1,66 @@
 package com.senacor.tecco.reactive.services;
 
-import com.senacor.tecco.reactive.util.DelayFunction;
-import com.senacor.tecco.reactive.util.FlakinessFunction;
+import com.senacor.tecco.reactive.services.integration.RatingBackend;
+import com.senacor.tecco.reactive.services.integration.RatingBackendImpl;
+import com.senacor.tecco.reactive.util.*;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.Observable;
 import reactor.core.publisher.Flux;
 
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-/**
- * @author Andreas Keefer
- */
-public interface RatingService {
+public class RatingService {
 
-    static RatingService create() {
+    private final RatingBackend ratingBackend;
+
+    public static RatingService create() {
         return create(DelayFunction.staticDelay(30),
                 FlakinessFunction.noFlakiness());
     }
 
-    static RatingService create(DelayFunction delayFunction) {
+    public static RatingService create(DelayFunction delayFunction) {
         return create(delayFunction, FlakinessFunction.noFlakiness());
     }
 
-    static RatingService create(FlakinessFunction flakinessFunction) {
+    public static RatingService create(FlakinessFunction flakinessFunction) {
         return create(DelayFunction.staticDelay(30), flakinessFunction);
     }
 
-    static RatingService create(DelayFunction delayFunction,
-                                FlakinessFunction flakinessFunction) {
-        return new RatingServiceImpl(flakinessFunction, delayFunction);
+    public static RatingService create(DelayFunction delayFunction,
+                                       FlakinessFunction flakinessFunction) {
+        return new RatingService(flakinessFunction, delayFunction);
     }
 
-    Observable<Integer> rateObservable(ParsedPage parsedPage);
 
-    Flux<Integer> rateFlux(ParsedPage parsedPage);
+    private RatingService(FlakinessFunction flakinessFunction, DelayFunction delayFunction) {
+        ratingBackend = StopWatchProxy.newJdkProxy(
+                DelayProxy.newJdkProxy(
+                        FlakyProxy.newJdkProxy(new RatingBackendImpl(), flakinessFunction)
+                        , delayFunction));
+    }
 
-    Future<Integer> rateFuture(ParsedPage parsedPage);
+    private final ExecutorService pool = Executors.newFixedThreadPool(4);
 
-    CompletableFuture<Integer> rateCompletableFuture(ParsedPage parsedPage);
+    public Observable<Integer> rateObservable(final ParsedPage parsedPage) {
+        return Observable.just(parsedPage).map(this::rate);
+    }
 
-    int rate(ParsedPage parsedPage);
+    public Flux<Integer> rateFlux(final ParsedPage parsedPage) {
+        return Flux.just(parsedPage).map(this::rate);
+    }
+
+    public Future<Integer> rateFuture(ParsedPage parsedPage) {
+        return pool.submit(() -> rate(parsedPage));
+    }
+
+    public CompletableFuture<Integer> rateCompletableFuture(ParsedPage parsedPage) {
+        return CompletableFuture.supplyAsync(() -> rate(parsedPage), pool);
+    }
+
+    public int rate(final ParsedPage parsedPage) {
+        return ratingBackend.rate(parsedPage);
+    }
 }

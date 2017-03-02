@@ -1,10 +1,10 @@
 package com.senacor.tecco.reactive.katas.codecamp.reactor;
 
 import com.senacor.tecco.reactive.WaitMonitor;
+import com.senacor.tecco.reactive.services.PersistService;
 import com.senacor.tecco.reactive.services.WikiService;
 import com.senacor.tecco.reactive.util.DelayFunction;
 import com.senacor.tecco.reactive.util.FlakinessFunction;
-import org.apache.commons.lang3.StringUtils;
 import reactor.core.Disposable;
 import reactor.core.publisher.Flux;
 import reactor.core.scheduler.Scheduler;
@@ -15,7 +15,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-import static com.senacor.tecco.reactive.ReactiveUtil.print;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 /**
@@ -25,6 +24,7 @@ public class Kata9Backpressure {
 
     private final WikiService wikiService = WikiService.create(DelayFunction.withNoDelay(),
             FlakinessFunction.noFlakiness(), true, "de");
+    private final PersistService persistService = PersistService.create();
     private final Scheduler io = Schedulers.elastic();
 
     /**
@@ -49,8 +49,7 @@ public class Kata9Backpressure {
         Disposable subscriber = readWikiArticlesFromFile(fileName)
                 .flatMap(article -> wikiService.fetchArticleFlux(article).subscribeOn(io))
                 .subscribeOn(io)
-//                .log()
-                .subscribe(this::write,
+                .subscribe(persistService::save,
                         Throwable::printStackTrace,
                         monitor::complete);
 
@@ -80,13 +79,4 @@ public class Kata9Backpressure {
         });
     }
 
-    private void write(String article) {
-        // simulate some write operation
-        print("write: " + StringUtils.abbreviate(article, 50).replaceAll("\\r\\n|\\r|\\n", " "));
-        try {
-            Thread.sleep(10);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
 }

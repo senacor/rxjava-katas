@@ -36,8 +36,6 @@ public class DebugWithReactorTest {
 
     /**
      * A stream which fires an event every whole minute. The events are the current system time in milliseconds.
-     *
-     * @return
      */
     private Flux<Long> everyMinute() {
         return getTime().filter(t -> MILLISECONDS.toSeconds(t) % 60 == 0);
@@ -92,9 +90,7 @@ public class DebugWithReactorTest {
     /**
      * All the following executions of the reportsStreams will fail with an error. The tests will show
      * differences in the usefulness of the produced stack traces.
-     */
-
-    /**
+     * <p>
      * The following execution will run on a scheduler. The stacktrace will therefor only contain the
      * line where the error was thrown.
      */
@@ -141,7 +137,7 @@ public class DebugWithReactorTest {
     public void positionOfEveryOperatorIsShown() {
         WaitMonitor monitor = new WaitMonitor();
 
-        Hooks.onOperator(providedHook -> providedHook.operatorStacktrace());
+        Hooks.onOperator(Hooks.OperatorHook::operatorStacktrace);
 
         Disposable subscription = reportsStream()
                 .subscribeOn(Schedulers.elastic())

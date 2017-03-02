@@ -1,6 +1,7 @@
 package com.senacor.tecco.reactive.katas.codecamp.rxjava2;
 
 import com.senacor.tecco.reactive.WaitMonitor;
+import com.senacor.tecco.reactive.services.PersistService;
 import com.senacor.tecco.reactive.services.WikiService;
 import com.senacor.tecco.reactive.util.DelayFunction;
 import com.senacor.tecco.reactive.util.FlakinessFunction;
@@ -8,7 +9,6 @@ import io.reactivex.Observable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.plugins.RxJavaPlugins;
 import io.reactivex.schedulers.Schedulers;
-import org.apache.commons.lang3.StringUtils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -26,6 +26,7 @@ public class Kata9Backpressure {
 
     private final WikiService wikiService = WikiService.create(DelayFunction.withNoDelay(),
             FlakinessFunction.noFlakiness(), true, "de");
+    private final PersistService persistService = PersistService.create();
 
     /**
      * run this with -Xmx64m
@@ -55,7 +56,7 @@ public class Kata9Backpressure {
                 .flatMap(article -> wikiService.fetchArticleObservable(article)
                         .subscribeOn(Schedulers.io()))
                 .subscribeOn(Schedulers.io())
-                .subscribe(this::write,
+                .subscribe(persistService::save,
                         Throwable::printStackTrace,
                         () -> {
                             print("complete!");
@@ -98,15 +99,5 @@ public class Kata9Backpressure {
                 }
             }
         });
-    }
-
-    private void write(String article) {
-        // simulate some write operation
-        print("write: " + StringUtils.abbreviate(article, 50).replaceAll("\\r\\n|\\r|\\n", " "));
-        try {
-            Thread.sleep(10);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 }

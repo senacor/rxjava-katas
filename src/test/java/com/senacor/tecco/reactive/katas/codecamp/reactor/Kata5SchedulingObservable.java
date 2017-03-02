@@ -3,7 +3,6 @@ package com.senacor.tecco.reactive.katas.codecamp.reactor;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
-import com.senacor.tecco.reactive.services.WikiServiceImpl;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;
 
@@ -19,7 +18,7 @@ public class Kata5SchedulingObservable {
     private final CountService countService = CountService.create();
 
     /**
-     * 1. use the {@link WikiServiceImpl#wikiArticleBeingReadFlux(long, TimeUnit)} to create a stream of
+     * 1. use the {@link WikiService#wikiArticleBeingReadFlux(long, TimeUnit)} to create a stream of
      * wiki article names being read
      * 2. take only the first 20 articles
      * 3. load and parse the article
