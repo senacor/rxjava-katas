@@ -12,7 +12,7 @@ import org.junit.Test;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Future;
 
-public class E45_CompletableFuture_PlaneInfo  extends PlaneArticleBaseTest {
+public class E45_CompletableFuture_PlaneInfo extends PlaneArticleBaseTest {
 
     private final CountService countService = CountService.create();
     private final RatingService ratingService = RatingService.create();
@@ -30,7 +30,8 @@ public class E45_CompletableFuture_PlaneInfo  extends PlaneArticleBaseTest {
                     });
 
                     String numberBuild777 = parseBuildCount(article);
-                    return pageMetrixFuture.thenAccept(pageMetrix -> Summary.print("777", pageMetrix.words, pageMetrix.rating, numberBuild777));
+                    return pageMetrixFuture.thenAccept(pageMetrix -> Summary
+                            .print("777", pageMetrix.words, pageMetrix.rating, numberBuild777));
                 });
 
 
@@ -43,13 +44,28 @@ public class E45_CompletableFuture_PlaneInfo  extends PlaneArticleBaseTest {
                         return countFuture.thenCombine(rateFuture, (words, rating) -> new PageMetrix(words, rating));
                     });
 
-                    String numberBuild777 = parseBuildCount(article);
-                    return pageMetrixFuture.thenAccept(pageMetrix -> Summary.print("777", pageMetrix.words, pageMetrix.rating, numberBuild777));
+                    String numberBuild747 = parseBuildCount(article);
+                    return pageMetrixFuture.thenAccept(pageMetrix -> Summary
+                            .print("747", pageMetrix.words, pageMetrix.rating, numberBuild747));
                 });
+
+
+        CompletableFuture<String> article747 = fetchArticle("Boeing 747");
+
+        CompletableFuture<ParsedPage> parsed747 = article747.thenCompose(this::parsePage);
+        CompletableFuture<Integer> wordCount747 = parsed747.thenCompose(this::countWords);
+        CompletableFuture<Integer> rating747 = parsed747.thenCompose(this::rateArticles);
+
+        CompletableFuture<PageMetrix> pageMetrix747 = wordCount747.thenCombine(rating747, PageMetrix::new);
+        CompletableFuture<String> numberBuild747 = article747.thenApply(this::parseBuildCount);
+
+        CompletableFuture<Void> _747Future2 = pageMetrix747.thenAcceptBoth(numberBuild747, (metrix, buildNumb) ->
+                Summary.print("747", metrix.words, metrix.rating, buildNumb)
+        );
 
         _777Future.get();
         _747Future.get();
-
+        _747Future2.get();
     }
 
     // fetches an article from Wikipedia
