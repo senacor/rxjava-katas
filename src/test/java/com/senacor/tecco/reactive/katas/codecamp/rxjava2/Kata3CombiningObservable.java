@@ -8,9 +8,9 @@ import org.junit.Test;
  */
 public class Kata3CombiningObservable {
 
-    private WikiService wikiService = new WikiService();
-    private CountService countService = CountServiceImpl.create();
-    private RatingService ratingService = RatingServiceImpl.create();
+    private WikiService wikiService = WikiService.create();
+    private CountService countService = CountService.create();
+    private RatingService ratingService = RatingService.create();
 
     @Test
     public void combiningObservable() throws Exception {

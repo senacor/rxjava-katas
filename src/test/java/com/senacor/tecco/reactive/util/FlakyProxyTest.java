@@ -29,7 +29,7 @@ public class FlakyProxyTest {
 
     @Test
     public void newJdkProxy() throws Exception {
-        WikipediaServiceJapiMock target = new WikipediaServiceJapiMock(1);
+        WikipediaServiceJapiMock target = new WikipediaServiceJapiMock();
         WikipediaServiceJapi wikipediaServiceJapi = FlakyProxy.newJdkProxy(target, FlakinessFunction.noFlakiness());
         String article = wikipediaServiceJapi.getArticle("42");
         assertThat(article, startsWith("{{Dieser Artikel|behandelt das Jahr 42"));

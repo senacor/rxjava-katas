@@ -23,7 +23,7 @@ public class CountServiceImplTest {
 
     @Test(expected = UncheckedIOException.class)
     public void countWordsDefault() throws Exception {
-        CountService countService = CountServiceImpl.create(FlakinessFunction.alwaysFail());
+        CountService countService = CountService.create(FlakinessFunction.alwaysFail());
         countService.countWords(parsedPage);
     }
 

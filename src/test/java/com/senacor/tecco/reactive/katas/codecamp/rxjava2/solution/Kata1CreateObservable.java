@@ -13,7 +13,7 @@ import org.junit.Test;
 public class Kata1CreateObservable {
 
     @Test
-    public void erzeugeEinObservable() throws Exception {
+    public void createAnObservable() throws Exception {
         final String articleName = "Observable";
         // Create an observable from getArticle
 
@@ -30,7 +30,7 @@ public class Kata1CreateObservable {
     }
 
     @Test
-    public void erzeugeEinObservable2() throws Exception {
+    public void createAnObservable2() throws Exception {
         final String articleName = "Observable";
         // Erzeuge aus getArticle ein Observable
 

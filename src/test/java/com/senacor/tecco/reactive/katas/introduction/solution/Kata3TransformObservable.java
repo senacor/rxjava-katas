@@ -17,7 +17,7 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
  * @author Dr. Michael Menzel
  */
 public class Kata3TransformObservable {
-    private final WikiService wikiService = new WikiService("en");
+    private final WikiService wikiService = WikiService.create("en");
 
     @Rule
     public final Watch watch = new Watch();

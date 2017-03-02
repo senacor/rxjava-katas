@@ -5,6 +5,7 @@ import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.services.PersistService;
 import com.senacor.tecco.reactive.services.PersistServiceImpl;
 import com.senacor.tecco.reactive.services.WikiService;
+import com.senacor.tecco.reactive.services.WikiServiceImpl;
 import io.reactivex.disposables.Disposable;
 import org.junit.Test;
 
@@ -17,8 +18,8 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
  */
 public class Kata8Batch {
 
-    private final WikiService wikiService = new WikiService();
-    private final PersistService persistService = PersistServiceImpl.create();
+    private final WikiService wikiService = WikiService.create();
+    private final PersistService persistService = PersistService.create();
 
     @Test
     public void withoutBatch() throws Exception {

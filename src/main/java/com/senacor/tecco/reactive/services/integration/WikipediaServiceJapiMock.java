@@ -11,23 +11,11 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
  */
 public class WikipediaServiceJapiMock extends WikipediaServiceJapiImpl {
 
-    private final long delayInMillis;
-
     public WikipediaServiceJapiMock() {
-        this(1000L);
-    }
-
-    public WikipediaServiceJapiMock(String url) {
-        this();
-    }
-
-    public WikipediaServiceJapiMock(long delayInMillis) {
-        this.delayInMillis = delayInMillis;
     }
 
     @Override
     protected String getPageContent(String name) throws Exception {
-        Thread.sleep(delayInMillis);
         String result = readArticle(name);
         if (result == null) {
             throw new IllegalArgumentException("no page found with name: " + name);
@@ -35,7 +23,7 @@ public class WikipediaServiceJapiMock extends WikipediaServiceJapiImpl {
         return result;
     }
 
-    public String readArticle(String name) {
+    private String readArticle(String name) {
         try {
             Path path = Paths.get(ClassLoader.getSystemResource("mock/" + name + ".txt").toURI());
             return new String(Files.readAllBytes(path));

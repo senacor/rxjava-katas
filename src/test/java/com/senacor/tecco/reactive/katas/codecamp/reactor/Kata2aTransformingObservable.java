@@ -9,7 +9,7 @@ import org.junit.Test;
  */
 public class Kata2aTransformingObservable {
 
-    private WikiService wikiService = new WikiService();
+    private WikiService wikiService = WikiService.create();
 
     /**
      * 1. Use the {@link WikiService#fetchArticleObservable} and fetch an arbitrary wikipedia article

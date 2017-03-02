@@ -3,6 +3,7 @@ package com.senacor.tecco.reactive.katas.codecamp.rxjava2;
 import com.senacor.tecco.reactive.services.PersistService;
 import com.senacor.tecco.reactive.services.PersistServiceImpl;
 import com.senacor.tecco.reactive.services.WikiService;
+import com.senacor.tecco.reactive.services.WikiServiceImpl;
 import org.junit.Test;
 
 /**
@@ -10,8 +11,8 @@ import org.junit.Test;
  */
 public class Kata8Batch {
 
-    private final WikiService wikiService = new WikiService();
-    private final PersistService persistService = PersistServiceImpl.create();
+    private final WikiService wikiService = WikiService.create();
+    private final PersistService persistService = PersistService.create();
 
     @Test
     public void withoutBatch() throws Exception {

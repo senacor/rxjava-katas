@@ -18,7 +18,7 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
  */
 public class Kata7ErrorHandling {
 
-    private final WikiService wikiService = new WikiService();
+    private final WikiService wikiService = WikiService.create();
 
     @Test
     public void errors() throws Exception {

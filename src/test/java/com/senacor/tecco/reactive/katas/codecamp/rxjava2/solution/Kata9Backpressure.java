@@ -2,6 +2,9 @@ package com.senacor.tecco.reactive.katas.codecamp.rxjava2.solution;
 
 import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.services.WikiService;
+import com.senacor.tecco.reactive.services.WikiServiceImpl;
+import com.senacor.tecco.reactive.util.DelayFunction;
+import com.senacor.tecco.reactive.util.FlakinessFunction;
 import io.reactivex.Flowable;
 import io.reactivex.plugins.RxJavaPlugins;
 import io.reactivex.schedulers.Schedulers;
@@ -20,7 +23,8 @@ import static java.util.concurrent.TimeUnit.SECONDS;
  */
 public class Kata9Backpressure {
 
-    private final WikiService wikiService = new WikiService(true, 1, false);
+    private final WikiService wikiService = WikiService.create(DelayFunction.withNoDelay(),
+            FlakinessFunction.noFlakiness(), true, "de");
 
     /**
      * run this with -Xmx64m

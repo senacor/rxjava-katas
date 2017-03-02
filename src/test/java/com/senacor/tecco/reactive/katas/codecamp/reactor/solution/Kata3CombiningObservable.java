@@ -16,9 +16,9 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
  */
 public class Kata3CombiningObservable {
 
-    private final WikiService wikiService = new WikiService();
-    private final RatingService ratingService = RatingServiceImpl.create();
-    private final CountService countService = CountServiceImpl.create();
+    private final WikiService wikiService = WikiService.create();
+    private final RatingService ratingService = RatingService.create();
+    private final CountService countService = CountService.create();
 
     /**
      * 1. fetch and parse a wiki article

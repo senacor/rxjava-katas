@@ -20,8 +20,8 @@ import java.util.function.Consumer;
  */
 public class E24_Callback_PlaneInfo extends PlaneArticleBaseTest {
 
-    private final CountService countService = CountServiceImpl.create();
-    private final RatingService ratingService = RatingServiceImpl.create();
+    private final CountService countService = CountService.create();
+    private final RatingService ratingService = RatingService.create();
 
     // error handler function
     Consumer<Exception> exceptionConsumer = (e)->{e.printStackTrace();};

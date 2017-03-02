@@ -14,7 +14,7 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
  */
 public class Kata4FilteringObservable {
 
-    private final WikiService wikiService = new WikiService();
+    private final WikiService wikiService = WikiService.create();
 
     @Test
     public void filterObservable() throws Exception {

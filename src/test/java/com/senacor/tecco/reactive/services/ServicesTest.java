@@ -21,9 +21,9 @@ import static org.junit.Assert.assertNotNull;
  */
 public class ServicesTest {
 
-    private final WikiService wikiService = new WikiService("en");
-    private final CountService countService = CountServiceImpl.create();
-    private final RatingService ratingService = RatingServiceImpl.create();
+    private final WikiService wikiService = WikiService.create();
+    private final CountService countService = CountService.create();
+    private final RatingService ratingService = RatingService.create();
     ;
 
     @Test

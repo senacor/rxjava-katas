@@ -18,7 +18,7 @@ public class PlaneArticleBaseTest {
     @Rule
     public final Watch watch = new Watch();
 
-    public final WikiService wikiService = new WikiService("en");
+    public final WikiService wikiService = WikiService.create("en");
 
     /**
      * extracts the number of planes built from an wikipedia article about a specific plane type

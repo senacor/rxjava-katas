@@ -10,9 +10,9 @@ import java.util.concurrent.TimeUnit;
  */
 public class Kata5SchedulingObservable {
 
-    private final WikiService wikiService = new WikiService();
-    private final RatingService ratingService = RatingServiceImpl.create();
-    private final CountService countService = CountServiceImpl.create();
+    private final WikiService wikiService = WikiService.create();
+    private final RatingService ratingService = RatingService.create();
+    private final CountService countService = CountService.create();
 
     @Test
     public void schedulingObservable() throws Exception {

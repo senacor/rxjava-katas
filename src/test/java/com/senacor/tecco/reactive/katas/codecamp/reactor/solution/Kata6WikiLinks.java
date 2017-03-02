@@ -22,7 +22,7 @@ public class Kata6WikiLinks {
 
     private static Scheduler ioScheduler = Schedulers.newParallel("io", 25);
     private static Scheduler computation = Schedulers.newElastic("computation");
-    private final WikiService wikiService = new WikiService();
+    private final WikiService wikiService = WikiService.create();
 
     @Test
     public void linksObservable() throws Exception {

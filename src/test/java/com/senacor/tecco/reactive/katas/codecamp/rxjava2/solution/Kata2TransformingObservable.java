@@ -15,8 +15,8 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
  */
 public class Kata2TransformingObservable {
 
-    private final WikiService wikiService = new WikiService();
-    private final CountService countService = CountServiceImpl.create();
+    private final WikiService wikiService = WikiService.create();
+    private final CountService countService = CountService.create();
 
     @Test
     public void transformingObservable() throws Exception {

@@ -14,8 +14,8 @@ import java.util.concurrent.Future;
 
 public class E45_CompletableFuture_PlaneInfo  extends PlaneArticleBaseTest {
 
-    private final CountService countService = CountServiceImpl.create();
-    private final RatingService ratingService = RatingServiceImpl.create();
+    private final CountService countService = CountService.create();
+    private final RatingService ratingService = RatingService.create();
 
     @Test
     public void thatPlaneInfoIsCombinedWithCompletableFuture() throws Exception {

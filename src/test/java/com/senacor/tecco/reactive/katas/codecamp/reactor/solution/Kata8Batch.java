@@ -20,8 +20,8 @@ import static java.time.temporal.ChronoUnit.SECONDS;
  */
 public class Kata8Batch {
 
-    private final WikiService wikiService = new WikiService();
-    private final PersistService persistService = PersistServiceImpl.create();
+    private final WikiService wikiService = WikiService.create();
+    private final PersistService persistService = PersistService.create();
 
     /**
      * 1. use {@link WikiService#wikiArticleBeingReadFluxBurst()} that returns a stream of wiki article being read

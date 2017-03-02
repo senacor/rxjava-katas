@@ -9,7 +9,7 @@ import org.junit.Test;
  * @author Dr. Michael Menzel
  */
 public class Kata2FetchArticleObservable {
-    private final WikiService wikiService = new WikiService("en");
+    private final WikiService wikiService = WikiService.create("en");
 
     @Rule
     public final Watch watch = new Watch();

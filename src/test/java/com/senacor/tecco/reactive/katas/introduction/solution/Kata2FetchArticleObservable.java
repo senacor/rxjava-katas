@@ -14,7 +14,7 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
  */
 public class Kata2FetchArticleObservable {
 
-    private final WikiService wikiService = new WikiService("en");
+    private final WikiService wikiService = WikiService.create("en");
 
     @Test
     public void createAnObservable() throws Exception {

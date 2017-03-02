@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class Kata4FilteringObservable {
 
-    private final WikiService wikiService = new WikiService();
+    private final WikiService wikiService = WikiService.create();
 
     /**
      * 1. Use {@link WikiService#wikiArticleBeingReadFlux(long, TimeUnit)} that delivers a stream of wiki article

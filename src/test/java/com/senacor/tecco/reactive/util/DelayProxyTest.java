@@ -34,7 +34,7 @@ public class DelayProxyTest {
 
     @Test
     public void newJdkProxy() throws Exception {
-        WikipediaServiceJapiMock target = new WikipediaServiceJapiMock(1);
+        WikipediaServiceJapiMock target = new WikipediaServiceJapiMock();
         WikipediaServiceJapi wikipediaServiceJapi = DelayProxy.newJdkProxy(target, DelayFunction.staticDelay(1000));
         String article = wikipediaServiceJapi.getArticle("42");
         assertThat(article, startsWith("{{Dieser Artikel|behandelt das Jahr 42"));

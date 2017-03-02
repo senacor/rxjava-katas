@@ -1,6 +1,7 @@
 package com.senacor.tecco.reactive.katas.vertx;
 
 import com.senacor.tecco.reactive.services.WikiService;
+import com.senacor.tecco.reactive.services.WikiServiceImpl;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.logging.Logger;
 import io.vertx.core.logging.LoggerFactory;
@@ -12,7 +13,7 @@ public class WikiVerticle extends AbstractVerticle {
 
     private static final Logger log = LoggerFactory.getLogger(WikiVerticle.class);
 
-    private final WikiService wikiService = new WikiService();
+    private final WikiService wikiService = WikiService.create();
 
     @Override
     public void start() throws Exception {

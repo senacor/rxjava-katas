@@ -22,7 +22,7 @@ import static org.apache.commons.lang3.Validate.notNull;
 public class Kata6WikiLinks {
 
     private static Scheduler scheduler = newScheduler(25, "io");
-    private final WikiService wikiService = new WikiService();
+    private final WikiService wikiService = WikiService.create();
 
     @Test
     public void linksObservable() throws Exception {

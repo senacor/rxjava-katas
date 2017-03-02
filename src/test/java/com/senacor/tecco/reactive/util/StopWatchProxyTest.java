@@ -25,7 +25,7 @@ public class StopWatchProxyTest {
 
     @Test
     public void newJdkProxy() throws Exception {
-        WikipediaServiceJapiMock target = new WikipediaServiceJapiMock(1);
+        WikipediaServiceJapiMock target = new WikipediaServiceJapiMock();
         WikipediaServiceJapi wikipediaServiceJapi = StopWatchProxy.newJdkProxy(target);
         String article = wikipediaServiceJapi.getArticle("42");
         assertThat(article, startsWith("{{Dieser Artikel|behandelt das Jahr 42"));

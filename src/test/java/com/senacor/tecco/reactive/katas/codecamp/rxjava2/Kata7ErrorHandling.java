@@ -1,6 +1,7 @@
 package com.senacor.tecco.reactive.katas.codecamp.rxjava2;
 
 import com.senacor.tecco.reactive.services.WikiService;
+import com.senacor.tecco.reactive.services.WikiServiceImpl;
 import io.reactivex.Observable;
 import org.junit.Test;
 
@@ -11,7 +12,7 @@ import java.util.Random;
  */
 public class Kata7ErrorHandling {
 
-    private final WikiService wikiService = new WikiService();
+    private final WikiService wikiService = WikiService.create();
 
     @Test
     public void errors() throws Exception {

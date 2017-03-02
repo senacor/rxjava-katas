@@ -1,6 +1,7 @@
 package com.senacor.tecco.reactive.katas.codecamp.rxjava2;
 
 import com.senacor.tecco.reactive.services.WikiService;
+import com.senacor.tecco.reactive.services.WikiServiceImpl;
 import org.junit.Test;
 
 /**
@@ -8,7 +9,7 @@ import org.junit.Test;
  */
 public class Kata2aTransformingObservable {
 
-    private WikiService wikiService = new WikiService();
+    private WikiService wikiService = WikiService.create();
 
     @Test
     public void transformingObservable() throws Exception {

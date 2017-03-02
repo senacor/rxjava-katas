@@ -11,8 +11,8 @@ import org.junit.Test;
  */
 public class Kata2cTransformingObservable {
 
-    private WikiService wikiService = new WikiService();
-    private CountService countService = CountServiceImpl.create();
+    private WikiService wikiService = WikiService.create();
+    private CountService countService = CountService.create();
 
     /**
      * 1. Use the {@link WikiService#fetchArticleObservable} and fetch an arbitrary wikipedia article

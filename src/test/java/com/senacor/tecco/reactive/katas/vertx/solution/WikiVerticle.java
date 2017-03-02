@@ -14,9 +14,9 @@ public class WikiVerticle extends AbstractVerticle {
 
     private static final Logger log = LoggerFactory.getLogger(WikiVerticle.class);
 
-    private final WikiService wikiService = new WikiService();
-    private final RatingService ratingService = RatingServiceImpl.create();
-    private final CountService countService = CountServiceImpl.create();
+    private final WikiService wikiService = WikiService.create();
+    private final RatingService ratingService = RatingService.create();
+    private final CountService countService = CountService.create();
 
     @Override
     public void start() throws Exception {

@@ -14,28 +14,7 @@ import java.util.concurrent.Future;
 
 public class RatingServiceImpl implements RatingService {
 
-    public static RatingService create() {
-        return create(DelayFunction.staticDelay(30),
-                FlakinessFunction.noFlakiness());
-    }
-
-    public static RatingService create(DelayFunction delayFunction) {
-        return create(delayFunction, FlakinessFunction.noFlakiness());
-    }
-
-    public static RatingService create(FlakinessFunction flakinessFunction) {
-        return create(DelayFunction.staticDelay(30), flakinessFunction);
-    }
-
-    public static RatingService create(DelayFunction delayFunction,
-                                       FlakinessFunction flakinessFunction) {
-        return StopWatchProxy.newJdkProxy(
-                DelayProxy.newJdkProxy(
-                        FlakyProxy.newJdkProxy(new RatingServiceImpl(), flakinessFunction)
-                        , delayFunction));
-    }
-
-    private RatingServiceImpl() {
+    RatingServiceImpl() {
     }
 
     private final ExecutorService pool = Executors.newFixedThreadPool(4);

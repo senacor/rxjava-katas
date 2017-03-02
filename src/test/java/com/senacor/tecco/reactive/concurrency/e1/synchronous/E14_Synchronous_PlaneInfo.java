@@ -10,9 +10,9 @@ import org.junit.Test;
 
 public class E14_Synchronous_PlaneInfo extends PlaneArticleBaseTest {
 
-    private final WikiService wikiService = new WikiService("en");
-    private final CountService countService = CountServiceImpl.create();
-    private final RatingService ratingService = RatingServiceImpl.create();
+    private final WikiService wikiService = WikiService.create("en");
+    private final CountService countService = CountService.create();
+    private final RatingService ratingService = RatingService.create();
 
     @Rule
     public final Watch watch = new Watch();

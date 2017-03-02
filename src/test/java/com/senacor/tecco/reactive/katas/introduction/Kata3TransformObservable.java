@@ -9,7 +9,7 @@ import org.junit.Test;
  * @author Dr. Michael Menzel
  */
 public class Kata3TransformObservable {
-    private final WikiService wikiService = new WikiService("en");
+    private final WikiService wikiService = WikiService.create("en");
 
     @Test
     public void createAnObservable() throws Exception {
