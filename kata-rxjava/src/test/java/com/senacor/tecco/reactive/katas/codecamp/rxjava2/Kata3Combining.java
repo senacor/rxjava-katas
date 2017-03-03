@@ -8,7 +8,7 @@ import org.junit.Test;
 /**
  * @author Andreas Keefer
  */
-public class Kata3CombiningObservable {
+public class Kata3Combining {
 
     private WikiService wikiService = WikiService.create();
     private CountService countService = CountService.create();

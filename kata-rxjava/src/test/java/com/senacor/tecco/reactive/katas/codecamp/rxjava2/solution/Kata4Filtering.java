@@ -12,7 +12,7 @@ import static com.senacor.tecco.reactive.util.ReactiveUtil.print;
 /**
  * @author Andreas Keefer
  */
-public class Kata4FilteringObservable {
+public class Kata4Filtering {
 
     private final WikiService wikiService = WikiService.create();
 

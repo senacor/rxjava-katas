@@ -47,8 +47,7 @@ public class E62_Observables_SumPlanes extends PlaneArticleBaseTest {
 
     // Extracts plane-related information from an wikipedia article
     PlaneInfo parsePlaneInfo(Article article) {
-        String buildCount = ReactiveUtil.findValue(article.content, "number built");
-        return new PlaneInfo(article.name, Integer.parseInt(buildCount.replaceAll(",", "")));
+        return new PlaneInfo(article.name, plainInfoService.parseBuildCountInt(article.content));
     }
 
     // reduces plane information by summing up the build counter

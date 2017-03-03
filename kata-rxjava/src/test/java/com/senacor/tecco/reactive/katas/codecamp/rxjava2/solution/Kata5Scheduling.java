@@ -18,7 +18,7 @@ import static com.senacor.tecco.reactive.util.ReactiveUtil.print;
 /**
  * @author Andreas Keefer
  */
-public class Kata5SchedulingObservable {
+public class Kata5Scheduling {
 
     private final WikiService wikiService = WikiService.create();
     private final RatingService ratingService = RatingService.create();

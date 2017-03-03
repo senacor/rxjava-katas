@@ -9,17 +9,17 @@ import org.junit.Test;
 /**
  * @author Dr. Michael Menzel
  */
-public class Kata2FetchArticleObservable {
+public class Kata2FetchArticleFlux {
     private final WikiService wikiService = WikiService.create("en");
 
     @Rule
     public final Watch watch = new Watch();
 
     @Test
-    public void createAnObservable() throws Exception {
+    public void createAnFlux() throws Exception {
         String[] planeTypes = {"Boeing 777", "Boeing 747", "Boeing 737", "Airbus A330", "Airbus A320 family"};
 
-        // 1) create an observable that emits the plane type
+        // 1) create an Flux that emits the plane type
         // 2) use the fetch article method to transform the plane type to an Article
         // 3) subscribe to the observable and print the article content
 
@@ -31,7 +31,7 @@ public class Kata2FetchArticleObservable {
      * @param articleName name of the wikipedia article
      * @return an article
      */
-    Article fetchArticle(String articleName) {
+    private Article fetchArticle(String articleName) {
         return new Article(articleName, wikiService.fetchArticle(articleName));
     }
 

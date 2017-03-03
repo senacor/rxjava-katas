@@ -17,6 +17,13 @@
             <artifactId>common-wiki</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>common-wiki</artifactId>
+            <version>${project.version}</version>
+            <classifier>tests</classifier>
+            <scope>test</scope>
+        </dependency>
 
         <!-- Reactor -->
         <dependency>

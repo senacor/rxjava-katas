@@ -3,8 +3,8 @@ package com.senacor.tecco.reactive.katas.introduction.solution;
 import com.senacor.tecco.reactive.concurrency.model.Article;
 import com.senacor.tecco.reactive.services.WikiService;
 import com.senacor.tecco.reactive.util.WaitMonitor;
-import io.reactivex.Observable;
 import org.junit.Test;
+import reactor.core.publisher.Flux;
 
 import java.util.concurrent.TimeUnit;
 
@@ -13,21 +13,21 @@ import static com.senacor.tecco.reactive.util.ReactiveUtil.print;
 /**
  * @author Dr. Michael Menzel
  */
-public class Kata2FetchArticleObservable {
+public class Kata2FetchArticleFlux {
 
     private final WikiService wikiService = WikiService.create("en");
 
     @Test
-    public void createAnObservable() throws Exception {
+    public void createAnFlux() throws Exception {
         final WaitMonitor monitor = new WaitMonitor();
 
         String[] planeTypes = {"Boeing 777", "Boeing 747", "Boeing 737", "Airbus A330", "Airbus A320 family"};
 
-        // 1) create an observable that emits the plane type
+        // 1) create an Flux that emits the plane type
         // 2) use the fetch article method to transform the plane type to an Article
         // 3) subscribe to the observable and print the article content
 
-        Observable.fromArray(planeTypes)
+        Flux.fromArray(planeTypes)
                 .flatMap(planeType -> fetchArticle(planeType))
                 .subscribe(article -> print("next: %s", article.content),
                         Throwable::printStackTrace,
@@ -43,8 +43,8 @@ public class Kata2FetchArticleObservable {
      * @param articleName name of the wikipedia article
      * @return an article
      */
-    Observable<Article> fetchArticle(String articleName) {
-        return wikiService.fetchArticleObservable(articleName)
+    private Flux<Article> fetchArticle(String articleName) {
+        return wikiService.fetchArticleFlux(articleName)
                 .map((article) -> new Article(articleName, article));
     }
 }

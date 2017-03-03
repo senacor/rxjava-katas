@@ -1,5 +1,6 @@
 package com.senacor.tecco.reactive.concurrency;
 
+import com.senacor.tecco.reactive.services.PlainInfoService;
 import com.senacor.tecco.reactive.util.ReactiveUtil;
 import com.senacor.tecco.reactive.util.Watch;
 import com.senacor.tecco.reactive.services.WikiService;
@@ -18,6 +19,7 @@ public class PlaneArticleBaseTest {
     public final Watch watch = new Watch();
 
     public final WikiService wikiService = WikiService.create("en");
+    protected final PlainInfoService plainInfoService = new PlainInfoService();
 
     /**
      * extracts the number of planes built from an wikipedia article about a specific plane type
@@ -26,8 +28,7 @@ public class PlaneArticleBaseTest {
      * @return number of planes built
      */
     public int parseBuildCountInt(String article) {
-        String buildCount = ReactiveUtil.findValue(article, "number built");
-        return Integer.parseInt(buildCount.replaceAll(",", ""));
+        return plainInfoService.parseBuildCountInt(article);
     }
 
     /**
@@ -37,7 +38,7 @@ public class PlaneArticleBaseTest {
      * @return number of planes built
      */
     public String parseBuildCount(String article) {
-        return ReactiveUtil.findValue(article, "number built");
+        return plainInfoService.parseBuildCount(article);
     }
 
     /***

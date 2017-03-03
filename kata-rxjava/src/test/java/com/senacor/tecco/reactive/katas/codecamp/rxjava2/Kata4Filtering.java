@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @author Andreas Keefer
  */
-public class Kata4FilteringObservable {
+public class Kata4Filtering {
 
     private final WikiService wikiService = WikiService.create();
 

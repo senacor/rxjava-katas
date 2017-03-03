@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @author Andreas Keefer
  */
-public class Kata5SchedulingObservable {
+public class Kata5Scheduling {
 
     private final WikiService wikiService = WikiService.create();
     private final RatingService ratingService = RatingService.create();

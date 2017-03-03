@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
  * @author Andreas Keefer
  * @version 2.0
  */
-public class Kata1CreateObservable {
+public class Kata1Create {
 
     @Test
     public void createAnObservable() throws Exception {

@@ -7,7 +7,7 @@ import org.junit.Test;
 /**
  * @author Andreas Keefer
  */
-public class Kata1CreateObservable {
+public class Kata1Create {
 
     @Test
     public void createAnObservable() throws Exception {
