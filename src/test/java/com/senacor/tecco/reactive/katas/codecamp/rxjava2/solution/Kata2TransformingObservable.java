@@ -18,10 +18,10 @@ public class Kata2TransformingObservable {
     private final CountService countService = CountService.create();
 
     @Test
-    public void transformingObservable() throws Exception {
+    public void transformingC() throws Exception {
         // 1. Use the WikiService (fetchArticleObservable) and fetch an arbitrary wikipedia article
         // 2. transform the result with the WikiService#parseMediaWikiText to an object structure
-        // 3. print the text of the wikipedia article to the console (ParsedPage.getText())
+        // 3. print the number of words that begin with character 'a' to the console (ParsedPage.getText())
 
         wikiService.fetchArticleObservable("Bilbilis")
                 //.doOnNext(debug -> print("fetchArticleObservable res: %s", debug))
