@@ -48,13 +48,13 @@ public class Kata8Batch {
         subscribe.dispose();
     }
 
-    /**
-     * 1. do the same as above, but this time use the method ({@link PersistService#save(Iterable)}) to save a
-     * batch of articles. Please note  that this is a stream - you can not wait until all articles are
-     * delivered to save everything in a batch
-     */
     @Test
     public void batch() throws Exception {
+        // 1. do the same as above, but this time use the method #save(Iterable) to save a batch of articles.
+        //    use a batch size of 5.
+        //    Please note that this is a stream - you can not wait until all articles are delivered to save everything in a batch
+        // 2. If the batch size is not reached within 500 milliseconds,
+        //    flush the buffer anyway by writing to the service
         final WaitMonitor monitor = new WaitMonitor();
 
         Disposable subscribe = wikiService.wikiArticleBeingReadFluxBurst()

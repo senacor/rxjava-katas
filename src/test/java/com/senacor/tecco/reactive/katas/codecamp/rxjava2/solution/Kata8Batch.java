@@ -39,12 +39,15 @@ public class Kata8Batch {
     @Test
     public void batch() throws Exception {
         // 1. do the same as above, but this time use the method #save(Iterable) to save a batch of articles.
+        //    use a batch size of 5.
         //    Please note that this is a stream - you can not wait until all articles are delivered to save everything in a batch
+        // 2. If the batch size is not reached within 500 milliseconds,
+        //    flush the buffer anyway by writing to the service
 
         wikiService.wikiArticleBeingReadObservableBurst()
                 .take(2, TimeUnit.SECONDS)
                 .doOnNext(ReactiveUtil::print)
-                .buffer(500, TimeUnit.MILLISECONDS)
+                .buffer(5, 500, TimeUnit.MILLISECONDS)
                 .map(persistService::save)
                 .reduce((l, r) -> l + r)
                 .map(runtime -> String.format("save runtime (SUM): %s ms", runtime))
