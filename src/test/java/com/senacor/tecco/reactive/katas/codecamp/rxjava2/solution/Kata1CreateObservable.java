@@ -6,6 +6,8 @@ import io.reactivex.Observable;
 import net.sourceforge.jwbf.core.contentRep.Article;
 import org.junit.Test;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * @author Andreas Keefer
  * @version 2.0
@@ -24,9 +26,21 @@ public class Kata1CreateObservable {
             } catch (Exception e) {
                 subscriber.onError(e);
             }
-        }).subscribe((toPrint) -> {
-            ReactiveUtil.print(toPrint.getText());
-        }, throwable -> System.err.println(throwable.getMessage()));
+        }).subscribe((toPrint) -> ReactiveUtil.print(toPrint.getText()),
+                throwable -> System.err.println(throwable.getMessage()));
+    }
+
+    @Test
+    public void createAlternatve() throws Exception {
+        final String articleName = "Observable";
+
+        Observable.just(articleName)
+                .map(this::getArticle)
+                .map(Article::getText)
+                .test()
+                .awaitDone(5, TimeUnit.SECONDS)
+                .assertValue(value -> value.startsWith("Eine '''Observable'''"))
+                .assertComplete();
     }
 
     @Test

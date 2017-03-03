@@ -31,10 +31,11 @@ public class Kata1Create {
 
     @Test
     public void createAlternative() throws Exception {
-        Mono.just(ARTICLE_NAME)
+        StepVerifier.create(Mono.just(ARTICLE_NAME)
                 .map(this::getArticle)
-                .map(Article::getText)
-                .subscribe(ReactiveUtil::print);
+                .map(Article::getText))
+                .expectNextMatches(value -> value.startsWith("Eine '''Observable'''"))
+                .verifyComplete();
     }
 
     @Test
