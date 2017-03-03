@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @author Andreas Keefer
  */
-public class Kata5SchedulingObservable {
+public class Kata5Scheduling {
 
     private final WikiService wikiService = WikiService.create();
     private final RatingService ratingService = RatingService.create();
@@ -25,10 +25,10 @@ public class Kata5SchedulingObservable {
      * 4. use the {@link RatingService#rateFlux(ParsedPage)} and {@link CountService#countWordsFlux(ParsedPage)}
      * to combine both as JSON and print the JSON to the console. Example {"rating": 3, "wordCount": 452}
      * 5. measure the runtime
-     * 6. add a scheduler to a specific position in the observable chain to reduce the execution time
+     * 6. add a scheduler to a specific position in the chain to reduce the execution time
      */
     @Test
-    public void schedulingObservable() throws Exception {
+    public void scheduling() throws Exception {
         wikiService.wikiArticleBeingReadFlux(50, TimeUnit.MILLISECONDS);
     }
 }

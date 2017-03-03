@@ -16,7 +16,7 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 /**
  * @author Andreas Keefer
  */
-public class Kata3CombiningObservable {
+public class Kata3Combining {
 
     private final WikiService wikiService = WikiService.create();
     private final RatingService ratingService = RatingService.create();
@@ -29,16 +29,15 @@ public class Kata3CombiningObservable {
      * Example {"articleName": "Superman", "rating": 3, "wordCount": 452}
      */
     @Test
-    public void combiningObservable() throws Exception {
+    public void combining() throws Exception {
         WaitMonitor waitMonitor = new WaitMonitor();
 
         final String wikiArticle = "Bilbilis";
         wikiService.fetchArticleFlux(wikiArticle)
                 .flatMap(wikiService::parseMediaWikiTextFlux)
                 .flatMap(parsedPage -> {
-                    Flux<ParsedPage> p = Flux.just(parsedPage);
-                    Flux<Integer> rating = p.flatMap(ratingService::rateFlux);
-                    Flux<Integer> wordCount = p.flatMap(countService::countWordsFlux);
+                    Flux<Integer> rating = ratingService.rateFlux(parsedPage);
+                    Flux<Integer> wordCount = countService.countWordsFlux(parsedPage);
 
                     return rating.zipWith(wordCount,
                             (r, wc) -> String.format("{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
@@ -53,7 +52,7 @@ public class Kata3CombiningObservable {
     }
 
     @Test
-    public void combiningObservablePublish() throws Exception {
+    public void combiningPublish() throws Exception {
         WaitMonitor waitMonitor = new WaitMonitor();
 
         final String wikiArticle = "Bilbilis";
@@ -61,32 +60,11 @@ public class Kata3CombiningObservable {
                 .flatMap(wikiService::parseMediaWikiTextFlux)
                 .publish();
 
-        Flux<Integer> ratingObservable = connectableFlux.flatMap(ratingService::rateFlux);
-        Flux<Integer> wordCountObservable = connectableFlux.flatMap(countService::countWordsFlux);
+        Flux<Integer> ratingFkux = connectableFlux.flatMap(ratingService::rateFlux);
+        Flux<Integer> wordCountFlux = connectableFlux.flatMap(countService::countWordsFlux);
         connectableFlux.connect();
 
-        ratingObservable.zipWith(wordCountObservable, (r, wc) -> String.format(
-                "{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
-                wikiArticle, r, wc))
-                .subscribe(next -> print("next: %s", next),
-                        Throwable::printStackTrace,
-                        () -> waitMonitor.complete());
-
-        waitMonitor.waitFor(10, TimeUnit.SECONDS);
-    }
-
-    @Test
-    public void combiningObservablePublish2() throws Exception {
-        WaitMonitor waitMonitor = new WaitMonitor();
-
-        final String wikiArticle = "Bilbilis";
-        Flux<ParsedPage> pages = wikiService.fetchArticleFlux(wikiArticle)
-                .flatMap(wikiService::parseMediaWikiTextFlux);
-
-        Flux<Integer> ratingObservable = pages.flatMap(ratingService::rateFlux);
-        Flux<Integer> wordCountObservable = pages.flatMap(countService::countWordsFlux);
-
-        ratingObservable.zipWith(wordCountObservable, (r, wc) -> String.format(
+        ratingFkux.zipWith(wordCountFlux, (r, wc) -> String.format(
                 "{\"articleName\": \"%s\", \"rating\": %s, \"wordCount\": %s}",
                 wikiArticle, r, wc))
                 .subscribe(next -> print("next: %s", next),

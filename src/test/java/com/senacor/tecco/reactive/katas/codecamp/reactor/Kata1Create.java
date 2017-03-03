@@ -7,12 +7,12 @@ import org.junit.Test;
 /**
  * @author Andreas Keefer
  */
-public class Kata1CreateObservable {
+public class Kata1Create {
 
     @Test
-    public void createAnObservable() throws Exception {
+    public void create() throws Exception {
         final String articleName = "Observable";
-        // Create an observable from getArticle
+        // Create an Flux from getArticle
 
 
     }

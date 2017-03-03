@@ -9,7 +9,7 @@ import org.junit.Test;
 /**
  * @author Andreas Keefer
  */
-public class Kata3CombiningObservable {
+public class Kata3Combining {
 
     private WikiService wikiService = WikiService.create();
     private CountService countService = CountService.create();
@@ -22,7 +22,7 @@ public class Kata3CombiningObservable {
      * Example {"articleName": "Superman", "rating": 3, "wordCount": 452}
      */
     @Test
-    public void combiningObservable() throws Exception {
+    public void combining() throws Exception {
         wikiService.fetchArticleFlux("Bilbilis");
     }
 }

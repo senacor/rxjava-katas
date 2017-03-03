@@ -15,7 +15,7 @@ import static com.senacor.tecco.reactive.ReactiveUtil.print;
 /**
  * @author Andreas Keefer
  */
-public class Kata4FilteringObservable {
+public class Kata4Filtering {
 
     private final WikiService wikiService = WikiService.create();
 
@@ -26,7 +26,7 @@ public class Kata4FilteringObservable {
      * everything to the console
      */
     @Test
-    public void filterObservable() throws Exception {
+    public void filter() throws Exception {
         final WaitMonitor monitor = new WaitMonitor();
 
         Flux<String> articles = wikiService.wikiArticleBeingReadFlux(500, TimeUnit.MILLISECONDS);
@@ -51,7 +51,7 @@ public class Kata4FilteringObservable {
      * at {@link WikiService#wikiArticleBeingReadFlux(long, TimeUnit)} ;)
      */
     @Test
-    public void filterObservable2() throws Exception {
+    public void filter2() throws Exception {
         final WaitMonitor monitor = new WaitMonitor();
 
         Flux<String> articles = wikiService.wikiArticleBeingReadFlux(100, TimeUnit.MILLISECONDS);

@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @author Andreas Keefer
  */
-public class Kata4FilteringObservable {
+public class Kata4Filtering {
 
     private final WikiService wikiService = WikiService.create();
 
@@ -19,7 +19,7 @@ public class Kata4FilteringObservable {
      * everything to the console
      */
     @Test
-    public void filterObservable() throws Exception {
+    public void filter() throws Exception {
         wikiService.wikiArticleBeingReadFlux(500, TimeUnit.MILLISECONDS);
     }
 
@@ -31,7 +31,7 @@ public class Kata4FilteringObservable {
      * at {@link WikiService#wikiArticleBeingReadFlux(long, TimeUnit)} ;)
      */
     @Test
-    public void filterObservable2() throws Exception {
+    public void filter2() throws Exception {
 
         wikiService.wikiArticleBeingReadFlux(100, TimeUnit.MILLISECONDS);
     }

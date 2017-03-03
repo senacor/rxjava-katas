@@ -9,6 +9,7 @@ import com.senacor.tecco.reactive.util.*;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.Flowable;
 import io.reactivex.Observable;
+import io.reactivex.schedulers.Schedulers;
 import io.reactivex.subjects.PublishSubject;
 import org.apache.commons.lang3.StringUtils;
 import reactor.core.publisher.Flux;
@@ -23,9 +24,8 @@ import java.util.Random;
 import java.util.concurrent.*;
 import java.util.function.Consumer;
 
-import static com.senacor.tecco.reactive.ReactiveUtil.getThreadId;
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
-import static io.reactivex.BackpressureStrategy.MISSING;
+import static io.reactivex.BackpressureStrategy.BUFFER;
 
 /**
  * @author Andreas Keefer
@@ -230,7 +230,7 @@ public class WikiService {
      * ATTENTION, this is a HOT observable, which emits the Items without a subscription
      */
     public Flux<String> wikiArticleBeingReadFlux(final long interval, final TimeUnit unit) {
-        return Flux.from(wikiArticleBeingReadObservable(interval, unit).toFlowable(MISSING));
+        return Flux.from(wikiArticleBeingReadObservable(interval, unit).toFlowable(BUFFER));
     }
 
     /**
@@ -244,7 +244,7 @@ public class WikiService {
     public Observable<String> wikiArticleBeingReadObservable(final long interval, final TimeUnit unit) {
         final Random randomGenerator = new Random(8L);
         PublishSubject<String> publishSubject = PublishSubject.create();
-        Observable.interval(interval, unit)
+        Observable.interval(interval, unit, Schedulers.computation())
                 .map(time -> {
                     String article = WIKI_ARTICLES.get(randomGenerator.nextInt(WIKI_ARTICLES.size()));
                     print("wikiArticleBeingReadObservable=%s", article);
@@ -262,7 +262,7 @@ public class WikiService {
      * ATTENTION, this is a HOT observable, which emits the Items without a subscription
      */
     public Flux<String> wikiArticleBeingReadFluxBurst() {
-        return Flux.from(wikiArticleBeingReadObservableBurst().toFlowable(MISSING));
+        return Flux.from(wikiArticleBeingReadObservableBurst().toFlowable(BUFFER));
     }
 
     /**
@@ -278,7 +278,7 @@ public class WikiService {
         ReactiveUtil.burstSource()
                 .map(ignore -> {
                     String article = WIKI_ARTICLES.get(randomGenerator.nextInt(WIKI_ARTICLES.size()));
-                    System.out.println(getThreadId() + "wikiArticleBeingReadObservable=" + article);
+                    print("wikiArticleBeingReadObservable=" + article);
                     return article;
                 }).subscribe(publishSubject);
         return publishSubject;

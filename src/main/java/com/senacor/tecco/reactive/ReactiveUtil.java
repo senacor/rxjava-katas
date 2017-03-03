@@ -7,6 +7,7 @@ import io.reactivex.schedulers.Schedulers;
 import org.apache.commons.lang.math.RandomUtils;
 import org.apache.commons.lang3.ArrayUtils;
 
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
 import java.util.regex.Matcher;
@@ -68,12 +69,21 @@ public class ReactiveUtil {
         return null;
     }
 
-    public static Scheduler newScheduler(int size, String name) {
+    public static Scheduler newRxScheduler(int size, String name) {
+        return Schedulers.from(newExecutor(size, name));
+    }
+
+    public static reactor.core.scheduler.Scheduler newReactorScheduler(int size, String name) {
+
+        return reactor.core.scheduler.Schedulers.fromExecutor(newExecutor(size, name));
+    }
+
+    private static ExecutorService newExecutor(int size, String name) {
         final ThreadFactory threadFactory = new ThreadFactoryBuilder()
                 .setNameFormat(name + "-%d")
                 .setDaemon(true)
                 .build();
-        return Schedulers.from(Executors.newFixedThreadPool(size, threadFactory));
+        return Executors.newFixedThreadPool(size, threadFactory);
     }
 
     public static Scheduler newCachedThreadPoolScheduler(String name) {

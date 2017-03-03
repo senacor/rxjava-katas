@@ -12,7 +12,7 @@ import org.junit.Test;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
-import static com.senacor.tecco.reactive.ReactiveUtil.newScheduler;
+import static com.senacor.tecco.reactive.ReactiveUtil.newRxScheduler;
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
 import static org.apache.commons.lang3.Validate.notNull;
 
@@ -21,7 +21,7 @@ import static org.apache.commons.lang3.Validate.notNull;
  */
 public class Kata6WikiLinks {
 
-    private static Scheduler scheduler = newScheduler(25, "io");
+    private static Scheduler scheduler = newRxScheduler(25, "io");
     private final WikiService wikiService = WikiService.create();
 
     @Test
@@ -55,7 +55,7 @@ public class Kata6WikiLinks {
                 .subscribeOn(scheduler)
                 .flatMap((mediaWikiText) -> wikiService.parseMediaWikiTextObservable(mediaWikiText)
                         .subscribeOn(Schedulers.computation()))
-                .filter(parsedPage -> parsedPage != null)
+                .filter(Objects::nonNull)
                 .flatMapIterable(ParsedPage::getSections)
                 .flatMapIterable(section -> section.getLinks(Link.type.INTERNAL))
                 .map(link -> new WikiLink(wikiArticle, link.getTarget()))
@@ -63,7 +63,7 @@ public class Kata6WikiLinks {
                 .doOnNext(wikiLink -> print(wikiLink));
     }
 
-    private static class WikiLink {
+    public static class WikiLink {
         private final String sourceArticle;
         private final String targetArticle;
 

@@ -1,5 +1,6 @@
 package com.senacor.tecco.reactive.services;
 
+import com.google.common.collect.Iterables;
 import com.senacor.tecco.reactive.services.integration.BlackHoleDatabase;
 import com.senacor.tecco.reactive.services.integration.BlackHoleDatabaseImpl;
 import com.senacor.tecco.reactive.util.*;
@@ -38,7 +39,7 @@ public class PersistService {
      * @return runtime
      */
     public long save(String wikiArticle) {
-        return database.save(wikiArticle);
+        return database.saveOne(wikiArticle);
     }
 
     /**
@@ -46,7 +47,10 @@ public class PersistService {
      * @return runtime
      */
     public long save(Iterable<String> wikiArticle) {
-        return database.save(wikiArticle);
+        if (Iterables.isEmpty(wikiArticle)) {
+            return 0;
+        }
+        return database.saveBatch(wikiArticle);
     }
 
 

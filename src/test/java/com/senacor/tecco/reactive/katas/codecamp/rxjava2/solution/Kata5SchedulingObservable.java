@@ -3,10 +3,8 @@ package com.senacor.tecco.reactive.katas.codecamp.rxjava2.solution;
 import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.WaitMonitor;
 import com.senacor.tecco.reactive.services.CountService;
-import com.senacor.tecco.reactive.services.PersistService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
-import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.Observable;
 import io.reactivex.Scheduler;
 import io.reactivex.disposables.Disposable;
@@ -24,7 +22,6 @@ public class Kata5SchedulingObservable {
 
     private final WikiService wikiService = WikiService.create();
     private final RatingService ratingService = RatingService.create();
-    private final PersistService persistService = PersistService.create();
     private final CountService countService = CountService.create();
 
     @Test
@@ -39,23 +36,17 @@ public class Kata5SchedulingObservable {
 
         final WaitMonitor monitor = new WaitMonitor();
 
-        Scheduler fiveThreads = ReactiveUtil.newScheduler(5, "my-scheduler");
+        Scheduler fiveThreads = ReactiveUtil.newRxScheduler(5, "my-scheduler");
 
-        Observable<ParsedPage> pages = wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
+        Disposable subscription = wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
                 .take(20)
-                .flatMap(name -> Observable.just(name)
-                        .flatMap(wikiService::fetchArticleObservable)
-                        .subscribeOn(Schedulers.io()))
-                .flatMap(wikiService::parseMediaWikiTextObservable);
-
-        Observable<Integer> ratings = pages.flatMap(ratingService::rateObservable);
-        Observable<Integer> wordCount = pages.flatMap(countService::countWordsObservable);
-
-        Disposable subscription = ratings.zipWith(wordCount, (r, wc) -> String.format(
-                "{\"rating\": %s, \"wordCount\": %s}",
-                r, wc)
-        )
-                .subscribeOn(fiveThreads)
+                .flatMap(name -> wikiService.fetchArticleObservable(name).subscribeOn(Schedulers.io()))
+                .flatMap(wikiService::parseMediaWikiTextObservable)
+                .flatMap(parsedPage -> Observable.zip(ratingService.rateObservable(parsedPage).subscribeOn(fiveThreads),
+                        countService.countWordsObservable(parsedPage).subscribeOn(fiveThreads),
+                        (rating, wordCount) -> String.format(
+                                "{\"rating\": %s, \"wordCount\": %s}",
+                                rating, wordCount)))
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         () -> {
@@ -63,7 +54,7 @@ public class Kata5SchedulingObservable {
                             monitor.complete();
                         });
 
-        monitor.waitFor(22, TimeUnit.SECONDS);
+        monitor.waitFor(10, TimeUnit.SECONDS);
         subscription.dispose();
     }
 

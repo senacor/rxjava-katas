@@ -1,5 +1,7 @@
 package com.senacor.tecco.reactive.services.integration;
 
+import com.google.common.collect.Iterables;
+
 import static com.senacor.tecco.reactive.ReactiveUtil.fixedDelay;
 
 /**
@@ -8,14 +10,17 @@ import static com.senacor.tecco.reactive.ReactiveUtil.fixedDelay;
 public class BlackHoleDatabaseImpl implements BlackHoleDatabase {
 
     @Override
-    public long save(Object object) {
+    public long saveOne(Object object) {
         int delay = 10;
         fixedDelay(delay);
         return delay;
     }
 
     @Override
-    public long save(Iterable<Object> objects) {
+    public long saveBatch(Iterable<?> objects) {
+        if (Iterables.isEmpty(objects)) {
+            return 0;
+        }
         int delay = 15;
         fixedDelay(delay);
         return delay;

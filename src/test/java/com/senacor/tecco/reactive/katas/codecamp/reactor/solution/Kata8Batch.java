@@ -60,7 +60,7 @@ public class Kata8Batch {
         Disposable subscribe = wikiService.wikiArticleBeingReadFluxBurst()
                 .take(Duration.of(2, SECONDS))
                 .doOnNext(ReactiveUtil::print)
-                .buffer(Duration.of(500, MILLIS))
+                .bufferTimeout(5, Duration.of(500, MILLIS))
                 .map(persistService::save)
                 .reduce((l, r) -> l + r)
                 .subscribe(next -> print("save runtime (SUM): %s ms", next),

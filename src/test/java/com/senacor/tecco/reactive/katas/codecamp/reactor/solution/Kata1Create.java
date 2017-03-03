@@ -4,18 +4,20 @@ import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.services.integration.WikipediaServiceMediaWikiBot;
 import net.sourceforge.jwbf.core.contentRep.Article;
 import org.junit.Test;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import reactor.test.StepVerifier;
 
 /**
  * @author Andreas Keefer
  * @version 2.0
  */
-public class Kata1CreateObservable {
+public class Kata1Create {
 
     public static final String ARTICLE_NAME = "Observable";
 
     @Test
-    public void createAnObservable() throws Exception {
+    public void create() throws Exception {
         Mono.<Article>create(sink -> {
             try {
                 sink.success(getArticle(ARTICLE_NAME));
@@ -28,11 +30,27 @@ public class Kata1CreateObservable {
     }
 
     @Test
-    public void createAnObservable2() throws Exception {
+    public void createAlternative() throws Exception {
         Mono.just(ARTICLE_NAME)
                 .map(this::getArticle)
                 .map(Article::getText)
                 .subscribe(ReactiveUtil::print);
+    }
+
+    @Test
+    public void createFlux() throws Exception {
+        final String articleName = "Observable";
+
+        StepVerifier.create(Flux.<Article>create(sink -> {
+            try {
+                sink.next(getArticle(articleName));
+                sink.complete();
+            } catch (Exception e) {
+                sink.error(e);
+            }
+        }))
+                .expectNextMatches(value -> articleName.equals(value.getTitle()))
+                .verifyComplete();
     }
 
     private Article getArticle(String name) {

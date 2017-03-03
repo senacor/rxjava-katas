@@ -1,7 +1,10 @@
 package com.senacor.tecco.reactive.katas.codecamp.reactor.solution;
 
+import com.senacor.tecco.reactive.ReactiveUtil;
 import com.senacor.tecco.reactive.WaitMonitor;
-import com.senacor.tecco.reactive.services.*;
+import com.senacor.tecco.reactive.services.CountService;
+import com.senacor.tecco.reactive.services.RatingService;
+import com.senacor.tecco.reactive.services.WikiService;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;
 import reactor.core.Disposable;
@@ -12,16 +15,14 @@ import reactor.core.scheduler.Schedulers;
 import java.util.concurrent.TimeUnit;
 
 import static com.senacor.tecco.reactive.ReactiveUtil.print;
-import static reactor.core.scheduler.Schedulers.elastic;
 
 /**
  * @author Andreas Keefer
  */
-public class Kata5SchedulingObservable {
+public class Kata5Scheduling {
 
     private final WikiService wikiService = WikiService.create();
     private final RatingService ratingService = RatingService.create();
-    private final PersistService persistService = PersistService.create();
     private final CountService countService = CountService.create();
 
     /**
@@ -32,23 +33,23 @@ public class Kata5SchedulingObservable {
      * 4. use the {@link RatingService#rateFlux(ParsedPage)} and {@link CountService#countWordsFlux(ParsedPage)}
      * to combine both as JSON and print the JSON to the console. Example {"rating": 3, "wordCount": 452}
      * 5. measure the runtime
-     * 6. add a scheduler to a specific position in the observable chain to reduce the execution time
+     * 6. add a scheduler to a specific position in the chain to reduce the execution time
      */
     @Test
-    public void schedulingObservable() throws Exception {
+    public void scheduling() throws Exception {
         final WaitMonitor monitor = new WaitMonitor();
 
-        Flux<String> articles = wikiService.wikiArticleBeingReadFlux(50, TimeUnit.MILLISECONDS);
-        Flux<ParsedPage> pages = articles
+        Scheduler fiveThreads = ReactiveUtil.newReactorScheduler(5, "my-scheduler");
+
+        Disposable subscription = wikiService.wikiArticleBeingReadFlux(50, TimeUnit.MILLISECONDS)
                 .take(20)
-                .flatMap(name -> wikiService.fetchArticleFlux(name)).subscribeOn(elastic())
-                .flatMap(wikiService::parseMediaWikiTextFlux);
-
-        Scheduler fiveThreads = Schedulers.newParallel("my-scheduler", 5);
-        Flux<Integer> ratings = pages.flatMap(ratingService::rateFlux).subscribeOn(fiveThreads);
-        Flux<Integer> wordCount = pages.flatMap(countService::countWordsFlux).subscribeOn(fiveThreads);
-
-        Disposable subscribtion = ratings.zipWith(wordCount)
+                .flatMap(name -> wikiService.fetchArticleFlux(name).subscribeOn(Schedulers.elastic()))
+                .flatMap(wikiService::parseMediaWikiTextFlux)
+                .flatMap(parsedPage -> Flux.zip(ratingService.rateFlux(parsedPage).subscribeOn(fiveThreads),
+                        countService.countWordsFlux(parsedPage).subscribeOn(fiveThreads),
+                        (rating, wordCount) -> String.format(
+                                "{\"rating\": %s, \"wordCount\": %s}",
+                                rating, wordCount)))
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
                         () -> {
@@ -56,7 +57,7 @@ public class Kata5SchedulingObservable {
                             monitor.complete();
                         });
 
-        monitor.waitFor(22, TimeUnit.SECONDS);
-        subscribtion.dispose();
+        monitor.waitFor(10, TimeUnit.SECONDS);
+        subscription.dispose();
     }
 }
