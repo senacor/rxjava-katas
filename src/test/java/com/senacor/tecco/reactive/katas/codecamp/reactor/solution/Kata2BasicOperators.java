@@ -20,14 +20,27 @@ public class Kata2BasicOperators {
     public void basicsA() throws Exception {
         // 1. Use the WikiService (fetchArticleFlux) and fetch an arbitrary wikipedia article
         // 2. transform the result with the WikiService#parseMediaWikiText to an object structure
-        // 3. split the Article (ParsedPage.getText()) in words (separator=" ")
-        // 4. sum the number of letters of all words beginning with character 'a' to the console
+        //    and print out the first Paragraph
 
         StepVerifier.create(
                 wikiService.fetchArticleFlux("Physik")
                         //.doOnNext(debug -> print("fetchArticleFlux res: %s", debug))
                         .map(wikiService::parseMediaWikiText)
-                        //.doOnNext(debug -> print("parseMediaWikiTextFlux res: %s", debug))
+                        .map(parsedPage -> parsedPage.getParagraph(0).toString())
+                        .doOnNext(next -> print("1st Paragraph: %s", next))
+        )
+                .expectNextMatches(value -> value.contains("Dieser_Artikel, beschreibt die Naturwissenschaft Physik."))
+                .verifyComplete();
+    }
+
+    @Test
+    public void basicsB() throws Exception {
+        // 3. split the Article (ParsedPage.getText()) in words (separator=" ")
+        // 4. sum the number of letters of all words beginning with character 'a' to the console
+
+        StepVerifier.create(
+                wikiService.fetchArticleFlux("Physik")
+                        .map(wikiService::parseMediaWikiText)
                         .flatMapIterable(parsedPage -> Arrays.asList(StringUtils.split(parsedPage.getText(), " ")))
                         //.flatMap(parsedPage -> Flux.from(StringUtils.split(parsedPage.getText(), " ")))
                         .filter(word -> word.startsWith("a"))
@@ -40,7 +53,7 @@ public class Kata2BasicOperators {
     }
 
     @Test
-    public void basicsB() throws Exception {
+    public void basicsC() throws Exception {
         // 5. filter out redundant words beginning with 'a'
         // 6. order them by length and take only the top 10 words in length
 
