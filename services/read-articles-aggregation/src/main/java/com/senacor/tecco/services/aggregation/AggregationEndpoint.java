@@ -51,7 +51,7 @@ public class AggregationEndpoint {
 
     @GetMapping("/read")
     public Flux<ReadStatistics> getReadArticle() {
-        return readArticle.take(1);
+        return readArticle;
     }
 
 }
