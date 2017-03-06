@@ -1,0 +1,2 @@
+spring.application.name: statistics
+server.port: 8080

@@ -74,7 +74,7 @@ public final class Server {
 
             Channel ch = b.bind(PORT).sync().channel();
 
-            logger.info("Find frontend at http://localhost:{}/index.html'", PORT);
+            logger.info("Find frontend at http://localhost:{}/index.html", PORT);
             ch.closeFuture().sync();
         } finally {
             bossGroup.shutdownGracefully();

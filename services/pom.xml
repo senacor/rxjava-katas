@@ -20,6 +20,7 @@
         <module>ms-wikiloader</module>
         <module>article-metrics</module>
         <module>read-articles-aggregation</module>
+        <module>statistics</module>
     </modules>
 
     <properties>
