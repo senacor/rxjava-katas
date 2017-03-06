@@ -18,6 +18,7 @@
 
     <modules>
         <module>ms-wikiloader</module>
+        <module>article-analyzer</module>
     </modules>
 
     <properties>
