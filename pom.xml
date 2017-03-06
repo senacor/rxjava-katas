@@ -122,10 +122,16 @@
                 <version>${vertx.version}</version>
             </dependency>
 
+            <!-- logging -->
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-jdk14</artifactId>
-                <version>1.7.23</version>
+                <version>1.7.24</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>1.7.24</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -218,10 +224,6 @@
             <groupId>io.vertx</groupId>
             <artifactId>vertx-reactive-streams</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-jdk14</artifactId>
-        </dependency>
     </dependencies>
 
     <build>
@@ -292,6 +294,7 @@
 
     <modules>
         <module>common-wiki</module>
+        <module>netty-example</module>
         <module>kata-rxjava</module>
         <module>kata-reactor</module>
         <module>kata-vertx</module>
