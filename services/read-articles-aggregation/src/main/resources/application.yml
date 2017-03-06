@@ -1,2 +1,8 @@
 spring.application.name: article-metrics
 server.port: 8081
+
+spring.logging.org: DEBUG
+
+services:
+  wikiloader: http://localhost:8082
+  metrics: http://localhost:8083
