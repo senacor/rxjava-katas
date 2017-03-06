@@ -10,10 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.senacor.tecco.codecamp.reactive.services</groupId>
-    <artifactId>article-metrics</artifactId>
+    <artifactId>read-articles-aggregation</artifactId>
 
     <properties>
-        <start-class>com.senacor.tecco.services.metrics.Application</start-class>
+        <start-class>com.senacor.tecco.services.aggregation.Application</start-class>
     </properties>
 
     <dependencies>
