@@ -305,5 +305,6 @@
         <module>kata-rxjava</module>
         <module>kata-reactor</module>
         <module>kata-vertx</module>
+        <module>services</module>
     </modules>
 </project>
