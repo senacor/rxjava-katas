@@ -1,9 +1,13 @@
 package com.senacor.tecco.reactive.katas.codecamp.reactor;
 
+import com.senacor.tecco.reactive.katas.KataClassification;
 import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
+
+import static com.senacor.tecco.reactive.katas.KataClassification.Classification.advanced;
+import static com.senacor.tecco.reactive.katas.KataClassification.Classification.hardcore;
 
 /**
  * @author Andreas Keefer
@@ -19,6 +23,7 @@ public class Kata4Filtering {
      * everything to the console
      */
     @Test
+    @KataClassification(advanced)
     public void filter() throws Exception {
         wikiService.wikiArticleBeingReadFlux(500, TimeUnit.MILLISECONDS);
     }
@@ -31,6 +36,7 @@ public class Kata4Filtering {
      * at {@link WikiService#wikiArticleBeingReadFlux(long, TimeUnit)} ;)
      */
     @Test
+    @KataClassification(hardcore)
     public void filter2() throws Exception {
 
         wikiService.wikiArticleBeingReadFlux(100, TimeUnit.MILLISECONDS);

@@ -1,10 +1,11 @@
 package com.senacor.tecco.reactive.katas.codecamp.reactor;
 
-import com.senacor.tecco.reactive.util.WaitMonitor;
+import com.senacor.tecco.reactive.katas.KataClassification;
 import com.senacor.tecco.reactive.services.PersistService;
 import com.senacor.tecco.reactive.services.WikiService;
 import com.senacor.tecco.reactive.util.DelayFunction;
 import com.senacor.tecco.reactive.util.FlakinessFunction;
+import com.senacor.tecco.reactive.util.WaitMonitor;
 import reactor.core.Disposable;
 import reactor.core.publisher.Flux;
 import reactor.core.scheduler.Scheduler;
@@ -15,6 +16,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
+import static com.senacor.tecco.reactive.katas.KataClassification.Classification.advanced;
+import static com.senacor.tecco.reactive.katas.KataClassification.Classification.mandatory;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 /**
@@ -34,6 +37,7 @@ public class Kata9Backpressure {
         new Kata9Backpressure().backpressure();
     }
 
+    @KataClassification({mandatory, advanced})
     private void backpressure() throws Exception {
         // 1. run the main method with -Xmx64m and recognize the OutOfMemoryError.
         // 2. change the readWikiArticlesFromFile to a producer which handles backpressure.

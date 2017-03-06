@@ -1,8 +1,12 @@
 package com.senacor.tecco.reactive.katas.codecamp.rxjava2;
 
+import com.senacor.tecco.reactive.katas.KataClassification;
 import com.senacor.tecco.reactive.services.PersistService;
 import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
+
+import static com.senacor.tecco.reactive.katas.KataClassification.Classification.advanced;
+import static com.senacor.tecco.reactive.katas.KataClassification.Classification.mandatory;
 
 /**
  * @author Andreas Keefer
@@ -13,6 +17,7 @@ public class Kata8Batch {
     private final PersistService persistService = PersistService.create();
 
     @Test
+    @KataClassification(mandatory)
     public void withoutBatch() throws Exception {
         // 1. use WikiService#wikiArticleBeingReadObservableBurst that returns a stream of wiki article being read
         // 2. watch the stream 2 sec
@@ -24,6 +29,7 @@ public class Kata8Batch {
 
 
     @Test
+    @KataClassification(mandatory)
     public void batch() throws Exception {
         // 1. do the same as above, but this time use the method #save(Iterable) to save a batch of articles.
         //    use a batch size of 5.
@@ -33,6 +39,7 @@ public class Kata8Batch {
     }
 
     @Test
+    @KataClassification(advanced)
     public void batch2() throws Exception {
         // 2. If the batch size is not reached within 500 milliseconds,
         //    flush the buffer anyway by writing to the service

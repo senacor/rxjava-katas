@@ -1,9 +1,13 @@
 package com.senacor.tecco.reactive.katas.codecamp.rxjava2;
 
+import com.senacor.tecco.reactive.katas.KataClassification;
 import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
+
+import static com.senacor.tecco.reactive.katas.KataClassification.Classification.advanced;
+import static com.senacor.tecco.reactive.katas.KataClassification.Classification.hardcore;
 
 /**
  * @author Andreas Keefer
@@ -13,6 +17,7 @@ public class Kata4Filtering {
     private final WikiService wikiService = WikiService.create();
 
     @Test
+    @KataClassification(advanced)
     public void filterObservable() throws Exception {
         // 1. Use WikiService#wikiArticleBeingReadObservable that delivers a stream of WikiArticle names being read
         // 2. Filter the names so that only articles with at least 15 characters long names are accepted and print everything to the console
@@ -21,6 +26,7 @@ public class Kata4Filtering {
     }
 
     @Test
+    @KataClassification(hardcore)
     public void filterObservable2() throws Exception {
         // 1. Use WikiService#wikiArticleBeingReadObservable that delivers a stream of WikiArticle names being read
         // 2. The stream delivers to many article to be processed.

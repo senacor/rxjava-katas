@@ -1,11 +1,14 @@
 package com.senacor.tecco.reactive.katas.codecamp.rxjava2;
 
+import com.senacor.tecco.reactive.katas.KataClassification;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
+
+import static com.senacor.tecco.reactive.katas.KataClassification.Classification.mandatory;
 
 /**
  * @author Andreas Keefer
@@ -17,6 +20,7 @@ public class Kata5Scheduling {
     private final CountService countService = CountService.create();
 
     @Test
+    @KataClassification(mandatory)
     public void schedulingObservable() throws Exception {
         // 1. use the WikiService#wikiArticleBeingReadObservable to create a stream of WikiArticle names being read
         // 2. take only the first 20 articles

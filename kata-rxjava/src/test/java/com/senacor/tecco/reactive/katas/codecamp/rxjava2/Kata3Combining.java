@@ -1,9 +1,12 @@
 package com.senacor.tecco.reactive.katas.codecamp.rxjava2;
 
+import com.senacor.tecco.reactive.katas.KataClassification;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
+
+import static com.senacor.tecco.reactive.katas.KataClassification.Classification.mandatory;
 
 /**
  * @author Andreas Keefer
@@ -15,6 +18,7 @@ public class Kata3Combining {
     private RatingService ratingService = RatingService.create();
 
     @Test
+    @KataClassification(mandatory)
     public void combiningObservable() throws Exception {
         // 1. fetch and parse Wikiarticle
         // 2. use ratingService.rateObservable() and countService.countWordsObervable(). Combine both information as JSON

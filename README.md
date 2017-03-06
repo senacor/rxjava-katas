@@ -1,3 +1,18 @@
+Building this Project
+=====================
+
+### requirements ###
+- maven 3
+
+### build ###
+
+`mvn clean install`
+
+##### Troubleshooting
+- if you have troubles with failing Unittests, e.g. you are working offline 
+  or your internet connection is quite slow or unreliable:
+  <br> -> in `WikiService` you can enable mockmode globally by setting `MOCKMODE = true`
+
 RxJava
 ============
 

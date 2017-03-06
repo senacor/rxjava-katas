@@ -1,8 +1,8 @@
 package com.senacor.tecco.reactive.katas.codecamp.rxjava2.solution;
 
-import com.senacor.tecco.reactive.util.ReactiveUtil;
 import com.senacor.tecco.reactive.services.PersistService;
 import com.senacor.tecco.reactive.services.WikiService;
+import com.senacor.tecco.reactive.util.ReactiveUtil;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;

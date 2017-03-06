@@ -1,7 +1,7 @@
 package com.senacor.tecco.reactive.katas.codecamp.rxjava2.solution;
 
-import com.senacor.tecco.reactive.util.ReactiveUtil;
 import com.senacor.tecco.reactive.services.integration.WikipediaServiceMediaWikiBot;
+import com.senacor.tecco.reactive.util.ReactiveUtil;
 import io.reactivex.Observable;
 import net.sourceforge.jwbf.core.contentRep.Article;
 import org.junit.Test;

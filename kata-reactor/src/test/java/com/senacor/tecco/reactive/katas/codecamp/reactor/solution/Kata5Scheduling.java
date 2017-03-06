@@ -1,10 +1,10 @@
 package com.senacor.tecco.reactive.katas.codecamp.reactor.solution;
 
-import com.senacor.tecco.reactive.util.ReactiveUtil;
-import com.senacor.tecco.reactive.util.WaitMonitor;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
+import com.senacor.tecco.reactive.util.ReactiveUtil;
+import com.senacor.tecco.reactive.util.WaitMonitor;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;
 import reactor.core.Disposable;

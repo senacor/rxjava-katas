@@ -1,10 +1,10 @@
 package com.senacor.tecco.reactive.katas.codecamp.reactor.solution;
 
-import com.senacor.tecco.reactive.util.WaitMonitor;
 import com.senacor.tecco.reactive.services.PersistService;
 import com.senacor.tecco.reactive.services.WikiService;
 import com.senacor.tecco.reactive.util.DelayFunction;
 import com.senacor.tecco.reactive.util.FlakinessFunction;
+import com.senacor.tecco.reactive.util.WaitMonitor;
 import org.reactivestreams.Subscription;
 import reactor.core.publisher.BaseSubscriber;
 import reactor.core.publisher.Flux;

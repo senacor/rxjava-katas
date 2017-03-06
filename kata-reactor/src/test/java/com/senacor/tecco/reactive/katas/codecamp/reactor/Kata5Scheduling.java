@@ -1,5 +1,6 @@
 package com.senacor.tecco.reactive.katas.codecamp.reactor;
 
+import com.senacor.tecco.reactive.katas.KataClassification;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
@@ -7,6 +8,8 @@ import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
+
+import static com.senacor.tecco.reactive.katas.KataClassification.Classification.mandatory;
 
 /**
  * @author Andreas Keefer
@@ -28,6 +31,7 @@ public class Kata5Scheduling {
      * 6. add a scheduler to a specific position in the chain to reduce the execution time
      */
     @Test
+    @KataClassification(mandatory)
     public void scheduling() throws Exception {
         wikiService.wikiArticleBeingReadFlux(50, TimeUnit.MILLISECONDS);
     }

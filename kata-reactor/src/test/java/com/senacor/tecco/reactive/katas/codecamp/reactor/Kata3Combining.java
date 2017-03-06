@@ -1,10 +1,13 @@
 package com.senacor.tecco.reactive.katas.codecamp.reactor;
 
+import com.senacor.tecco.reactive.katas.KataClassification;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;
+
+import static com.senacor.tecco.reactive.katas.KataClassification.Classification.mandatory;
 
 /**
  * @author Andreas Keefer
@@ -22,6 +25,7 @@ public class Kata3Combining {
      * Example {"articleName": "Superman", "rating": 3, "wordCount": 452}
      */
     @Test
+    @KataClassification(mandatory)
     public void combining() throws Exception {
         wikiService.fetchArticleFlux("Bilbilis");
     }

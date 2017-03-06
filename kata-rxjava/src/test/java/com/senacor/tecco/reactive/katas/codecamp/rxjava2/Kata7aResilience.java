@@ -1,10 +1,13 @@
 package com.senacor.tecco.reactive.katas.codecamp.rxjava2;
 
+import com.senacor.tecco.reactive.katas.KataClassification;
 import com.senacor.tecco.reactive.services.WikiService;
 import com.senacor.tecco.reactive.util.DelayFunction;
 import com.senacor.tecco.reactive.util.FlakinessFunction;
 import io.reactivex.Observable;
 import org.junit.Test;
+
+import static com.senacor.tecco.reactive.katas.KataClassification.Classification.*;
 
 /**
  * @author Andreas Keefer
@@ -12,6 +15,7 @@ import org.junit.Test;
 public class Kata7aResilience {
 
     @Test
+    @KataClassification(mandatory)
     public void timeout() throws Exception {
         // 1. use fetchArticleObservableWithTimeout and add there a timeout of 500ms.
         // 2. verify this behavior with tests
@@ -26,6 +30,7 @@ public class Kata7aResilience {
     }
 
     @Test
+    @KataClassification(hardcore)
     public void retry() throws Exception {
         // 3. when fetchArticleObservableWithTimeout fails, retry twice with a delay of 1 second
         // 4. verify this behavior with tests
@@ -37,6 +42,7 @@ public class Kata7aResilience {
     }
 
     @Test
+    @KataClassification(nightmare)
     public void ambiguous() throws Exception {
         // 5. We can do better! Take a look at the amb() operator to beat the “flakiness” and speed up
         //    fetching articles.

@@ -1,7 +1,10 @@
 package com.senacor.tecco.reactive.katas.codecamp.reactor;
 
+import com.senacor.tecco.reactive.katas.KataClassification;
 import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Test;
+
+import static com.senacor.tecco.reactive.katas.KataClassification.Classification.nightmare;
 
 /**
  * @author Andreas Keefer
@@ -11,6 +14,7 @@ public class Kata6WikiLinks {
     private final WikiService wikiService = WikiService.create();
 
     @Test
+    @KataClassification(nightmare)
     public void links() throws Exception {
         // 1. load and parse an arbitrary wiki article
         // 2. map all internal links of an article (parsedPage.getSections().getLinks(Link.type.INTERNAL))
