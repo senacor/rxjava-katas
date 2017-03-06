@@ -80,10 +80,6 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-idea-plugin</artifactId>
-            </plugin>
             <!-- build source jar -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

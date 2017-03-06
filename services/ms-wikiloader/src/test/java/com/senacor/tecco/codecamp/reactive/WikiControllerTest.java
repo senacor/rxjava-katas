@@ -14,12 +14,10 @@ public class WikiControllerTest {
 
     private WebTestClient client;
 
-
     @Before
     public void setUp() throws Exception {
         this.client = WebTestClient.bindToController(new WikiController(WikiService.create(withNoDelay()))).build();
     }
-
 
     @Test
     public void fetchArticle() throws Exception {

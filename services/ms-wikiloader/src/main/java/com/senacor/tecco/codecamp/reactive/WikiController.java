@@ -4,9 +4,8 @@ import com.senacor.tecco.reactive.services.WikiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 /**
  * @author Andreas Keefer
@@ -22,7 +21,7 @@ public class WikiController {
     }
 
     @GetMapping("/article/{name}")
-    public Flux<String> fetchArticle(@PathVariable String name) {
-        return wikiService.fetchArticleFlux(name);
+    public Mono<String> fetchArticle(@PathVariable String name) {
+        return Mono.from(wikiService.fetchArticleFlux(name));
     }
 }
