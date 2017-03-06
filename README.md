@@ -93,3 +93,13 @@ Reactor (3.0.5.RELEASE) vs. RxJava 2 (2.0.6)
 - **...**:
 <br>- Reactor
 <br>- RxJava
+
+
+Spring reactive web
+===================
+
+##### create a Microservice
+- Go to <https://start.spring.io>, set the Spring Boot version to 2.0.0(SNAPSHOT) and add the "Reactive Web" starter.  
+- then you can have a look in <https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-webflux>
+- reference DOKU: <http://docs.spring.io/spring-framework/docs/5.0.x/spring-framework-reference/html/web-reactive.html>
+- testing samples <https://github.com/spring-projects/spring-framework/tree/master/spring-test/src/test/java/org/springframework/test/web/reactive/server/samples>

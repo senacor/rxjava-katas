@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.senacor.tecco.codecamp.reactive.services</groupId>
+        <artifactId>services-base</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>ms-wikiloader</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.senacor.tecco.codecamp.reactive</groupId>
+            <artifactId>common-wiki</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.senacor.tecco.codecamp.reactive</groupId>
+            <artifactId>common-wiki</artifactId>
+            <classifier>tests</classifier>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.projectreactor.addons</groupId>
+            <artifactId>reactor-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
