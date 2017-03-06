@@ -30,16 +30,15 @@ public class AggregationEndpoint {
 
         DirectProcessor<ReadStatistics> processor = DirectProcessor.create();
         Flux<String> articles = WikiService.create()
-                                             .wikiArticleBeingReadFluxBurst()
-                                             .onBackpressureDrop()
-                .delayElements(Duration.ofSeconds(1));
+                                             .wikiArticleBeingReadFluxBurstOwn()
+                                             .onBackpressureDrop();
+//                .delayElements(Duration.ofSeconds(1));
         aggregateReadArticle(articles).subscribe(processor);
         readArticle = processor;
     }
 
     public Flux<ReadStatistics> aggregateReadArticle(Flux<String> articleNames) {
-        return articleNames.flatMap(wikiLoaderService::fetchArticle)
-                           .log()
+        return articleNames.log().flatMap(wikiLoaderService::fetchArticle)
                            .flatMap(article -> {
                                        Flux<Integer> rating = metricsService.fetchRating(article.getText());
                                        Flux<Integer> wordCount = metricsService.fetchWordcount(article.getText());

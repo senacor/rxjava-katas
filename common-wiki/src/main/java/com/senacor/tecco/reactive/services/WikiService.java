@@ -264,6 +264,9 @@ public class WikiService {
     public Flux<String> wikiArticleBeingReadFluxBurst() {
         return Flux.from(wikiArticleBeingReadObservableBurst().toFlowable(BUFFER));
     }
+    public Flux<String> wikiArticleBeingReadFluxBurstOwn() {
+        return Flux.from(wikiArticleBeingReadObservableBurstOwn().toFlowable(BUFFER));
+    }
 
     /**
      * Erzeugt "ArticleBeingRead"-Events, also als Stream.
@@ -282,6 +285,16 @@ public class WikiService {
                     return article;
                 }).subscribe(publishSubject);
         return publishSubject;
+    }
+
+    public Observable<String> wikiArticleBeingReadObservableBurstOwn() {
+        final Random randomGenerator = new Random(4L);
+        return ReactiveUtil.burstSource()
+                .map(ignore -> {
+                    String article = WIKI_ARTICLES.get(randomGenerator.nextInt(WIKI_ARTICLES.size()));
+                    print("wikiArticleBeingReadObservable=" + article);
+                    return article;
+                });
     }
 
     /**

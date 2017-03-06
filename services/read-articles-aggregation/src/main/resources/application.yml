@@ -1,4 +1,4 @@
-spring.application.name: article-metrics
+spring.application.name: read-articles-aggregation
 server.port: 8081
 
 spring.logging.org: DEBUG

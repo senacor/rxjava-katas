@@ -1,7 +1,10 @@
 package com.senacor.tecco.services.aggregation;
 
+import org.apache.http.client.utils.URLEncodedUtils;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
+
+import java.net.URLEncoder;
 
 import static com.senacor.tecco.services.aggregation.WrongStatusException.okFilter;
 
@@ -19,7 +22,7 @@ public class WikiLoaderService {
 
     public Mono<Article> fetchArticle(String articleName) {
         return wikiLoaderClient.get()
-                               .uri(ub -> ub.pathSegment("article", articleName).build())
+                               .uri("/article/" + URLEncoder.encode(articleName))
                                .exchange()
                                .doOnNext(okFilter())
                                .flatMap(r -> r.bodyToMono(String.class))
