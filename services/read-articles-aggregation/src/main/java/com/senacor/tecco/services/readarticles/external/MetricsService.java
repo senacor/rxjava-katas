@@ -1,48 +1,18 @@
 package com.senacor.tecco.services.readarticles.external;
 
 import org.reactivestreams.Publisher;
-import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-
-import static com.senacor.tecco.services.readarticles.WrongStatusException.okFilter;
 
 /**
  * Created by Daniel Heinrich on 06/03/2017.
  */
-public class MetricsService {
+public interface MetricsService {
 
-    public static final String WORDCOUNT_ENDPOINT = "/metrics/wordcount";
-    public static final String RATING_ENDPOINT = "/metrics/rating";
-    private final WebClient metricsClient;
+    Flux<Integer> fetchWordcount(String articleText);
 
-    public MetricsService(WebClient metricsClient) {
-        this.metricsClient = metricsClient;
-    }
+    Flux<Integer> fetchWordcount(Publisher<String> articleText);
 
-    public Flux<Integer> fetchWordcount(String articleText) {
-        return fetchWordcount(Mono.just(articleText));
-    }
+    Flux<Integer> fetchRating(String articleText);
 
-    public Flux<Integer> fetchWordcount(Publisher<String> articleText) {
-        return metricsClient.post()
-                            .uri(WORDCOUNT_ENDPOINT)
-                            .exchange(articleText, String.class)
-                            .doOnNext(okFilter())
-                            .flatMap(r -> r.bodyToMono(String.class))
-                            .map(Integer::parseInt);
-    }
-
-    public Flux<Integer> fetchRating(String articleText) {
-        return fetchRating(Mono.just(articleText));
-    }
-
-    public Flux<Integer> fetchRating(Publisher<String> articleText) {
-        return metricsClient.post()
-                            .uri(RATING_ENDPOINT)
-                            .exchange(articleText, String.class)
-                            .doOnNext(okFilter())
-                            .flatMap(r -> r.bodyToMono(String.class))
-                            .map(Integer::parseInt);
-    }
+    Flux<Integer> fetchRating(Publisher<String> articleText);
 }
