@@ -289,12 +289,7 @@ public class WikiService {
 
     public Observable<String> wikiArticleBeingReadObservableBurstOwn() {
         final Random randomGenerator = new Random(4L);
-        return ReactiveUtil.burstSource()
-                .map(ignore -> {
-                    String article = WIKI_ARTICLES.get(randomGenerator.nextInt(WIKI_ARTICLES.size()));
-                    print("wikiArticleBeingReadObservable=" + article);
-                    return article;
-                });
+        return ReactiveUtil.burstSource().map(ignore ->  WIKI_ARTICLES.get(randomGenerator.nextInt(WIKI_ARTICLES.size())));
     }
 
     /**
