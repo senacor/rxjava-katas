@@ -105,3 +105,6 @@ Spring reactive web
 - testing samples <https://github.com/spring-projects/spring-framework/tree/master/spring-test/src/test/java/org/springframework/test/web/reactive/server/samples>
 - short article about WebClient usage and Streaming DATA <https://spring.io/blog/2017/02/23/spring-framework-5-0-m5-update>
 - demos (looks a bit outdated) <https://github.com/sdeleuze/spring-reactive-playground>
+
+##### Security / Context / ThreadLocal
+- https://github.com/spring-projects/spring-security-reactive/
