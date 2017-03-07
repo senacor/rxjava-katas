@@ -1,6 +1,9 @@
 package com.senacor.tecco.codecamp.reactive.services.wikiloader;
 
+import com.senacor.tecco.reactive.services.CountService;
+import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
+import com.senacor.tecco.reactive.util.DelayFunction;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -15,5 +18,15 @@ public class WikiloaderApplication {
     @Bean
     public WikiService wikiService() {
         return WikiService.create();
+    }
+
+    @Bean
+    public CountService countService() {
+        return CountService.create(DelayFunction.withNoDelay());
+    }
+
+    @Bean
+    public RatingService ratingService() {
+        return RatingService.create(DelayFunction.withNoDelay());
     }
 }

@@ -1,6 +1,8 @@
 package com.senacor.tecco.codecamp.reactive.services.wikiloader;
 
 import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.Article;
+import com.senacor.tecco.reactive.services.CountService;
+import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
 import org.junit.Before;
 import org.junit.Test;
@@ -19,7 +21,11 @@ public class WikiControllerTest {
 
     @Before
     public void setUp() throws Exception {
-        this.client = WebTestClient.bindToController(new WikiController(WikiService.create(withNoDelay()))).build();
+        this.client = WebTestClient.bindToController(new WikiController(
+                WikiService.create(withNoDelay()),
+                CountService.create(withNoDelay()),
+                RatingService.create(withNoDelay())
+        )).build();
     }
 
     @Test

@@ -1,4 +1,4 @@
-package com.senacor.tecco.services.readarticles.external;
+package com.senacor.tecco.codecamp.reactive.services.statistics.external;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

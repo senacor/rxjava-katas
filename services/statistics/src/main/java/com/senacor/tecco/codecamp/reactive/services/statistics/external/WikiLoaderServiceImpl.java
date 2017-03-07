@@ -1,16 +1,15 @@
-package com.senacor.tecco.services.readarticles.external;
+package com.senacor.tecco.codecamp.reactive.services.statistics.external;
 
+import com.senacor.tecco.codecamp.reactive.services.statistics.WrongStatusException;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 import java.net.URLEncoder;
 
-import static com.senacor.tecco.services.readarticles.WrongStatusException.okFilter;
-
 /**
  * Created by Daniel Heinrich on 06/03/2017.
  */
-public class WikiLoaderServiceImpl implements WikiLoaderService{
+public class WikiLoaderServiceImpl implements WikiLoaderService {
 
     public static final String ARTICLE_ENDPOINT = "/article/";
 
@@ -25,7 +24,7 @@ public class WikiLoaderServiceImpl implements WikiLoaderService{
         return wikiLoaderClient.get()
                                .uri(ARTICLE_ENDPOINT + URLEncoder.encode(articleName))
                                .exchange()
-                               .doOnNext(okFilter())
+                               .doOnNext(WrongStatusException.okFilter())
                                .flatMap(r -> r.bodyToFlux(Article.class))
                                .single();
     }

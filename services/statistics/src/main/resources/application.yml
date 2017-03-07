@@ -3,3 +3,4 @@ server.port: 8080
 
 services:
   read-articles-aggregation: http://localhost:8081/read
+  wikiloader: http://localhost:8082

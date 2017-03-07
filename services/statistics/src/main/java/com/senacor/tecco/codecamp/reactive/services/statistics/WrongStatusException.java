@@ -1,4 +1,4 @@
-package com.senacor.tecco.services.readarticles;
+package com.senacor.tecco.codecamp.reactive.services.statistics;
 
 import org.springframework.web.reactive.function.client.ClientResponse;
 
