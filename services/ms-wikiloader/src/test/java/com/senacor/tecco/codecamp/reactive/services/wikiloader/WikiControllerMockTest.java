@@ -4,7 +4,7 @@ import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.Article;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
-import org.apache.commons.collections.map.LRUMap;
+import org.apache.commons.collections4.map.LRUMap;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -69,7 +69,7 @@ public class WikiControllerMockTest {
 
     @Test
     public void fetchArticleLRUMap() throws Exception {
-        this.cache = Mockito.spy(new LRUMap(1));
+        this.cache = Mockito.spy(new LRUMap<String, Article>(1));
         doReturn(Mono.just("dummy content"))
                 .when(wikiService).fetchArticleNonBlocking("dummy");
         doReturn(Mono.just("test content"))

@@ -5,7 +5,7 @@ import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
 import com.senacor.tecco.reactive.util.DelayFunction;
-import org.apache.commons.collections.map.LRUMap;
+import org.apache.commons.collections4.map.LRUMap;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -37,6 +37,6 @@ public class WikiloaderApplication {
 
     @Bean
     public Map<String, Article> fetchArticleCache() {
-        return Collections.synchronizedMap(new LRUMap(20));
+        return Collections.synchronizedMap(new LRUMap<>(20));
     }
 }
