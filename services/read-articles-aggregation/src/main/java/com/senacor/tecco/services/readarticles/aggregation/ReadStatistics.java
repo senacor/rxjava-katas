@@ -1,4 +1,4 @@
-package com.senacor.tecco.services.aggregation;
+package com.senacor.tecco.services.readarticles.aggregation;
 
 /**
  * Created by Daniel Heinrich on 06/03/2017.

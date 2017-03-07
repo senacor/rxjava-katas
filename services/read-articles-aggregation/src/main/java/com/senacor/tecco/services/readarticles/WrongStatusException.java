@@ -1,6 +1,5 @@
-package com.senacor.tecco.services.aggregation;
+package com.senacor.tecco.services.readarticles;
 
-import org.springframework.http.HttpStatus;
 import org.springframework.web.reactive.function.client.ClientResponse;
 
 import java.util.function.Consumer;

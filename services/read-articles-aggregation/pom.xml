@@ -13,7 +13,7 @@
     <artifactId>read-articles-aggregation</artifactId>
 
     <properties>
-        <start-class>com.senacor.tecco.services.aggregation.Application</start-class>
+        <start-class>com.senacor.tecco.services.readarticles.Application</start-class>
     </properties>
 
     <dependencies>
