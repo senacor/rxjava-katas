@@ -1,4 +1,6 @@
-package com.senacor.tecco.services.aggregation;
+package com.senacor.tecco.services.readarticles.external;
+
+import com.fasterxml.jackson.annotation.JsonCreator;
 
 /**
  * Created by Daniel Heinrich on 06/03/2017.
@@ -6,6 +8,10 @@ package com.senacor.tecco.services.aggregation;
 public class Article {
 
     private final String name, content;
+
+    private Article(){
+        name = content = null;
+    }
 
     public Article(String name, String text) {
         this.name = name;

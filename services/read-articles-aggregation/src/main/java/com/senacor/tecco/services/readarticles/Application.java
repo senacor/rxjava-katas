@@ -1,9 +1,7 @@
-package com.senacor.tecco.services.aggregation;
+package com.senacor.tecco.services.readarticles;
 
-import com.senacor.tecco.reactive.services.CountService;
-import com.senacor.tecco.reactive.services.RatingService;
-import com.senacor.tecco.reactive.services.WikiService;
-import com.senacor.tecco.reactive.util.DelayFunction;
+import com.senacor.tecco.services.readarticles.external.MetricsService;
+import com.senacor.tecco.services.readarticles.external.WikiLoaderService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,6 +1,8 @@
-package com.senacor.tecco.services.aggregation;
+package com.senacor.tecco.services.readarticles.aggregation;
 
 import com.senacor.tecco.reactive.services.WikiService;
+import com.senacor.tecco.services.readarticles.external.MetricsService;
+import com.senacor.tecco.services.readarticles.external.WikiLoaderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

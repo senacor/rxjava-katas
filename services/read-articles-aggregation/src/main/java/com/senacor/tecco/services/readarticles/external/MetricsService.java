@@ -1,11 +1,11 @@
-package com.senacor.tecco.services.aggregation;
+package com.senacor.tecco.services.readarticles.external;
 
 import org.reactivestreams.Publisher;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-import static com.senacor.tecco.services.aggregation.WrongStatusException.okFilter;
+import static com.senacor.tecco.services.readarticles.WrongStatusException.okFilter;
 
 /**
  * Created by Daniel Heinrich on 06/03/2017.

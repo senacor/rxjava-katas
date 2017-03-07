@@ -1,12 +1,11 @@
-package com.senacor.tecco.services.aggregation;
+package com.senacor.tecco.services.readarticles.external;
 
-import org.apache.http.client.utils.URLEncodedUtils;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 import java.net.URLEncoder;
 
-import static com.senacor.tecco.services.aggregation.WrongStatusException.okFilter;
+import static com.senacor.tecco.services.readarticles.WrongStatusException.okFilter;
 
 /**
  * Created by Daniel Heinrich on 06/03/2017.
@@ -26,7 +25,7 @@ public class WikiLoaderService {
                                .uri(ARTICLE_ENDPOINT + URLEncoder.encode(articleName))
                                .exchange()
                                .doOnNext(okFilter())
-                               .flatMap(r -> r.bodyToMono(Article.class))
+                               .flatMap(r -> r.bodyToFlux(Article.class))
                                .single();
     }
 }
