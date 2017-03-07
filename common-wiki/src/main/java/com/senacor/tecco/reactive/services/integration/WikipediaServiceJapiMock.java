@@ -1,6 +1,7 @@
 package com.senacor.tecco.reactive.services.integration;
 
 import org.apache.commons.io.IOUtils;
+import reactor.core.publisher.Mono;
 
 import static com.senacor.tecco.reactive.util.ReactiveUtil.print;
 
@@ -23,4 +24,9 @@ public class WikipediaServiceJapiMock extends WikipediaServiceJapiImpl {
         return null;
     }
 
+    @Override
+    public Mono<String> getArticleNonBlocking(String name) {
+        return Mono.just(name)
+                .map(this::getArticle);
+    }
 }

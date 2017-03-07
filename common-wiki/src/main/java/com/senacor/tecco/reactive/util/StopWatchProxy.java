@@ -1,7 +1,6 @@
 package com.senacor.tecco.reactive.util;
 
 import com.google.common.base.Stopwatch;
-import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang3.ClassUtils;
 
 import java.lang.reflect.InvocationTargetException;
@@ -11,6 +10,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import static com.senacor.tecco.reactive.util.ReactiveUtil.abbreviateWithoutNewline;
 
 /**
  * @author Michael Omann
@@ -51,7 +52,7 @@ public class StopWatchProxy extends DefaultProxyBehavior {
 
     private static String printableMethod(Method m, Object[] args) {
         List<String> methodArgs = args == null ? Collections.emptyList() : Arrays.stream(args)
-                .map(arg -> StringUtils.abbreviate(arg.toString(), 50).replaceAll("\\r\\n|\\r|\\n", " "))
+                .map(arg -> abbreviateWithoutNewline(arg.toString(), 50))
                 .collect(Collectors.toList());
         return m.getName() + (methodArgs.isEmpty() ? "" : (" with args " + methodArgs));
     }

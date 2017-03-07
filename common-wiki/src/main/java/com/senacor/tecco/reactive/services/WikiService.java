@@ -13,6 +13,7 @@ import io.reactivex.schedulers.Schedulers;
 import io.reactivex.subjects.PublishSubject;
 import org.apache.commons.lang3.StringUtils;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -177,6 +178,14 @@ public class WikiService {
      */
     public CompletableFuture<String> fetchArticleCompletableFuture(final String wikiArticle) {
         return CompletableFuture.supplyAsync(() -> wikiServiceJapi.getArticle(wikiArticle), pool);
+    }
+
+    /**
+     * @param wikiArticle name of the article to be fetched
+     * @return fetches a wiki article as a media wiki formatted string
+     */
+    public Mono<String> fetchArticleNonBlocking(final String wikiArticle){
+        return wikiServiceJapi.getArticleNonBlocking(wikiArticle);
     }
 
     //---------------------------------------------------------------------------------

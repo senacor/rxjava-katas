@@ -2,12 +2,13 @@ package com.senacor.tecco.codecamp.reactive.services.wikiloader.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
 import java.io.Serializable;
 import java.util.Objects;
+
+import static com.senacor.tecco.reactive.util.ReactiveUtil.abbreviateWithoutNewline;
 
 /**
  * @author Andreas Keefer
@@ -55,7 +56,7 @@ public class Article implements Serializable {
     public String toString() {
         return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
                 .append("name", name)
-                .append("content", StringUtils.abbreviate(content, 50))
+                .append("content", abbreviateWithoutNewline(content, 50))
                 .toString();
     }
 }

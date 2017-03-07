@@ -27,6 +27,10 @@
             <artifactId>reactor-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.projectreactor.ipc</groupId>
+            <artifactId>reactor-netty</artifactId>
+        </dependency>
         <!-- Tools -->
         <dependency>
             <groupId>com.google.guava</groupId>

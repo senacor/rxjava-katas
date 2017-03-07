@@ -6,6 +6,7 @@ import io.reactivex.Scheduler;
 import io.reactivex.schedulers.Schedulers;
 import org.apache.commons.lang.math.RandomUtils;
 import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -92,5 +93,12 @@ public class ReactiveUtil {
                 .setDaemon(true)
                 .build();
         return Schedulers.from(Executors.newCachedThreadPool(threadFactory));
+    }
+
+    /**
+     * @see StringUtils#abbreviate(String, int)
+     */
+    public static String abbreviateWithoutNewline(String s, int maxWidth) {
+        return StringUtils.abbreviate(s, maxWidth).replaceAll("\\r\\n|\\r|\\n", " ");
     }
 }

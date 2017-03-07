@@ -8,10 +8,13 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 import org.junit.Assert;
 import org.junit.Test;
+import reactor.core.publisher.Flux;
+import reactor.test.StepVerifier;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
+import static com.senacor.tecco.reactive.util.ReactiveUtil.abbreviateWithoutNewline;
 import static com.senacor.tecco.reactive.util.ReactiveUtil.print;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -164,5 +167,20 @@ public class ServicesTest {
         monitor.waitFor(10, TimeUnit.SECONDS);
         Disposable.dispose();
         Assert.assertTrue(monitor.isComplete());
+    }
+
+    @Test
+    public void fetchArticleNonBlocking() throws Exception {
+        StepVerifier.create(
+                Flux.just("Observable", "Physik", "Eigenwert", "42", "Foo", "Korea", "Gaya", "Ostasien", "China", "Russland", "Gelbes_Meer")
+                        .doOnNext(next -> print("before fetchArticleNonBlocking: %s", next))
+                        .flatMap(wikiService::fetchArticleNonBlocking)
+                        .doOnError(Throwable::printStackTrace)
+                        .doOnNext(next -> print("after fetchArticleNonBlocking: %s", abbreviateWithoutNewline(next, 70)))
+                        .map(wikiService::parseMediaWikiText)
+                        .doOnNext(next -> print("after parseMediaWikiText: %s", abbreviateWithoutNewline(next.getText(), 70)))
+        )
+                .expectNextCount(11)
+                .verifyComplete();
     }
 }
