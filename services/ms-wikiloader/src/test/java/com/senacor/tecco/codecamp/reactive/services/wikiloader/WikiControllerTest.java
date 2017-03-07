@@ -4,9 +4,12 @@ import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.Article;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
+import org.apache.commons.collections.map.LRUMap;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.test.web.reactive.server.WebTestClient;
+
+import java.util.Collections;
 
 import static com.senacor.tecco.reactive.util.DelayFunction.withNoDelay;
 
@@ -24,8 +27,8 @@ public class WikiControllerTest {
         this.client = WebTestClient.bindToController(new WikiController(
                 WikiService.create(withNoDelay()),
                 CountService.create(withNoDelay()),
-                RatingService.create(withNoDelay())
-        )).build();
+                RatingService.create(withNoDelay()),
+                Collections.synchronizedMap(new LRUMap(1)))).build();
     }
 
     @Test
