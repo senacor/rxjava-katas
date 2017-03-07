@@ -5,18 +5,18 @@ package com.senacor.tecco.services.aggregation;
  */
 public class Article {
 
-    private final String name, text;
+    private final String name, content;
 
     public Article(String name, String text) {
         this.name = name;
-        this.text = text;
+        this.content = text;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getText() {
-        return text;
+    public String getContent() {
+        return content;
     }
 }

@@ -14,6 +14,7 @@ import static com.senacor.tecco.services.aggregation.WrongStatusException.okFilt
 public class WikiLoaderService {
 
     public static final String ARTICLE_ENDPOINT = "/article/";
+
     private final WebClient wikiLoaderClient;
 
     public WikiLoaderService(WebClient wikiLoaderClient) {
@@ -22,13 +23,10 @@ public class WikiLoaderService {
 
     public Mono<Article> fetchArticle(String articleName) {
         return wikiLoaderClient.get()
-                               .uri("/article/" + URLEncoder.encode(articleName))
+                               .uri(ARTICLE_ENDPOINT + URLEncoder.encode(articleName))
                                .exchange()
                                .doOnNext(okFilter())
-                               .flatMap(r -> r.bodyToMono(String.class))
-                               .map(t -> new Article(articleName, t))
+                               .flatMap(r -> r.bodyToMono(Article.class))
                                .single();
     }
-
-
 }
