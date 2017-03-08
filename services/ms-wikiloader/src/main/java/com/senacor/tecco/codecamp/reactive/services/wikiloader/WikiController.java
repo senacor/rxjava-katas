@@ -13,16 +13,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import reactor.core.publisher.ConnectableFlux;
 import reactor.core.publisher.DirectProcessor;
-import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import reactor.util.function.Tuple2;
-
-import java.util.Map;
-import java.util.function.Function;
-
-import static com.senacor.tecco.reactive.util.ReactiveUtil.print;
 
 /**
  * @author Andreas Keefer
@@ -36,47 +28,35 @@ public class WikiController {
     private final WikiService wikiService;
     private final CountService countService;
     private final RatingService ratingService;
-    private final Map<String, Article> cache;
+    private final PublisherCache<String, Article> cache;
 
     @Autowired
-    public WikiController(WikiService wikiService, CountService countService, RatingService ratingService, Map<String, Article> cache) {
+    public WikiController(WikiService wikiService, CountService countService, RatingService ratingService) {
         this.wikiService = wikiService;
         this.countService = countService;
         this.ratingService = ratingService;
-        this.cache = cache;
+        this.cache = new PublisherCache<>(this::getArticle);
     }
 
     @GetMapping("/{name}")
     public Mono<Article> fetchArticle(@PathVariable String name) {
-        return getArticle(name).doOnNext(readArticles::onNext);
+        return cache.lookup(name).doOnNext(readArticles::onNext);
     }
 
-    private Mono<Article> getArticle(@PathVariable String name) {
-        return readCachedArticle(name)
-                   .otherwiseIfEmpty(wikiService.fetchArticleNonBlocking(name)
-                                             .map(content -> new Article(name, content))
-                                             .doOnNext(article -> cache.put(article.getName(), article))
-                   );
+    private Mono<Article> getArticle(String name) {
+        return wikiService.fetchArticleNonBlocking(name).map(content -> new Article(name, content));
     }
 
     @GetMapping("/readevents")
     @JsonView(NameOnly.class)
-    public Publisher<Article> getReadStream(){
+    public Publisher<Article> getReadStream() {
         return readArticles;
     }
 
-    /**
-     * @return Article from Cache or EMPTY
-     */
-    private Mono<Article> readCachedArticle(String name) {
-        return Mono.justOrEmpty(cache.get(name))
-                   .doOnNext(a -> print("cache hit for key '%s'", a.getName()));
-    }
-
     private Mono<ParsedPage> getParsedArticle(String name) {
-        return getArticle(name)
-                .map(Article::getContent)
-                .map(wikiService::parseMediaWikiText);
+        return cache.lookup(name)
+                    .map(Article::getContent)
+                    .map(wikiService::parseMediaWikiText);
     }
 
     @GetMapping("/{name}/wordcount")

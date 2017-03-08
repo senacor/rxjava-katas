@@ -27,8 +27,7 @@ public class WikiControllerTest {
         this.client = WebTestClient.bindToController(new WikiController(
                 WikiService.create(withNoDelay()),
                 CountService.create(withNoDelay()),
-                RatingService.create(withNoDelay()),
-                Collections.synchronizedMap(new LRUMap<>(1)))).build();
+                RatingService.create(withNoDelay()))).build();
     }
 
     @Test
