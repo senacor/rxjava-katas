@@ -15,6 +15,6 @@ public class MockConfig {
 
     @Bean
     public WikiService wikiServiceMock() {
-        return WikiService.create(DelayFunction.staticDelay(10));
+        return WikiService.create(DelayFunction.withRandomDelay(50, 300));
     }
 }
