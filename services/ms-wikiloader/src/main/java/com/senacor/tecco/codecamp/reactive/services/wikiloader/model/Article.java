@@ -2,6 +2,7 @@ package com.senacor.tecco.codecamp.reactive.services.wikiloader.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonView;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
@@ -15,6 +16,9 @@ import static com.senacor.tecco.reactive.util.ReactiveUtil.abbreviateWithoutNewl
  */
 public class Article implements Serializable {
 
+    public interface NameOnly{}
+
+    @JsonView(NameOnly.class)
     private final String name;
     private final String content;
 
