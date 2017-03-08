@@ -34,7 +34,8 @@ public class ReadEventTest {
         Mockito.when(service.fetchArticleNonBlocking(Mockito.anyString())).thenReturn(Mono.just(""));
         wikiController = new WikiController(service,
                 CountService.create(withNoDelay()),
-                RatingService.create(withNoDelay()));
+                RatingService.create(withNoDelay()),
+                10);
 
     }
 

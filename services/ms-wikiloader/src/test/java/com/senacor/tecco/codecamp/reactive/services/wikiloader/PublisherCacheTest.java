@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Function;
 
 /**
- * Created by Daniel Heinrich on 08/03/2017.
+ * @author Daniel Heinrich
  */
 public class PublisherCacheTest {
 

@@ -4,21 +4,24 @@ import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.Article;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
-import org.apache.commons.collections4.map.LRUMap;
+import com.senacor.tecco.reactive.util.ReactiveUtil;
+import org.assertj.core.api.Assertions;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.test.web.reactive.server.WebTestClient;
 
-import java.util.Collections;
-
 import static com.senacor.tecco.reactive.util.DelayFunction.withNoDelay;
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * @author Andreas Keefer
  */
 public class WikiControllerTest {
 
-    static final Article EIGENWERT_ARTICLE = new Article("Eigenwert", "#REDIRECT [[Eigenwertproblem]]");
+    static final Article EIGENWERT_ARTICLE = Article.newBuilder()
+            .withName("Eigenwert")
+            .withContent("#REDIRECT [[Eigenwertproblem]]")
+            .build();
 
     private WebTestClient client;
 
@@ -27,16 +30,21 @@ public class WikiControllerTest {
         this.client = WebTestClient.bindToController(new WikiController(
                 WikiService.create(withNoDelay()),
                 CountService.create(withNoDelay()),
-                RatingService.create(withNoDelay()))).build();
+                RatingService.create(withNoDelay()),
+                10)).build();
     }
 
     @Test
     public void fetchArticle() throws Exception {
-        client.get().uri("/article/{name}", EIGENWERT_ARTICLE.getName())
+        Article res = client.get().uri("/article/{name}", EIGENWERT_ARTICLE.getName())
                 .exchange()
                 .expectStatus().isOk()
                 .expectBody(Article.class)
-                .value().isEqualTo(EIGENWERT_ARTICLE);
+                .value()
+                .isEqualTo(EIGENWERT_ARTICLE)
+                .getResponseBody();
+        ReactiveUtil.print(res);
+        assertThat(res.getFetchTimeInMillis()).isBetween(0, 1000);
     }
 
     @Test

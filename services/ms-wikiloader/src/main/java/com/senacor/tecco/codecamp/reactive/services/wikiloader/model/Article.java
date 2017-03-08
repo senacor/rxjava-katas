@@ -16,17 +16,40 @@ import static com.senacor.tecco.reactive.util.ReactiveUtil.abbreviateWithoutNewl
  */
 public class Article implements Serializable {
 
-    public interface NameOnly{}
+    public interface NameOnly {
+    }
 
     @JsonView(NameOnly.class)
     private final String name;
     private final String content;
+    @JsonView(NameOnly.class)
+    private final Integer fetchTimeInMillis;
 
     @JsonCreator
     public Article(@JsonProperty("name") String name,
-                   @JsonProperty("content") String content) {
+                   @JsonProperty("content") String content,
+                   @JsonProperty("fetchTimeInMillis") Integer fetchTimeInMillis) {
         this.name = name;
         this.content = content;
+        this.fetchTimeInMillis = fetchTimeInMillis;
+    }
+
+    private Article(Builder builder) {
+        name = builder.name;
+        content = builder.content;
+        fetchTimeInMillis = builder.fetchTimeInMillis;
+    }
+
+    public static Builder newBuilder() {
+        return new Builder();
+    }
+
+    public static Builder newBuilder(Article copy) {
+        Builder builder = new Builder();
+        builder.name = copy.name;
+        builder.content = copy.content;
+        builder.fetchTimeInMillis = copy.fetchTimeInMillis;
+        return builder;
     }
 
     public String getName() {
@@ -35,6 +58,10 @@ public class Article implements Serializable {
 
     public String getContent() {
         return content;
+    }
+
+    public Integer getFetchTimeInMillis() {
+        return fetchTimeInMillis;
     }
 
     @Override
@@ -55,12 +82,40 @@ public class Article implements Serializable {
                 && Objects.equals(this.content, other.content);
     }
 
-
     @Override
     public String toString() {
         return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
                 .append("name", name)
                 .append("content", abbreviateWithoutNewline(content, 50))
+                .append("fetchTimeInMillis", fetchTimeInMillis)
                 .toString();
+    }
+
+    public static final class Builder {
+        private String name;
+        private String content;
+        private Integer fetchTimeInMillis;
+
+        private Builder() {
+        }
+
+        public Builder withName(String val) {
+            name = val;
+            return this;
+        }
+
+        public Builder withContent(String val) {
+            content = val;
+            return this;
+        }
+
+        public Builder withFetchTimeInMillis(Integer val) {
+            fetchTimeInMillis = val;
+            return this;
+        }
+
+        public Article build() {
+            return new Article(this);
+        }
     }
 }
