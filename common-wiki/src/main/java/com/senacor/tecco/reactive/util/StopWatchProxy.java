@@ -4,7 +4,6 @@ import com.google.common.base.Stopwatch;
 import org.apache.commons.lang3.ClassUtils;
 import org.reactivestreams.Publisher;
 import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -37,26 +36,12 @@ public class StopWatchProxy extends DefaultProxyBehavior {
     }
 
     @Override
-    protected Object handlePublisherReturnType(Object proxy, Method m, Object[] args) throws Throwable {
-        try {
-            Publisher<?> publisher = (Publisher<?>) m.invoke(this.getTarget(), args);
-            final Stopwatch stopwatch = Stopwatch.createUnstarted();
-            Flux<?> res = Flux.from(publisher)
-                    .doOnSubscribe(subscription -> stopwatch.start())
-                    .doOnTerminate(() -> {
-                        finished(m, args, stopwatch);
-                    });
-            if (publisher instanceof Mono) {
-                return res.single();
-            } else if (publisher instanceof Flux) {
-                return res;
-            }
-            throw new IllegalArgumentException("Publisher not supported: " + publisher.getClass().getName());
-        } catch (InvocationTargetException e) {
-            throw e.getTargetException();
-        } catch (Exception e) {
-            throw new RuntimeException("unexpected invocation exception", e);
-        }
+    protected Publisher<?> handlePublisherReturnType(Publisher<?> publisher, Method m, Object[] args) {
+        final Stopwatch stopwatch = Stopwatch.createUnstarted();
+        Flux<?> res = Flux.from(publisher)
+                .doOnSubscribe(subscription -> stopwatch.start())
+                .doOnTerminate(() -> finished(m, args, stopwatch));
+        return res;
     }
 
     @Override

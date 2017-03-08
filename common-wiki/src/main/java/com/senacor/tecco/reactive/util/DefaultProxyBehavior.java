@@ -1,6 +1,8 @@
 package com.senacor.tecco.reactive.util;
 
 import org.reactivestreams.Publisher;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -24,13 +26,21 @@ public abstract class DefaultProxyBehavior implements InvocationHandler {
     public final Object invoke(Object proxy, Method m, Object[] args) throws Throwable {
         if (EXCLUDE_METHOD_NAMES.contains(m.getName())) {
             return m.invoke(getTarget(), args);
-        } else if (Publisher.class.isAssignableFrom(m.getReturnType())){
-            return handlePublisherReturnType(proxy, m, args);
+        } else if (Publisher.class.isAssignableFrom(m.getReturnType())) {
+            Publisher<?> publisher = (Publisher) m.invoke(this.getTarget(), args);
+
+            Publisher<?> res = handlePublisherReturnType(publisher, m, args);
+            if (publisher instanceof Mono) {
+                return Mono.from(res);
+            } else if (publisher instanceof Flux) {
+                return Flux.from(res);
+            }
+            throw new IllegalArgumentException("Publisher not supported: " + publisher.getClass().getName());
         }
         return invokeNotDelegated(proxy, m, args);
     }
 
-    protected abstract Object handlePublisherReturnType(Object proxy, Method m, Object[] args) throws Throwable;
+    protected abstract Publisher<?> handlePublisherReturnType(Publisher<?> publisher, Method m, Object[] args);
 
     protected abstract Object invokeNotDelegated(Object obj, Method m, Object[] args) throws Throwable;
 
