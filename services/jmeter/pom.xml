@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.senacor.tecco.codecamp.reactive.services</groupId>
+        <artifactId>services-base</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>jmeter</artifactId>
+    <packaging>pom</packaging>
+
+    <description>Project to execute jmeter</description>
+
+    <properties>
+        <jmeterDir>${project.basedir}/apache-jmeter-3.1</jmeterDir>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>windows</id>
+            <activation>
+                <os><family>windows</family></os>
+            </activation>
+            <properties>
+                <jmeter.script>jmeter.bat</jmeter.script>
+            </properties>
+        </profile>
+        <profile>
+            <id>unix</id>
+            <activation>
+                <os><family>unix</family></os>
+            </activation>
+            <properties>
+                <jmeter.script>jmeter.sh</jmeter.script>
+            </properties>
+        </profile>
+    </profiles>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <configuration>
+                    <executable>${jmeterDir}/bin/${jmeter.script}</executable>
+                    <workingDirectory>${jmeterDir}/bin</workingDirectory>
+                    <arguments>
+                        <!-- Name of JTL file to log sample results to -->
+                        <argument>-l</argument>
+                        <argument>${project.build.directory}/log_jmeter_samples.xml</argument>
+
+                        <!-- Name of JMeter run log file -->
+                        <argument>-j</argument>
+                        <argument>${project.build.directory}/log_jmeter.xml</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

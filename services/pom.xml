@@ -19,6 +19,7 @@
     <modules>
         <module>ms-wikiloader</module>
         <module>statistics</module>
+        <module>jmeter</module>
     </modules>
 
     <properties>
