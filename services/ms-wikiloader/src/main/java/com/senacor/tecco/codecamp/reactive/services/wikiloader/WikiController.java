@@ -13,11 +13,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import reactor.core.publisher.ConnectableFlux;
 import reactor.core.publisher.DirectProcessor;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import reactor.util.function.Tuple2;
 
 import java.util.Map;
+import java.util.function.Function;
 
 import static com.senacor.tecco.reactive.util.ReactiveUtil.print;
 
@@ -45,8 +48,11 @@ public class WikiController {
 
     @GetMapping("/{name}")
     public Mono<Article> fetchArticle(@PathVariable String name) {
+        return getArticle(name).doOnNext(readArticles::onNext);
+    }
+
+    private Mono<Article> getArticle(@PathVariable String name) {
         return readCachedArticle(name)
-                   .doOnNext(readArticles::onNext)
                    .otherwiseIfEmpty(wikiService.fetchArticleNonBlocking(name)
                                              .map(content -> new Article(name, content))
                                              .doOnNext(article -> cache.put(article.getName(), article))
@@ -68,7 +74,7 @@ public class WikiController {
     }
 
     private Mono<ParsedPage> getParsedArticle(String name) {
-        return fetchArticle(name)
+        return getArticle(name)
                 .map(Article::getContent)
                 .map(wikiService::parseMediaWikiText);
     }
