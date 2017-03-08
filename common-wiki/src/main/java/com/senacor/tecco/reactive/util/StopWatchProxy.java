@@ -2,6 +2,9 @@ package com.senacor.tecco.reactive.util;
 
 import com.google.common.base.Stopwatch;
 import org.apache.commons.lang3.ClassUtils;
+import org.reactivestreams.Publisher;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -34,9 +37,31 @@ public class StopWatchProxy extends DefaultProxyBehavior {
     }
 
     @Override
+    protected Object handlePublisherReturnType(Object proxy, Method m, Object[] args) throws Throwable {
+        try {
+            Publisher<?> publisher = (Publisher<?>) m.invoke(this.getTarget(), args);
+            final Stopwatch stopwatch = Stopwatch.createUnstarted();
+            Flux<?> res = Flux.from(publisher)
+                    .doOnSubscribe(subscription -> stopwatch.start())
+                    .doOnTerminate(() -> {
+                        finished(m, args, stopwatch);
+                    });
+            if (publisher instanceof Mono) {
+                return res.single();
+            } else if (publisher instanceof Flux) {
+                return res;
+            }
+            throw new IllegalArgumentException("Publisher not supported: " + publisher.getClass().getName());
+        } catch (InvocationTargetException e) {
+            throw e.getTargetException();
+        } catch (Exception e) {
+            throw new RuntimeException("unexpected invocation exception", e);
+        }
+    }
+
+    @Override
     protected Object invokeNotDelegated(Object proxy, Method m, Object[] args) throws Throwable {
         Stopwatch stopwatch = Stopwatch.createStarted();
-        String methodName = printableMethod(m, args);
         Object result;
         try {
             result = m.invoke(this.getTarget(), args);
@@ -45,9 +70,13 @@ public class StopWatchProxy extends DefaultProxyBehavior {
         } catch (Exception e) {
             throw new RuntimeException("unexpected invocation exception", e);
         } finally {
-            ReactiveUtil.print("Invocation of method '%s' took %s", methodName, stopwatch.stop());
+            finished(m, args, stopwatch);
         }
         return result;
+    }
+
+    private void finished(Method m, Object[] args, Stopwatch stopwatch) {
+        ReactiveUtil.print("Invocation of method '%s' took %s", printableMethod(m, args), stopwatch.stop());
     }
 
     private static String printableMethod(Method m, Object[] args) {
