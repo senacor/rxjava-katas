@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello WebSocket</title>
+    <title>Hello Reactive</title>
+    <meta charset="UTF-8">
     <!-- CSS -->
     <link href="/main.css" rel="stylesheet"/>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
@@ -20,6 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs-dom/7.0.3/rx.dom.min.js"></script>
 
     <!-- application js files -->
+    <script src="/log.js"></script>
     <script src="/chart.js"></script>
     <script src="/statistics.js"></script>
     <script src="/top-article.js"></script>
@@ -48,6 +50,19 @@
             </div>
         </div>
         <div class="col-md-4">
+            <h3>Chart</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="form-inline">
+                        <label>URL:</label>
+                        <input type="text" id="url" class="form-control" placeholder="Server URL"
+                               value="http://localhost:8080/statistics/article?updateInterval=1000"/>
+
+                        <button id="subscribe" class="btn btn-default" type="submit">Subscribe</button>
+                        <button id="unsubscribe" class="btn btn-default" type="submit">Unsubscribe</button>
+                    </form>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <canvas id="chart" height="100px"></canvas>
@@ -63,31 +78,12 @@
                     </form>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <form class="form-inline">
-                        <label>URL:</label>
-                        <input type="text" id="url" class="form-control" placeholder="Server URL"
-                               value="http://localhost:8080/statistics/article?updateInterval=1000"/>
-
-                        <button id="subscribe" class="btn btn-default" type="submit">Subscribe</button>
-                        <button id="unsubscribe" class="btn btn-default" type="submit">Unsubscribe</button>
-                    </form>
-                </div>
-            </div>
         </div>
         <div class="col-md-4">
+            <h3>Log<button id="clearLog" class="btn btn-default" type="submit">clear</button></h3>
             <div class="row">
                 <div class="col-md-12">
-                    <table class="table table-striped">
-                        <thead>
-                        <tr>
-                            <th>Log</th>
-                        </tr>
-                        </thead>
-                        <tbody id="log">
-                        </tbody>
-                    </table>
+                    <div id="log"></div>
                 </div>
             </div>
         </div>

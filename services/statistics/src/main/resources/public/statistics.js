@@ -10,18 +10,18 @@
 
     function subscribe() {
         var serverUrl = $("#url").val();
-        appendLog('Connecting to ' + serverUrl);
+        LOG.append('Connecting to ' + serverUrl);
         setSubscribed(true);
 
         if (!!window.EventSource) {
             source = new EventSource(serverUrl);
         } else {
-            appendLog("Your browser doesn't support SSE");
+            LOG.append("Your browser doesn't support SSE");
             return;
         }
 
         source.addEventListener('message', function(e) {
-            appendLog("message: " + e.data);
+            LOG.append("message: " + e.data);
 
             var stats = toJson(e);
             chart.update(stats.articleCount, stats.wordCountAvg, stats.ratingAvg);
@@ -29,15 +29,15 @@
 
         source.addEventListener('open', function(e) {
             // Connection was opened.
-            appendLog("Connected to " + serverUrl)
+            LOG.append("Connected to " + serverUrl)
         }, false);
 
         source.addEventListener('error', function(e) {
             if (e.readyState == EventSource.CLOSED) {
                 // Connection was closed.
-                appendLog('Connection terminated');
+                LOG.append('Connection terminated');
             } else {
-                appendLog('Error ' + e);
+                LOG.append('Error ' + e);
             }
         }, false);
     }
@@ -46,7 +46,7 @@
         try {
             return JSON.parse(event.data)
         } catch (event) {
-            appendLog("Could not parse data received data: " + event.data);
+            LOG.append("Could not parse data received data: " + event.data);
         }
     }
 
@@ -57,10 +57,6 @@
             subscription.dispose()
         });
         subscriptions = [];
-    }
-
-    function appendLog(message) {
-        $("#log").append("<tr><td>" + message + "</td></tr>");
     }
 
     function setSubscribed(subscribed) {
