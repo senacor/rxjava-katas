@@ -9,7 +9,7 @@ import java.util.function.Function;
 import static com.senacor.tecco.reactive.util.ReactiveUtil.print;
 
 /**
- * Created by Daniel Heinrich on 08/03/2017.
+ * @author Daniel Heinrich
  */
 public class PublisherCache<I, O> {
 
