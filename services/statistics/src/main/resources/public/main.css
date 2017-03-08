@@ -2,20 +2,6 @@ body {
     background-color: #f5f5f5;
 }
 
-#main-content {
-    padding: 2em 3em;
-    margin: 0 auto 20px;
-    background-color: #fff;
-    border: 1px solid #e5e5e5;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-}
-
-#url {
-    min-width: 400px;
-}
-
 #articleBeingRead div {
     margin-bottom: 15px;
 }
@@ -26,5 +12,13 @@ body {
 }
 
 #avgCalculationInterval {
+    float: right;
+}
+
+#url, #topArticleUrl {
+    min-width: 400px;
+}
+
+#clearLog {
     float: right;
 }
