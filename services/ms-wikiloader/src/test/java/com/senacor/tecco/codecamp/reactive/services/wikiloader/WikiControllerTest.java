@@ -39,4 +39,22 @@ public class WikiControllerTest {
                 .expectBody(Article.class)
                 .value().isEqualTo(EIGENWERT_ARTICLE);
     }
+
+    @Test
+    public void getWordCount() throws Exception {
+        client.get().uri("/article/{name}/wordcount", EIGENWERT_ARTICLE.getName())
+                .exchange()
+                .expectStatus().isOk()
+                .expectBody(String.class)
+                .value().isEqualTo("2");
+    }
+
+    @Test
+    public void getRating() throws Exception {
+        client.get().uri("/article/{name}/rating", EIGENWERT_ARTICLE.getName())
+                .exchange()
+                .expectStatus().isOk()
+                .expectBody(String.class)
+                .value().isEqualTo("5");
+    }
 }
