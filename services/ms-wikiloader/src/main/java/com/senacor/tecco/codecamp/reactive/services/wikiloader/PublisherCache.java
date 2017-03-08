@@ -29,7 +29,7 @@ public class PublisherCache<I, O> {
 
     public Mono<O> lookup(I input) {
         return Mono.justOrEmpty(cache.get(input))
-                   .doOnNext(i -> print("cache hit for key '%s'", i))
+                   .doOnNext(i -> print("cache hit for key '%s'", input))
                    .otherwiseIfEmpty(transformer.apply(input)
                                                 .doOnNext(o -> cache.put(input, o))
                    );
