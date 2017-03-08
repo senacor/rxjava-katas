@@ -3,7 +3,7 @@
 <head>
     <title>Hello WebSocket</title>
     <!-- CSS -->
-    <link href="/main.css" rel="stylesheet" />
+    <link href="/main.css" rel="stylesheet"/>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -22,52 +22,73 @@
     <!-- application js files -->
     <script src="/chart.js"></script>
     <script src="/statistics.js"></script>
+    <script src="/top-article.js"></script>
 </head>
 <body>
 <noscript>
     <h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being enabled.
         Please enable Javascript and reload this page!</h2>
 </noscript>
-<div id="main-content" class="container">
+<div id="main-content" class="container-fluid">
     <div class="row">
-        <div class="row">
-            <div class="col-md-12" >
-                <canvas id="chart" height="100px"></canvas>
+        <div class="col-md-4">
+            <h3>Top Articles</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="form-inline">
+                        <label for="topArticleUrl">URL:</label>
+                        <input type="text" id="topArticleUrl" class="form-control" placeholder="Server URL"
+                               value="http://localhost:8080/top/article?updateInterval=1000&numberOfTopArticles=5"/>
+                        <button id="topArticleSubscribe" class="btn btn-default" type="submit">Subscribe</button>
+                        <button id="topArticleUnsubscribe" class="btn btn-default" type="submit">Unsubscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div id="topArticle">
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <form class="form-inline">
-                    <div class="form-group" id="avgCalculationInterval">
-                        <label for="avgCalculationIntervalInput">Avg. per ms</label>
-                        <input type="text" id="avgCalculationIntervalInput" class="form-control" />
-                    </div>
-                </form>
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <canvas id="chart" height="100px"></canvas>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <form class="form-inline">
-                    <label>URL:</label>
-                    <input type="text" id="url" class="form-control" placeholder="Server URL"
-                           value="http://localhost:8080/statistics/article?updateInterval=1000"/>
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="form-inline">
+                        <div class="form-group" id="avgCalculationInterval">
+                            <label for="avgCalculationIntervalInput">Avg. per ms</label>
+                            <input type="text" id="avgCalculationIntervalInput" class="form-control"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="form-inline">
+                        <label>URL:</label>
+                        <input type="text" id="url" class="form-control" placeholder="Server URL"
+                               value="http://localhost:8080/statistics/article?updateInterval=1000"/>
 
-                    <button id="subscribe" class="btn btn-default" type="submit">Subscribe</button>
-                    <button id="unsubscribe" class="btn btn-default" type="submit">Unsubscribe</button>
-                </form>
+                        <button id="subscribe" class="btn btn-default" type="submit">Subscribe</button>
+                        <button id="unsubscribe" class="btn btn-default" type="submit">Unsubscribe</button>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th>Log</th>
-                    </tr>
-                    </thead>
-                    <tbody id="log">
-                    </tbody>
-                </table>
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>Log</th>
+                        </tr>
+                        </thead>
+                        <tbody id="log">
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
