@@ -9,7 +9,6 @@ import com.senacor.tecco.reactive.services.WikiService;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.reactivestreams.Publisher;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -65,7 +64,7 @@ public class WikiController {
      */
     private Mono<Article> readCachedArticle(String name) {
         return Mono.justOrEmpty(cache.get(name))
-                   .doOnNext(n -> print("cache hit for key '%s'", n));
+                   .doOnNext(a -> print("cache hit for key '%s'", a.getName()));
     }
 
     private Mono<ParsedPage> getParsedArticle(String name) {
