@@ -25,9 +25,9 @@ import static org.junit.Assert.assertEquals;
 public class ReadEventTest {
 
     @Mock
-    WikiService service;
+    private WikiService service;
 
-    WikiController wikiController;
+    private WikiController wikiController;
 
     @Before
     public void setup() {
@@ -78,8 +78,8 @@ public class ReadEventTest {
     private ReplayProcessor<String> subscribe() {
         ReplayProcessor<String> articles = ReplayProcessor.create();
         wikiController.getReadStream()
-                      .map(Article::getName)
-                      .subscribe(articles);
+                .map(Article::getName)
+                .subscribe(articles);
         return articles;
     }
 

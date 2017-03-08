@@ -13,10 +13,10 @@ import java.util.function.Function;
  */
 public class PublisherCacheTest {
 
-    public static final int CACHE_SIZE = 20;
+    private static final int CACHE_SIZE = 20;
 
-    AtomicInteger counter;
-    PublisherCache<Integer, Integer> cache;
+    private AtomicInteger counter;
+    private PublisherCache<Integer, Integer> cache;
 
     @Before
     public void setup() {

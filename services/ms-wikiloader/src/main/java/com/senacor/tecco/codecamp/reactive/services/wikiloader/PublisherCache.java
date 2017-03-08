@@ -13,7 +13,7 @@ import static com.senacor.tecco.reactive.util.ReactiveUtil.print;
  */
 public class PublisherCache<I, O> {
 
-    public static final int DEFAULT_CACHE_SIZE = 20;
+    private static final int DEFAULT_CACHE_SIZE = 20;
 
     private final Map<I, O> cache;
     private final Function<I, Mono<O>> transformer;
@@ -29,9 +29,9 @@ public class PublisherCache<I, O> {
 
     public Mono<O> lookup(I input) {
         return Mono.justOrEmpty(cache.get(input))
-                   .doOnNext(i -> print("cache hit for key '%s'", input))
-                   .otherwiseIfEmpty(transformer.apply(input)
-                                                .doOnNext(o -> cache.put(input, o))
-                   );
+                .doOnNext(i -> print("cache hit for key '%s'", input))
+                .otherwiseIfEmpty(transformer.apply(input)
+                        .doOnNext(o -> cache.put(input, o))
+                );
     }
 }

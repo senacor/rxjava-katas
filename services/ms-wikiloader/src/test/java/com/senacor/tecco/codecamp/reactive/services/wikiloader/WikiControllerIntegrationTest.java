@@ -24,7 +24,7 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 public class WikiControllerIntegrationTest {
 
     @LocalServerPort
-    int port;
+    private int port;
 
     // alternativ zu dem manuellen setUp einfach einen fertigen WebTestClient injizieren lassen
     //@Autowired
