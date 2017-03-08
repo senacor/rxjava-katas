@@ -13,7 +13,7 @@ public class ArticleReadEvent {
     private final String articleName;
 
     @JsonCreator
-    public ArticleReadEvent(@JsonProperty("articleName") String articleName) {
+    public ArticleReadEvent(@JsonProperty("name") String articleName) {
         this.articleName = articleName;
     }
 

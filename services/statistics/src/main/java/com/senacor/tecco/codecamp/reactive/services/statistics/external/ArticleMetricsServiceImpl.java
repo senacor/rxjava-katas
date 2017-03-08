@@ -26,7 +26,7 @@ public class ArticleMetricsServiceImpl implements ArticleMetricsService {
     @Override
     public Mono<Integer> fetchWordCount(String articleName) {
         return articleClient.get()
-                            .uri(ub -> ub.path(ARTICLE).path(articleName).path(WORD_COUNT).build())
+                            .uri(ub -> ub.pathSegment(ARTICLE, articleName, WORD_COUNT).build())
                             .exchange()
                             // TODO improve error handling in case article service is not available.
                             .doOnNext(WrongStatusException.okFilter())
@@ -37,7 +37,7 @@ public class ArticleMetricsServiceImpl implements ArticleMetricsService {
     @Override
     public Mono<Integer> fetchRating(String articleName) {
         return articleClient.get()
-                            .uri(ub -> ub.path(ARTICLE).path(articleName).path(RATING).build())
+                            .uri(ub -> ub.pathSegment(ARTICLE, articleName, RATING).build())
                             .exchange()
                             // TODO improve error handling in case article service is not available.
                             .doOnNext(WrongStatusException.okFilter())

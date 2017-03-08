@@ -24,11 +24,12 @@ public class ArticleReadEventsService {
 
     public Flux<ArticleReadEvent> readEvents() {
         return webClient.get()
-                .uri(ub -> ub.path(ARTICLE).path(READ_EVENTS).build())
-                .accept(MediaType.APPLICATION_STREAM_JSON)
-                .contentType(MediaType.APPLICATION_STREAM_JSON)
+                .uri(ub -> ub.pathSegment(ARTICLE, READ_EVENTS).build())
+                .accept(MediaType.TEXT_EVENT_STREAM)
+                .contentType(MediaType.TEXT_EVENT_STREAM)
                 .exchange()
-                .retry(3) // TODO improve error handling in case article service is not available.
+                // TODO improve error handling in case article service is not available.
+                //.retry(3)
                 .flatMap(response -> response.bodyToFlux(ArticleReadEvent.class));
     }
 }
