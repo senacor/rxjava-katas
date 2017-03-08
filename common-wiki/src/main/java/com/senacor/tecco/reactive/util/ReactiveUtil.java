@@ -99,6 +99,7 @@ public class ReactiveUtil {
      * @see StringUtils#abbreviate(String, int)
      */
     public static String abbreviateWithoutNewline(String s, int maxWidth) {
-        return StringUtils.abbreviate(s, maxWidth).replaceAll("\\r\\n|\\r|\\n", " ");
+        return null == s ? null :
+                StringUtils.abbreviate(s, maxWidth).replaceAll("\\r\\n|\\r|\\n", " ");
     }
 }
