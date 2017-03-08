@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 
+import java.util.List;
+
 import static org.springframework.http.MediaType.TEXT_EVENT_STREAM_VALUE;
 
 /**
@@ -38,18 +40,22 @@ public class StatisticsController {
                         articleMetricsService.fetchRating(articleName),
                         articleMetricsService.fetchWordCount(articleName),
                         (rating, wordCount) -> new ArticleMetrics(rating, wordCount)))
-                .bufferMillis(updateInterval).map(articles -> {
-                    long wordCountSum = 0;
-                    long ratingSum = 0;
-                    for (ArticleMetrics metrics : articles) {
-                        wordCountSum += metrics.getWordCount();
-                        ratingSum += metrics.getRating();
-                    }
-                    Integer numOfArticles = articles.size();
-                    double wordCountAvg = wordCountSum / numOfArticles.doubleValue();
-                    double ratingAvg = ratingSum / numOfArticles.doubleValue();
-                    return new ArticleStatistics(numOfArticles, wordCountAvg, ratingAvg);
-                });
+                .bufferMillis(updateInterval)
+                .map(StatisticsController::calculateArticleStatistics)
+                .log();
+    }
+
+    private static ArticleStatistics calculateArticleStatistics(List<ArticleMetrics> articleMetricss) {
+        long wordCountSum = 0;
+        long ratingSum = 0;
+        for (ArticleMetrics metrics : articleMetricss) {
+            wordCountSum += metrics.getWordCount();
+            ratingSum += metrics.getRating();
+        }
+        Integer numOfArticles = articleMetricss.size();
+        double wordCountAvg = wordCountSum / numOfArticles.doubleValue();
+        double ratingAvg = ratingSum / numOfArticles.doubleValue();
+        return new ArticleStatistics(numOfArticles, wordCountAvg, ratingAvg);
     }
 
 }

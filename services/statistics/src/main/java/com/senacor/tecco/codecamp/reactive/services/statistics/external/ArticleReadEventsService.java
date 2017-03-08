@@ -30,6 +30,7 @@ public class ArticleReadEventsService {
                 .exchange()
                 // TODO improve error handling in case article service is not available.
                 //.retry(3)
-                .flatMap(response -> response.bodyToFlux(ArticleReadEvent.class));
+                .flatMap(response -> response.bodyToFlux(ArticleReadEvent.class))
+                .log();
     }
 }
