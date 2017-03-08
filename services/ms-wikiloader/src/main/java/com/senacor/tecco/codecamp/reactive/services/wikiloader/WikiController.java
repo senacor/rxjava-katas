@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import reactor.core.publisher.DirectProcessor;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -59,6 +60,7 @@ public class WikiController {
                 .map(content -> Article.newBuilder().withName(name).withContent(content).build());
     }
 
+    @CrossOrigin
     @GetMapping("/readevents")
     @JsonView(NameOnly.class)
     public Flux<Article> getReadStream() {

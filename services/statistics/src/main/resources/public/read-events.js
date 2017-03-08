@@ -3,21 +3,25 @@
     const DEFAULT_BUFFER_INTERVAL_IN_MILLIS = 1000;
 
     var chart;
-    EventSourceObservable("#statistics",
+    var chartUpdateInterval = DEFAULT_BUFFER_INTERVAL_IN_MILLIS;
+
+    EventSourceObservable("#readEvents",
         function (observable) { // on event source connected
-            $("#avgCalculationInterval input").prop("disabled", true);
-            observable.subscribe(
-                function (stats) { // onNext
-                    chart.update(stats.articleCount, stats.wordCountAvg, stats.ratingAvg, stats.fetchTimeInMillisAvg);
-                });
+            $("#avgCalculationIntervalReadEvents input").prop("disabled", true);
+            observable
+                .bufferTime(chartUpdateInterval)
+                .subscribe(
+                    function (readEvents) { // onNext
+                        chart.update(readEvents.length, null, null);
+                    });
 
         },
         function () { // on event source disconnected
-            $("#avgCalculationInterval input").prop("disabled", false);
+            $("#avgCalculationIntervalReadEvents input").prop("disabled", false);
         });
 
     var validateAvgCalculationIntervalOnFocusOut = function () {
-        var input = $("#avgCalculationInterval input");
+        var input = $("#avgCalculationIntervalReadEvents input");
         input.val(DEFAULT_BUFFER_INTERVAL_IN_MILLIS);
         input.focusout(function () {
             var value = input.val();
@@ -25,9 +29,7 @@
                 value = DEFAULT_BUFFER_INTERVAL_IN_MILLIS;
                 input.val(value);
             }
-            var url = $("#statistics .url");
-            var oldValue = url.val();
-            url.val(oldValue.substring(0, oldValue.indexOf("=") + 1) + value);
+            chartUpdateInterval = value;
         });
     };
 
@@ -36,7 +38,7 @@
      */
     $(function () {
         validateAvgCalculationIntervalOnFocusOut();
-        chart = new ArticleChart("#chart");
+        chart = new ArticleChart("#chartReadEvents");
     });
 
 })();

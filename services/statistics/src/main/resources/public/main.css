@@ -11,11 +11,11 @@ body {
     float: right;
 }
 
-#avgCalculationInterval {
+#avgCalculationInterval, #avgCalculationIntervalReadEvents {
     float: right;
 }
 
-#url, #topArticleUrl {
+.url {
     min-width: 400px;
 }
 

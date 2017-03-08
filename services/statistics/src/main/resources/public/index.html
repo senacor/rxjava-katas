@@ -22,9 +22,11 @@
 
     <!-- application js files -->
     <script src="/log.js"></script>
-    <script src="/chart.js"></script>
+    <script src="/event-source-observable.js"></script>
+    <script src="/statistics-chart.js"></script>
     <script src="/statistics.js"></script>
     <script src="/top-article.js"></script>
+    <script src="/read-events.js"></script>
 </head>
 <body>
 <noscript>
@@ -35,14 +37,20 @@
     <div class="row">
         <div class="col-md-4">
             <h3>Top Articles</h3>
-            <div class="row">
+            <div class="row" id="topArticleControls">
                 <div class="col-md-12">
                     <form class="form-inline">
-                        <label for="topArticleUrl">URL:</label>
-                        <input type="text" id="topArticleUrl" class="form-control" placeholder="Server URL"
-                               value="http://localhost:8080/top/article?updateInterval=1000&numberOfTopArticles=5"/>
-                        <button id="topArticleSubscribe" class="btn btn-default" type="submit">Subscribe</button>
-                        <button id="topArticleUnsubscribe" class="btn btn-default" type="submit">Unsubscribe</button>
+                        <div class="form-group">
+                            <label>URL:</label>
+                            <input type="text" class="url form-control" placeholder="Server URL"
+                                   value="http://localhost:8080/top/article?numberOfTopArticles=15&updateInterval=1000"/>
+                            <button class="subscribe btn btn-default" type="submit">Subscribe</button>
+                            <button class="unsubscribe btn btn-default" type="submit">Unsubscribe</button>
+                        </div>
+                        <div class="form-group">
+                            <label for="topArticleUpdateInterval">Update interval</label>
+                            <input type="text" id="topArticleUpdateInterval" class="form-control"/>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -51,31 +59,65 @@
         </div>
         <div class="col-md-4">
             <h3>Chart</h3>
-            <div class="row">
-                <div class="col-md-12">
-                    <form class="form-inline">
-                        <label>URL:</label>
-                        <input type="text" id="url" class="form-control" placeholder="Server URL"
-                               value="http://localhost:8080/statistics/article?updateInterval=1000"/>
+            <div id="statistics">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="form-inline">
+                            <label>URL:</label>
+                            <input type="text" class="url form-control" placeholder="Server URL"
+                                   value="http://localhost:8080/statistics/article?updateInterval=1000"/>
 
-                        <button id="subscribe" class="btn btn-default" type="submit">Subscribe</button>
-                        <button id="unsubscribe" class="btn btn-default" type="submit">Unsubscribe</button>
-                    </form>
+                            <button class="subscribe btn btn-default" type="submit">Subscribe</button>
+                            <button class="unsubscribe btn btn-default" type="submit">Unsubscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <canvas id="chart" height="100px"></canvas>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="form-inline">
+                            <div class="form-group" id="avgCalculationInterval">
+                                <label for="avgCalculationIntervalInput">Avg. per ms</label>
+                                <input type="text" id="avgCalculationIntervalInput" class="form-control"/>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <canvas id="chart" height="100px"></canvas>
+
+            <!-- read events -->
+            <h4>Read Events Chart</h4>
+            <div id="readEvents">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="form-inline">
+                            <label>URL:</label>
+                            <input type="text" class="url form-control" placeholder="Server URL"
+                                   value="http://localhost:8081/article/readevents"/>
+
+                            <button class="subscribe btn btn-default" type="submit">Subscribe</button>
+                            <button class="unsubscribe btn btn-default" type="submit">Unsubscribe</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <form class="form-inline">
-                        <div class="form-group" id="avgCalculationInterval">
-                            <label for="avgCalculationIntervalInput">Avg. per ms</label>
-                            <input type="text" id="avgCalculationIntervalInput" class="form-control"/>
-                        </div>
-                    </form>
+                <div class="row">
+                    <div class="col-md-12">
+                        <canvas id="chartReadEvents" height="100px"></canvas>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="form-inline">
+                            <div class="form-group" id="avgCalculationIntervalReadEvents">
+                                <label for="avgCalculationIntervalInputReadEvents">Avg. per ms</label>
+                                <input type="text" id="avgCalculationIntervalInputReadEvents" class="form-control"/>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

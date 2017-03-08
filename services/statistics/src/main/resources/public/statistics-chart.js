@@ -68,9 +68,15 @@ function ArticleChart(chartCanvasSelector) {
         }
 
         pushValue(chart.data.datasets[0].data, count);
-        pushValue(chart.data.datasets[1].data, words/1000);
-        pushValue(chart.data.datasets[2].data, rating);
-        pushValue(chart.data.datasets[3].data, fetchTimeInMillis);
+        if (words) {
+            pushValue(chart.data.datasets[1].data, words / 1000);
+        }
+        if (rating) {
+            pushValue(chart.data.datasets[2].data, rating);
+        }
+        if (fetchTimeInMillis) {
+            pushValue(chart.data.datasets[3].data, fetchTimeInMillis);
+        }
 
         chart.update(250, false);
     };
