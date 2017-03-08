@@ -1,7 +1,10 @@
 package com.senacor.tecco.codecamp.reactive.services.statistics;
 
+import com.senacor.tecco.codecamp.reactive.services.statistics.external.ArticleReadEventsService;
+import com.senacor.tecco.codecamp.reactive.services.statistics.external.ArticleMetricsService;
+import com.senacor.tecco.codecamp.reactive.services.statistics.model.ArticleMetrics;
+import com.senacor.tecco.codecamp.reactive.services.statistics.external.ArticleReadEvent;
 import com.senacor.tecco.codecamp.reactive.services.statistics.model.ArticleStatistics;
-import com.senacor.tecco.codecamp.reactive.services.statistics.model.ReadEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -16,29 +19,37 @@ import static org.springframework.http.MediaType.TEXT_EVENT_STREAM_VALUE;
 @RestController
 public class StatisticsController {
 
-    private ReadEventsService readEventsService;
+    private ArticleReadEventsService articleReadEventsService;
+    private ArticleMetricsService articleMetricsService;
 
     @Autowired
-    public StatisticsController(ReadEventsService readEventsService) {
-        this.readEventsService = readEventsService;
+    public StatisticsController(ArticleReadEventsService articleReadEventsService, ArticleMetricsService articleMetricsService) {
+        this.articleReadEventsService = articleReadEventsService;
+        this.articleMetricsService = articleMetricsService;
     }
 
     @GetMapping(value = "/statistics/article", produces = TEXT_EVENT_STREAM_VALUE)
     public Flux<ArticleStatistics> fetchArticleStatistics(@RequestParam(required = false, defaultValue = "1000") int updateInterval) {
-        Flux<ReadEvent> events = readEventsService.readEvents();
+        Flux<ArticleReadEvent> events = articleReadEventsService.readEvents();
 
-        return events.bufferMillis(updateInterval).map(readEvents -> {
-            long wordCountSum = 0;
-            long ratingSum = 0;
-            for (ReadEvent readEvent : readEvents) {
-                wordCountSum += readEvent.getWordCount();
-                ratingSum += readEvent.getRating();
-            }
-            Integer numOfArticles = readEvents.size();
-            double wordCountAvg = wordCountSum / numOfArticles.doubleValue();
-            double ratingAvg = ratingSum / numOfArticles.doubleValue();
-            return new ArticleStatistics(numOfArticles, wordCountAvg, ratingAvg);
-        });
+        return events
+                .map(articleReadEvent -> articleReadEvent.getArticleName())
+                .flatMap(articleName -> Flux.zip(
+                        articleMetricsService.fetchRating(articleName),
+                        articleMetricsService.fetchWordCount(articleName),
+                        (rating, wordCount) -> new ArticleMetrics(rating, wordCount)))
+                .bufferMillis(updateInterval).map(articles -> {
+                    long wordCountSum = 0;
+                    long ratingSum = 0;
+                    for (ArticleMetrics metrics : articles) {
+                        wordCountSum += metrics.getWordCount();
+                        ratingSum += metrics.getRating();
+                    }
+                    Integer numOfArticles = articles.size();
+                    double wordCountAvg = wordCountSum / numOfArticles.doubleValue();
+                    double ratingAvg = ratingSum / numOfArticles.doubleValue();
+                    return new ArticleStatistics(numOfArticles, wordCountAvg, ratingAvg);
+                });
     }
 
 }

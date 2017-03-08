@@ -1,14 +1,18 @@
 package com.senacor.tecco.codecamp.reactive.services.statistics;
 
+import com.senacor.tecco.codecamp.reactive.services.statistics.external.ArticleReadEventsService;
+import com.senacor.tecco.codecamp.reactive.services.statistics.external.ArticleMetricsService;
+import com.senacor.tecco.codecamp.reactive.services.statistics.external.ArticleReadEvent;
 import com.senacor.tecco.codecamp.reactive.services.statistics.model.ArticleStatistics;
-import com.senacor.tecco.codecamp.reactive.services.statistics.model.ReadEvent;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.test.web.reactive.server.FluxExchangeResult;
 import org.springframework.test.web.reactive.server.WebTestClient;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 import static org.springframework.http.MediaType.TEXT_EVENT_STREAM;
@@ -18,18 +22,23 @@ import static org.springframework.http.MediaType.TEXT_EVENT_STREAM;
  */
 public class StatisticsControllerTest {
 
+    private ArticleReadEventsService articleReadEventsServiceMock;
+    private ArticleMetricsService articleMetricsServiceMock;
+
     private WebTestClient testClient;
-    private ReadEventsService readEventsServiceMock = mock(ReadEventsService.class);
 
     @Before
     public void setUp() throws Exception {
-        this.readEventsServiceMock = mock(ReadEventsService.class);
-        this.testClient = WebTestClient.bindToController(new StatisticsController(readEventsServiceMock)).build();
+        this.articleReadEventsServiceMock = mock(ArticleReadEventsService.class);
+        this.articleMetricsServiceMock = mock(ArticleMetricsService.class);
+        this.testClient = WebTestClient.bindToController(new StatisticsController(articleReadEventsServiceMock, articleMetricsServiceMock)).build();
     }
 
     @Test
     public void fetchArticleStatisticsWithDefaultUpdateInterval() {
-        when(readEventsServiceMock.readEvents()).thenReturn(Flux.intervalMillis(245).take(6).map(this::createReadEvent));
+        when(articleReadEventsServiceMock.readEvents()).thenReturn(Flux.intervalMillis(245).take(6).map(this::createReadEvent));
+        when(articleMetricsServiceMock.fetchRating(any())).thenAnswer(invocation -> Mono.just(Integer.parseInt(invocation.getArgument(0))));
+        when(articleMetricsServiceMock.fetchWordCount(any())).thenAnswer(invocation -> Mono.just(Integer.parseInt(invocation.getArgument(0)) * 100));
 
         FluxExchangeResult<ArticleStatistics> result = testClient.get().uri("/statistics/article")
                 .exchange()
@@ -47,7 +56,10 @@ public class StatisticsControllerTest {
 
     @Test
     public void fetchArticleStatisticsWithShortUpdateInterval() {
-        when(readEventsServiceMock.readEvents()).thenReturn(Flux.intervalMillis(400).take(4).map(this::createReadEvent));
+        when(articleReadEventsServiceMock.readEvents()).thenReturn(Flux.intervalMillis(400).take(4).map(this::createReadEvent));
+        when(articleMetricsServiceMock.fetchRating(any())).thenAnswer(invocation -> Mono.just(Integer.parseInt(invocation.getArgument(0))));
+        when(articleMetricsServiceMock.fetchWordCount(any())).thenAnswer(invocation -> Mono.just(Integer.parseInt(invocation.getArgument(0)) * 100));
+
 
         FluxExchangeResult<ArticleStatistics> result = testClient.get().uri("/statistics/article?updateInterval=500")
                 .exchange()
@@ -65,8 +77,8 @@ public class StatisticsControllerTest {
                 .verify();
     }
 
-    private ReadEvent createReadEvent(Long count) {
-        return new ReadEvent("name", 100 * count.intValue(), count.intValue());
+    private ArticleReadEvent createReadEvent(Long count) {
+        return new ArticleReadEvent(count+"");
     }
 
 }

@@ -1,6 +1,7 @@
 package com.senacor.tecco.codecamp.reactive.services.statistics;
 
-import com.senacor.tecco.codecamp.reactive.services.statistics.model.ReadEvent;
+import com.senacor.tecco.codecamp.reactive.services.statistics.external.ArticleReadEventsService;
+import com.senacor.tecco.codecamp.reactive.services.statistics.external.ArticleReadEvent;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
@@ -20,9 +21,9 @@ import static org.springframework.test.util.ReflectionTestUtils.setField;
 /**
  * @author Andri Bremm
  */
-public class ReadEventsServiceTest {
+public class ArticleReadEventsServiceTest {
 
-    private ReadEventsService readEventsService;
+    private ArticleReadEventsService articleReadEventsService;
 
     private HeaderSpec headerSpec;
     private UriSpec uriSpec;
@@ -34,8 +35,7 @@ public class ReadEventsServiceTest {
         uriSpec = mock(UriSpec.class, (invocation) -> headerSpec);
         webClient = mock(WebClient.class, (invocation) -> uriSpec);
 
-        readEventsService = new ReadEventsService(webClient);
-        setField(readEventsService, "uri", "/read");
+        articleReadEventsService = new ArticleReadEventsService(webClient);
     }
 
     @Test
@@ -45,7 +45,7 @@ public class ReadEventsServiceTest {
         when(clientResponse.bodyToFlux(any())).thenReturn(flux);
         when(headerSpec.exchange()).thenReturn(Mono.just(clientResponse));
 
-        Flux<ReadEvent> result = readEventsService.readEvents();
+        Flux<ArticleReadEvent> result = articleReadEventsService.readEvents();
 
         StepVerifier.create(result)
                 .expectNext(createReadEvent(0l))
@@ -54,8 +54,8 @@ public class ReadEventsServiceTest {
                 .verifyComplete();
     }
 
-    private ReadEvent createReadEvent(Long number) {
-        return new ReadEvent("name", 100 * number.intValue(), number.intValue());
+    private ArticleReadEvent createReadEvent(Long number) {
+        return new ArticleReadEvent("name");
     }
 
 }
