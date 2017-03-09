@@ -15,7 +15,7 @@ public class ArticleReadEvent {
 
     @JsonCreator
     public ArticleReadEvent(@JsonProperty("name") String articleName,
-                            @JsonProperty("fetchTimeInMillis")Integer fetchTimeInMillis) {
+                            @JsonProperty("fetchTimeInMillis") Integer fetchTimeInMillis) {
         this.articleName = articleName;
         this.fetchTimeInMillis = fetchTimeInMillis;
     }
@@ -29,22 +29,28 @@ public class ArticleReadEvent {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ArticleReadEvent that = (ArticleReadEvent) o;
-        return Objects.equals(articleName, that.articleName);
+    public int hashCode() {
+        return Objects.hash(articleName, fetchTimeInMillis);
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(articleName);
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        final ArticleReadEvent other = (ArticleReadEvent) obj;
+        return Objects.equals(this.articleName, other.articleName)
+                && Objects.equals(this.fetchTimeInMillis, other.fetchTimeInMillis);
     }
 
     @Override
     public String toString() {
         return "ArticleReadEvent{" +
                 "articleName='" + articleName + '\'' +
+                ", fetchTimeInMillis=" + fetchTimeInMillis +
                 '}';
     }
 }

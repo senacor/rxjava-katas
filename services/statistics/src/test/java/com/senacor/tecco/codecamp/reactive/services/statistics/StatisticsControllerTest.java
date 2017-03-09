@@ -1,8 +1,8 @@
 package com.senacor.tecco.codecamp.reactive.services.statistics;
 
-import com.senacor.tecco.codecamp.reactive.services.statistics.external.ArticleReadEventsService;
 import com.senacor.tecco.codecamp.reactive.services.statistics.external.ArticleMetricsService;
 import com.senacor.tecco.codecamp.reactive.services.statistics.external.ArticleReadEvent;
+import com.senacor.tecco.codecamp.reactive.services.statistics.external.ArticleReadEventsService;
 import com.senacor.tecco.codecamp.reactive.services.statistics.model.ArticleStatistics;
 import org.junit.Before;
 import org.junit.Test;
@@ -36,7 +36,7 @@ public class StatisticsControllerTest {
 
     @Test
     public void fetchArticleStatisticsWithDefaultUpdateInterval() {
-        when(articleReadEventsServiceMock.readEvents()).thenReturn(Flux.intervalMillis(245).take(6).map(this::createReadEvent));
+        when(articleReadEventsServiceMock.readEvents()).thenReturn(Flux.intervalMillis(245).take(6).map(count -> createReadEvent(count, 100)));
         when(articleMetricsServiceMock.fetchRating(any())).thenAnswer(invocation -> Mono.just(Integer.parseInt(invocation.getArgument(0))));
         when(articleMetricsServiceMock.fetchWordCount(any())).thenAnswer(invocation -> Mono.just(Integer.parseInt(invocation.getArgument(0)) * 100));
 
@@ -48,15 +48,15 @@ public class StatisticsControllerTest {
                 .returnResult();
 
         StepVerifier.create(result.getResponseBody())
-                .expectNext(new ArticleStatistics(4, 150.0, 1.5))
-                .expectNext(new ArticleStatistics(2, 450.0, 4.5))
+                .expectNext(new ArticleStatistics(4, 150.0, 1.5, 100.0))
+                .expectNext(new ArticleStatistics(2, 450.0, 4.5, 100.0))
                 .thenCancel()
                 .verify();
     }
 
     @Test
     public void fetchArticleStatisticsWithShortUpdateInterval() {
-        when(articleReadEventsServiceMock.readEvents()).thenReturn(Flux.intervalMillis(400).take(4).map(this::createReadEvent));
+        when(articleReadEventsServiceMock.readEvents()).thenReturn(Flux.intervalMillis(400).take(4).map(count -> createReadEvent(count, count.intValue())));
         when(articleMetricsServiceMock.fetchRating(any())).thenAnswer(invocation -> Mono.just(Integer.parseInt(invocation.getArgument(0))));
         when(articleMetricsServiceMock.fetchWordCount(any())).thenAnswer(invocation -> Mono.just(Integer.parseInt(invocation.getArgument(0)) * 100));
 
@@ -70,15 +70,15 @@ public class StatisticsControllerTest {
 
         StepVerifier.create(result.getResponseBody())
                 .expectNextCount(1)
-                .expectNext( new ArticleStatistics(1, 100.0, 1.0))
-                .expectNext( new ArticleStatistics(1, 200.0, 2.0))
-                .expectNext( new ArticleStatistics(1, 300.0, 3.0))
+                .expectNext(new ArticleStatistics(1, 100.0, 1.0, 1.0))
+                .expectNext(new ArticleStatistics(1, 200.0, 2.0, 2.0))
+                .expectNext(new ArticleStatistics(1, 300.0, 3.0, 3.0))
                 .thenCancel()
                 .verify();
     }
 
-    private ArticleReadEvent createReadEvent(Long count) {
-        return new ArticleReadEvent(count+"", 100);
+    private ArticleReadEvent createReadEvent(Long count, int fetchTimeInMillis) {
+        return new ArticleReadEvent(count + "", fetchTimeInMillis);
     }
 
 }
