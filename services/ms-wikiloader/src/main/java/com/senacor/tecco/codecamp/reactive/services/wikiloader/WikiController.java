@@ -4,23 +4,20 @@ import com.fasterxml.jackson.annotation.JsonView;
 import com.google.common.base.Stopwatch;
 import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.Article;
 import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.Article.NameOnly;
+import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.Rating;
+import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.WordCount;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.DirectProcessor;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.util.List;
-
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -85,9 +82,26 @@ public class WikiController {
                 .map(countService::countWords);
     }
 
+    @RequestMapping("/wordcounts")
+    public Flux<WordCount> countWords(@RequestBody Flux<String> names) {
+        return names
+                .flatMap(articleName -> getParsedArticle(articleName)
+                        .map(countService::countWords)
+                        .map(count -> new WordCount(articleName, count)))
+                .log();
+    }
+
     @GetMapping("/{name}/rating")
     public Mono<Integer> getRating(@PathVariable String name) {
         return getParsedArticle(name)
                 .map(ratingService::rate);
+    }
+
+    @RequestMapping("/ratings")
+    public Flux<Rating> ratings(@RequestBody Flux<String> names) {
+        return names
+                .flatMap(articleName -> getParsedArticle(articleName)
+                        .map(ratingService::rate)
+                        .map(rating -> new Rating(articleName, rating)));
     }
 }

@@ -39,12 +39,12 @@ public class StopWatchProxy extends DefaultProxyBehavior {
     @Override
     protected Publisher<?> handlePublisherReturnType(Publisher<?> publisher, Method m, Object[] args) {
         final Stopwatch stopwatch = Stopwatch.createUnstarted();
-//        Flux<?> res = Flux.from(publisher)
-//                .doOnSubscribe(subscription -> stopwatch.start())
-//                .doOnTerminate(() -> finished(m, args, stopwatch));
-        Flux<?> res = Mono.defer(() -> Mono.just(1).doOnNext(integer -> stopwatch.start()))
-                .flatMap(next -> publisher)
+        Flux<?> res = Flux.from(publisher)
+                .doOnSubscribe(subscription -> stopwatch.start())
                 .doOnTerminate(() -> finished(m, args, stopwatch));
+//        Flux<?> res = Mono.defer(() -> Mono.just(1).doOnNext(integer -> stopwatch.start()))
+//                .flatMap(next -> publisher)
+//                .doOnTerminate(() -> finished(m, args, stopwatch));
         return res;
     }
 
