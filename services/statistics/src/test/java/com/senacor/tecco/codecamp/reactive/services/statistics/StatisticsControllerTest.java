@@ -4,6 +4,7 @@ import com.senacor.tecco.codecamp.reactive.services.statistics.external.ArticleM
 import com.senacor.tecco.codecamp.reactive.services.statistics.external.ArticleReadEvent;
 import com.senacor.tecco.codecamp.reactive.services.statistics.external.ArticleReadEventsService;
 import com.senacor.tecco.codecamp.reactive.services.statistics.model.ArticleStatistics;
+import com.senacor.tecco.codecamp.reactive.services.statistics.model.TopArticle;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.test.web.reactive.server.FluxExchangeResult;
@@ -11,9 +12,6 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
-
-import java.util.Arrays;
-import java.util.List;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
@@ -25,6 +23,8 @@ import static org.springframework.http.MediaType.TEXT_EVENT_STREAM;
  */
 public class StatisticsControllerTest {
 
+    private static final String ARTICLE_BASE_URL = "${services.article.base-url}";
+
     private ArticleReadEventsService articleReadEventsServiceMock;
     private ArticleMetricsService articleMetricsServiceMock;
 
@@ -34,7 +34,8 @@ public class StatisticsControllerTest {
     public void setUp() throws Exception {
         this.articleReadEventsServiceMock = mock(ArticleReadEventsService.class);
         this.articleMetricsServiceMock = mock(ArticleMetricsService.class);
-        this.testClient = WebTestClient.bindToController(new StatisticsController(articleReadEventsServiceMock, articleMetricsServiceMock)).build();
+        StatisticsController statisticsController = new StatisticsController(articleReadEventsServiceMock, articleMetricsServiceMock);
+        this.testClient = WebTestClient.bindToController(statisticsController).build();
     }
 
     @Test
@@ -78,6 +79,30 @@ public class StatisticsControllerTest {
                 .expectNext(new ArticleStatistics(1, 300.0, 3.0, 3.0))
                 .thenCancel()
                 .verify();
+    }
+
+    @Test
+    public void fetchTopArticleWithDefaultQueryParams() {
+        when(articleReadEventsServiceMock.readEvents()).thenReturn(Flux.intervalMillis(245).take(5)
+                .flatMap(count -> Flux.just(createReadEvent(count, count.intValue())).repeat(count*2)));
+
+        FluxExchangeResult<TopArticle[]> result = testClient.get().uri("/top/article")
+                .exchange()
+                .expectStatus().isOk()
+                .expectHeader().contentType(TEXT_EVENT_STREAM)
+                .expectBody(TopArticle[].class)
+                .returnResult();
+
+        StepVerifier.create(result.getResponseBody().flatMap(topArticles -> Flux.fromArray(topArticles)))
+                .expectNext(createTopArticle("3", 6))
+                .expectNext(createTopArticle("2", 4))
+                .expectNext(createTopArticle("1", 2))
+                .thenCancel()
+                .verify();
+    }
+
+    private TopArticle createTopArticle(String name, int reads) {
+        return new TopArticle(name, ARTICLE_BASE_URL + "/article/" + name, reads);
     }
 
     private ArticleReadEvent createReadEvent(Long count, int fetchTimeInMillis) {

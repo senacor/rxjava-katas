@@ -29,8 +29,8 @@ import static org.springframework.http.MediaType.TEXT_EVENT_STREAM_VALUE;
 @RestController
 public class StatisticsController {
 
-    @Value("${services.article.base-url")
-    private String articleServiceBaseUrl;
+    @Value("${services.article.base-url}")
+    private String articleBaseUri;
 
     private ArticleReadEventsService articleReadEventsService;
     private ArticleMetricsService articleMetricsService;
@@ -71,7 +71,7 @@ public class StatisticsController {
                 .sorted(Comparator.<Map.Entry<String, Long>>comparingLong(Map.Entry::getValue).reversed())
                 .limit(numberOfTopArticles)
                 .map(entry -> {
-                    String articleUrl = articleServiceBaseUrl + "/article/" + urlEncode(entry.getKey());
+                    String articleUrl = articleBaseUri + "/article/" + urlEncode(entry.getKey());
                     return new TopArticle(entry.getKey(), articleUrl, entry.getValue());
                 })
                 .collect(Collectors.toList());
