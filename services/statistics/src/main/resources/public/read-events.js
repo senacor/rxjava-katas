@@ -19,7 +19,7 @@
                             sum = sum + readEvents.length
                         });
 
-                        chart.update(sum, null, null);
+                        chart.update([sum]);
                     });
 
         },
@@ -46,7 +46,7 @@
      */
     $(function () {
         validateAvgCalculationIntervalOnFocusOut();
-        chart = new ArticleChart("#chartReadEvents");
+        chart = new UpdateChart("#chartReadEvents", ["Article Read Events"]);
     });
 
 })();
