@@ -24,7 +24,7 @@
             LOG.append("message: " + e.data);
 
             var stats = toJson(e);
-            chart.update(stats.articleCount, stats.wordCountAvg, stats.ratingAvg);
+            chart.update(stats.articleCount, stats.wordCountAvg, stats.ratingAvg, stats.fetchTimeInMillisAvg);
         }, false);
 
         source.addEventListener('open', function(e) {

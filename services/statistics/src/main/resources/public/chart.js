@@ -33,6 +33,15 @@ function ArticleChart(chartCanvasSelector) {
                 pointBorderColor: "rgba(205,187,151,1)",
                 pointBackgroundColor: "rgba(205,187,151,1)",
                 data: []
+            },
+            {
+                label: "Avg Article fetch time in ms",
+                fill: true,
+                backgroundColor: "rgba(187,151,205,0.2)",
+                borderColor: "rgba(187,151,205,1)",
+                pointBorderColor: "rgba(187,151,205,1)",
+                pointBackgroundColor: "rgba(187,151,205,1)",
+                data: []
             }
         ]
     };
@@ -47,7 +56,7 @@ function ArticleChart(chartCanvasSelector) {
         options: options
     });
 
-    var updateChart = function (count, words, rating) {
+    var updateChart = function (count, words, rating, fetchTimeInMillis) {
         var labels = chart.data.labels;
         if(labels.length == 0) {
             labels.push(1);
@@ -61,6 +70,7 @@ function ArticleChart(chartCanvasSelector) {
         pushValue(chart.data.datasets[0].data, count);
         pushValue(chart.data.datasets[1].data, words/1000);
         pushValue(chart.data.datasets[2].data, rating);
+        pushValue(chart.data.datasets[3].data, fetchTimeInMillis);
 
         chart.update(250, false);
     };
