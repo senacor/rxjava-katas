@@ -7,6 +7,7 @@ import com.senacor.tecco.codecamp.reactive.services.statistics.model.ArticleMetr
 import com.senacor.tecco.codecamp.reactive.services.statistics.model.ArticleStatistics;
 import com.senacor.tecco.codecamp.reactive.services.statistics.model.TopArticle;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,6 +20,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
+import static com.senacor.tecco.codecamp.reactive.services.statistics.external.URLEncoderUtil.urlEncode;
 import static org.springframework.http.MediaType.TEXT_EVENT_STREAM_VALUE;
 
 /**
@@ -26,6 +28,9 @@ import static org.springframework.http.MediaType.TEXT_EVENT_STREAM_VALUE;
  */
 @RestController
 public class StatisticsController {
+
+    @Value("${services.article.base-url")
+    private String articleServiceBaseUrl;
 
     private ArticleReadEventsService articleReadEventsService;
     private ArticleMetricsService articleMetricsService;
@@ -65,8 +70,10 @@ public class StatisticsController {
         return readStatistics.entrySet().stream()
                 .sorted(Comparator.<Map.Entry<String, Long>>comparingLong(Map.Entry::getValue).reversed())
                 .limit(numberOfTopArticles)
-                // TODO improve url creation
-                .map(entry -> new TopArticle(entry.getKey(), "http://localhost:8081/article/" + entry.getKey(), entry.getValue()))
+                .map(entry -> {
+                    String articleUrl = articleServiceBaseUrl + "/article/" + urlEncode(entry.getKey());
+                    return new TopArticle(entry.getKey(), articleUrl, entry.getValue());
+                })
                 .collect(Collectors.toList());
     }
 
