@@ -9,7 +9,7 @@ import reactor.core.publisher.Mono;
 import java.net.URLEncoder;
 
 /**
- * Created by Daniel Heinrich on 06/03/2017.
+ * @author Daniel Heinrich
  */
 @Service
 public class WikiLoaderServiceImpl implements WikiLoaderService {

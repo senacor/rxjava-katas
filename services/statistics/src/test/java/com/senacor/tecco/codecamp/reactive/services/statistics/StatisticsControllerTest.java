@@ -78,7 +78,7 @@ public class StatisticsControllerTest {
     }
 
     private ArticleReadEvent createReadEvent(Long count) {
-        return new ArticleReadEvent(count+"");
+        return new ArticleReadEvent(count+"", 100);
     }
 
 }

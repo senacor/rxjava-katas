@@ -55,7 +55,7 @@ public class ArticleReadEventsServiceTest {
     }
 
     private ArticleReadEvent createReadEvent(Long number) {
-        return new ArticleReadEvent("name");
+        return new ArticleReadEvent("name", 100);
     }
 
 }

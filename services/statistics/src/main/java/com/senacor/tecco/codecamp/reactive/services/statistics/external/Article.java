@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * Created by Daniel Heinrich on 06/03/2017.
+ * @author Daniel Heinrich
  */
 public class Article {
 

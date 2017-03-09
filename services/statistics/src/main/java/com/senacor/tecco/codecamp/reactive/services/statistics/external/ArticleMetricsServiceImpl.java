@@ -7,7 +7,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 /**
- * Created by Daniel Heinrich on 06/03/2017.
+ * @author Daniel Heinrich
  */
 @Service
 public class ArticleMetricsServiceImpl implements ArticleMetricsService {

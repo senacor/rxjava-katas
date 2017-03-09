@@ -11,14 +11,21 @@ import java.util.Objects;
 public class ArticleReadEvent {
 
     private final String articleName;
+    private final Integer fetchTimeInMillis;
 
     @JsonCreator
-    public ArticleReadEvent(@JsonProperty("name") String articleName) {
+    public ArticleReadEvent(@JsonProperty("name") String articleName,
+                            @JsonProperty("fetchTimeInMillis")Integer fetchTimeInMillis) {
         this.articleName = articleName;
+        this.fetchTimeInMillis = fetchTimeInMillis;
     }
 
     public String getArticleName() {
         return articleName;
+    }
+
+    public Integer getFetchTimeInMillis() {
+        return fetchTimeInMillis;
     }
 
     @Override

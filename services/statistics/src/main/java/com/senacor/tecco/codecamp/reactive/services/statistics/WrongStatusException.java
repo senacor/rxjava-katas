@@ -7,7 +7,7 @@ import java.util.function.Consumer;
 import static org.springframework.http.HttpStatus.OK;
 
 /**
- * Created by Daniel Heinrich on 06/03/2017.
+ * @author Daniel Heinrich
  */
 public class WrongStatusException extends RuntimeException {
     private final ClientResponse reponse;
