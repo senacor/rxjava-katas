@@ -2,7 +2,7 @@
 function UpdateChart(chartCanvasSelector, dataLabels) {
 
     const MAX_DATA_POINTS_SHOWN = 15;
-    const colors = ["151,187,205", "205,151,187", "205,187,151", "187,151,205"];
+    const colors = ["151,187,205", "205,151,187", "205,187,151", "161,212,144"];
 
     var options = {
         animation : false

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
-import java.net.URLEncoder;
+import static com.senacor.tecco.codecamp.reactive.services.statistics.external.URLEncoderUtil.urlEncode;
 
 /**
  * @author Daniel Heinrich
@@ -26,7 +26,7 @@ public class WikiLoaderServiceImpl implements WikiLoaderService {
     @Override
     public Mono<Article> fetchArticle(String articleName) {
         return articleClient.get()
-                               .uri(ARTICLE_ENDPOINT + URLEncoder.encode(articleName))
+                               .uri(ARTICLE_ENDPOINT + urlEncode(articleName))
                                .exchange()
                                .doOnNext(WrongStatusException.okFilter())
                                .flatMap(r -> r.bodyToFlux(Article.class))
