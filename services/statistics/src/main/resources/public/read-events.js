@@ -13,13 +13,26 @@
                 .bufferTime(chartUpdateInterval)
                 .subscribe(
                     function (readEventss) { // onNext
-                        // TODO make nice
-                        var sum = 0;
+                        var sumReadEvents = 0;
+                        var sumLoadTime = 0;
+                        var min = null;
+                        var max = null;
                         readEventss.forEach(function (readEvents) {
-                            sum = sum + readEvents.length
+                            sumReadEvents = sumReadEvents + readEvents.length;
+                            readEvents.forEach(function (readEvent) {
+                                const fetchTime = readEvent.fetchTimeInMillis;
+                                sumLoadTime = sumLoadTime + fetchTime;
+                                if (fetchTime) {
+                                    if (!min || min > fetchTime) {
+                                        min = fetchTime;
+                                    }
+                                    if (!max || max < fetchTime) {
+                                        max = fetchTime;
+                                    }
+                                }
+                            });
                         });
-
-                        chart.update([sum]);
+                        chart.update([sumReadEvents, sumLoadTime/sumReadEvents, max , min]);
                     });
 
         },
@@ -46,7 +59,7 @@
      */
     $(function () {
         validateAvgCalculationIntervalOnFocusOut();
-        chart = new UpdateChart("#chartReadEvents", ["Article Read Events"]);
+        chart = new UpdateChart("#chartReadEvents", ["Read Events", "Avg fetch time in ms", "Max fetch time in ms", "Min fetch time in ms"]);
     });
 
 })();
