@@ -8,7 +8,7 @@
             $("#avgCalculationInterval input").prop("disabled", true);
             observable.subscribe(
                 function (stats) { // onNext
-                    chart.update(stats.articleCount, stats.wordCountAvg, stats.ratingAvg, stats.fetchTimeInMillisAvg);
+                    chart.update([stats.articleCount, stats.wordCountAvg/1000, stats.ratingAvg, stats.fetchTimeInMillisAvg]);
                 });
 
         },
@@ -36,7 +36,7 @@
      */
     $(function () {
         validateAvgCalculationIntervalOnFocusOut();
-        chart = new ArticleChart("#chart");
+        chart = new UpdateChart("#chart", ["Article/Sec", "Avg Word Count", "Avg Rating", "Avg Article fetch time in ms"]);
     });
 
 })();
