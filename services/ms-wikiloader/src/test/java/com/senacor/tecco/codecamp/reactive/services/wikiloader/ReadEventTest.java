@@ -10,8 +10,10 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.core.publisher.ReplayProcessor;
+
 
 import static com.senacor.tecco.reactive.util.DelayFunction.withNoDelay;
 import static java.util.Arrays.asList;
@@ -40,11 +42,13 @@ public class ReadEventTest {
     }
 
     @Test
-    public void shouldEmitEventsOnRead() {
+    public void shouldEmitEventsOnRead() throws InterruptedException {
         ReplayProcessor<String> replay = subscribe();
 
         wikiController.fetchArticle("foo").subscribe();
         wikiController.fetchArticle("bar").subscribe();
+
+        Thread.sleep(WikiController.BUFFER_READ_EVENTS + 50);
 
         assertEvents(replay, "foo", "bar");
     }
@@ -62,22 +66,29 @@ public class ReadEventTest {
     }
 
     @Test
-    public void fetchingWordcountShouldNotEmitEvent() {
+    public void fetchingWordcountShouldNotEmitEvent() throws InterruptedException {
         ReplayProcessor<String> replay = subscribe();
         wikiController.getWordCount("foo").subscribe();
+
+        Thread.sleep(WikiController.BUFFER_READ_EVENTS + 50);
+
         assertNoEvents(replay);
     }
 
     @Test
-    public void fetchingRatingShouldNotEmitEvent() {
+    public void fetchingRatingShouldNotEmitEvent() throws InterruptedException {
         ReplayProcessor<String> replay = subscribe();
         wikiController.getRating("foo").subscribe();
+
+        Thread.sleep(WikiController.BUFFER_READ_EVENTS + 50);
+
         assertNoEvents(replay);
     }
 
     private ReplayProcessor<String> subscribe() {
         ReplayProcessor<String> articles = ReplayProcessor.create();
         wikiController.getReadStream()
+                .flatMap(articleReadEvents -> Flux.fromIterable(articleReadEvents))
                 .map(Article::getName)
                 .subscribe(articles);
         return articles;

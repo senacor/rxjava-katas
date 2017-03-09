@@ -4,19 +4,27 @@
 
     var chart;
     var chartUpdateInterval = DEFAULT_BUFFER_INTERVAL_IN_MILLIS;
+    var subscription;
 
     EventSourceObservable("#readEvents",
         function (observable) { // on event source connected
             $("#avgCalculationIntervalReadEvents input").prop("disabled", true);
-            observable
+            subscription = observable
                 .bufferTime(chartUpdateInterval)
                 .subscribe(
-                    function (readEvents) { // onNext
-                        chart.update(readEvents.length, null, null);
+                    function (readEventss) { // onNext
+                        // TODO make nice
+                        var sum = 0;
+                        readEventss.forEach(function (readEvents) {
+                            sum = sum + readEvents.length
+                        });
+
+                        chart.update(sum, null, null);
                     });
 
         },
         function () { // on event source disconnected
+            subscription.dispose();
             $("#avgCalculationIntervalReadEvents input").prop("disabled", false);
         });
 
@@ -29,7 +37,7 @@
                 value = DEFAULT_BUFFER_INTERVAL_IN_MILLIS;
                 input.val(value);
             }
-            chartUpdateInterval = value;
+            chartUpdateInterval = +value;
         });
     };
 

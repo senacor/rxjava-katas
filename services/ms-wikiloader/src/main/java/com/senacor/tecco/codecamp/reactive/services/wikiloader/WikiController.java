@@ -19,6 +19,8 @@ import reactor.core.publisher.DirectProcessor;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.util.List;
+
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -27,6 +29,8 @@ import java.util.concurrent.TimeUnit;
 @RestController
 @RequestMapping("/article")
 public class WikiController {
+
+    public static final int BUFFER_READ_EVENTS = 250;
 
     private final DirectProcessor<Article> readArticles = DirectProcessor.create();
 
@@ -63,8 +67,10 @@ public class WikiController {
     @CrossOrigin
     @GetMapping("/readevents")
     @JsonView(NameOnly.class)
-    public Flux<Article> getReadStream() {
-        return readArticles;
+    public Flux<List<Article>> getReadStream() {
+        return readArticles
+                .bufferMillis(BUFFER_READ_EVENTS)
+                .filter(list -> !list.isEmpty());
     }
 
     private Mono<ParsedPage> getParsedArticle(String name) {

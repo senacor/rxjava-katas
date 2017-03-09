@@ -13,10 +13,9 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 
-import static org.mockito.ArgumentMatchers.any;
+import static java.util.Arrays.asList;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.springframework.test.util.ReflectionTestUtils.setField;
 
 /**
  * @author Andri Bremm
@@ -40,9 +39,10 @@ public class ArticleReadEventsServiceTest {
 
     @Test
     public void fetchReadEvents() {
-        Flux<Object> flux = Flux.intervalMillis(30).take(3).map(count -> createReadEvent(count));
+        Flux<ArticleReadEvent[]> flux = Flux.intervalMillis(30).take(3)
+                .map(count -> asList(createReadEvent(count)).toArray(new ArticleReadEvent[]{}));
         ClientResponse clientResponse = mock(ClientResponse.class);
-        when(clientResponse.bodyToFlux(any())).thenReturn(flux);
+        when(clientResponse.bodyToFlux(ArticleReadEvent[].class)).thenReturn(flux);
         when(headerSpec.exchange()).thenReturn(Mono.just(clientResponse));
 
         Flux<ArticleReadEvent> result = articleReadEventsService.readEvents();
