@@ -34,7 +34,8 @@ public class WikipediaServiceJapiImpl implements WikipediaServiceJapi {
     }
 
     protected String getPageContent(String name) throws Exception {
-        return wiki.getPageContent(name);
+        //return wiki.getPageContent(name);
+        return getArticleNonBlocking(name).block();
     }
 
     @Override

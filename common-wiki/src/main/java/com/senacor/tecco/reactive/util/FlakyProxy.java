@@ -7,6 +7,7 @@ import reactor.core.publisher.Mono;
 import java.io.UncheckedIOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
 import java.util.List;
 
 /**
@@ -15,8 +16,8 @@ import java.util.List;
  */
 public class FlakyProxy extends DefaultProxyBehavior {
 
-    public static <T> T newJdkProxy(T obj, FlakinessFunction flakinessFunction) {
-        Class<T> clazz = (Class<T>) obj.getClass();
+    public static <T> T newJdkProxy(Object obj, FlakinessFunction flakinessFunction) {
+        Class<?> clazz = obj.getClass();
         List<Class<?>> interfaces = ClassUtils.getAllInterfaces(clazz);
         return (T) java.lang.reflect.Proxy.newProxyInstance(
                 clazz.getClassLoader(),

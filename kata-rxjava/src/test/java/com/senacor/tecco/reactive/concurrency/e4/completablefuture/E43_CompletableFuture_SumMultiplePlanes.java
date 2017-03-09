@@ -4,6 +4,8 @@ import com.senacor.tecco.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.tecco.reactive.concurrency.Summary;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 /**
@@ -19,15 +21,15 @@ public class E43_CompletableFuture_SumMultiplePlanes extends PlaneArticleBaseTes
         String[] planes = {"Boeing 777", "Boeing 747"};
 
         //create List of CompletableFutures for build count
-        CompletableFuture<Integer>[] futures = new CompletableFuture[planes.length];
+        List<CompletableFuture<Integer>> futures = new ArrayList<>(planes.length);
 
-        for (int i = 0; i < planes.length; i++) {
-            futures[i] = fetchArticle(planes[i])
-                    .thenApply(this::parseBuildCountInt);
+        for (String plane : planes) {
+            futures.add(fetchArticle(plane)
+                    .thenApply(this::parseBuildCountInt));
         }
 
         //wait for fulfillment of all futures
-        int sumBuildCount = CompletableFuture.allOf(futures)
+        int sumBuildCount = CompletableFuture.allOf(futures.toArray(new CompletableFuture[futures.size()]))
                 .thenApply((v) -> {
                     //collect all results and sum up
                     int sum = 0;

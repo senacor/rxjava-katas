@@ -21,8 +21,8 @@ import static com.senacor.tecco.reactive.util.ReactiveUtil.abbreviateWithoutNewl
  */
 public class StopWatchProxy extends DefaultProxyBehavior {
 
-    public static <T> T newJdkProxy(T obj) {
-        Class<T> clazz = (Class<T>) obj.getClass();
+    public static <T> T newJdkProxy(Object obj) {
+        Class<?> clazz = obj.getClass();
         List<Class<?>> interfaces = ClassUtils.getAllInterfaces(clazz);
         Object res = Proxy.newProxyInstance(
                 clazz.getClassLoader(),
