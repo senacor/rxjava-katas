@@ -19,18 +19,18 @@
          * Tasks:
          * 1. To display the date the incoming objects must be mapped to a json object. Use the function "toJson" to map the incoming objects.
          */
-        var jsonObjectsObservable = socketSubject;
+        var jsonObjectsObservable = socketSubject.map(toJson);
 
         /*
          * Tasks:
          * 2. Find out how share the observable providing the json objects.
          */
-        var sharedObservable = jsonObjectsObservable;
+        var sharedObservable = jsonObjectsObservable.share();
 
         const subscription1 = sharedObservable.subscribe(
             function (article) { // next
                 appendArticles(article);
-                chart.update(1, 0, 0);
+                // DELETED chart.update(1, 0, 0);
             },
             function (e) { // error
                 // errors and "unclean" closes land here
@@ -51,7 +51,15 @@
          * 5. Use the method calculateAvg and the avgCalculationInterval to update the chart in the given interval with the avg. values.
          */
         var avgCalculationInterval = getAvgCalculationInterval();
-
+        const subscription2 = sharedObservable
+            .bufferTime(avgCalculationInterval)
+            .map(calculateAvg)
+            .subscribe(
+                function (avg) { // next
+                    chart.update(avg.count, avg.words, avg.rating);
+                }
+            );
+        subscriptions.push(subscription2);
     }
 
     /**

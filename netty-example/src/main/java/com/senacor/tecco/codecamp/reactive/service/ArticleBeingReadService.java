@@ -5,6 +5,9 @@ import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
 import com.senacor.tecco.reactive.util.DelayFunction;
 import io.reactivex.Observable;
+import io.reactivex.schedulers.Schedulers;
+
+import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -34,8 +37,24 @@ public class ArticleBeingReadService {
          * 4. Test your implementation with wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS) and reduce millis to 10.
          */
         return wikiService.wikiArticleBeingReadObservableBurst()
-        // or return wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS)
-                .map(name -> new WikiArticle(name, "", 0, 0));
+        //return wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS)
+                .flatMap(articleName ->
+                        wikiService.fetchArticleObservable(articleName).subscribeOn(Schedulers.io())
+                                .flatMap(articleText -> wikiService.parseMediaWikiTextObservable(articleText)
+                                        .flatMap(parsedPage -> Observable.zip(
+                                                ratingService.rateObservable(parsedPage),
+                                                countService.countWordsObservable(parsedPage),
+                                                Observable.just(parsedPage).map(page -> {
+                                                    String text;
+                                                    if (page.getFirstParagraph() != null) {
+                                                        text = page.getFirstParagraph().getText();
+                                                    } else {
+                                                        text = page.getText();
+                                                    }
+                                                    return text.substring(0, Math.min(text.length(), 250)) + "...";
+                                                }),
+                                                (rating, wordCount, content) -> new WikiArticle(articleName, content, rating, wordCount))
+                                        )));
 
     }
 
