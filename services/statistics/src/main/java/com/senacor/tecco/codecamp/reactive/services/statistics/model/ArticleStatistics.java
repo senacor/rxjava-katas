@@ -2,8 +2,13 @@ package com.senacor.tecco.codecamp.reactive.services.statistics.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.common.base.Preconditions;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Objects;
+
+import static com.google.common.base.Preconditions.checkArgument;
 
 /**
  * @author Andri Bremm
@@ -21,9 +26,9 @@ public class ArticleStatistics {
                              @JsonProperty("ratingAvg") double ratingAvg,
                              @JsonProperty("fetchTimeInMillisAvg") double fetchTimeInMillisAvg) {
         this.articleCount = articleCount;
-        this.wordCountAvg = wordCountAvg;
-        this.ratingAvg = ratingAvg;
-        this.fetchTimeInMillisAvg = fetchTimeInMillisAvg;
+        this.wordCountAvg = round(wordCountAvg, 1);
+        this.ratingAvg = round(ratingAvg, 1);
+        this.fetchTimeInMillisAvg = round(fetchTimeInMillisAvg, 1);
     }
 
     public int getArticleCount() {
@@ -70,5 +75,13 @@ public class ArticleStatistics {
                 ", ratingAvg=" + ratingAvg +
                 ", fetchTimeInMillisAvg=" + fetchTimeInMillisAvg +
                 '}';
+    }
+
+    private static double round(double value, int scale) {
+        checkArgument(scale >= 0, "scale was %s but expected non negative", scale);
+
+        BigDecimal bd = BigDecimal.valueOf(value);
+        bd = bd.setScale(scale, RoundingMode.HALF_UP);
+        return bd.doubleValue();
     }
 }
