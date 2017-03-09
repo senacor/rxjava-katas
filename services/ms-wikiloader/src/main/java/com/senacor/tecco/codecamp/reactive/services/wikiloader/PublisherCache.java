@@ -1,7 +1,5 @@
 package com.senacor.tecco.codecamp.reactive.services.wikiloader;
 
-import com.google.common.cache.Cache;
-import com.google.common.cache.CacheBuilder;
 import org.apache.commons.collections4.map.LRUMap;
 import reactor.core.publisher.Mono;
 
