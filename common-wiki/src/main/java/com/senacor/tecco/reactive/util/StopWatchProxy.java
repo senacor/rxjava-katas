@@ -4,6 +4,7 @@ import com.google.common.base.Stopwatch;
 import org.apache.commons.lang3.ClassUtils;
 import org.reactivestreams.Publisher;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -38,8 +39,11 @@ public class StopWatchProxy extends DefaultProxyBehavior {
     @Override
     protected Publisher<?> handlePublisherReturnType(Publisher<?> publisher, Method m, Object[] args) {
         final Stopwatch stopwatch = Stopwatch.createUnstarted();
-        Flux<?> res = Flux.from(publisher)
-                .doOnSubscribe(subscription -> stopwatch.start())
+//        Flux<?> res = Flux.from(publisher)
+//                .doOnSubscribe(subscription -> stopwatch.start())
+//                .doOnTerminate(() -> finished(m, args, stopwatch));
+        Flux<?> res = Mono.defer(() -> Mono.just(1).doOnNext(integer -> stopwatch.start()))
+                .flatMap(next -> publisher)
                 .doOnTerminate(() -> finished(m, args, stopwatch));
         return res;
     }
