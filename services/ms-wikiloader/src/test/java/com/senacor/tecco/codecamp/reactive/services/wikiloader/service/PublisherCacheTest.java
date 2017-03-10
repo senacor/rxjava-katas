@@ -1,5 +1,6 @@
-package com.senacor.tecco.codecamp.reactive.services.wikiloader;
+package com.senacor.tecco.codecamp.reactive.services.wikiloader.service;
 
+import com.senacor.tecco.codecamp.reactive.services.wikiloader.service.PublisherCache;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package com.senacor.tecco.codecamp.reactive.services.wikiloader;
+package com.senacor.tecco.codecamp.reactive.services.wikiloader.service;
 
 import org.apache.commons.collections4.map.LRUMap;
 import reactor.core.publisher.Mono;

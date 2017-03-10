@@ -1,6 +1,7 @@
 package com.senacor.tecco.codecamp.reactive.services.wikiloader;
 
 import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.Article;
+import com.senacor.tecco.codecamp.reactive.services.wikiloader.service.ArticleService;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
@@ -13,7 +14,6 @@ import org.mockito.junit.MockitoJUnitRunner;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.core.publisher.ReplayProcessor;
-
 
 import static com.senacor.tecco.reactive.util.DelayFunction.withNoDelay;
 import static java.util.Arrays.asList;
@@ -34,10 +34,10 @@ public class ReadEventTest {
     @Before
     public void setup() {
         Mockito.when(service.fetchArticleNonBlocking(Mockito.anyString())).thenReturn(Mono.just(""));
-        wikiController = new WikiController(service,
+        wikiController = new WikiController(new ArticleService(service,
                 CountService.create(withNoDelay()),
                 RatingService.create(withNoDelay()),
-                10);
+                10));
 
     }
 
@@ -88,7 +88,7 @@ public class ReadEventTest {
     private ReplayProcessor<String> subscribe() {
         ReplayProcessor<String> articles = ReplayProcessor.create();
         wikiController.getReadStream()
-                .flatMap(articleReadEvents -> Flux.fromIterable(articleReadEvents))
+                .flatMap(Flux::fromIterable)
                 .map(Article::getName)
                 .subscribe(articles);
         return articles;

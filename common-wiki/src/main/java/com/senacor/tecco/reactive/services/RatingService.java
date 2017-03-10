@@ -60,6 +60,9 @@ public class RatingService {
         return CompletableFuture.supplyAsync(() -> rate(parsedPage), pool);
     }
 
+    /**
+     * @return a rating of the wiki article from 1 to 5 'stars'
+     */
     public int rate(final ParsedPage parsedPage) {
         return ratingBackend.rate(parsedPage);
     }

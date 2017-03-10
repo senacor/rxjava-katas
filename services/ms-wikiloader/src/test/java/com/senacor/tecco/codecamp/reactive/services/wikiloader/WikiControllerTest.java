@@ -4,6 +4,7 @@ import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.Article;
 import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.ArticleName;
 import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.Rating;
 import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.WordCount;
+import com.senacor.tecco.codecamp.reactive.services.wikiloader.service.ArticleService;
 import com.senacor.tecco.reactive.services.CountService;
 import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
@@ -38,11 +39,11 @@ public class WikiControllerTest {
 
     @Before
     public void setUp() throws Exception {
-        this.testClient = WebTestClient.bindToController(new WikiController(
+        this.testClient = WebTestClient.bindToController(new WikiController(new ArticleService(
                 WikiService.create(withNoDelay()),
                 CountService.create(withNoDelay()),
                 RatingService.create(withNoDelay()),
-                10)).build();
+                10))).build();
     }
 
     @Test

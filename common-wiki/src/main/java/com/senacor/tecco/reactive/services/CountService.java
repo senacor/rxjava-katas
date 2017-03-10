@@ -59,6 +59,9 @@ public class CountService {
         return CompletableFuture.supplyAsync(() -> countWords(parsedPage), pool);
     }
 
+    /**
+     * @return count of all words in this article
+     */
     public int countWords(final ParsedPage parsedPage) {
         return counterBackend.countWords(parsedPage);
     }
