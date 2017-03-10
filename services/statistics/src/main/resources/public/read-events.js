@@ -17,20 +17,26 @@
                         var sumLoadTime = 0;
                         var min = null;
                         var max = null;
-                        readEventss.forEach(function (readEvents) {
-                            sumReadEvents = sumReadEvents + readEvents.length;
-                            readEvents.forEach(function (readEvent) {
-                                const fetchTime = readEvent.fetchTimeInMillis;
-                                sumLoadTime = sumLoadTime + fetchTime;
-                                if (fetchTime) {
-                                    if (!min || min > fetchTime) {
-                                        min = fetchTime;
-                                    }
-                                    if (!max || max < fetchTime) {
-                                        max = fetchTime;
-                                    }
+                        var updateCalculation = function (fetchTime) {
+                            sumReadEvents = sumReadEvents + 1;
+                            sumLoadTime = sumLoadTime + fetchTime;
+                            if (fetchTime) {
+                                if (!min || min > fetchTime) {
+                                    min = fetchTime;
                                 }
-                            });
+                                if (!max || max < fetchTime) {
+                                    max = fetchTime;
+                                }
+                            }
+                        };
+                        readEventss.forEach(function (readEvents) {
+                            if (Array.isArray(readEvents)) {
+                                readEvents.forEach(function (readEvent) {
+                                    updateCalculation(readEvent.fetchTimeInMillis);
+                                });
+                            } else {
+                                updateCalculation(readEvents.fetchTimeInMillis);
+                            }
                         });
                         chart.update([sumReadEvents, sumLoadTime/sumReadEvents, max , min]);
                     });

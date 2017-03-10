@@ -58,36 +58,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <h3>Chart</h3>
-            <div id="statistics">
-                <div class="row">
-                    <div class="col-md-12">
-                        <form class="form-inline">
-                            <label>URL:</label>
-                            <input type="text" class="url form-control" placeholder="Server URL"
-                                   value="http://localhost:8080/statistics/article?updateInterval=1000"/>
-
-                            <button class="subscribe btn btn-default" type="submit">Subscribe</button>
-                            <button class="unsubscribe btn btn-default" type="submit">Unsubscribe</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <canvas id="chart" height="100px"></canvas>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <form class="form-inline">
-                            <div class="form-group" id="avgCalculationInterval">
-                                <label for="avgCalculationIntervalInput">Avg. per ms</label>
-                                <input type="text" id="avgCalculationIntervalInput" class="form-control"/>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+            <h3>Charts</h3>
 
             <!-- read events -->
             <h4>Article Read Events</h4>
@@ -115,6 +86,38 @@
                             <div class="form-group" id="avgCalculationIntervalReadEvents">
                                 <label for="avgCalculationIntervalInputReadEvents">Avg. per ms</label>
                                 <input type="text" id="avgCalculationIntervalInputReadEvents" class="form-control"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics Chart -->
+            <h4>Statistics</h4>
+            <div id="statistics">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="form-inline">
+                            <label>URL:</label>
+                            <input type="text" class="url form-control" placeholder="Server URL"
+                                   value="http://localhost:8080/statistics/article?updateInterval=1000"/>
+
+                            <button class="subscribe btn btn-default" type="submit">Subscribe</button>
+                            <button class="unsubscribe btn btn-default" type="submit">Unsubscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <canvas id="chart" height="100px"></canvas>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="form-inline">
+                            <div class="form-group" id="avgCalculationInterval">
+                                <label for="avgCalculationIntervalInput">Avg. per ms</label>
+                                <input type="text" id="avgCalculationIntervalInput" class="form-control"/>
                             </div>
                         </form>
                     </div>

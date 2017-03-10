@@ -15,7 +15,7 @@ function UpdateChart(chartCanvasSelector, dataLabels) {
         datasets: []
     };
 
-    for(var i = 0; i<dataLabels.length; i++) {
+    for (var i = 0; i < dataLabels.length; i++) {
         data.datasets.push({
             label: dataLabels[i],
             fill: true,
