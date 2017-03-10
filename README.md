@@ -107,4 +107,7 @@ Spring reactive web
 - demos (looks a bit outdated) <https://github.com/sdeleuze/spring-reactive-playground>
 
 ##### Security / Context / ThreadLocal
-- https://github.com/spring-projects/spring-security-reactive/
+- <https://github.com/spring-projects/spring-security-reactive/>
+
+##### Spring Data reactive
+- <https://spring.io/blog/2016/11/28/going-reactive-with-spring-data>

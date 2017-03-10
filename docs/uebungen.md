@@ -43,3 +43,14 @@ Sprint 6
 
 Sprint 7
 ========
+
+
+Sprint X.1 - improved caching (reactive datastore)
+========
+- have a look at `PublisherCache`, this is a quite simple and small LRU cache
+  to cache the fetched content from wikipedia. You can extend this cache by an 
+  in-memory Mongo/Casandra/Redis Database:
+  look in the LRU Cache, if not found, look in the Mongo/Casandra Database, 
+  if not found, query wikipedia.
+  Use Spring Data to query the Database <https://spring.io/blog/2016/11/28/going-reactive-with-spring-data>
+
