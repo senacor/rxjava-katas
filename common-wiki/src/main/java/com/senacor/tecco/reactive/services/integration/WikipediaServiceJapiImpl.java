@@ -69,9 +69,7 @@ public class WikipediaServiceJapiImpl implements WikipediaServiceJapi {
             throw new ArticleNotFoundException("Articl name '" + articleName + "' could not be parsed", e);
         }
         final String queryParams = ("&prop=revisions&rvprop=content&titles=" + normalizedTitle).replace("|", "%7C");
-        final String queryUrl = wiki.getSiteurl() + wiki.getScriptPath() + "/api.php?&action=query"
-                + "&format=json" + queryParams;
-        return queryUrl;
+        return wiki.getSiteurl() + wiki.getScriptPath() + "/api.php?&action=query&format=json" + queryParams;
     }
 
     private String parseJsonContend(String json, String name) {
