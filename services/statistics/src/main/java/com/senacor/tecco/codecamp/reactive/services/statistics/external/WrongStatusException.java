@@ -1,4 +1,4 @@
-package com.senacor.tecco.codecamp.reactive.services.statistics;
+package com.senacor.tecco.codecamp.reactive.services.statistics.external;
 
 import org.springframework.web.reactive.function.client.ClientResponse;
 
