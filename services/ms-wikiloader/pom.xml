@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.senacor.tecco.codecamp.reactive.services</groupId>
+        <groupId>com.senacor.codecamp.reactive.services</groupId>
         <artifactId>services-base</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
@@ -12,7 +12,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.senacor.tecco.codecamp.reactive</groupId>
+            <groupId>com.senacor.codecamp.reactive</groupId>
             <artifactId>common-wiki</artifactId>
         </dependency>
         <dependency>
@@ -20,7 +20,7 @@
             <artifactId>commons-collections4</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.senacor.tecco.codecamp.reactive</groupId>
+            <groupId>com.senacor.codecamp.reactive</groupId>
             <artifactId>common-wiki</artifactId>
             <classifier>tests</classifier>
             <scope>test</scope>

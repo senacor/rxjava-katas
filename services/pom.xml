@@ -11,7 +11,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.senacor.tecco.codecamp.reactive.services</groupId>
+    <groupId>com.senacor.codecamp.reactive.services</groupId>
     <artifactId>services-base</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -28,7 +28,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.senacor.tecco.codecamp.reactive</groupId>
+                <groupId>com.senacor.codecamp.reactive</groupId>
                 <artifactId>common-wiki</artifactId>
                 <version>2.0-SNAPSHOT</version>
                 <exclusions>
@@ -39,7 +39,7 @@
                 </exclusions>
             </dependency>
             <dependency>
-                <groupId>com.senacor.tecco.codecamp.reactive</groupId>
+                <groupId>com.senacor.codecamp.reactive</groupId>
                 <artifactId>common-wiki</artifactId>
                 <version>2.0-SNAPSHOT</version>
                 <classifier>tests</classifier>
