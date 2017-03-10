@@ -1,6 +1,7 @@
 package com.senacor.tecco.codecamp.reactive.services.wikiloader;
 
 import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.Article;
+import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.ArticleName;
 import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.Rating;
 import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.WordCount;
 import com.senacor.tecco.reactive.services.CountService;
@@ -8,7 +9,6 @@ import com.senacor.tecco.reactive.services.RatingService;
 import com.senacor.tecco.reactive.services.WikiService;
 import com.senacor.tecco.reactive.util.ReactiveUtil;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.reactive.server.WebTestClient;
@@ -71,16 +71,16 @@ public class WikiControllerTest {
     public void countWords() throws Exception {
         MediaType mediaType = MediaType.valueOf(MediaType.APPLICATION_STREAM_JSON_VALUE + ";charset=UTF-8");
         StepVerifier.create(
-        testClient.post().uri("/article/wordcounts")
-                //.contentType(mediaType)
-                .accept(mediaType)
-                .exchange(Flux.just(EIGENWERT_ARTICLE.getName(), EIGENVEKTOR_ARTICLE.getName())
-                        .delayElements(Duration.ofMillis(500)), String.class)
-                .expectStatus().isOk()
-                .expectHeader().contentType(mediaType)
-                .expectBody(WordCount.class)
-                .returnResult()
-                .getResponseBody()
+                testClient.post().uri("/article/wordcounts")
+                        //.contentType(mediaType)
+                        .accept(mediaType)
+                        .exchange(Flux.just(EIGENWERT_ARTICLE.toArticleName(), EIGENVEKTOR_ARTICLE.toArticleName())
+                                .delayElements(Duration.ofMillis(10)), ArticleName.class)
+                        .expectStatus().isOk()
+                        .expectHeader().contentType(mediaType)
+                        .expectBody(WordCount.class)
+                        .returnResult()
+                        .getResponseBody()
         ).expectNext(new WordCount(EIGENWERT_ARTICLE.getName(), 2), new WordCount(EIGENVEKTOR_ARTICLE.getName(), 2))
                 .verifyComplete();
     }
@@ -101,8 +101,8 @@ public class WikiControllerTest {
                 testClient.post().uri("/article/ratings")
                         //.contentType(mediaType)
                         .accept(mediaType)
-                        .exchange(Flux.just(EIGENWERT_ARTICLE.getName(), EIGENVEKTOR_ARTICLE.getName())
-                                .delayElements(Duration.ofMillis(500)), String.class)
+                        .exchange(Flux.just(EIGENWERT_ARTICLE.toArticleName(), EIGENVEKTOR_ARTICLE.toArticleName())
+                                .delayElements(Duration.ofMillis(10)), ArticleName.class)
                         .expectStatus().isOk()
                         .expectHeader().contentType(mediaType)
                         .expectBody(Rating.class)

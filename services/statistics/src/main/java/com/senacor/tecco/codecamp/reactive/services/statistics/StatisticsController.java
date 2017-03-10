@@ -3,16 +3,15 @@ package com.senacor.tecco.codecamp.reactive.services.statistics;
 import com.senacor.tecco.codecamp.reactive.services.statistics.external.ArticleMetricsService;
 import com.senacor.tecco.codecamp.reactive.services.statistics.external.ArticleReadEvent;
 import com.senacor.tecco.codecamp.reactive.services.statistics.external.ArticleReadEventsService;
-import com.senacor.tecco.codecamp.reactive.services.statistics.model.ArticleMetrics;
-import com.senacor.tecco.codecamp.reactive.services.statistics.model.ArticleStatistics;
-import com.senacor.tecco.codecamp.reactive.services.statistics.model.TopArticle;
+import com.senacor.tecco.codecamp.reactive.services.statistics.model.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
 
 import java.util.Comparator;
 import java.util.List;
@@ -29,6 +28,8 @@ import static org.springframework.http.MediaType.TEXT_EVENT_STREAM_VALUE;
 @RestController
 public class StatisticsController {
 
+    private static final Logger logger = LoggerFactory.getLogger(StatisticsController.class);
+
     @Value("${services.article.base-url}")
     private String articleBaseUri;
 
@@ -44,25 +45,50 @@ public class StatisticsController {
     private static final Map<String, Long> readStatistics = new ConcurrentHashMap<>();
 
     @GetMapping(value = "/top/article", produces = TEXT_EVENT_STREAM_VALUE)
-    public Flux<List<TopArticle>> fetchArticleStatistics(@RequestParam(required = false, defaultValue = "1000") int updateInterval,
-                                                         @RequestParam(required = false, defaultValue = "5") int numberOfTopArticles) {
+    public Flux<List<TopArticle>> topArticle(@RequestParam(required = false, defaultValue = "1000") int updateInterval,
+                                             @RequestParam(required = false, defaultValue = "5") int numberOfTopArticles) {
         return articleReadEventsService.readEvents()
                 .doOnNext(StatisticsController::updateReadStatistic)
                 .sampleMillis(updateInterval)
                 .map(readEvent -> createTopArticleList(numberOfTopArticles))
+                .retry(throwable -> {
+                    logger.warn("error on topArticle, retrying", throwable);
+                    return true;
+                })
                 .log();
     }
 
     @GetMapping(value = "/statistics/article", produces = TEXT_EVENT_STREAM_VALUE)
     public Flux<ArticleStatistics> fetchArticleStatistics(@RequestParam(required = false, defaultValue = "1000") int updateInterval) {
         return articleReadEventsService.readEvents()
-                .flatMap(articleReadEvent -> Flux.zip(
-                        articleMetricsService.fetchRating(articleReadEvent.getArticleName()),
-                        articleMetricsService.fetchWordCount(articleReadEvent.getArticleName()),
-                        Mono.just(articleReadEvent.getFetchTimeInMillis()))
-                        .map(tuple3 -> new ArticleMetrics(tuple3.getT1(), tuple3.getT2(), tuple3.getT3())))
+                .onBackpressureDrop(articleReadEvent -> logger.warn("dropping articleReadEvent: " + articleReadEvent))
+                .bufferMillis(updateInterval / 3)
+                .filter(articleReadEvents -> !articleReadEvents.isEmpty())
+                .flatMap(articleReadEvent -> {
+                    Flux<ArticleName> distinctArticleNames = Flux.fromIterable(articleReadEvent)
+                            .map(ArticleReadEvent::toArticleName)
+                            .distinct()
+                            .cache();
+                    Flux<Map<String, Integer>> rating = articleMetricsService.fetchRatings(distinctArticleNames)
+                            .collectMap(Rating::getArticleName, Rating::getRating)
+                            .cache()
+                            .repeat(articleReadEvent.size());
+                    Flux<Map<String, Integer>> wordCount = articleMetricsService.fetchWordCounts(distinctArticleNames)
+                            .collectMap(WordCount::getArticleName, WordCount::getCount)
+                            .cache()
+                            .repeat(articleReadEvent.size());
+                    return Flux.zip(Flux.fromIterable(articleReadEvent), rating, wordCount)
+                            .map(zip -> new ArticleMetrics(zip.getT2().get(zip.getT1().getArticleName()),
+                                    zip.getT3().get(zip.getT1().getArticleName()),
+                                    zip.getT1().getFetchTimeInMillis()));
+                })
                 .bufferMillis(updateInterval)
                 .map(StatisticsController::calculateArticleStatistics)
+                .retry(throwable -> {
+                    logger.warn("error on fetchArticleStatistics, retrying", throwable);
+                    return true;
+                })
+                .onBackpressureDrop(articleStatistics -> logger.warn("dropping articleStatistics: " + articleStatistics))
                 .log();
     }
 

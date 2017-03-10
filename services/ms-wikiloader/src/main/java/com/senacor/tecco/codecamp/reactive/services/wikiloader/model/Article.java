@@ -64,6 +64,10 @@ public class Article implements Serializable {
         return fetchTimeInMillis;
     }
 
+    public ArticleName toArticleName(){
+        return new ArticleName(getName());
+    }
+
     @Override
     public int hashCode() {
         return Objects.hash(name, content);

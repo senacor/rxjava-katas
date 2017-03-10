@@ -1,9 +1,7 @@
-package com.senacor.tecco.codecamp.reactive.services.wikiloader.model;
+package com.senacor.tecco.codecamp.reactive.services.statistics.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -49,12 +47,11 @@ public class WordCount implements Serializable {
                 && Objects.equals(this.count, other.count);
     }
 
-
     @Override
     public String toString() {
-        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
-                .append("articleName", articleName)
-                .append("count", count)
-                .toString();
+        return "WordCount{" +
+                "articleName='" + articleName + '\'' +
+                ", count=" + count +
+                '}';
     }
 }

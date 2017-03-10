@@ -2,6 +2,7 @@ package com.senacor.tecco.codecamp.reactive.services.statistics.external;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.senacor.tecco.codecamp.reactive.services.statistics.model.ArticleName;
 
 import java.util.Objects;
 
@@ -26,6 +27,10 @@ public class ArticleReadEvent {
 
     public Integer getFetchTimeInMillis() {
         return fetchTimeInMillis;
+    }
+
+    public ArticleName toArticleName() {
+        return new ArticleName(getArticleName());
     }
 
     @Override

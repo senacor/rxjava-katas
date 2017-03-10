@@ -9,8 +9,6 @@ import reactor.core.publisher.Mono;
 import reactor.ipc.netty.http.client.HttpClient;
 import reactor.ipc.netty.http.client.HttpClientResponse;
 
-import java.io.IOException;
-
 /**
  * @author Andreas Keefer
  */
@@ -59,7 +57,7 @@ public class WikipediaServiceJapiImpl implements WikipediaServiceJapi {
                 .flatMap(this.client::get)
                 .flatMap(this::httpResponse2String)
                 .reduce(String::concat)
-                .map(this::parseJsonContend);
+                .map((json) -> parseJsonContend(json, name));
 
     }
 
@@ -76,12 +74,12 @@ public class WikipediaServiceJapiImpl implements WikipediaServiceJapi {
         return queryUrl;
     }
 
-    private String parseJsonContend(String json) {
+    private String parseJsonContend(String json, String name) {
         try {
             JsonNode contentNode = OBJECT_MAPPER.readTree(json).findValue("*");
             return contentNode.asText();
-        } catch (IOException e) {
-            throw new ArticleNotFoundException("parsing error", e);
+        } catch (Exception e) {
+            throw new ArticleNotFoundException("error parsing JSON article '" + name + "': " + json, e);
         }
     }
 

@@ -1,6 +1,7 @@
 package com.senacor.tecco.codecamp.reactive.services.wikiloader;
 
 import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.Article;
+import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.ArticleName;
 import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.Rating;
 import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.WordCount;
 import com.senacor.tecco.reactive.util.ReactiveUtil;
@@ -74,8 +75,8 @@ public class WikiControllerIntegrationTest {
         Map<String, Integer> stringIntegerMap = testClient.post().uri("/article/wordcounts")
                 //.contentType(mediaType)
                 .accept(mediaType)
-                .exchange(Flux.just(EIGENWERT_ARTICLE.getName(), EIGENVEKTOR_ARTICLE.getName())
-                        .delayElements(Duration.ofMillis(50)), String.class)
+                .exchange(Flux.just(EIGENWERT_ARTICLE.toArticleName(), EIGENVEKTOR_ARTICLE.toArticleName())
+                        .delayElements(Duration.ofMillis(50)), ArticleName.class)
                 .expectStatus().isOk()
                 .expectHeader().contentType(mediaType)
                 .expectBody(WordCount.class)
@@ -102,10 +103,9 @@ public class WikiControllerIntegrationTest {
     public void ratings() throws Exception {
         MediaType mediaType = MediaType.valueOf(MediaType.APPLICATION_STREAM_JSON_VALUE + ";charset=UTF-8");
         Map<String, Integer> stringIntegerMap = testClient.post().uri("/article/ratings")
-                //.contentType(mediaType)
+                .contentType(MediaType.APPLICATION_JSON)
                 .accept(mediaType)
-                .exchange(Flux.just(EIGENWERT_ARTICLE.getName(), EIGENVEKTOR_ARTICLE.getName())
-                        .delayElements(Duration.ofMillis(50)), String.class)
+                .exchange(Flux.just(EIGENWERT_ARTICLE.toArticleName(), EIGENVEKTOR_ARTICLE.toArticleName()), ArticleName.class)
                 .expectStatus().isOk()
                 .expectHeader().contentType(mediaType)
                 .expectBody(Rating.class)

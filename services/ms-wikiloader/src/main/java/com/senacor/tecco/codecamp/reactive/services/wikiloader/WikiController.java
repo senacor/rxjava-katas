@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonView;
 import com.google.common.base.Stopwatch;
 import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.Article;
 import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.Article.NameOnly;
+import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.ArticleName;
 import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.Rating;
 import com.senacor.tecco.codecamp.reactive.services.wikiloader.model.WordCount;
 import com.senacor.tecco.reactive.services.CountService;
@@ -83,11 +84,11 @@ public class WikiController {
     }
 
     @RequestMapping("/wordcounts")
-    public Flux<WordCount> countWords(@RequestBody Flux<String> names) {
+    public Flux<WordCount> countWords(@RequestBody Flux<ArticleName> names) {
         return names
-                .flatMap(articleName -> getParsedArticle(articleName)
+                .flatMap(articleName -> getParsedArticle(articleName.getName())
                         .map(countService::countWords)
-                        .map(count -> new WordCount(articleName, count)))
+                        .map(count -> new WordCount(articleName.getName(), count)))
                 .log();
     }
 
@@ -98,10 +99,10 @@ public class WikiController {
     }
 
     @RequestMapping("/ratings")
-    public Flux<Rating> ratings(@RequestBody Flux<String> names) {
+    public Flux<Rating> ratings(@RequestBody Flux<ArticleName> names) {
         return names
-                .flatMap(articleName -> getParsedArticle(articleName)
+                .flatMap(articleName -> getParsedArticle(articleName.getName())
                         .map(ratingService::rate)
-                        .map(rating -> new Rating(articleName, rating)));
+                        .map(rating -> new Rating(articleName.getName(), rating)));
     }
 }
