@@ -34,8 +34,6 @@ public class WikiControllerIntegrationTest {
     @LocalServerPort
     private int port;
 
-    // alternativ zu dem manuellen setUp einfach einen fertigen WebTestClient injizieren lassen
-    //@Autowired
     private WebTestClient testClient;
     private WebClient client;
 
@@ -49,94 +47,12 @@ public class WikiControllerIntegrationTest {
     }
 
     @Test
-    public void testFetchArticle() throws Exception {
-        testClient.get().uri("/article/{name}", WikiControllerTest.EIGENWERT_ARTICLE.getName())
-                .exchange()
-                .expectStatus().isOk()
-                .expectBody(Article.class)
-                .value()
-                .isEqualTo(WikiControllerTest.EIGENWERT_ARTICLE);
+    public void fetchArticle() throws Exception {
+
     }
 
     @Test
-    public void getWordCount() throws Exception {
-        testClient.get().uri("/article/{name}/wordcount", WikiControllerTest.EIGENWERT_ARTICLE.getName())
-                .exchange()
-                .expectStatus().isOk()
-                .expectBody(String.class)
-                .value().isEqualTo("2");
-    }
+    public void getReadStream() throws Exception {
 
-    @Test
-    public void countWords() throws Exception {
-        MediaType mediaType = MediaType.valueOf(MediaType.APPLICATION_STREAM_JSON_VALUE + ";charset=UTF-8");
-        Map<String, Integer> stringIntegerMap = testClient.post().uri("/article/wordcounts")
-                //.contentType(mediaType)
-                .accept(mediaType)
-                .exchange(Flux.just(WikiControllerTest.EIGENWERT_ARTICLE.toArticleName(), WikiControllerTest.EIGENVEKTOR_ARTICLE.toArticleName())
-                        .delayElements(Duration.ofMillis(50)), ArticleName.class)
-                .expectStatus().isOk()
-                .expectHeader().contentType(mediaType)
-                .expectBody(WordCount.class)
-                .returnResult()
-                .getResponseBody()
-                .cast(WordCount.class)
-                .collectMap(WordCount::getArticleName, WordCount::getCount)
-                .blockMillis(4000);
-        assertThat(stringIntegerMap)
-                .containsOnlyKeys(WikiControllerTest.EIGENWERT_ARTICLE.getName(), WikiControllerTest.EIGENVEKTOR_ARTICLE.getName())
-                .containsValues(2);
-    }
-
-    @Test
-    public void getRating() throws Exception {
-        testClient.get().uri("/article/{name}/rating", WikiControllerTest.EIGENWERT_ARTICLE.getName())
-                .exchange()
-                .expectStatus().isOk()
-                .expectBody(String.class)
-                .value().isEqualTo("5");
-    }
-
-    @Test
-    public void ratings() throws Exception {
-        MediaType mediaType = MediaType.valueOf(MediaType.APPLICATION_STREAM_JSON_VALUE + ";charset=UTF-8");
-        Map<String, Integer> stringIntegerMap = testClient.post().uri("/article/ratings")
-                .contentType(MediaType.APPLICATION_JSON)
-                .accept(mediaType)
-                .exchange(Flux.just(WikiControllerTest.EIGENWERT_ARTICLE.toArticleName(), WikiControllerTest.EIGENVEKTOR_ARTICLE.toArticleName()), ArticleName.class)
-                .expectStatus().isOk()
-                .expectHeader().contentType(mediaType)
-                .expectBody(Rating.class)
-                .returnResult()
-                .getResponseBody()
-                .cast(Rating.class)
-                .collectMap(Rating::getArticleName, Rating::getRating)
-                .blockMillis(4000);
-
-        assertThat(stringIntegerMap)
-                .containsOnlyKeys(WikiControllerTest.EIGENWERT_ARTICLE.getName(), WikiControllerTest.EIGENVEKTOR_ARTICLE.getName())
-                .containsValues(5);
-    }
-
-    @Test(timeout = 5000)
-    public void readevents() throws Exception {
-        StepVerifier.create(
-                client.get().uri("/article/readevents", WikiControllerTest.EIGENWERT_ARTICLE.getName())
-                        .contentType(MediaType.APPLICATION_STREAM_JSON)
-                        .accept(MediaType.APPLICATION_STREAM_JSON)
-                        .exchange()
-                        .flatMap(clientResponse -> clientResponse.bodyToFlux(Article.class))
-                        .doOnNext(next -> ReactiveUtil.print("received readevent in testclient: %s", next))
-                        .next()
-                        .doOnSubscribe(subscription -> {
-                            // call fetchArticle
-                            Mono.delayMillis(50)
-                                    .flatMap(delay -> client.get().uri("/article/{name}", WikiControllerTest.EIGENWERT_ARTICLE.getName())
-                                            .exchange())
-                                    .log()
-                                    .subscribe();
-                        }).log()
-        ).expectNextMatches(article -> article.getFetchTimeInMillis() != null)
-                .verifyComplete();
     }
 }
