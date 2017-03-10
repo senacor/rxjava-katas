@@ -23,12 +23,22 @@ public class WikiController {
         this.articleService = articleService;
     }
 
+    /**
+     * This endpoint fetches an wikipedia article by name as media wiki text.
+     *
+     * @param name article name
+     * @return article with media wiki as content
+     */
     @GetMapping("/{name}")
     public Article fetchArticle(@PathVariable final String name) {
         // DUMMY
         return Article.newBuilder().withName(name).build();
     }
 
+    /**
+     * This endpoint streams an event for each article name, which is fetched by {@link #fetchArticle}.
+     * This is a HOT Source (infinite stream) and acts as a Publisher in a publish/subscribe scenario.
+     */
     @CrossOrigin
     @GetMapping("/readevents")
     @JsonView(Article.NameOnly.class)
