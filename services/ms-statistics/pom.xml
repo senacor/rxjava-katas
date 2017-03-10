@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>statistics</artifactId>
+    <artifactId>ms-statistics</artifactId>
 
     <properties>
         <start-class>com.senacor.codecamp.reactive.services.statistics.StatisticsApplication</start-class>

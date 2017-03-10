@@ -18,7 +18,7 @@
 
     <modules>
         <module>ms-wikiloader</module>
-        <module>statistics</module>
+        <module>ms-statistics</module>
         <module>jmeter</module>
     </modules>
 
