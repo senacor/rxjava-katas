@@ -1,27 +1,14 @@
 package com.senacor.codecamp.reactive.services.wikiloader;
 
-import com.senacor.codecamp.reactive.services.wikiloader.model.Article;
-import com.senacor.codecamp.reactive.services.wikiloader.model.ArticleName;
-import com.senacor.codecamp.reactive.services.wikiloader.model.Rating;
-import com.senacor.codecamp.reactive.services.wikiloader.model.WordCount;
-import com.senacor.codecamp.reactive.util.ReactiveUtil;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.context.embedded.LocalServerPort;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.reactive.server.WebTestClient;
 import org.springframework.web.reactive.function.client.WebClient;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-import reactor.test.StepVerifier;
 
-import java.time.Duration;
-import java.util.Map;
-
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
 
 /**

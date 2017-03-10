@@ -15,9 +15,9 @@ import reactor.test.StepVerifier;
 public class ArticleServiceTest {
 
     static final Article EIGENWERT_ARTICLE = Article.newBuilder()
-                                                    .withName("Eigenwert")
-                                                    .withContent("#REDIRECT [[Eigenwertproblem]]")
-                                                    .build();
+            .withName("Eigenwert")
+            .withContent("#REDIRECT [[Eigenwertproblem]]")
+            .build();
 
     private ArticleService articleService;
 
