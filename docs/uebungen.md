@@ -70,4 +70,11 @@ Sprint X.1 - improved caching (reactive datastore)
   look in the LRU Cache, if not found, look in the Mongo/Casandra Database, 
   if not found, query wikipedia.
   Use Spring Data to query the Database <https://spring.io/blog/2016/11/28/going-reactive-with-spring-data>
-
+- After some time (e.g. 1 minute) you want to expire the data. 
+  Implement a reacive timed job which drops outdated data.
+  
+Sprint X.2 - visualizes backpressure buffers
+========  
+- add a diagram in the frontend which visualizes backpressure buffers in the streams.
+  add a new statistics endpoint which collects and processes this data and delivers it to the frontend
+  
