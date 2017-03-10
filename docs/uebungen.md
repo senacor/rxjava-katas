@@ -23,11 +23,28 @@ Sprint 2 - stream articles to the frontend
 - Have a look at `WikiController#getReadStream`.
   This endpoint signature is currently like an traditional Spring MVC endpoint.
   Change the signature to the 'reactive-way' and implement this service.
-
-
-Sprint 3
+  For each call to `WikiController#fetchArticle` there should be emitted an Event on
+  this `#getReadStream`.
+  Hint: you need a `org.reactivestreams.Processor`, have a look what reactor offers.
+- Write Unittests (`ReadEventTest`) and integration tests (`WikiControllerIntegrationTest`)
+- start ms-wikiloader and ms-statistics. ms-statistics contains a basic frontend, which consumes 
+  the `#getReadStream` endpoint and draws a diagram. The URL is printed out in the console after 
+  startup of the service.
+- execute some calls to the `#fetchArticle` endpoint and watch the diagram.
+- Start jmeter (see `services/README.md`), open an provided testplan (*.jmx) and give some load on `#fetchArticle`.
+  At this point it is better to start the wikiloader service in mock mode 
+  by activating the profile `mock` (see `services/README.md`). This should be the default
+  from now on.
+  
+Sprint 3 - getReadStream optimization
 ========
-
+- Maybe you noticed some problems when jmeter put heavy load on `#fetchArticle`
+  When you publish every single 'articleRead'-Event on it's own, spring will flush 
+  the HTTP connection to the frontend for each event, this produces a lot of overhead.
+  Now try to reduce the overhead and deliver the Events in batches.
+  Hint: A good batch size could be 250 milliseconds -> 4 flushes per second.
+- Write tests
+- Test it with jmeter and the frontend
 
 Sprint 4
 ========

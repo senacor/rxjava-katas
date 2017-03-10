@@ -1,6 +1,6 @@
 package com.senacor.codecamp.reactive.services.wikiloader;
 
-import com.senacor.codecamp.reactive.services.WikiService;
+import com.senacor.codecamp.reactive.services.wikiloader.service.ArticleService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,11 +15,12 @@ import org.mockito.junit.MockitoJUnitRunner;
 public class ReadEventTest {
 
     @Mock
-    private WikiService service;
+    private ArticleService service;
+    private WikiController wikiController;
 
     @Before
     public void setup() {
-
+        // setup mocks ...
     }
 
     @Test
@@ -27,4 +28,5 @@ public class ReadEventTest {
 
     }
 
+    // ...
 }
