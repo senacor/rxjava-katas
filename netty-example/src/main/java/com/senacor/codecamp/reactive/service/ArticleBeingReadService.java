@@ -4,6 +4,7 @@ import com.senacor.codecamp.reactive.services.CountService;
 import com.senacor.codecamp.reactive.services.RatingService;
 import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.DelayFunction;
+import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.Observable;
 
 
@@ -27,16 +28,29 @@ public class ArticleBeingReadService {
     }
 
     public Observable<WikiArticle> articleBeingReadObservable() {
-        /* Tasks:
-         * 1. Fetch the article, parse it and add the text it to the WikiArticle object.
-         * 2. Calculate a rating for the article.
-         * 3. Calculate the word count for the article.
+        return wikiService.wikiArticleBeingReadObservableBurst()
+                // or return wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS)
+                .flatMap(this::createArticle);
+    }
+
+    public Observable<WikiArticle> createArticle(String articleName) {
+          /* Tasks:
+         * 1. fetch the article using wikiService.fetchArticleObservable
+         * 2. parse the article using wikiService::parseMediaWikiTextObservable
+         * 3. calculate a rating (ratingService.rate) and the word count (countService.countWords) for the article. Store the results in a WikiArtikel object
          * 4. Test your implementation with wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS) and reduce millis to 10.
          */
-        return wikiService.wikiArticleBeingReadObservableBurst()
-        // or return wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS)
-                .map(name -> new WikiArticle(name, "", 0, 0));
+
+         return Observable.just(new WikiArticle(articleName, "Test", 1, 1));
 
     }
 
+    private String getArticleShortText(ParsedPage parsedPage) {
+        if(parsedPage.getText().length() < 100){
+            return parsedPage.getText();
+        } else {
+            return parsedPage.getText().substring(0, 99) + "...";
+        }
+
+    }
 }
