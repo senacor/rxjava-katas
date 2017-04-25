@@ -8,6 +8,7 @@ import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.Observable;
 import io.reactivex.schedulers.Schedulers;
 
+import javax.ws.rs.HEAD;
 import java.util.concurrent.TimeUnit;
 
 
