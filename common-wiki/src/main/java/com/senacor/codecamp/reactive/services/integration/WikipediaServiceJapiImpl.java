@@ -55,7 +55,7 @@ public class WikipediaServiceJapiImpl implements WikipediaServiceJapi {
         return Mono.just(name)
                 .map(this::buildQueryUrl)
                 .flatMap(this.client::get)
-                .flatMap(this::httpResponse2String)
+                .flatMapMany(this::httpResponse2String)
                 .reduce(String::concat)
                 .map((json) -> parseJsonContend(json, name));
 

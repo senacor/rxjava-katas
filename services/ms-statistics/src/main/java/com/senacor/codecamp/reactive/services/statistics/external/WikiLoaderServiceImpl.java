@@ -29,7 +29,7 @@ public class WikiLoaderServiceImpl implements WikiLoaderService {
                                .uri(ARTICLE_ENDPOINT + urlEncode(articleName))
                                .exchange()
                                .doOnNext(WrongStatusException.okFilter())
-                               .flatMap(r -> r.bodyToFlux(Article.class))
+                               .flatMapMany(r -> r.bodyToFlux(Article.class))
                                .single();
     }
 }

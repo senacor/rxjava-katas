@@ -20,6 +20,8 @@ import reactor.core.publisher.Mono;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import static java.time.Duration.ofMillis;
+
 /**
  * @author Andreas Keefer
  */
@@ -56,7 +58,7 @@ public class WikiController {
     @JsonView(Article.NameOnly.class)
     public Flux<List<Article>> getReadStream() {
         return readArticles
-                .bufferMillis(BUFFER_READ_EVENTS)
+                .buffer(ofMillis(BUFFER_READ_EVENTS))
                 .filter(list -> !list.isEmpty())
                 .log();
     }

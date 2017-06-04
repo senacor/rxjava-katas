@@ -20,6 +20,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
+import static java.time.Duration.ofMillis;
 import static org.springframework.http.MediaType.TEXT_EVENT_STREAM_VALUE;
 
 /**
@@ -49,7 +50,7 @@ public class StatisticsController {
                                              @RequestParam(required = false, defaultValue = "5") int numberOfTopArticles) {
         return articleReadEventsService.readEvents()
                 .doOnNext(StatisticsController::updateReadStatistic)
-                .sampleMillis(updateInterval)
+                .sample(ofMillis(updateInterval))
                 .map(readEvent -> createTopArticleList(numberOfTopArticles))
                 .retry(throwable -> {
                     logger.warn("error on topArticle, retrying", throwable);
@@ -62,7 +63,7 @@ public class StatisticsController {
     public Flux<ArticleStatistics> fetchArticleStatistics(@RequestParam(required = false, defaultValue = "1000") int updateInterval) {
         return articleReadEventsService.readEvents()
                 .onBackpressureDrop(articleReadEvent -> logger.warn("dropping articleReadEvent: " + articleReadEvent))
-                .bufferMillis(updateInterval / 3)
+                .buffer(ofMillis(updateInterval / 3))
                 .filter(articleReadEvents -> !articleReadEvents.isEmpty())
                 .flatMap(articleReadEvent -> {
                     Flux<ArticleName> distinctArticleNames = Flux.fromIterable(articleReadEvent)
@@ -82,7 +83,7 @@ public class StatisticsController {
                                     zip.getT3().get(zip.getT1().getArticleName()),
                                     zip.getT1().getFetchTimeInMillis()));
                 })
-                .bufferMillis(updateInterval)
+                .buffer(ofMillis(updateInterval))
                 .map(StatisticsController::calculateArticleStatistics)
                 .retry(throwable -> {
                     logger.warn("error on fetchArticleStatistics, retrying", throwable);
