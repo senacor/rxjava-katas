@@ -11,6 +11,7 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 import reactor.core.publisher.Flux;
 import reactor.test.StepVerifier;
 
+import static java.time.Duration.ofMillis;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -39,7 +40,7 @@ public class StatisticsControllerTest {
 
     @Test
     public void fetchArticleStatisticsWithDefaultUpdateInterval() {
-        when(articleReadEventsServiceMock.readEvents()).thenReturn(Flux.intervalMillis(100).take(6).map(count -> createReadEvent(count, 100))
+        when(articleReadEventsServiceMock.readEvents()).thenReturn(Flux.interval(ofMillis(100)).take(6).map(count -> createReadEvent(count, 100))
                 .doOnNext(next -> System.out.println("readEvent: " + next)));
         when(articleMetricsServiceMock.fetchRatings(any())).thenAnswer(invocation -> {
             Flux<ArticleName> names = invocation.getArgument(0);
@@ -55,8 +56,7 @@ public class StatisticsControllerTest {
                                                                  .exchange()
                                                                  .expectStatus().isOk()
                                                                  .expectHeader().contentType(TEXT_EVENT_STREAM)
-                                                                 .expectBody(ArticleStatistics.class)
-                                                                 .returnResult();
+                                                                 .returnResult(ArticleStatistics.class);
 
         StepVerifier.create(result.getResponseBody()
                 .doOnNext(articleStatistics -> System.out.println("received on clientside: " + articleStatistics)))
@@ -67,7 +67,7 @@ public class StatisticsControllerTest {
 
     @Test
     public void fetchArticleStatisticsWithShortUpdateInterval() {
-        when(articleReadEventsServiceMock.readEvents()).thenReturn(Flux.intervalMillis(310).take(4)
+        when(articleReadEventsServiceMock.readEvents()).thenReturn(Flux.interval(ofMillis(310)).take(4)
                 .map(count -> createReadEvent(count, count.intValue())));
         when(articleMetricsServiceMock.fetchRatings(any())).thenAnswer(invocation -> {
             Flux<ArticleName> names = invocation.getArgument(0);
@@ -94,15 +94,14 @@ public class StatisticsControllerTest {
 
     @Test
     public void fetchTopArticleWithDefaultQueryParams() {
-        when(articleReadEventsServiceMock.readEvents()).thenReturn(Flux.intervalMillis(245).take(5)
+        when(articleReadEventsServiceMock.readEvents()).thenReturn(Flux.interval(ofMillis(245)).take(5)
                 .flatMap(count -> Flux.just(createReadEvent(count, count.intValue())).repeat(count * 2)));
 
         FluxExchangeResult<TopArticle[]> result = testClient.get().uri("/top/article")
                                                             .exchange()
                                                             .expectStatus().isOk()
                                                             .expectHeader().contentType(TEXT_EVENT_STREAM)
-                                                            .expectBody(TopArticle[].class)
-                                                            .returnResult();
+                                                            .returnResult(TopArticle[].class);
 
         StepVerifier.create(result.getResponseBody().flatMap(Flux::fromArray))
                 .expectNext(createTopArticle("3", 6))

@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import reactor.core.scheduler.Schedulers;
 
 /**
  * @author Daniel Heinrich
@@ -44,7 +45,8 @@ public class ArticleMetricsServiceImpl implements ArticleMetricsService {
                 .retry(1)
                 .doOnNext(WrongStatusException.okFilter())
                 .flatMap(r -> r.bodyToMono(String.class))
-                .map(Integer::parseInt).single();
+                .map(Integer::parseInt)
+                .publishOn(Schedulers.single());
     }
 
     @Override
@@ -56,7 +58,8 @@ public class ArticleMetricsServiceImpl implements ArticleMetricsService {
                 .retry(1)
                 .doOnNext(WrongStatusException.okFilter())
                 .flatMap(r -> r.bodyToMono(String.class))
-                .map(Integer::parseInt).single();
+                .map(Integer::parseInt)
+                .publishOn(Schedulers.single());
     }
 
     @Override
@@ -64,11 +67,12 @@ public class ArticleMetricsServiceImpl implements ArticleMetricsService {
         return wikiServiceClient.post()
                 .uri(ub -> ub.pathSegment(ARTICLE, WORD_COUNTS).build())
                 .accept(APPLICATION_STREAM_JSON_UTF8)
-                .exchange(articleNames, ArticleName.class)
+                .body(articleNames, ArticleName.class)
+                .exchange()
                 .doOnError(e -> LOGGER.error(e.getMessage()))
                 .retry(1)
                 .doOnNext(WrongStatusException.okFilter())
-                .flatMap(r -> r.bodyToFlux(WordCount.class));
+                .flatMapMany(r -> r.bodyToFlux(WordCount.class));
     }
 
     @Override
@@ -76,10 +80,11 @@ public class ArticleMetricsServiceImpl implements ArticleMetricsService {
         return wikiServiceClient.post()
                 .uri(ub -> ub.pathSegment(ARTICLE, RATINGS).build())
                 .accept(APPLICATION_STREAM_JSON_UTF8)
-                .exchange(articleNames, ArticleName.class)
+                .body(articleNames, ArticleName.class)
+                .exchange()
                 .doOnError(e -> LOGGER.error(e.getMessage()))
                 .retry(1)
                 .doOnNext(WrongStatusException.okFilter())
-                .flatMap(r -> r.bodyToFlux(Rating.class));
+                .flatMapMany(r -> r.bodyToFlux(Rating.class));
     }
 }

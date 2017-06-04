@@ -17,8 +17,11 @@ import reactor.core.publisher.Flux;
 import reactor.test.StepVerifier;
 
 import java.time.Duration;
+import java.util.HashSet;
+import java.util.Set;
 
 import static com.senacor.codecamp.reactive.util.DelayFunction.withNoDelay;
+import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
@@ -52,8 +55,8 @@ public class WikiControllerTest {
                 .exchange()
                 .expectStatus().isOk()
                 .expectBody(Article.class)
-                .value()
                 .isEqualTo(EIGENWERT_ARTICLE)
+                .returnResult()
                 .getResponseBody();
         ReactiveUtil.print(res);
         assertThat(res.getFetchTimeInMillis()).isBetween(0, 1000);
@@ -65,24 +68,29 @@ public class WikiControllerTest {
                 .exchange()
                 .expectStatus().isOk()
                 .expectBody(String.class)
-                .value().isEqualTo("2");
+                .isEqualTo("2");
     }
 
     @Test
     public void countWords() throws Exception {
         MediaType mediaType = MediaType.valueOf(MediaType.APPLICATION_STREAM_JSON_VALUE + ";charset=UTF-8");
-        StepVerifier.create(
-                testClient.post().uri("/article/wordcounts")
-                        //.contentType(mediaType)
-                        .accept(mediaType)
-                        .exchange(Flux.just(EIGENWERT_ARTICLE.toArticleName(), EIGENVEKTOR_ARTICLE.toArticleName())
-                                .delayElements(Duration.ofMillis(10)), ArticleName.class)
-                        .expectStatus().isOk()
-                        .expectHeader().contentType(mediaType)
-                        .expectBody(WordCount.class)
-                        .returnResult()
-                        .getResponseBody()
-        ).expectNext(new WordCount(EIGENWERT_ARTICLE.getName(), 2), new WordCount(EIGENVEKTOR_ARTICLE.getName(), 2))
+        Flux<WordCount> wordCountResult = testClient.post().uri("/article/wordcounts")
+                .accept(mediaType)
+                .body(Flux.just(EIGENWERT_ARTICLE.toArticleName(), EIGENVEKTOR_ARTICLE.toArticleName()), ArticleName.class)
+                .exchange()
+                .expectStatus().isOk()
+                .expectHeader().contentType(mediaType)
+                .returnResult(WordCount.class)
+                .getResponseBody();
+
+        // We have to transform the list into an set to expect the word counts without an order.
+        Flux<Set> resutAsSet = wordCountResult.bufferTimeout(2, Duration.ofMillis(100)).map(list -> new HashSet(list));
+
+        Set<WordCount> expectedResult = new HashSet<>(asList(
+                new WordCount(EIGENWERT_ARTICLE.getName(), 2),
+                new WordCount(EIGENVEKTOR_ARTICLE.getName(), 2)));
+        StepVerifier.create(resutAsSet)
+                .expectNext(expectedResult)
                 .verifyComplete();
     }
 
@@ -92,24 +100,29 @@ public class WikiControllerTest {
                 .exchange()
                 .expectStatus().isOk()
                 .expectBody(String.class)
-                .value().isEqualTo("5");
+                .isEqualTo("5");
     }
 
     @Test
     public void ratings() throws Exception {
         MediaType mediaType = MediaType.valueOf(MediaType.APPLICATION_STREAM_JSON_VALUE + ";charset=UTF-8");
-        StepVerifier.create(
-                testClient.post().uri("/article/ratings")
-                        //.contentType(mediaType)
-                        .accept(mediaType)
-                        .exchange(Flux.just(EIGENWERT_ARTICLE.toArticleName(), EIGENVEKTOR_ARTICLE.toArticleName())
-                                .delayElements(Duration.ofMillis(10)), ArticleName.class)
-                        .expectStatus().isOk()
-                        .expectHeader().contentType(mediaType)
-                        .expectBody(Rating.class)
-                        .returnResult()
-                        .getResponseBody()
-        ).expectNext(new Rating(EIGENWERT_ARTICLE.getName(), 5), new Rating(EIGENVEKTOR_ARTICLE.getName(), 5))
+        Flux<Rating> ratingsResult = testClient.post().uri("/article/ratings")
+                .accept(mediaType)
+                .body(Flux.just(EIGENWERT_ARTICLE.toArticleName(), EIGENVEKTOR_ARTICLE.toArticleName()), ArticleName.class)
+                .exchange()
+                .expectStatus().isOk()
+                .expectHeader().contentType(mediaType)
+                .returnResult(Rating.class)
+                .getResponseBody();
+
+        // We have to transform the list into an set to expect the word counts without an order.
+        Flux<Set> resutAsSet = ratingsResult.bufferTimeout(2, Duration.ofMillis(100)).map(list -> new HashSet(list));
+
+        Set<Rating> expectedResult = new HashSet<>(asList(
+                new Rating(EIGENWERT_ARTICLE.getName(), 5),
+                new Rating(EIGENVEKTOR_ARTICLE.getName(), 5)));
+        StepVerifier.create(resutAsSet)
+                .expectNext(expectedResult)
                 .verifyComplete();
     }
 }

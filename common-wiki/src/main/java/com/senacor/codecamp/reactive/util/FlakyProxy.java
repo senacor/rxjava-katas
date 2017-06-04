@@ -36,7 +36,7 @@ public class FlakyProxy extends DefaultProxyBehavior {
         return Mono.defer(() -> {
             flakinessFunction.failOrPass(m.getName());
             return Mono.just(1);
-        }).flatMap(next -> publisher);
+        }).flatMapMany(next -> publisher);
     }
 
     @Override
