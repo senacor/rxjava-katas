@@ -26,6 +26,8 @@ Sprint 2 - stream articles to the frontend
   Hint: You have to use a Processor, which acts as a subscriber and as a publisher. 
         In `WikiController` there is already a Processor named `readArticles`, use this one.
 - Activate the Unittests in `ReadEventTest` and `WikiControllerIntegrationTest` and look if they run successfully.
+- Start the sprig boot application and also the ms-statistics service which contains a frontend (see `services/README.md`)
+  and try out your endpoints
 
 Sprint 3
 ========

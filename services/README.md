@@ -8,6 +8,8 @@ Reactive Microservices
      which loads wiki articles from local files
 - statistics (running on port 8080):
 <br> `mvn spring-boot:run`
+<br>
+Frontend is available on http://localhost:8080/index.html
 
 ### jmeter (load/performance tests)
 - have a look at ./jmeter/README.md
