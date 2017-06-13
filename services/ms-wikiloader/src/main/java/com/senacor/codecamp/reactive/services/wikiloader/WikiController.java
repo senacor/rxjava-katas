@@ -71,24 +71,6 @@ public class WikiController {
                 .log();
     }
 
-//    @RequestMapping("/wordcounts")
-//    public Flux<WordCount> countWords(@RequestBody Flux<ArticleName> names) {
-//        return names.flatMap(articleName -> articleService.countWords(articleName.getName())
-//                .map(count -> new WordCount(articleName.getName(), count)))
-//                .log();
-//    }
-
-//    @RequestMapping("/wordcounts")
-//    public Flux<WordCount> countWords(@RequestBody Flux<ArticleName> names) {
-//        List<WordCount> counts = names.toStream()
-//                .map(articleName -> {
-//                    Integer count = articleService.countWords(articleName.getName()).block();
-//                    return new WordCount(articleName.getName(), count);
-//                })
-//                .collect(Collectors.toList());
-//        return Flux.fromIterable(counts);
-//    }
-
     @RequestMapping("/wordcounts")
     public Flux<WordCount> countWords(@RequestBody Flux<ArticleName> names) {
         // TODO Sprint3
