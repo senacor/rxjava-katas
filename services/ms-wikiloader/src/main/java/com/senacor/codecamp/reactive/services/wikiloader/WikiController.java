@@ -2,15 +2,12 @@ package com.senacor.codecamp.reactive.services.wikiloader;
 
 import com.fasterxml.jackson.annotation.JsonView;
 import com.google.common.base.Stopwatch;
+import com.google.common.collect.Lists;
 import com.senacor.codecamp.reactive.services.wikiloader.model.Article;
 import com.senacor.codecamp.reactive.services.wikiloader.model.ArticleName;
 import com.senacor.codecamp.reactive.services.wikiloader.model.Rating;
 import com.senacor.codecamp.reactive.services.wikiloader.model.WordCount;
-import com.senacor.codecamp.reactive.services.CountService;
-import com.senacor.codecamp.reactive.services.RatingService;
-import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.services.wikiloader.service.ArticleService;
-import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.DirectProcessor;
@@ -19,8 +16,7 @@ import reactor.core.publisher.Mono;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
-import static java.time.Duration.ofMillis;
+import java.util.stream.Collectors;
 
 /**
  * @author Andreas Keefer
@@ -46,17 +42,15 @@ public class WikiController {
      * @return article with media wiki as content
      */
     @GetMapping("/{name}")
-    public Mono<Article> fetchArticle(@PathVariable final String name) {
+    public Article fetchArticle(@PathVariable final String name) {
+        // TODO Sprint 1
         Stopwatch stopwatch = Stopwatch.createUnstarted();
-        return articleService.fetchArticle(name)
-                .doOnSubscribe(subscription -> stopwatch.start())
-                .map(content -> Article.newBuilder()
-                        .withName(name)
-                        .withContent(content)
-                        .withFetchTimeInMillis((int) stopwatch.stop().elapsed(TimeUnit.MILLISECONDS))
-                        .build())
-                .doOnNext(readArticles::onNext)
-                .log();
+        stopwatch.start();
+        String articleContent = articleService.fetchArticleNonReactive(name);
+        return Article.newBuilder().withName(name)
+                .withContent(articleContent)
+                .withFetchTimeInMillis((int) stopwatch.elapsed(TimeUnit.MILLISECONDS))
+                .build();
     }
 
     /**
@@ -66,11 +60,9 @@ public class WikiController {
     @CrossOrigin
     @GetMapping("/readevents")
     @JsonView(Article.NameOnly.class)
-    public Flux<List<Article>> getReadStream() {
-        return readArticles
-                .buffer(ofMillis(BUFFER_READ_EVENTS))
-                .filter(list -> !list.isEmpty())
-                .log();
+    public List<Article> getReadStream() {
+        // TODO Sprint2:
+        return Lists.newArrayList(Article.newBuilder().withName("42").build());
     }
 
     @GetMapping("/{name}/wordcount")
@@ -79,11 +71,36 @@ public class WikiController {
                 .log();
     }
 
+//    @RequestMapping("/wordcounts")
+//    public Flux<WordCount> countWords(@RequestBody Flux<ArticleName> names) {
+//        return names.flatMap(articleName -> articleService.countWords(articleName.getName())
+//                .map(count -> new WordCount(articleName.getName(), count)))
+//                .log();
+//    }
+
+//    @RequestMapping("/wordcounts")
+//    public Flux<WordCount> countWords(@RequestBody Flux<ArticleName> names) {
+//        List<WordCount> counts = names.toStream()
+//                .map(articleName -> {
+//                    Integer count = articleService.countWords(articleName.getName()).block();
+//                    return new WordCount(articleName.getName(), count);
+//                })
+//                .collect(Collectors.toList());
+//        return Flux.fromIterable(counts);
+//    }
+
     @RequestMapping("/wordcounts")
     public Flux<WordCount> countWords(@RequestBody Flux<ArticleName> names) {
-        return names.flatMap(articleName -> articleService.countWords(articleName.getName())
-                .map(count -> new WordCount(articleName.getName(), count)))
-                .log();
+        // TODO Sprint3
+        List<WordCount> counts = names.toStream()
+                .map(articleName -> {
+                    System.out.println("count words for " + articleName.getName());
+                    Integer count = articleService.countWords(articleName.getName()).block();
+                    System.out.println("count = " + count);
+                    return new WordCount(articleName.getName(), count);
+                })
+                .collect(Collectors.toList());
+        return Flux.fromIterable(counts);
     }
 
     @GetMapping("/{name}/rating")

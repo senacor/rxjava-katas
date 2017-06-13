@@ -14,7 +14,7 @@ Sprint 1 - your first nonblocking Endpoint
   This endpoint signature is currently like an traditional Spring MVC endpoint.
   Change the signature to the 'reactive-way' and implement this service.
   Hint: use `ArticleService#fetchArticle` to fetch the article from Wikipedia.
-- Write Unittests (`WikiControllerTest`) and integration tests (`WikiControllerIntegrationTest`)
+- Ensure Unittests (`WikiControllerTest`) and integration tests (`WikiControllerIntegrationTest`) are still running
 - Start the spring boot application (see `services/README.md`) and try out your new endpoint and fetch an article, 
   e.g with curl, an browser or an RESTClient <http://localhost:8081/article/...> 
 
@@ -23,26 +23,20 @@ Sprint 2 - stream articles to the frontend
 - Have a look at `WikiController#getReadStream`.
   This endpoint signature is currently like an traditional Spring MVC endpoint.
   Change the signature to the 'reactive-way' and implement this service.
-
+  Hint: You have to use a Processor, which acts as a subscriber and as a publisher. 
+        In `WikiController` there is already a Processor named `readArticles`, use this one.
+- Activate the Unittests in `ReadEventTest` and `WikiControllerIntegrationTest` and look if they run successfully.
 
 Sprint 3
 ========
-
+- Have a look at `WikiController#countWords`.
+  This Implementation is not too bad, but is's blocking. Change it to non-blocking.
+- Ensure Unittests (`WikiControllerTest`) and are still running successfully 
+  and active integration tests (`WikiControllerIntegrationTest`)
 
 Sprint 4
 ========
-
-
-Sprint 5
-========
-
-
-Sprint 6
-========
-
-
-Sprint 7
-========
+?
 
 
 Sprint X.1 - improved caching (reactive datastore)
@@ -55,9 +49,3 @@ Sprint X.1 - improved caching (reactive datastore)
   Use Spring Data to query the Database <https://spring.io/blog/2016/11/28/going-reactive-with-spring-data>
 - After some time (e.g. 1 minute) you want to expire the data. 
   Implement a reacive timed job which drops outdated data.
-  
-Sprint X.2 - visualizes backpressure buffers
-========  
-- add a diagram in the frontend which visualizes backpressure buffers in the streams.
-  add a new statistics endpoint which collects and processes this data and delivers it to the frontend
-  

@@ -6,6 +6,7 @@ import com.senacor.codecamp.reactive.services.wikiloader.model.Rating;
 import com.senacor.codecamp.reactive.services.wikiloader.model.WordCount;
 import com.senacor.codecamp.reactive.util.ReactiveUtil;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -67,6 +68,8 @@ public class WikiControllerIntegrationTest {
     }
 
     @Test
+    @Ignore
+    // TODO Sprint3
     public void countWords() throws Exception {
         MediaType mediaType = MediaType.valueOf(MediaType.APPLICATION_STREAM_JSON_VALUE + ";charset=UTF-8");
         Map<String, Integer> stringIntegerMap = testClient.post().uri("/article/wordcounts")
@@ -116,6 +119,8 @@ public class WikiControllerIntegrationTest {
     }
 
     @Test(timeout = 5000)
+    @Ignore
+    // TODO Sprint2
     public void readevents() throws Exception {
         StepVerifier.create(
                 client.get().uri("/article/readevents", WikiControllerTest.EIGENWERT_ARTICLE.getName())
