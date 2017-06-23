@@ -92,9 +92,7 @@ public class ReadEventTest {
     private ReplayProcessor<String> subscribe() {
         ReplayProcessor<String> articles = ReplayProcessor.create();
         // TODO Sprint2: remove Flux.just(...) after signature change
-        Flux.just(
                 wikiController.getReadStream()
-        )
                 .flatMap(Flux::fromIterable)
                 .map(Article::getName)
                 .subscribe(articles);

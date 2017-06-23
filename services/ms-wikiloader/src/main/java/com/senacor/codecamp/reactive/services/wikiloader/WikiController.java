@@ -2,7 +2,6 @@ package com.senacor.codecamp.reactive.services.wikiloader;
 
 import com.fasterxml.jackson.annotation.JsonView;
 import com.google.common.base.Stopwatch;
-import com.google.common.collect.Lists;
 import com.senacor.codecamp.reactive.services.wikiloader.model.Article;
 import com.senacor.codecamp.reactive.services.wikiloader.model.ArticleName;
 import com.senacor.codecamp.reactive.services.wikiloader.model.Rating;
@@ -51,11 +50,13 @@ public class WikiController {
         Mono<String> stringMono = articleService.fetchArticle(name);
 
         return stringMono.map(s ->
-            Article.newBuilder().withName(name)
-                    .withContent(s)
-                    .withFetchTimeInMillis((int) stopwatch.elapsed(TimeUnit.MILLISECONDS))
-                    .build()
-        );
+                Article.newBuilder().withName(name)
+                        .withContent(s)
+                        .withFetchTimeInMillis((int) stopwatch.elapsed(TimeUnit.MILLISECONDS))
+                        .build()
+        )
+                .doOnNext(readArticles::onNext)
+                .log();
 
     }
 
@@ -72,7 +73,7 @@ public class WikiController {
 
         return Flux.just("1", "2", "3", "4", "5")
                 .map(Arrays::asList)
-                .delayElements(Duration.ofSeconds(1));
+                .delayElements(Duration.ofMillis(500));
 
     }
 
@@ -83,9 +84,14 @@ public class WikiController {
     @CrossOrigin
     @GetMapping("/readevents")
     @JsonView(Article.NameOnly.class)
-    public List<Article> getReadStream() {
+    public Flux<List<Article>> getReadStream() {
         // TODO Sprint2:
-        return Lists.newArrayList(Article.newBuilder().withName("42").build());
+//        readArticles.
+
+        return readArticles
+                .buffer(Duration.ofMillis(BUFFER_READ_EVENTS))
+                .filter(list -> !list.isEmpty())
+                .log();
     }
 
     @GetMapping("/{name}/wordcount")
