@@ -45,12 +45,12 @@ public class WikiController {
     public Mono<Article> fetchArticle(@PathVariable final String name) {
         // TODO Sprint 1
         Stopwatch stopwatch = Stopwatch.createUnstarted();
-        stopwatch.start();
 
         return articleService.fetchArticle(name)
-                .map( articleContent -> Article.newBuilder()
+                .doOnSubscribe(it -> stopwatch.start())
+                .map(content -> Article.newBuilder()
                         .withName(name)
-                        .withContent(articleContent)
+                        .withContent(content)
                         .withFetchTimeInMillis((int) stopwatch.elapsed(TimeUnit.MILLISECONDS))
                         .build());
     }
