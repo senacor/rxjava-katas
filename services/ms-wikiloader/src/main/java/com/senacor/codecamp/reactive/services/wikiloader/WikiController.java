@@ -2,7 +2,6 @@ package com.senacor.codecamp.reactive.services.wikiloader;
 
 import com.fasterxml.jackson.annotation.JsonView;
 import com.google.common.base.Stopwatch;
-import com.google.common.collect.Lists;
 import com.senacor.codecamp.reactive.services.wikiloader.model.Article;
 import com.senacor.codecamp.reactive.services.wikiloader.model.ArticleName;
 import com.senacor.codecamp.reactive.services.wikiloader.model.Rating;
@@ -14,6 +13,7 @@ import reactor.core.publisher.DirectProcessor;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
@@ -51,7 +51,9 @@ public class WikiController {
                         .withName(name)
                         .withContent(content)
                         .withFetchTimeInMillis((int) stopwatch.elapsed(TimeUnit.MILLISECONDS))
-                        .build());
+                        .build())
+                        .doOnNext(readArticles::onNext)
+                        .log();
     }
 
     /**
@@ -61,9 +63,11 @@ public class WikiController {
     @CrossOrigin
     @GetMapping("/readevents")
     @JsonView(Article.NameOnly.class)
-    public List<Article> getReadStream() {
-        // TODO Sprint2:
-        return Lists.newArrayList(Article.newBuilder().withName("42").build());
+    public Flux<List<Article>> getReadStream() {
+        return readArticles
+                .buffer(Duration.ofMillis(BUFFER_READ_EVENTS))
+                .filter(list -> !list.isEmpty())
+                .log();
     }
 
     @GetMapping("/{name}/wordcount")
