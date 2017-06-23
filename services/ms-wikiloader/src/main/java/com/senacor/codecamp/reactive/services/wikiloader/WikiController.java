@@ -14,6 +14,8 @@ import reactor.core.publisher.DirectProcessor;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.time.Duration;
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
@@ -42,15 +44,36 @@ public class WikiController {
      * @return article with media wiki as content
      */
     @GetMapping("/{name}")
-    public Article fetchArticle(@PathVariable final String name) {
+    public Mono<Article> fetchArticle(@PathVariable final String name) {
         // TODO Sprint 1
         Stopwatch stopwatch = Stopwatch.createUnstarted();
         stopwatch.start();
-        String articleContent = articleService.fetchArticleNonReactive(name);
-        return Article.newBuilder().withName(name)
-                .withContent(articleContent)
-                .withFetchTimeInMillis((int) stopwatch.elapsed(TimeUnit.MILLISECONDS))
-                .build();
+        Mono<String> stringMono = articleService.fetchArticle(name);
+
+        return stringMono.map(s ->
+            Article.newBuilder().withName(name)
+                    .withContent(s)
+                    .withFetchTimeInMillis((int) stopwatch.elapsed(TimeUnit.MILLISECONDS))
+                    .build()
+        );
+
+    }
+
+    /**
+     * This endpoint fetches an wikipedia article by name as media wiki text.
+     *
+     * @return article with media wiki as content
+     */
+    @GetMapping("/multiple")
+    public Flux<List<String>> fetchMultipleStrings() {
+        // TODO Sprint 1
+        Stopwatch stopwatch = Stopwatch.createUnstarted();
+        stopwatch.start();
+
+        return Flux.just("1", "2", "3", "4", "5")
+                .map(Arrays::asList)
+                .delayElements(Duration.ofSeconds(1));
+
     }
 
     /**

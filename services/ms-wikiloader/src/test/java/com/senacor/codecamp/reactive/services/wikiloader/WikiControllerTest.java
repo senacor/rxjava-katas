@@ -1,12 +1,12 @@
 package com.senacor.codecamp.reactive.services.wikiloader;
 
-import com.senacor.codecamp.reactive.services.wikiloader.model.Rating;
-import com.senacor.codecamp.reactive.services.wikiloader.model.Article;
-import com.senacor.codecamp.reactive.services.wikiloader.model.ArticleName;
-import com.senacor.codecamp.reactive.services.wikiloader.model.WordCount;
 import com.senacor.codecamp.reactive.services.CountService;
 import com.senacor.codecamp.reactive.services.RatingService;
 import com.senacor.codecamp.reactive.services.WikiService;
+import com.senacor.codecamp.reactive.services.wikiloader.model.Article;
+import com.senacor.codecamp.reactive.services.wikiloader.model.ArticleName;
+import com.senacor.codecamp.reactive.services.wikiloader.model.Rating;
+import com.senacor.codecamp.reactive.services.wikiloader.model.WordCount;
 import com.senacor.codecamp.reactive.services.wikiloader.service.ArticleService;
 import com.senacor.codecamp.reactive.util.ReactiveUtil;
 import org.junit.Before;
