@@ -43,7 +43,6 @@ public class WikiController {
      */
     @GetMapping("/{name}")
     public Mono<Article> fetchArticle(@PathVariable final String name) {
-        // TODO Sprint 1
         Stopwatch stopwatch = Stopwatch.createUnstarted();
 
         return articleService.fetchArticle(name)
