@@ -42,15 +42,17 @@ public class WikiController {
      * @return article with media wiki as content
      */
     @GetMapping("/{name}")
-    public Article fetchArticle(@PathVariable final String name) {
+    public Mono<Article> fetchArticle(@PathVariable final String name) {
         // TODO Sprint 1
         Stopwatch stopwatch = Stopwatch.createUnstarted();
-        stopwatch.start();
-        String articleContent = articleService.fetchArticleNonReactive(name);
-        return Article.newBuilder().withName(name)
-                .withContent(articleContent)
-                .withFetchTimeInMillis((int) stopwatch.elapsed(TimeUnit.MILLISECONDS))
-                .build();
+        return articleService.fetchArticle(name)
+                .doOnSubscribe(subscription -> stopwatch.start())
+                .map(content -> Article.newBuilder()
+                        .withName(name)
+                        .withContent(content)
+                        .withFetchTimeInMillis((int) stopwatch.stop().elapsed(TimeUnit.MILLISECONDS))
+                        .build())
+                .log();
     }
 
     /**
