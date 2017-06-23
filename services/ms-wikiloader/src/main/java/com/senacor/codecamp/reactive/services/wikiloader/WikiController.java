@@ -47,11 +47,12 @@ public class WikiController {
         Stopwatch stopwatch = Stopwatch.createUnstarted();
         stopwatch.start();
         return articleService.fetchArticle(name)
-        .map(articleContent -> Article.newBuilder().withName(name)
-                .withContent(articleContent)
-                .withFetchTimeInMillis((int) stopwatch.elapsed(TimeUnit.MILLISECONDS))
-                .build()
-        );
+                .map(articleContent -> Article.newBuilder().withName(name)
+                        .withContent(articleContent)
+                        .withFetchTimeInMillis((int) stopwatch.elapsed(TimeUnit.MILLISECONDS))
+                        .build()
+                )
+                .doOnNext(readArticles::onNext);
     }
 
     /**
@@ -61,9 +62,8 @@ public class WikiController {
     @CrossOrigin
     @GetMapping("/readevents")
     @JsonView(Article.NameOnly.class)
-    public List<Article> getReadStream() {
-        // TODO Sprint2:
-        return Lists.newArrayList(Article.newBuilder().withName("42").build());
+    public Flux<Article> getReadStream() {
+        return Flux.from(readArticles);
     }
 
     @GetMapping("/{name}/wordcount")
