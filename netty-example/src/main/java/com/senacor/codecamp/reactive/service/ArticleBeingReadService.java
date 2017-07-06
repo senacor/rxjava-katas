@@ -6,6 +6,7 @@ import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.DelayFunction;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.Observable;
+import io.reactivex.functions.BiFunction;
 
 
 /**
@@ -33,7 +34,13 @@ public class ArticleBeingReadService {
                 .flatMap(this::createArticle);
     }
 
-    public Observable<WikiArticle> createArticle(String articleName) {
+    public Observable<WikiArticle> createArticle(final String articleName) {
+        return wikiService.fetchArticleObservable(articleName)
+                .flatMap(article -> wikiService.parseMediaWikiTextObservable(article))
+                .flatMap(parsedPage -> Observable.zip(ratingService.rateObservable(parsedPage),
+                        countService.countWordsObservable(parsedPage),
+                        zipFunction(articleName, parsedPage)));
+
           /* Tasks:
          * 1. fetch the article using wikiService.fetchArticleObservable
          * 2. parse the article using wikiService::parseMediaWikiTextObservable
@@ -41,12 +48,18 @@ public class ArticleBeingReadService {
          * 4. Test your implementation with wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS) and reduce millis to 10.
          */
 
-         return Observable.just(new WikiArticle(articleName, "Test", 1, 1));
+//         return Observable.just(new WikiArticle(articleName, "Test", 1, 1));
 
     }
 
+    private BiFunction<Integer, Integer, WikiArticle> zipFunction(String articleName, ParsedPage parsedPage) {
+        return (rating1, count1) ->
+                new WikiArticle(articleName,
+                        getArticleShortText(parsedPage), rating1, count1);
+    }
+
     private String getArticleShortText(ParsedPage parsedPage) {
-        if(parsedPage.getText().length() < 100){
+        if (parsedPage.getText().length() < 100) {
             return parsedPage.getText();
         } else {
             return parsedPage.getText().substring(0, 99) + "...";
