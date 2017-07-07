@@ -32,7 +32,6 @@ public class Kata6WikiLinks {
         // 4. measure the performance and optimize the performance with scheduler
         // 5. do not print a combination <Start_Artikel> -> <Link/Artikel_Name> twice
         wikiService.fetchArticleObservable("Schnitzel")
-                .subscribeOn(Schedulers.io())
                 .map(wikiService::parseMediaWikiText)
                 .flatMap(page -> Observable.fromIterable(page.getSections()))
                 .flatMap(section -> Observable.fromIterable(section.getLinks(Link.type.INTERNAL)))
@@ -44,7 +43,7 @@ public class Kata6WikiLinks {
                         .subscribeOn(Schedulers.io())
                 )
                 .distinct()
-                //.doOnEach(System.out::println)
+                .subscribeOn(Schedulers.io())
                 .subscribe(System.out::println,
                         Throwable::printStackTrace,
                         waitMonitor::complete);
