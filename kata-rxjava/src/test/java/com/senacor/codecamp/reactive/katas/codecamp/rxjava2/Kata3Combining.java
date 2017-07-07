@@ -27,6 +27,8 @@ public class Kata3Combining {
         Observable<ParsedPage> wikiText = wikiService.fetchArticleObservable(articleName)
                 .map(v -> wikiService.parseMediaWikiText(v));
 
+        // 2. use ratingService.rateObservable() and countService.countWordsObervable(). Combine both information as JSON
+        //    and print the JSON to the console. Example {"articleName": "Superman", "rating": 3, "wordCount": 452}
         Observable<String> count = wikiText.flatMap(countService::countWordsObservable)
                 .map(i -> String.format("\"wordCount\": %s", i));
         Observable<String> rating = wikiText.flatMap(ratingService::rateObservable)
@@ -38,14 +40,5 @@ public class Kata3Combining {
 
         Observable.zip(title, rating, count, (t, r, c) -> String.format("{%s, %s, %s}", t, r, c))
                 .subscribe(System.out::println);
-
-
-
-
-        // 2. use ratingService.rateObservable() and countService.countWordsObervable(). Combine both information as JSON
-        //    and print the JSON to the console. Example {"articleName": "Superman", "rating": 3, "wordCount": 452}
-
-        // wikiService.fetchArticleObservable()
     }
-
 }

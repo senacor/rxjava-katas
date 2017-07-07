@@ -47,6 +47,7 @@ public class Kata3Combining {
         waitMonitor.waitFor(10, TimeUnit.SECONDS);
     }
 
+    // FIXME: Not working with RxJava2.
     @Test
     public void combiningObservablePublish() throws Exception {
         // 1. fetch and parse Wikiarticle
