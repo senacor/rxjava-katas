@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.advanced;
 import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.hardcore;
+import static org.eclipse.persistence.internal.expressions.SpatialExpressionOperators.filter;
 
 /**
  * @author Andreas Keefer
@@ -20,9 +21,11 @@ public class Kata4Filtering {
     @KataClassification(advanced)
     public void filterObservable() throws Exception {
         // 1. Use WikiService#wikiArticleBeingReadObservable that delivers a stream of WikiArticle names being read
+        wikiService.wikiArticleBeingReadObservable(1000, TimeUnit.MILLISECONDS)
         // 2. Filter the names so that only articles with at least 15 characters long names are accepted and print everything to the console
+            .filter(name -> name.length() >= 15)
+            .subscribe(next -> System.out.print(next))    ;
 
-        wikiService.wikiArticleBeingReadObservable(500, TimeUnit.MILLISECONDS);
     }
 
     @Test
