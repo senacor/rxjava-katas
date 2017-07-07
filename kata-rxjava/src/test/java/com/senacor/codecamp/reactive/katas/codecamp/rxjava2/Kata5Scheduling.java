@@ -50,8 +50,8 @@ public class Kata5Scheduling {
                 .flatMap(a -> wikiService.fetchArticleObservable(a).subscribeOn(Schedulers.io()))
                 .flatMap(wikiService::parseMediaWikiTextObservable)
                 .flatMap(parsedPage -> {
-                        Observable<Integer> rating = ratingService.rateObservable(parsedPage).subscribeOn(Schedulers.computation());
-                        Observable<Integer> wordCount = countService.countWordsObservable(parsedPage).subscribeOn(Schedulers.computation());
+                        Observable<Integer> rating = ratingService.rateObservable(parsedPage);
+                        Observable<Integer> wordCount = countService.countWordsObservable(parsedPage);
                         return Observable.zip(rating, wordCount, (r, wc) -> String.format(
                 "{\"rating\": %s, \"wordCount\": %s}", r, wc)).subscribeOn(Schedulers.computation());
                 })
