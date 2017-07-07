@@ -32,14 +32,14 @@ public class Kata4Filtering {
 
         Disposable sub = wikiService.wikiArticleBeingReadObservable(500, TimeUnit.MILLISECONDS)
         .filter((name) -> name.length() >= 15)
-        .subscribe((next) -> System.out.println(next),
+        .subscribe((next) -> System.out.println("next: " + next),
         		Throwable::printStackTrace,
         		() -> {
-        			print("Complete!");
+        			System.out.println("Complete!");
         			monitor.complete();
         		});
         
-        monitor.waitFor(10, TimeUnit.SECONDS);
+        monitor.waitFor(20, TimeUnit.SECONDS);
         sub.dispose();
     }
 
@@ -50,6 +50,6 @@ public class Kata4Filtering {
         // 2. The stream delivers to many article to be processed.
         //    Limit the stream to one article in 500ms. Do not change the parameter at wikiArticleBeingReadObservable ;)
 
-        wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS);
+        //wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS);
     }
 }
