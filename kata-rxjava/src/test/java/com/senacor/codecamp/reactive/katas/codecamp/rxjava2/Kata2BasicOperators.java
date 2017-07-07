@@ -2,6 +2,8 @@ package com.senacor.codecamp.reactive.katas.codecamp.rxjava2;
 
 import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.katas.KataClassification;
+import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
+import io.reactivex.Observable;
 import org.junit.Test;
 
 import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.*;
@@ -17,9 +19,12 @@ public class Kata2BasicOperators {
     @KataClassification(mandatory)
     public void basicsA() throws Exception {
         // 1. Use the WikiService (fetchArticleObservable) and fetch an arbitrary wikipedia article
+        Observable<String> java = wikiService.fetchArticleObservable("Java");
         // 2. transform the result with the WikiService#parseMediaWikiText to an object structure
+        java.map(next -> wikiService.parseMediaWikiText(java));
+        ParsedPage parsedPage = wikiService.parseMediaWikiText(String.valueOf(java));
         //    and print out the first paragraph
-
+        System.out.print(parsedPage.getFirstParagraph().getText());
         // wikiService.fetchArticleObservable()
     }
 
