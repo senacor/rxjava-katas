@@ -6,7 +6,6 @@ import com.senacor.codecamp.reactive.services.RatingService;
 import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.WaitMonitor;
 import io.reactivex.Observable;
-import io.reactivex.Scheduler;
 import io.reactivex.schedulers.Schedulers;
 import org.junit.Test;
 
@@ -34,12 +33,11 @@ public class Kata5Scheduling {
 
         WaitMonitor waitMonitor = new WaitMonitor();
 
-        wikiService.wikiArticleBeingReadObservable(1, TimeUnit.MILLISECONDS)
+        wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
                 .take(20)
-                //.observeOn(Schedulers.newThread())
+                .observeOn(Schedulers.io())
                 .map(wikiService::fetchArticle)
                 .map(wikiService::parseMediaWikiText)
-                //.doOnNext(parsedPage -> System.out.println(parsedPage.getFirstParagraph().toString()))
                 .flatMap(parsedPage -> {
                     Observable<Integer> rateObservable = ratingService.rateObservable(parsedPage);
                     Observable<Integer> countObservable = countService.countWordsObservable(parsedPage);
@@ -47,14 +45,9 @@ public class Kata5Scheduling {
                             (rating, count) -> String.format("{\"rating\": %d, \"wordCount\": %d}", rating, count)
                     );
                 })
-                .subscribe(json -> {
-                    System.out.println(json);
-                    waitMonitor.complete();
-                }, System.err::println, waitMonitor::complete);
+                .subscribe(System.out::println, System.err::println, waitMonitor::complete);
 
         waitMonitor.waitFor(10, TimeUnit.SECONDS);
-
-
     }
 
 }
