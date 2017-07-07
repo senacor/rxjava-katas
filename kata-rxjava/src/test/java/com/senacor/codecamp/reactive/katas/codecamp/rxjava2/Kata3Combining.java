@@ -30,8 +30,8 @@ public class Kata3Combining {
         wikiService.fetchArticleObservable("Superman")
                 .map(wikiService::parseMediaWikiText)
                 .flatMap((ParsedPage parsedPage) -> {
-                    Observable<Integer> obsRating = Observable.fromCallable(() -> ratingService.rate(parsedPage));
-                    Observable<Integer> obsWordCount = Observable.fromCallable(() -> countService.countWords(parsedPage));
+                    Observable<Integer> obsRating = ratingService.rateObservable(parsedPage);
+                    Observable<Integer> obsWordCount = countService.countWordsObservable(parsedPage);
 
                     return obsRating.zipWith(obsWordCount, (rating, wordCount) ->
                                 String.format("{\"articleName\": \"Superman\", \"rating\": %d, \"wordCount\": %d}",

@@ -2,9 +2,7 @@ package com.senacor.codecamp.reactive.katas.codecamp.rxjava2;
 
 import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.katas.KataClassification;
-import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;
-import org.wikipedia.Wiki;
 
 import java.util.concurrent.TimeUnit;
 
@@ -25,8 +23,10 @@ public class Kata4Filtering {
         // 2. Filter the names so that only articles with at least 15 characters long names are accepted and print everything to the console
 
         wikiService.wikiArticleBeingReadObservable(500, TimeUnit.MILLISECONDS)
-                .filter(name -> name.length() > 15)
-                .forEach(System.out::println);
+                .filter(name -> name.length() >= 15)
+                .doOnNext(System.out::println)
+                .test()
+                .awaitDone(2, TimeUnit.SECONDS);
     }
 
     @Test
