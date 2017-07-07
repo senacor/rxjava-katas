@@ -31,14 +31,9 @@ public class Kata6WikiLinks {
         // 3. if that works: add a recursion (only 1 step) that loads the articles for the links and print all links contained in the article
         // 4. measure the performance and optimize the performance with scheduler
         // 5. do not print a combination <Start_Artikel> -> <Link/Artikel_Name> twice
-        wikiService.fetchArticleObservable("Schnitzel")
-                .map(wikiService::parseMediaWikiText)
-                .flatMap(page -> Observable.fromIterable(page.getSections()))
-                .flatMap(section -> Observable.fromIterable(section.getLinks(Link.type.INTERNAL)))
-                .flatMap((link) -> wikiService.fetchArticleObservable(link.getTarget())
-                        .map(wikiService::parseMediaWikiText)
-                        .flatMap(page -> Observable.fromIterable(page.getSections()))
-                        .flatMap(section -> Observable.fromIterable(section.getLinks(Link.type.INTERNAL)))
+        String articleName = "Schnitzel";
+        getAllInternalLinks(articleName)
+                .flatMap((link) -> getAllInternalLinks(link.getTarget())
                         .map(newLink -> String.format("%s -> %s", link.getText(), newLink.getText()))
                         .subscribeOn(Schedulers.io())
                 )
@@ -48,6 +43,13 @@ public class Kata6WikiLinks {
                         Throwable::printStackTrace,
                         waitMonitor::complete);
         waitMonitor.waitFor(100, TimeUnit.SECONDS);
+    }
+
+    private Observable<Link> getAllInternalLinks(String articleName) {
+        return wikiService.fetchArticleObservable(articleName)
+                .map(wikiService::parseMediaWikiText)
+                .flatMap(page -> Observable.fromIterable(page.getSections()))
+                .flatMap(section -> Observable.fromIterable(section.getLinks(Link.type.INTERNAL)));
     }
 
 }

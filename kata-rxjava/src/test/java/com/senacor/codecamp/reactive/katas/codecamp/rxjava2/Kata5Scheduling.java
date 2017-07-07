@@ -40,10 +40,6 @@ public class Kata5Scheduling {
 
         WaitMonitor waitMonitor = new WaitMonitor();
 
-
-        Scheduler thread1 = Schedulers.from(Executors.newFixedThreadPool(1,
-                new ThreadFactoryBuilder().setNameFormat("Thread1").build()));
-
         wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
                 .subscribeOn(Schedulers.io())
                 .take(20)
