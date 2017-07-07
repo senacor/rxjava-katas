@@ -2,6 +2,9 @@ package com.senacor.codecamp.reactive.katas.codecamp.rxjava2;
 
 import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.katas.KataClassification;
+import de.tudarmstadt.ukp.wikipedia.parser.ContentElement;
+import de.tudarmstadt.ukp.wikipedia.parser.Paragraph;
+import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;
 
 import io.reactivex.Observable;
@@ -23,23 +26,10 @@ public class Kata2BasicOperators {
     @KataClassification(mandatory)
     public void basicsA() throws Exception {
         wikiService.fetchArticleObservable("Schnitzel")
-                .map((article) -> wikiService.parseMediaWikiText(article))
-                .map((text) -> text.getParagraph(1))
-                .map((text) -> text.getText())
-                .subscribe(next -> {
-                    // print and assert the emitted value in the "onNext" Handler
-                    print("next: %s", next);
-                },
-                error -> {
-                    // handle Errors in the "onError" Handler
-                    error.printStackTrace();
-                    fail("No Error expected");
-                },
-                () -> {
-                    // onComplete Handler
-                    print("complete!");
-                    // trigger waitMonitor.complete() when execution ended as expected
-                });
+                .map(wikiService::parseMediaWikiText)
+                .map(ParsedPage::getFirstParagraph)
+                .map(Paragraph::getText)
+                .subscribe(System.out::print);
 
         // 1. Use the WikiService (fetchArticleObservable) and fetch an arbitrary wikipedia article
         // 2. transform the result with the WikiService#parseMediaWikiText to an object structure
