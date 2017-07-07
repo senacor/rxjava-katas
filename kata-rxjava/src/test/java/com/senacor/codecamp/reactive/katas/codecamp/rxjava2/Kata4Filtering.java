@@ -22,7 +22,11 @@ public class Kata4Filtering {
         // 1. Use WikiService#wikiArticleBeingReadObservable that delivers a stream of WikiArticle names being read
         // 2. Filter the names so that only articles with at least 15 characters long names are accepted and print everything to the console
 
-        wikiService.wikiArticleBeingReadObservable(500, TimeUnit.MILLISECONDS);
+        wikiService.wikiArticleBeingReadObservable(500, TimeUnit.MILLISECONDS)
+                .filter(articleName -> articleName.length() >= 15)
+                .doOnNext(System.out::println)
+                .test()
+                .awaitDone(10, TimeUnit.SECONDS);
     }
 
     @Test
@@ -32,6 +36,11 @@ public class Kata4Filtering {
         // 2. The stream delivers to many article to be processed.
         //    Limit the stream to one article in 500ms. Do not change the parameter at wikiArticleBeingReadObservable ;)
 
-        wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS);
+        wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS)
+                .sample(500, TimeUnit.MILLISECONDS)
+                .doOnNext(System.out::println)
+                .test()
+                .awaitDone(5, TimeUnit.SECONDS)
+                .assertValueCount(10);
     }
 }
