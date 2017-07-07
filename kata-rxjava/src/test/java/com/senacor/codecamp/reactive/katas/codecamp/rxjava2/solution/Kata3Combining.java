@@ -1,8 +1,8 @@
 package com.senacor.codecamp.reactive.katas.codecamp.rxjava2.solution;
 
-import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.services.CountService;
 import com.senacor.codecamp.reactive.services.RatingService;
+import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.WaitMonitor;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.Observable;
@@ -13,6 +13,8 @@ import org.junit.Test;
 import java.util.concurrent.TimeUnit;
 
 import static com.senacor.codecamp.reactive.util.ReactiveUtil.print;
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
 
 /**
  * @author Andreas Keefer
@@ -46,6 +48,7 @@ public class Kata3Combining {
                         waitMonitor::complete);
 
         waitMonitor.waitFor(10, TimeUnit.SECONDS);
+        assertThat(waitMonitor.isComplete(), is(true));
     }
 
     @Test
@@ -72,9 +75,10 @@ public class Kata3Combining {
                 wikiArticle, r, wc))
                 .subscribe(next -> print("next: %s", next),
                         Throwable::printStackTrace,
-                        () -> waitMonitor.complete());
+                        waitMonitor::complete);
 
         waitMonitor.waitFor(10, TimeUnit.SECONDS);
+        assertThat(waitMonitor.isComplete(), is(true));
     }
 
 }
