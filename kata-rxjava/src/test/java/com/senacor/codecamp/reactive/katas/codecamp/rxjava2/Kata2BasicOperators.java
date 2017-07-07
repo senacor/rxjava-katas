@@ -18,10 +18,10 @@ public class Kata2BasicOperators {
     @KataClassification(mandatory)
     public void basicsA() throws Exception {
         // 1. Use the WikiService (fetchArticleObservable) and fetch an arbitrary wikipedia article
-        Observable<String> observable = wikiService.fetchArticleObservable("Hauskatze");
         // 2. transform the result with the WikiService#parseMediaWikiText to an object structure
         //    and print out the first paragraph
-        observable.map(wikiService::parseMediaWikiText)
+        wikiService.fetchArticleObservable("Hauskatze")
+                .map(wikiService::parseMediaWikiText)
                 .map(parsedPage -> parsedPage.getParagraph(1).getText())
                 .subscribe(System.out::println);
 
@@ -31,19 +31,22 @@ public class Kata2BasicOperators {
     @Test
     @KataClassification(advanced)
     public void basicsB() throws Exception {
-        /*
         // 1. Use the WikiService (fetchArticleObservable) and fetch an arbitrary wikipedia article
-        Observable<String> observable = wikiService.fetchArticleObservable("Hauskatze");
         // 2. transform the result with the WikiService#parseMediaWikiText to an object structure
         //    and print out the first paragraph
-        observable.map(wikiService::parseMediaWikiText)
-                .map(parsedPage -> parsedPage.getParagraph(1).getText())
         // 3. split the Article (ParsedPage.getText()) in words (separator=" ")
-                .flatMap(text -> text.split("\\s"))
         // 4. sum the number of letters of all words beginning with character 'a' to the console
+        wikiService.fetchArticleObservable("Observable")
+                .map(wikiService::parseMediaWikiText)
+                .map(parsedPage -> parsedPage.getParagraph(1).getText())
+                .map(text -> text.split("\\s"))
+                .flatMap(Observable::fromArray)
+                .map(String::toLowerCase)
+                .filter(s -> s.startsWith("a"))
+                .count()
+                .subscribe(System.out::println);
 
         // wikiService.fetchArticleObservable()
-        */
     }
 
     @Test
