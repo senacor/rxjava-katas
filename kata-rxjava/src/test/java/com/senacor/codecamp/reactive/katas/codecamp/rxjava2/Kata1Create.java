@@ -23,12 +23,22 @@ public class Kata1Create {
         // Create an observable from getArticle
 
         Observable.fromCallable(new Callable<String>() {
-        	@Override
-        	public String call() {
-        		return getArticle(articleName).getTitle();
-        	}
-        })
-        .subscribe(title -> System.out.println(title));
+		        	@Override
+		        	public String call() {
+		        		return getArticle(articleName).getTitle();
+		        	}
+		        })
+        		.subscribe(title -> System.out.println(title));
+        
+        // Alternative
+        Observable.fromCallable(() -> getArticle(articleName).getTitle())
+        		.subscribe(System.out::println);
+        
+        // Alternative
+        Observable.just(articleName)
+		        .map(this::getArticle)
+		        .map(Article::getTitle)
+		        .subscribe(System.out::println);
     }
 
     public Article getArticle(String name) {
