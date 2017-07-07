@@ -6,6 +6,7 @@ import com.senacor.codecamp.reactive.services.RatingService;
 import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.WaitMonitor;
 import io.reactivex.Observable;
+import io.reactivex.Scheduler;
 import io.reactivex.schedulers.Schedulers;
 import org.junit.Test;
 
@@ -35,8 +36,7 @@ public class Kata5Scheduling {
 
         wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
                 .take(20)
-                .observeOn(Schedulers.io())
-                .map(wikiService::fetchArticle)
+                .flatMap(s -> wikiService.fetchArticleObservable(s).subscribeOn(Schedulers.io()))
                 .map(wikiService::parseMediaWikiText)
                 .flatMap(parsedPage -> {
                     Observable<Integer> rateObservable = ratingService.rateObservable(parsedPage);
@@ -47,7 +47,7 @@ public class Kata5Scheduling {
                 })
                 .subscribe(System.out::println, System.err::println, waitMonitor::complete);
 
-        waitMonitor.waitFor(10, TimeUnit.SECONDS);
+        waitMonitor.waitFor(20, TimeUnit.SECONDS);
     }
 
 }
