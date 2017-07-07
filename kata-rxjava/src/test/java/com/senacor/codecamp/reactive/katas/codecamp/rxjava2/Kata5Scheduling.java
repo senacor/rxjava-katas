@@ -5,6 +5,8 @@ import com.senacor.codecamp.reactive.services.CountService;
 import com.senacor.codecamp.reactive.services.RatingService;
 import com.senacor.codecamp.reactive.services.WikiService;
 import io.reactivex.Observable;
+import io.reactivex.Scheduler;
+import io.reactivex.schedulers.Schedulers;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -33,13 +35,13 @@ public class Kata5Scheduling {
 
         wikiService.wikiArticleBeingReadObservable(50, TimeUnit.MILLISECONDS)
                 .take(20)
-                .map(wikiService::fetchArticle)
+                .flatMap(articleName -> wikiService.fetchArticleObservable(articleName).subscribeOn(Schedulers.io()))
                 .map(wikiService::parseMediaWikiText)
                 .flatMap(page -> {
                     Observable<Integer> ratings = ratingService.rateObservable(page);
                     Observable<Integer> wordCounts = countService.countWordsObservable(page);
                     return Observable.zip(ratings, wordCounts, (r, wc) -> String.format("{\"rating\": %s, " +
-                            "\"wordCount\": %s}", r, wc));
+                            "\"wordCount\": %s}", r, wc)).subscribeOn(Schedulers.computation());
                 })
                 .doOnNext(System.out::println)
                 .test()
@@ -47,7 +49,7 @@ public class Kata5Scheduling {
 
         long end = System.nanoTime();
 
-        System.out.printf("Took %s s\n", (end - start) * 1e-9);
+        System.out.printf("Took %.2f s\n", (end - start) * 1e-9);
     }
 
 }
