@@ -2,6 +2,7 @@ package com.senacor.codecamp.reactive.katas.codecamp.rxjava2;
 
 import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.katas.KataClassification;
+import io.reactivex.Observable;
 import org.junit.Test;
 
 import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.*;
@@ -11,14 +12,18 @@ import static com.senacor.codecamp.reactive.katas.KataClassification.Classificat
  */
 public class Kata2BasicOperators {
 
-    private WikiService wikiService = WikiService.create();
+    private final WikiService wikiService = WikiService.create();
 
     @Test
     @KataClassification(mandatory)
     public void basicsA() throws Exception {
         // 1. Use the WikiService (fetchArticleObservable) and fetch an arbitrary wikipedia article
+        Observable<String> observable = wikiService.fetchArticleObservable("Hauskatze");
         // 2. transform the result with the WikiService#parseMediaWikiText to an object structure
         //    and print out the first paragraph
+        observable.map(wikiService::parseMediaWikiText)
+                .map(parsedPage -> parsedPage.getParagraph(1).getText())
+                .subscribe(System.out::println);
 
         // wikiService.fetchArticleObservable()
     }
@@ -26,10 +31,19 @@ public class Kata2BasicOperators {
     @Test
     @KataClassification(advanced)
     public void basicsB() throws Exception {
+        /*
+        // 1. Use the WikiService (fetchArticleObservable) and fetch an arbitrary wikipedia article
+        Observable<String> observable = wikiService.fetchArticleObservable("Hauskatze");
+        // 2. transform the result with the WikiService#parseMediaWikiText to an object structure
+        //    and print out the first paragraph
+        observable.map(wikiService::parseMediaWikiText)
+                .map(parsedPage -> parsedPage.getParagraph(1).getText())
         // 3. split the Article (ParsedPage.getText()) in words (separator=" ")
+                .flatMap(text -> text.split("\\s"))
         // 4. sum the number of letters of all words beginning with character 'a' to the console
 
         // wikiService.fetchArticleObservable()
+        */
     }
 
     @Test
