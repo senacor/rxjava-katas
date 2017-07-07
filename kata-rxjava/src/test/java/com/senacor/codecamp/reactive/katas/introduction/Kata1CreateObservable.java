@@ -1,5 +1,6 @@
 package com.senacor.codecamp.reactive.katas.introduction;
 
+import io.reactivex.Observable;
 import org.junit.Test;
 
 /**
@@ -12,7 +13,9 @@ public class Kata1CreateObservable {
         final String planeType = "Boeing 737";
 
         // 1) create an observable that emits the plane type
+        Observable.just(planeType)
         // 2) subscribe to the observable and print the plane type
+                    .subscribe(System.out::println);
 
     }
 

@@ -2,6 +2,7 @@ package com.senacor.codecamp.reactive.katas.codecamp.rxjava2;
 
 import com.senacor.codecamp.reactive.katas.KataClassification;
 import com.senacor.codecamp.reactive.services.integration.WikipediaServiceMediaWikiBot;
+import io.reactivex.Observable;
 import net.sourceforge.jwbf.core.contentRep.Article;
 import org.junit.Test;
 
@@ -17,8 +18,12 @@ public class Kata1Create {
     public void createAnObservable() throws Exception {
         final String articleName = "Observable";
         // Create an observable from getArticle
+        Observable<Article> articleObservable =
+                Observable.fromCallable(() -> getArticle(articleName));
 
-
+        articleObservable
+                .map(Article::getText)
+                .subscribe(System.out::println);
     }
 
     public Article getArticle(String name) {
