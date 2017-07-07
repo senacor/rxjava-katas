@@ -18,7 +18,8 @@ public class Kata1Create {
     @KataClassification(mandatory)
     public void createAnObservable() throws Exception {
         final String articleName = "Observable";
-        Observable.defer(() -> Observable.just(getArticle(articleName)))
+        Observable.just(articleName)
+                .map(this::getArticle)
                 .test()
                 .awaitDone(1, SECONDS)
                 .assertValueCount(1)
