@@ -20,8 +20,8 @@ public class Kata1Create {
         // Create an observable from getArticle
 //        Observable.just(articleName)
 //                .map(a -> getArticle(a))
-//        Observable.fromCallable(() -> getArticle(articleName))
-        Observable.defer(() -> Observable.just(getArticle(articleName)))
+//        Observable.defer(() -> Observable.just(getArticle(articleName)))
+        Observable.fromCallable(() -> getArticle(articleName))
                 .test()
                 .assertValueCount(1)
                 .assertValue(article -> article.getTitle().equals("Observable"))

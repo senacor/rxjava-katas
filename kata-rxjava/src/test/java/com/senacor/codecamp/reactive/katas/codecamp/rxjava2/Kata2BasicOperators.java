@@ -19,7 +19,8 @@ public class Kata2BasicOperators {
     @Test
     @KataClassification(mandatory)
     public void basicsA() throws Exception {
-        Observable.fromCallable(() -> wikiService.fetchArticle("Observable"))
+//        Observable.fromCallable(() -> wikiService.fetchArticle("Observable"))
+          wikiService.fetchArticleObservable("Observable")
                 .map(wikiService::parseMediaWikiText)
                 .map(ParsedPage::getFirstParagraph)
                 .map(ContentElement::getText)
@@ -36,14 +37,14 @@ public class Kata2BasicOperators {
         wikiService.fetchArticleObservable("Observable")
                 .map(wikiService::parseMediaWikiText)
                 .map(ParsedPage::getText)
+        // 3. split the Article (ParsedPage.getText()) in words (separator=" ")
                 .flatMap(s -> Observable.fromArray(s.split(" ")))
                 .map(String::toLowerCase)
+        // 4. sum the number of letters of all words beginning with character 'a' to the console
                 .filter(s -> s.startsWith("a"))
                 .map(String::length)
                 .reduce(0, (i,j) -> i+j)
                 .subscribe(System.out::println);
-        // 3. split the Article (ParsedPage.getText()) in words (separator=" ")
-        // 4. sum the number of letters of all words beginning with character 'a' to the console
 
         // wikiService.fetchArticleObservable()
     }
@@ -56,15 +57,12 @@ public class Kata2BasicOperators {
                 .map(ParsedPage::getText)
                 .flatMap(s -> Observable.fromArray(s.split(" ")))
                 .map(String::toLowerCase)
+        // 5. filter out redundant words beginning with 'a'
                 .filter(s -> s.startsWith("a"))
                 .distinct()
+        // 6. order them by length and take only the top 10 words in length
                 .sorted((f,s) -> s.length() - f.length())
                 .take(10)
                 .subscribe(System.out::println);
-
-        // 5. filter out redundant words beginning with 'a'
-        // 6. order them by length and take only the top 10 words in length
-
-        //  wikiService.fetchArticleObservable()
     }
 }
