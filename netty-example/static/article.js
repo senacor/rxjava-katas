@@ -58,7 +58,7 @@
            .map(calculateAvg)
            .subscribe(
               function (average) { // next
-                  chart.update(average.count, average.wordCount, average.rating);
+                  chart.update(average.count, average.words, average.rating);
               },
               function (e) { // error
                   // errors and "unclean" closes land here
