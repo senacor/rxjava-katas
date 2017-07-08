@@ -7,6 +7,8 @@ import com.senacor.codecamp.reactive.katas.KataClassification;
 import io.reactivex.Observable;
 import org.junit.Test;
 
+import java.util.concurrent.TimeUnit;
+
 import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.*;
 
 /**
@@ -22,11 +24,14 @@ public class Kata7aResilience {
 
         WikiService wikiService = WikiService.create(DelayFunction.staticDelay(1000));
 
-        fetchArticleObservableWithTimeout(wikiService, "42");
+        fetchArticleObservableWithTimeout(wikiService, "42")
+                .test()
+                .assertError(Throwable.class);
     }
 
     private Observable<String> fetchArticleObservableWithTimeout(WikiService wikiService, String articleName) {
-        return wikiService.fetchArticleObservable(articleName);
+        return wikiService.fetchArticleObservable(articleName)
+                .timeout(500, TimeUnit.MILLISECONDS);
     }
 
     @Test
@@ -36,9 +41,16 @@ public class Kata7aResilience {
         // 4. verify this behavior with tests
 
         WikiService wikiService = WikiService.create(DelayFunction.staticDelay(400),
-                FlakinessFunction.failCountDown(1));
+                FlakinessFunction.failCountDown(2));
 
-        fetchArticleObservableWithTimeout(wikiService, "42");
+        fetchArticleObservableWithTimeout(wikiService, "42")
+                .retryWhen(errors -> {
+                    // TODO fail after two retries
+                    return errors.take(2).flatMap(a -> Observable.timer(1, TimeUnit.SECONDS));
+
+                })
+                .test()
+                .awaitDone(10, TimeUnit.SECONDS);
     }
 
     @Test
@@ -49,6 +61,12 @@ public class Kata7aResilience {
 
         WikiService wikiService = WikiService.create(DelayFunction.withRandomDelay(200, 1000));
 
-        fetchArticleObservableWithTimeout(wikiService, "42");
+        Observable.ambArray(
+            fetchArticleObservableWithTimeout(wikiService, "42"),
+            fetchArticleObservableWithTimeout(wikiService, "42"),
+            fetchArticleObservableWithTimeout(wikiService, "42")
+        )
+                .test()
+                .awaitDone(5, TimeUnit.SECONDS);
     }
 }
