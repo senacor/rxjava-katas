@@ -6,6 +6,7 @@ import com.senacor.codecamp.reactive.katas.KataClassification;
 import com.senacor.codecamp.reactive.util.DelayFunction;
 import com.senacor.codecamp.reactive.util.FlakinessFunction;
 import com.senacor.codecamp.reactive.util.WaitMonitor;
+import io.reactivex.Flowable;
 import io.reactivex.Observable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.plugins.RxJavaPlugins;
@@ -57,7 +58,7 @@ public class Kata9Backpressure {
 
         Disposable subscriber = readWikiArticlesFromFile(fileName)
                 .doOnNext(next -> print("reading article: %s", next))
-                .flatMap(article -> wikiService.fetchArticleObservable(article)
+                .flatMap(article -> wikiService.fetchArticleFlowable(article)
                         .subscribeOn(Schedulers.io()))
                 .subscribeOn(Schedulers.io())
                 .subscribe(persistService::save,
@@ -77,31 +78,18 @@ public class Kata9Backpressure {
      * @param fileName File name (e.g. "articles.100.txt")
      * @return stream of Article names from File (line-by-line)
      */
-    private Observable<String> readWikiArticlesFromFile(String fileName) {
-        return Observable.create(emitter -> {
-            BufferedReader bufferedReader;
-            try {
-                bufferedReader = Files.newBufferedReader(Paths.get(ClassLoader.getSystemResource(fileName).toURI()));
-            } catch (IOException | URISyntaxException e) {
-                emitter.onError(e);
-                return;
-            }
-            try {
-                String line = bufferedReader.readLine();
-                while (line != null && !emitter.isDisposed()) {
-                    emitter.onNext(line);
-                    line = bufferedReader.readLine();
-                }
-                emitter.onComplete();
-            } catch (IOException ex) {
-                emitter.onError(ex);
-            } finally {
-                try {
-                    bufferedReader.close();
-                } catch (IOException ex) {
-                    ex.printStackTrace();
-                }
-            }
-        });
+    private Flowable<String> readWikiArticlesFromFile(String fileName) {
+        return Flowable.generate(
+                () -> Files.newBufferedReader(Paths.get(ClassLoader.getSystemResource(fileName).toURI())),
+                (bufferedReader, emitter) -> {
+                    String line = bufferedReader.readLine();
+                    if (line == null) {
+                        emitter.onComplete();
+                    } else {
+                        emitter.onNext(line);
+                    }
+                },
+                BufferedReader::close
+        );
     }
 }
