@@ -3,7 +3,10 @@ package com.senacor.codecamp.reactive.katas.codecamp.rxjava2;
 import com.senacor.codecamp.reactive.katas.KataClassification;
 import com.senacor.codecamp.reactive.services.PersistService;
 import com.senacor.codecamp.reactive.services.WikiService;
+import io.reactivex.Observable;
 import org.junit.Test;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author Andreas Keefer
@@ -21,7 +24,15 @@ public class Kata8Batch {
         // 3. save the article (PersistService.save(String)). The service returns the execution time
         // 4. sum the execution time of the service calls and print the result
 
-        wikiService.wikiArticleBeingReadObservableBurst();
+        wikiService.wikiArticleBeingReadObservableBurst()
+                .takeUntil(Observable.timer(2, TimeUnit.SECONDS))
+                .map(persistService::save)
+                .reduce(0L, Long::sum)
+                .doOnSuccess(System.out::println)
+                .test()
+                .awaitDone(5, TimeUnit.SECONDS)
+                .assertValueCount(1)
+                .assertComplete();
     }
 
 
@@ -32,7 +43,16 @@ public class Kata8Batch {
         //    use a batch size of 5.
         //    Please note that this is a stream - you can not wait until all articles are delivered to save everything in a batch
 
-        wikiService.wikiArticleBeingReadObservableBurst();
+        wikiService.wikiArticleBeingReadObservableBurst()
+                .buffer(5)
+                .takeUntil(Observable.timer(2, TimeUnit.SECONDS))
+                .map(persistService::save)
+                .reduce(0L, Long::sum)
+                .doOnSuccess(System.out::println)
+                .test()
+                .awaitDone(5, TimeUnit.SECONDS)
+                .assertValueCount(1)
+                .assertComplete();
     }
 
     @Test
@@ -41,6 +61,15 @@ public class Kata8Batch {
         // 2. If the batch size is not reached within 500 milliseconds,
         //    flush the buffer anyway by writing to the service
 
-        wikiService.wikiArticleBeingReadObservableBurst();
+        wikiService.wikiArticleBeingReadObservableBurst()
+                .buffer(500, TimeUnit.MILLISECONDS, 5)
+                .takeUntil(Observable.timer(2, TimeUnit.SECONDS))
+                .map(persistService::save)
+                .reduce(0L, Long::sum)
+                .doOnSuccess(System.out::println)
+                .test()
+                .awaitDone(5, TimeUnit.SECONDS)
+                .assertValueCount(1)
+                .assertComplete();
     }
 }
