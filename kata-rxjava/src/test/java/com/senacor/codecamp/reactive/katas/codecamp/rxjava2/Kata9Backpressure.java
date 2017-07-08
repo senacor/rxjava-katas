@@ -60,7 +60,6 @@ public class Kata9Backpressure {
                 .doOnNext(next -> print("reading article: %subscription", next))
                 .subscribeOn(Schedulers.io())
                 .flatMap(wikiService::fetchArticleFlowable)
-                .subscribeOn(Schedulers.io())
                 .subscribe(new FlowableSubscriber<String>() {
                     private Subscription subscription;
 

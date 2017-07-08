@@ -6,6 +6,12 @@ import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.DelayFunction;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.Observable;
+import io.reactivex.Scheduler;
+import io.reactivex.schedulers.Schedulers;
+import net.sourceforge.jwbf.core.contentRep.Article;
+import org.wikipedia.Wiki;
+
+import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -33,7 +39,7 @@ public class ArticleBeingReadService {
                 .flatMap(this::createArticle);
     }
 
-    public Observable<WikiArticle> createArticle(String articleName) {
+    public Observable<WikiArticle> createArticle(final String articleName) {
         /* Tasks:
          * 1. fetch the article using wikiService.fetchArticleObservable
          * Hint: there is an existing Test (ArticleBeingReadServiceTest) which is ignored. Remove the @Ignored
@@ -41,9 +47,14 @@ public class ArticleBeingReadService {
          * 2. parse the article using wikiService::parseMediaWikiTextObservable
          * 3. calculate a rating (ratingService.rate) and the word count (countService.countWords) for the article. Store the results in a WikiArticle object
          */
-
-        return Observable.just(new WikiArticle(articleName, "Test", 1, 1));
-
+        return Observable.just(articleName)
+                .flatMap(wikiService::fetchArticleObservable)
+                .flatMap(wikiService::parseMediaWikiTextObservable)
+                .flatMap(parsedPage ->
+                    ratingService.rateObservable(parsedPage)
+                            .zipWith(countService.countWordsObservable(parsedPage),
+                                    (rating, wordcount) ->
+                                            new WikiArticle(articleName, getArticleShortText(parsedPage), rating, wordcount)));
     }
 
     private String getArticleShortText(ParsedPage parsedPage) {
