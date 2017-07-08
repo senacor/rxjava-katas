@@ -8,10 +8,13 @@ import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;
 import reactor.core.publisher.ConnectableFlux;
 import reactor.core.publisher.Flux;
+import reactor.core.scheduler.Schedulers;
 
 import java.util.concurrent.TimeUnit;
 
 import static com.senacor.codecamp.reactive.util.ReactiveUtil.print;
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
 
 /**
  * @author Andreas Keefer
@@ -49,6 +52,7 @@ public class Kata3Combining {
                         waitMonitor::complete);
 
         waitMonitor.waitFor(10, TimeUnit.SECONDS);
+        assertThat(waitMonitor.isComplete(), is(true));
     }
 
     @Test
@@ -57,6 +61,7 @@ public class Kata3Combining {
 
         final String wikiArticle = "Bilbilis";
         ConnectableFlux<ParsedPage> connectableFlux = wikiService.fetchArticleFlux(wikiArticle)
+                .subscribeOn(Schedulers.elastic())
                 .flatMap(wikiService::parseMediaWikiTextFlux)
                 .publish();
 
@@ -72,5 +77,6 @@ public class Kata3Combining {
                         () -> waitMonitor.complete());
 
         waitMonitor.waitFor(10, TimeUnit.SECONDS);
+        assertThat(waitMonitor.isComplete(), is(true));
     }
 }

@@ -41,7 +41,8 @@ public class Kata7aResilience {
                 .assertValue(value -> value.startsWith("{{Dieser Artikel|behandelt das Jahr 42"));
     }
 
-    private Observable<String> fetchArticleObservableWithTimeout(WikiService wikiService, String articleName) {
+    private Observable<String> fetchArticleObservableWithTimeout(WikiService wikiService,
+                                                                 String articleName) {
         return wikiService.fetchArticleObservable(articleName)
                 .timeout(500, TimeUnit.MILLISECONDS);
     }
@@ -137,7 +138,6 @@ public class Kata7aResilience {
                 .retryWhen(retryWithDelay(3));
 
         Observable.amb(Arrays.asList(timeout, error, ok))
-                .subscribeOn(Schedulers.io())
                 .test()
                 .awaitDone(1, TimeUnit.SECONDS)
                 .assertNoErrors()
