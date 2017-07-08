@@ -1,10 +1,14 @@
 package com.senacor.codecamp.reactive.katas.codecamp.rxjava2;
 
-import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.katas.KataClassification;
+import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.DelayFunction;
 import com.senacor.codecamp.reactive.util.FlakinessFunction;
+import io.reactivex.Observable;
+import io.reactivex.schedulers.Schedulers;
 import org.junit.Test;
+
+import java.util.concurrent.TimeUnit;
 
 import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.*;
 import static com.senacor.codecamp.reactive.util.ReactiveUtil.print;
@@ -25,7 +29,16 @@ public class Kata7bResilience {
                 FlakinessFunction.alwaysFail());
         WikiService wikiServiceBackup = WikiService.create(DelayFunction.staticDelay(100));
 
-        wikiService.fetchArticleObservable("42");
+        wikiService.fetchArticleObservable("42")
+                .subscribeOn(Schedulers.io())
+                .onErrorResumeNext(
+                        wikiServiceBackup.fetchArticleObservable("42")
+                                .subscribeOn(Schedulers.io())
+                )
+                .test()
+                .awaitDone(5, TimeUnit.SECONDS)
+                .assertNoErrors()
+                .assertComplete();
     }
 
     @Test
@@ -40,7 +53,17 @@ public class Kata7bResilience {
         WikiService wikiServiceBackup = WikiService.create(DelayFunction.staticDelay(100),
                 FlakinessFunction.alwaysFail());
 
-        wikiService.fetchArticleObservable("42");
+        wikiService.fetchArticleObservable("42")
+                .subscribeOn(Schedulers.io())
+                .onErrorResumeNext(
+                        wikiServiceBackup.fetchArticleObservable("42")
+                                .subscribeOn(Schedulers.io())
+                )
+                .onErrorReturn(e -> getCachedArticle("42"))
+                .test()
+                .awaitDone(5, TimeUnit.SECONDS)
+                .assertNoErrors()
+                .assertComplete();
     }
 
     private String getCachedArticle(String articleName) {
@@ -53,5 +76,26 @@ public class Kata7bResilience {
     public void exponentialRetry() throws Exception {
         // 6. insert in this example a retry strategy: 3 retries with an exponential back-off
         //    (e.g wait 100ms for the first retry, 400ms for the second retry and 900ms for the 3rd retry)
+        WikiService wikiService = WikiService.create(
+                DelayFunction.withRandomDelay(200, 1000),
+                FlakinessFunction.failWithProbability(70));
+
+        wikiService.fetchArticleObservable("42")
+                .retryWhen(attempts ->
+                        attempts.zipWith(Observable.range(1, 2),
+                                (e, n) -> n)
+                                .flatMap(
+                                        (n) -> {
+                                            System.err.println(String.format("Attempt %d failed!", n));
+                                            return Observable.timer(n^2 * 100, TimeUnit.MILLISECONDS);
+                                        }
+                                ))
+                .subscribeOn(Schedulers.io())
+                .onErrorReturn(e -> getCachedArticle("42"))
+                .doOnEach(System.out::println)
+                .test()
+                .awaitDone(15, TimeUnit.SECONDS)
+                .assertNoErrors()
+                .assertComplete();
     }
 }

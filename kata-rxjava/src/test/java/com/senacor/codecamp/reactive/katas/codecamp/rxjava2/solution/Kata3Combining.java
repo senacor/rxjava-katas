@@ -7,6 +7,7 @@ import com.senacor.codecamp.reactive.util.WaitMonitor;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.Observable;
 import io.reactivex.observables.ConnectableObservable;
+import io.reactivex.schedulers.Schedulers;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -58,6 +59,7 @@ public class Kata3Combining {
 
         final String wikiArticle = "Bilbilis";
         ConnectableObservable<ParsedPage> parsedPageObservable = wikiService.fetchArticleObservable(wikiArticle)
+                .subscribeOn(Schedulers.io())
                 .flatMap(wikiService::parseMediaWikiTextObservable).publish();
 
         Observable<Integer> ratingObservable = parsedPageObservable.flatMap(ratingService::rateObservable);
