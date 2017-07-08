@@ -3,6 +3,9 @@ package com.senacor.codecamp.reactive.katas.codecamp.rxjava2;
 import com.senacor.codecamp.reactive.katas.KataClassification;
 import com.senacor.codecamp.reactive.services.PersistService;
 import com.senacor.codecamp.reactive.services.WikiService;
+
+import java.util.concurrent.TimeUnit;
+
 import org.junit.Test;
 
 /**
@@ -21,7 +24,16 @@ public class Kata8Batch {
         // 3. save the article (PersistService.save(String)). The service returns the execution time
         // 4. sum the execution time of the service calls and print the result
 
-        wikiService.wikiArticleBeingReadObservableBurst();
+        wikiService.wikiArticleBeingReadObservableBurst()
+        	.take(2, TimeUnit.SECONDS)
+        	.map(article -> persistService.save(article))
+//        	.doOnNext(t -> System.out.println("time: " + t))
+        	.reduce(Long::sum)
+        	.doOnSuccess(r -> System.out.println("result " + r))
+        	.test()
+        	.awaitDone(5, TimeUnit.SECONDS)
+        	.assertValueCount(1)
+        	.assertComplete();
     }
 
 
@@ -32,7 +44,17 @@ public class Kata8Batch {
         //    use a batch size of 5.
         //    Please note that this is a stream - you can not wait until all articles are delivered to save everything in a batch
 
-        wikiService.wikiArticleBeingReadObservableBurst();
+        wikiService.wikiArticleBeingReadObservableBurst()
+        	.buffer(5)
+	    	.take(2, TimeUnit.SECONDS)
+	    	.map(persistService::save)
+	//    	.doOnNext(t -> System.out.println("time: " + t))
+	    	.reduce(Long::sum)
+	    	.doOnSuccess(r -> System.out.println("result " + r))
+	    	.test()
+	    	.awaitDone(5, TimeUnit.SECONDS)
+	    	.assertValueCount(1)
+	    	.assertComplete();
     }
 
     @Test
@@ -41,6 +63,19 @@ public class Kata8Batch {
         // 2. If the batch size is not reached within 500 milliseconds,
         //    flush the buffer anyway by writing to the service
 
-        wikiService.wikiArticleBeingReadObservableBurst();
+        wikiService.wikiArticleBeingReadObservableBurst()
+    	.take(2, TimeUnit.SECONDS)
+    	.buffer(5, 500, TimeUnit.MILLISECONDS)
+    	.map(persistService::save)
+//    	.doOnNext(t -> System.out.println("time: " + t))
+    	.reduce(Long::sum)
+    	.doOnSuccess(r -> System.out.println("result " + r))
+    	.test()
+    	.awaitDone(5, TimeUnit.SECONDS)
+    	.assertValueCount(1)
+    	.assertComplete();
+        
+        
+        
     }
 }

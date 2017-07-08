@@ -101,6 +101,7 @@ public class StaticFileServerHandler extends SimpleChannelInboundHandler<FullHtt
 
     public StaticFileServerHandler(String fileRootDir) {
         this.fileRootDir = fileRootDir;
+        System.out.println("fileRootDir: " + fileRootDir);
     }
 
     @Override
@@ -117,6 +118,7 @@ public class StaticFileServerHandler extends SimpleChannelInboundHandler<FullHtt
 
         final String uri = request.uri();
         final String path = sanitizeUri(uri);
+//        final String path = "/home/alex/codenplay/reactive-aggregator/netty-example/static/index.html"; 
         if (path == null) {
             sendError(ctx, FORBIDDEN);
             return;
@@ -124,6 +126,7 @@ public class StaticFileServerHandler extends SimpleChannelInboundHandler<FullHtt
 
         File file = new File(path);
         if (file.isHidden() || !file.exists()) {
+        	System.out.println(path);
             sendError(ctx, NOT_FOUND);
             return;
         }

@@ -1,6 +1,9 @@
 package com.senacor.codecamp.reactive.katas.codecamp.rxjava2;
 
 import com.senacor.codecamp.reactive.services.WikiService;
+
+import io.reactivex.Observable;
+
 import com.senacor.codecamp.reactive.katas.KataClassification;
 import org.junit.Test;
 
@@ -20,7 +23,11 @@ public class Kata2BasicOperators {
         // 2. transform the result with the WikiService#parseMediaWikiText to an object structure
         //    and print out the first paragraph
 
-        // wikiService.fetchArticleObservable()
+    	wikiService.fetchArticleObservable("Observable")
+    		.map(wikiService::parseMediaWikiText)
+    		.map(a -> a.getFirstParagraph())
+    		.map(p -> p.getText())
+    	.subscribe(System.out::println); 
     }
 
     @Test
@@ -28,6 +35,14 @@ public class Kata2BasicOperators {
     public void basicsB() throws Exception {
         // 3. split the Article (ParsedPage.getText()) in words (separator=" ")
         // 4. sum the number of letters of all words beginning with character 'a' to the console
+    	
+    	wikiService.fetchArticleObservable("Observable")
+    		.map(wikiService::parseMediaWikiText)
+    		.map(parsedPage -> parsedPage.getText().split(" "))
+    		.flatMap(s -> Observable.fromArray(s))
+    		.filter(s -> s.startsWith("a"))
+    		.count()
+    	.subscribe(); 
 
         // wikiService.fetchArticleObservable()
     }

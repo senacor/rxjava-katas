@@ -1,13 +1,18 @@
 package com.senacor.codecamp.reactive.katas.codecamp.rxjava2;
 
-import com.senacor.codecamp.reactive.services.WikiService;
-import com.senacor.codecamp.reactive.katas.KataClassification;
-import com.senacor.codecamp.reactive.util.DelayFunction;
-import com.senacor.codecamp.reactive.util.FlakinessFunction;
+import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.advanced;
+import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.hardcore;
+import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.mandatory;
+import static com.senacor.codecamp.reactive.util.ReactiveUtil.print;
+
+import java.util.concurrent.TimeUnit;
+
 import org.junit.Test;
 
-import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.*;
-import static com.senacor.codecamp.reactive.util.ReactiveUtil.print;
+import com.senacor.codecamp.reactive.katas.KataClassification;
+import com.senacor.codecamp.reactive.services.WikiService;
+import com.senacor.codecamp.reactive.util.DelayFunction;
+import com.senacor.codecamp.reactive.util.FlakinessFunction;
 
 /**
  * @author Andreas Keefer
@@ -25,7 +30,18 @@ public class Kata7bResilience {
                 FlakinessFunction.alwaysFail());
         WikiService wikiServiceBackup = WikiService.create(DelayFunction.staticDelay(100));
 
-        wikiService.fetchArticleObservable("42");
+        wikiService.fetchArticleObservable("42")
+        	.doOnError(e -> System.out.println(e))
+        	.onErrorResumeNext(wikiServiceBackup.fetchArticleObservable("42"))
+//        	.map(wikiService::parseMediaWikiText)
+//        	.map(parsedPage -> parsedPage.getFirstParagraph().getText())
+        	.doOnNext(n -> System.out.println(n))
+        	.test()
+            .awaitDone(2, TimeUnit.SECONDS)
+        	.assertNoErrors()
+            .assertValueCount(1)
+            .assertValue(value -> value.startsWith("{{Dieser Artikel|behandelt das Jahr 42"));
+
     }
 
     @Test
@@ -40,7 +56,20 @@ public class Kata7bResilience {
         WikiService wikiServiceBackup = WikiService.create(DelayFunction.staticDelay(100),
                 FlakinessFunction.alwaysFail());
 
-        wikiService.fetchArticleObservable("42");
+        wikiService.fetchArticleObservable("42")
+    	.doOnError(e -> System.out.println(e))
+    	.onErrorResumeNext(wikiServiceBackup.fetchArticleObservable("42"))
+    	.doOnError(e -> System.out.println(e))
+    	.onErrorReturn(e -> getCachedArticle("test article"))
+//    	.map(wikiService::parseMediaWikiText)
+//    	.map(parsedPage -> parsedPage.getFirstParagraph().getText())
+    	.doOnNext(n -> System.out.println(n))
+    	.test()
+        .awaitDone(2, TimeUnit.SECONDS)
+    	.assertNoErrors()
+        .assertValueCount(1)
+        .assertValue(value -> value.startsWith("{{Dieser Artikel|behandelt test article"));
+
     }
 
     private String getCachedArticle(String articleName) {

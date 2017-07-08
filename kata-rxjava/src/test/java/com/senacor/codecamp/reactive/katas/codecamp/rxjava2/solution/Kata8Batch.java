@@ -36,7 +36,7 @@ public class Kata8Batch {
     }
 
 
-    @Test
+//    @Test
     public void batch() throws Exception {
         // 1. do the same as above, but this time use the method #save(Iterable) to save a batch of articles.
         //    use a batch size of 5.
