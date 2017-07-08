@@ -14,6 +14,7 @@ import io.reactivex.subscribers.DefaultSubscriber;
 import java.io.BufferedReader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.List;
 
 import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.advanced;
 import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.mandatory;
@@ -58,15 +59,18 @@ public class Kata9Backpressure {
                 .flatMap(article -> wikiService.fetchArticleFlowable(article)
                         .subscribeOn(Schedulers.io()))
                 .subscribeOn(Schedulers.io())
-                .subscribe(new DefaultSubscriber<String>() {
+                .buffer(5)
+                .filter(l -> !l.isEmpty())
+                .subscribe(new DefaultSubscriber<List<String>>() {
                     @Override
                     protected void onStart() {
-                        request(5);
+                        request(10);
                     }
 
                     @Override
-                    public void onNext(String s) {
-                        request(1);
+                    public void onNext(List<String> s) {
+                        persistService.save(s);
+                        request(5);
                     }
 
                     @Override
