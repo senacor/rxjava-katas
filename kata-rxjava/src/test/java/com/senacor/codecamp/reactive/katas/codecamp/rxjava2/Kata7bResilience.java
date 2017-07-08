@@ -4,7 +4,11 @@ import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.katas.KataClassification;
 import com.senacor.codecamp.reactive.util.DelayFunction;
 import com.senacor.codecamp.reactive.util.FlakinessFunction;
+import com.senacor.codecamp.reactive.util.WaitMonitor;
+import io.reactivex.ObservableSource;
 import org.junit.Test;
+
+import java.util.concurrent.TimeUnit;
 
 import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.*;
 import static com.senacor.codecamp.reactive.util.ReactiveUtil.print;
@@ -25,7 +29,11 @@ public class Kata7bResilience {
                 FlakinessFunction.alwaysFail());
         WikiService wikiServiceBackup = WikiService.create(DelayFunction.staticDelay(100));
 
-        wikiService.fetchArticleObservable("42");
+        wikiService.fetchArticleObservable("42")
+                .onErrorResumeNext(wikiServiceBackup.fetchArticleObservable("42"))
+                .test()
+                .assertComplete()
+                .assertValue(s -> s.startsWith("{{Dieser Artikel|behandelt das Jahr 42,"));
     }
 
     @Test
@@ -40,7 +48,15 @@ public class Kata7bResilience {
         WikiService wikiServiceBackup = WikiService.create(DelayFunction.staticDelay(100),
                 FlakinessFunction.alwaysFail());
 
-        wikiService.fetchArticleObservable("42");
+        wikiService.fetchArticleObservable("42")
+                .onErrorResumeNext(
+                        wikiServiceBackup.fetchArticleObservable("42")
+                ).onErrorReturn((t) -> getCachedArticle("42"))
+                .test()
+                .awaitDone(2, TimeUnit.SECONDS)
+                .assertValue((value) -> value.startsWith("{{Dieser Artikel|behandelt"));
+
+
     }
 
     private String getCachedArticle(String articleName) {

@@ -4,8 +4,15 @@ import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.DelayFunction;
 import com.senacor.codecamp.reactive.util.FlakinessFunction;
 import com.senacor.codecamp.reactive.katas.KataClassification;
+import com.senacor.codecamp.reactive.util.WaitMonitor;
 import io.reactivex.Observable;
+import io.reactivex.schedulers.Schedulers;
 import org.junit.Test;
+
+import javax.swing.event.MouseInputListener;
+import java.util.concurrent.Callable;
+import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 
 import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.*;
 
@@ -22,11 +29,13 @@ public class Kata7aResilience {
 
         WikiService wikiService = WikiService.create(DelayFunction.staticDelay(1000));
 
-        fetchArticleObservableWithTimeout(wikiService, "42");
+        fetchArticleObservableWithTimeout(wikiService, "42")
+                .subscribe(System.out::println, Throwable::printStackTrace, () -> System.out.println("Done"));
     }
 
     private Observable<String> fetchArticleObservableWithTimeout(WikiService wikiService, String articleName) {
-        return wikiService.fetchArticleObservable(articleName);
+        return wikiService.fetchArticleObservable(articleName)
+                .timeout(500, TimeUnit.MILLISECONDS);
     }
 
     @Test
@@ -46,9 +55,20 @@ public class Kata7aResilience {
     public void ambiguous() throws Exception {
         // 5. We can do better! Take a look at the amb() operator to beat the “flakiness” and speed up
         //    fetching articles.
+        WaitMonitor waitMonitor = new WaitMonitor();
 
-        WikiService wikiService = WikiService.create(DelayFunction.withRandomDelay(200, 1000));
+        Function<Integer,Observable<String>> fetch = (delay) -> {
+            WikiService wikiService = WikiService.create(DelayFunction.staticDelay(delay));
+            return fetchArticleObservableWithTimeout(wikiService, "42").subscribeOn(Schedulers.io
+                    ());
+        };
 
-        fetchArticleObservableWithTimeout(wikiService, "42");
+        fetch.apply(1000).ambWith(fetch.apply(500)).ambWith(fetch.apply(200))
+                .subscribe(x -> {
+                    System.out.println(x);
+                    waitMonitor.complete();
+                });
+
+        waitMonitor.waitFor(5, TimeUnit.SECONDS);
     }
 }
