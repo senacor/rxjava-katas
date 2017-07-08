@@ -25,7 +25,8 @@ public class Kata3Combining {
     public void combiningObservable() throws Exception {
         // 1. fetch and parse Wikiarticle
         // 2. use ratingService.rateObservable() and countService.countWordsObervable(). Combine both information as JSON
-        //    and print the JSON to the console. Example {"articleName": "Superman", "rating": 3, "wordCount": 452}
+        //    and print the JSON to the console.
+        //    Example {"articleName": "Superman", "rating": 3, "wordCount": 452}
 
         final String articleName = "Vaporwave";
 
