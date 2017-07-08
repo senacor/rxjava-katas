@@ -41,7 +41,14 @@ public class ArticleBeingReadService {
          * 4. Test your implementation with wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS) and reduce millis to 10.
          */
 
-         return Observable.just(new WikiArticle(articleName, "Test", 1, 1));
+         return Observable.just(articleName)
+                 .flatMap(wikiService::fetchArticleObservable)
+                 .flatMap(wikiService::parseMediaWikiTextObservable)
+                 .flatMap(parsedPage -> {
+                     Observable<Integer> rating = ratingService.rateObservable(parsedPage);
+                     Observable<Integer> wordCount = countService.countWordsObservable(parsedPage);
+                     return Observable.zip(rating, wordCount, (r, wc) -> new WikiArticle(articleName, getArticleShortText(parsedPage), r, wc));
+                 });
 
     }
 
