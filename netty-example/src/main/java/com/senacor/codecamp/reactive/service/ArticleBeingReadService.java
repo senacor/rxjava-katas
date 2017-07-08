@@ -7,6 +7,7 @@ import com.senacor.codecamp.reactive.util.DelayFunction;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.Observable;
 import io.reactivex.functions.BiFunction;
+import io.reactivex.schedulers.Schedulers;
 
 
 /**
@@ -35,7 +36,8 @@ public class ArticleBeingReadService {
     }
 
     public Observable<WikiArticle> createArticle(final String articleName) {
-        return wikiService.fetchArticleObservable(articleName)
+        return Observable.just(articleName)
+                .flatMap(name -> wikiService.fetchArticleObservable(articleName).subscribeOn(Schedulers.io()))
                 .flatMap(article -> wikiService.parseMediaWikiTextObservable(article))
                 .flatMap(parsedPage -> Observable.zip(ratingService.rateObservable(parsedPage),
                         countService.countWordsObservable(parsedPage),
