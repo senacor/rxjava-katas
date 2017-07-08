@@ -7,6 +7,8 @@ import com.senacor.codecamp.reactive.util.DelayFunction;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.Observable;
 
+import java.util.concurrent.TimeUnit;
+
 
 /**
  * @author Andri Bremm
@@ -30,6 +32,7 @@ public class ArticleBeingReadService {
     public Observable<WikiArticle> articleBeingReadObservable() {
         return wikiService.wikiArticleBeingReadObservableBurst()
                 // or return wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS)
+        //return wikiService.wikiArticleBeingReadObservable(10, TimeUnit.MILLISECONDS)
                 .flatMap(this::createArticle);
     }
 
@@ -41,8 +44,14 @@ public class ArticleBeingReadService {
          * 4. Test your implementation with wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS) and reduce millis to 10.
          */
 
-         return Observable.just(new WikiArticle(articleName, "Test", 1, 1));
-
+          return wikiService.fetchArticleObservable(articleName)
+                  .flatMap(wikiService::parseMediaWikiTextObservable)
+                  .flatMap(parsedPage -> {
+                      Observable<Integer> rating = ratingService.rateObservable(parsedPage);
+                      Observable<Integer> wordCount = countService.countWordsObservable(parsedPage);
+                      Observable<String> articleShortText = Observable.just(getArticleShortText(parsedPage));
+                      return Observable.zip(rating, wordCount, articleShortText, (r, wc, ast) -> new WikiArticle(articleName, ast, r, wc));
+                  });
     }
 
     private String getArticleShortText(ParsedPage parsedPage) {

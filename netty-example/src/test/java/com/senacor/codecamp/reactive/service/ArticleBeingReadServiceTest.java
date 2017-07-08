@@ -26,7 +26,7 @@ public class ArticleBeingReadServiceTest {
     }
 
     @Test
-    @Ignore
+    //@Ignore
     public void createArticle() throws Exception {
         service.createArticle(ARTICLE.getName())
                 .test()
