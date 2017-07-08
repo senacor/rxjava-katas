@@ -6,6 +6,7 @@ import com.senacor.codecamp.reactive.util.FlakinessFunction;
 import com.senacor.codecamp.reactive.katas.KataClassification;
 import com.senacor.codecamp.reactive.util.WaitMonitor;
 import io.reactivex.Observable;
+import io.reactivex.schedulers.Schedulers;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -63,8 +64,9 @@ public class Kata7aResilience {
         WikiService wikiService = WikiService.create(DelayFunction.withRandomDelay(200, 1000));
 
         fetchArticleObservableWithTimeout(wikiService, "42")
-                .ambWith(fetchArticleObservableWithTimeout(wikiService, "42").delay(500, TimeUnit.MILLISECONDS))
-                .ambWith(fetchArticleObservableWithTimeout(wikiService, "42").delay(1000, TimeUnit.MILLISECONDS))
+                .ambWith(fetchArticleObservableWithTimeout(wikiService, "42").delay(500, TimeUnit.MILLISECONDS).subscribeOn(Schedulers.io()))
+                .ambWith(fetchArticleObservableWithTimeout(wikiService, "42").delay(2000, TimeUnit.MILLISECONDS).subscribeOn(Schedulers.io()))
+                .subscribeOn(Schedulers.io())
                 .doOnNext((System.out::println))
                 .test()
                 .awaitDone(10, TimeUnit.SECONDS);

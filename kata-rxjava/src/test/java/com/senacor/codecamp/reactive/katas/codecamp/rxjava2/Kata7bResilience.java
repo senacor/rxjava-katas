@@ -79,7 +79,10 @@ public class Kata7bResilience {
                 FlakinessFunction.failCountDown(4));
 
         wikiService.fetchArticleObservable("42")
-                .retryWhen(attempts -> attempts.zipWith(Observable.range(1, 5), (n, i) -> i).flatMap(i -> Observable.timer(i^2 * 100, TimeUnit.MILLISECONDS)))
+                .retryWhen(attempts -> attempts
+                        .zipWith(Observable.range(1, 5), (n, i) -> i)
+                                .flatMap(i -> Observable.timer(i^2 * 100, TimeUnit.MILLISECONDS))
+                )
                 .subscribeOn(Schedulers.io())
                 .test()
                 .awaitDone(10, TimeUnit.SECONDS)
