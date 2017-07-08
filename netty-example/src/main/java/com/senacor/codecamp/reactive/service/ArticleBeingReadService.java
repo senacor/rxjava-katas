@@ -6,6 +6,9 @@ import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.DelayFunction;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.reactivex.Observable;
+import io.reactivex.schedulers.Schedulers;
+
+import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -28,8 +31,9 @@ public class ArticleBeingReadService {
     }
 
     public Observable<WikiArticle> articleBeingReadObservable() {
-        return wikiService.wikiArticleBeingReadObservableBurst()
-                // or return wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS)
+//        return wikiService.wikiArticleBeingReadObservableBurst()
+//                 or
+        return wikiService.wikiArticleBeingReadObservable(10, TimeUnit.MILLISECONDS)
                 .flatMap(this::createArticle);
     }
 
@@ -41,8 +45,26 @@ public class ArticleBeingReadService {
          * 4. Test your implementation with wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS) and reduce millis to 10.
          */
 
-         return Observable.just(new WikiArticle(articleName, "Test", 1, 1));
+        return wikiService.fetchArticleObservable(articleName)
+                .subscribeOn(Schedulers.io())
+                .map(wikiService::parseMediaWikiText).flatMap(
+                parsedPage -> {
+                    Observable<String> articleContent =
+                            Observable.just(parsedPage)
+                                    .map(this::getArticleShortText)
+                                .onErrorReturnItem("");
+                    Observable<Integer> articleRating =
+                            ratingService.rateObservable(parsedPage).subscribeOn(Schedulers.computation())
+                                    .onErrorReturnItem(0);
+                    Observable<Integer> articleLength =
+                            countService.countWordsObservable(parsedPage).subscribeOn(Schedulers.computation())
+                                    .onErrorReturnItem(0);
 
+                    return Observable.zip(articleContent, articleRating, articleLength,
+                            (content, rating, length) -> new WikiArticle(articleName, content, rating, length))
+                            .filter(wikiArticle -> wikiArticle.getRating() != 0);
+                }
+        );
     }
 
     private String getArticleShortText(ParsedPage parsedPage) {
