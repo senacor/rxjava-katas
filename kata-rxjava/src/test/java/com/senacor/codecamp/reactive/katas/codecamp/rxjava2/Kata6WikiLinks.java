@@ -37,7 +37,6 @@ public class Kata6WikiLinks {
                         s ->
                                 getInternalLinksFromArticle(s.getTarget())
                                         .map(u -> new LinkPair(s.getText(), u.getText()))
-                                        .subscribeOn(Schedulers.io())
                 )
                 .distinct()
                 .subscribe(System.out::println, Throwable::printStackTrace, waitMonitor::complete);
@@ -50,11 +49,10 @@ public class Kata6WikiLinks {
         return wikiService.fetchArticleObservable(articleName)
                 .map(wikiService::parseMediaWikiText)
                 .flatMap(parsedPage -> Observable.fromIterable(parsedPage.getSections()))
-                .flatMap(s -> Observable.fromIterable(s.getLinks(Link.type.INTERNAL)));
+                .flatMap(s -> Observable.fromIterable(s.getLinks(Link.type.INTERNAL)))
+                .subscribeOn(Schedulers.io());
     }
-
 }
-
 
 class LinkPair {
     private String start;

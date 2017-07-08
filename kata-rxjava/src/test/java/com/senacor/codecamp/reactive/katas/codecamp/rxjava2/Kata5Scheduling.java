@@ -41,12 +41,11 @@ public class Kata5Scheduling {
                 // 4. use the ratingService.rateObservable() and #countWordsObervable() to combine both as JSON
                 //    and print the JSON to the console. Example {"rating": 3, "wordCount": 452}
                 .flatMap(
-                        parsedPage -> {
-                            Observable rating = ratingService.rateObservable(parsedPage).subscribeOn(Schedulers.computation());
-                            Observable wordCount = countService.countWordsObservable(parsedPage).observeOn(Schedulers.computation());
-                            return Observable.zip(rating, wordCount,
-                                    (r, c) -> String.format("{\"rating\": %s, \"wordCount\": %s}", r, c)).subscribeOn(Schedulers.computation());
-                        })
+                        parsedPage -> Observable.zip(
+                                ratingService.rateObservable(parsedPage).subscribeOn(Schedulers.computation()),
+                                countService.countWordsObservable(parsedPage).observeOn(Schedulers.computation()),
+                                (r, c) -> String.format("{\"rating\": %s, \"wordCount\": %s}", r, c)
+                        ).subscribeOn(Schedulers.computation()))
                 .subscribe(System.out::println,
                         (e) -> System.err.println(e.getLocalizedMessage()),
                         waitMonitor::complete
