@@ -3,7 +3,11 @@ package com.senacor.codecamp.reactive.katas.codecamp.rxjava2;
 import com.senacor.codecamp.reactive.katas.KataClassification;
 import com.senacor.codecamp.reactive.services.PersistService;
 import com.senacor.codecamp.reactive.services.WikiService;
+import com.senacor.codecamp.reactive.util.WaitMonitor;
+import io.reactivex.Observable;
 import org.junit.Test;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author Andreas Keefer
@@ -21,7 +25,13 @@ public class Kata8Batch {
         // 3. save the article (PersistService.save(String)). The service returns the execution time
         // 4. sum the execution time of the service calls and print the result
 
-        wikiService.wikiArticleBeingReadObservableBurst();
+        wikiService.wikiArticleBeingReadObservableBurst()
+                .takeUntil(Observable.timer(2, TimeUnit.SECONDS))
+                .map(persistService::save)
+                .reduce(0L, Long::sum)
+                .doOnSuccess(System.out::println)
+                .test()
+                .awaitDone(2, TimeUnit.SECONDS);
     }
 
 
@@ -32,7 +42,14 @@ public class Kata8Batch {
         //    use a batch size of 5.
         //    Please note that this is a stream - you can not wait until all articles are delivered to save everything in a batch
 
-        wikiService.wikiArticleBeingReadObservableBurst();
+        wikiService.wikiArticleBeingReadObservableBurst()
+                .take(2, TimeUnit.SECONDS)
+                .buffer(500, TimeUnit.MILLISECONDS, 5)
+                .map(persistService::save)
+                .reduce(0L, Long::sum)
+                .doOnSuccess(System.out::println)
+                .test()
+                .awaitDone(4, TimeUnit.SECONDS);
     }
 
     @Test
