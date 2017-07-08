@@ -41,14 +41,15 @@ public class ArticleBeingReadService {
                         countService.countWordsObservable(parsedPage),
                         zipFunction(articleName, parsedPage)));
 
-          /* Tasks:
+        /* Tasks:
          * 1. fetch the article using wikiService.fetchArticleObservable
+         * Hint: there is an existing Test (ArticleBeingReadServiceTest) which is ignored. Remove the @Ignored
+         *       Annotation and implement all 3 Tasks Test-Driven.
          * 2. parse the article using wikiService::parseMediaWikiTextObservable
-         * 3. calculate a rating (ratingService.rate) and the word count (countService.countWords) for the article. Store the results in a WikiArtikel object
-         * 4. Test your implementation with wikiService.wikiArticleBeingReadObservable(100, TimeUnit.MILLISECONDS) and reduce millis to 10.
+         * 3. calculate a rating (ratingService.rate) and the word count (countService.countWords) for the article. Store the results in a WikiArticle object
          */
 
-//         return Observable.just(new WikiArticle(articleName, "Test", 1, 1));
+ //        return Observable.just(new WikiArticle(articleName, "Test", 1, 1));
 
     }
 
