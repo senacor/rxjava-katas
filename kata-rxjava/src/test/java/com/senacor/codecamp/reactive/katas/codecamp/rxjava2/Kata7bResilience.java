@@ -25,7 +25,14 @@ public class Kata7bResilience {
                 FlakinessFunction.alwaysFail());
         WikiService wikiServiceBackup = WikiService.create(DelayFunction.staticDelay(100));
 
-        wikiService.fetchArticleObservable("42");
+        wikiService.fetchArticleObservable("42")
+                .test()
+                .assertError(Exception.class);
+
+        wikiService.fetchArticleObservable("42")
+                .onErrorResumeNext(wikiServiceBackup.fetchArticleObservable("42"))
+                .test()
+                .assertComplete();
     }
 
     @Test
@@ -33,14 +40,27 @@ public class Kata7bResilience {
     public void defaultValueBackup() throws Exception {
         // 4. if the call to the 'wikiServiceBackup' also fails, return a default value (e.g. 'getCachedArticle')
         // 5. verify the behavior with tests
-
+        String wikiArticle = "42";
 
         WikiService wikiService = WikiService.create(DelayFunction.staticDelay(10),
                 FlakinessFunction.alwaysFail());
         WikiService wikiServiceBackup = WikiService.create(DelayFunction.staticDelay(100),
                 FlakinessFunction.alwaysFail());
 
-        wikiService.fetchArticleObservable("42");
+        wikiService.fetchArticleObservable(wikiArticle)
+                .test()
+                .assertError(Exception.class);
+
+        wikiService.fetchArticleObservable(wikiArticle)
+                .onErrorResumeNext(wikiServiceBackup.fetchArticleObservable(wikiArticle))
+                .test()
+                .assertError(Exception.class);
+
+        wikiService.fetchArticleObservable(wikiArticle)
+                .onErrorResumeNext(wikiServiceBackup.fetchArticleObservable(wikiArticle))
+                .onErrorReturn(err -> getCachedArticle(wikiArticle))
+                .test()
+                .assertComplete();
     }
 
     private String getCachedArticle(String articleName) {
@@ -53,5 +73,14 @@ public class Kata7bResilience {
     public void exponentialRetry() throws Exception {
         // 6. insert in this example a retry strategy: 3 retries with an exponential back-off
         //    (e.g wait 100ms for the first retry, 400ms for the second retry and 900ms for the 3rd retry)
+        String wikiArticle = "42";
+
+        WikiService wikiService = WikiService.create(DelayFunction.staticDelay(2000),
+                FlakinessFunction.failCountDown(3));
+
+        wikiService.fetchArticleObservable(wikiArticle)
+                .retryWhen((err, no) -> {
+                    Thread.sleep(Math.pow(no, 2) * 100);
+                });
     }
 }
