@@ -61,29 +61,7 @@ public class Kata9Backpressure {
                 .subscribeOn(Schedulers.io())
                 .buffer(5)
                 .filter(l -> !l.isEmpty())
-                .subscribe(new DefaultSubscriber<List<String>>() {
-                    @Override
-                    protected void onStart() {
-                        request(10);
-                    }
-
-                    @Override
-                    public void onNext(List<String> s) {
-                        persistService.save(s);
-                        request(5);
-                    }
-
-                    @Override
-                    public void onError(Throwable throwable) {
-                        throwable.printStackTrace();
-                    }
-
-                    @Override
-                    public void onComplete() {
-                        System.out.println("Completed");
-                        monitor.complete();
-                    }
-                });
+                .subscribe(new BufferedWikiSaver(monitor));
 
         monitor.waitFor(120, SECONDS);
     }
@@ -107,5 +85,35 @@ public class Kata9Backpressure {
                 },
                 BufferedReader::close
         );
+    }
+
+    private class BufferedWikiSaver extends DefaultSubscriber<List<String>> {
+        private final WaitMonitor monitor;
+
+        BufferedWikiSaver(WaitMonitor monitor) {
+            this.monitor = monitor;
+        }
+
+        @Override
+        protected void onStart() {
+            request(10);
+        }
+
+        @Override
+        public void onNext(List<String> s) {
+            persistService.save(s);
+            request(5);
+        }
+
+        @Override
+        public void onError(Throwable throwable) {
+            throwable.printStackTrace();
+        }
+
+        @Override
+        public void onComplete() {
+            System.out.println("Completed");
+            monitor.complete();
+        }
     }
 }
