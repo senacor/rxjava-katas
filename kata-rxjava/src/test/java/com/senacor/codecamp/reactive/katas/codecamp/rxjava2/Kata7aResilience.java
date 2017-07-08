@@ -5,6 +5,7 @@ import com.senacor.codecamp.reactive.util.DelayFunction;
 import com.senacor.codecamp.reactive.util.FlakinessFunction;
 import com.senacor.codecamp.reactive.katas.KataClassification;
 import io.reactivex.Observable;
+import io.reactivex.schedulers.Schedulers;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;

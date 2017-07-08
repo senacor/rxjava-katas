@@ -6,6 +6,8 @@ import com.senacor.codecamp.reactive.util.DelayFunction;
 import com.senacor.codecamp.reactive.util.FlakinessFunction;
 import org.junit.Test;
 
+import java.util.concurrent.TimeUnit;
+
 import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.*;
 import static com.senacor.codecamp.reactive.util.ReactiveUtil.print;
 
@@ -25,7 +27,12 @@ public class Kata7bResilience {
                 FlakinessFunction.alwaysFail());
         WikiService wikiServiceBackup = WikiService.create(DelayFunction.staticDelay(100));
 
-        wikiService.fetchArticleObservable("42");
+        wikiService.fetchArticleObservable("42")
+                .onErrorResumeNext(wikiServiceBackup.fetchArticleObservable("42"))
+                .test()
+                .awaitDone(5, TimeUnit.SECONDS)
+                .assertValueCount(1)
+                .assertComplete();
     }
 
     @Test
@@ -40,7 +47,14 @@ public class Kata7bResilience {
         WikiService wikiServiceBackup = WikiService.create(DelayFunction.staticDelay(100),
                 FlakinessFunction.alwaysFail());
 
-        wikiService.fetchArticleObservable("42");
+        wikiService.fetchArticleObservable("42")
+                .onErrorResumeNext(wikiServiceBackup.fetchArticleObservable("42"))
+                .onErrorReturn(t -> getCachedArticle("42"))
+                .doOnNext(System.out::println)
+                .test()
+                .awaitDone(5, TimeUnit.SECONDS)
+                .assertValueCount(1)
+                .assertComplete();
     }
 
     private String getCachedArticle(String articleName) {
