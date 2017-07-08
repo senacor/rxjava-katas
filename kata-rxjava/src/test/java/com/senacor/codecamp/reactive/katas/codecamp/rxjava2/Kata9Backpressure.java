@@ -6,20 +6,24 @@ import com.senacor.codecamp.reactive.katas.KataClassification;
 import com.senacor.codecamp.reactive.util.DelayFunction;
 import com.senacor.codecamp.reactive.util.FlakinessFunction;
 import com.senacor.codecamp.reactive.util.WaitMonitor;
+import io.reactivex.Flowable;
 import io.reactivex.Observable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.plugins.RxJavaPlugins;
 import io.reactivex.schedulers.Schedulers;
+import io.reactivex.subscribers.DefaultSubscriber;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.List;
 
 import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.advanced;
 import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.mandatory;
 import static com.senacor.codecamp.reactive.util.ReactiveUtil.print;
+import static java.util.concurrent.TimeUnit.MILLISECONDS;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 /**
@@ -55,20 +59,37 @@ public class Kata9Backpressure {
         //String fileName = "articles.100000.txt";
         //String fileName = "articles.1000000.txt";
 
-        Disposable subscriber = readWikiArticlesFromFile(fileName)
+        readWikiArticlesFromFileFlowable(fileName)
                 .doOnNext(next -> print("reading article: %s", next))
-                .flatMap(article -> wikiService.fetchArticleObservable(article)
+                .flatMap(article -> wikiService.fetchArticleFlowable(article)
                         .subscribeOn(Schedulers.io()))
+                .buffer(5)
                 .subscribeOn(Schedulers.io())
-                .subscribe(persistService::save,
-                        Throwable::printStackTrace,
-                        () -> {
-                            print("complete!");
-                            monitor.complete();
-                        });
+                .subscribe(new DefaultSubscriber<List<String>>() {
+                    @Override
+                    protected void onStart() {
+                        request(20);
+                    }
+
+                    @Override
+                    public void onNext(List<String> s) {
+                        persistService.save(s);
+                        request(5);
+                    }
+
+                    @Override
+                    public void onError(Throwable t) {
+                        t.printStackTrace();
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        print("complete!");
+                        monitor.complete();
+                    }
+                });
 
         monitor.waitFor(120, SECONDS);
-        subscriber.dispose();
     }
 
     /**
@@ -103,5 +124,19 @@ public class Kata9Backpressure {
                 }
             }
         });
+    }
+
+    private Flowable<String> readWikiArticlesFromFileFlowable(String fileName) {
+        return Flowable.generate(
+                () -> Files.newBufferedReader(Paths.get(ClassLoader.getSystemResource(fileName).toURI())),
+                (bufferedReader, stringEmitter) -> {
+                    String line = bufferedReader.readLine();
+                    if(line != null)
+                        stringEmitter.onNext(line);
+                    else
+                        stringEmitter.onComplete();
+                },
+                BufferedReader::close
+                );
     }
 }
