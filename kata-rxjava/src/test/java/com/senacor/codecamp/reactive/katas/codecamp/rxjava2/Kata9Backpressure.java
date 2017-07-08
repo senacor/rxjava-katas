@@ -74,7 +74,7 @@ public class Kata9Backpressure {
                     @Override
                     public void onNext(List<String> s) {
                         persistService.save(s);
-                        request(5);
+                        request(1);
                     }
 
                     @Override
