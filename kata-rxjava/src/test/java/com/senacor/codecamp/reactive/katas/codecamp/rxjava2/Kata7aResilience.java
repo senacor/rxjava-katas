@@ -7,7 +7,10 @@ import com.senacor.codecamp.reactive.katas.KataClassification;
 import io.reactivex.Observable;
 import org.junit.Test;
 
+import java.util.concurrent.TimeUnit;
+
 import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.*;
+import static com.senacor.codecamp.reactive.util.FlakinessFunction.failCountDown;
 
 /**
  * @author Andreas Keefer
@@ -22,7 +25,9 @@ public class Kata7aResilience {
 
         WikiService wikiService = WikiService.create(DelayFunction.staticDelay(1000));
 
-        fetchArticleObservableWithTimeout(wikiService, "42");
+        fetchArticleObservableWithTimeout(wikiService, "42")
+            .timeout(500, TimeUnit.MILLISECONDS)
+            .subscribe(next -> System.out.print(next));
     }
 
     private Observable<String> fetchArticleObservableWithTimeout(WikiService wikiService, String articleName) {
@@ -36,10 +41,12 @@ public class Kata7aResilience {
         // 4. verify this behavior with tests
 
         WikiService wikiService = WikiService.create(DelayFunction.staticDelay(400),
-                FlakinessFunction.failCountDown(1));
+                failCountDown(1));
 
-        fetchArticleObservableWithTimeout(wikiService, "42");
-    }
+        fetchArticleObservableWithTimeout(wikiService, "42")
+                .retryWhen(attempts -> Observable.timer(1, TimeUnit.SECONDS));
+                }
+
 
     @Test
     @KataClassification(nightmare)

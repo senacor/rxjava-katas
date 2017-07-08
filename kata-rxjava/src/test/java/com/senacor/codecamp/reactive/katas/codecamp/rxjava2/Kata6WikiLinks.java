@@ -2,7 +2,10 @@ package com.senacor.codecamp.reactive.katas.codecamp.rxjava2;
 
 import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.katas.KataClassification;
+import de.tudarmstadt.ukp.wikipedia.parser.Link;
 import org.junit.Test;
+
+import io.reactivex.Observable;
 
 import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.nightmare;
 
@@ -23,6 +26,10 @@ public class Kata6WikiLinks {
         // 4. measure the performance and optimize the performance with scheduler
         // 5. do not print a combination <Start_Artikel> -> <Link/Artikel_Name> twice
         //wikiService.fetchArticleObservable(...);
+
+
+
+
     }
 
 }

@@ -35,7 +35,7 @@ public class Kata5Scheduling {
         // 2. take only the first 20 articles
             .take(20)
               //  .observeOn(Schedulers.io())
-                .map(wikiService::fetchArticle)
+                .map((wikiArticle) -> wikiService.fetchArticle(wikiArticle)).subscribeOn(Schedulers.io())
                 .map(wikiService::parseMediaWikiText)
                 //.observeOn(Schedulers.io())
         // 3. load and parse the article
