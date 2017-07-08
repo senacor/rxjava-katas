@@ -42,9 +42,13 @@ public final class Server {
     private static final int PORT = Integer.parseInt(System.getProperty("port", "8080"));
     private static final String WEBSOCKET_PATH = "/ws";
 
-    private static final String STATIC_FILE_ROOT_DIR = SystemPropertyUtil.get("user.dir") + separator + "netty-example" + separator + "static";
+    private static String STATIC_FILE_ROOT_DIR = SystemPropertyUtil.get("user.dir") + separator + "netty-example" + separator + "static";
 
     public static void main(String[] args) throws Exception {
+        // TODO: replace quick fix
+        STATIC_FILE_ROOT_DIR = STATIC_FILE_ROOT_DIR.replace("netty-example" + separator+ "netty-example", "netty-example");
+        System.out.println("STATIC_FILE_ROOT_DIR=" + STATIC_FILE_ROOT_DIR);
+
         EventLoopGroup bossGroup = new NioEventLoopGroup(1);
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {
