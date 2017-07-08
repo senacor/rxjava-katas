@@ -1,19 +1,17 @@
 package com.senacor.codecamp.reactive.katas.codecamp.rxjava2;
 
+import com.senacor.codecamp.reactive.katas.KataClassification;
 import com.senacor.codecamp.reactive.services.PersistService;
 import com.senacor.codecamp.reactive.services.WikiService;
-import com.senacor.codecamp.reactive.katas.KataClassification;
 import com.senacor.codecamp.reactive.util.DelayFunction;
 import com.senacor.codecamp.reactive.util.FlakinessFunction;
 import com.senacor.codecamp.reactive.util.WaitMonitor;
-import io.reactivex.Observable;
-import io.reactivex.disposables.Disposable;
+import io.reactivex.Flowable;
 import io.reactivex.plugins.RxJavaPlugins;
 import io.reactivex.schedulers.Schedulers;
+import io.reactivex.subscribers.DefaultSubscriber;
 
 import java.io.BufferedReader;
-import java.io.IOException;
-import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -55,20 +53,35 @@ public class Kata9Backpressure {
         //String fileName = "articles.100000.txt";
         //String fileName = "articles.1000000.txt";
 
-        Disposable subscriber = readWikiArticlesFromFile(fileName)
+        readWikiArticlesFromFile(fileName)
                 .doOnNext(next -> print("reading article: %s", next))
-                .flatMap(article -> wikiService.fetchArticleObservable(article)
+                .flatMap(article -> wikiService.fetchArticleFlowable(article)
                         .subscribeOn(Schedulers.io()))
                 .subscribeOn(Schedulers.io())
-                .subscribe(persistService::save,
-                        Throwable::printStackTrace,
-                        () -> {
-                            print("complete!");
-                            monitor.complete();
-                        });
+                .subscribe(new DefaultSubscriber<String>() {
+                    @Override
+                    protected void onStart() {
+                        request(5);
+                    }
+
+                    @Override
+                    public void onNext(String s) {
+                        request(1);
+                    }
+
+                    @Override
+                    public void onError(Throwable throwable) {
+                        throwable.printStackTrace();
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        System.out.println("Completed");
+                        monitor.complete();
+                    }
+                });
 
         monitor.waitFor(120, SECONDS);
-        subscriber.dispose();
     }
 
     /**
@@ -77,31 +90,18 @@ public class Kata9Backpressure {
      * @param fileName File name (e.g. "articles.100.txt")
      * @return stream of Article names from File (line-by-line)
      */
-    private Observable<String> readWikiArticlesFromFile(String fileName) {
-        return Observable.create(emitter -> {
-            BufferedReader bufferedReader;
-            try {
-                bufferedReader = Files.newBufferedReader(Paths.get(ClassLoader.getSystemResource(fileName).toURI()));
-            } catch (IOException | URISyntaxException e) {
-                emitter.onError(e);
-                return;
-            }
-            try {
-                String line = bufferedReader.readLine();
-                while (line != null && !emitter.isDisposed()) {
-                    emitter.onNext(line);
-                    line = bufferedReader.readLine();
-                }
-                emitter.onComplete();
-            } catch (IOException ex) {
-                emitter.onError(ex);
-            } finally {
-                try {
-                    bufferedReader.close();
-                } catch (IOException ex) {
-                    ex.printStackTrace();
-                }
-            }
-        });
+    private Flowable<String> readWikiArticlesFromFile(String fileName) {
+        return Flowable.generate(
+                () -> Files.newBufferedReader(Paths.get(ClassLoader.getSystemResource(fileName).toURI())),
+                (bufferedReader, stringEmitter) -> {
+                    String line = bufferedReader.readLine();
+                    if (line != null) {
+                        stringEmitter.onNext(line);
+                    } else {
+                        stringEmitter.onComplete();
+                    }
+                },
+                BufferedReader::close
+        );
     }
 }
