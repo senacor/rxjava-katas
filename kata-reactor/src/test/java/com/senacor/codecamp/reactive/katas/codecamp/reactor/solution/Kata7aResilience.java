@@ -113,7 +113,7 @@ public class Kata7aResilience {
 
     @Test
     public void ambiguous() throws Exception {
-        // 5. We can do better! Take a look at the amb() operator to beat the “flakiness” and speed up
+        // 5. We can do better! Take a look at the firstEmitting() operator to beat the “flakiness” and speed up
         //    fetching articles.
         Flux<String> timeout = fetchArticleFluxWithTimeout(WikiService.create(
                 DelayFunction.staticDelay(600)), "42")
