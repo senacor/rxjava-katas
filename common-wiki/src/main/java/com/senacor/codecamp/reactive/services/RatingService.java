@@ -4,6 +4,7 @@ import com.senacor.codecamp.reactive.services.integration.RatingBackend;
 import com.senacor.codecamp.reactive.services.integration.RatingBackendImpl;
 import com.senacor.codecamp.reactive.util.*;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
+import io.reactivex.Flowable;
 import io.reactivex.Observable;
 import reactor.core.publisher.Flux;
 
@@ -50,6 +51,10 @@ public class RatingService {
 
     public Flux<Integer> rateFlux(final ParsedPage parsedPage) {
         return Flux.just(parsedPage).map(this::rate);
+    }
+
+    public Flowable<Integer> rateFlowable(final ParsedPage parsedPage) {
+        return Flowable.just(parsedPage).map(this::rate);
     }
 
     public Future<Integer> rateFuture(ParsedPage parsedPage) {

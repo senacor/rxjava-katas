@@ -249,6 +249,18 @@ public class WikiService {
      * @return Wiki Artikel, der gerade gelesen wird. ATTENTION, this is a HOT observable, which emits the Items without
      * a subscription
      */
+    public Flowable<String> wikiArticleBeingReadFlowable(final long interval, final TimeUnit unit) {
+        return wikiArticleBeingReadObservable(interval, unit).toFlowable(BUFFER);
+    }
+
+    /**
+     * Erzeugt "ArticleBeingRead"-Events in der angegebenen Frequenz, also als Stream
+     *
+     * @param interval interval size in time units (see below)
+     * @param unit     time units to use for the interval size
+     * @return Wiki Artikel, der gerade gelesen wird. ATTENTION, this is a HOT observable, which emits the Items without
+     * a subscription
+     */
     public Observable<String> wikiArticleBeingReadObservable(final long interval, final TimeUnit unit) {
         final Random randomGenerator = new Random(8L);
         PublishSubject<String> publishSubject = PublishSubject.create();

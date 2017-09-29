@@ -60,4 +60,41 @@ public class Kata5Scheduling {
         monitor.waitFor(10, TimeUnit.SECONDS);
         subscription.dispose();
     }
+
+    /**
+     * 1. use the {@link WikiService#wikiArticleBeingReadFlux(long, TimeUnit)} to create a stream of
+     * wiki article names being read
+     * 2. take only the first 20 articles
+     * 3. load and parse the article
+     * 4. use the {@link RatingService#rateFlux(ParsedPage)} and {@link CountService#countWordsFlux(ParsedPage)}
+     * to combine both as JSON and print the JSON to the console. Example {"rating": 3, "wordCount": 452}
+     * 5. measure the runtime
+     * 6. add a scheduler to a specific position in the chain to reduce the execution time
+     */
+    @Test
+    public void schedulingWithParallelOperator() throws Exception {
+        final WaitMonitor monitor = new WaitMonitor();
+
+        Disposable subscription = wikiService.wikiArticleBeingReadFlux(50, TimeUnit.MILLISECONDS)
+                .take(20)
+                .parallel(20)
+                .runOn(Schedulers.elastic())
+                .map(wikiService::fetchArticle)
+                .map(wikiService::parseMediaWikiText)
+                .flatMap(parsedPage -> Flux.zip(ratingService.rateFlux(parsedPage),
+                        countService.countWordsFlux(parsedPage),
+                        (rating, wordCount) -> String.format(
+                                "{\"rating\": %s, \"wordCount\": %s}",
+                                rating, wordCount)))
+                .sequential()
+                .subscribe(next -> print("next: %s", next),
+                        Throwable::printStackTrace,
+                        () -> {
+                            print("complete!");
+                            monitor.complete();
+                        });
+
+        monitor.waitFor(10, TimeUnit.SECONDS);
+        subscription.dispose();
+    }
 }

@@ -3,6 +3,8 @@ package com.senacor.codecamp.reactive.example.scheduling;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import com.senacor.codecamp.reactive.util.ReactiveUtil;
 import com.senacor.codecamp.reactive.util.WaitMonitor;
+import io.reactivex.BackpressureStrategy;
+import io.reactivex.Flowable;
 import io.reactivex.Observable;
 import io.reactivex.Scheduler;
 import io.reactivex.disposables.Disposable;
@@ -11,6 +13,8 @@ import org.junit.Test;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+
+import static io.reactivex.BackpressureStrategy.BUFFER;
 
 /**
  * @author Andreas Keefer
@@ -85,6 +89,28 @@ public class SchedulingTest {
                 .doOnNext(integer -> ReactiveUtil.print("before getData: %s", integer))
                 .observeOn(Schedulers.io())
                 .flatMap(SchedulingTest::getDataSync)
+                .doOnNext(integer -> ReactiveUtil.print("after getData: %s", integer))
+                .subscribe(next -> ReactiveUtil.print("next: %s", next),
+                        Throwable::printStackTrace,
+                        () -> {
+                            ReactiveUtil.print("complete!");
+                            monitor.complete();
+                        });
+
+        monitor.waitFor(5000, TimeUnit.MILLISECONDS);
+        subscription.dispose();
+    }
+
+    @Test
+    public void testParallelOperator() throws Exception {
+        final WaitMonitor monitor = new WaitMonitor();
+
+        Disposable subscription = Flowable.range(1, 10)
+                .doOnNext(integer -> ReactiveUtil.print("before getData: %s", integer))
+                .parallel(10)
+                .runOn(Schedulers.io())
+                .flatMap(integer -> SchedulingTest.getDataSync(integer).toFlowable(BUFFER))
+                .sequential()
                 .doOnNext(integer -> ReactiveUtil.print("after getData: %s", integer))
                 .subscribe(next -> ReactiveUtil.print("next: %s", next),
                         Throwable::printStackTrace,

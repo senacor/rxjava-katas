@@ -4,6 +4,7 @@ import com.senacor.codecamp.reactive.services.integration.CounterBackend;
 import com.senacor.codecamp.reactive.services.integration.CounterBackendImpl;
 import com.senacor.codecamp.reactive.util.*;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
+import io.reactivex.Flowable;
 import io.reactivex.Observable;
 import reactor.core.publisher.Flux;
 
@@ -48,6 +49,10 @@ public class CountService {
 
     public Flux<Integer> countWordsFlux(final ParsedPage parsedPage) {
         return Flux.just(parsedPage).map(this::countWords);
+    }
+
+    public Flowable<Integer> countWordsFlowable(final ParsedPage parsedPage) {
+        return Flowable.just(parsedPage).map(this::countWords);
     }
 
     public Future<Integer> countWordsFuture(final ParsedPage parsedPage) {

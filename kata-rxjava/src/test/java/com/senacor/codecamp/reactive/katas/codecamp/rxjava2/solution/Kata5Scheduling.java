@@ -1,10 +1,11 @@
 package com.senacor.codecamp.reactive.katas.codecamp.rxjava2.solution;
 
-import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.services.CountService;
 import com.senacor.codecamp.reactive.services.RatingService;
+import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.ReactiveUtil;
 import com.senacor.codecamp.reactive.util.WaitMonitor;
+import io.reactivex.Flowable;
 import io.reactivex.Observable;
 import io.reactivex.Scheduler;
 import io.reactivex.disposables.Disposable;
@@ -58,4 +59,38 @@ public class Kata5Scheduling {
         subscription.dispose();
     }
 
+    @Test
+    public void schedulingWithParallelOperator() throws Exception {
+        // 1. use the WikiService#wikiArticleBeingReadObservable to create a stream of WikiArticle names being read
+        // 2. take only the first 20 articles
+        // 3. load and parse the article
+        // 4. use the ratingService.rateObservable() and #countWordsObervable() to combine both as JSON
+        //    and print the JSON to the console. Beispiel {"rating": 3, "wordCount": 452}
+        // 5. measure the runtime
+        // 6. add a scheduler to a specific position in the observable chain to reduce the execution time
+
+        final WaitMonitor monitor = new WaitMonitor();
+
+        Disposable subscription = wikiService.wikiArticleBeingReadFlowable(50, TimeUnit.MILLISECONDS)
+                .take(20)
+                .parallel(20)
+                .runOn(Schedulers.io())
+                .map(wikiService::fetchArticle)
+                .map(wikiService::parseMediaWikiText)
+                .flatMap(parsedPage -> Flowable.zip(ratingService.rateFlowable(parsedPage),
+                        countService.countWordsFlowable(parsedPage),
+                        (rating, wordCount) -> String.format(
+                                "{\"rating\": %s, \"wordCount\": %s}",
+                                rating, wordCount)))
+                .sequential()
+                .subscribe(next -> print("next: %s", next),
+                        Throwable::printStackTrace,
+                        () -> {
+                            print("complete!");
+                            monitor.complete();
+                        });
+
+        monitor.waitFor(10, TimeUnit.SECONDS);
+        subscription.dispose();
+    }
 }
