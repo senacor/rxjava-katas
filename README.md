@@ -78,9 +78,9 @@ Reactor (3.0.5.RELEASE) vs. RxJava 2 (2.0.6)
 - "**Datatypes**":
 <br>- Reactor has just `Mono`(0-1) and `Flux` (0..n)
 <br>- RxJava has `Single` (1), `Maybe` (0-1), `Completable` (0), `Observable` (0-n, no backpressure) and `Flowable` (0-n, backpressure)
-- **Doku** (March 2017)
-<br>- Reactor has a good, solid Doku with some TODO's/missing pats for some advanced Features 
-<br>- RxJava 2's Doku is not jet updated in total from 1.x to 2.x, but 1.x Doku is great.
+- **Documentation** (March 2017)
+<br>- Reactor has good, solid documentation with some TODO's/missing parts for advanced features 
+<br>- RxJava 2's documentation is not fully updated from 1.x to 2.x, but 1.x's documentation is great
 - **Testing**:
 <br> both have more or less equal testing support
 - **Operators**:
@@ -101,7 +101,7 @@ Spring reactive web
 ##### create a Microservice
 - Go to <https://start.spring.io>, set the Spring Boot version to 2.0.0(SNAPSHOT) and add the "Reactive Web" starter.  
 - then you can have a look in <https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-webflux>
-- reference DOKU: <http://docs.spring.io/spring-framework/docs/5.0.x/spring-framework-reference/html/web-reactive.html>
+- reference documentation: <http://docs.spring.io/spring-framework/docs/5.0.x/spring-framework-reference/html/web-reactive.html>
 - testing samples <https://github.com/spring-projects/spring-framework/tree/master/spring-test/src/test/java/org/springframework/test/web/reactive/server/samples>
 - short article about WebClient usage and Streaming DATA <https://spring.io/blog/2017/02/23/spring-framework-5-0-m5-update>
 - demos (looks a bit outdated) <https://github.com/sdeleuze/spring-reactive-playground>
