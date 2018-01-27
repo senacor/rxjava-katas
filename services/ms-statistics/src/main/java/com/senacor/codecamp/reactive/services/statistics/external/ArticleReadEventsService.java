@@ -26,9 +26,8 @@ public class ArticleReadEventsService {
         return webClient.get()
                 .uri(ub -> ub.pathSegment(ARTICLE, READ_EVENTS).build())
                 .accept(MediaType.TEXT_EVENT_STREAM)
-                .contentType(MediaType.TEXT_EVENT_STREAM)
                 .exchange()
-                .flatMap(response -> response.bodyToFlux(ArticleReadEvent[].class))
+                .flatMapMany(response -> response.bodyToFlux(ArticleReadEvent[].class))
                 .flatMap(articleReadEvents -> Flux.fromArray(articleReadEvents))
                 .log();
     }

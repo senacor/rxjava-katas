@@ -58,7 +58,7 @@ public class DebugWithReactorTest {
                         .map(sum -> "The team members:\n" +
                                 team.stream().collect(joining(", ")) +
                                 "\nproduced per member:\n" + sum + '\n')
-                ).single();
+                ).publishOn(Schedulers.single());
     }
 
     private Mono<String> querySalesReport() {
@@ -137,7 +137,7 @@ public class DebugWithReactorTest {
     public void positionOfEveryOperatorIsShown() {
         WaitMonitor monitor = new WaitMonitor();
 
-        Hooks.onOperator(Hooks.OperatorHook::operatorStacktrace);
+        Hooks.onOperatorDebug();
 
         Disposable subscription = reportsStream()
                 .subscribeOn(Schedulers.elastic())

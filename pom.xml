@@ -22,7 +22,7 @@
             <dependency>
                 <groupId>io.projectreactor</groupId>
                 <artifactId>reactor-bom</artifactId>
-                <version>Aluminium-SR1</version>
+                <version>Bismuth-SR5</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -30,12 +30,12 @@
             <dependency>
                 <groupId>io.reactivex.rxjava2</groupId>
                 <artifactId>rxjava</artifactId>
-                <version>2.0.7</version>
+                <version>2.1.9</version>
             </dependency>
             <dependency>
                 <groupId>com.github.akarnokd</groupId>
                 <artifactId>rxjava2-extensions</artifactId>
-                <version>0.16.0</version>
+                <version>0.18.5</version>
             </dependency>
             <dependency>
                 <groupId>com.github.davidmoten</groupId>
@@ -156,7 +156,7 @@
             <artifactId>reactor-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.projectreactor.addons</groupId>
+            <groupId>io.projectreactor</groupId>
             <artifactId>reactor-test</artifactId>
             <scope>test</scope>
         </dependency>
@@ -208,21 +208,6 @@
         <dependency>
             <groupId>de.ruedigermoeller</groupId>
             <artifactId>fst</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>io.vertx</groupId>
-            <artifactId>vertx-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.vertx</groupId>
-            <artifactId>vertx-core</artifactId>
-            <classifier>tests</classifier>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.vertx</groupId>
-            <artifactId>vertx-reactive-streams</artifactId>
         </dependency>
     </dependencies>
 
@@ -297,7 +282,7 @@
         <module>netty-example</module>
         <module>kata-rxjava</module>
         <module>kata-reactor</module>
-        <module>kata-vertx</module>
+        <!--<module>kata-vertx</module>-->
         <module>services</module>
     </modules>
 </project>

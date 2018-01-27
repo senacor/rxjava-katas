@@ -14,6 +14,13 @@
         <dependency>
             <groupId>com.senacor.codecamp.reactive</groupId>
             <artifactId>common-wiki</artifactId>
+            <exclusions>
+                <!-- exclude log4j to use default Spring Boot logback settings -->
+                <exclusion>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -33,7 +40,7 @@
         </dependency>
 
         <dependency>
-            <groupId>io.projectreactor.addons</groupId>
+            <groupId>io.projectreactor</groupId>
             <artifactId>reactor-test</artifactId>
             <scope>test</scope>
         </dependency>

@@ -39,6 +39,14 @@ public class ArticleService {
 
     /**
      * @param articleName article name
+     * @return fetched article from wikipedia as a media wiki formatted string
+     */
+    public String fetchArticleNonReactive(String articleName) {
+        return fetchArticle(articleName).block();
+    }
+
+    /**
+     * @param articleName article name
      * @return a rating of the wiki article from 1 to 5 'stars'
      */
     public Mono<Integer> rate(String articleName) {

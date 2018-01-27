@@ -7,8 +7,9 @@ import reactor.core.publisher.Mono;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.time.Duration;
 import java.util.List;
+
+import static java.time.Duration.ofMillis;
 
 /**
  * @author Michael Omann
@@ -34,8 +35,8 @@ public class DelayProxy extends DefaultProxyBehavior {
 
     @Override
     protected Publisher<?> handlePublisherReturnType(Publisher<?> publisher, Method m, Object[] args) {
-        return Mono.defer(() -> Mono.just(1).delayElement(Duration.ofMillis(delayFunction.delay(m.getName()))))
-                .flatMap(next -> publisher);
+        return Mono.defer(() -> Mono.just(1).delayElement(ofMillis(delayFunction.delay(m.getName()))))
+                .flatMapMany(next -> publisher);
     }
 
     @Override
