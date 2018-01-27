@@ -137,7 +137,7 @@ public class DebugWithReactorTest {
     public void positionOfEveryOperatorIsShown() {
         WaitMonitor monitor = new WaitMonitor();
 
-        Hooks.onOperator(Hooks.OperatorHook::operatorStacktrace);
+        Hooks.onOperatorDebug();
 
         Disposable subscription = reportsStream()
                 .subscribeOn(Schedulers.elastic())
