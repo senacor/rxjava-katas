@@ -1,5 +1,5 @@
 # Stand ZERO
-## webiste
+## website
 - Website wird nicht gelöscht
   - als extra top 5
 

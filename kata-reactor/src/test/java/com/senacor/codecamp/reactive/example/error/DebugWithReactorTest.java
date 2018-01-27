@@ -58,7 +58,7 @@ public class DebugWithReactorTest {
                         .map(sum -> "The team members:\n" +
                                 team.stream().collect(joining(", ")) +
                                 "\nproduced per member:\n" + sum + '\n')
-                ).single();
+                ).publishOn(Schedulers.single());
     }
 
     private Mono<String> querySalesReport() {

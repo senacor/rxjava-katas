@@ -32,7 +32,7 @@ public class Kata7bResilience {
 
         String wikiArticle = "42";
         StepVerifier.create(wikiService.fetchArticleFlux(wikiArticle)
-                .onErrorResumeWith(error -> wikiServiceBackup.fetchArticleFlux(wikiArticle))
+                .onErrorResume(error -> wikiServiceBackup.fetchArticleFlux(wikiArticle))
                 .subscribeOn(Schedulers.elastic()))
                 .expectNextMatches(value -> value.startsWith("{{Dieser Artikel|behandelt das Jahr 42"))
                 .verifyComplete();
@@ -50,7 +50,7 @@ public class Kata7bResilience {
 
         final String wikiArticle = "42";
         StepVerifier.create(wikiService.fetchArticleFlux(wikiArticle)
-                .onErrorResumeWith(error -> wikiServiceBackup.fetchArticleFlux(wikiArticle))
+                .onErrorResume(error -> wikiServiceBackup.fetchArticleFlux(wikiArticle))
                 .onErrorReturn(getCachedArticle(wikiArticle))
                 .subscribeOn(Schedulers.elastic()))
                 .expectNext("{{Dieser Artikel|behandelt 42}} ")
@@ -75,7 +75,7 @@ public class Kata7bResilience {
         final String wikiArticle = "42";
         StepVerifier.create(wikiService.fetchArticleFlux(wikiArticle)
                 .retryWhen(retryWithDelay(3, RetryDelay.exponential()))
-                .onErrorResumeWith(error -> wikiServiceBackup.fetchArticleFlux(wikiArticle))
+                .onErrorResume(error -> wikiServiceBackup.fetchArticleFlux(wikiArticle))
                 .onErrorReturn(getCachedArticle(wikiArticle))
                 .subscribeOn(Schedulers.elastic()))
                 .expectNextMatches(value -> value.startsWith("{{Dieser Artikel|behandelt das Jahr 42"))
