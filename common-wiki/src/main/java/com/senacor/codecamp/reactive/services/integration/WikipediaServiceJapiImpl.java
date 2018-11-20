@@ -5,9 +5,11 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.netty.handler.codec.http.HttpResponseStatus;
 import org.reactivestreams.Publisher;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import reactor.ipc.netty.http.client.HttpClient;
-import reactor.ipc.netty.http.client.HttpClientResponse;
+import reactor.netty.ByteBufFlux;
+import reactor.netty.http.client.HttpClient;
+import reactor.netty.http.client.HttpClientResponse;
 
 /**
  * @author Andreas Keefer
@@ -54,8 +56,10 @@ public class WikipediaServiceJapiImpl implements WikipediaServiceJapi {
     public Mono<String> getArticleNonBlocking(String name) {
         return Mono.just(name)
                 .map(this::buildQueryUrl)
-                .flatMap(this.client::get)
-                .flatMap(this::httpResponse2String)
+                .flatMapMany(url ->
+                        this.client.get()
+                                .uri(url)
+                                .response(this::httpResponse2String))
                 .reduce(String::concat)
                 .map((json) -> parseJsonContend(json, name));
 
@@ -74,18 +78,18 @@ public class WikipediaServiceJapiImpl implements WikipediaServiceJapi {
 
     private String parseJsonContend(String json, String name) {
         try {
-            JsonNode contentNode = OBJECT_MAPPER.readTree(json).findValue("*");
+            JsonNode contentNode = OBJECT_MAPPER.readTree(json).at("/query").findValue("*");
             return contentNode.asText();
         } catch (Exception e) {
             throw new ArticleNotFoundException("error parsing JSON article '" + name + "': " + json, e);
         }
     }
 
-    private Publisher<String> httpResponse2String(HttpClientResponse response) {
+    private Publisher<String> httpResponse2String(HttpClientResponse response, ByteBufFlux byteBufFlux) {
         if (!HttpResponseStatus.OK.equals(response.status())) {
-            throw new ArticleNotFoundException("HTTP status not OK: " + response.status());
+            return Flux.error(new ArticleNotFoundException("HTTP status not OK: " + response.status()));
         }
-        return response.receive().asString()
+        return byteBufFlux.asString()
                 .limitRate(1);
     }
 }

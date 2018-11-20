@@ -18,7 +18,7 @@ public class HttpVerticleTest extends VertxTestBase {
         waitUntil(() -> vertx.deploymentIDs().size() == 2);
         System.out.println("deployed verticles:" + vertx.deploymentIDs());
 
-        vertx.createHttpClient().getNow(8081, "localhost", "/?articleName=42", response -> {
+        vertx.createHttpClient().getNow(8181, "localhost", "/?articleName=42", response -> {
 
             assertEquals(200, response.statusCode());
             assertEquals("text/plain", response.headers().get("content-type"));

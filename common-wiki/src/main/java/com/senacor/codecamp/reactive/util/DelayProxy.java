@@ -35,7 +35,7 @@ public class DelayProxy extends DefaultProxyBehavior {
     @Override
     protected Publisher<?> handlePublisherReturnType(Publisher<?> publisher, Method m, Object[] args) {
         return Mono.defer(() -> Mono.just(1).delayElement(Duration.ofMillis(delayFunction.delay(m.getName()))))
-                .flatMap(next -> publisher);
+                .flatMapMany(next -> publisher);
     }
 
     @Override

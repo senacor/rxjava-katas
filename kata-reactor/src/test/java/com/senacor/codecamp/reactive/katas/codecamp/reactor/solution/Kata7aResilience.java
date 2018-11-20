@@ -128,7 +128,7 @@ public class Kata7aResilience {
                 .subscribeOn(Schedulers.elastic())
                 .retryWhen(retryWithDelay(3));
 
-        StepVerifier.create(Flux.firstEmitting(Arrays.asList(timeout, error, ok))
+        StepVerifier.create(Flux.first(Arrays.asList(timeout, error, ok))
                 .subscribeOn(Schedulers.elastic()))
                 .expectNextMatches(value -> value.startsWith("{{Dieser Artikel|behandelt das Jahr 42"))
                 .verifyComplete();
