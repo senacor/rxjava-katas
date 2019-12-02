@@ -66,3 +66,4 @@ com_crashlytics_export_strings.xml
 .settings/
 .springBeans
 .checkstyle
+/.mvn/wrapper/maven-wrapper.jar
