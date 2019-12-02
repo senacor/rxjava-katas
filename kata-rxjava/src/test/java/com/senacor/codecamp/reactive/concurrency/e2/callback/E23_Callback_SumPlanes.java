@@ -1,8 +1,8 @@
 package com.senacor.codecamp.reactive.concurrency.e2.callback;
 
-import com.senacor.codecamp.reactive.util.WaitMonitor;
 import com.senacor.codecamp.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.codecamp.reactive.concurrency.Summary;
+import com.senacor.codecamp.reactive.util.WaitMonitor;
 import org.junit.Test;
 
 import java.util.concurrent.LinkedBlockingQueue;

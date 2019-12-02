@@ -5,8 +5,8 @@ import com.senacor.codecamp.reactive.concurrency.Summary;
 import com.senacor.codecamp.reactive.concurrency.model.Article;
 import com.senacor.codecamp.reactive.concurrency.model.PlaneInfo;
 import com.senacor.codecamp.reactive.util.WaitMonitor;
-import io.reactivex.Observable;
-import io.reactivex.functions.Consumer;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.functions.Consumer;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;

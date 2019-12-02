@@ -5,10 +5,10 @@ import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.DelayFunction;
 import com.senacor.codecamp.reactive.util.FlakinessFunction;
 import com.senacor.codecamp.reactive.util.WaitMonitor;
-import io.reactivex.Flowable;
-import io.reactivex.plugins.RxJavaPlugins;
-import io.reactivex.schedulers.Schedulers;
-import io.reactivex.subscribers.DisposableSubscriber;
+import io.reactivex.rxjava3.core.Flowable;
+import io.reactivex.rxjava3.plugins.RxJavaPlugins;
+import io.reactivex.rxjava3.schedulers.Schedulers;
+import io.reactivex.rxjava3.subscribers.DisposableSubscriber;
 
 import java.io.IOException;
 import java.nio.file.Files;

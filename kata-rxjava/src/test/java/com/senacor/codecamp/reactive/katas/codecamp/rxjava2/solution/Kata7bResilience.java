@@ -1,12 +1,12 @@
 package com.senacor.codecamp.reactive.katas.codecamp.rxjava2.solution;
 
-import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.katas.codecamp.rxjava2.solution.Kata7aResilience.ErrorWithRetryCount;
+import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.DelayFunction;
 import com.senacor.codecamp.reactive.util.FlakinessFunction;
-import io.reactivex.Observable;
-import io.reactivex.ObservableSource;
-import io.reactivex.functions.Function;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.core.ObservableSource;
+import io.reactivex.rxjava3.functions.Function;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -30,7 +30,7 @@ public class Kata7bResilience {
 
         String wikiArticle = "42";
         wikiService.fetchArticleObservable(wikiArticle)
-                .onErrorResumeNext(wikiServiceBackup.fetchArticleObservable(wikiArticle))
+                .onErrorResumeNext(error -> wikiServiceBackup.fetchArticleObservable(wikiArticle))
                 .test()
                 .awaitDone(2, TimeUnit.SECONDS)
                 .assertNoErrors()
@@ -51,7 +51,7 @@ public class Kata7bResilience {
 
         final String wikiArticle = "42";
         wikiService.fetchArticleObservable(wikiArticle)
-                .onErrorResumeNext(wikiServiceBackup.fetchArticleObservable(wikiArticle))
+                .onErrorResumeNext(error -> wikiServiceBackup.fetchArticleObservable(wikiArticle))
                 .onErrorReturnItem(getCachedArticle(wikiArticle))
                 .test()
                 .awaitDone(2, TimeUnit.SECONDS)
@@ -79,7 +79,7 @@ public class Kata7bResilience {
         final String wikiArticle = "42";
         wikiService.fetchArticleObservable(wikiArticle)
                 .retryWhen(retryWithDelay(3, RetryDelay.exponential()))
-                .onErrorResumeNext(wikiServiceBackup.fetchArticleObservable(wikiArticle))
+                .onErrorResumeNext(error -> wikiServiceBackup.fetchArticleObservable(wikiArticle))
                 .onErrorReturnItem(getCachedArticle(wikiArticle))
                 .test()
                 .awaitDone(2, TimeUnit.SECONDS)

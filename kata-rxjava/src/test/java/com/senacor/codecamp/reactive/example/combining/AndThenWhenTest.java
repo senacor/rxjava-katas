@@ -1,7 +1,7 @@
 package com.senacor.codecamp.reactive.example.combining;
 
-import hu.akarnokd.rxjava2.joins.JoinObservable;
-import io.reactivex.Observable;
+import hu.akarnokd.rxjava3.joins.JoinObservable;
+import io.reactivex.rxjava3.core.Observable;
 import org.junit.Test;
 
 import static com.senacor.codecamp.reactive.util.ReactiveUtil.print;

@@ -1,6 +1,6 @@
 package com.senacor.codecamp.reactive.example.creating;
 
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 import org.junit.Test;
 
 import static com.senacor.codecamp.reactive.util.ReactiveUtil.print;

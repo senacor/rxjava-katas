@@ -5,7 +5,7 @@ import com.senacor.codecamp.reactive.services.RatingService;
 import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.DelayFunction;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 
 
 /**

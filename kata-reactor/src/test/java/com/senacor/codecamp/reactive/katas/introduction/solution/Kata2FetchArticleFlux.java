@@ -1,9 +1,9 @@
 package com.senacor.codecamp.reactive.katas.introduction.solution;
 
+import com.senacor.codecamp.reactive.concurrency.model.Article;
 import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.ReactiveUtil;
 import com.senacor.codecamp.reactive.util.WaitMonitor;
-import com.senacor.codecamp.reactive.concurrency.model.Article;
 import org.junit.Test;
 import reactor.core.publisher.Flux;
 

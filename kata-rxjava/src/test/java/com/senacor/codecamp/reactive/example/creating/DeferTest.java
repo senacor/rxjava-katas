@@ -1,7 +1,7 @@
 package com.senacor.codecamp.reactive.example.creating;
 
 import com.senacor.codecamp.reactive.util.ReactiveUtil;
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 import org.apache.commons.lang.math.RandomUtils;
 import org.junit.Test;
 

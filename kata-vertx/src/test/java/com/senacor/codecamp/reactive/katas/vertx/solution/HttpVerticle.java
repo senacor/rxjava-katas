@@ -1,7 +1,7 @@
 package com.senacor.codecamp.reactive.katas.vertx.solution;
 
 import com.senacor.codecamp.reactive.vertx.RxVertx;
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 import io.vertx.core.AbstractVerticle;
 
 import static com.senacor.codecamp.reactive.util.ReactiveUtil.print;

@@ -1,10 +1,10 @@
 package com.senacor.codecamp.reactive.katas.introduction;
 
-import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.concurrency.model.Article;
 import com.senacor.codecamp.reactive.concurrency.model.PlaneInfo;
 import com.senacor.codecamp.reactive.services.PlainInfoService;
-import io.reactivex.Observable;
+import com.senacor.codecamp.reactive.services.WikiService;
+import io.reactivex.rxjava3.core.Observable;
 import org.junit.Test;
 
 /**

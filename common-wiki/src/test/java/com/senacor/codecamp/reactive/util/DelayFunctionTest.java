@@ -1,7 +1,7 @@
 package com.senacor.codecamp.reactive.util;
 
-import hu.akarnokd.rxjava2.math.ObservableAverageDouble;
-import io.reactivex.Observable;
+import hu.akarnokd.rxjava3.math.ObservableAverageDouble;
+import io.reactivex.rxjava3.core.Observable;
 import org.junit.Test;
 
 import java.math.BigDecimal;

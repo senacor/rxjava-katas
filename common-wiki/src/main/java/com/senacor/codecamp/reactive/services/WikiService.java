@@ -6,10 +6,10 @@ import com.senacor.codecamp.reactive.services.integration.WikipediaServiceJapiIm
 import com.senacor.codecamp.reactive.services.integration.WikipediaServiceJapiMock;
 import com.senacor.codecamp.reactive.util.*;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
-import io.reactivex.Flowable;
-import io.reactivex.Observable;
-import io.reactivex.schedulers.Schedulers;
-import io.reactivex.subjects.PublishSubject;
+import io.reactivex.rxjava3.core.Flowable;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.schedulers.Schedulers;
+import io.reactivex.rxjava3.subjects.PublishSubject;
 import org.apache.commons.lang3.StringUtils;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -25,7 +25,7 @@ import java.util.concurrent.*;
 import java.util.function.Consumer;
 
 import static com.senacor.codecamp.reactive.util.ReactiveUtil.print;
-import static io.reactivex.BackpressureStrategy.BUFFER;
+import static io.reactivex.rxjava3.core.BackpressureStrategy.BUFFER;
 
 /**
  * @author Andreas Keefer
@@ -108,8 +108,8 @@ public class WikiService {
      */
     public Flux<String> fetchArticleFlux(final String wikiArticle) {
         return Flux.just(wikiArticle)
-                   .map(this::fetchArticle)
-                   .doOnNext(record(wikiArticle));
+                .map(this::fetchArticle)
+                .doOnNext(record(wikiArticle));
     }
 
     public Flowable<String> fetchArticleFlowable(final String wikiArticle) {
@@ -265,11 +265,11 @@ public class WikiService {
         final Random randomGenerator = new Random(8L);
         PublishSubject<String> publishSubject = PublishSubject.create();
         Observable.interval(interval, unit, Schedulers.computation())
-                  .map(time -> {
-                      String article = WIKI_ARTICLES.get(randomGenerator.nextInt(WIKI_ARTICLES.size()));
-                      print("wikiArticleBeingReadObservable=%s", article);
-                      return article;
-                  }).subscribe(publishSubject);
+                .map(time -> {
+                    String article = WIKI_ARTICLES.get(randomGenerator.nextInt(WIKI_ARTICLES.size()));
+                    print("wikiArticleBeingReadObservable=%s", article);
+                    return article;
+                }).subscribe(publishSubject);
 
         return publishSubject;
     }
@@ -300,18 +300,18 @@ public class WikiService {
         final Random randomGenerator = new Random(4L);
         PublishSubject<String> publishSubject = PublishSubject.create();
         ReactiveUtil.burstSource()
-                    .map(ignore -> {
-                        String article = WIKI_ARTICLES.get(randomGenerator.nextInt(WIKI_ARTICLES.size()));
-                        print("wikiArticleBeingReadObservable=" + article);
-                        return article;
-                    }).subscribe(publishSubject);
+                .map(ignore -> {
+                    String article = WIKI_ARTICLES.get(randomGenerator.nextInt(WIKI_ARTICLES.size()));
+                    print("wikiArticleBeingReadObservable=" + article);
+                    return article;
+                }).subscribe(publishSubject);
         return publishSubject;
     }
 
     public Observable<String> wikiArticleBeingReadObservableBurstOwn() {
         final Random randomGenerator = new Random(4L);
         return ReactiveUtil.burstSource()
-                           .map(ignore -> WIKI_ARTICLES.get(randomGenerator.nextInt(WIKI_ARTICLES.size())));
+                .map(ignore -> WIKI_ARTICLES.get(randomGenerator.nextInt(WIKI_ARTICLES.size())));
     }
 
     /**

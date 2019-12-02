@@ -1,8 +1,8 @@
 package com.senacor.codecamp.reactive.katas.codecamp.reactor;
 
-import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.katas.KataClassification;
 import com.senacor.codecamp.reactive.services.PersistService;
+import com.senacor.codecamp.reactive.services.WikiService;
 import org.junit.Test;
 
 import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.advanced;

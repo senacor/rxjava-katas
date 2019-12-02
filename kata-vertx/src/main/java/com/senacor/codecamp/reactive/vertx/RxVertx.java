@@ -1,8 +1,8 @@
 package com.senacor.codecamp.reactive.vertx;
 
-import io.reactivex.Flowable;
-import io.reactivex.Observable;
-import io.reactivex.subjects.PublishSubject;
+import io.reactivex.rxjava3.core.Flowable;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.subjects.PublishSubject;
 import io.vertx.core.Vertx;
 import io.vertx.core.streams.Pump;
 import io.vertx.core.streams.ReadStream;

@@ -1,9 +1,9 @@
 package com.senacor.codecamp.reactive.katas.codecamp.rxjava2;
 
-import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.katas.KataClassification;
 import com.senacor.codecamp.reactive.services.CountService;
 import com.senacor.codecamp.reactive.services.RatingService;
+import com.senacor.codecamp.reactive.services.WikiService;
 import org.junit.Test;
 
 import static com.senacor.codecamp.reactive.katas.KataClassification.Classification.mandatory;

@@ -1,8 +1,8 @@
 package com.senacor.codecamp.reactive.katas.introduction;
 
+import com.senacor.codecamp.reactive.concurrency.model.Article;
 import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.Watch;
-import com.senacor.codecamp.reactive.concurrency.model.Article;
 import org.junit.Rule;
 import org.junit.Test;
 

@@ -65,19 +65,14 @@
             </dependency>
             <!--RxJava 2-->
             <dependency>
-                <groupId>io.reactivex.rxjava2</groupId>
+                <groupId>io.reactivex.rxjava3</groupId>
                 <artifactId>rxjava</artifactId>
-                <version>2.2.15</version>
+                <version>3.0.0-RC5</version>
             </dependency>
             <dependency>
                 <groupId>com.github.akarnokd</groupId>
-                <artifactId>rxjava2-extensions</artifactId>
-                <version>0.20.10</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.davidmoten</groupId>
-                <artifactId>rxjava2-extras</artifactId>
-                <version>0.1.36</version>
+                <artifactId>rxjava3-extensions</artifactId>
+                <version>3.0.0-RC5</version>
             </dependency>
             <!-- Tools -->
             <dependency>
@@ -113,6 +108,13 @@
                 <artifactId>mockito-core</artifactId>
                 <version>3.2.0</version>
             </dependency>
+
+            <dependency>
+                <groupId>jakarta.activation</groupId>
+                <artifactId>jakarta.activation-api</artifactId>
+                <version>1.2.1</version>
+            </dependency>
+
             <!-- Testing -->
             <dependency>
                 <groupId>junit</groupId>
@@ -176,16 +178,12 @@
     <dependencies>
         <!--RxJava 2-->
         <dependency>
-            <groupId>io.reactivex.rxjava2</groupId>
+            <groupId>io.reactivex.rxjava3</groupId>
             <artifactId>rxjava</artifactId>
         </dependency>
         <dependency>
             <groupId>com.github.akarnokd</groupId>
-            <artifactId>rxjava2-extensions</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.github.davidmoten</groupId>
-            <artifactId>rxjava2-extras</artifactId>
+            <artifactId>rxjava3-extensions</artifactId>
         </dependency>
         <!-- Reactor -->
         <dependency>

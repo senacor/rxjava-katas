@@ -1,8 +1,8 @@
 package com.senacor.codecamp.reactive.concurrency;
 
+import com.senacor.codecamp.reactive.services.PlainInfoService;
 import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.Watch;
-import com.senacor.codecamp.reactive.services.PlainInfoService;
 import org.junit.Rule;
 
 import java.util.stream.Stream;

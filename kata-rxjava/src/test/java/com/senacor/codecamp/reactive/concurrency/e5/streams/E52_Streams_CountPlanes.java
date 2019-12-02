@@ -1,9 +1,9 @@
 package com.senacor.codecamp.reactive.concurrency.e5.streams;
 
-import com.senacor.codecamp.reactive.concurrency.model.PlaneInfo;
 import com.senacor.codecamp.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.codecamp.reactive.concurrency.Summary;
 import com.senacor.codecamp.reactive.concurrency.model.Article;
+import com.senacor.codecamp.reactive.concurrency.model.PlaneInfo;
 import org.junit.Test;
 
 import java.util.Arrays;

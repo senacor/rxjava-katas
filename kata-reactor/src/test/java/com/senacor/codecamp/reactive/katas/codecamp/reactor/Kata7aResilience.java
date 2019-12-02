@@ -1,9 +1,9 @@
 package com.senacor.codecamp.reactive.katas.codecamp.reactor;
 
+import com.senacor.codecamp.reactive.katas.KataClassification;
 import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.DelayFunction;
 import com.senacor.codecamp.reactive.util.FlakinessFunction;
-import com.senacor.codecamp.reactive.katas.KataClassification;
 import org.junit.Test;
 import reactor.core.publisher.Flux;
 

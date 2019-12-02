@@ -1,8 +1,8 @@
 package com.senacor.codecamp.reactive.katas.codecamp.reactor.solution;
 
-import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.services.CountService;
 import com.senacor.codecamp.reactive.services.RatingService;
+import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.WaitMonitor;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;

@@ -3,7 +3,7 @@ package com.senacor.codecamp.reactive.services.integration;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by Daniel Heinrich on 06/03/2017.
@@ -28,7 +28,7 @@ public class CounterBackendImplTest {
     }
 
     private ParsedPage mock(String text) {
-        return new ParsedPage(){
+        return new ParsedPage() {
             @Override
             public String getText() {
                 return text;

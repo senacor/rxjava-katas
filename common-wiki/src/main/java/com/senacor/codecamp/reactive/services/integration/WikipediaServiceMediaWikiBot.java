@@ -1,6 +1,6 @@
 package com.senacor.codecamp.reactive.services.integration;
 
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 import net.sourceforge.jwbf.core.actions.HttpActionClient;
 import net.sourceforge.jwbf.core.contentRep.Article;
 import net.sourceforge.jwbf.mediawiki.bots.MediaWikiBot;

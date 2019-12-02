@@ -3,18 +3,17 @@ package com.senacor.codecamp.reactive.example.scheduling;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import com.senacor.codecamp.reactive.util.ReactiveUtil;
 import com.senacor.codecamp.reactive.util.WaitMonitor;
-import io.reactivex.BackpressureStrategy;
-import io.reactivex.Flowable;
-import io.reactivex.Observable;
-import io.reactivex.Scheduler;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.schedulers.Schedulers;
+import io.reactivex.rxjava3.core.Flowable;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.core.Scheduler;
+import io.reactivex.rxjava3.disposables.Disposable;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 import org.junit.Test;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-import static io.reactivex.BackpressureStrategy.BUFFER;
+import static io.reactivex.rxjava3.core.BackpressureStrategy.BUFFER;
 
 /**
  * @author Andreas Keefer

@@ -24,13 +24,13 @@ import static java.io.File.separator;
 
 /**
  * Setup Netty as a simple HTTP server.
- *
+ * <p>
  * Serves a Frontend at:
  * http://localhost:8080/index.html
- *
+ * <p>
  * Serves Web Socket requests at:
  * ws://localhost:8080/ws
- *
+ * <p>
  * Default port is 8080. Can be changed via system property "port"
  *
  * @author Andri Bremm
@@ -46,7 +46,7 @@ public final class Server {
 
     public static void main(String[] args) throws Exception {
         // TODO: replace quick fix
-        STATIC_FILE_ROOT_DIR = STATIC_FILE_ROOT_DIR.replace("netty-example" + separator+ "netty-example", "netty-example");
+        STATIC_FILE_ROOT_DIR = STATIC_FILE_ROOT_DIR.replace("netty-example" + separator + "netty-example", "netty-example");
         System.out.println("STATIC_FILE_ROOT_DIR=" + STATIC_FILE_ROOT_DIR);
 
         EventLoopGroup bossGroup = new NioEventLoopGroup(1);
@@ -55,26 +55,26 @@ public final class Server {
             // Starting Netty
             ServerBootstrap b = new ServerBootstrap();
             b.group(bossGroup, workerGroup)
-             .channel(NioServerSocketChannel.class)
-             .handler(new LoggingHandler(LogLevel.INFO))
-             .childHandler(new ChannelInitializer<SocketChannel>() {
-                 @Override
-                 public void initChannel(SocketChannel ch) throws Exception {
-                     ChannelPipeline pipeline = ch.pipeline();
-                     pipeline.addLast(new HttpServerCodec());
-                     pipeline.addLast(new HttpObjectAggregator(65536));
+                    .channel(NioServerSocketChannel.class)
+                    .handler(new LoggingHandler(LogLevel.INFO))
+                    .childHandler(new ChannelInitializer<SocketChannel>() {
+                        @Override
+                        public void initChannel(SocketChannel ch) throws Exception {
+                            ChannelPipeline pipeline = ch.pipeline();
+                            pipeline.addLast(new HttpServerCodec());
+                            pipeline.addLast(new HttpObjectAggregator(65536));
 
-                     // web sockets
-                     pipeline.addLast(new WebSocketServerCompressionHandler());
-                     pipeline.addLast(new WebSocketServerProtocolHandler(WEBSOCKET_PATH, null, true));
-                     pipeline.addLast(new WebSocketFrameHandler()
-                             .bind("articleBeingRead", () -> new ArticleBeingReadService().articleBeingReadObservable()));
+                            // web sockets
+                            pipeline.addLast(new WebSocketServerCompressionHandler());
+                            pipeline.addLast(new WebSocketServerProtocolHandler(WEBSOCKET_PATH, null, true));
+                            pipeline.addLast(new WebSocketFrameHandler()
+                                    .bind("articleBeingRead", () -> new ArticleBeingReadService().articleBeingReadObservable()));
 
-                     // http for static files
-                     pipeline.addLast(new ChunkedWriteHandler());
-                     pipeline.addLast(new StaticFileServerHandler(STATIC_FILE_ROOT_DIR));
-                 }
-             });
+                            // http for static files
+                            pipeline.addLast(new ChunkedWriteHandler());
+                            pipeline.addLast(new StaticFileServerHandler(STATIC_FILE_ROOT_DIR));
+                        }
+                    });
 
             Channel ch = b.bind(PORT).sync().channel();
 

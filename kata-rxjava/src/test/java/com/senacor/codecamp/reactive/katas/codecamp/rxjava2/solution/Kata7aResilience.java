@@ -3,10 +3,10 @@ package com.senacor.codecamp.reactive.katas.codecamp.rxjava2.solution;
 import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.DelayFunction;
 import com.senacor.codecamp.reactive.util.FlakinessFunction;
-import io.reactivex.Observable;
-import io.reactivex.ObservableSource;
-import io.reactivex.functions.Function;
-import io.reactivex.schedulers.Schedulers;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.core.ObservableSource;
+import io.reactivex.rxjava3.functions.Function;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 import org.junit.Test;
 
 import java.io.UncheckedIOException;
@@ -72,7 +72,7 @@ public class Kata7aResilience {
                 .test()
                 .awaitDone(5, TimeUnit.SECONDS)
                 .assertError(UncheckedIOException.class)
-                .assertTerminated();
+                .assertNotComplete();
     }
 
     @Test

@@ -1,8 +1,8 @@
 package com.senacor.codecamp.reactive.example.transforming;
 
 import com.senacor.codecamp.reactive.util.ReactiveUtil;
-import io.reactivex.Observable;
-import io.reactivex.disposables.Disposable;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.disposables.Disposable;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;

@@ -4,8 +4,8 @@ import com.senacor.codecamp.reactive.services.integration.CounterBackend;
 import com.senacor.codecamp.reactive.services.integration.CounterBackendImpl;
 import com.senacor.codecamp.reactive.util.*;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
-import io.reactivex.Flowable;
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Flowable;
+import io.reactivex.rxjava3.core.Observable;
 import reactor.core.publisher.Flux;
 
 import java.util.concurrent.CompletableFuture;

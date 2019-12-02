@@ -1,7 +1,7 @@
 package com.senacor.codecamp.reactive.example.combining;
 
 import com.senacor.codecamp.reactive.util.ReactiveUtil;
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 import org.junit.Test;
 
 /**

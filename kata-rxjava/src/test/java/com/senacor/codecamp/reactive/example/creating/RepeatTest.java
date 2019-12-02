@@ -1,8 +1,8 @@
 package com.senacor.codecamp.reactive.example.creating;
 
-import io.reactivex.Observable;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.schedulers.Schedulers;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.disposables.Disposable;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 import org.junit.Test;
 
 import static com.senacor.codecamp.reactive.util.ReactiveUtil.print;

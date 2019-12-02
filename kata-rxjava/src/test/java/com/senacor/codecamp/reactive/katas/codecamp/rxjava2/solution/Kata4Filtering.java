@@ -2,7 +2,7 @@ package com.senacor.codecamp.reactive.katas.codecamp.rxjava2.solution;
 
 import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.WaitMonitor;
-import io.reactivex.disposables.Disposable;
+import io.reactivex.rxjava3.disposables.Disposable;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;

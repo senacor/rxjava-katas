@@ -1,11 +1,11 @@
 package com.senacor.codecamp.reactive.katas.codecamp.reactor;
 
+import com.senacor.codecamp.reactive.katas.KataClassification;
 import com.senacor.codecamp.reactive.services.PersistService;
 import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.DelayFunction;
 import com.senacor.codecamp.reactive.util.FlakinessFunction;
 import com.senacor.codecamp.reactive.util.WaitMonitor;
-import com.senacor.codecamp.reactive.katas.KataClassification;
 import reactor.core.Disposable;
 import reactor.core.publisher.Flux;
 import reactor.core.scheduler.Scheduler;

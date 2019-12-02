@@ -1,7 +1,7 @@
 package com.senacor.codecamp.reactive.katas.vertx;
 
-import com.senacor.codecamp.reactive.vertx.RxVertx;
 import com.senacor.codecamp.reactive.util.ReactiveUtil;
+import com.senacor.codecamp.reactive.vertx.RxVertx;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import io.vertx.core.DeploymentOptions;
 import io.vertx.test.core.VertxTestBase;

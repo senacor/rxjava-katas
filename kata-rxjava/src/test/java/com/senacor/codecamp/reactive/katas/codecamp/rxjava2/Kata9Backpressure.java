@@ -1,15 +1,15 @@
 package com.senacor.codecamp.reactive.katas.codecamp.rxjava2;
 
+import com.senacor.codecamp.reactive.katas.KataClassification;
 import com.senacor.codecamp.reactive.services.PersistService;
 import com.senacor.codecamp.reactive.services.WikiService;
-import com.senacor.codecamp.reactive.katas.KataClassification;
 import com.senacor.codecamp.reactive.util.DelayFunction;
 import com.senacor.codecamp.reactive.util.FlakinessFunction;
 import com.senacor.codecamp.reactive.util.WaitMonitor;
-import io.reactivex.Observable;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.plugins.RxJavaPlugins;
-import io.reactivex.schedulers.Schedulers;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.disposables.Disposable;
+import io.reactivex.rxjava3.plugins.RxJavaPlugins;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 
 import java.io.BufferedReader;
 import java.io.IOException;

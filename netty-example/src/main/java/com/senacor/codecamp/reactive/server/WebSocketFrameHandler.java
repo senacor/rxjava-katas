@@ -22,9 +22,9 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
 import io.netty.handler.codec.http.websocketx.WebSocketFrame;
-import io.reactivex.Observable;
-import io.reactivex.Observer;
-import io.reactivex.disposables.Disposable;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.core.Observer;
+import io.reactivex.rxjava3.disposables.Disposable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,7 +42,7 @@ public class WebSocketFrameHandler extends SimpleChannelInboundHandler<WebSocket
     private static final Logger logger = LoggerFactory.getLogger(WebSocketFrameHandler.class);
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
-    private final Map<String,Supplier<Observable<?>>> observableMap = new HashMap<>();
+    private final Map<String, Supplier<Observable<?>>> observableMap = new HashMap<>();
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, WebSocketFrame frame) throws Exception {
@@ -56,7 +56,7 @@ public class WebSocketFrameHandler extends SimpleChannelInboundHandler<WebSocket
             if (observableMap.containsKey(request)) {
                 subscribeChannelTo(ctx.channel(), observableMap.get(request).get());
 
-            // ECHO: send the uppercase string back
+                // ECHO: send the uppercase string back
             } else {
                 String response = "ECHO: " + request;
                 ctx.channel().writeAndFlush(new TextWebSocketFrame(response));

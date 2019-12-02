@@ -22,6 +22,9 @@ RxJava
 - https://github.com/ReactiveX/RxJava/wiki
 - http://rxmarbles.com/
 
+### RxJava 3 update
+https://github.com/ReactiveX/RxJava/wiki/What's-different-in-3.0
+
 ### RxJava 2 update
 https://github.com/ReactiveX/RxJava/wiki/What's-different-in-2.0
 

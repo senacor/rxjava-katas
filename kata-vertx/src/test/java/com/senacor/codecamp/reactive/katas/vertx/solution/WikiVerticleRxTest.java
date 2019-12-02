@@ -2,7 +2,7 @@ package com.senacor.codecamp.reactive.katas.vertx.solution;
 
 import com.senacor.codecamp.reactive.util.ReactiveUtil;
 import com.senacor.codecamp.reactive.vertx.RxVertx;
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 import io.vertx.core.DeploymentOptions;
 import io.vertx.test.core.VertxTestBase;
 import org.junit.After;
@@ -29,13 +29,13 @@ public class WikiVerticleRxTest extends VertxTestBase {
         System.out.println("deployed verticles:" + vertx.deploymentIDs());
 
         RxVertx.send(vertx, "fetchArticle", "42")
-               .flatMap(article -> RxVertx.send(vertx, "parseMediaWikiText", article))
-               .flatMap(parsedPage -> {
+                .flatMap(article -> RxVertx.send(vertx, "parseMediaWikiText", article))
+                .flatMap(parsedPage -> {
                     Observable<Integer> countWords = RxVertx.send(vertx, "countWords", parsedPage);
                     Observable<Integer> rate = RxVertx.send(vertx, "rate", parsedPage);
                     return Observable.zip(countWords, rate, (count, rateing) -> "count=" + count + " rate=" + rateing);
                 })
-               .subscribe(res -> {
+                .subscribe(res -> {
                     ReactiveUtil.print("next: %s", res);
                     testComplete();
                 }, error -> {

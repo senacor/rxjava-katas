@@ -1,10 +1,10 @@
 package com.senacor.codecamp.reactive.example.filtering;
 
 import com.senacor.codecamp.reactive.util.ReactiveUtil;
-import io.reactivex.Observable;
-import io.reactivex.ObservableEmitter;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.schedulers.Schedulers;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.core.ObservableEmitter;
+import io.reactivex.rxjava3.disposables.Disposable;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;

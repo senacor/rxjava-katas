@@ -1,9 +1,9 @@
 package com.senacor.codecamp.reactive.util;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
-import io.reactivex.Observable;
-import io.reactivex.Scheduler;
-import io.reactivex.schedulers.Schedulers;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.core.Scheduler;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 import org.apache.commons.lang.math.RandomUtils;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;

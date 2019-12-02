@@ -1,7 +1,7 @@
 package com.senacor.codecamp.reactive.katas.codecamp.reactor;
 
-import com.senacor.codecamp.reactive.services.integration.WikipediaServiceMediaWikiBot;
 import com.senacor.codecamp.reactive.katas.KataClassification;
+import com.senacor.codecamp.reactive.services.integration.WikipediaServiceMediaWikiBot;
 import net.sourceforge.jwbf.core.contentRep.Article;
 import org.junit.Test;
 

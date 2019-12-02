@@ -1,13 +1,13 @@
 package com.senacor.codecamp.reactive.katas.introduction.solution;
 
-import com.senacor.codecamp.reactive.concurrency.model.PlaneInfo;
-import com.senacor.codecamp.reactive.services.WikiService;
-import com.senacor.codecamp.reactive.util.Watch;
 import com.senacor.codecamp.reactive.concurrency.model.Article;
+import com.senacor.codecamp.reactive.concurrency.model.PlaneInfo;
 import com.senacor.codecamp.reactive.services.PlainInfoService;
+import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.WaitMonitor;
-import io.reactivex.Observable;
-import io.reactivex.schedulers.Schedulers;
+import com.senacor.codecamp.reactive.util.Watch;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 import org.junit.Rule;
 import org.junit.Test;
 

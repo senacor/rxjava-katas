@@ -1,7 +1,7 @@
 package com.senacor.codecamp.reactive.util;
 
-import com.senacor.codecamp.reactive.services.integration.WikipediaServiceJapi;
 import com.senacor.codecamp.reactive.services.integration.MediaWikiTextParser;
+import com.senacor.codecamp.reactive.services.integration.WikipediaServiceJapi;
 import com.senacor.codecamp.reactive.services.integration.WikipediaServiceJapiMock;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
 import org.junit.Test;

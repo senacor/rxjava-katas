@@ -1,7 +1,7 @@
 package com.senacor.codecamp.reactive.concurrency.e1.synchronous;
 
-import com.senacor.codecamp.reactive.concurrency.Summary;
 import com.senacor.codecamp.reactive.concurrency.PlaneArticleBaseTest;
+import com.senacor.codecamp.reactive.concurrency.Summary;
 import org.junit.Test;
 
 /**

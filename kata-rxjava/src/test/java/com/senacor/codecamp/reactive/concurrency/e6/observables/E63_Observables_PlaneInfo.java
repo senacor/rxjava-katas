@@ -1,12 +1,12 @@
 package com.senacor.codecamp.reactive.concurrency.e6.observables;
 
-import com.senacor.codecamp.reactive.util.Watch;
 import com.senacor.codecamp.reactive.concurrency.PlaneArticleBaseTest;
 import com.senacor.codecamp.reactive.concurrency.Summary;
 import com.senacor.codecamp.reactive.services.CountService;
 import com.senacor.codecamp.reactive.services.RatingService;
+import com.senacor.codecamp.reactive.util.Watch;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 import org.junit.Rule;
 import org.junit.Test;
 

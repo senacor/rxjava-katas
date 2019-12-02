@@ -1,7 +1,7 @@
 package com.senacor.codecamp.reactive.katas.codecamp.rxjava2;
 
-import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.katas.KataClassification;
+import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.DelayFunction;
 import com.senacor.codecamp.reactive.util.FlakinessFunction;
 import org.junit.Test;

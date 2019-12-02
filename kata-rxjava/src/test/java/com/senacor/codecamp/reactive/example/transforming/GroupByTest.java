@@ -1,7 +1,7 @@
 package com.senacor.codecamp.reactive.example.transforming;
 
 import com.senacor.codecamp.reactive.util.ReactiveUtil;
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -23,6 +23,6 @@ public class GroupByTest {
                 .doOnComplete(() -> ReactiveUtil.print("complete!"))
                 .doOnError(Throwable::printStackTrace)
                 .test()
-                .awaitTerminalEvent(2, TimeUnit.SECONDS);
+                .awaitDone(2, TimeUnit.SECONDS);
     }
 }

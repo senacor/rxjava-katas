@@ -2,24 +2,8 @@ package com.senacor.codecamp.reactive.server;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
-import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelFutureListener;
-import io.netty.channel.ChannelHandlerContext;
-import io.netty.channel.ChannelProgressiveFuture;
-import io.netty.channel.ChannelProgressiveFutureListener;
-import io.netty.channel.DefaultFileRegion;
-import io.netty.channel.SimpleChannelInboundHandler;
-import io.netty.handler.codec.http.DefaultFullHttpResponse;
-import io.netty.handler.codec.http.DefaultHttpResponse;
-import io.netty.handler.codec.http.FullHttpRequest;
-import io.netty.handler.codec.http.FullHttpResponse;
-import io.netty.handler.codec.http.HttpChunkedInput;
-import io.netty.handler.codec.http.HttpHeaderNames;
-import io.netty.handler.codec.http.HttpUtil;
-import io.netty.handler.codec.http.HttpHeaderValues;
-import io.netty.handler.codec.http.HttpResponse;
-import io.netty.handler.codec.http.HttpResponseStatus;
-import io.netty.handler.codec.http.LastHttpContent;
+import io.netty.channel.*;
+import io.netty.handler.codec.http.*;
 import io.netty.handler.ssl.SslHandler;
 import io.netty.handler.stream.ChunkedFile;
 import io.netty.util.CharsetUtil;
@@ -31,28 +15,24 @@ import java.io.RandomAccessFile;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.Locale;
-import java.util.TimeZone;
+import java.util.*;
 import java.util.regex.Pattern;
 
-import static io.netty.handler.codec.http.HttpMethod.*;
+import static io.netty.handler.codec.http.HttpMethod.GET;
 import static io.netty.handler.codec.http.HttpResponseStatus.*;
-import static io.netty.handler.codec.http.HttpVersion.*;
+import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
 
 /**
  * Copy from Netty examples:
  * https://github.com/netty/netty/blob/4.0/example/src/main/java/io/netty/example/http/file/HttpStaticFileServerHandler.java
- *
+ * <p>
  * A simple handler that serves incoming HTTP requests to send their respective
  * HTTP responses.  It also implements {@code 'If-Modified-Since'} header to
  * take advantage of browser cache, as described in
  * <a href="http://tools.ietf.org/html/rfc2616#section-14.25">RFC 2616</a>.
  *
  * <h3>How Browser Caching Works</h3>
- *
+ * <p>
  * Web browser caching works with HTTP headers as illustrated by the following
  * sample:
  * <ol>
@@ -245,9 +225,9 @@ public class StaticFileServerHandler extends SimpleChannelInboundHandler<FullHtt
         // Simplistic dumb security check.
         // You will have to do something serious in the production environment.
         if (uri.contains(File.separator + '.') ||
-            uri.contains('.' + File.separator) ||
-            uri.charAt(0) == '.' || uri.charAt(uri.length() - 1) == '.' ||
-            INSECURE_URI.matcher(uri).matches()) {
+                uri.contains('.' + File.separator) ||
+                uri.charAt(0) == '.' || uri.charAt(uri.length() - 1) == '.' ||
+                INSECURE_URI.matcher(uri).matches()) {
             return null;
         }
 
@@ -262,20 +242,20 @@ public class StaticFileServerHandler extends SimpleChannelInboundHandler<FullHtt
         response.headers().set(HttpHeaderNames.CONTENT_TYPE, "text/html; charset=UTF-8");
 
         StringBuilder buf = new StringBuilder()
-            .append("<!DOCTYPE html>\r\n")
-            .append("<html><head><meta charset='utf-8' /><title>")
-            .append("Listing of: ")
-            .append(dirPath)
-            .append("</title></head><body>\r\n")
+                .append("<!DOCTYPE html>\r\n")
+                .append("<html><head><meta charset='utf-8' /><title>")
+                .append("Listing of: ")
+                .append(dirPath)
+                .append("</title></head><body>\r\n")
 
-            .append("<h3>Listing of: ")
-            .append(dirPath)
-            .append("</h3>\r\n")
+                .append("<h3>Listing of: ")
+                .append(dirPath)
+                .append("</h3>\r\n")
 
-            .append("<ul>")
-            .append("<li><a href=\"../\">..</a></li>\r\n");
+                .append("<ul>")
+                .append("<li><a href=\"../\">..</a></li>\r\n");
 
-        for (File f: dir.listFiles()) {
+        for (File f : dir.listFiles()) {
             if (f.isHidden() || !f.canRead()) {
                 continue;
             }
@@ -286,10 +266,10 @@ public class StaticFileServerHandler extends SimpleChannelInboundHandler<FullHtt
             }
 
             buf.append("<li><a href=\"")
-               .append(name)
-               .append("\">")
-               .append(name)
-               .append("</a></li>\r\n");
+                    .append(name)
+                    .append("\">")
+                    .append(name)
+                    .append("</a></li>\r\n");
         }
 
         buf.append("</ul></body></html>\r\n");
@@ -321,8 +301,7 @@ public class StaticFileServerHandler extends SimpleChannelInboundHandler<FullHtt
     /**
      * When file timestamp is the same as what the browser is sending up, send a "304 Not Modified"
      *
-     * @param ctx
-     *            Context
+     * @param ctx Context
      */
     private static void sendNotModified(ChannelHandlerContext ctx) {
         FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1, NOT_MODIFIED);
@@ -335,8 +314,7 @@ public class StaticFileServerHandler extends SimpleChannelInboundHandler<FullHtt
     /**
      * Sets the Date header for the HTTP response
      *
-     * @param response
-     *            HTTP response
+     * @param response HTTP response
      */
     private static void setDateHeader(FullHttpResponse response) {
         SimpleDateFormat dateFormatter = new SimpleDateFormat(HTTP_DATE_FORMAT, Locale.US);
@@ -349,10 +327,8 @@ public class StaticFileServerHandler extends SimpleChannelInboundHandler<FullHtt
     /**
      * Sets the Date and Cache headers for the HTTP Response
      *
-     * @param response
-     *            HTTP response
-     * @param fileToCache
-     *            file to extract content type
+     * @param response    HTTP response
+     * @param fileToCache file to extract content type
      */
     private static void setDateAndCacheHeaders(HttpResponse response, File fileToCache) {
         SimpleDateFormat dateFormatter = new SimpleDateFormat(HTTP_DATE_FORMAT, Locale.US);
@@ -373,10 +349,8 @@ public class StaticFileServerHandler extends SimpleChannelInboundHandler<FullHtt
     /**
      * Sets the content type header for the HTTP Response
      *
-     * @param response
-     *            HTTP response
-     * @param file
-     *            file to extract content type
+     * @param response HTTP response
+     * @param file     file to extract content type
      */
     private static void setContentTypeHeader(HttpResponse response, File file) {
         MimetypesFileTypeMap mimeTypesMap = new MimetypesFileTypeMap();

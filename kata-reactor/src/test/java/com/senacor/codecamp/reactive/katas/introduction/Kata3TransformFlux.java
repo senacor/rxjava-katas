@@ -1,9 +1,9 @@
 package com.senacor.codecamp.reactive.katas.introduction;
 
-import com.senacor.codecamp.reactive.concurrency.model.PlaneInfo;
-import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.concurrency.model.Article;
+import com.senacor.codecamp.reactive.concurrency.model.PlaneInfo;
 import com.senacor.codecamp.reactive.services.PlainInfoService;
+import com.senacor.codecamp.reactive.services.WikiService;
 import org.junit.Test;
 import reactor.core.publisher.Flux;
 

@@ -4,9 +4,9 @@ import com.senacor.codecamp.reactive.services.WikiService;
 import com.senacor.codecamp.reactive.util.WaitMonitor;
 import de.tudarmstadt.ukp.wikipedia.parser.Link;
 import de.tudarmstadt.ukp.wikipedia.parser.ParsedPage;
-import io.reactivex.Observable;
-import io.reactivex.Scheduler;
-import io.reactivex.schedulers.Schedulers;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.core.Scheduler;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 import org.junit.Test;
 
 import java.util.Objects;
